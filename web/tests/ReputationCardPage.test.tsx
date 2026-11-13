@@ -189,7 +189,7 @@ describe('ReputationCardPage — реальные пути репутации', 
     expect(await screen.findByText('Артём Ковалёв')).toBeInTheDocument();
     // хендл приезжает с самой карточкой, статус верификации — по нему
     expect(screen.getByText('@akovalev')).toBeInTheDocument();
-    expect(screen.getByText('Личность подтверждена')).toBeInTheDocument();
+    expect(await screen.findByText('Личность подтверждена')).toBeInTheDocument();
   });
 
   it('слова «в срок» без уточнения роли на экране нет (ADR-163 §1)', async () => {

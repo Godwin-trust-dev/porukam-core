@@ -11,6 +11,7 @@ Google (SMS вне волны — международный SMS дорог/сл
 
 from __future__ import annotations
 
+import logging
 from dataclasses import dataclass
 from typing import Protocol
 
@@ -18,6 +19,8 @@ import httpx
 from django.conf import settings
 
 from common import circuit
+
+logger = logging.getLogger(__name__)
 
 
 class SMSGateway(Protocol):
@@ -96,6 +99,34 @@ _GOOGLE_USERINFO_URL = "https://openidconnect.googleapis.com/v1/userinfo"
 _GOOGLE_LOGIN_REQUEST_TIMEOUT_SECONDS = 15
 
 
+def _log_google_http_error(step: str, exc: httpx.HTTPError) -> None:
+    """Диагностика обмена Google-входа. Логируем ТОЛЬКО шаг, статус и поля
+    `error`/`error_description` из тела ответа Google (или первые 200 символов
+    не-JSON текста); для сетевых ошибок — тип исключения. Никогда: code,
+    code_verifier, client_secret, токены, email, полные тела ответов."""
+    if isinstance(exc, httpx.HTTPStatusError):
+        response = exc.response
+        try:
+            body = response.json()
+        except ValueError:
+            body = None
+        if isinstance(body, dict):
+            error = str(body.get("error"))[:200]
+            description = str(body.get("error_description"))[:200]
+        else:
+            error = "-"
+            description = response.text[:200]
+        logger.warning(
+            "google oauth %s: HTTP %s error=%s error_description=%s",
+            step,
+            response.status_code,
+            error,
+            description,
+        )
+    else:
+        logger.warning("google oauth %s: сетевая ошибка %s", step, type(exc).__name__)
+
+
 @dataclass
 class RealGoogleOAuthProvider:
     """Реальный вход через Google (ГВ.2, продуктовое решение 13.08.2026,
@@ -151,12 +182,14 @@ class RealGoogleOAuthProvider:
             )
             token_response.raise_for_status()
         except httpx.HTTPError as exc:
+            _log_google_http_error("token", exc)
             circuit.record_failure(self.provider_code)
             raise InvalidGoogleAuthorizationCodeError(
                 f"обмен кода Google-входа не удался: {exc}"
             ) from exc
         access_token = token_response.json().get("access_token")
         if not access_token:
+            logger.warning("google oauth token: ответ без access_token")
             circuit.record_failure(self.provider_code)
             raise InvalidGoogleAuthorizationCodeError("Google не вернул access_token")
 
@@ -168,6 +201,7 @@ class RealGoogleOAuthProvider:
             )
             userinfo_response.raise_for_status()
         except httpx.HTTPError as exc:
+            _log_google_http_error("userinfo", exc)
             circuit.record_failure(self.provider_code)
             raise InvalidGoogleAuthorizationCodeError(f"userinfo Google не удался: {exc}") from exc
         circuit.record_success(self.provider_code)
@@ -175,6 +209,11 @@ class RealGoogleOAuthProvider:
         sub = userinfo.get("sub")
         email = userinfo.get("email")
         if not sub or not email:
+            logger.warning(
+                "google oauth userinfo: ответ без sub/email (sub=%s email=%s)",
+                bool(sub),
+                bool(email),
+            )
             raise InvalidGoogleAuthorizationCodeError("Google userinfo не вернул sub/email")
         picture = userinfo.get("picture")
         return GoogleIdentity(

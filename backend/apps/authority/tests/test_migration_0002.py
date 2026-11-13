@@ -11,7 +11,9 @@ from django.db.migrations.executor import MigrationExecutor
 from apps.accounts.models import User
 from apps.entities.models import BusinessEntity
 
-pytestmark = pytest.mark.django_db(transaction=True)
+# Без transaction=True: DDL в PostgreSQL транзакционный, откат теста возвращает
+# схему и данные. transaction=True делал FLUSH и ломал serialized_rollback соседей.
+pytestmark = pytest.mark.django_db
 
 BEFORE = [("authority", "0001_initial")]
 AFTER = [("authority", "0002_role_employee_to_member")]
