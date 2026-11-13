@@ -6,6 +6,16 @@ Porukam («По рукам») is a platform for contracts between people and bus
 
 Developed by [Trust Dev](https://trust-dev.com/).
 
+## What it does
+
+- **Four deal types:** services, sale, rent and loan. The user answers plain-language questions and gets a ready contract document.
+- **Signing:** each side signs the hash of a frozen contract version. A signed contract does not change; any change goes through an amendment that both sides confirm.
+- **Stages and checklists:** a deal is split into stages, each with a list of what must be done. Ready checklists cover 18 fields of work (about 1,400 items), such as renovation and construction, IT and development, design, education and tutoring, transport and delivery, household services, auto, beauty and events. The contractor marks items done and attaches photos; the customer accepts the stage or returns it with remarks.
+- **Payment tied to results:** an accepted stage is due for payment. The parties pay each other directly; the platform records what was accepted and paid, and when.
+- **Evidence:** photos, files and messages are attached to the stage. A daily checkpoint of the audit log gets trusted timestamps (RFC 3161) from several independent services. Either side can download an archive of the deal.
+- **Reputation:** the reputation card is built from completed deals, not from reviews.
+- **29 languages**, including right-to-left scripts.
+
 <p>
   <img src="docs/images/home.png" alt="Home screen with contracts that need attention" width="22%">
   <img src="docs/images/sign.png" alt="Signing a frozen contract version" width="22%">
@@ -34,7 +44,7 @@ See [docs/en/architecture.md](docs/en/architecture.md) for a one-page overview.
 
 ## Run locally
 
-Requirements: Docker, [uv](https://docs.astral.sh/uv/), Node.js 18 or newer (CI uses 20).
+Requirements: Docker, [uv](https://docs.astral.sh/uv/), Node.js 22 or newer (CI uses 22).
 
 ```bash
 cp backend/.env.example backend/.env     # set your own local secrets, see the comments inside

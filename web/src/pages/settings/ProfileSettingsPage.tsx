@@ -30,8 +30,8 @@ const HANDLE_RE = /^@[a-zA-Z0-9_]{3,20}$/;
 
 function buildSchema(t: (key: string) => string) {
   return z.object({
-    display_name: z.string().trim().min(1, t('profile.formNameRequired')),
-    handle: z.string().trim().regex(HANDLE_RE, t('profile.formHandleInvalid')),
+    display_name: z.string().trim().min(1, { error: t('profile.formNameRequired') }),
+    handle: z.string().trim().regex(HANDLE_RE, { error: t('profile.formHandleInvalid') }),
     // Свободная подпись для посёлков вне справочника (ADR-182 «works_remotely/
     // city_name — наследие, срок жизни известен») — НЕ география поиска,
     // геозона поиска теперь — отдельный блок WorkAreaEditor ниже.
