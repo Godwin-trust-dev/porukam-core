@@ -1,0 +1,113 @@
+{
+  "helpButton": "Indiciu pentru câmp",
+  "onboarding": {
+    "handle": "Adresa ta publică în Porukam — ca un @nume într-un messenger. După ea te găsesc celelalte părți și tot ea deschide fișa ta de reputație. Litere latine, cifre, punct și liniuță de subliniere.",
+    "name": "Numele pe care cealaltă parte îl vede în contract și pe fișa ta. Doar prenumele sau prenumele și numele — așa cum te prezinți la lucru."
+  },
+  "contractNew": {
+    "title": "Numele scurt al contractului pentru listă — de ex. „Renovare bucătărie” sau „Logo pentru cafenea”. Dacă îl lași gol, se folosește descrierea.",
+    "workDescription": "Ce anume trebuie făcut: volum, rezultat, ce se consideră finalizat. Cu cât mai concret, cu atât recepția e mai ușoară și dezacordurile mai puține.",
+    "locationType": "Unde se execută lucrarea: la beneficiar, la prestator, la distanță sau la o adresă. De asta depind condițiile de acces și de predare.",
+    "locationAddress": "Adresa locului lucrării — strada, numărul, la nevoie etajul și apartamentul. Vizibilă doar părților contractului.",
+    "termType": "Cum se numără termenul: după datele de început și sfârșit sau după numărul de zile de la semnare.",
+    "start": "Data de la care prestatorul începe lucrarea.",
+    "end": "Data până la care lucrarea trebuie predată integral.",
+    "durationDays": "Câte zile calendaristice sunt alocate lucrării, numărate din ziua semnării contractului.",
+    "priceType": "Preț fix pentru tot volumul sau plată pe etape/unități. Pentru lucrări complexe sunt mai practice etapele.",
+    "currency": "Moneda tuturor sumelor din contract. Una pe contract — nu poate fi schimbată după semnare.",
+    "warrantyDays": "Câte zile după recepție răspunde prestatorul pentru defectele rezultatului. 0 — fără garanție.",
+    "acceptanceHours": "Câte ore are beneficiarul pentru verificarea unei etape predate. Dacă nu răspunde la timp, etapa se consideră recepționată automat.",
+    "paymentMethod": "Cum se decontează părțile: transfer, numerar, alt mod. Platforma nu păstrează și nu mută bani — doar consemnează înțelegerea și faptele.",
+    "paymentOrder": "Când se plătește fiecare etapă: înainte de a începe (plată în avans) sau după ce beneficiarul o recepționează (plată ulterioară). Se aplică tuturor etapelor contractului.",
+    "subcontract": "Dacă prestatorul poate implica ajutoare sau alți prestatori pentru o parte din lucrări.",
+    "premisesAccess": "Dacă prestatorul are nevoie de acces în spațiul beneficiarului și în ce condiții (ore, chei, prezență).",
+    "portfolioConsent": "Dacă beneficiarul permite afișarea rezultatului în portofoliul prestatorului după recepție.",
+    "stages": "Împarte lucrarea în etape: fiecare se predă și se recepționează separat, iar suma etapelor este egală cu prețul contractului. Pentru o lucrare mică ajunge o etapă.",
+    "stageTitle": "Ce se predă în această etapă — de ex. „Schiță” sau „Montaj”.",
+    "stageAmount": "Costul doar al acestei etape. Toate etapele împreună trebuie să coincidă cu prețul contractului.",
+    "stageDeadline": "Până la ce dată etapa trebuie predată beneficiarului pentru verificare.",
+    "counterparty": "Cine este cealaltă parte: caută după @handle sau alege din contactele salvate. Invitația o primește exact această persoană.",
+    "sale": {
+      "what": "Ce se vinde — numele obiectului așa cum l-ai descrie unui cumpărător: „iPhone 13 128 GB”, „Bicicletă Trek FX 2”.",
+      "description": "Stare, conținutul pachetului, particularități — tot ce cumpărătorul trebuie să știe înainte de tranzacție.",
+      "condition": "Nou, ca nou, folosit cu uzură — o descriere onestă a stării protejează ambele părți într-un dezacord.",
+      "defects": "Defecte și neajunsuri cunoscute. Dacă nu e indicat nimic, cumpărătorul are dreptul să se aștepte că nu există.",
+      "completeness": "Ce intră în pachet: cutie, încărcător, documente, accesorii.",
+      "identifiers": "Număr de serie, IMEI, VIN etc. — confirmă că a fost predat exact acest obiect.",
+      "householdPlot": "Bifează dacă vinzi produse din gospodăria proprie — influențează regimul fiscal.",
+      "price": "Prețul complet al obiectului. Livrarea, dacă e cu plată, se indică separat mai jos.",
+      "deliveryType": "Cum se predă obiectul: ridicare personală, curier, poștă sau firmă de transport.",
+      "address": "Adresa de predare sau livrare. Vizibilă doar părților.",
+      "deliveryPayer": "Cine plătește livrarea — vânzătorul sau cumpărătorul.",
+      "tracking": "Dacă e necesar un număr de urmărire. Cu el e mai ușor de dovedit expedierea și primirea.",
+      "deliveryTerm": "Termenul de predare: o dată concretă sau numărul de zile după plată.",
+      "deliveryDate": "Data până la care obiectul trebuie predat cumpărătorului.",
+      "deliveryDays": "Câte zile pentru predare, numărate din ziua plății.",
+      "inspectionHours": "Câte ore are cumpărătorul pentru verificarea obiectului după primire, înainte ca tranzacția să fie considerată închisă."
+    }
+  },
+  "settings": {
+    "displayName": "Numele pe care celelalte părți îl văd lângă handle-ul tău. Scrie-l așa cum te cunosc beneficiarii.",
+    "city": "O notă text liberă pentru localități care încă nu sunt în directorul nostru — apare pe fișa ta, dar nu influențează căutarea. Zona de lucru căutabilă o setezi mai jos.",
+    "handle": "Adresa ta publică — după ea te găsesc și îți deschid fișa de reputație. De la 3 la 20 de caractere: litere latine, cifre, liniuță de subliniere.",
+    "avatar": "Fotografia de profil o văd celelalte părți în contracte, în chat și pe fișa ta. Un chip real inspiră mai multă încredere decât o poză oarecare.",
+    "country": "Țara după a cărei lege se încheie contractele tale (jurisdicția). Nu are legătură cu adresa ta sau cu unde cauți de lucru, iar valutele și taxele nu depind de ea.",
+    "phone": "Numărul e necesar ca să te găsească după telefon cei care îl au deja. În profil nu se publică.",
+    "notif": {
+      "deals": "Invitații în contract, modificări propuse, semnare, recepția etapelor — tot ce ține de mersul tranzacțiilor.",
+      "chats": "Mesaje noi în chaturile pe contracte și în solicitări.",
+      "payments": "Plăți pe etape și confirmări ale decontărilor.",
+      "deadlines": "Memento-uri despre termene: expiră fereastra de recepție, se apropie data de predare a unei etape.",
+      "disputes": "Deschiderea unui dezacord, răspunsurile părților și deciziile pe dezacord."
+    }
+  },
+  "stage": {
+    "totalCost": "Costul total al lucrărilor. Dacă îl indici, suma se împarte egal pe etape — apoi fiecare etapă poate fi corectată manual.",
+    "title": "Ce se predă în această etapă — „Schiță”, „Montaj”, „Primul lot”. Numele îl văd ambele părți și ajunge în contract.",
+    "amount": "Cât costă exact această etapă. Suma tuturor etapelor trebuie să coincidă cu prețul contractului — altfel contractul nu poate fi înghețat.",
+    "duration": "Câte zile sunt alocate etapei. Numărătoarea pornește de la începutul etapei, nu de la semnarea contractului.",
+    "checklist": "Criterii de recepție: după ce puncte verifică beneficiarul etapa. Formulează-le măsurabil — „două runde de corecturi la schiță”, „pereți fără scurgeri”: despre așa ceva aproape că nu mai e ce discuta.",
+    "evidence": "Un punct marcat cu „probă necesară” așteaptă o fotografie sau un fișier atașat: fără el apare un avertisment la predarea etapei, dar predarea nu este blocată. Probele rămân în dosarul contractului și sunt utile într-un dezacord.",
+    "materials": {
+      "name": "Un material din catalog — așa denumirea și unitățile de măsură coincid la ambele părți. Nu e în listă? Alege „altul” și scrie-l tu.",
+      "customName": "Denumirea materialului în cuvintele tale, dacă în catalog nu există.",
+      "quantity": "Cât e nevoie — ca număr, în unitățile de măsură alese.",
+      "unit": "Unitatea de măsură a cantității: bucăți, metri, kilograme, litri.",
+      "delivery": "Câte zile durează livrarea materialului. Ajută să înțelegi dacă termenul etapei e realist.",
+      "deliveryBase": "Evenimentul de la care se numără termenul de livrare: semnarea contractului, plata în avans sau începutul etapei. Așa termenul nu depinde de o dată din calendar.",
+      "suppliedBy": "Cine cumpără și aduce materialul — beneficiarul sau prestatorul. Neînțelegerea la acest punct e o cauză frecventă de stagnare.",
+      "price": "Prețul unei unități de material în moneda contractului. La materialul prestatorului e obligatoriu și mai mare decât zero; materialul beneficiarului poate fi cu preț zero."
+    }
+  },
+  "group": {
+    "handle": "Adresa publică a grupului — ca un @nume într-un messenger. Prin ea se deschide pagina lui și tot prin ea se face trimitere la grup.",
+    "name": "Cum se numește grupul pentru oameni. Îl vede oricine îi deschide pagina.",
+    "sphere": "Domeniul principal de activitate al grupului. După el este găsit în căutare și i se propun membri.",
+    "geo": "Acoperirea grupului: toată lumea, o țară sau un singur oraș. De asta depinde cui îi apare în căutare.",
+    "country": "Țara de acoperire. Obligatorie dacă acoperirea este „țară” sau „oraș”.",
+    "city": "Orașul principal de acoperire. Obligatoriu când acoperirea este „oraș”.",
+    "description": "Despre ce este grupul și pe cine aștepți: cu ce te ocupi, ce reguli ai, cu ce îi ajuți pe membri.",
+    "visibility": "Un grup deschis este vizibil tuturor și apare în căutare; unul închis — doar membrilor și prin link direct.",
+    "joinPolicy": "Cum se intră: liber, printr-un buton, sau pe bază de cerere aprobată de proprietar.",
+    "links": "Linkuri către grup în alte servicii — un site, un canal, un chat. Până la 10, vizibile pe pagina grupului.",
+    "logo": "Imaginea-logo a grupului: se vede în căutare, pe fișă și lângă nume. O imagine pătrată arată mai bine."
+  },
+  "portfolio": {
+    "title": "Cum să numești această lucrare — „Bucătărie într-un bloc de panouri”, „Site de o pagină pentru o cafenea”.",
+    "sphere": "Domeniul de care ține lucrarea. După el îți găsesc lucrarea cei care au nevoie de ceva similar.",
+    "startedAt": "Când te-ai apucat de lucrare. Nu e obligatoriu, dar împreună cu data finalizării se vede cât a durat.",
+    "completedAt": "Când a fost terminată lucrarea. Câmp obligatoriu: după el se ordonează lucrările în portofoliu.",
+    "city": "Orașul în care a fost executată lucrarea. Îi ajută pe beneficiarii din apropiere să aleagă pe cineva de lângă ei.",
+    "description": "Ce s-a făcut, ce dificultăți ai depășit, cum a ieșit în final. Lungimea nu e limitată.",
+    "photos": "Până la 5 fotografii ale lucrării. Prima este coperta din listă; coperta poate fi schimbată oricând."
+  },
+  "revision": {
+    "item": "Ce condiție din contract propui să fie schimbată. În listă sunt câmpurile acestui contract; „altul” înseamnă text liber.",
+    "before": "Valoarea actuală din contract. Se completează singură și nu se editează — așa ambele părți văd același lucru.",
+    "after": "Noua valoare a condiției. Cealaltă parte o va accepta sau o va respinge; până la acord, contractul rămâne neschimbat.",
+    "comment": "De ce este nevoie de modificare. Comentariul îl va vedea cealaltă parte — o explicație scurtă grăbește acordul."
+  },
+  "signing": {
+    "declineComment": "Ce anume nu ți-a convenit și ce trebuie corectat. Textul îl va vedea cealaltă parte și va rămâne în istoricul contractului."
+  }
+}

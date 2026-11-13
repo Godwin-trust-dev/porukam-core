@@ -1,0 +1,12 @@
+{
+  "title": "Secțiunea „{{name}}”",
+  "text": "Spațiul de lucru al acestei secțiuni vine în curând.",
+  "feed": "Aici va apărea un flux de evenimente din tranzacțiile și contactele tale.",
+  "search": "Aici va apărea căutarea de prestatori și comenzi în catalog.",
+  "stages": "Aici se vor aduna etapele tuturor tranzacțiilor tale: ce se predă, ce este în recepție, ce termene curg.",
+  "payments": "Aici va apărea istoricul plăților pe etape și contracte — cu statusuri și confirmări.",
+  "disputes": "Aici vor fi dezacordurile tale: stări, termene și probe pentru fiecare.",
+  "reputation": "Aici va fi reputația ta: tranzacții confirmate și recenzii bazate pe fapte.",
+  "chat": "Aici va fi corespondența pe tranzacții — legată de contract și de etapele lui.",
+  "groups": "Aici vor fi grupurile: o adresă comună, membri și tranzacții sub un singur nume."
+}

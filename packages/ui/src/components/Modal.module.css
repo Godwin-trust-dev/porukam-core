@@ -1,0 +1,114 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(16, 31, 48, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--pr-sp-4);
+  z-index: 100;
+  animation: pr-fade var(--pr-dur) var(--pr-ease);
+}
+.dialog {
+  background: var(--pr-white);
+  border-radius: var(--pr-r-xl);
+  box-shadow: var(--pr-shadow-card);
+  width: 100%;
+  max-width: 520px;
+  /* Прокручивается ТЕЛО окна, а не окно целиком: липкая панель действий
+     закрывала собой то самое поле, к которому относилась (замечание владельца
+     05.09 — на 360 с поднятой клавиатурой «Отмена»/«Ответить» накрывали поле
+     комментария, и человек не видел, куда писать). */
+  max-height: 90vh;
+  /* dvh учитывает экранную клавиатуру и схлопнутую адресную строку, vh — нет;
+     старым браузерам остаётся правило выше. */
+  max-height: 90dvh;
+  overflow: hidden;
+  padding: var(--pr-sp-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-4);
+}
+.head {
+  flex: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+}
+.title {
+  font-size: var(--pr-fs-h2);
+  color: var(--pr-ink);
+}
+.closeBtn {
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--pr-text-2);
+  min-width: var(--pr-touch-min);
+  min-height: var(--pr-touch-min);
+  display: grid;
+  place-items: center;
+  border-radius: var(--pr-r-md);
+}
+.closeBtn:hover {
+  background: var(--pr-cream);
+}
+/* Тело — единственная прокручиваемая область окна: своя колонка с зазором
+   между полями и `min-height: 0`, без которого flex-элемент не сжимается и
+   прокрутка ушла бы наружу, к диалогу. */
+.content {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-4);
+}
+.actions {
+  flex: none;
+  display: flex;
+  gap: var(--pr-sp-3);
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  padding-top: var(--pr-sp-3);
+  background: var(--pr-white);
+  border-top: 1px solid var(--pr-hairline);
+}
+
+/* Телефон (замечание владельца 05.09): окно действий — нижний шит во всю
+   ширину. Центрированная модалка на 360px и так шла почти во весь экран, а с
+   поднятой клавиатурой сжималась до трети высоты и прятала форму. */
+@media (max-width: 639px) {
+  .overlay {
+    align-items: flex-end;
+    padding: 0;
+  }
+  .dialog {
+    max-width: none;
+    border-radius: var(--pr-r-xl) var(--pr-r-xl) 0 0;
+    max-height: 92vh;
+    max-height: 92dvh;
+    padding: var(--pr-sp-4) var(--pr-sp-4) calc(var(--pr-sp-4) + env(safe-area-inset-bottom, 0px));
+  }
+  /* Кнопки — во всю ширину шита: тач-таргет вместо двух узких у правого края.
+     База `auto`, а не `0`: у кнопок `white-space: nowrap`, и при равных долях
+     длинная подпись («Предложить скидку») вылезала за край. */
+  .actions > * {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+}
+
+@keyframes pr-fade {
+  from {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .overlay {
+    animation: none;
+  }
+}

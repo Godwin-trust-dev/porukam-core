@@ -1,0 +1,52 @@
+/* Блок «сроки хранения» (ADR-137 требование 9): обещание и ограничение —
+   в одной плашке, одним тоном. «Подробнее» стоит в потоке заголовка (не
+   отдельной колонкой — на узком экране ряд сжимал заголовок в столбик);
+   тач-цель ≥ 44px без раздувания строки: высота кнопки — токен,
+   отрицательные вертикальные поля возвращают строке обычную высоту. */
+.headTitle {
+  margin: 0;
+  font-weight: var(--pr-fw-semibold);
+  color: var(--pr-text);
+}
+.summary {
+  margin: 0;
+  color: var(--pr-text-2);
+}
+.trigger {
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: baseline;
+  padding: 0 var(--pr-sp-1);
+  margin-block: calc((var(--pr-touch-min) - var(--pr-lh-normal) * var(--pr-fs-sm)) / -2);
+  min-height: var(--pr-touch-min);
+  color: var(--pr-teal-deep);
+  font-size: var(--pr-fs-sm);
+  font-weight: var(--pr-fw-medium);
+  line-height: var(--pr-lh-normal);
+  white-space: nowrap;
+}
+.trigger:focus-visible {
+  outline: 2px solid var(--pr-amber);
+  outline-offset: 2px;
+  border-radius: var(--pr-r-sm);
+}
+.body {
+  display: grid;
+  gap: var(--pr-sp-2);
+  margin-top: var(--pr-sp-2);
+}
+.details {
+  margin: 0;
+  padding-inline-start: var(--pr-sp-4);
+  display: grid;
+  gap: var(--pr-sp-1);
+  color: var(--pr-text-2);
+}
+.detailsLead {
+  margin: 0;
+  color: var(--pr-text);
+}

@@ -1,0 +1,113 @@
+{
+  "helpButton": "Petunjuk kolom",
+  "onboarding": {
+    "handle": "Alamat publik Anda di Porukam — seperti @nama di aplikasi pesan. Pihak lain menemukan Anda lewat ini, dan ini membuka kartu reputasi Anda. Huruf Latin, angka, titik, dan garis bawah.",
+    "name": "Nama yang dilihat pihak lain di kontrak dan di kartu Anda. Boleh nama depan saja atau nama lengkap — seperti Anda memperkenalkan diri saat bekerja."
+  },
+  "contractNew": {
+    "title": "Nama kontrak singkat untuk daftar — misalnya “Renovasi dapur” atau “Logo untuk kafe”. Jika dikosongkan, deskripsi akan dipakai.",
+    "workDescription": "Apa persisnya yang harus dikerjakan: lingkup, hasil, apa yang dianggap selesai. Makin spesifik, makin mudah penerimaan dan makin sedikit sengketa.",
+    "locationType": "Di mana pekerjaan dilakukan: di tempat pemesan, di tempat penyedia, jarak jauh, atau di suatu alamat. Syarat akses dan serah terima bergantung padanya.",
+    "locationAddress": "Alamat lokasi pekerjaan — jalan, nomor, lantai dan unit bila perlu. Hanya terlihat oleh para pihak.",
+    "termType": "Cara menghitung jangka waktu: berdasarkan tanggal mulai dan selesai, atau jumlah hari sejak penandatanganan.",
+    "start": "Tanggal penyedia mulai bekerja.",
+    "end": "Tanggal pekerjaan harus diserahkan seluruhnya.",
+    "durationDays": "Berapa hari kalender untuk pekerjaan, dihitung sejak tanggal penandatanganan kontrak.",
+    "priceType": "Harga tetap untuk seluruh lingkup atau pembayaran per tahap/unit. Untuk pekerjaan rumit, tahap lebih praktis.",
+    "currency": "Mata uang semua jumlah dalam kontrak. Satu per kontrak — tidak bisa diubah setelah ditandatangani.",
+    "warrantyDays": "Berapa hari setelah penerimaan penyedia bertanggung jawab atas cacat hasil. 0 — tanpa garansi.",
+    "acceptanceHours": "Berapa jam waktu pemesan untuk memeriksa tahap yang diserahkan. Jika tidak menjawab tepat waktu, tahap dianggap diterima otomatis.",
+    "paymentMethod": "Cara para pihak membayar: transfer, tunai, cara lain. Platform tidak menyimpan atau memindahkan uang — hanya mencatat apa yang disepakati dan faktanya.",
+    "paymentOrder": "Kapan tiap tahap dibayar: sebelum dimulai (pembayaran di muka) atau setelah pemesan menerimanya (pembayaran di belakang). Berlaku untuk semua tahap kontrak.",
+    "subcontract": "Apakah penyedia boleh melibatkan pembantu atau penyedia lain untuk sebagian pekerjaan.",
+    "premisesAccess": "Apakah penyedia perlu akses ke tempat pemesan dan dengan syarat apa (jam, kunci, kehadiran).",
+    "portfolioConsent": "Apakah pemesan mengizinkan hasil ditampilkan di portofolio penyedia setelah penerimaan.",
+    "stages": "Bagi pekerjaan menjadi tahap: tiap tahap diserahkan dan diterima terpisah, jumlah tahap sama dengan nilai kontrak. Untuk pekerjaan kecil, satu tahap cukup.",
+    "stageTitle": "Apa yang diserahkan di tahap ini — misalnya “Draf” atau “Pemasangan”.",
+    "stageAmount": "Harga tahap ini saja. Jumlah semua tahap harus sama dengan harga kontrak.",
+    "stageDeadline": "Sampai tanggal berapa tahap harus diserahkan ke pemesan untuk diperiksa.",
+    "counterparty": "Siapa pihak lain: cari lewat @handle atau pilih dari kontak tersimpan. Orang inilah yang menerima undangan.",
+    "sale": {
+      "what": "Apa yang dijual — nama barang seperti Anda menjelaskannya ke pembeli: “iPhone 13 128 GB”, “Sepeda Trek FX 2”.",
+      "description": "Kondisi, kelengkapan, keistimewaan — semua yang perlu diketahui pembeli sebelum transaksi.",
+      "condition": "Baru, seperti baru, bekas dengan aus — deskripsi kondisi yang jujur melindungi kedua pihak saat sengketa.",
+      "defects": "Cacat dan kekurangan yang diketahui. Jika tidak ada yang disebut, pembeli berhak mengharapkan tidak ada cacat.",
+      "completeness": "Apa saja yang termasuk: kotak, pengisi daya, dokumen, aksesori.",
+      "identifiers": "Nomor seri, IMEI, VIN, dll. — untuk memastikan barang inilah yang diserahkan.",
+      "householdPlot": "Centang jika Anda menjual hasil kebun rumah sendiri — ini memengaruhi rezim pajak.",
+      "price": "Harga penuh barang. Pengiriman berbayar, jika ada, dicantumkan terpisah di bawah.",
+      "deliveryType": "Cara barang diserahkan: ambil sendiri, kurir, pos, atau ekspedisi.",
+      "address": "Alamat serah terima atau pengiriman. Hanya terlihat oleh para pihak.",
+      "deliveryPayer": "Siapa yang membayar pengiriman — penjual atau pembeli.",
+      "tracking": "Apakah nomor resi diperlukan. Dengan resi lebih mudah membuktikan pengiriman dan penerimaan.",
+      "deliveryTerm": "Jangka serah terima: tanggal tertentu atau jumlah hari setelah pembayaran.",
+      "deliveryDate": "Tanggal barang harus diserahkan ke pembeli.",
+      "deliveryDays": "Berapa hari untuk serah terima, dihitung sejak pembayaran.",
+      "inspectionHours": "Berapa jam waktu pembeli memeriksa barang setelah diterima sebelum transaksi dianggap selesai."
+    }
+  },
+  "settings": {
+    "displayName": "Nama yang dilihat pihak lain di samping handle Anda. Tulis seperti pemesan mengenal Anda.",
+    "city": "Keterangan bebas untuk kota kecil yang belum ada di direktori kami — ditampilkan di kartu Anda, tetapi tidak memengaruhi pencarian. Atur area kerja yang bisa dicari di bawah.",
+    "handle": "Alamat publik Anda — lewat itu orang menemukan Anda dan membuka kartu reputasi Anda. 3 sampai 20 karakter: huruf Latin, angka, garis bawah.",
+    "avatar": "Pihak lain melihat foto profil Anda di kontrak, obrolan, dan kartu Anda. Wajah asli lebih menumbuhkan kepercayaan untuk bertransaksi daripada gambar.",
+    "country": "Negara yang hukumnya mengatur kontrak Anda (yurisdiksi). Tidak ada hubungannya dengan alamat Anda atau tempat Anda mencari pekerjaan, dan mata uang serta pajak tidak bergantung padanya.",
+    "phone": "Nomor membuat orang yang sudah memilikinya bisa menemukan Anda lewat telepon. Nomor tidak ditampilkan di profil.",
+    "notif": {
+      "deals": "Undangan ke kontrak, usulan perubahan, penandatanganan, penerimaan tahap — semua tentang jalannya transaksi.",
+      "chats": "Pesan baru di obrolan kontrak dan di permintaan.",
+      "payments": "Pembayaran tahap dan konfirmasi pelunasan.",
+      "deadlines": "Pengingat tenggat: jendela penerimaan hampir habis, tanggal penyerahan tahap sudah dekat.",
+      "disputes": "Sengketa dibuka, jawaban para pihak, dan keputusan atas sengketa."
+    }
+  },
+  "stage": {
+    "totalCost": "Total biaya pekerjaan. Jika diisi, jumlahnya dibagi rata ke semua tahap — tiap tahap bisa Anda sesuaikan sendiri setelahnya.",
+    "title": "Apa yang diserahkan di tahap ini — “Draf tata letak”, “Pemasangan”, “Batch pertama”. Nama terlihat oleh kedua pihak dan masuk ke kontrak.",
+    "amount": "Berapa harga tahap ini saja. Jumlah semua tahap harus sama dengan harga kontrak — jika tidak, kontrak tidak bisa dibekukan.",
+    "duration": "Berapa hari disediakan untuk tahap ini. Dihitung sejak tahap dimulai, bukan sejak kontrak ditandatangani.",
+    "checklist": "Kriteria penerimaan: butir-butir yang dipakai pemesan untuk memeriksa tahap. Rumuskan secara terukur — “dua kali revisi tata letak”, “dinding tanpa bekas lelehan”: butir seperti itu nyaris tak menyisakan bahan perdebatan.",
+    "evidence": "Butir bertanda “bukti diperlukan” menunggu foto atau berkas yang dilampirkan: tanpa itu muncul peringatan saat tahap diserahkan, tetapi penyerahan tidak diblokir. Bukti tersimpan di berkas kontrak dan berguna saat sengketa.",
+    "materials": {
+      "name": "Material dari katalog — dengan begitu nama dan satuan sama bagi kedua pihak. Tidak ada yang cocok? Pilih “lainnya” dan tulis sendiri.",
+      "customName": "Nama material dengan kata-kata Anda sendiri, jika di katalog tidak ada.",
+      "quantity": "Berapa banyak yang dibutuhkan — angka, dalam satuan yang dipilih.",
+      "unit": "Satuan untuk jumlah: buah, meter, kilogram, liter.",
+      "delivery": "Berapa hari material tiba. Membantu menilai apakah tenggat tahap masuk akal.",
+      "deliveryBase": "Peristiwa yang jadi titik hitung waktu pengiriman: penandatanganan kontrak, pembayaran di muka, atau mulainya tahap. Dengan begitu tenggat tidak bergantung pada tanggal kalender.",
+      "suppliedBy": "Siapa yang membeli dan membawa material — pemesan atau penyedia. Ketidaksepakatan di sini sering jadi penyebab pekerjaan terhenti.",
+      "price": "Harga satu satuan dalam mata uang kontrak. Untuk material dari penyedia harga wajib dan di atas nol; material dari pemesan boleh berharga nol."
+    }
+  },
+  "group": {
+    "handle": "Alamat publik grup — seperti @nama di aplikasi pesan. Lewat itu halaman grup terbuka dan orang menautkan grup.",
+    "name": "Nama grup bagi orang lain. Terlihat oleh siapa pun yang membuka halamannya.",
+    "sphere": "Bidang kegiatan utama grup. Lewat bidang itu grup ditemukan di pencarian dan anggota dicocokkan.",
+    "geo": "Jangkauan grup: seluruh dunia, satu negara, atau satu kota. Ini menentukan siapa yang melihat grup di pencarian.",
+    "country": "Negara jangkauan. Wajib jika jangkauan “negara” atau “kota” dipilih.",
+    "city": "Kota utama jangkauan. Wajib saat jangkauan “kota”.",
+    "description": "Tentang apa grup ini dan siapa yang Anda tunggu: apa yang Anda kerjakan, apa aturannya, bagaimana Anda membantu anggota.",
+    "visibility": "Grup terbuka terlihat oleh semua orang dan muncul di pencarian; grup tertutup — hanya bagi anggota dan lewat tautan langsung.",
+    "joinPolicy": "Cara orang masuk: bebas lewat tombol, atau lewat permohonan yang disetujui pemilik.",
+    "links": "Tautan ke grup di layanan lain — situs, kanal, obrolan. Sampai 10 buah, tampil di halaman grup.",
+    "logo": "Gambar logo grup: tampil di pencarian, di kartu, dan di samping nama. Gambar persegi terlihat paling bagus."
+  },
+  "portfolio": {
+    "title": "Nama untuk karya ini — “Dapur di rumah susun”, “Situs satu halaman untuk kedai kopi”.",
+    "sphere": "Bidang tempat karya ini termasuk. Lewat bidang itu karya Anda ditemukan orang yang butuh hal serupa.",
+    "startedAt": "Kapan Anda mulai mengerjakannya. Tidak wajib, tetapi bersama tanggal selesai terlihat berapa lama pengerjaannya.",
+    "completedAt": "Kapan karya selesai. Wajib diisi: karya diurutkan di portofolio berdasarkan tanggal ini.",
+    "city": "Kota tempat karya dikerjakan. Membantu pemesan di sekitar memilih penyedia yang dekat.",
+    "description": "Apa yang dikerjakan, kesulitan apa yang Anda atasi, bagaimana hasilnya. Panjangnya tidak dibatasi.",
+    "photos": "Sampai 5 foto karya. Yang pertama jadi sampul di daftar; sampul bisa diganti kapan saja."
+  },
+  "revision": {
+    "item": "Ketentuan kontrak mana yang Anda usulkan diubah. Daftarnya berisi kolom kontrak ini; “lainnya” adalah teks bebas.",
+    "before": "Nilai saat ini dari kontrak. Terisi otomatis dan tidak bisa disunting — jadi kedua pihak melihat hal yang sama.",
+    "after": "Nilai baru untuk ketentuan itu. Pihak lain akan menerima atau menolaknya; sampai mereka setuju, kontrak tetap seperti semula.",
+    "comment": "Mengapa perubahan diperlukan. Pihak lain melihat komentar ini — penjelasan singkat mempercepat persetujuan."
+  },
+  "signing": {
+    "declineComment": "Apa persisnya yang tidak cocok dan apa yang perlu diperbaiki. Pihak lain melihat teks ini dan teksnya tersimpan di riwayat kontrak."
+  }
+}

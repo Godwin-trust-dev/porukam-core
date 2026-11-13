@@ -1,0 +1,25 @@
+{
+  "machineNoteLabel": "tłumaczenie maszynowe",
+  "machineNoteTooltip": "Tłumaczenie maszynowe, udostępnione dla wygody",
+  "fallbackNotice": "Ten dokument nie jest jeszcze przetłumaczony na Twój język — pokazujemy angielski oryginał.",
+  "loadError": "Nie udało się wczytać dokumentu.",
+  "openAria": "Otwórz dokument",
+  "accountDeletion": {
+    "title": "Usunięcie konta w Porukam",
+    "lead": "Tutaj opisujemy, jak usunąć konto w Porukam, co przy tym zostaje usunięte, co zostaje zachowane i na jak długo.",
+    "stepsTitle": "Jak usunąć konto",
+    "step1": "Zaloguj się w aplikacji Porukam albo otwórz porukam.app.",
+    "step2": "Otwórz Profil → Ustawienia → Konto.",
+    "step3": "Naciśnij „Usuń konto” i potwierdź usunięcie.",
+    "step4": "Konto zostanie usunięte od razu, a wszystkie sesje na wszystkich urządzeniach zostaną zakończone.",
+    "deletedTitle": "Co zostaje usunięte od razu i bezpowrotnie",
+    "deletedText": "Twoje imię, adres e-mail, telefon, zdjęcie profilowe i prace w portfolio, książka kontaktów, ustawienia oraz urządzenia zarejestrowane do powiadomień push. Klucze szyfrujące, które chronią Twoje dane osobowe, zostają zniszczone — tych danych nie odzyskamy ani my, ani nikt inny.",
+    "keptTitle": "Co zostaje zachowane i na jak długo",
+    "keptText": "Materiały już zawartych umów: tekst umowy, podpisy, dowody, historia etapów i płatności oraz korespondencja dotycząca umowy. Należą do obu stron transakcji i chronią prawa każdej z nich, dlatego jedna strona nie może usunąć ich sama. Takie materiały są przechowywane rok po zakończeniu umowy, a potem usuwane.",
+    "keptAnon": "W tych materiałach pozostajesz pod zanonimizowanym identyfikatorem. Hashe podpisów i łańcuch dowodów nie zawierają danych osobowych i nie są usuwane.",
+    "blockedTitle": "Kiedy konta nie można usunąć",
+    "blockedText": "Dopóki masz niezakończone umowy albo otwarte spory, usunięcie jest wstrzymane — najpierw je zamknij. Aplikacja pokaże, ile ich jest i które to.",
+    "noAccessTitle": "Jeśli nie możesz się zalogować",
+    "noAccessText": "Napisz na {{email}} z adresu e-mail powiązanego z Twoim kontem — usuniemy konto na życzenie. Ten sam adres podajemy w Polityce prywatności."
+  }
+}

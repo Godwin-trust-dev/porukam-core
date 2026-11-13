@@ -1,0 +1,12 @@
+{
+  "title": "Section \"{{name}}\"",
+  "text": "The workspace for this section is coming soon.",
+  "feed": "A feed of events across your deals and contacts will live here.",
+  "search": "Search for contractors and orders across the catalog will live here.",
+  "stages": "Milestones from all your deals will gather here: what's being delivered, what's under acceptance, which deadlines are running.",
+  "payments": "Payment history for milestones and contracts — with statuses and confirmations — will live here.",
+  "disputes": "Your disputes will live here: statuses, deadlines and evidence for each one.",
+  "reputation": "Your reputation will live here: confirmed deals and fact-based reviews.",
+  "chat": "Deal-related messaging — tied to the contract and its milestones — will live here.",
+  "groups": "Groups will live here: a shared handle, members and deals under one name."
+}

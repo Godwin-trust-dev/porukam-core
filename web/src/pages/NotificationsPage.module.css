@@ -1,0 +1,68 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-d-gap-section);
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+  flex-wrap: wrap;
+}
+.headActions {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+}
+.settingsBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--pr-touch-min);
+  height: var(--pr-touch-min);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-md);
+  background: var(--pr-white);
+  color: var(--pr-ink);
+  cursor: pointer;
+}
+.settingsBtn:hover {
+  background: var(--pr-cream);
+}
+.settingsBtn:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: 2px;
+}
+
+.offlineHint {
+  margin: 0;
+  padding: var(--pr-sp-2) var(--pr-sp-3);
+  border-radius: var(--pr-r-md);
+  background: var(--pr-sand);
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+
+.promoWrap {
+  margin-top: var(--pr-sp-1);
+}
+
+.skeletonList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+}
+
+/* Лента — одна поверхность (`Surface bleed`, финал доска A): пункты
+   разделяет hairline, своей рамки у пункта нет, групп по дням нет. */
+
+/* «Показать ещё N» под лентой (решение владельца 05.09). На 360px кнопка
+   во всю ширину и в тач-таргет 44px (§5.4) — `block` у Button даёт ширину,
+   min-height страхует размер цели. */
+.showMore {
+  padding: var(--pr-sp-3) var(--pr-sp-3) var(--pr-sp-4);
+}
+.showMore > button {
+  min-height: var(--pr-touch-min);
+}

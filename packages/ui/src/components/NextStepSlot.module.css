@@ -1,0 +1,68 @@
+.slot {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  width: 100%;
+  text-align: start;
+  padding: var(--pr-sp-4);
+  border-radius: var(--pr-r-lg);
+  border: 1px solid var(--pr-line);
+  background: var(--pr-white);
+  font: inherit;
+  color: inherit;
+}
+
+.action {
+  border-color: var(--pr-amber-deep);
+  background: var(--pr-spark);
+}
+.notice {
+  border-color: var(--pr-line);
+  background: var(--pr-sand);
+}
+
+.interactive {
+  cursor: pointer;
+}
+.interactive:hover {
+  box-shadow: var(--pr-shadow-sm);
+}
+.interactive:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: 2px;
+}
+
+.icon {
+  flex: none;
+  color: var(--pr-ink);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.title {
+  font-weight: var(--pr-fw-semibold);
+  color: var(--pr-ink);
+}
+.subtitle {
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+}
+/* У кликабельного «важного» подпись — это действие («Принять этап»): рисуем
+   её ссылкой, а не серым текстом, который читается как отключённая кнопка. */
+.notice.interactive .subtitle {
+  color: var(--pr-teal);
+  font-weight: var(--pr-fw-semibold);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.chevron {
+  flex: none;
+  margin-inline-start: auto;
+  color: var(--pr-text-mute);
+  transform: scaleX(-1);
+}

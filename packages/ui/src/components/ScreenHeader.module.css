@@ -1,0 +1,48 @@
+.head {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-inline-size: 0;
+}
+.line {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  min-inline-size: 0;
+  min-block-size: var(--pr-touch-min);
+}
+.back {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+}
+.title {
+  flex: 1;
+  min-inline-size: 0;
+  margin: 0;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-screen);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.actions {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+}
+.subtitle {
+  margin: 0;
+  font-size: var(--pr-d-fs-2);
+  color: var(--pr-text-2);
+}
+/* Заголовок унесла шапка оболочки (см. `inShell`) — на узком экране своей нет. */
+@media (max-width: 1023.98px) {
+  .inShell {
+    display: none;
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "machineNoteLabel": "tafsiri ya mashine",
+  "machineNoteTooltip": "Tafsiri ya mashine, imetolewa kwa urahisi wako",
+  "fallbackNotice": "Hati hii haijatafsiriwa kwa lugha yako bado — tunaonyesha ya awali ya Kiingereza.",
+  "loadError": "Hati haikupakia.",
+  "openAria": "Fungua hati",
+  "accountDeletion": {
+    "title": "Kufuta akaunti yako ya Porukam",
+    "lead": "Ukurasa huu unaeleza jinsi ya kufuta akaunti yako katika Porukam, nini kinafutwa, nini kinabaki na kwa muda gani.",
+    "stepsTitle": "Jinsi ya kufuta akaunti",
+    "step1": "Ingia katika programu ya Porukam au fungua porukam.app.",
+    "step2": "Fungua Wasifu → Mipangilio → Akaunti.",
+    "step3": "Gusa “Futa akaunti” na uthibitishe kufutwa.",
+    "step4": "Akaunti inafutwa mara moja, na vipindi vyote kwenye vifaa vyote vinakomeshwa.",
+    "deletedTitle": "Kinachofutwa mara moja na bila kurudishwa",
+    "deletedText": "Jina lako, anwani ya barua pepe, namba ya simu, picha ya wasifu na kazi zilizofanyika, anwani zilizohifadhiwa, mipangilio na vifaa vilivyosajiliwa kwa arifa za papo hapo. Funguo za usimbaji zinazolinda data yako binafsi zinaharibiwa, kwa hiyo wala sisi wala mtu mwingine hawezi kurudisha data hiyo.",
+    "keptTitle": "Kinachobaki na kwa muda gani",
+    "keptText": "Vifaa vya mikataba iliyokwisha fungwa: maandishi ya mkataba, saini, ushahidi, historia ya hatua na malipo, na mawasiliano kuhusu mkataba. Ni mali ya pande zote mbili za muamala na hulinda haki za kila upande, kwa hiyo upande mmoja hauwezi kuviondoa peke yake. Vifaa hivyo huhifadhiwa mwaka mmoja baada ya mkataba kukamilika, kisha hufutwa.",
+    "keptAnon": "Katika vifaa hivyo unabaki chini ya kitambulisho kisichokutaja jina. Hashi za saini na mnyororo wa ushahidi hazina data binafsi na hazifutwi.",
+    "blockedTitle": "Wakati akaunti haiwezi kufutwa",
+    "blockedText": "Ukiwa na mikataba isiyokamilika au mizozo iliyo wazi, kufuta kunazuiliwa — imalize kwanza. Programu inaonyesha ni mingapi na ni ipi hasa.",
+    "noAccessTitle": "Kama huwezi kuingia",
+    "noAccessText": "Tuandikie kwa {{email}} kutoka anwani ya barua pepe iliyounganishwa na akaunti yako, nasi tutafuta akaunti kwa ombi lako. Anwani hiyo hiyo imetajwa katika Sera ya Faragha."
+  }
+}

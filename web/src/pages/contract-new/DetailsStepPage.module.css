@@ -1,0 +1,42 @@
+.grid {
+  display: grid;
+  /* minmax(0, 1fr): без нуля колонка не уже min-content поля (input/textarea
+     ~370px), и на 390px форма «Суть» вылезала за карточку (отсмотр 2026-08-25). */
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
+  max-width: 560px;
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+@media (max-width: 480px) {
+  .row2 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Форма по схеме (ADR-105): секции Аренды/Займа */
+.schemaSection {
+  display: grid;
+  gap: 12px;
+  padding-top: 8px;
+}
+
+.schemaSectionTitle {
+  margin: 8px 0 0;
+  font-size: var(--pr-fs-md, 1rem);
+  font-weight: 600;
+}
+
+.schedule {
+  display: grid;
+  gap: 8px;
+}
+
+.scheduleLabel {
+  font-size: var(--pr-fs-sm, 0.875rem);
+  font-weight: 500;
+}

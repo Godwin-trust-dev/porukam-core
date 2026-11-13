@@ -1,0 +1,67 @@
+.screen {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--pr-cream);
+  padding: var(--pr-sp-6);
+}
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-xl);
+  box-shadow: var(--pr-shadow-card);
+  padding: var(--pr-sp-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-4);
+}
+.title {
+  margin: 0;
+  font-size: var(--pr-fs-h2);
+  color: var(--pr-ink);
+}
+.subtitle {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.personas {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-3);
+}
+.persona {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
+  min-height: var(--pr-touch-min);
+  padding: var(--pr-sp-3) var(--pr-sp-4);
+  border: 1.5px solid var(--pr-line);
+  border-radius: var(--pr-r-md);
+  background: var(--pr-white);
+  cursor: pointer;
+  font: inherit;
+  text-align: start;
+}
+.persona:hover {
+  border-color: var(--pr-teal);
+}
+.persona:focus-visible {
+  outline: 3px solid var(--pr-amber-bright);
+  outline-offset: 2px;
+}
+.personaTitle {
+  font-weight: var(--pr-fw-medium);
+  color: var(--pr-text);
+}
+.personaText {
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-2);
+}
+.deny {
+  align-self: flex-start;
+}

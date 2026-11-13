@@ -1,0 +1,33 @@
+.head {
+  display: grid;
+  gap: var(--pr-sp-2);
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+  flex-wrap: wrap;
+}
+.title {
+  font-size: var(--pr-fs-h2);
+  color: var(--pr-ink);
+  margin: 0;
+}
+.meta {
+  display: flex;
+  gap: var(--pr-sp-2);
+  flex-wrap: wrap;
+  align-items: center;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.meta > span:not(:last-child)::after {
+  content: '·';
+  margin-inline-start: var(--pr-sp-2);
+  color: var(--pr-text-mute);
+}
+.shifted {
+  color: var(--pr-amber-deep);
+  font-weight: var(--pr-fw-medium);
+}

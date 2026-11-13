@@ -1,0 +1,113 @@
+{
+  "helpButton": "Maydon boʻyicha maslahat",
+  "onboarding": {
+    "handle": "Porukamʼdagi ochiq manzilingiz — messenjerdagi @ism kabi. Kontragentlar sizni shu orqali topadi va obroʻ kartangiz shu orqali ochiladi. Lotin harflari, raqamlar, nuqta va pastki chiziq.",
+    "name": "Ikkinchi taraf shartnomada va kartangizda koʻradigan ism. Faqat ism yoki ism-familiya — ishda oʻzingizni qanday tanishtirsangiz."
+  },
+  "contractNew": {
+    "title": "Roʻyxat uchun shartnomaning qisqa nomi — masalan «Oshxona taʼmiri» yoki «Kafe uchun logotip». Boʻsh qoldirsangiz, tavsif qoʻyiladi.",
+    "workDescription": "Aynan nima qilish kerak: hajm, natija, nima bajarilgan hisoblanadi. Qanchalik aniq boʻlsa, qabul qilish shunchalik oson va nizo shunchalik kam boʻladi.",
+    "locationType": "Ish qayerda bajariladi: buyurtmachida, ijrochida, masofadan yoki manzil boʻyicha. Kirish va topshirish shartlari shunga bogʻliq.",
+    "locationAddress": "Ish bajariladigan manzil — koʻcha, uy, zarur boʻlsa qavat va xonadon. Faqat shartnoma taraflariga koʻrinadi.",
+    "termType": "Muddat qanday hisoblanadi: boshlanish va tugash sanalari boʻyicha yoki imzolangandan keyingi kunlar soni boʻyicha.",
+    "start": "Ijrochi ishga kirishadigan sana.",
+    "end": "Ish toʻliq topshirilishi kerak boʻlgan sana.",
+    "durationDays": "Shartnoma imzolangan kundan boshlab ishga necha kalendar kun ajratiladi.",
+    "priceType": "Butun hajm uchun qatʼiy narx yoki bosqich/birlik boʻyicha toʻlov. Murakkab ishlar uchun bosqichlar qulayroq.",
+    "currency": "Shartnomadagi barcha summalar valyutasi. Butun shartnoma uchun bitta — imzolangandan keyin oʻzgartirib boʻlmaydi.",
+    "warrantyDays": "Qabuldan keyin ijrochi natija kamchiliklari uchun necha kun javob beradi. 0 — kafolatsiz.",
+    "acceptanceHours": "Topshirilgan bosqichni tekshirish uchun buyurtmachida necha soat bor. Muddatida javob bermasa, bosqich avtomatik qabul qilingan hisoblanadi.",
+    "paymentMethod": "Taraflar qanday hisob-kitob qiladi: rekvizitlar boʻyicha oʻtkazma, naqd, boshqa usul. Platforma pulni saqlamaydi va oʻtkazmaydi — faqat kelishuv va faktlarni qayd etadi.",
+    "paymentOrder": "Har bir bosqich qachon toʻlanadi: boshlanishidan oldin (oldindan toʻlov) yoki buyurtmachi qabul qilgandan keyin (keyingi toʻlov). Shartnomaning barcha bosqichlariga amal qiladi.",
+    "subcontract": "Ijrochi ishning bir qismi uchun yordamchilar yoki boshqa ijrochilarni jalb qila oladimi.",
+    "premisesAccess": "Ijrochiga buyurtmachining binosiga kirish kerakmi va qanday shartlarda (vaqt, kalitlar, ishtirok).",
+    "portfolioConsent": "Buyurtmachi qabuldan keyin ish natijasini ijrochi portfoliosida koʻrsatishga ruxsat beradimi.",
+    "stages": "Ishni bosqichlarga boʻling: har bir bosqich alohida topshiriladi va qabul qilinadi, bosqichlar yigʻindisi shartnoma summasiga teng. Kichik ish uchun bitta bosqich yetarli.",
+    "stageTitle": "Bu bosqichda nima topshiriladi — masalan «Qoralama maket» yoki «Montaj».",
+    "stageAmount": "Aynan shu bosqich qiymati. Barcha bosqichlar yigʻindisi shartnoma narxiga mos kelishi kerak.",
+    "stageDeadline": "Bosqich buyurtmachiga tekshirish uchun qaysi sanagacha topshirilishi kerak.",
+    "counterparty": "Ikkinchi taraf kim: @hendl boʻyicha toping yoki saqlangan kontaktlardan tanlang. Taklifnomani aynan shu odam oladi.",
+    "sale": {
+      "what": "Nima sotiladi — buyumning nomi, xaridorga taʼriflaganingizdek: «iPhone 13 128 GB», «Trek FX 2 velosipedi».",
+      "description": "Holati, toʻplami, xususiyatlari — xaridor bitimdan oldin bilishi muhim boʻlgan hamma narsa.",
+      "condition": "Yangi, yangidek, ishlatilgan va eskirgan — holatni halol taʼriflash nizoda ikkala tarafni himoya qiladi.",
+      "defects": "Maʼlum nuqsonlar va kamchiliklar. Hech narsa koʻrsatilmagan boʻlsa, xaridor ular yoʻq deb kutishga haqli.",
+      "completeness": "Toʻplamga nima kiradi: quti, zaryadlovchi, hujjatlar, aksessuarlar.",
+      "identifiers": "Seriya raqami, IMEI, VIN va h.k. — ular orqali aynan shu buyum topshirilganini tasdiqlash mumkin.",
+      "householdPlot": "Oʻz tomorqa xoʻjaligingiz mahsulotini sotsangiz belgilang — bu soliq rejimiga taʼsir qiladi.",
+      "price": "Buyumning toʻliq narxi. Yetkazib berish pullik boʻlsa, quyida alohida koʻrsatiladi.",
+      "deliveryType": "Buyum qanday topshiriladi: oʻzi olib ketish, kuryer, pochta yoki transport kompaniyasi.",
+      "address": "Topshirish yoki yetkazib berish manzili. Faqat taraflarga koʻrinadi.",
+      "deliveryPayer": "Yetkazib berishni kim toʻlaydi — sotuvchi yoki xaridor.",
+      "tracking": "Joʻnatmaning trek-raqami kerakmi. U bilan joʻnatish va olish faktini tasdiqlash osonroq.",
+      "deliveryTerm": "Topshirish muddati: aniq sana yoki toʻlovdan keyingi kunlar soni.",
+      "deliveryDate": "Buyum xaridorga topshirilishi kerak boʻlgan sana.",
+      "deliveryDays": "Toʻlov kunidan boshlab topshirish uchun necha kun.",
+      "inspectionHours": "Bitim yopilgan hisoblanguncha xaridorda buyumni olgandan keyin tekshirish uchun necha soat bor."
+    }
+  },
+  "settings": {
+    "displayName": "Kontragentlar hendlingiz yonida koʻradigan ism. Mijozlar sizni qanday bilsa, shunday yozing.",
+    "city": "Hali maʼlumotnomamizda boʻlmagan shaharchalar uchun erkin matnli izoh — kartangizda koʻrsatiladi, lekin qidiruvga taʼsir qilmaydi. Qidiruvda ishtirok etadigan ish hududingizni pastda sozlang.",
+    "handle": "Sizning ochiq manzilingiz — u orqali sizni topadi va obroʻ kartangizni ochadi. 3 dan 20 gacha belgi: lotin harflari, raqamlar, pastki chiziq.",
+    "avatar": "Profil fotosini kontragentlar shartnomalarda, chatlarda va kartangizda koʻradi. Tirik yuz bitimga rasmdan koʻra koʻproq koʻngil qoʻydiradi.",
+    "country": "Shartnomalaringizga qaysi mamlakat qonuni amal qilishi (yurisdiksiya). Manzilingiz yoki ish qidirayotgan joyingizga aloqasi yoʻq, valyuta va soliqlar unga bogʻliq emas.",
+    "phone": "Raqam telefoningiz allaqachon bor odamlar sizni topishi uchun kerak. Profilda u chop etilmaydi.",
+    "notif": {
+      "deals": "Shartnomaga takliflar, taklif qilingan oʻzgartirishlar, imzolash, bosqichlarni qabul qilish — bitimlar borishi haqidagi hamma narsa.",
+      "chats": "Shartnomalar boʻyicha chatlardagi va murojaatlardagi yangi xabarlar.",
+      "payments": "Bosqichlar toʻlovlari va hisob-kitob tasdiqlari.",
+      "deadlines": "Muddatlar haqida eslatmalar: qabul oynasi tugayapti, bosqichni topshirish sanasi yaqinlashyapti.",
+      "disputes": "Nizo ochilishi, taraflarning javoblari va nizo boʻyicha qarorlar."
+    }
+  },
+  "stage": {
+    "totalCost": "Ishlarning umumiy qiymati. Uni koʻrsatsangiz, summa bosqichlar boʻyicha teng taqsimlanadi — keyin har bir bosqichni qoʻlda tuzatish mumkin.",
+    "title": "Bu bosqichda nima topshiriladi — «Qoralama maket», «Montaj», «Birinchi partiya». Nom ikkala tarafga koʻrinadi va shartnomaga kiradi.",
+    "amount": "Aynan shu bosqich qancha turadi. Barcha bosqichlar summasi shartnoma narxiga mos kelishi kerak — aks holda shartnomani muzlatib boʻlmaydi.",
+    "duration": "Bosqichga necha kun ajratiladi. Hisob bosqich boshlanishidan boradi, shartnoma imzolanishidan emas.",
+    "checklist": "Qabul mezonlari: buyurtmachi bosqichni qaysi bandlar boʻyicha tekshiradi. Oʻlchovli qilib yozing — «maketning ikkita tuzatishi», «devorlar oqmasdan»: bunday band boʻyicha bahslashishga deyarli oʻrin qolmaydi.",
+    "evidence": "«Dalil kerak» belgisi qoʻyilgan band ilova qilingan foto yoki faylni kutadi: usiz bosqich topshirilayotganda ogohlantirish chiqadi, lekin topshirish bloklanmaydi. Dalillar shartnoma ishida qoladi va nizoda asqotadi.",
+    "materials": {
+      "name": "Katalogdagi material — shunda nom va oʻlchov birliklari ikkala tarafda bir xil boʻladi. Keragi yoʻqmi — «boshqa»ni tanlab, oʻzingiznikini yozing.",
+      "customName": "Katalogda boʻlmasa, materialning oʻz soʻzlaringiz bilan nomi.",
+      "quantity": "Qancha kerak — son bilan, tanlangan oʻlchov birliklarida.",
+      "unit": "Miqdorning oʻlchov birligi: dona, metr, kilogramm, litr.",
+      "delivery": "Material yetkazib berilishi necha kun oladi. Bosqich muddati real ekanini tushunishga yordam beradi.",
+      "deliveryBase": "Yetkazish muddati qaysi voqeadan sanaladi: shartnoma imzolanishi, oldindan toʻlov yoki bosqich boshlanishi. Shunda muddat kalendar sanasiga bogʻliq boʻlmaydi.",
+      "suppliedBy": "Materialni kim sotib oladi va olib keladi — buyurtmachimi yoki ijrochi. Shu band boʻyicha kelishmovchilik — toʻxtab qolishning tez-tez uchraydigan sababi.",
+      "price": "Shartnoma valyutasida materialning bir birligi narxi. Ijrochi materialida u majburiy va noldan katta; buyurtmachi materiali nol narxda boʻlishi mumkin."
+    }
+  },
+  "group": {
+    "handle": "Birlashmaning ochiq manzili — messenjerdagi @ism kabi. U orqali birlashma sahifasi ochiladi va unga shu orqali havola beriladi.",
+    "name": "Birlashma odamlar uchun qanday nomlanadi. Uning sahifasini ochgan hammaga koʻrinadi.",
+    "sphere": "Birlashmaning asosiy faoliyat sohasi. Qidiruvda uni shu boʻyicha topadi va aʼzolarni shu boʻyicha tanlaydi.",
+    "geo": "Birlashma qamrovi: butun dunyo, mamlakat yoki bitta shahar. Qidiruvda kimga koʻrinishi shunga bogʻliq.",
+    "country": "Qamrov mamlakati. «Mamlakat» yoki «shahar» qamrovi tanlansa, majburiy.",
+    "city": "Asosiy qamrov shahri. «Shahar» qamrovida majburiy.",
+    "description": "Birlashma nima haqida va kimni kutasiz: nima bilan shugʻullanasiz, qanday qoidalar bor, aʼzolarga nimada yordam berasiz.",
+    "visibility": "Ochiq birlashma hammaga koʻrinadi va qidiruvda topiladi; yopigʻi — faqat aʼzolarga va toʻgʻridan-toʻgʻri havola boʻyicha.",
+    "joinPolicy": "Ichkariga qanday kiriladi: tugma orqali erkin yoki egasi tasdiqlaydigan ariza boʻyicha.",
+    "links": "Birlashmaning boshqa xizmatlardagi havolalari — sayt, kanal, chat. 10 tagacha, birlashma sahifasida koʻrinadi.",
+    "logo": "Birlashmaning logotip-rasmi: qidiruvda, kartada va nom yonida koʻrinadi. Kvadrat tasvir chiroyliroq chiqadi."
+  },
+  "portfolio": {
+    "title": "Bu ishni qanday nomlash kerak — «Panelli uydagi oshxona», «Qahvaxona uchun vizitka-sayt».",
+    "sphere": "Ish tegishli boʻlgan soha. Shunga oʻxshash narsa kerak boʻlganlar ishingizni shu boʻyicha topadi.",
+    "startedAt": "Ishga qachon kirishgansiz. Toʻldirish shart emas, lekin tugash sanasi bilan birga ish qancha vaqt olgani koʻrinadi.",
+    "completedAt": "Ish qachon tugatilgan. Majburiy maydon: portfolioda ishlar shu boʻyicha saflanadi.",
+    "city": "Ish bajarilgan shahar. Yaqin-atrofdagi buyurtmachilarga yaqin ijrochini tanlashga yordam beradi.",
+    "description": "Nima qilingan, qanday qiyinchiliklar yengilgan, natijada nima chiqqan. Uzunlik cheklanmagan.",
+    "photos": "Ishning 5 tagacha fotosurati. Birinchisi — roʻyxatdagi muqova; muqovani istalgan vaqtda almashtirish mumkin."
+  },
+  "revision": {
+    "item": "Shartnomaning qaysi shartini oʻzgartirishni taklif qilasiz. Roʻyxatda — shu shartnoma maydonlari; «boshqa» — ixtiyoriy matn.",
+    "before": "Shartnomadagi joriy qiymat. Oʻzi qoʻyiladi va tahrirlanmaydi — shunda ikkala taraf bir xil narsani koʻradi.",
+    "after": "Shartning yangi qiymati. Ikkinchi taraf uni qabul qiladi yoki rad etadi; kelishuvgacha shartnoma oʻzgarmaydi.",
+    "comment": "Oʻzgartirish nima uchun kerak. Izohni ikkinchi taraf koʻradi — qisqa tushuntirish kelishuvni tezlashtiradi."
+  },
+  "signing": {
+    "declineComment": "Aynan nima toʻgʻri kelmadi va nimani tuzatish kerak. Matnni ikkinchi taraf koʻradi, u shartnoma tarixida qoladi."
+  }
+}

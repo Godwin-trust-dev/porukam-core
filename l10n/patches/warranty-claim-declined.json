@@ -1,0 +1,234 @@
+{
+  "ar": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "رفض المنفّذ مطالبة الضمان على العقد «{contract_title}».",
+        "subject": "رُفضت مطالبة الضمان"
+      }
+    }
+  },
+  "az": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "İcraçı «{contract_title}» müqaviləsi üzrə zəmanət iddiasını rədd etdi.",
+        "subject": "Zəmanət iddiası rədd edildi"
+      }
+    }
+  },
+  "bn": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "ঠিকাদার «{contract_title}» চুক্তির অধীনে ওয়ারেন্টি দাবি প্রত্যাখ্যান করেছেন।",
+        "subject": "ওয়ারেন্টি দাবি প্রত্যাখ্যাত"
+      }
+    }
+  },
+  "de": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "Der Auftragnehmer hat den Gewährleistungsanspruch zum Vertrag „{contract_title}“ abgelehnt.",
+        "subject": "Gewährleistungsanspruch abgelehnt"
+      }
+    }
+  },
+  "en": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "The contractor has declined the warranty claim under the contract “{contract_title}”.",
+        "subject": "Warranty claim declined"
+      }
+    }
+  },
+  "es": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "El contratista ha rechazado la reclamación de garantía del contrato «{contract_title}».",
+        "subject": "Reclamación de garantía rechazada"
+      }
+    }
+  },
+  "fa": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "مجری ادعای گارانتی مربوط به قرارداد «{contract_title}» را رد کرد.",
+        "subject": "ادعای گارانتی رد شد"
+      }
+    }
+  },
+  "fr": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "Le prestataire a refusé la réclamation de garantie au titre du contrat « {contract_title} ».",
+        "subject": "Réclamation de garantie refusée"
+      }
+    }
+  },
+  "he": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "הקבלן דחה את תביעת האחריות לפי החוזה «{contract_title}».",
+        "subject": "תביעת האחריות נדחתה"
+      }
+    }
+  },
+  "hi": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "ठेकेदार ने अनुबंध «{contract_title}» के तहत वारंटी दावा अस्वीकार कर दिया।",
+        "subject": "वारंटी दावा अस्वीकृत"
+      }
+    }
+  },
+  "hy": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "Կատարողը մերժել է «{contract_title}» պայմանագրի երաշխիքային պահանջը։",
+        "subject": "Երաշխիքային պահանջը մերժվել է"
+      }
+    }
+  },
+  "id": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "Kontraktor menolak klaim garansi berdasarkan kontrak «{contract_title}».",
+        "subject": "Klaim garansi ditolak"
+      }
+    }
+  },
+  "it": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "L'esecutore ha respinto il reclamo in garanzia relativo al contratto «{contract_title}».",
+        "subject": "Reclamo in garanzia respinto"
+      }
+    }
+  },
+  "ja": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "受注者は契約「{contract_title}」に基づく保証請求を拒否しました。",
+        "subject": "保証請求が拒否されました"
+      }
+    }
+  },
+  "ka": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "შემსრულებელმა უარყო საგარანტიო პრეტენზია ხელშეკრულებაზე «{contract_title}».",
+        "subject": "საგარანტიო პრეტენზია უარყოფილია"
+      }
+    }
+  },
+  "kk": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "Орындаушы «{contract_title}» шарты бойынша кепілдік шағымынан бас тартты.",
+        "subject": "Кепілдік шағымы бойынша бас тарту"
+      }
+    }
+  },
+  "ko": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "수급인이 계약 «{contract_title}»에 따른 보증 청구를 거절했습니다.",
+        "subject": "보증 청구 거절"
+      }
+    }
+  },
+  "pl": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "Wykonawca odmówił uznania reklamacji gwarancyjnej do umowy „{contract_title}”.",
+        "subject": "Odmowa uznania reklamacji gwarancyjnej"
+      }
+    }
+  },
+  "pt-BR": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "O contratado recusou a reclamação de garantia do contrato “{contract_title}”.",
+        "subject": "Reclamação de garantia recusada"
+      }
+    }
+  },
+  "ro": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "Executantul a respins reclamația de garanție pentru contractul „{contract_title}”.",
+        "subject": "Reclamație de garanție respinsă"
+      }
+    }
+  },
+  "ru": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "Исполнитель отказал по гарантийной претензии по договору «{contract_title}».",
+        "subject": "Отказ по гарантийной претензии"
+      }
+    }
+  },
+  "sw": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "Mkandarasi amekataa dai la dhamana chini ya mkataba «{contract_title}».",
+        "subject": "Dai la dhamana limekataliwa"
+      }
+    }
+  },
+  "th": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "ผู้รับจ้างปฏิเสธคำร้องรับประกันตามสัญญา «{contract_title}»",
+        "subject": "คำร้องรับประกันถูกปฏิเสธ"
+      }
+    }
+  },
+  "tr": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "Yüklenici «{contract_title}» sözleşmesi kapsamındaki garanti talebini reddetti.",
+        "subject": "Garanti talebi reddedildi"
+      }
+    }
+  },
+  "uk": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "Виконавець відмовив за гарантійною претензією за договором «{contract_title}».",
+        "subject": "Відмова за гарантійною претензією"
+      }
+    }
+  },
+  "ur": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "ٹھیکیدار نے معاہدہ «{contract_title}» کے تحت وارنٹی دعویٰ مسترد کر دیا۔",
+        "subject": "وارنٹی دعویٰ مسترد"
+      }
+    }
+  },
+  "uz": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "Ijrochi «{contract_title}» shartnomasi bo'yicha kafolat da'vosini rad etdi.",
+        "subject": "Kafolat da'vosi rad etildi"
+      }
+    }
+  },
+  "vi": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "Bên thực hiện đã từ chối yêu cầu bảo hành theo hợp đồng «{contract_title}».",
+        "subject": "Yêu cầu bảo hành bị từ chối"
+      }
+    }
+  },
+  "zh-Hans": {
+    "notifications": {
+      "warranty.claim_declined": {
+        "body": "承包方已拒绝合同“{contract_title}”项下的保修索赔。",
+        "subject": "保修索赔被拒绝"
+      }
+    }
+  }
+}

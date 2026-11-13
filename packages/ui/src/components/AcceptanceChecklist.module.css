@@ -1,0 +1,34 @@
+/* Чек-лист сдачи (DEV-11): строки на одной поверхности с hairline между
+   ними (финал доска B), а не карточка на каждый пункт. */
+.list {
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  flex-wrap: wrap;
+  min-block-size: var(--pr-touch-min);
+  padding-block: var(--pr-sp-1);
+  border-block-start: 1px solid var(--pr-hairline);
+}
+.item:first-child {
+  border-block-start: none;
+}
+.label {
+  flex: 1;
+  min-width: 160px;
+  color: var(--pr-ink);
+  font-size: var(--pr-d-fs-body);
+}
+.attachBtn {
+  flex: none;
+}
+.fileInput {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}

@@ -1,0 +1,12 @@
+{
+  "actorSwitcher": {
+    "triggerLabel": "პროფილის შეცვლა",
+    "personalLabel": "პირადი",
+    "legalFormIp": "ინდივიდუალური მეწარმე",
+    "legalFormOoo": "შპს",
+    "addOrg": "ორგანიზაციის დამატება",
+    "groups": "ჩემი გაერთიანებები"
+  },
+  "sectionMenu": "განყოფილებები",
+  "logout": "გასვლა"
+}

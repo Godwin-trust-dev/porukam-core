@@ -1,0 +1,18 @@
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-1);
+  padding: var(--pr-sp-2) var(--pr-sp-3);
+  min-height: var(--pr-touch-min);
+  border-radius: var(--pr-r-pill);
+  background: var(--pr-sand);
+  color: var(--pr-text);
+  border: 1px solid var(--pr-line);
+  font-family: var(--pr-font-body);
+  font-weight: var(--pr-fw-medium);
+  font-size: var(--pr-fs-sm);
+}
+.check {
+  color: var(--pr-green);
+  flex: none;
+}

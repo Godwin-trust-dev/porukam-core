@@ -1,0 +1,21 @@
+/* Строка диалога (финал доска A): время мелким справа, счётчик — янтарный кружок. */
+.time {
+  font-size: var(--pr-d-fs-2);
+  color: var(--pr-text-mute);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-inline-size: 22px;
+  block-size: 22px;
+  padding-inline: 6px;
+  border-radius: var(--pr-r-pill);
+  background: var(--pr-amber);
+  color: var(--pr-ink);
+  font-size: var(--pr-fs-xs);
+  font-weight: var(--pr-fw-bold);
+  font-variant-numeric: tabular-nums;
+}

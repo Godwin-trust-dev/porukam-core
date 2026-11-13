@@ -1,0 +1,22 @@
+.head {
+  display: grid;
+  gap: var(--pr-sp-2);
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+  flex-wrap: wrap;
+}
+.title {
+  font-family: var(--pr-font-head);
+  font-size: var(--pr-fs-h2);
+  color: var(--pr-ink);
+  margin: 0;
+}
+.meta {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}

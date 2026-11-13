@@ -1,0 +1,15 @@
+.subtitle {
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+}
+.text {
+  font-size: var(--pr-fs-sm);
+  line-height: var(--pr-lh-normal);
+  white-space: pre-wrap;
+}
+.footnote {
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-2);
+  border-top: 1px solid var(--pr-line);
+  padding-top: var(--pr-sp-3);
+}

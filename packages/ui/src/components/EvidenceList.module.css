@@ -1,0 +1,122 @@
+.empty {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  padding: var(--pr-sp-2) var(--pr-sp-3);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  background: var(--pr-white);
+}
+.thumb {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--pr-r-md);
+  border: 1px solid var(--pr-line);
+  background: var(--pr-cream);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  color: var(--pr-text-mute);
+}
+.thumb:disabled {
+  cursor: default;
+}
+.thumbImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main {
+  flex: 1;
+  min-width: 0;
+}
+.name {
+  margin: 0;
+  color: var(--pr-ink);
+  font-size: var(--pr-fs-sm);
+  font-weight: var(--pr-fw-medium);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* Пояснение автора к файлу: переносится по словам (в отличие от имени файла,
+   которое обрезается многоточием) — это фраза, а не идентификатор. */
+.description {
+  margin: 2px 0 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+  overflow-wrap: anywhere;
+}
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-2);
+  margin-top: 2px;
+}
+.label {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+}
+.lateLabel {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+}
+.hashedLabel {
+  color: var(--pr-teal-deep);
+  font-size: var(--pr-fs-xs);
+}
+/* «Черновик — ещё не отправлено» (ADR-160): предупреждающий, но не тревожный
+   тон — файл на устройстве, ничего не сломалось, его просто ещё не сдали. */
+.draftLabel {
+  color: var(--pr-amber-deep);
+  font-size: var(--pr-fs-xs);
+}
+.errorLabel {
+  color: var(--pr-red);
+  font-size: var(--pr-fs-xs);
+}
+
+/* Чип привязки — единственный неразрывный элемент строки: длинное название
+   пункта чек-листа («к пункту «Плитка уложена по всей площади»») распирало
+   колонку экрана этапа шире окна (отсмотр 2026-08-25, контроль 1280).
+   Ограничиваем ширину и режем многоточием. `inline-block` вместо
+   `inline-flex` базового бейджа — иначе text-overflow не сработает. */
+.bind {
+  flex: 0 1 auto;
+  min-inline-size: 0;
+  max-inline-size: 16rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+
+/* Телефон: имя файла, чип привязки и «удалить» в одну строку не помещаются —
+   чип уходит на свою строку под именем. */
+@media (max-width: 560px) {
+  .row {
+    flex-wrap: wrap;
+  }
+  .main {
+    min-inline-size: 55%;
+  }
+  .bind {
+    order: 1;
+    /* 100% + отступ на ширину миниатюры снова вылезали за строку — вычитаем. */
+    max-inline-size: calc(100% - 44px - var(--pr-sp-3));
+    margin-inline-start: calc(44px + var(--pr-sp-3));
+  }
+}

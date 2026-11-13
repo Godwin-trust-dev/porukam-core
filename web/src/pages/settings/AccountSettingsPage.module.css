@@ -1,0 +1,50 @@
+.wrap {
+  display: grid;
+  gap: var(--pr-sp-4);
+}
+
+.sectionTitle {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  /* DEV-20 §1: заголовок раздела — «надпись» 13–14, не h3-плакат. */
+  font-size: var(--pr-d-fs-section);
+  text-transform: uppercase;
+  letter-spacing: var(--pr-ls-eyebrow);
+  color: var(--pr-text-2);
+  margin-bottom: var(--pr-sp-3);
+}
+
+.profileRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+  min-height: var(--pr-touch-min);
+  padding: var(--pr-sp-2) 0;
+}
+
+.phoneHint {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+  margin: 0 0 var(--pr-sp-3);
+}
+
+.phoneRow {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--pr-sp-3);
+}
+
+.phoneRow > :first-child {
+  flex: 1;
+}
+
+.phoneError {
+  color: var(--pr-red);
+  margin: var(--pr-sp-2) 0 0;
+}
+
+.phoneSaved {
+  color: var(--pr-green);
+  margin: var(--pr-sp-2) 0 0;
+}

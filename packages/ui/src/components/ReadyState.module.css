@@ -1,0 +1,35 @@
+.state {
+  display: grid;
+  gap: var(--pr-sp-3);
+}
+.head {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+}
+.icon {
+  color: var(--pr-green);
+}
+.title {
+  margin: 0;
+  font-family: var(--pr-font-head);
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-ink);
+}
+.downloads {
+  display: grid;
+  gap: var(--pr-sp-2);
+}
+.size {
+  font-variant-numeric: tabular-nums;
+}
+.expires {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+}
+.readme {
+  margin: 0;
+  color: var(--pr-text-mute);
+  font-size: var(--pr-fs-xs);
+}

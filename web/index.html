@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#16283C" />
+    <!-- Тёмной темы у продукта нет (одна кремовая палитра, tokens.css). Samsung Internet (и через него TWA
+         из Play) инвертирует крем в оливково-коричневый; «only light» он проигнорировал (проверено на проде
+         10.09). Объявляем «light dark»: браузер считает, что тёмную тему сайт ведёт сам, и не красит
+         принудительно, а палитра остаётся светлой (global.css). -->
+    <meta name="color-scheme" content="light dark" />
+    <!-- DEV-15 · PWA: iOS не читает manifest.webmanifest для установки на экран — нужны свои теги. -->
+    <link rel="icon" href="/icons/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Porukam" />
+    <!-- Соцпревью — баннер из marketing_kit/Logo (og:image требует абсолютный URL).
+         Это мета ОБОЛОЧКИ SPA: её получают маршруты приложения. У публичных
+         страниц (ADR-195) своя мета — её печатает пререндер в статический HTML
+         на языке страницы, см. web/scripts/prerender.mjs.
+         Текст — короткое описание витрины Play (en-US), а не прежняя
+         «защищённая оплата»: эскроу продукт не предоставляет, деньги идут
+         напрямую между сторонами. -->
+    <meta property="og:title" content="Porukam" />
+    <meta
+      property="og:description"
+      content="Contracts between people and businesses: stages, checklists, payment."
+    />
+    <meta property="og:image" content="https://porukam.app/icons/og-banner.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Porukam</title>
+    <!-- Статистика посещений без cookie (ADR-199). Стоит в шаблоне оболочки, поэтому пререндер
+         (scripts/prerender.mjs) переносит его и в landing.html, и во все публичные страницы.
+         Токен публичный — он виден в HTML любой страницы; на cookie-баннер не завязан, т.к. скрипт
+         cookie не ставит. Политика конфиденциальности называет его в §7 и §8. -->
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

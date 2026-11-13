@@ -1,0 +1,72 @@
+.group {
+  display: flex;
+  flex-wrap: wrap;
+  max-inline-size: 100%;
+  min-inline-size: 0;
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-pill);
+  background: var(--pr-white);
+  overflow: hidden;
+}
+.seg {
+  flex: 1 1 auto;
+  min-inline-size: 0;
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font: inherit;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-2);
+  color: var(--pr-text-2);
+  padding: var(--pr-sp-2) var(--pr-sp-4);
+  /* Плотность высокая, зона нажатия — нет (§8). */
+  min-block-size: var(--pr-touch-min);
+  transition: background var(--pr-dur) var(--pr-ease), color var(--pr-dur) var(--pr-ease);
+}
+.seg:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: -2px;
+}
+.seg:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+.active {
+  background: var(--pr-ink);
+  color: var(--pr-text-inv);
+  border-radius: var(--pr-r-pill);
+}
+
+/* ── Тёмный тон (доска B: «Я в договоре») ──
+   Чернильная капсула, выбранный сегмент — белая пилюля с тёмным текстом.
+   Переносы здесь запрещены: две половины делят ширину поровну, иначе на
+   360px белая пилюля уезжала под соседнюю строку. */
+.dark {
+  border-color: var(--pr-ink);
+  background: var(--pr-ink);
+  flex-wrap: nowrap;
+  padding: 3px;
+}
+.dark .seg {
+  /* `1 1 auto`, а не `1 1 0`: при нулевой основе капсула в строке с кнопкой
+     (десктоп) считала свой max-content нулём и усекала «Исполнитель» и
+     «Бизнес-профиль» многоточием. */
+  flex: 1 1 auto;
+  color: var(--pr-on-ink);
+  border-radius: var(--pr-r-pill);
+  /* Кегль/плотность — как на доске B, высота — по §8 (тач-цель ≥44px):
+     на эталоне ряд ниже, но макет не проверяет палец. */
+  padding-inline: var(--pr-sp-3);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dark .seg:focus-visible {
+  outline-color: var(--pr-amber-bright);
+}
+.dark .active {
+  background: var(--pr-white);
+  color: var(--pr-ink);
+}

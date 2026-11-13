@@ -1,0 +1,44 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-4);
+}
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--pr-sp-3);
+}
+/* Срок этапа скрыт (ADR-088 Фаза 2) — сумма остаётся одна в строке и должна
+   занимать всю ширину: в половине колонки раскрытая подсказка «?» вытягивалась
+   в узкий столбик (390px, отсмотр 22.08). */
+.row2:has(> :only-child) {
+  grid-template-columns: 1fr;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+  border-top: 1px solid var(--pr-line);
+  padding-top: var(--pr-sp-3);
+}
+.sectionTitle {
+  /* Строка подписи как у Field.labelRow — «?» рядом, раскрытый текст на всю ширину. */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-1);
+  font-weight: var(--pr-fw-medium);
+  color: var(--pr-ink);
+  font-size: var(--pr-fs-sm);
+  margin: 0;
+}
+.buttons {
+  display: flex;
+  gap: var(--pr-sp-3);
+  flex-wrap: wrap;
+}
+/* Второй абзац подсказки «?» раздела критериев (про доказательства). */
+.helpPara {
+  display: block;
+  margin-top: var(--pr-sp-2);
+}

@@ -1,0 +1,113 @@
+{
+  "helpButton": "Kidokezo cha sehemu",
+  "onboarding": {
+    "handle": "Anwani yako ya hadharani kwenye Porukam — kama @jina kwenye programu ya ujumbe. Wahusika wanakupata kwayo na inafungua kadi yako ya sifa. Herufi za Kilatini, tarakimu, nukta na mstari wa chini.",
+    "name": "Jina ambalo upande mwingine ataona kwenye mkataba na kadi yako. Jina la kwanza tu au jina na ukoo — kama unavyojitambulisha kazini."
+  },
+  "contractNew": {
+    "title": "Jina fupi la mkataba kwa orodha — mfano “Ukarabati wa jiko” au “Nembo ya mkahawa”. Ukiacha wazi, maelezo yatatumika.",
+    "workDescription": "Kinachopaswa kufanywa hasa: upeo, matokeo, nini kinahesabiwa kuwa kimekamilika. Kadiri kilivyo wazi, ndivyo kupokea kazi kunavyokuwa rahisi na migogoro michache.",
+    "locationType": "Kazi inafanyika wapi: kwa mteja, kwa mkandarasi, kwa mbali au kwenye anwani. Masharti ya kufikia na kukabidhi yanategemea hili.",
+    "locationAddress": "Anwani ya mahali pa kazi — barabara, jengo, ghorofa na fleti ikihitajika. Inaonekana kwa wahusika wa mkataba tu.",
+    "termType": "Jinsi ya kuhesabu muda: kwa tarehe za kuanza na kumaliza au kwa idadi ya siku tangu kusainiwa.",
+    "start": "Tarehe ambayo mkandarasi anaanza kazi.",
+    "end": "Tarehe ambayo kazi lazima ikabidhiwe kikamilifu.",
+    "durationDays": "Siku ngapi za kalenda zimetengwa kwa kazi, kuanzia siku ya kusaini mkataba.",
+    "priceType": "Bei isiyobadilika kwa kazi yote au malipo kwa hatua/kipimo. Kwa kazi ngumu hatua ni rahisi zaidi.",
+    "currency": "Sarafu ya kiasi chote kwenye mkataba. Moja kwa mkataba mzima — haibadiliki baada ya kusaini.",
+    "warrantyDays": "Siku ngapi baada ya upokeaji mkandarasi anawajibika kwa kasoro za matokeo. 0 — bila dhamana.",
+    "acceptanceHours": "Mteja ana saa ngapi kukagua hatua iliyokabidhiwa. Asipojibu kwa wakati, hatua inahesabiwa kuwa imepokelewa kiotomatiki.",
+    "paymentMethod": "Wahusika wanalipana vipi: uhamisho wa benki, taslimu, njia nyingine. Jukwaa halihifadhi wala kuhamisha pesa — linarekodi makubaliano na ukweli tu.",
+    "paymentOrder": "Kila hatua inalipwa lini: kabla haijaanza (malipo ya awali) au baada ya mteja kuikubali (malipo ya baadaye). Inahusu hatua zote za mkataba.",
+    "subcontract": "Iwapo mkandarasi anaweza kuhusisha wasaidizi au wakandarasi wengine kwa sehemu ya kazi.",
+    "premisesAccess": "Iwapo mkandarasi anahitaji kuingia kwenye eneo la mteja na kwa masharti gani (muda, funguo, uwepo).",
+    "portfolioConsent": "Iwapo mteja anaruhusu matokeo kuonyeshwa kwenye kazi zilizofanyika za mkandarasi baada ya upokeaji.",
+    "stages": "Gawa kazi katika hatua: kila hatua inakabidhiwa na kupokelewa tofauti, jumla ya hatua ni sawa na kiasi cha mkataba. Kwa kazi ndogo hatua moja inatosha.",
+    "stageTitle": "Kinachokabidhiwa katika hatua hii — mfano “Rasimu” au “Usakinishaji”.",
+    "stageAmount": "Gharama ya hatua hii pekee. Jumla ya hatua zote lazima ilingane na bei ya mkataba.",
+    "stageDeadline": "Hatua ikabidhiwe kwa mteja kwa ukaguzi kufikia tarehe gani.",
+    "counterparty": "Upande mwingine ni nani: tafuta kwa @jina au chagua kutoka anwani zilizohifadhiwa. Mwaliko utampata mtu huyu hasa.",
+    "sale": {
+      "what": "Kinachouzwa — jina la bidhaa kama ungemwelezea mnunuzi: “iPhone 13 128 GB”, “Baiskeli Trek FX 2”.",
+      "description": "Hali, vifaa vilivyomo, sifa maalum — kila kitu mnunuzi anahitaji kujua kabla ya muamala.",
+      "condition": "Mpya, kama mpya, iliyotumika na kuchakaa — maelezo ya kweli ya hali yanalinda pande zote mbili kwenye mgogoro.",
+      "defects": "Kasoro na mapungufu yanayojulikana. Kama hakuna kilichotajwa, mnunuzi ana haki ya kutarajia hakuna.",
+      "completeness": "Kinachojumuishwa: sanduku, chaja, nyaraka, vifaa vya ziada.",
+      "identifiers": "Nambari ya mfululizo, IMEI, VIN n.k. — zinathibitisha kuwa bidhaa hii hasa ndiyo iliyokabidhiwa.",
+      "householdPlot": "Weka alama kama unauza mazao ya shamba lako la nyumbani — inaathiri mfumo wa kodi.",
+      "price": "Bei kamili ya bidhaa. Usafirishaji, kama unalipiwa, unaonyeshwa tofauti hapa chini.",
+      "deliveryType": "Bidhaa inakabidhiwa vipi: kuchukua mwenyewe, tarishi, posta au kampuni ya usafirishaji.",
+      "address": "Anwani ya kukabidhi au kusafirisha. Inaonekana kwa wahusika tu.",
+      "deliveryPayer": "Nani analipia usafirishaji — muuzaji au mnunuzi.",
+      "tracking": "Iwapo nambari ya kufuatilia inahitajika. Kwayo ni rahisi kuthibitisha kutuma na kupokea.",
+      "deliveryTerm": "Muda wa kukabidhi: tarehe maalum au idadi ya siku baada ya malipo.",
+      "deliveryDate": "Tarehe ambayo bidhaa lazima ikabidhiwe kwa mnunuzi.",
+      "deliveryDays": "Siku ngapi za kukabidhi, kuanzia siku ya malipo.",
+      "inspectionHours": "Mnunuzi ana saa ngapi kukagua bidhaa baada ya kupokea kabla muamala haujahesabiwa kufungwa."
+    }
+  },
+  "settings": {
+    "displayName": "Jina ambalo wahusika wengine huona kando ya @jina lako la mtumiaji. Andika jinsi wateja wanavyokujua.",
+    "city": "Maelezo huru ya maandishi kwa miji ambayo bado haipo kwenye orodha yetu — huonekana kwenye kadi yako, lakini haiathiri utafutaji. Weka eneo lako la kazi linaloweza kutafutwa hapa chini.",
+    "handle": "Anwani yako ya hadharani — kwayo watu wanakupata na kufungua kadi yako ya sifa. Herufi 3 hadi 20: herufi za Kilatini, tarakimu, mstari wa chini.",
+    "avatar": "Wahusika wanaona picha yako ya wasifu kwenye mikataba, mazungumzo na kadi yako. Uso halisi huvutia muamala kuliko mchoro.",
+    "country": "Nchi ambayo sheria zake zinasimamia mikataba yako (mamlaka ya kisheria). Haihusiani na anwani yako wala mahali unapotafuta kazi, na sarafu na kodi hazitegemei nchi hii.",
+    "phone": "Namba huwawezesha walio nayo tayari kukupata kwa simu. Haichapishwi kwenye wasifu wako.",
+    "notif": {
+      "deals": "Mialiko ya mkataba, mabadiliko yaliyopendekezwa, kusaini, upokeaji wa hatua — kila kitu kuhusu mwenendo wa miamala.",
+      "chats": "Ujumbe mpya katika mazungumzo ya mikataba na katika maombi.",
+      "payments": "Malipo ya hatua na uthibitisho wa malipo.",
+      "deadlines": "Vikumbusho vya muda: dirisha la upokeaji linakwisha, tarehe ya kukabidhi hatua inakaribia.",
+      "disputes": "Kufunguliwa kwa mgogoro, majibu ya pande husika na maamuzi kuhusu mgogoro."
+    }
+  },
+  "stage": {
+    "totalCost": "Gharama ya jumla ya kazi. Ukiiweka, kiasi kitagawanywa sawa kati ya hatua zote — kisha unaweza kurekebisha kila hatua mwenyewe.",
+    "title": "Kinachokabidhiwa katika hatua hii — “Rasimu ya kwanza”, “Usakinishaji”, “Fungu la kwanza”. Jina linaonekana kwa pande zote mbili na huingia kwenye mkataba.",
+    "amount": "Gharama ya hatua hii pekee. Jumla ya hatua zote lazima ilingane na bei ya mkataba, vinginevyo mkataba hauwezi kugandishwa.",
+    "duration": "Siku ngapi zimetengwa kwa hatua hii. Huhesabiwa kuanzia mwanzo wa hatua, si kuanzia kusainiwa kwa mkataba.",
+    "checklist": "Vigezo vya upokeaji: mteja anakagua hatua kwa vipengele vipi. Andika kwa namna inayopimika — “marekebisho mawili ya rasimu”, “kuta bila michirizi”: kipengele cha namna hiyo hakiachi nafasi ya kubishana.",
+    "evidence": "Kipengele chenye alama “ushahidi unahitajika” hutarajia picha au faili iliyoambatishwa: bila hiyo onyo huonekana hatua inapowasilishwa, lakini uwasilishaji hauzuiliwi. Ushahidi hubaki kwenye jalada la mkataba na husaidia wakati wa mgogoro.",
+    "materials": {
+      "name": "Kifaa kutoka katalogi — hivyo jina na vipimo vitalingana kwa pande zote mbili. Hakipo? Chagua “nyingine” na andika chako.",
+      "customName": "Jina la kifaa kwa maneno yako mwenyewe, ikiwa halipo kwenye katalogi.",
+      "quantity": "Kiasi kinachohitajika — kwa tarakimu, katika vipimo ulivyochagua.",
+      "unit": "Kipimo cha kiasi: vipande, mita, kilogramu, lita.",
+      "delivery": "Kifaa huchukua siku ngapi kufika. Husaidia kuona kama muda wa hatua ni halisi.",
+      "deliveryBase": "Tukio ambalo muda wa kuleta huhesabiwa kuanzia: kutiwa saini kwa mkataba, malipo ya awali au kuanza kwa hatua. Hivyo muda hautegemei tarehe ya kalenda.",
+      "suppliedBy": "Nani ananunua na kuleta kifaa — mteja au mkandarasi. Kutoelewana hapa ni chanzo cha kawaida cha kazi kusimama.",
+      "price": "Bei ya kipimo kimoja cha kifaa kwa sarafu ya mkataba. Kwa kifaa cha mkandarasi ni lazima na iwe zaidi ya sifuri; kifaa cha mteja kinaweza kuwa na bei sifuri."
+    }
+  },
+  "group": {
+    "handle": "Anwani ya hadharani ya kikundi — kama @jina kwenye programu ya ujumbe. Kwayo ukurasa wa kikundi hufunguka na kwayo watu hukirejelea.",
+    "name": "Jina la kikundi kwa watu. Linaonekana kwa yeyote anayefungua ukurasa wake.",
+    "sphere": "Sekta kuu ya shughuli za kikundi. Kwayo kikundi hupatikana katika utafutaji na washiriki hulinganishwa.",
+    "geo": "Upeo wa kikundi: dunia nzima, nchi moja au mji mmoja. Hii huamua nani anakiona katika utafutaji.",
+    "country": "Nchi ya upeo. Inahitajika ikiwa umechagua upeo “nchi” au “mji”.",
+    "city": "Mji mkuu wa upeo. Inahitajika upeo ukiwa “mji”.",
+    "description": "Kikundi kinahusu nini na mnamsubiri nani: mnafanya nini, kanuni ni zipi, mnawasaidiaje washiriki.",
+    "visibility": "Kikundi kilicho wazi kinaonekana kwa kila mtu na hupatikana katika utafutaji; kilichofungwa — kwa washiriki tu na kwa kiungo cha moja kwa moja.",
+    "joinPolicy": "Jinsi watu wanavyoingia: moja kwa moja kwa kitufe, au kwa ombi linaloidhinishwa na mmiliki.",
+    "links": "Viungo vya kikundi kwenye huduma nyingine — tovuti, chaneli, mazungumzo. Hadi 10, vinaonyeshwa kwenye ukurasa wa kikundi.",
+    "logo": "Picha ya nembo ya kikundi: inaonekana katika utafutaji, kwenye kadi na kando ya jina. Picha ya mraba inakaa vizuri zaidi."
+  },
+  "portfolio": {
+    "title": "Jina la kazi hii — “Jiko katika jengo la ghorofa”, “Tovuti ya ukurasa mmoja kwa mkahawa”.",
+    "sphere": "Sekta ambayo kazi hii inahusika. Kwayo wanaotafuta kitu kama hicho watakupata.",
+    "startedAt": "Ulipoanza kazi hii. Si lazima, lakini pamoja na tarehe ya kumaliza inaonyesha kazi ilichukua muda gani.",
+    "completedAt": "Kazi ilipomalizika. Sehemu ya lazima: kwa tarehe hii kazi hupangwa katika orodha ya kazi zilizofanyika.",
+    "city": "Mji ambako kazi ilifanyika. Husaidia wateja walio karibu kuchagua mkandarasi wa jirani.",
+    "description": "Kilichofanyika, changamoto ulizoshinda, matokeo yalivyokuwa. Hakuna kikomo cha urefu.",
+    "photos": "Hadi picha 5 za kazi. Ya kwanza ni jalada kwenye orodha; unaweza kubadilisha jalada wakati wowote."
+  },
+  "revision": {
+    "item": "Ni sharti gani la mkataba unapendekeza kubadilisha. Kwenye orodha ni sehemu za mkataba huu; “nyingine” ni maandishi huru.",
+    "before": "Thamani ya sasa kutoka kwenye mkataba. Hujazwa yenyewe na haihaririki — ili pande zote mbili zione kitu kimoja.",
+    "after": "Thamani mpya ya sharti. Upande mwingine atakubali au atakataa; hadi wakubaliane, mkataba unabaki kama ulivyo.",
+    "comment": "Kwa nini mabadiliko yanahitajika. Upande mwingine ataona maelezo haya — ufafanuzi mfupi huharakisha makubaliano."
+  },
+  "signing": {
+    "declineComment": "Ni nini hasa hakikukufaa na kipi kirekebishwe. Upande mwingine ataona maandishi haya, na yatabaki kwenye historia ya mkataba."
+  }
+}

@@ -1,0 +1,16 @@
+.wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  flex-wrap: wrap;
+}
+.caption {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.captionOnDark {
+  color: var(--pr-on-ink);
+}
+
+/* Статус словом (DEV-20_2 §2) живёт в `StatusWord` — он общий для строк
+   сделок, платежей, споров и объединений; здесь остался только чип. */

@@ -1,0 +1,47 @@
+.row {
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  min-height: var(--pr-touch-min);
+  padding: var(--pr-sp-2) var(--pr-sp-3);
+  border-radius: var(--pr-r-sm);
+  font: inherit;
+  color: var(--pr-ink);
+  text-align: start;
+}
+.row:hover,
+.row:focus-visible {
+  background: var(--pr-cream);
+}
+.disabled {
+  color: var(--pr-text-2);
+}
+.names {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: baseline;
+  gap: var(--pr-sp-2);
+}
+.selfName {
+  font-size: var(--pr-fs-body);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.englishName {
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-2);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.check {
+  flex: none;
+  color: var(--pr-green);
+}

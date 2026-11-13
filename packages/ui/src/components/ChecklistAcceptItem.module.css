@@ -1,0 +1,89 @@
+/* Пункт чек-листа приёмки — hairline-строка (финал доска B): без рамки на
+   пункт, разделитель между соседями, чекбокс слева, «Замечание» текстом справа. */
+.item {
+  border-block-start: 1px solid var(--pr-hairline);
+  padding-block: var(--pr-sp-1);
+}
+.item:first-child {
+  border-block-start: none;
+}
+.head {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  min-block-size: var(--pr-touch-min);
+}
+.check {
+  flex: none;
+  inline-size: 24px;
+  block-size: 24px;
+  padding: 0;
+  border-radius: var(--pr-r-sm);
+  border: 1.5px solid var(--pr-line);
+  background: var(--pr-white);
+  color: var(--pr-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.checkOn {
+  background: var(--pr-teal-deep);
+  border-color: var(--pr-teal-deep);
+}
+.check:focus-visible,
+.remark:focus-visible {
+  outline: 2px solid var(--pr-amber);
+  outline-offset: 2px;
+}
+.label {
+  flex: 1;
+  min-inline-size: 0;
+  font-size: var(--pr-d-fs-body);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-ink);
+  cursor: pointer;
+}
+.remark {
+  flex: none;
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-1);
+  min-block-size: var(--pr-touch-min);
+  padding: 0 var(--pr-sp-2);
+  font: inherit;
+  font-size: var(--pr-d-fs-2);
+  color: var(--pr-text-2);
+  border-radius: var(--pr-r-sm);
+}
+.remark[aria-checked='true'] {
+  color: var(--pr-amber-ink);
+  font-weight: var(--pr-fw-semibold);
+}
+.remarkPanel {
+  display: grid;
+  gap: var(--pr-sp-2);
+  padding: var(--pr-sp-2) 0 var(--pr-sp-3) calc(24px + var(--pr-sp-3));
+}
+.attachRow {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  flex-wrap: wrap;
+}
+.attachedName {
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+  overflow-wrap: anywhere;
+}
+.fileInput {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  opacity: 0;
+}

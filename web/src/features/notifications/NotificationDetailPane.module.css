@@ -1,0 +1,79 @@
+/* Колонка деталей уведомления (DEV-19 §2): само событие + путь к нему.
+   Ленты в двух местах не заводим — данные те же, что в списке слева. */
+.pane {
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  box-shadow: var(--pr-shadow-sm);
+  padding: var(--pr-sp-5);
+  display: grid;
+  gap: var(--pr-sp-3);
+  align-content: start;
+}
+.top {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+}
+.glyph {
+  flex: none;
+  inline-size: 40px;
+  block-size: 40px;
+  border-radius: var(--pr-r-md);
+  background: var(--pr-grad-tile);
+  border: 1px solid var(--pr-line);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--pr-ink);
+}
+.glyphDue {
+  color: var(--pr-amber-deep);
+}
+.glyphGood {
+  color: var(--pr-green);
+}
+.time {
+  color: var(--pr-text-mute);
+  font-size: var(--pr-fs-sm);
+  font-variant-numeric: tabular-nums;
+}
+.title {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h3);
+  line-height: var(--pr-lh-tight);
+  color: var(--pr-ink);
+  margin: 0;
+}
+.rows {
+  display: grid;
+  gap: var(--pr-sp-2);
+  margin: 0;
+  padding-block-start: var(--pr-sp-3);
+  border-block-start: 1px solid var(--pr-line);
+}
+.row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+  font-size: var(--pr-fs-sm);
+}
+.rowLabel {
+  margin: 0;
+  color: var(--pr-text-2);
+}
+.rowValue {
+  margin: 0;
+  color: var(--pr-ink);
+  font-weight: var(--pr-fw-semibold);
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+.actions {
+  display: flex;
+  gap: var(--pr-sp-2);
+  flex-wrap: wrap;
+  padding-block-start: var(--pr-sp-1);
+}

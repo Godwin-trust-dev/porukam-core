@@ -1,0 +1,42 @@
+.card {
+  display: flex;
+  gap: var(--pr-sp-3);
+  padding: var(--pr-sp-4);
+  border-radius: var(--pr-r-lg);
+  border: 1px solid var(--pr-line);
+  background: var(--pr-cream);
+}
+.card[data-tone='ok'] {
+  background: var(--pr-white);
+  border-color: var(--pr-teal-deep);
+}
+.icon {
+  flex: none;
+  color: var(--pr-text-2);
+}
+.card[data-tone='ok'] .icon {
+  color: var(--pr-teal-deep);
+}
+.body {
+  display: grid;
+  gap: var(--pr-sp-1);
+}
+.title {
+  margin: 0;
+  color: var(--pr-ink);
+  font-size: var(--pr-fs-sm);
+  font-weight: var(--pr-fw-semibold);
+}
+.text {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.connected {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-1);
+  color: var(--pr-teal-deep);
+  font-size: var(--pr-fs-sm);
+  font-weight: var(--pr-fw-medium);
+}

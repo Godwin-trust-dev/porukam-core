@@ -1,0 +1,8 @@
+/* Экраны загрузки/ошибки/пустоты дашборда — до того, как появилась
+   мультиколонка (её задаёт RailLayout, DEV-19 §3). Надписи разделов —
+   `SectionLabel` (финал доска A), поверхности — `Surface bleed`. */
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-d-gap-section);
+}

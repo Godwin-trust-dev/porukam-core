@@ -1,0 +1,97 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-4);
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+}
+.sectionTitle {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+  font-weight: var(--pr-fw-medium);
+  margin: 0;
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-2);
+}
+.chip {
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-pill);
+  padding: var(--pr-sp-2) var(--pr-sp-4);
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-ink);
+  cursor: pointer;
+  min-height: var(--pr-touch-min);
+}
+.chip:hover {
+  border-color: var(--pr-amber);
+}
+.browseAll {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  align-self: flex-start;
+  background: none;
+  border: none;
+  color: var(--pr-teal-deep);
+  font-weight: var(--pr-fw-medium);
+  cursor: pointer;
+  padding: var(--pr-sp-2) 0;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  overflow: hidden;
+  background: var(--pr-white);
+}
+.row {
+  display: block;
+  width: 100%;
+  text-align: start;
+  padding: var(--pr-sp-3) var(--pr-sp-4);
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--pr-line);
+  cursor: pointer;
+  font: inherit;
+  color: var(--pr-ink);
+  min-height: var(--pr-touch-min);
+}
+.row:last-child {
+  border-bottom: none;
+}
+.row:hover {
+  background: var(--pr-cream);
+}
+.empty {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.chipActive {
+  border-color: var(--pr-amber);
+  background: var(--pr-cream);
+  font-weight: var(--pr-fw-medium);
+}
+.rowActive {
+  background: var(--pr-cream);
+  font-weight: var(--pr-fw-medium);
+}
+
+/* Строка типа работ (ADR-100): имя + сфера подписью справа/снизу. */
+.hitName {
+  display: block;
+}
+.hitSphere {
+  display: block;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}

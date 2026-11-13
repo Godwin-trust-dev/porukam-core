@@ -1,0 +1,12 @@
+{
+  "actorSwitcher": {
+    "triggerLabel": "プロフィールを切り替え",
+    "personalLabel": "個人",
+    "legalFormIp": "個人事業主",
+    "legalFormOoo": "株式会社",
+    "addOrg": "組織を追加",
+    "groups": "自分のグループ"
+  },
+  "sectionMenu": "セクション",
+  "logout": "ログアウト"
+}

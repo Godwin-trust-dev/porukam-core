@@ -1,0 +1,26 @@
+.timer {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  padding: var(--pr-sp-4);
+  border-radius: var(--pr-r-lg);
+  border: 1px solid var(--pr-line);
+  background: var(--pr-white);
+}
+.icon {
+  color: var(--pr-text-2);
+  flex-shrink: 0;
+}
+.value {
+  margin: 0;
+  color: var(--pr-ink);
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-fs-h3);
+  font-variant-numeric: tabular-nums;
+}
+.hint {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}

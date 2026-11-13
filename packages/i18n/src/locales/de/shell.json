@@ -1,0 +1,12 @@
+{
+  "actorSwitcher": {
+    "triggerLabel": "Profil wechseln",
+    "personalLabel": "Persönlich",
+    "legalFormIp": "Einzelunternehmer",
+    "legalFormOoo": "GmbH",
+    "addOrg": "Organisation hinzufügen",
+    "groups": "Meine Gruppen"
+  },
+  "sectionMenu": "Bereiche",
+  "logout": "Abmelden"
+}

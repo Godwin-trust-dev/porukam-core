@@ -1,0 +1,25 @@
+{
+  "machineNoteLabel": "maschinell übersetzt",
+  "machineNoteTooltip": "Maschinelle Übersetzung, der Einfachheit halber beigefügt",
+  "fallbackNotice": "Dieses Dokument ist noch nicht in Ihre Sprache übersetzt – wir zeigen das englische Original.",
+  "loadError": "Das Dokument konnte nicht geladen werden.",
+  "openAria": "Dokument öffnen",
+  "accountDeletion": {
+    "title": "Ihr Porukam-Konto löschen",
+    "lead": "Diese Seite erklärt, wie Sie Ihr Konto bei Porukam löschen, was dabei gelöscht wird, was erhalten bleibt und wie lange.",
+    "stepsTitle": "So löschen Sie Ihr Konto",
+    "step1": "Melden Sie sich in der Porukam-App an oder öffnen Sie porukam.app.",
+    "step2": "Öffnen Sie Profil → Einstellungen → Konto.",
+    "step3": "Tippen Sie auf „Konto löschen“ und bestätigen Sie die Löschung.",
+    "step4": "Das Konto wird sofort gelöscht, und alle Sitzungen auf allen Geräten werden beendet.",
+    "deletedTitle": "Was sofort und endgültig gelöscht wird",
+    "deletedText": "Ihr Name, Ihre E-Mail-Adresse, Ihre Telefonnummer, Ihr Profilfoto und Ihre Portfolio-Arbeiten, Ihr Adressbuch, Ihre Einstellungen und die für Push-Benachrichtigungen registrierten Geräte. Die Verschlüsselungsschlüssel, die Ihre personenbezogenen Daten schützen, werden vernichtet – weder wir noch sonst jemand können diese Daten zurückholen.",
+    "keptTitle": "Was erhalten bleibt und wie lange",
+    "keptText": "Die Unterlagen bereits geschlossener Verträge: der Vertragstext, die Signaturen, die Nachweise, der Verlauf der Etappen und Zahlungen sowie die Nachrichten zum Vertrag. Sie gehören beiden Seiten des Geschäfts und schützen die Rechte jeder Seite, deshalb kann eine Seite sie nicht allein entfernen. Solche Unterlagen werden ein Jahr nach Abschluss des Vertrags aufbewahrt und danach gelöscht.",
+    "keptAnon": "In diesen Unterlagen bleiben Sie unter einer anonymisierten Kennung. Die Hashes der Signaturen und die Nachweiskette enthalten keine personenbezogenen Daten und werden nicht gelöscht.",
+    "blockedTitle": "Wann sich das Konto nicht löschen lässt",
+    "blockedText": "Solange Sie unabgeschlossene Verträge oder offene Streitfälle haben, wird die Löschung zurückgehalten – schließen Sie diese zuerst ab. Die App zeigt, wie viele es sind und welche.",
+    "noAccessTitle": "Wenn Sie sich nicht anmelden können",
+    "noAccessText": "Schreiben Sie an {{email}} von der E-Mail-Adresse, die mit Ihrem Konto verknüpft ist – wir löschen das Konto auf Anfrage. Dieselbe Adresse steht in der Datenschutzerklärung."
+  }
+}

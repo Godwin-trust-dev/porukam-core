@@ -1,0 +1,94 @@
+/* План расчётов (DEV-06 §3/§5, DEV-07 §4) + DEV-19 §6.
+   Узко — карточки, широко — таблица: плотнее, колонки выровнены, суммы по
+   правому краю. Переключает КОНТЕЙНЕРНЫЙ запрос, а не ширина окна: этот блок
+   живёт и в широком теле карточки договора, и в узкой колонке master-detail —
+   от ширины монитора его собственная ширина не зависит (DEV-19 §1). */
+.container {
+  container-type: inline-size;
+  container-name: pr-payment-plan;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  padding: var(--pr-sp-3);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-md);
+  background: var(--pr-white);
+}
+.main {
+  flex: 1;
+  min-width: 0;
+}
+.stage {
+  margin: 0;
+  color: var(--pr-ink);
+  font-weight: var(--pr-fw-medium);
+}
+.note {
+  margin: 2px 0 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.amount {
+  flex: none;
+  font-variant-numeric: tabular-nums;
+  color: var(--pr-ink);
+  font-weight: var(--pr-fw-semibold);
+}
+.state,
+.action {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+@container pr-payment-plan (min-width: 640px) {
+  .wrap {
+    display: grid;
+    /* Этап · сумма · статус · действие — ячейка действия есть ВСЕГДА
+       (пустая, если платить нечего), иначе колонки разъезжаются построчно. */
+    grid-template-columns: minmax(0, 1fr) auto auto auto;
+    gap: 0;
+    border: 1px solid var(--pr-line);
+    border-radius: var(--pr-r-lg);
+    background: var(--pr-white);
+    overflow: hidden;
+  }
+  .row {
+    display: contents;
+  }
+  .row > * {
+    padding-block: var(--pr-sp-3);
+    border-block-start: 1px solid var(--pr-line);
+    border-inline: none;
+    border-radius: 0;
+    background: none;
+  }
+  .row:first-child > * {
+    border-block-start: none;
+  }
+  .main {
+    padding-inline-start: var(--pr-sp-4);
+  }
+  .amount {
+    justify-self: end;
+    text-align: end;
+    padding-inline: var(--pr-sp-4);
+    /* Суммы по правому краю выравниваются друг под другом только моноширинными
+       цифрами — иначе колонка «дышит» при смене разрядов (DEV-16 §5). */
+    font-variant-numeric: tabular-nums;
+  }
+  .state {
+    padding-inline-end: var(--pr-sp-4);
+  }
+  .action {
+    padding-inline-end: var(--pr-sp-4);
+    justify-content: flex-end;
+  }
+}

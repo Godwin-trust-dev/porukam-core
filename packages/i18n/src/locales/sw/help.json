@@ -1,0 +1,134 @@
+{
+  "aboutTitle": "Porukam ni nini",
+  "faqTitle": "Maswali na majibu",
+  "aboutLead": "Porukam hubadilisha makubaliano ya mdomo kuwa mkataba wazi wenye hatua, ushahidi na sifa. Bila wanasheria, bila kamisheni, na pesa haipiti kwenye jukwaa.",
+  "aboutSections": [
+    {
+      "title": "Kwa nani",
+      "text": "Kwa wanaofanya kazi kwa agizo au kuagiza: ukarabati, usanifu, uprogramu, masomo, picha, usafirishaji, kuuza vitu, kupangisha, mikopo kati ya watu. Kwa watu wawili, kwa mtu na mfanyabiashara binafsi, kwa wanaojiajiri."
+    },
+    {
+      "title": "Inavyofanya kazi",
+      "text": "Unaunda mkataba kutoka fomu tayari, unagawa kazi katika hatua, unamwalika upande mwingine kwa @jina. Pande zote mbili zinasaini. Kisha kila hatua inakabidhiwa na kupokelewa kwa orodha ya ukaguzi, na kila ukweli — kusaini, kukabidhi, upokeaji, mgogoro — unarekodiwa na kuingia kwenye sifa ya wote wawili."
+    },
+    {
+      "title": "Jukwaa halifanyi nini",
+      "text": "Halihifadhi wala kuhamisha pesa — mnalipana moja kwa moja kwa njia mliyochagua. Halihifadhi nakala halisi za faili zako — hashi zake tu. Haliuzi data yako na halionyeshi matangazo."
+    },
+    {
+      "title": "Vikundi",
+      "text": "Kikundi ni anwani ya pamoja ya timu au jumuiya: chama cha ufundi (jumuiya ya kitaaluma ya kudumu inayodhaminiana ubora), ukoo (timu ya mradi ya watu 3–20), jumuiya (kikundi cha wazi cha maslahi) au dirisha la kampuni. Kikundi kina @jina lake la mtumiaji, nembo, nyanja na jiografia, kadi ya umma yenye orodha ya wanachama, na wasifu wa kila mwanachama unaonyesha anapohusika. Mikataba bado hufanywa kati ya watu — kikundi husaidia kupatana na kuonyesha timu."
+    }
+  ],
+  "howTitle": "Jinsi ya kufanya",
+  "howItems": [
+    {
+      "title": "Kuunda mkataba",
+      "text": "Miamala → “Tengeneza”. Chagua aina ya mkataba (huduma, mauzo, kupangisha, mkopo), jaza fomu — kila sehemu ina “?” yenye kidokezo. Taja mhusika mwingine kwa @jina, gawa katika hatua, chagua njia ya malipo na tuma kwa kusainiwa."
+    },
+    {
+      "title": "Kumwalika mhusika mwingine",
+      "text": "Katika hatua ya “Wahusika” andika @jina. Kama mtu bado hana akaunti — mtumie kiungo cha mkataba: baada ya kuingia kwa Google ataona mkataba kwake."
+    },
+    {
+      "title": "Kusaini",
+      "text": "Fungua mkataba → “Nenda kwenye skrini ya kusaini”. Kagua toleo lililogandishwa na usaini. Mkataba unaanza kutumika pande zote mbili zikisaini."
+    },
+    {
+      "title": "Kupendekeza marekebisho kabla ya kusaini",
+      "text": "Kwenye skrini ya mapitio chagua kipengele na upendekeze mabadiliko. Upande mwingine unakubali au kukataa; baada ya mapitio toleo linagandishwa upya."
+    },
+    {
+      "title": "Kukabidhi hatua",
+      "text": "Mkandarasi anafungua hatua → “Kabidhi”, anaambatisha ushahidi (picha, faili, viungo) na kutuma kwa upokeaji."
+    },
+    {
+      "title": "Kupokea hatua au kuirudisha",
+      "text": "Mteja anafungua hatua → anapitia orodha ya ukaguzi → “Pokea” au “Rudisha” na maoni. Mteja akikaa kimya zaidi ya muda wa ukaguzi, hatua inapokelewa kiotomatiki."
+    },
+    {
+      "title": "Kulipa hatua",
+      "text": "Baada ya upokeaji, mteja anatuma pesa kwa njia iliyochaguliwa moja kwa moja kwa mkandarasi na kuweka alama ya malipo kwenye hatua. Mkandarasi anathibitisha kupokea."
+    },
+    {
+      "title": "Kufungua mgogoro",
+      "text": "Msipokubaliana — bonyeza “Mgogoro” kwenye hatua. Pande zote mbili zinaambatisha ushahidi; kila kilichorekodiwa awali tayari kiko kwenye kesi."
+    },
+    {
+      "title": "Kumtafuta mhusika na kuhifadhi anwani",
+      "text": "Fungua kadi ya mtu kwa kiungo cha @jina au kutoka mkataba → “Hifadhi anwani”. Wahusika wa mikataba yako wanaingia kwenye anwani wenyewe."
+    },
+    {
+      "title": "Kushiriki kadi yako",
+      "text": "Wasifu → “Shiriki”: kiungo cha aina porukam.app/@jinalako na msimbo wa QR. Kwenye kadi ukweli tu: miamala mingapi, ilipokelewaje, kulikuwa na migogoro."
+    },
+    {
+      "title": "Kuunda kikundi",
+      "text": "Vikundi → “Unda kikundi”. Chagua @jina la mtumiaji (moja, huwekwa wakati wa kuunda), aina, nyanja na jiografia; ongeza maelezo, viungo na nembo. Kiongozi huidhinisha maombi, huwaalika kwa @jina na hubadilisha mipangilio."
+    },
+    {
+      "title": "Kujiunga na kikundi",
+      "text": "Tafuta kikundi katika Utafutaji (kwa jina, @jina au nyanja) au fungua kiungo /@jina. Kilicho wazi — “Jiunge” mara moja; kilichofungwa — “Jiunge” hutuma ombi kwa kiongozi. Unaweza kuondoka wakati wowote; kiongozi hawezi kuondoka hadi akabidhi kikundi."
+    }
+  ],
+  "faqItems": [
+    {
+      "q": "Ni bure?",
+      "a": "Ndiyo. Kufunga mkataba, hatua, ushahidi, sifa — bila malipo na bila kamisheni kwenye malipo. Huduma za kulipia, zikija, zitakuwa tofauti na si lazima."
+    },
+    {
+      "q": "Mkataba kama huu una nguvu ya kisheria?",
+      "a": "Mkataba unafungwa kwa maandishi kwa saini rahisi ya kielektroniki: pande zote mbili zinathibitisha toleo lililogandishwa la maandishi, na huduma inarekodi nani, lini na alisaini nini. Aina hii inatambuliwa na sheria za nchi nyingi kwa miamala kati ya watu na biashara. Kwa miamala ambayo sheria inahitaji mthibitishaji au usajili wa serikali (mfano mali isiyohamishika), huduma haichukui nafasi ya taratibu hizo."
+    },
+    {
+      "q": "Pesa inapita kwenye jukwaa?",
+      "a": "Hapana. Wahusika wanalipana moja kwa moja — uhamisho, taslimu, kama walivyokubaliana. Jukwaa linarekodi wajibu, ukweli wa malipo na uthibitisho wa kupokea."
+    },
+    {
+      "q": "Vipi upande mwingine usipojibu?",
+      "a": "Kila hatua ina muda. Mteja asipokagua hatua iliyokabidhiwa kwa wakati — inapokelewa kiotomatiki. Mhusika mwingine asiposaini mkataba — unabaki rasimu, hakuna wajibu."
+    },
+    {
+      "q": "Mkataba unaweza kubadilishwa baada ya kusainiwa?",
+      "a": "Maandishi yaliyosainiwa hayabadiliki. Mabadiliko yanafanywa kwa makubaliano ya nyongeza yanayosainiwa na pande zote mbili; historia ya matoleo inahifadhiwa."
+    },
+    {
+      "q": "Sifa ni nini na nani anaiona?",
+      "a": "Ukweli kutoka miamala yako: mingapi imefungwa, mingapi imepokelewa kwa wakati, kulikuwa na migogoro na iliishaje. Hakuna alama wala nyota. Uonekanaji wa kadi na sehemu mbalimbali unauweka mwenyewe."
+    },
+    {
+      "q": "Faili zangu za ushahidi zinahifadhiwa wapi?",
+      "a": "Nakala halisi — kwako na kwa mhusika mwingine. Jukwaa linahifadhi hashi, picha ndogo na muda wa kuambatisha — inatosha kuthibitisha kuwa faili haikubadilika."
+    },
+    {
+      "q": "Mhusika mwingine anaona nini kunihusu?",
+      "a": "Jina lililothibitishwa na akaunti, @jina la mtumiaji na kadi ya sifa kwa kiwango ulichoruhusu. Simu, barua pepe na taarifa za benki hazionyeshwi kamwe — isipokuwa wewe mwenyewe umeziandika kwenye maandishi ya mkataba."
+    },
+    {
+      "q": "Ninaingiaje kutoka kifaa kingine?",
+      "a": "Kwa akaunti ile ile ya Google. Kipindi kinadumu siku 30 bila kuingia tena unapoendelea kutumia huduma."
+    },
+    {
+      "q": "Ninafutaje akaunti?",
+      "a": "Wasifu → Mipangilio → Akaunti → Futa. Data binafsi inaharibiwa bila kurudishwa; wahusika wengine wanabaki na nakala zao za mikataba ya pamoja."
+    },
+    {
+      "q": "Inafanya kazi kwenye simu?",
+      "a": "Ndiyo, ni programu ya wavuti: fungua porukam.app kwenye kivinjari na uiongeze kwenye skrini ya nyumbani — itafanya kazi kama programu ya kawaida, na arifa."
+    },
+    {
+      "q": "Ninawasilianaje nanyi?",
+      "a": "Andika kwa hello@trust-dev.com — tunajibu maswali kuhusu huduma, data na mikataba."
+    },
+    {
+      "q": "Vikundi ni nini na vya nini?",
+      "a": "Njia ya kuonyesha timu au jumuiya kwa jina moja: chama cha ufundi, ukoo, jumuiya au dirisha la kampuni. Mteja hupata kikundi kwa nyanja na jiji, huona wanachama na kadi zao za sifa, na hufanya mkataba na mtu mahususi. Kwa wakandarasi ni anwani ya pamoja inayowaletea wateja na inayoonyesha sifa ya kila mmoja."
+    },
+    {
+      "q": "Je, kikundi kinawajibika kwa mkataba?",
+      "a": "Hapana. Upande wa mkataba daima ni mtu mahususi au biashara/kampuni yake; yeye husaini na kuwajibika binafsi. Kikundi hakihifadhi pesa wala hakidhamini wanachama — ni dirisha na anwani, na sifa hujengwa kutokana na miamala ya kila mmoja."
+    }
+  ],
+  "socialTitle": "Tufuate mitandaoni",
+  "backToProfile": "Wasifu"
+}

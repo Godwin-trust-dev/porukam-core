@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "انٹرفیس کی زبان",
+  "globeTriggerAria": "انٹرفیس کی زبان",
+  "rowLabel": "انٹرفیس کی زبان",
+  "listTitle": "انٹرفیس کی زبان",
+  "searchPlaceholder": "زبان تلاش کریں…",
+  "searchAriaLabel": "زبان تلاش کریں",
+  "searchClear": "تلاش صاف کریں",
+  "currentSectionTitle": "موجودہ",
+  "allSectionTitle": "تمام زبانیں",
+  "noResults": "کوئی زبان نہیں ملی",
+  "betaBadge": "خودکار ترجمہ",
+  "betaTooltip": "خودکار ترجمہ — غلطیاں ممکن ہیں",
+  "currentAria": "موجودہ زبان",
+  "disabledToast": "{{lang}} عارضی طور پر دستیاب نہیں · ہم انگریزی دکھا رہے ہیں",
+  "closeLabel": "بند کریں",
+  "onboardingHint": "خودکار پہچانی گئی — کسی بھی وقت بدل سکتے ہیں",
+  "settingsRowLabel": "زبان اور علاقہ",
+  "settingsLanguageExplain": "یہ ایپ کی زبان ہے۔ معاہدے کی سرکاری زبان الگ منتخب ہوتی ہے — دوسرا فریق ترجمہ دیکھتا ہے، مگر دستخط سرکاری متن پر ہوتے ہیں۔",
+  "loadErrorRetry": "دوبارہ کوشش کریں",
+  "loadError": "زبانوں کی فہرست لوڈ نہیں ہو سکی"
+}

@@ -1,0 +1,16 @@
+AL.40	Berat County	Berat County	865730
+AL.41	Dibër County	Diber County	865731
+AL.50	Tirana	Tirana	3344951
+BY.04	Minsk City	Minsk City	625143
+DE.13	Saxony	Saxony	2842566
+DE.08	Rheinland-Pfalz	Rheinland-Pfalz	2847618
+DE.07	North Rhine-Westphalia	North Rhine-Westphalia	2861876
+DE.11	Brandenburg	Brandenburg	2945356
+KZ.02	Almaty	Almaty	1526395
+KZ.05	Astana	Astana	1538317
+RU.48	Moscow	Moscow	524894
+RU.66	St.-Petersburg	St.-Petersburg	536203
+US.NY	New York	New York	5128638
+US.CA	California	California	5332921
+ZZ.01	Nowhere Region	Nowhere Region	NOTANUMBER
+ZZ.02	Zeta Province	Zeta Province	8888888

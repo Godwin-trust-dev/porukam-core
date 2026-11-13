@@ -1,0 +1,26 @@
+/* Выделение выбранного диалога, шапка и плотность строк живут в `ListRow`/
+   `ScreenHeader` (DEV-20) — своего у экрана остался только ритм секций. */
+.page {
+  display: grid;
+  gap: var(--pr-d-gap-section);
+}
+/* «+» в шапке оболочки на телефоне (финал доска A). */
+.plusBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: var(--pr-touch-min);
+  block-size: var(--pr-touch-min);
+  border: none;
+  background: none;
+  color: var(--pr-ink);
+  cursor: pointer;
+  border-radius: var(--pr-r-md);
+}
+.plusBtn:hover {
+  background: var(--pr-sand);
+}
+.plusBtn:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: 2px;
+}

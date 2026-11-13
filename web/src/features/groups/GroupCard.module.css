@@ -1,0 +1,140 @@
+.wrap {
+  display: grid;
+  gap: var(--pr-sp-4);
+}
+.header {
+  display: flex;
+  gap: var(--pr-sp-4);
+  align-items: flex-start;
+}
+.logo {
+  width: 88px;
+  height: 88px;
+  border-radius: var(--pr-r-md);
+  object-fit: cover;
+  flex-shrink: 0;
+  background: var(--pr-sand);
+}
+.head {
+  display: grid;
+  gap: var(--pr-sp-2);
+  min-width: 0;
+  flex: 1;
+}
+.name {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-fs-h2);
+  color: var(--pr-ink);
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.handleRow {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  color: var(--pr-text-2);
+}
+.copyBtn {
+  border: 0;
+  background: none;
+  padding: 2px;
+  cursor: pointer;
+  color: inherit;
+  display: inline-flex;
+}
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-2);
+}
+.meta {
+  display: grid;
+  gap: var(--pr-sp-1);
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+}
+.metaRow {
+  display: flex;
+  gap: var(--pr-sp-2);
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* Описание/ссылки/действия — прямые дети `Card`, у которой нет внутреннего
+   гэпа: без этих отступов они слипались с шапкой карточки (отсмотр 2026-08-25). */
+.description {
+  margin: var(--pr-sp-4) 0 0;
+  white-space: pre-wrap;
+  color: var(--pr-ink);
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-2);
+  list-style: none;
+  margin: var(--pr-sp-3) 0 0;
+  padding: 0;
+}
+.link {
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-teal);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-pill);
+  padding: 2px var(--pr-sp-3);
+  text-decoration: none;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-2);
+  margin-top: var(--pr-sp-4);
+  padding-top: var(--pr-sp-4);
+  border-top: 1px solid var(--pr-line);
+}
+.sectionTitle {
+  font-family: var(--pr-font-head);
+  font-size: var(--pr-fs-h3);
+  margin: 0 0 var(--pr-sp-2);
+  color: var(--pr-ink);
+}
+.memberLink {
+  color: var(--pr-teal);
+  text-decoration: none;
+}
+.memberLink:hover {
+  text-decoration: underline;
+}
+
+/* Телефон (отсмотр 2026-08-25 «в объединениях тоже прижато вправо»):
+   логотип и заголовок по центру, ряды — центрированные. */
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .head {
+    width: 100%;
+    justify-items: center;
+  }
+  .handleRow,
+  .badges,
+  .metaRow,
+  .links {
+    justify-content: center;
+  }
+  /* Кнопки — столбцом во всю ширину, как в PassportHeader: центрированная
+     лента давала «Вступить» и «Скопировать ссылку» лесенкой разной ширины
+     (отсмотр 2026-08-25 «ступеньки кнопок»). */
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .description {
+    text-align: center;
+  }
+}

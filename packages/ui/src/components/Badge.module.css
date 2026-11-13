@@ -1,0 +1,71 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-1);
+  font-family: var(--pr-font-body);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-fs-xs);
+  line-height: 1;
+  padding: 6px 10px;
+  border-radius: var(--pr-r-pill);
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+/* Чип в строке списка (DEV-20 §2): тот же язык, меньше корпус —
+   строка 54px не должна распираться бейджем. */
+.sm {
+  font-size: 11px;
+  padding: 3px 8px;
+}
+.sm .dot {
+  width: 5px;
+  height: 5px;
+}
+
+.neutral {
+  background: var(--pr-sand);
+  color: var(--pr-text-2);
+  border-color: var(--pr-line);
+}
+.green {
+  background: rgba(55, 166, 107, 0.14);
+  color: var(--pr-green);
+}
+.teal {
+  background: rgba(30, 138, 128, 0.14);
+  color: var(--pr-teal-deep);
+}
+.amber {
+  background: rgba(255, 158, 44, 0.16);
+  color: var(--pr-amber-deep);
+}
+.red {
+  background: rgba(192, 57, 43, 0.12);
+  color: var(--pr-red);
+}
+.ink {
+  background: var(--pr-ink);
+  color: var(--pr-text-inv);
+}
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* На тёмной подложке (паспорт-рейл, DEV-19 §4): заливка становится
+   непрозрачно-светлой, цвет тона остаётся цветом текста — контраст держится,
+   палитра не расширяется. */
+.onDark {
+  background: var(--pr-white);
+  border-color: transparent;
+}
+.onDark.neutral {
+  background: var(--pr-cream);
+  color: var(--pr-text-2);
+}
+.onDark.ink {
+  background: var(--pr-cream);
+  color: var(--pr-ink);
+}

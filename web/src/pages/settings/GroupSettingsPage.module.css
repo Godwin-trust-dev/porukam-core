@@ -1,0 +1,75 @@
+.wrap {
+  display: grid;
+  gap: var(--pr-sp-3);
+  min-width: 0;
+}
+
+.head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--pr-sp-2);
+  min-width: 0;
+}
+
+.title {
+  margin: 0;
+  font-size: var(--pr-fs-h3);
+  /* Длинное название объединения на 390px не должно растягивать колонку. */
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.openCard {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+
+.sectionTitle {
+  margin: 0 0 var(--pr-sp-2);
+  font-size: var(--pr-fs-body);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--pr-sp-2);
+  min-width: 0;
+}
+.row > * {
+  min-width: 0;
+}
+
+.current {
+  margin: 0 0 var(--pr-sp-2);
+  color: var(--pr-text-2);
+  overflow-wrap: anywhere;
+}
+
+.logo,
+.logoEmpty {
+  width: 56px;
+  height: 56px;
+  flex: 0 0 auto;
+  border-radius: var(--pr-r-md);
+  object-fit: cover;
+}
+
+.logoEmpty {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--pr-sand);
+  color: var(--pr-text-mute);
+}
+
+/* Ячейка-обёртка для подсказки «?» рядом с группой кнопок логотипа:
+   FieldHelp — `display: contents`, без обёртки его «?» и раскрытый текст
+   стали бы отдельными элементами flex-строки `.row`. */
+.helpCell {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-1);
+}

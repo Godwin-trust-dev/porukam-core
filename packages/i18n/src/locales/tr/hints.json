@@ -1,0 +1,113 @@
+{
+  "helpButton": "Alan ipucu",
+  "onboarding": {
+    "handle": "Porukam’daki herkese açık adresiniz — mesajlaşma uygulamasındaki @ad gibi. Karşı taraflar sizi bununla bulur ve itibar kartınız bununla açılır. Latin harfleri, rakamlar, nokta ve alt çizgi.",
+    "name": "Karşı tarafın sözleşmede ve kartınızda göreceği ad. Yalnızca ad ya da ad soyad — işte kendinizi nasıl tanıtıyorsanız."
+  },
+  "contractNew": {
+    "title": "Liste için kısa sözleşme adı — örneğin “Mutfak tadilatı” veya “Kafe için logo”. Boş bırakırsanız açıklama kullanılır.",
+    "workDescription": "Tam olarak ne yapılacak: kapsam, sonuç, neyin tamamlanmış sayılacağı. Ne kadar somut olursa kabul o kadar kolay, anlaşmazlık o kadar az olur.",
+    "locationType": "İş nerede yapılıyor: iş sahibinde, yüklenicide, uzaktan veya bir adreste. Erişim ve teslim koşulları buna bağlıdır.",
+    "locationAddress": "İş yeri adresi — cadde, bina, gerekirse kat ve daire. Yalnızca sözleşme taraflarına görünür.",
+    "termType": "Süre nasıl sayılır: başlangıç ve bitiş tarihlerine göre mi, imzadan itibaren gün sayısına göre mi.",
+    "start": "Yüklenicinin işe başladığı tarih.",
+    "end": "İşin tamamen teslim edilmesi gereken tarih.",
+    "durationDays": "Sözleşmenin imzalandığı günden itibaren iş için kaç takvim günü ayrıldığı.",
+    "priceType": "Tüm kapsam için sabit fiyat veya aşama/birim başına ödeme. Karmaşık işlerde aşamalar daha kullanışlıdır.",
+    "currency": "Sözleşmedeki tüm tutarların para birimi. Sözleşme başına bir tane — imzadan sonra değiştirilemez.",
+    "warrantyDays": "Kabulden sonra yüklenicinin sonuçtaki kusurlardan kaç gün sorumlu olduğu. 0 — garanti yok.",
+    "acceptanceHours": "İş sahibinin teslim edilen aşamayı kontrol etmek için kaç saati olduğu. Süresinde yanıt vermezse aşama otomatik olarak kabul edilmiş sayılır.",
+    "paymentMethod": "Taraflar nasıl ödeşir: havale, nakit, başka bir yol. Platform parayı tutmaz ve aktarmaz — yalnızca anlaşmayı ve olguları kaydeder.",
+    "paymentOrder": "Her aşamanın ne zaman ödeneceği: başlamadan önce (ön ödeme) ya da iş sahibi kabul ettikten sonra (sonradan ödeme). Sözleşmenin tüm aşamaları için geçerlidir.",
+    "subcontract": "Yüklenicinin işin bir kısmı için yardımcı veya başka yükleniciler çalıştırıp çalıştıramayacağı.",
+    "premisesAccess": "Yüklenicinin iş sahibinin mekânına erişmesi gerekip gerekmediği ve hangi koşullarda (saat, anahtar, bulunma).",
+    "portfolioConsent": "İş sahibinin kabulden sonra sonucun yüklenicinin portfolyosunda gösterilmesine izin verip vermediği.",
+    "stages": "İşi aşamalara bölün: her aşama ayrı teslim edilir ve kabul edilir, aşamaların toplamı sözleşme tutarına eşittir. Küçük bir iş için tek aşama yeterlidir.",
+    "stageTitle": "Bu aşamada ne teslim ediliyor — örneğin “Taslak” veya “Montaj”.",
+    "stageAmount": "Yalnızca bu aşamanın bedeli. Tüm aşamaların toplamı sözleşme fiyatıyla eşleşmelidir.",
+    "stageDeadline": "Aşamanın iş sahibine kontrol için hangi tarihe kadar teslim edilmesi gerektiği.",
+    "counterparty": "Karşı taraf kim: @kullanıcıadı ile arayın veya kayıtlı kişilerden seçin. Daveti tam olarak bu kişi alır.",
+    "sale": {
+      "what": "Ne satılıyor — ürünün adı, alıcıya anlatacağınız gibi: “iPhone 13 128 GB”, “Trek FX 2 bisiklet”.",
+      "description": "Durum, kutu içeriği, özellikler — alıcının işlemden önce bilmesi gereken her şey.",
+      "condition": "Yeni, yeni gibi, kullanılmış ve yıpranmış — dürüst bir durum açıklaması anlaşmazlıkta iki tarafı da korur.",
+      "defects": "Bilinen kusurlar ve eksiklikler. Hiçbir şey belirtilmezse alıcı kusur olmadığını bekleme hakkına sahiptir.",
+      "completeness": "Kutuda ne var: kutu, şarj cihazı, belgeler, aksesuarlar.",
+      "identifiers": "Seri numarası, IMEI, VIN vb. — tam olarak bu ürünün teslim edildiğini doğrular.",
+      "householdPlot": "Kendi hobi bahçenizin ürünlerini satıyorsanız işaretleyin — vergi rejimini etkiler.",
+      "price": "Ürünün tam fiyatı. Ücretli teslimat varsa aşağıda ayrıca belirtilir.",
+      "deliveryType": "Ürün nasıl teslim edilir: elden alma, kurye, posta veya nakliye şirketi.",
+      "address": "Teslim veya gönderim adresi. Yalnızca taraflara görünür.",
+      "deliveryPayer": "Teslimatı kim öder — satıcı mı, alıcı mı.",
+      "tracking": "Gönderi takip numarası gerekli mi. Onunla gönderim ve teslim alma olgusunu kanıtlamak daha kolaydır.",
+      "deliveryTerm": "Teslim süresi: belirli bir tarih veya ödemeden sonraki gün sayısı.",
+      "deliveryDate": "Ürünün alıcıya teslim edilmesi gereken tarih.",
+      "deliveryDays": "Ödeme gününden itibaren teslim için kaç gün.",
+      "inspectionHours": "İşlem kapanmış sayılmadan önce alıcının ürünü aldıktan sonra kontrol etmek için kaç saati olduğu."
+    }
+  },
+  "settings": {
+    "displayName": "Karşı tarafın @kullanıcıadınızın yanında gördüğü isim. İş sahiplerinin sizi tanıdığı gibi yazın.",
+    "city": "Dizinimizde henüz olmayan yerleşimler için serbest metin açıklaması — kartınızda gösterilir, ancak aramayı etkilemez. Aranabilir çalışma bölgenizi aşağıdan ayarlayın.",
+    "handle": "Herkese açık adresiniz — insanlar sizi bununla bulur ve itibar kartınızı açar. 3 ile 20 karakter arası: Latin harfleri, rakamlar, alt çizgi.",
+    "avatar": "Profil fotoğrafınızı karşı taraflar sözleşmelerde, sohbetlerde ve kartınızda görür. Gerçek bir yüz, bir resimden daha çok güven verir.",
+    "country": "Sözleşmelerinize hangi ülkenin hukukunun uygulandığı (yetki alanı). Adresinizle veya iş aradığınız yerle ilgisi yoktur; para birimleri ve vergiler buna bağlı değildir.",
+    "phone": "Numara, numaranız zaten elinde olanların sizi telefonla bulmasını sağlar. Profilinizde yayımlanmaz.",
+    "notif": {
+      "deals": "Sözleşme davetleri, önerilen değişiklikler, imzalama, aşama kabulü — işlemlerin gidişatıyla ilgili her şey.",
+      "chats": "Sözleşme sohbetlerindeki ve başvurulardaki yeni iletiler.",
+      "payments": "Aşama ödemeleri ve hesaplaşma onayları.",
+      "deadlines": "Süre hatırlatmaları: kabul penceresi doluyor, aşamanın teslim tarihi yaklaşıyor.",
+      "disputes": "Bir anlaşmazlığın açılması, tarafların yanıtları ve anlaşmazlıkla ilgili kararlar."
+    }
+  },
+  "stage": {
+    "totalCost": "İşin toplam bedeli. Girerseniz tutar aşamalara eşit olarak dağıtılır — sonra her aşamayı elle düzeltebilirsiniz.",
+    "title": "Bu aşamada ne teslim ediliyor — “Taslak tasarım”, “Montaj”, “İlk parti”. Adı iki taraf da görür ve sözleşmeye geçer.",
+    "amount": "Tam olarak bu aşamanın bedeli. Aşamaların toplamı sözleşme fiyatıyla eşleşmelidir — yoksa sözleşme dondurulamaz.",
+    "duration": "Aşama için kaç gün ayrıldığı. Sayım sözleşmenin imzalanmasından değil, aşamanın başlangıcından başlar.",
+    "checklist": "Kabul ölçütleri: iş sahibi aşamayı hangi maddelere göre kontrol eder. Ölçülebilir yazın — “iki tasarım düzeltmesi”, “akıntısız duvarlar”: böyle bir madde üzerinde tartışacak pek bir şey kalmaz.",
+    "evidence": "“Kanıt gerekli” işaretli madde eklenmiş bir fotoğraf ya da dosya bekler: olmadığında aşama teslim edilirken bir uyarı çıkar, ancak teslim engellenmez. Kanıtlar sözleşme dosyasında kalır ve anlaşmazlıkta işe yarar.",
+    "materials": {
+      "name": "Katalogdan bir malzeme — böylece ad ve ölçü birimleri iki tarafta da aynı olur. Aradığınız yoksa “diğer” seçip kendi adınızı yazın.",
+      "customName": "Katalogda karşılığı yoksa malzemenin kendi sözlerinizle adı.",
+      "quantity": "Ne kadar gerekiyor — seçtiğiniz ölçü biriminde, sayıyla.",
+      "unit": "Miktarın ölçü birimi: adet, metre, kilogram, litre.",
+      "delivery": "Malzemenin gelmesi kaç gün sürer. Aşama süresinin gerçekçi olup olmadığını görmeye yarar.",
+      "deliveryBase": "Teslim süresinin sayılmaya başladığı olay: sözleşmenin imzalanması, ön ödeme ya da aşamanın başlaması. Böylece süre takvim tarihine bağlı kalmaz.",
+      "suppliedBy": "Malzemeyi kim alır ve getirir — iş sahibi mi, yüklenici mi. Bu maddedeki anlaşmazlık sık görülen bir duraklama nedenidir.",
+      "price": "Sözleşmenin para biriminde bir birim malzemenin fiyatı. Yüklenicinin malzemesinde zorunludur ve sıfırdan büyüktür; iş sahibinin malzemesi sıfır fiyatlı olabilir."
+    }
+  },
+  "group": {
+    "handle": "Birliğin herkese açık adresi — mesajlaşma uygulamasındaki @ad gibi. Birlik sayfası bununla açılır ve bağlantılar buna verilir.",
+    "name": "Birliğin insanlar için adı. Sayfasını açan herkes görür.",
+    "sphere": "Birliğin ana faaliyet alanı. İnsanlar birliği aramada bu alana göre bulur, üyeler de buna göre eşleşir.",
+    "geo": "Birliğin kapsamı: tüm dünya, bir ülke ya da tek bir şehir. Aramada kimin göreceğini bu belirler.",
+    "country": "Kapsam ülkesi. Kapsam “ülke” veya “şehir” ise zorunludur.",
+    "city": "Ana kapsam şehri. Kapsam “şehir” olduğunda zorunludur.",
+    "description": "Birlik ne hakkında ve kimi bekliyorsunuz: ne yapıyorsunuz, kurallar neler, üyelere nasıl yardım ediyorsunuz.",
+    "visibility": "Açık birliği herkes görür ve aramada bulur; kapalı birliği yalnızca üyeler ve doğrudan bağlantısı olanlar.",
+    "joinPolicy": "İçeri nasıl girilir: düğmeyle serbestçe ya da sahibinin onayladığı başvuruyla.",
+    "links": "Birliğin başka servislerdeki bağlantıları — site, kanal, sohbet. En fazla 10 tane, birlik sayfasında görünür.",
+    "logo": "Birliğin logo görseli: aramada, kartta ve adın yanında görünür. Kare görsel daha iyi durur."
+  },
+  "portfolio": {
+    "title": "Bu çalışmaya ne ad verilecek — “Apartman dairesinde mutfak”, “Kafe için tek sayfalık site”.",
+    "sphere": "Çalışmanın ait olduğu alan. Benzer bir şey arayanlar çalışmanızı bu alana göre bulur.",
+    "startedAt": "İşe ne zaman başladınız. Zorunlu değil, ama bitiş tarihiyle birlikte işin ne kadar sürdüğü görünür.",
+    "completedAt": "Çalışma ne zaman bitti. Zorunlu alan: portfolyodaki çalışmalar bu tarihe göre sıralanır.",
+    "city": "Çalışmanın yapıldığı şehir. Yakındaki iş sahiplerinin kendilerine yakın bir yüklenici seçmesine yardımcı olur.",
+    "description": "Ne yapıldı, hangi zorlukların üstesinden geldiniz, sonuç ne oldu. Uzunluk sınırı yok.",
+    "photos": "Çalışmanın en fazla 5 fotoğrafı. İlki listede kapak olur; kapağı istediğiniz zaman değiştirebilirsiniz."
+  },
+  "revision": {
+    "item": "Sözleşmenin hangi koşulunu değiştirmeyi öneriyorsunuz. Listede bu sözleşmenin alanları var; “diğer” serbest metindir.",
+    "before": "Sözleşmedeki mevcut değer. Kendiliğinden gelir ve düzenlenemez — böylece iki taraf da aynı şeyi görür.",
+    "after": "Koşulun yeni değeri. Karşı taraf bunu kabul eder ya da reddeder; anlaşmaya varılana kadar sözleşme olduğu gibi kalır.",
+    "comment": "Değişiklik neden gerekli. Yorumu karşı taraf görür — kısa bir açıklama onayı hızlandırır."
+  },
+  "signing": {
+    "declineComment": "Tam olarak ne uymadı ve ne düzeltilmeli. Metni karşı taraf görür ve sözleşme geçmişinde kalır."
+  }
+}

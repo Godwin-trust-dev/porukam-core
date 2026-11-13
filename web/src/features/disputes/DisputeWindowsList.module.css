@@ -1,0 +1,72 @@
+/* Окна — строки одной поверхности (`Surface`, hairline между ними), надпись
+   раздела — `SectionLabel` (финал доска A). */
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Строка: текст слева, кнопка справа в той же строке (ритм ListRow 8×13);
+   на 390px кнопка остаётся справа — она короткая и не растянута. */
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+  padding: var(--pr-d-row-pad-y) var(--pr-d-row-pad-x);
+  min-height: var(--pr-d-row-min-h);
+  min-width: 0;
+  cursor: pointer;
+}
+.item:hover {
+  background: var(--pr-cream);
+}
+.item:focus-visible {
+  outline: 2px solid var(--pr-amber);
+  outline-offset: -2px;
+}
+.item > :last-child {
+  flex: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-1);
+  min-width: 0;
+}
+
+/* Две строки с многоточием — высота строки ≤ 64 (замечание 03.09). */
+.main {
+  flex: 1;
+}
+.kind {
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-title);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.meta {
+  color: var(--pr-text-2);
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-3);
+  min-width: 0;
+}
+
+.note {
+  margin: 0;
+  color: var(--pr-text-mute);
+  font-size: var(--pr-fs-sm);
+}

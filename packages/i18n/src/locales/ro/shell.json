@@ -1,0 +1,12 @@
+{
+  "actorSwitcher": {
+    "triggerLabel": "Schimbă profilul",
+    "personalLabel": "Personal",
+    "legalFormIp": "PFA",
+    "legalFormOoo": "SRL",
+    "addOrg": "Adaugă o organizație",
+    "groups": "Grupurile mele"
+  },
+  "sectionMenu": "Secțiuni",
+  "logout": "Ieși"
+}

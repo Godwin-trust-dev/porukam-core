@@ -1,0 +1,23 @@
+/* Рабочая область (DEV-19 §1): контейнер 12-колоночной сетки. Ширину
+   ограничиваем ТУТ, один раз на оболочку, — страницы своих `max-width` не
+   держат, иначе на большом мониторе снова получится мобильный столбец. */
+.area {
+  width: 100%;
+  max-width: var(--pr-work-max);
+  margin-inline: auto;
+  min-width: 0;
+}
+
+/* Явная 12-колоночная сетка — для страниц, которые раскладывают блоки сами.
+   Шаг (gutter) — из --pr-sp-*, как и весь ритм. */
+.grid {
+  display: grid;
+  gap: var(--pr-sp-6);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(var(--pr-work-cols), minmax(0, 1fr));
+  }
+}

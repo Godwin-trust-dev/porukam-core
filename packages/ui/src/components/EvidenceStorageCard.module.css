@@ -1,0 +1,34 @@
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--pr-sp-3);
+}
+
+.icon {
+  flex: none;
+  color: var(--pr-teal-deep);
+}
+
+.text {
+  flex: 1;
+  min-width: 0;
+}
+.title {
+  margin: 0;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-ink);
+  letter-spacing: var(--pr-ls-head);
+}
+.meta {
+  margin: var(--pr-sp-1) 0 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+
+.actions {
+  flex: none;
+  display: flex;
+  gap: var(--pr-sp-2);
+}

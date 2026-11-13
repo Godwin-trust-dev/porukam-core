@@ -1,0 +1,61 @@
+.wrap {
+  display: grid;
+  gap: var(--pr-sp-5);
+  /* DEV-19 §5: форма/экран-действие — контейнер по центру рабочей области,
+     поля не разъезжаются на всю ширину монитора. */
+  max-inline-size: var(--pr-form-max);
+  margin-inline: auto;
+}
+
+.layout {
+  display: grid;
+  /* Неявная колонка `auto` тянулась до min-content (длинные суммы и чипы
+     правок) и уносила экран за край на 390px (отсмотр 2026-08-25). */
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--pr-sp-5);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--pr-sp-5);
+  min-width: 0;
+}
+
+.sidebar {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .wrap {
+    max-inline-size: var(--pr-work-max);
+    margin-inline: auto;
+  }
+  .layout {
+    grid-template-columns: minmax(0, 1fr) 320px;
+    align-items: start;
+  }
+  .sidebar {
+    display: block;
+    position: sticky;
+    top: var(--pr-sp-5);
+  }
+}
+
+.notFoundText {
+  text-align: center;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+
+.terminal {
+  display: grid;
+  gap: var(--pr-sp-3);
+  text-align: center;
+  padding: var(--pr-sp-8) var(--pr-sp-4);
+}
+
+.acceptAllRow {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,26 @@
+.block {
+  background: var(--pr-ink);
+  border-radius: var(--pr-r-md);
+  padding: var(--pr-sp-4);
+  display: grid;
+  gap: var(--pr-sp-1);
+  overflow-x: auto;
+}
+.row {
+  margin: 0;
+  font-family: monospace;
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-on-ink);
+  white-space: nowrap;
+}
+.file {
+  color: var(--pr-on-ink-2);
+}
+.arrow {
+  margin: 0 var(--pr-sp-1);
+  color: var(--pr-text-mute);
+}
+.hash {
+  color: var(--pr-amber-hi);
+  font-variant-numeric: tabular-nums;
+}

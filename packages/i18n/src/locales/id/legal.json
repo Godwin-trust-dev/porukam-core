@@ -1,0 +1,25 @@
+{
+  "machineNoteLabel": "terjemahan otomatis",
+  "machineNoteTooltip": "Terjemahan mesin, disediakan untuk kemudahan",
+  "fallbackNotice": "Dokumen ini belum diterjemahkan ke bahasa Anda — kami menampilkan aslinya dalam bahasa Inggris.",
+  "loadError": "Dokumen tidak bisa dimuat.",
+  "openAria": "Buka dokumen",
+  "accountDeletion": {
+    "title": "Menghapus akun Porukam",
+    "lead": "Halaman ini menjelaskan cara menghapus akun di Porukam, apa yang dihapus, apa yang disimpan dan berapa lama.",
+    "stepsTitle": "Cara menghapus akun",
+    "step1": "Masuk ke aplikasi Porukam atau buka porukam.app.",
+    "step2": "Buka Profil → Pengaturan → Akun.",
+    "step3": "Tekan “Hapus akun” dan konfirmasikan penghapusannya.",
+    "step4": "Akun dihapus seketika dan semua sesi di semua perangkat diakhiri.",
+    "deletedTitle": "Apa yang dihapus seketika dan selamanya",
+    "deletedText": "Nama, alamat email, nomor telepon, foto profil dan karya di portofolio, kontak tersimpan, pengaturan, serta perangkat yang terdaftar untuk notifikasi push. Kunci enkripsi yang melindungi data pribadi Anda dimusnahkan, sehingga data itu tidak dapat dikembalikan, baik oleh kami maupun oleh siapa pun.",
+    "keptTitle": "Apa yang disimpan dan berapa lama",
+    "keptText": "Materi kontrak yang sudah terjadi: teks kontrak, tanda tangan, bukti, riwayat tahap dan pembayaran, serta percakapan tentang kontrak. Semua itu milik kedua pihak transaksi dan melindungi hak masing-masing, jadi satu pihak tidak dapat menghapusnya sendirian. Materi seperti itu disimpan satu tahun setelah kontrak selesai, lalu dihapus.",
+    "keptAnon": "Di dalam materi itu Anda tetap ada dengan pengenal anonim. Hash tanda tangan dan rantai bukti tidak memuat data pribadi dan tidak dihapus.",
+    "blockedTitle": "Kapan akun tidak bisa dihapus",
+    "blockedText": "Selama Anda masih punya kontrak yang belum selesai atau sengketa yang terbuka, penghapusan ditahan — selesaikan dulu semuanya. Aplikasi menunjukkan berapa jumlahnya dan yang mana.",
+    "noAccessTitle": "Jika Anda tidak bisa masuk",
+    "noAccessText": "Tulis ke {{email}} dari alamat email yang tertaut ke akun Anda, dan kami akan menghapus akun itu atas permintaan. Alamat yang sama tercantum dalam Kebijakan Privasi."
+  }
+}

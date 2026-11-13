@@ -1,0 +1,25 @@
+{
+  "machineNoteLabel": "avto-tarjima",
+  "machineNoteTooltip": "Mashina tarjimasi, qulaylik uchun berilgan",
+  "fallbackNotice": "Bu hujjat hali sizning tilingizga tarjima qilinmagan — ingliz tilidagi aslini koʻrsatamiz.",
+  "loadError": "Hujjatni yuklash amalga oshmadi.",
+  "openAria": "Hujjatni ochish",
+  "accountDeletion": {
+    "title": "Porukam hisobini oʻchirish",
+    "lead": "Bu yerda Porukamʼdagi hisobni qanday oʻchirish, bunda nima oʻchirilishi, nima va qancha muddat saqlanishi tushuntirilgan.",
+    "stepsTitle": "Hisobni qanday oʻchirish mumkin",
+    "step1": "Porukam ilovasiga kiring yoki porukam.app manzilini oching.",
+    "step2": "Profil → Sozlamalar → Hisob boʻlimini oching.",
+    "step3": "«Hisobni oʻchirish» tugmasini bosing va oʻchirishni tasdiqlang.",
+    "step4": "Hisob darhol oʻchiriladi, barcha qurilmalardagi barcha seanslar yakunlanadi.",
+    "deletedTitle": "Nima darhol va qaytarib boʻlmas tarzda oʻchiriladi",
+    "deletedText": "Ismingiz, elektron pochta manzilingiz, telefoningiz, profil fotosi va portfoliodagi ishlaringiz, manzillar kitobi, sozlamalar, push-bildirishnomalar uchun roʻyxatga olingan qurilmalar. Shaxsiy maʼlumotlaringizni himoya qiladigan shifrlash kalitlari yoʻq qilinadi — bu maʼlumotlarni na biz, na boshqa birov qaytara olmaydi.",
+    "keptTitle": "Nima va qancha muddat saqlanadi",
+    "keptText": "Allaqachon tuzilgan shartnomalar materiallari: shartnoma matni, imzolar, dalillar, bosqichlar va toʻlovlar tarixi, shartnoma boʻyicha yozishmalar. Ular bitimning har ikki tarafiga tegishli va har birining huquqlarini himoya qiladi, shuning uchun bir taraf ularni yolgʻiz oʻzi olib tashlay olmaydi. Bunday materiallar shartnoma yakunlangandan keyin bir yil saqlanadi, soʻng oʻchiriladi.",
+    "keptAnon": "Bu materiallarda Siz shaxssizlantirilgan identifikator ostida qolasiz. Imzo xeshlari va dalillar zanjiri shaxsiy maʼlumot saqlamaydi va oʻchirilmaydi.",
+    "blockedTitle": "Hisobni qachon oʻchirib boʻlmaydi",
+    "blockedText": "Yakunlanmagan shartnomalaringiz yoki ochiq nizolaringiz boʻlsa, oʻchirish ushlab turiladi — avval ularni yakunlang. Ilova ularning nechtaligini va aynan qaysilarini koʻrsatadi.",
+    "noAccessTitle": "Agar kira olmasangiz",
+    "noAccessText": "Hisobingizga bogʻlangan elektron pochta manzilidan {{email}} manziliga yozing — hisobni soʻrovingiz boʻyicha oʻchiramiz. Xuddi shu manzil Maxfiylik siyosatida ham keltirilgan."
+  }
+}

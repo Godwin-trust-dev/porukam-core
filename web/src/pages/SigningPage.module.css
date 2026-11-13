@@ -1,0 +1,99 @@
+.wrap {
+  display: grid;
+  gap: var(--pr-sp-5);
+  /* DEV-19 §5: форма/экран-действие — контейнер по центру рабочей области,
+     поля не разъезжаются на всю ширину монитора. */
+  max-inline-size: var(--pr-form-max);
+  margin-inline: auto;
+  /* Липкая кнопка внизу требует запаса, чтобы не перекрывать последний блок. */
+  padding-bottom: calc(var(--pr-touch-min) + var(--pr-sp-8));
+}
+.head {
+  display: grid;
+  gap: var(--pr-sp-2);
+}
+.title {
+  font-size: var(--pr-fs-h2);
+  color: var(--pr-ink);
+  margin: 0;
+}
+.meta {
+  display: flex;
+  gap: var(--pr-sp-2);
+  flex-wrap: wrap;
+  align-items: center;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+/* DEV-16b — язык договора: тихий блок, не «юр-полотно» (§6). */
+.languageBlock {
+  display: grid;
+  gap: var(--pr-sp-3);
+}
+.bodyText {
+  margin: 0;
+  color: var(--pr-ink);
+  font-size: var(--pr-fs-sm);
+  line-height: var(--pr-lh-normal);
+  white-space: pre-wrap;
+}
+.card {
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  padding: var(--pr-sp-5);
+  display: grid;
+  gap: var(--pr-sp-1);
+}
+.sectionTitle {
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-ink);
+  margin: 0 0 var(--pr-sp-2);
+}
+.devToggle {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-mute);
+  justify-content: center;
+}
+.gateAction {
+  margin-top: var(--pr-sp-2);
+}
+.actionsBar {
+  position: sticky;
+  bottom: var(--pr-sp-4);
+  display: grid;
+  gap: var(--pr-sp-1);
+  justify-items: center;
+  text-align: center;
+  background: var(--pr-cream);
+  padding-top: var(--pr-sp-3);
+}
+
+/* Дополнительные условия (ADR-123) — часть подписываемого снимка версии. */
+.additionalTerms {
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  padding: var(--pr-sp-4);
+  background: var(--pr-white);
+  box-shadow: var(--pr-shadow-sm);
+}
+.additionalTitle {
+  font-family: var(--pr-font-head);
+  font-size: var(--pr-fs-h3);
+  margin: 0 0 var(--pr-sp-3);
+  color: var(--pr-ink);
+}
+.additionalList {
+  margin: 0;
+  padding-inline-start: var(--pr-sp-5);
+  display: grid;
+  gap: var(--pr-sp-2);
+  color: var(--pr-ink);
+}
+.additionalList li {
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}

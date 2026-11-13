@@ -1,0 +1,46 @@
+.wrap {
+  display: grid;
+  gap: var(--pr-sp-2);
+}
+.label {
+  font-size: var(--pr-fs-sm);
+  font-weight: var(--pr-fw-medium);
+  color: var(--pr-ink);
+}
+.hint {
+  margin: 0;
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-mute);
+}
+.group {
+  display: grid;
+  gap: var(--pr-sp-1);
+}
+.groupLabel {
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-mute);
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-2);
+}
+.chip {
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-pill);
+  padding: var(--pr-sp-2) var(--pr-sp-4);
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-ink);
+  cursor: pointer;
+  min-height: var(--pr-touch-min);
+}
+.chip:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.chipActive {
+  background: var(--pr-ink);
+  color: var(--pr-text-inv);
+  border-color: var(--pr-ink);
+}

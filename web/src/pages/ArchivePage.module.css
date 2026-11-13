@@ -1,0 +1,91 @@
+.wrap {
+  display: grid;
+  gap: var(--pr-sp-5);
+  /* DEV-19 §5: форма/экран-действие — контейнер по центру рабочей области,
+     поля не разъезжаются на всю ширину монитора. */
+  max-inline-size: var(--pr-form-max);
+  margin-inline: auto;
+  padding-bottom: var(--pr-sp-8);
+}
+.layout {
+  display: grid;
+  gap: var(--pr-sp-5);
+}
+.left,
+.right {
+  display: grid;
+  gap: var(--pr-sp-5);
+  min-width: 0;
+  align-content: start;
+}
+.card {
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  padding: var(--pr-sp-5);
+  display: grid;
+  gap: var(--pr-sp-3);
+}
+.sectionTitle {
+  font-family: var(--pr-font-head);
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-ink);
+  margin: 0;
+}
+.errorBox {
+  display: grid;
+  gap: var(--pr-sp-3);
+  justify-items: start;
+}
+
+@media (min-width: 1024px) {
+  .wrap {
+    max-inline-size: var(--pr-work-max);
+    margin-inline: auto;
+  }
+  .layout {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+/* Тёмная плашка «sha256 · RFC 3161 · проверяется без платформы» (доска B) —
+   единственная тёмная поверхность рабочего экрана, кроме якорей. */
+.plate {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  padding: var(--pr-sp-4);
+  border-radius: var(--pr-r-lg);
+  background: var(--pr-grad-dark);
+  color: var(--pr-on-ink);
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+}
+.plateKey {
+  color: var(--pr-amber-hi);
+  font-weight: var(--pr-fw-bold);
+}
+
+/* Шаг 2 «Проверяется без нас»: команда на каждую систему отдельной строкой.
+   `direction: ltr` + изоляция — команда не переворачивается в RTL-локалях. */
+.verifyOs {
+  margin: var(--pr-sp-2) 0 0;
+  padding-inline-start: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--pr-sp-2);
+}
+.verifyCode {
+  font-family: ui-monospace, monospace;
+  font-size: var(--pr-fs-xs);
+  background: var(--pr-cream);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-sm);
+  padding: 1px 6px;
+  direction: ltr;
+  unicode-bidi: isolate;
+  display: inline-block;
+  max-inline-size: 100%;
+  overflow-wrap: anywhere;
+}

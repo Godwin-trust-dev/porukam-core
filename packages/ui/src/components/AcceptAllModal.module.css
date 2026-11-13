@@ -1,0 +1,51 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+  margin: var(--pr-sp-3) 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: var(--pr-sp-2) 0;
+  border-bottom: 1px solid var(--pr-line);
+}
+
+.itemLabel {
+  font-weight: var(--pr-fw-medium);
+  color: var(--pr-ink);
+}
+
+.diff {
+  font-size: var(--pr-fs-sm);
+  font-variant-numeric: tabular-nums;
+}
+
+.before {
+  color: var(--pr-text-2);
+  text-decoration: line-through;
+}
+
+.after {
+  color: var(--pr-ink);
+  font-weight: var(--pr-fw-medium);
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: var(--pr-sp-2);
+}
+
+.sum {
+  font-variant-numeric: tabular-nums;
+}
+
+.hint {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+  margin-top: var(--pr-sp-3);
+}

@@ -1,0 +1,39 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-3);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--pr-font-head);
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-ink);
+}
+
+.text {
+  margin: 0;
+  font-size: var(--pr-fs-sm);
+  line-height: var(--pr-lh-normal);
+  color: var(--pr-text-2);
+}
+
+.error {
+  margin: 0;
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-red);
+}
+
+.actions {
+  display: flex;
+  gap: var(--pr-sp-3);
+  flex-wrap: wrap;
+}
+
+.connected {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  color: var(--pr-green);
+  font-weight: var(--pr-fw-medium);
+}

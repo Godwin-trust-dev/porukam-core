@@ -1,0 +1,89 @@
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-3);
+}
+
+.option {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--pr-sp-3);
+  min-height: var(--pr-touch-min);
+  padding: var(--pr-sp-3) var(--pr-sp-4);
+  border: 1.5px solid var(--pr-line);
+  border-radius: var(--pr-r-md);
+  background: var(--pr-white);
+  text-align: start;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  transition: border-color var(--pr-dur-fast) var(--pr-ease), background var(--pr-dur-fast) var(--pr-ease);
+}
+
+.option:hover {
+  border-color: var(--pr-teal);
+}
+
+.option:focus-visible {
+  outline: 3px solid var(--pr-amber-bright);
+  outline-offset: 2px;
+}
+
+.selected {
+  border-color: var(--pr-teal);
+  background: color-mix(in srgb, var(--pr-teal) 6%, var(--pr-white));
+}
+
+.dot {
+  flex: none;
+  margin-top: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1.8px solid var(--pr-line);
+  position: relative;
+}
+
+.selected .dot {
+  border-color: var(--pr-teal);
+}
+
+.selected .dot::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  background: var(--pr-teal);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-1);
+  min-width: 0;
+}
+
+.labelRow {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  flex-wrap: wrap;
+}
+
+.label {
+  font-weight: var(--pr-fw-medium);
+  color: var(--pr-text);
+}
+
+.badge {
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-teal-deep);
+  background: color-mix(in srgb, var(--pr-teal) 12%, var(--pr-white));
+  border-radius: var(--pr-r-pill);
+  padding: 2px var(--pr-sp-2);
+}
+
+.hint {
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+}

@@ -1,0 +1,9 @@
+/* Карточки — в грид, не в один столбец (DEV-19 §1). auto-fill по
+   `--pr-card-min` даёт 1 колонку на телефоне, 2 в главном столбце десктопа
+   и 3 на широком мониторе — без отдельных брейкпоинтов на каждый экран. */
+.grid {
+  display: grid;
+  gap: var(--pr-sp-3);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--pr-card-min)), 1fr));
+  align-items: start;
+}

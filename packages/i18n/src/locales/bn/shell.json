@@ -1,0 +1,12 @@
+{
+  "actorSwitcher": {
+    "triggerLabel": "প্রোফাইল বদলান",
+    "personalLabel": "ব্যক্তিগত",
+    "legalFormIp": "একক মালিকানা",
+    "legalFormOoo": "লিমিটেড কোম্পানি",
+    "addOrg": "প্রতিষ্ঠান যোগ করুন",
+    "groups": "আমার গোষ্ঠী"
+  },
+  "sectionMenu": "বিভাগ",
+  "logout": "লগ আউট"
+}

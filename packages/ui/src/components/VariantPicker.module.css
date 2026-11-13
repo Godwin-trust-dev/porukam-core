@@ -1,0 +1,34 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-3);
+}
+
+.from {
+  display: flex;
+  align-items: baseline;
+  gap: var(--pr-sp-2);
+  margin: 0;
+  font-size: var(--pr-fs-sm);
+}
+
+.fromLabel {
+  color: var(--pr-text-2);
+}
+
+.fromValue {
+  color: var(--pr-text);
+  font-weight: var(--pr-fw-medium);
+  font-variant-numeric: tabular-nums;
+  text-decoration: line-through;
+  text-decoration-color: var(--pr-line);
+}
+
+.pick {
+  font-size: var(--pr-fs-xs);
+  font-weight: var(--pr-fw-medium);
+  color: var(--pr-teal-deep);
+  background: color-mix(in srgb, var(--pr-teal) 12%, var(--pr-white));
+  border-radius: var(--pr-r-pill);
+  padding: 2px var(--pr-sp-2);
+}

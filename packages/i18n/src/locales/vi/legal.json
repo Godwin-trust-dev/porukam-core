@@ -1,0 +1,25 @@
+{
+  "machineNoteLabel": "dịch tự động",
+  "machineNoteTooltip": "Bản dịch máy, cung cấp cho thuận tiện",
+  "fallbackNotice": "Tài liệu này chưa được dịch sang ngôn ngữ của bạn — chúng tôi hiển thị bản gốc tiếng Anh.",
+  "loadError": "Không tải được tài liệu.",
+  "openAria": "Mở tài liệu",
+  "accountDeletion": {
+    "title": "Xóa tài khoản Porukam",
+    "lead": "Trang này giải thích cách xóa tài khoản trong Porukam, những gì bị xóa, những gì được giữ lại và trong bao lâu.",
+    "stepsTitle": "Cách xóa tài khoản",
+    "step1": "Đăng nhập ứng dụng Porukam hoặc mở porukam.app.",
+    "step2": "Mở Trang cá nhân → Cài đặt → Tài khoản.",
+    "step3": "Nhấn “Xóa tài khoản” và xác nhận việc xóa.",
+    "step4": "Tài khoản bị xóa ngay lập tức, mọi phiên trên mọi thiết bị đều kết thúc.",
+    "deletedTitle": "Những gì bị xóa ngay và không thể khôi phục",
+    "deletedText": "Tên, địa chỉ email, số điện thoại, ảnh đại diện và các công việc trong hồ sơ năng lực, danh bạ đã lưu, cài đặt và các thiết bị đã đăng ký nhận thông báo đẩy. Khóa mã hóa bảo vệ dữ liệu cá nhân của bạn bị hủy, nên không ai lấy lại được dữ liệu đó, kể cả chúng tôi.",
+    "keptTitle": "Những gì được giữ lại và trong bao lâu",
+    "keptText": "Tài liệu của các hợp đồng đã lập: văn bản hợp đồng, chữ ký, chứng cứ, lịch sử giai đoạn và thanh toán, tin nhắn về hợp đồng. Chúng thuộc về cả hai bên của giao dịch và bảo vệ quyền của mỗi bên, nên một bên không thể tự mình xóa. Tài liệu như vậy được giữ một năm sau khi hợp đồng hoàn tất, rồi bị xóa.",
+    "keptAnon": "Trong những tài liệu đó, bạn hiện diện dưới một định danh ẩn danh. Mã băm của chữ ký và chuỗi chứng cứ không chứa dữ liệu cá nhân và không bị xóa.",
+    "blockedTitle": "Khi nào không thể xóa tài khoản",
+    "blockedText": "Khi bạn còn hợp đồng chưa hoàn tất hoặc tranh chấp đang mở, việc xóa sẽ bị giữ lại — hãy hoàn tất chúng trước. Ứng dụng cho biết có bao nhiêu và là những cái nào.",
+    "noAccessTitle": "Nếu bạn không đăng nhập được",
+    "noAccessText": "Hãy viết tới {{email}} từ địa chỉ email gắn với tài khoản của bạn, chúng tôi sẽ xóa tài khoản theo yêu cầu. Địa chỉ này cũng có trong Chính sách bảo mật."
+  }
+}

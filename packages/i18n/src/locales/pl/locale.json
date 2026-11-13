@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "Język interfejsu",
+  "globeTriggerAria": "Język interfejsu",
+  "rowLabel": "Język interfejsu",
+  "listTitle": "Język interfejsu",
+  "searchPlaceholder": "Szukaj języka…",
+  "searchAriaLabel": "Szukaj języka",
+  "searchClear": "Wyczyść wyszukiwanie",
+  "currentSectionTitle": "Obecny",
+  "allSectionTitle": "Wszystkie języki",
+  "noResults": "Nie znaleziono języka",
+  "betaBadge": "tłumaczenie automatyczne",
+  "betaTooltip": "Przetłumaczone automatycznie — może być nieprecyzyjne",
+  "currentAria": "Obecny język",
+  "disabledToast": "{{lang}} jest chwilowo niedostępny · pokazujemy angielski",
+  "closeLabel": "Zamknij",
+  "onboardingHint": "Rozpoznany automatycznie — możesz go zmienić w każdej chwili",
+  "settingsRowLabel": "Język i region",
+  "settingsLanguageExplain": "To język aplikacji. Oficjalny język umowy wybiera się osobno — druga strona widzi tłumaczenie, ale podpisywany jest tekst oficjalny.",
+  "loadErrorRetry": "Ponów",
+  "loadError": "Nie udało się wczytać listy języków"
+}

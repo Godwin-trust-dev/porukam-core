@@ -1,0 +1,83 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-1);
+}
+
+.label {
+  font-size: var(--pr-fs-sm);
+  font-weight: var(--pr-fw-medium);
+  color: var(--pr-text);
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  min-height: var(--pr-touch-min);
+  padding: 0 var(--pr-sp-4);
+  border: 1.5px solid var(--pr-line);
+  border-radius: var(--pr-r-md);
+  background: var(--pr-white);
+}
+
+.field:focus-within {
+  border-color: var(--pr-teal);
+  outline: 2px solid var(--pr-teal);
+  outline-offset: 1px;
+}
+
+.invalid {
+  border-color: var(--pr-red);
+}
+
+.prefix {
+  color: var(--pr-text-mute);
+  font-weight: var(--pr-fw-medium);
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font: inherit;
+  font-size: var(--pr-fs-body);
+  color: var(--pr-text);
+  padding: var(--pr-sp-2) 0;
+}
+
+.status {
+  flex: none;
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-mute);
+}
+
+.ok {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--pr-green);
+}
+
+.taken {
+  color: var(--pr-red);
+}
+
+.hint {
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-2);
+}
+
+.error {
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-red);
+}
+
+.labelRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-1);
+}

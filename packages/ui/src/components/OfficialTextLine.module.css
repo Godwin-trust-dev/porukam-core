@@ -1,0 +1,23 @@
+.line {
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-1);
+  min-height: var(--pr-touch-min);
+  padding: 0;
+  font: inherit;
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+  text-align: start;
+}
+.line:hover,
+.line:focus-visible {
+  color: var(--pr-ink);
+}
+.action {
+  color: var(--pr-teal);
+  font-weight: var(--pr-fw-medium);
+}

@@ -1,0 +1,10 @@
+.text {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-body);
+}
+.error {
+  margin: var(--pr-sp-3) 0 0;
+  color: var(--pr-red);
+  font-size: var(--pr-fs-sm);
+}

@@ -1,0 +1,79 @@
+.wrap {
+  display: grid;
+  gap: var(--pr-sp-3);
+}
+.zone {
+  display: grid;
+  justify-items: center;
+  gap: var(--pr-sp-2);
+  text-align: center;
+  padding: var(--pr-sp-6) var(--pr-sp-4);
+  border: 2px dashed var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  background: var(--pr-cream);
+  transition: border-color var(--pr-dur) var(--pr-ease), background var(--pr-dur) var(--pr-ease);
+}
+.zone[data-drag] {
+  border-color: var(--pr-amber-deep);
+  background: var(--pr-spark);
+}
+.zoneIcon {
+  color: var(--pr-text-mute);
+}
+.zoneText {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.fileInput {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+.progress {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Ошибка загрузки — внутри зоны, не только меткой в списке ниже. */
+.error {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--pr-sp-2);
+  width: 100%;
+  text-align: start;
+  padding: var(--pr-sp-2) var(--pr-sp-3);
+  border-radius: var(--pr-r-md);
+  background: rgba(214, 69, 69, 0.08);
+  border: 1px solid rgba(214, 69, 69, 0.35);
+  color: var(--pr-red);
+  font-size: var(--pr-fs-sm);
+}
+.errorIcon {
+  flex: none;
+  margin-top: 1px;
+}
+.errorText {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.errorDismiss {
+  flex: none;
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  padding: 0;
+}
+/* Телефон (отсмотр 2026-08-25 «окна слишком большие»): зона компактнее. */
+@media (max-width: 480px) {
+  .zone {
+    padding: var(--pr-sp-4) var(--pr-sp-3);
+  }
+}

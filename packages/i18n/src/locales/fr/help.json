@@ -1,0 +1,134 @@
+{
+  "aboutTitle": "Qu’est-ce que Porukam",
+  "faqTitle": "Questions et réponses",
+  "aboutLead": "Porukam transforme un accord verbal en un contrat clair avec des étapes, des preuves et une réputation. Sans avocats, sans commissions, et l’argent ne transite jamais par la plateforme.",
+  "aboutSections": [
+    {
+      "title": "Pour qui",
+      "text": "Pour ceux qui réalisent un travail sur commande ou le commandent : rénovation, design, développement, cours, photo, transport, vente d’objets, location, prêts entre particuliers. Pour deux personnes, pour une personne et un auto-entrepreneur, pour les indépendants."
+    },
+    {
+      "title": "Comment ça marche",
+      "text": "Vous créez un contrat à partir d’un formulaire prêt, découpez le travail en étapes, invitez l’autre partie par @identifiant. Les deux signent. Ensuite chaque étape est livrée et réceptionnée selon une checklist, et chaque fait — signature, livraison, réception, litige — est enregistré et alimente la réputation des deux."
+    },
+    {
+      "title": "Ce que la plateforme ne fait pas",
+      "text": "Elle ne garde ni ne transfère d’argent — vous réglez directement par le moyen choisi. Elle ne stocke pas les originaux de vos fichiers — seulement leurs empreintes. Elle ne vend pas vos données et n’affiche pas de publicité."
+    },
+    {
+      "title": "Groupes",
+      "text": "Un groupe est une adresse commune pour une équipe ou une communauté : guilde (communauté professionnelle durable qui se porte garante de la qualité), clan (équipe projet de 3 à 20 personnes), communauté (groupe d’intérêt ouvert) ou vitrine d’entreprise. Le groupe a son @identifiant, son logo, son domaine et sa géographie, une fiche publique avec ses membres ; le profil de chaque membre montre ses appartenances. Les contrats restent conclus entre personnes — le groupe aide à se trouver et à montrer l’équipe."
+    }
+  ],
+  "howTitle": "Comment faire",
+  "howItems": [
+    {
+      "title": "Créer un contrat",
+      "text": "Affaires → « Créer ». Choisissez le type de contrat (prestation, vente, location, prêt), remplissez le formulaire — chaque champ a un « ? » d’aide. Indiquez le cocontractant par @identifiant, découpez en étapes, choisissez le mode de paiement et envoyez à la signature."
+    },
+    {
+      "title": "Inviter le cocontractant",
+      "text": "À l’étape « Parties », saisissez l’@identifiant. Si la personne n’a pas encore de compte, envoyez-lui le lien du contrat : après connexion via Google, elle le verra chez elle."
+    },
+    {
+      "title": "Signer",
+      "text": "Ouvrez le contrat → « Aller à la signature ». Vérifiez la version figée et signez. Le contrat prend effet quand les deux parties ont signé."
+    },
+    {
+      "title": "Proposer une modification avant la signature",
+      "text": "Sur l’écran de négociation, choisissez un point et proposez une modification. L’autre partie accepte ou refuse ; après accord, la version est figée à nouveau."
+    },
+    {
+      "title": "Livrer une étape",
+      "text": "Le prestataire ouvre l’étape → « Livrer », joint des preuves (photos, fichiers, liens) et l’envoie en réception."
+    },
+    {
+      "title": "Réceptionner une étape ou la renvoyer",
+      "text": "Le client ouvre l’étape → parcourt la checklist → « Réceptionner » ou « Renvoyer » avec remarques. Si le client reste silencieux au-delà du délai de vérification, l’étape est réceptionnée automatiquement."
+    },
+    {
+      "title": "Payer une étape",
+      "text": "Après réception, le client paie le prestataire directement par le moyen choisi et marque le paiement dans l’étape. Le prestataire confirme la réception."
+    },
+    {
+      "title": "Ouvrir un litige",
+      "text": "Si l’accord est impossible — appuyez sur « Litige » dans l’étape. Les deux parties joignent des preuves ; tout ce qui a été enregistré avant est déjà au dossier."
+    },
+    {
+      "title": "Trouver un cocontractant et enregistrer le contact",
+      "text": "Ouvrez la fiche de la personne via le lien @identifiant ou depuis le contrat → « Enregistrer le contact ». Les cocontractants de vos contrats sont ajoutés aux contacts automatiquement."
+    },
+    {
+      "title": "Partager sa fiche",
+      "text": "Profil → « Partager » : lien du type porukam.app/@votreidentifiant et QR code. Sur la fiche, uniquement des faits : nombre d’affaires, comment elles ont été réceptionnées, s’il y a eu des litiges."
+    },
+    {
+      "title": "Créer un groupe",
+      "text": "Groupes → « Créer un groupe ». Choisissez un @identifiant (un seul, fixé à la création), le type, le domaine et la géographie ; ajoutez une description, des liens et un logo. Le responsable valide les demandes, invite par @identifiant et modifie les paramètres."
+    },
+    {
+      "title": "Rejoindre un groupe",
+      "text": "Trouvez le groupe dans Recherche (nom, @identifiant ou domaine) ou ouvrez le lien /@identifiant. Groupe ouvert — « Rejoindre » immédiat ; fermé — « Rejoindre » envoie une demande au responsable. On peut partir à tout moment ; le responsable ne peut partir qu’après avoir transmis le groupe."
+    }
+  ],
+  "faqItems": [
+    {
+      "q": "Est-ce gratuit ?",
+      "a": "Oui. Contrats, étapes, preuves, réputation — sans frais et sans commission sur les paiements. Les fonctions payantes, si elles apparaissent, seront séparées et facultatives."
+    },
+    {
+      "q": "Un tel contrat a-t-il une valeur juridique ?",
+      "a": "Le contrat est conclu par écrit avec une signature électronique simple : les deux parties confirment la version figée du texte, et le service enregistre qui a signé quoi et quand. Cette forme est reconnue dans la plupart des pays pour les affaires entre personnes et entreprises. Là où la loi exige un notaire ou un enregistrement public (p. ex. immobilier), le service ne remplace pas ces démarches."
+    },
+    {
+      "q": "L’argent passe-t-il par la plateforme ?",
+      "a": "Non. Les parties règlent directement — virement, espèces, comme convenu. La plateforme enregistre l’obligation, le paiement et la confirmation de réception."
+    },
+    {
+      "q": "Et si l’autre partie ne répond pas ?",
+      "a": "Chaque étape a un délai. Si le client ne vérifie pas une étape livrée à temps, elle est réceptionnée automatiquement. Si le cocontractant ne signe pas le contrat, il reste un brouillon — sans obligations."
+    },
+    {
+      "q": "Peut-on modifier le contrat après signature ?",
+      "a": "Le texte signé est immuable. Les modifications se font par un avenant signé par les deux parties ; l’historique des versions est conservé."
+    },
+    {
+      "q": "Qu’est-ce que la réputation et qui la voit ?",
+      "a": "Des faits tirés de vos affaires : combien conclues, combien réceptionnées dans les délais, s’il y a eu des litiges et comment ils se sont terminés. Aucune note, aucune étoile. Vous réglez vous-même la visibilité de la fiche et de chaque champ."
+    },
+    {
+      "q": "Où sont stockés mes fichiers de preuve ?",
+      "a": "Les originaux restent chez vous et chez votre cocontractant. La plateforme conserve une empreinte (hash), une miniature et l’heure de l’ajout — assez pour prouver que le fichier n’a pas été modifié."
+    },
+    {
+      "q": "Que voit le cocontractant à mon sujet ?",
+      "a": "Le nom confirmé par votre compte, votre @identifiant et votre fiche de réputation dans les limites que vous autorisez. Téléphone, e-mail et coordonnées bancaires ne sont jamais affichés — sauf si vous les inscrivez vous-même dans le texte du contrat."
+    },
+    {
+      "q": "Comment me connecter depuis un autre appareil ?",
+      "a": "Avec le même compte Google. La session dure 30 jours sans reconnexion tant que vous utilisez le service."
+    },
+    {
+      "q": "Comment supprimer mon compte ?",
+      "a": "Profil → Paramètres → Compte → Supprimer. Les données personnelles sont détruites de façon irréversible ; les cocontractants gardent leurs exemplaires des contrats communs."
+    },
+    {
+      "q": "Ça marche sur téléphone ?",
+      "a": "Oui, c’est une application web : ouvrez porukam.app dans le navigateur et ajoutez-la à l’écran d’accueil — elle se comporte comme une application normale, avec notifications."
+    },
+    {
+      "q": "Comment vous contacter ?",
+      "a": "Écrivez à hello@trust-dev.com — nous répondons aux questions sur le service, les données et les contrats."
+    },
+    {
+      "q": "Que sont les groupes et à quoi servent-ils ?",
+      "a": "Un moyen de présenter une équipe ou une communauté sous un même nom : guilde, clan, communauté ou vitrine d’entreprise. Le client trouve le groupe par domaine et ville, voit les membres et leurs fiches de réputation, et conclut le contrat avec une personne précise. Pour les prestataires, c’est une adresse commune où amener les clients et où la réputation de chacun est visible."
+    },
+    {
+      "q": "Le groupe est-il responsable du contrat ?",
+      "a": "Non. La partie au contrat est toujours une personne précise ou son entreprise ; elle signe et répond personnellement. Le groupe ne détient pas d’argent et ne garantit pas ses membres — c’est une vitrine et une adresse, et la réputation se construit sur les affaires de chacun."
+    }
+  ],
+  "socialTitle": "Nous suivre",
+  "backToProfile": "Profil"
+}

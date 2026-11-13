@@ -1,0 +1,12 @@
+/* Даты работы — две колонки, на узком экране в одну (перенесено из
+   PortfolioPage.module.css вместе с формой, ADR-128). */
+.dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--pr-sp-3);
+}
+@media (max-width: 600px) {
+  .dates {
+    grid-template-columns: 1fr;
+  }
+}

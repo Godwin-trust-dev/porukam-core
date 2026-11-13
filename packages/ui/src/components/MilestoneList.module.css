@@ -1,0 +1,129 @@
+/* Список этапов «только чтение» (DEV-19 §2/§4, эталон №4 блоки 2 и 3):
+   заголовок + счётчик, полоса прогресса, листья с суммой справа. */
+/* DEV-20 §1: поверхность без тени, плотный паддинг; этапы внутри —
+   hairline-строки, а не отдельные карточки. */
+.wrap {
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-d-r-surface);
+  padding: var(--pr-d-pad-card);
+  display: grid;
+  gap: var(--pr-d-gap);
+}
+.head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+}
+.title {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-body);
+  color: var(--pr-ink);
+  margin: 0;
+}
+.count {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+  font-variant-numeric: tabular-nums;
+}
+/* Прогресс этапов: трек --pr-sand, заливка --pr-grad-amber, pill (Промт web-v2 §2). */
+.track {
+  block-size: 8px;
+  border-radius: var(--pr-r-pill);
+  background: var(--pr-sand);
+  overflow: hidden;
+}
+.fill {
+  block-size: 100%;
+  border-radius: var(--pr-r-pill);
+  background: var(--pr-grad-amber);
+  transition: inline-size var(--pr-dur) var(--pr-ease);
+}
+.items {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  padding-block: var(--pr-d-row-pad-y);
+  border-block-start: 1px solid var(--pr-hairline);
+  min-block-size: var(--pr-touch-min);
+}
+.item:first-child {
+  border-block-start: none;
+}
+.itemButton {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  inline-size: 100%;
+  min-block-size: var(--pr-touch-min);
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: start;
+  cursor: pointer;
+  border-radius: var(--pr-r-sm);
+}
+.itemButton:hover .name {
+  color: var(--pr-teal-deep);
+}
+.mark {
+  flex: none;
+  inline-size: 20px;
+  block-size: 20px;
+  border-radius: var(--pr-r-sm);
+  border: 1.5px solid var(--pr-line);
+  background: var(--pr-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--pr-white);
+}
+/* Принятый этап — teal-галочка (канон степпера: done=teal ✓). */
+.markDone {
+  background: var(--pr-teal-deep);
+  border-color: var(--pr-teal-deep);
+}
+.body {
+  flex: 1;
+  min-width: 0;
+  display: grid;
+  gap: 2px;
+}
+.name {
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-title);
+  color: var(--pr-ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.status {
+  font-size: var(--pr-d-fs-2);
+  color: var(--pr-text-2);
+}
+.amount {
+  flex: none;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  color: var(--pr-ink);
+  font-variant-numeric: tabular-nums;
+  text-align: end;
+}
+.empty {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}

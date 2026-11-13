@@ -1,0 +1,21 @@
+.wrap {
+  position: relative;
+  display: inline-flex;
+}
+.bubble {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  inset-inline-start: 50%;
+  transform: translateX(-50%);
+  z-index: 30;
+  width: max-content;
+  max-width: 220px;
+  padding: var(--pr-sp-2) var(--pr-sp-3);
+  border-radius: var(--pr-r-sm);
+  background: var(--pr-ink);
+  color: var(--pr-text-inv);
+  font-size: var(--pr-fs-xs);
+  line-height: var(--pr-lh-normal);
+  box-shadow: var(--pr-shadow-card);
+  pointer-events: none;
+}

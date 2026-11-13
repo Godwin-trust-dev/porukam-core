@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "زبان رابط",
+  "globeTriggerAria": "زبان رابط",
+  "rowLabel": "زبان رابط",
+  "listTitle": "زبان رابط",
+  "searchPlaceholder": "جست‌وجوی زبان…",
+  "searchAriaLabel": "جست‌وجوی زبان",
+  "searchClear": "پاک کردن جست‌وجو",
+  "currentSectionTitle": "کنونی",
+  "allSectionTitle": "همهٔ زبان‌ها",
+  "noResults": "زبانی یافت نشد",
+  "betaBadge": "ترجمه خودکار",
+  "betaTooltip": "ترجمهٔ ماشینی — می‌تواند نادقیق باشد",
+  "currentAria": "زبان کنونی",
+  "disabledToast": "{{lang}} موقتاً در دسترس نیست · انگلیسی را نشان می‌دهیم",
+  "closeLabel": "بستن",
+  "onboardingHint": "خودکار تشخیص داده شد — هر زمان می‌توانید تغییر دهید",
+  "settingsRowLabel": "زبان و منطقه",
+  "settingsLanguageExplain": "این زبان برنامه است. زبان رسمی قرارداد جداگانه برگزیده می‌شود — طرف مقابل ترجمه را می‌بیند، اما آنچه امضا می‌شود متن رسمی است.",
+  "loadErrorRetry": "تلاش دوباره",
+  "loadError": "بارگذاری فهرست زبان‌ها انجام نشد"
+}

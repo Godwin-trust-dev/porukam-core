@@ -1,0 +1,12 @@
+{
+  "title": "Section « {{name}} »",
+  "text": "L’espace de travail de cette section arrive bientôt.",
+  "feed": "Le fil des événements de vos affaires et de vos contacts apparaîtra ici.",
+  "search": "La recherche de prestataires et de commandes dans le catalogue apparaîtra ici.",
+  "stages": "Les étapes de toutes vos affaires se rassembleront ici : ce qui est livré, ce qui est en réception, quels délais courent.",
+  "payments": "L’historique des paiements par étapes et par contrats — avec statuts et confirmations — apparaîtra ici.",
+  "disputes": "Vos litiges apparaîtront ici : statuts, délais et preuves pour chacun.",
+  "reputation": "Votre réputation apparaîtra ici : affaires confirmées et avis fondés sur des faits.",
+  "chat": "La correspondance de vos affaires — rattachée au contrat et à ses étapes — apparaîtra ici.",
+  "groups": "Les groupes apparaîtront ici : une adresse commune, des membres et des affaires sous un même nom."
+}

@@ -1,0 +1,466 @@
+{
+  "ar": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "تم تغيير مواد المرحلة",
+        "body": "غيّر الطرف الآخر مواد مرحلة «{milestone_title}». أُضيف: {added}، عُدّل: {updated}، حُذف: {removed}."
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "أُضيفت مادة",
+      "timeline.milestone.material_added.detail": "«{milestone_title}»",
+      "timeline.milestone.material_updated": "عُدّلت مادة",
+      "timeline.milestone.material_updated.detail": "«{milestone_title}»",
+      "timeline.milestone.material_removed": "حُذفت مادة",
+      "timeline.milestone.material_removed.detail": "«{milestone_title}»"
+    }
+  },
+  "az": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "Mərhələ üzrə materiallar dəyişdirildi",
+        "body": "Digər tərəf “{milestone_title}” mərhələsi üzrə materialları dəyişdi. Əlavə edildi: {added}, dəyişdirildi: {updated}, silindi: {removed}."
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "Material əlavə edildi",
+      "timeline.milestone.material_added.detail": "«{milestone_title}»",
+      "timeline.milestone.material_updated": "Material dəyişdirildi",
+      "timeline.milestone.material_updated.detail": "«{milestone_title}»",
+      "timeline.milestone.material_removed": "Material silindi",
+      "timeline.milestone.material_removed.detail": "«{milestone_title}»"
+    }
+  },
+  "bn": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "ধাপের ম্যাটেরিয়াল পরিবর্তন করা হয়েছে",
+        "body": "অন্য পক্ষ “{milestone_title}” ধাপের ম্যাটেরিয়াল পরিবর্তন করেছে। যোগ: {added}, পরিবর্তন: {updated}, বাদ: {removed}।"
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "ম্যাটেরিয়াল যোগ করা হয়েছে",
+      "timeline.milestone.material_added.detail": "“{milestone_title}”",
+      "timeline.milestone.material_updated": "ম্যাটেরিয়াল পরিবর্তন করা হয়েছে",
+      "timeline.milestone.material_updated.detail": "“{milestone_title}”",
+      "timeline.milestone.material_removed": "ম্যাটেরিয়াল সরানো হয়েছে",
+      "timeline.milestone.material_removed.detail": "“{milestone_title}”"
+    }
+  },
+  "de": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "Materialien zur Etappe geändert",
+        "body": "Die andere Partei hat die Materialien für die Etappe „{milestone_title}“ geändert. Hinzugefügt: {added}, geändert: {updated}, entfernt: {removed}."
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "Material hinzugefügt",
+      "timeline.milestone.material_added.detail": "„{milestone_title}“",
+      "timeline.milestone.material_updated": "Material geändert",
+      "timeline.milestone.material_updated.detail": "„{milestone_title}“",
+      "timeline.milestone.material_removed": "Material entfernt",
+      "timeline.milestone.material_removed.detail": "„{milestone_title}“"
+    }
+  },
+  "en": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "Materials for a stage were changed",
+        "body": "The other party changed the materials for stage “{milestone_title}”. Added: {added}, changed: {updated}, removed: {removed}."
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "Material added",
+      "timeline.milestone.material_added.detail": "“{milestone_title}”",
+      "timeline.milestone.material_updated": "Material changed",
+      "timeline.milestone.material_updated.detail": "“{milestone_title}”",
+      "timeline.milestone.material_removed": "Material removed",
+      "timeline.milestone.material_removed.detail": "“{milestone_title}”"
+    }
+  },
+  "es": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "Materiales de la etapa modificados",
+        "body": "La otra parte ha modificado los materiales de la etapa «{milestone_title}». Añadidos: {added}, modificados: {updated}, eliminados: {removed}."
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "Material añadido",
+      "timeline.milestone.material_added.detail": "«{milestone_title}»",
+      "timeline.milestone.material_updated": "Material modificado",
+      "timeline.milestone.material_updated.detail": "«{milestone_title}»",
+      "timeline.milestone.material_removed": "Material eliminado",
+      "timeline.milestone.material_removed.detail": "«{milestone_title}»"
+    }
+  },
+  "fa": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "مواد مرحله تغییر کرد",
+        "body": "طرف دیگر مواد مرحلهٔ «{milestone_title}» را تغییر داد. افزوده: {added}، ویرایش‌شده: {updated}، حذف‌شده: {removed}."
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "مادّه افزوده شد",
+      "timeline.milestone.material_added.detail": "«{milestone_title}»",
+      "timeline.milestone.material_updated": "مادّه ویرایش شد",
+      "timeline.milestone.material_updated.detail": "«{milestone_title}»",
+      "timeline.milestone.material_removed": "مادّه حذف شد",
+      "timeline.milestone.material_removed.detail": "«{milestone_title}»"
+    }
+  },
+  "fr": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "Matériaux de l'étape modifiés",
+        "body": "L'autre partie a modifié les matériaux de l'étape « {milestone_title} ». Ajoutés : {added}, modifiés : {updated}, supprimés : {removed}."
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "Matériau ajouté",
+      "timeline.milestone.material_added.detail": "« {milestone_title} »",
+      "timeline.milestone.material_updated": "Matériau modifié",
+      "timeline.milestone.material_updated.detail": "« {milestone_title} »",
+      "timeline.milestone.material_removed": "Matériau supprimé",
+      "timeline.milestone.material_removed.detail": "« {milestone_title} »"
+    }
+  },
+  "he": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "החומרים לשלב שונו",
+        "body": "הצד השני שינה את החומרים לשלב „{milestone_title}”. נוספו: {added}, שונו: {updated}, הוסרו: {removed}."
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "חומר נוסף",
+      "timeline.milestone.material_added.detail": "„{milestone_title}”",
+      "timeline.milestone.material_updated": "חומר שונה",
+      "timeline.milestone.material_updated.detail": "„{milestone_title}”",
+      "timeline.milestone.material_removed": "חומר הוסר",
+      "timeline.milestone.material_removed.detail": "„{milestone_title}”"
+    }
+  },
+  "hi": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "चरण की सामग्री बदली गई",
+        "body": "दूसरे पक्ष ने “{milestone_title}” चरण की सामग्री बदली। जोड़ी गई: {added}, बदली गई: {updated}, हटाई गई: {removed}।"
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "सामग्री जोड़ी गई",
+      "timeline.milestone.material_added.detail": "“{milestone_title}”",
+      "timeline.milestone.material_updated": "सामग्री बदली गई",
+      "timeline.milestone.material_updated.detail": "“{milestone_title}”",
+      "timeline.milestone.material_removed": "सामग्री हटाई गई",
+      "timeline.milestone.material_removed.detail": "“{milestone_title}”"
+    }
+  },
+  "hy": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "Փուլի նյութերը փոփոխվել են",
+        "body": "Մյուս կողմը փոփոխել է «{milestone_title}» փուլի նյութերը։ Ավելացվել է՝ {added}, փոփոխվել է՝ {updated}, հեռացվել է՝ {removed}։"
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "Նյութ ավելացվել է",
+      "timeline.milestone.material_added.detail": "«{milestone_title}»",
+      "timeline.milestone.material_updated": "Նյութը փոփոխվել է",
+      "timeline.milestone.material_updated.detail": "«{milestone_title}»",
+      "timeline.milestone.material_removed": "Նյութը հեռացվել է",
+      "timeline.milestone.material_removed.detail": "«{milestone_title}»"
+    }
+  },
+  "id": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "Material tahap diubah",
+        "body": "Pihak lain mengubah material untuk tahap “{milestone_title}”. Ditambahkan: {added}, diubah: {updated}, dihapus: {removed}."
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "Material ditambahkan",
+      "timeline.milestone.material_added.detail": "“{milestone_title}”",
+      "timeline.milestone.material_updated": "Material diubah",
+      "timeline.milestone.material_updated.detail": "“{milestone_title}”",
+      "timeline.milestone.material_removed": "Material dihapus",
+      "timeline.milestone.material_removed.detail": "“{milestone_title}”"
+    }
+  },
+  "it": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "Materiali della fase modificati",
+        "body": "L'altra parte ha modificato i materiali della fase «{milestone_title}». Aggiunti: {added}, modificati: {updated}, rimossi: {removed}."
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "Materiale aggiunto",
+      "timeline.milestone.material_added.detail": "«{milestone_title}»",
+      "timeline.milestone.material_updated": "Materiale modificato",
+      "timeline.milestone.material_updated.detail": "«{milestone_title}»",
+      "timeline.milestone.material_removed": "Materiale rimosso",
+      "timeline.milestone.material_removed.detail": "«{milestone_title}»"
+    }
+  },
+  "ja": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "工程の資材が変更されました",
+        "body": "相手方が工程「{milestone_title}」の資材を変更しました。追加: {added}件、変更: {updated}件、削除: {removed}件。"
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "資材を追加",
+      "timeline.milestone.material_added.detail": "「{milestone_title}」",
+      "timeline.milestone.material_updated": "資材を変更",
+      "timeline.milestone.material_updated.detail": "「{milestone_title}」",
+      "timeline.milestone.material_removed": "資材を削除",
+      "timeline.milestone.material_removed.detail": "「{milestone_title}」"
+    }
+  },
+  "ka": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "ეტაპის მასალები შეიცვალა",
+        "body": "მეორე მხარემ შეცვალა ეტაპის „{milestone_title}“ მასალები. დამატებულია: {added}, შეცვლილია: {updated}, წაშლილია: {removed}."
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "მასალა დაემატა",
+      "timeline.milestone.material_added.detail": "„{milestone_title}“",
+      "timeline.milestone.material_updated": "მასალა შეიცვალა",
+      "timeline.milestone.material_updated.detail": "„{milestone_title}“",
+      "timeline.milestone.material_removed": "მასალა წაიშალა",
+      "timeline.milestone.material_removed.detail": "„{milestone_title}“"
+    }
+  },
+  "kk": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "Кезең бойынша материалдар өзгертілді",
+        "body": "Екінші тарап «{milestone_title}» кезеңі бойынша материалдарды өзгертті. Қосылды: {added}, өзгертілді: {updated}, жойылды: {removed}."
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "Материал қосылды",
+      "timeline.milestone.material_added.detail": "«{milestone_title}»",
+      "timeline.milestone.material_updated": "Материал өзгертілді",
+      "timeline.milestone.material_updated.detail": "«{milestone_title}»",
+      "timeline.milestone.material_removed": "Материал жойылды",
+      "timeline.milestone.material_removed.detail": "«{milestone_title}»"
+    }
+  },
+  "ko": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "단계 자재가 변경되었습니다",
+        "body": "상대방이 '{milestone_title}' 단계의 자재를 변경했습니다. 추가: {added}건, 변경: {updated}건, 삭제: {removed}건."
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "자재 추가됨",
+      "timeline.milestone.material_added.detail": "“{milestone_title}”",
+      "timeline.milestone.material_updated": "자재 변경됨",
+      "timeline.milestone.material_updated.detail": "“{milestone_title}”",
+      "timeline.milestone.material_removed": "자재 삭제됨",
+      "timeline.milestone.material_removed.detail": "“{milestone_title}”"
+    }
+  },
+  "pl": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "Materiały do etapu zmienione",
+        "body": "Druga strona zmieniła materiały do etapu „{milestone_title}”. Dodano: {added}, zmieniono: {updated}, usunięto: {removed}."
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "Dodano materiał",
+      "timeline.milestone.material_added.detail": "„{milestone_title}”",
+      "timeline.milestone.material_updated": "Zmieniono materiał",
+      "timeline.milestone.material_updated.detail": "„{milestone_title}”",
+      "timeline.milestone.material_removed": "Usunięto materiał",
+      "timeline.milestone.material_removed.detail": "„{milestone_title}”"
+    }
+  },
+  "pt-BR": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "Materiais da etapa alterados",
+        "body": "A outra parte alterou os materiais da etapa “{milestone_title}”. Adicionados: {added}, alterados: {updated}, removidos: {removed}."
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "Material adicionado",
+      "timeline.milestone.material_added.detail": "“{milestone_title}”",
+      "timeline.milestone.material_updated": "Material alterado",
+      "timeline.milestone.material_updated.detail": "“{milestone_title}”",
+      "timeline.milestone.material_removed": "Material removido",
+      "timeline.milestone.material_removed.detail": "“{milestone_title}”"
+    }
+  },
+  "ro": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "Materialele pentru etapă au fost modificate",
+        "body": "Cealaltă parte a modificat materialele pentru etapa „{milestone_title}”. Adăugate: {added}, modificate: {updated}, eliminate: {removed}."
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "Material adăugat",
+      "timeline.milestone.material_added.detail": "„{milestone_title}”",
+      "timeline.milestone.material_updated": "Material modificat",
+      "timeline.milestone.material_updated.detail": "„{milestone_title}”",
+      "timeline.milestone.material_removed": "Material eliminat",
+      "timeline.milestone.material_removed.detail": "„{milestone_title}”"
+    }
+  },
+  "ru": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "Материалы по этапу изменены",
+        "body": "Вторая сторона изменила материалы по этапу «{milestone_title}». Добавлено: {added}, изменено: {updated}, удалено: {removed}."
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "Материал добавлен",
+      "timeline.milestone.material_added.detail": "«{milestone_title}»",
+      "timeline.milestone.material_updated": "Материал изменён",
+      "timeline.milestone.material_updated.detail": "«{milestone_title}»",
+      "timeline.milestone.material_removed": "Материал удалён",
+      "timeline.milestone.material_removed.detail": "«{milestone_title}»"
+    }
+  },
+  "sw": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "Vifaa vya hatua vimebadilishwa",
+        "body": "Upande mwingine amebadilisha vifaa vya hatua “{milestone_title}”. Vimeongezwa: {added}, vimebadilishwa: {updated}, vimeondolewa: {removed}."
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "Kifaa kimeongezwa",
+      "timeline.milestone.material_added.detail": "“{milestone_title}”",
+      "timeline.milestone.material_updated": "Kifaa kimebadilishwa",
+      "timeline.milestone.material_updated.detail": "“{milestone_title}”",
+      "timeline.milestone.material_removed": "Kifaa kimeondolewa",
+      "timeline.milestone.material_removed.detail": "“{milestone_title}”"
+    }
+  },
+  "th": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "วัสดุของขั้นตอนถูกเปลี่ยนแปลง",
+        "body": "อีกฝ่ายเปลี่ยนแปลงวัสดุสำหรับขั้นตอน “{milestone_title}” เพิ่ม: {added} แก้ไข: {updated} ลบ: {removed}"
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "เพิ่มวัสดุแล้ว",
+      "timeline.milestone.material_added.detail": "“{milestone_title}”",
+      "timeline.milestone.material_updated": "แก้ไขวัสดุแล้ว",
+      "timeline.milestone.material_updated.detail": "“{milestone_title}”",
+      "timeline.milestone.material_removed": "ลบวัสดุแล้ว",
+      "timeline.milestone.material_removed.detail": "“{milestone_title}”"
+    }
+  },
+  "tr": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "Aşama malzemeleri değiştirildi",
+        "body": "Karşı taraf “{milestone_title}” aşamasının malzemelerini değiştirdi. Eklenen: {added}, değiştirilen: {updated}, kaldırılan: {removed}."
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "Malzeme eklendi",
+      "timeline.milestone.material_added.detail": "“{milestone_title}”",
+      "timeline.milestone.material_updated": "Malzeme değiştirildi",
+      "timeline.milestone.material_updated.detail": "“{milestone_title}”",
+      "timeline.milestone.material_removed": "Malzeme kaldırıldı",
+      "timeline.milestone.material_removed.detail": "“{milestone_title}”"
+    }
+  },
+  "uk": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "Матеріали за етапом змінено",
+        "body": "Інша сторона змінила матеріали за етапом «{milestone_title}». Додано: {added}, змінено: {updated}, вилучено: {removed}."
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "Матеріал додано",
+      "timeline.milestone.material_added.detail": "«{milestone_title}»",
+      "timeline.milestone.material_updated": "Матеріал змінено",
+      "timeline.milestone.material_updated.detail": "«{milestone_title}»",
+      "timeline.milestone.material_removed": "Матеріал вилучено",
+      "timeline.milestone.material_removed.detail": "«{milestone_title}»"
+    }
+  },
+  "ur": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "مرحلے کا سامان تبدیل کر دیا گیا",
+        "body": "دوسرے فریق نے “{milestone_title}” مرحلے کا سامان تبدیل کیا۔ شامل: {added}، تبدیل: {updated}، خارج: {removed}۔"
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "سامان شامل کیا گیا",
+      "timeline.milestone.material_added.detail": "«{milestone_title}»",
+      "timeline.milestone.material_updated": "سامان تبدیل کیا گیا",
+      "timeline.milestone.material_updated.detail": "«{milestone_title}»",
+      "timeline.milestone.material_removed": "سامان ہٹا دیا گیا",
+      "timeline.milestone.material_removed.detail": "«{milestone_title}»"
+    }
+  },
+  "uz": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "Bosqich materiallari o'zgartirildi",
+        "body": "Boshqa taraf “{milestone_title}” bosqichi materiallarini o'zgartirdi. Qo'shildi: {added}, o'zgartirildi: {updated}, o'chirildi: {removed}."
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "Material qo'shildi",
+      "timeline.milestone.material_added.detail": "«{milestone_title}»",
+      "timeline.milestone.material_updated": "Material o'zgartirildi",
+      "timeline.milestone.material_updated.detail": "«{milestone_title}»",
+      "timeline.milestone.material_removed": "Material o'chirildi",
+      "timeline.milestone.material_removed.detail": "«{milestone_title}»"
+    }
+  },
+  "vi": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "Vật tư của giai đoạn đã thay đổi",
+        "body": "Bên kia đã thay đổi vật tư cho giai đoạn “{milestone_title}”. Đã thêm: {added}, đã sửa: {updated}, đã xóa: {removed}."
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "Đã thêm vật tư",
+      "timeline.milestone.material_added.detail": "“{milestone_title}”",
+      "timeline.milestone.material_updated": "Đã sửa vật tư",
+      "timeline.milestone.material_updated.detail": "“{milestone_title}”",
+      "timeline.milestone.material_removed": "Đã xóa vật tư",
+      "timeline.milestone.material_removed.detail": "“{milestone_title}”"
+    }
+  },
+  "zh-Hans": {
+    "notifications": {
+      "contract.materials_changed": {
+        "subject": "阶段材料已变更",
+        "body": "对方变更了“{milestone_title}”阶段的材料。新增：{added}，修改：{updated}，删除：{removed}。"
+      }
+    },
+    "ui": {
+      "timeline.milestone.material_added": "已新增材料",
+      "timeline.milestone.material_added.detail": "“{milestone_title}”",
+      "timeline.milestone.material_updated": "已修改材料",
+      "timeline.milestone.material_updated.detail": "“{milestone_title}”",
+      "timeline.milestone.material_removed": "已删除材料",
+      "timeline.milestone.material_removed.detail": "“{milestone_title}”"
+    }
+  }
+}

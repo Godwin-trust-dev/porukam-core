@@ -1,0 +1,12 @@
+{
+  "actorSwitcher": {
+    "triggerLabel": "Trocar de perfil",
+    "personalLabel": "Pessoal",
+    "legalFormIp": "MEI",
+    "legalFormOoo": "Ltda.",
+    "addOrg": "Adicionar organização",
+    "groups": "Meus grupos"
+  },
+  "sectionMenu": "Seções",
+  "logout": "Sair"
+}

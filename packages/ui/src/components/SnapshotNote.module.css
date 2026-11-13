@@ -1,0 +1,15 @@
+.note {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  margin: 0;
+  padding: var(--pr-sp-3) var(--pr-sp-4);
+  border-radius: var(--pr-r-lg);
+  background: var(--pr-sand);
+  color: var(--pr-ink);
+  font-size: var(--pr-fs-sm);
+}
+.icon {
+  flex: none;
+  color: var(--pr-text-2);
+}

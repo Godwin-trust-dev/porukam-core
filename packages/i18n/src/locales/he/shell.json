@@ -1,0 +1,12 @@
+{
+  "actorSwitcher": {
+    "triggerLabel": "החלפת פרופיל",
+    "personalLabel": "אישי",
+    "legalFormIp": "עוסק מורשה",
+    "legalFormOoo": "חברה בע״מ",
+    "addOrg": "הוספת ארגון",
+    "groups": "הקבוצות שלי"
+  },
+  "sectionMenu": "מדורים",
+  "logout": "יציאה"
+}

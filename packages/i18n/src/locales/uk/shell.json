@@ -1,0 +1,12 @@
+{
+  "actorSwitcher": {
+    "triggerLabel": "Змінити профіль",
+    "personalLabel": "Особистий",
+    "legalFormIp": "ФОП",
+    "legalFormOoo": "ТОВ",
+    "addOrg": "Додати організацію",
+    "groups": "Мої об’єднання"
+  },
+  "sectionMenu": "Розділи",
+  "logout": "Вийти"
+}

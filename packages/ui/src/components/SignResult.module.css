@@ -1,0 +1,11 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--pr-sp-1);
+}
+.note {
+  margin: 0;
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-on-ink-2);
+}

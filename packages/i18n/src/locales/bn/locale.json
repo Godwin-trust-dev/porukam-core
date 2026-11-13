@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "ইন্টারফেসের ভাষা",
+  "globeTriggerAria": "ইন্টারফেসের ভাষা",
+  "rowLabel": "ইন্টারফেসের ভাষা",
+  "listTitle": "ইন্টারফেসের ভাষা",
+  "searchPlaceholder": "ভাষা খুঁজুন…",
+  "searchAriaLabel": "ভাষা খুঁজুন",
+  "searchClear": "খোঁজ মুছুন",
+  "currentSectionTitle": "বর্তমান",
+  "allSectionTitle": "সব ভাষা",
+  "noResults": "কোনো ভাষা পাওয়া যায়নি",
+  "betaBadge": "স্বয়ংক্রিয় অনুবাদ",
+  "betaTooltip": "স্বয়ংক্রিয়ভাবে অনূদিত — ভুল থাকতে পারে",
+  "currentAria": "বর্তমান ভাষা",
+  "disabledToast": "{{lang}} এখন পাওয়া যাচ্ছে না · আমরা ইংরেজি দেখাচ্ছি",
+  "closeLabel": "বন্ধ করুন",
+  "onboardingHint": "স্বয়ংক্রিয়ভাবে শনাক্ত — যেকোনো সময় বদলাতে পারেন",
+  "settingsRowLabel": "ভাষা ও অঞ্চল",
+  "settingsLanguageExplain": "এটি অ্যাপের ভাষা। চুক্তির আনুষ্ঠানিক ভাষা আলাদাভাবে বাছা হয় — অপর পক্ষ অনুবাদ দেখেন, কিন্তু স্বাক্ষর হয় আনুষ্ঠানিক পাঠে।",
+  "loadErrorRetry": "আবার চেষ্টা করুন",
+  "loadError": "ভাষার তালিকা লোড করা গেল না"
+}

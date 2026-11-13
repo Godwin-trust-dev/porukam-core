@@ -1,0 +1,378 @@
+{
+  "ru": {
+    "notifications": {
+      "entity_claimed": {
+        "subject": "Контроль над юрлицом подтверждён",
+        "body": "Подтверждён контроль над юрлицом."
+      }
+    }
+  },
+  "en": {
+    "notifications": {
+      "entity_claimed": {
+        "subject": "Company control confirmed",
+        "body": "Control over the company has been confirmed."
+      }
+    }
+  },
+  "de": {
+    "notifications": {
+      "negotiation.sent": {
+        "subject": "Vertrag zur Abstimmung gesendet",
+        "body": "„{contract_title}“ wurde zur Abstimmung gesendet."
+      },
+      "negotiation.revised": {
+        "subject": "Änderungen festgehalten",
+        "body": "Änderungen an „{contract_title}“ wurden festgehalten."
+      },
+      "negotiation.frozen": {
+        "subject": "Vertrag unterschriftsbereit",
+        "body": "„{contract_title}“ ist festgeschrieben und unterschriftsbereit."
+      },
+      "negotiation.signed": {
+        "subject": "Unterschrift erfasst",
+        "body": "Ihre Unterschrift unter „{contract_title}“ ist erfasst. Wir warten auf die Unterschrift der Gegenseite."
+      },
+      "milestone.started": {
+        "subject": "Arbeit begonnen",
+        "body": "Die Arbeit an „{milestone_title}“ hat begonnen."
+      },
+      "milestone.accepted": {
+        "subject": "Arbeit abgenommen",
+        "body": "„{milestone_title}“ wurde abgenommen."
+      },
+      "milestone.rejected": {
+        "subject": "Arbeit abgelehnt",
+        "body": "„{milestone_title}“ wurde unter Verweis auf einen Checklistenpunkt abgelehnt."
+      },
+      "dispute.resolved": {
+        "subject": "Meinungsverschiedenheit beigelegt",
+        "body": "Die Meinungsverschiedenheit zu „{milestone_title}“ wurde beigelegt."
+      },
+      "entity_claimed": {
+        "subject": "Kontrolle über die Firma bestätigt",
+        "body": "Die Kontrolle über die Firma wurde bestätigt."
+      }
+    }
+  },
+  "es": {
+    "notifications": {
+      "negotiation.sent": {
+        "subject": "Contrato enviado a revisión",
+        "body": "«{contract_title}» se ha enviado a revisión."
+      },
+      "negotiation.revised": {
+        "subject": "Cambios registrados",
+        "body": "Se han registrado cambios en «{contract_title}»."
+      },
+      "negotiation.frozen": {
+        "subject": "Contrato listo para firmar",
+        "body": "«{contract_title}» está congelado y listo para firmar."
+      },
+      "negotiation.signed": {
+        "subject": "Firma registrada",
+        "body": "Su firma en «{contract_title}» está registrada. Esperamos la firma de la otra parte."
+      },
+      "milestone.started": {
+        "subject": "Trabajo iniciado",
+        "body": "El trabajo en «{milestone_title}» ha comenzado."
+      },
+      "milestone.accepted": {
+        "subject": "Trabajo aceptado",
+        "body": "«{milestone_title}» ha sido aceptado."
+      },
+      "milestone.rejected": {
+        "subject": "Trabajo rechazado",
+        "body": "«{milestone_title}» fue rechazado, citando un punto de la lista de control."
+      },
+      "dispute.resolved": {
+        "subject": "Desacuerdo resuelto",
+        "body": "El desacuerdo sobre «{milestone_title}» se ha resuelto."
+      },
+      "entity_claimed": {
+        "subject": "Control de la empresa confirmado",
+        "body": "Se ha confirmado el control sobre la empresa."
+      }
+    }
+  },
+  "fr": {
+    "notifications": {
+      "negotiation.sent": {
+        "subject": "Contrat envoyé pour validation",
+        "body": "« {contract_title} » a été envoyé pour validation."
+      },
+      "negotiation.revised": {
+        "subject": "Modifications enregistrées",
+        "body": "Les modifications de « {contract_title} » ont été enregistrées."
+      },
+      "negotiation.frozen": {
+        "subject": "Contrat prêt à signer",
+        "body": "« {contract_title} » est figé et prêt à signer."
+      },
+      "negotiation.signed": {
+        "subject": "Signature enregistrée",
+        "body": "Votre signature sur « {contract_title} » est enregistrée. Nous attendons celle de l'autre partie."
+      },
+      "milestone.started": {
+        "subject": "Travaux commencés",
+        "body": "Les travaux sur « {milestone_title} » ont commencé."
+      },
+      "milestone.accepted": {
+        "subject": "Travaux acceptés",
+        "body": "« {milestone_title} » a été accepté."
+      },
+      "milestone.rejected": {
+        "subject": "Travaux refusés",
+        "body": "« {milestone_title} » a été refusé, avec renvoi à un point de la liste de contrôle."
+      },
+      "dispute.resolved": {
+        "subject": "Désaccord réglé",
+        "body": "Le désaccord sur « {milestone_title} » a été réglé."
+      },
+      "entity_claimed": {
+        "subject": "Contrôle de la société confirmé",
+        "body": "Le contrôle sur la société a été confirmé."
+      }
+    }
+  },
+  "it": {
+    "notifications": {
+      "negotiation.sent": {
+        "subject": "Contratto inviato per l'approvazione",
+        "body": "«{contract_title}» è stato inviato per l'approvazione."
+      },
+      "negotiation.revised": {
+        "subject": "Modifiche registrate",
+        "body": "Le modifiche a «{contract_title}» sono state registrate."
+      },
+      "negotiation.frozen": {
+        "subject": "Contratto pronto per la firma",
+        "body": "«{contract_title}» è congelato e pronto per la firma."
+      },
+      "negotiation.signed": {
+        "subject": "Firma registrata",
+        "body": "La sua firma su «{contract_title}» è registrata. Attendiamo la firma dell'altra parte."
+      },
+      "milestone.started": {
+        "subject": "Lavoro iniziato",
+        "body": "Il lavoro su «{milestone_title}» è iniziato."
+      },
+      "milestone.accepted": {
+        "subject": "Lavoro accettato",
+        "body": "«{milestone_title}» è stato accettato."
+      },
+      "milestone.rejected": {
+        "subject": "Lavoro respinto",
+        "body": "«{milestone_title}» è stato respinto, con riferimento a un punto della lista di controllo."
+      },
+      "dispute.resolved": {
+        "subject": "Disaccordo risolto",
+        "body": "Il disaccordo su «{milestone_title}» è stato risolto."
+      },
+      "entity_claimed": {
+        "subject": "Controllo sull'azienda confermato",
+        "body": "Il controllo sull'azienda è stato confermato."
+      }
+    }
+  },
+  "pt-BR": {
+    "notifications": {
+      "negotiation.sent": {
+        "subject": "Contrato enviado para aprovação",
+        "body": "“{contract_title}” foi enviado para aprovação."
+      },
+      "negotiation.revised": {
+        "subject": "Alterações registradas",
+        "body": "As alterações em “{contract_title}” foram registradas."
+      },
+      "negotiation.frozen": {
+        "subject": "Contrato pronto para assinar",
+        "body": "“{contract_title}” está congelado e pronto para assinatura."
+      },
+      "negotiation.signed": {
+        "subject": "Assinatura registrada",
+        "body": "Sua assinatura em “{contract_title}” foi registrada. Aguardamos a assinatura da outra parte."
+      },
+      "milestone.started": {
+        "subject": "Trabalho iniciado",
+        "body": "O trabalho em “{milestone_title}” foi iniciado."
+      },
+      "milestone.accepted": {
+        "subject": "Trabalho aceito",
+        "body": "“{milestone_title}” foi aceito."
+      },
+      "milestone.rejected": {
+        "subject": "Trabalho recusado",
+        "body": "“{milestone_title}” foi recusado, com referência a um item da lista de verificação."
+      },
+      "dispute.resolved": {
+        "subject": "Divergência resolvida",
+        "body": "A divergência sobre “{milestone_title}” foi resolvida."
+      },
+      "entity_claimed": {
+        "subject": "Controle da empresa confirmado",
+        "body": "O controle sobre a empresa foi confirmado."
+      }
+    }
+  },
+  "pl": {
+    "notifications": {
+      "negotiation.sent": {
+        "subject": "Umowa wysłana do uzgodnienia",
+        "body": "„{contract_title}” została wysłana do uzgodnienia."
+      },
+      "negotiation.revised": {
+        "subject": "Zmiany odnotowane",
+        "body": "Zmiany w „{contract_title}” zostały odnotowane."
+      },
+      "negotiation.frozen": {
+        "subject": "Umowa gotowa do podpisu",
+        "body": "„{contract_title}” została zamrożona i jest gotowa do podpisu."
+      },
+      "negotiation.signed": {
+        "subject": "Podpis zarejestrowany",
+        "body": "Twój podpis pod „{contract_title}” został zarejestrowany. Czekamy na podpis drugiej strony."
+      },
+      "milestone.started": {
+        "subject": "Prace rozpoczęte",
+        "body": "Prace nad „{milestone_title}” zostały rozpoczęte."
+      },
+      "milestone.accepted": {
+        "subject": "Prace odebrane",
+        "body": "„{milestone_title}” zostało odebrane."
+      },
+      "milestone.rejected": {
+        "subject": "Prace odrzucone",
+        "body": "„{milestone_title}” zostało odrzucone z powołaniem na punkt listy kontrolnej."
+      },
+      "dispute.resolved": {
+        "subject": "Rozbieżność rozstrzygnięta",
+        "body": "Rozbieżność dotycząca „{milestone_title}” została rozstrzygnięta."
+      },
+      "entity_claimed": {
+        "subject": "Kontrola nad firmą potwierdzona",
+        "body": "Kontrola nad firmą została potwierdzona."
+      }
+    }
+  },
+  "ro": {
+    "notifications": {
+      "negotiation.sent": {
+        "subject": "Contract trimis spre avizare",
+        "body": "„{contract_title}” a fost trimis spre avizare."
+      },
+      "negotiation.revised": {
+        "subject": "Modificări consemnate",
+        "body": "Modificările la „{contract_title}” au fost consemnate."
+      },
+      "negotiation.frozen": {
+        "subject": "Contract gata de semnare",
+        "body": "„{contract_title}” este înghețat și gata de semnare."
+      },
+      "negotiation.signed": {
+        "subject": "Semnătură înregistrată",
+        "body": "Semnătura dumneavoastră pe „{contract_title}” a fost înregistrată. Așteptăm semnătura celeilalte părți."
+      },
+      "milestone.started": {
+        "subject": "Lucrarea a început",
+        "body": "Lucrarea la „{milestone_title}” a început."
+      },
+      "milestone.accepted": {
+        "subject": "Lucrare acceptată",
+        "body": "„{milestone_title}” a fost acceptată."
+      },
+      "milestone.rejected": {
+        "subject": "Lucrare respinsă",
+        "body": "„{milestone_title}” a fost respinsă, cu trimitere la un punct din lista de verificare."
+      },
+      "dispute.resolved": {
+        "subject": "Neînțelegere soluționată",
+        "body": "Neînțelegerea privind „{milestone_title}” a fost soluționată."
+      },
+      "entity_claimed": {
+        "subject": "Control asupra firmei confirmat",
+        "body": "Controlul asupra firmei a fost confirmat."
+      }
+    }
+  },
+  "uk": {
+    "notifications": {
+      "negotiation.sent": {
+        "subject": "Договір надіслано на погодження",
+        "body": "Договір «{contract_title}» надіслано на погодження."
+      },
+      "negotiation.revised": {
+        "subject": "Зафіксовано зміни",
+        "body": "За договором «{contract_title}» зафіксовано зміни."
+      },
+      "negotiation.frozen": {
+        "subject": "Договір готовий до підписання",
+        "body": "Договір «{contract_title}» зафіксовано, він готовий до підписання."
+      },
+      "negotiation.signed": {
+        "subject": "Підпис прийнято",
+        "body": "Ваш підпис під «{contract_title}» прийнято. Чекаємо на підпис другої сторони."
+      },
+      "milestone.started": {
+        "subject": "Роботу розпочато",
+        "body": "Роботу над етапом «{milestone_title}» розпочато."
+      },
+      "milestone.accepted": {
+        "subject": "Роботу прийнято",
+        "body": "Роботу «{milestone_title}» прийнято."
+      },
+      "milestone.rejected": {
+        "subject": "Роботу відхилено",
+        "body": "Роботу «{milestone_title}» відхилено з посиланням на пункт чек-листа."
+      },
+      "dispute.resolved": {
+        "subject": "Розбіжність врегульовано",
+        "body": "Розбіжність щодо етапу «{milestone_title}» врегульовано."
+      },
+      "entity_claimed": {
+        "subject": "Контроль над юрособою підтверджено",
+        "body": "Підтверджено контроль над юридичною особою."
+      }
+    }
+  },
+  "tr": {
+    "notifications": {
+      "negotiation.sent": {
+        "subject": "Sözleşme onaya gönderildi",
+        "body": "“{contract_title}” onaya gönderildi."
+      },
+      "negotiation.revised": {
+        "subject": "Değişiklikler kaydedildi",
+        "body": "“{contract_title}” üzerindeki değişiklikler kaydedildi."
+      },
+      "negotiation.frozen": {
+        "subject": "Sözleşme imzaya hazır",
+        "body": "“{contract_title}” donduruldu ve imzaya hazır."
+      },
+      "negotiation.signed": {
+        "subject": "İmza kaydedildi",
+        "body": "“{contract_title}” üzerindeki imzanız kaydedildi. Karşı tarafın imzasını bekliyoruz."
+      },
+      "milestone.started": {
+        "subject": "Çalışma başladı",
+        "body": "“{milestone_title}” üzerindeki çalışma başladı."
+      },
+      "milestone.accepted": {
+        "subject": "Çalışma kabul edildi",
+        "body": "“{milestone_title}” kabul edildi."
+      },
+      "milestone.rejected": {
+        "subject": "Çalışma reddedildi",
+        "body": "“{milestone_title}”, bir kontrol listesi maddesine dayanılarak reddedildi."
+      },
+      "dispute.resolved": {
+        "subject": "Anlaşmazlık çözüldü",
+        "body": "“{milestone_title}” ile ilgili anlaşmazlık çözüldü."
+      },
+      "entity_claimed": {
+        "subject": "Şirket kontrolü doğrulandı",
+        "body": "Şirket üzerindeki kontrol doğrulandı."
+      }
+    }
+  }
+}

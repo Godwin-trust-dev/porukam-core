@@ -1,0 +1,19 @@
+.img {
+  border-radius: 50%;
+  object-fit: cover;
+  flex: none;
+  display: block;
+}
+
+.placeholder {
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  color: var(--pr-white);
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  letter-spacing: 0;
+  user-select: none;
+}

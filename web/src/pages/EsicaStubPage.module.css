@@ -1,0 +1,9 @@
+.wrap {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: var(--pr-density-roomy) var(--pr-density-cozy);
+  display: grid;
+  gap: var(--pr-sp-4);
+  justify-items: center;
+  text-align: center;
+}

@@ -1,0 +1,350 @@
+{
+  "ar": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "تم رفض الملحق",
+        "body": "رفض الطرف الآخر الملحق الخاص بالعقد «{contract_title}» — أُنهي التفاوض."
+      },
+      "amendment.withdrawn": {
+        "subject": "تم سحب الملحق",
+        "body": "سحب المُبادر الملحق الخاص بالعقد «{contract_title}» — أُنهي التفاوض."
+      }
+    }
+  },
+  "az": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "Əlavə razılaşma rədd edildi",
+        "body": "«{contract_title}» müqaviləsinə əlavə razılaşmanı qarşı tərəf rədd etdi — razılaşdırma dayandırıldı."
+      },
+      "amendment.withdrawn": {
+        "subject": "Əlavə razılaşma geri çağırıldı",
+        "body": "«{contract_title}» müqaviləsinə əlavə razılaşmanı təşəbbüskar geri çağırdı — razılaşdırma dayandırıldı."
+      }
+    }
+  },
+  "bn": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "সম্পূরক চুক্তি প্রত্যাখ্যাত",
+        "body": "চুক্তি «{contract_title}»-এর সম্পূরক চুক্তি অন্য পক্ষ প্রত্যাখ্যান করেছে — আলোচনা সমাপ্ত।"
+      },
+      "amendment.withdrawn": {
+        "subject": "সম্পূরক চুক্তি প্রত্যাহৃত",
+        "body": "চুক্তি «{contract_title}»-এর সম্পূরক চুক্তি উদ্যোক্তা প্রত্যাহার করেছে — আলোচনা সমাপ্ত।"
+      }
+    }
+  },
+  "de": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "Nachtrag abgelehnt",
+        "body": "Der Nachtrag zum Vertrag „{contract_title}“ wurde von der Gegenseite abgelehnt — die Abstimmung ist beendet."
+      },
+      "amendment.withdrawn": {
+        "subject": "Nachtrag zurückgezogen",
+        "body": "Der Nachtrag zum Vertrag „{contract_title}“ wurde vom Initiator zurückgezogen — die Abstimmung ist beendet."
+      }
+    }
+  },
+  "en": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "Amendment rejected",
+        "body": "The amendment to the contract “{contract_title}” has been rejected by the other party — negotiation is closed."
+      },
+      "amendment.withdrawn": {
+        "subject": "Amendment withdrawn",
+        "body": "The amendment to the contract “{contract_title}” has been withdrawn by its initiator — negotiation is closed."
+      }
+    }
+  },
+  "es": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "Adenda rechazada",
+        "body": "La adenda al contrato «{contract_title}» ha sido rechazada por la otra parte — la negociación queda cerrada."
+      },
+      "amendment.withdrawn": {
+        "subject": "Adenda retirada",
+        "body": "La adenda al contrato «{contract_title}» ha sido retirada por su iniciador — la negociación queda cerrada."
+      }
+    }
+  },
+  "fa": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "الحاقیه رد شد",
+        "body": "الحاقیه قرارداد «{contract_title}» توسط طرف مقابل رد شد — مذاکره پایان یافت."
+      },
+      "amendment.withdrawn": {
+        "subject": "الحاقیه پس گرفته شد",
+        "body": "الحاقیه قرارداد «{contract_title}» توسط آغازگر پس گرفته شد — مذاکره پایان یافت."
+      }
+    }
+  },
+  "fr": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "Avenant rejeté",
+        "body": "L’avenant au contrat « {contract_title} » a été rejeté par l’autre partie — la négociation est close."
+      },
+      "amendment.withdrawn": {
+        "subject": "Avenant retiré",
+        "body": "L’avenant au contrat « {contract_title} » a été retiré par son initiateur — la négociation est close."
+      }
+    }
+  },
+  "he": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "הנספח נדחה",
+        "body": "הנספח לחוזה «{contract_title}» נדחה על ידי הצד השני — המשא ומתן הסתיים."
+      },
+      "amendment.withdrawn": {
+        "subject": "הנספח בוטל",
+        "body": "הנספח לחוזה «{contract_title}» בוטל על ידי היוזם — המשא ומתן הסתיים."
+      }
+    }
+  },
+  "hi": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "अनुपूरक समझौता अस्वीकृत",
+        "body": "अनुबंध «{contract_title}» के अनुपूरक समझौते को दूसरे पक्ष ने अस्वीकार कर दिया — समन्वय समाप्त।"
+      },
+      "amendment.withdrawn": {
+        "subject": "अनुपूरक समझौता वापस लिया गया",
+        "body": "अनुबंध «{contract_title}» के अनुपूरक समझौते को आरंभकर्ता ने वापस ले लिया — समन्वय समाप्त।"
+      }
+    }
+  },
+  "hy": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "Լրացուցիչ համաձայնագիրը մերժվել է",
+        "body": "«{contract_title}» պայմանագրի լրացուցիչ համաձայնագիրը մերժվել է մյուս կողմի կողմից — համաձայնեցումը դադարեցված է։"
+      },
+      "amendment.withdrawn": {
+        "subject": "Լրացուցիչ համաձայնագիրը հետ է կանչվել",
+        "body": "«{contract_title}» պայմանագրի լրացուցիչ համաձայնագիրը հետ է կանչվել նախաձեռնողի կողմից — համաձայնեցումը դադարեցված է։"
+      }
+    }
+  },
+  "id": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "Adendum ditolak",
+        "body": "Adendum kontrak «{contract_title}» ditolak oleh pihak lain — negosiasi ditutup."
+      },
+      "amendment.withdrawn": {
+        "subject": "Adendum ditarik",
+        "body": "Adendum kontrak «{contract_title}» ditarik oleh pemrakarsa — negosiasi ditutup."
+      }
+    }
+  },
+  "it": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "Addendum respinto",
+        "body": "L’addendum al contratto «{contract_title}» è stato respinto dall’altra parte — la negoziazione è chiusa."
+      },
+      "amendment.withdrawn": {
+        "subject": "Addendum ritirato",
+        "body": "L’addendum al contratto «{contract_title}» è stato ritirato dall’iniziatore — la negoziazione è chiusa."
+      }
+    }
+  },
+  "ja": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "追加合意が却下されました",
+        "body": "契約「{contract_title}」の追加合意は相手方により却下されました — 協議は終了しました。"
+      },
+      "amendment.withdrawn": {
+        "subject": "追加合意が撤回されました",
+        "body": "契約「{contract_title}」の追加合意は提案者により撤回されました — 協議は終了しました。"
+      }
+    }
+  },
+  "ka": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "დამატებითი შეთანხმება უარყოფილია",
+        "body": "«{contract_title}» ხელშეკრულების დამატებითი შეთანხმება მეორე მხარემ უარყო — შეთანხმება შეწყვეტილია."
+      },
+      "amendment.withdrawn": {
+        "subject": "დამატებითი შეთანხმება გამოხმობილია",
+        "body": "«{contract_title}» ხელშეკრულების დამატებითი შეთანხმება ინიციატორმა გამოიხმო — შეთანხმება შეწყვეტილია."
+      }
+    }
+  },
+  "kk": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "Қосымша келісім қабылданбады",
+        "body": "«{contract_title}» шартына қосымша келісімді екінші тарап қабылдамады — келісу тоқтатылды."
+      },
+      "amendment.withdrawn": {
+        "subject": "Қосымша келісім кері қайтарылды",
+        "body": "«{contract_title}» шартына қосымша келісімді бастамашы кері қайтарды — келісу тоқтатылды."
+      }
+    }
+  },
+  "ko": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "추가 합의 거절됨",
+        "body": "계약 «{contract_title}»의 추가 합의가 상대방에 의해 거절되었습니다 — 협의가 종료되었습니다."
+      },
+      "amendment.withdrawn": {
+        "subject": "추가 합의 철회됨",
+        "body": "계약 «{contract_title}»의 추가 합의가 제안자에 의해 철회되었습니다 — 협의가 종료되었습니다."
+      }
+    }
+  },
+  "pl": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "Aneks odrzucony",
+        "body": "Aneks do umowy „{contract_title}” został odrzucony przez drugą stronę — uzgadnianie zakończone."
+      },
+      "amendment.withdrawn": {
+        "subject": "Aneks wycofany",
+        "body": "Aneks do umowy „{contract_title}” został wycofany przez inicjatora — uzgadnianie zakończone."
+      }
+    }
+  },
+  "pt-BR": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "Aditivo rejeitado",
+        "body": "O aditivo ao contrato “{contract_title}” foi rejeitado pela outra parte — a negociação está encerrada."
+      },
+      "amendment.withdrawn": {
+        "subject": "Aditivo retirado",
+        "body": "O aditivo ao contrato “{contract_title}” foi retirado pelo iniciador — a negociação está encerrada."
+      }
+    }
+  },
+  "ro": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "Act adițional respins",
+        "body": "Actul adițional la contractul „{contract_title}” a fost respins de cealaltă parte — negocierea este încheiată."
+      },
+      "amendment.withdrawn": {
+        "subject": "Act adițional retras",
+        "body": "Actul adițional la contractul „{contract_title}” a fost retras de inițiator — negocierea este încheiată."
+      }
+    }
+  },
+  "ru": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "Допсоглашение отклонено",
+        "body": "Допсоглашение к договору «{contract_title}» отклонено второй стороной — согласование прекращено."
+      },
+      "amendment.withdrawn": {
+        "subject": "Допсоглашение отозвано",
+        "body": "Допсоглашение к договору «{contract_title}» отозвано инициатором — согласование прекращено."
+      }
+    }
+  },
+  "sw": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "Nyongeza ya mkataba imekataliwa",
+        "body": "Nyongeza ya mkataba «{contract_title}» imekataliwa na upande mwingine — majadiliano yamefungwa."
+      },
+      "amendment.withdrawn": {
+        "subject": "Nyongeza ya mkataba imeondolewa",
+        "body": "Nyongeza ya mkataba «{contract_title}» imeondolewa na mwanzilishi — majadiliano yamefungwa."
+      }
+    }
+  },
+  "th": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "ภาคผนวกถูกปฏิเสธ",
+        "body": "ภาคผนวกของสัญญา «{contract_title}» ถูกอีกฝ่ายปฏิเสธ — การเจรจาสิ้นสุดลง"
+      },
+      "amendment.withdrawn": {
+        "subject": "ภาคผนวกถูกถอน",
+        "body": "ภาคผนวกของสัญญา «{contract_title}» ถูกผู้ริเริ่มถอนออก — การเจรจาสิ้นสุดลง"
+      }
+    }
+  },
+  "tr": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "Ek sözleşme reddedildi",
+        "body": "«{contract_title}» sözleşmesine ek sözleşme karşı tarafça reddedildi — müzakere sona erdi."
+      },
+      "amendment.withdrawn": {
+        "subject": "Ek sözleşme geri çekildi",
+        "body": "«{contract_title}» sözleşmesine ek sözleşme başlatan tarafından geri çekildi — müzakere sona erdi."
+      }
+    }
+  },
+  "uk": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "Додаткову угоду відхилено",
+        "body": "Додаткову угоду до договору «{contract_title}» відхилила друга сторона — погодження припинено."
+      },
+      "amendment.withdrawn": {
+        "subject": "Додаткову угоду відкликано",
+        "body": "Додаткову угоду до договору «{contract_title}» відкликав ініціатор — погодження припинено."
+      }
+    }
+  },
+  "ur": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "ضمیمہ مسترد",
+        "body": "معاہدہ «{contract_title}» کا ضمیمہ دوسرے فریق نے مسترد کر دیا — بات چیت ختم۔"
+      },
+      "amendment.withdrawn": {
+        "subject": "ضمیمہ واپس لیا گیا",
+        "body": "معاہدہ «{contract_title}» کا ضمیمہ آغاز کنندہ نے واپس لے لیا — بات چیت ختم۔"
+      }
+    }
+  },
+  "uz": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "Qoʻshimcha kelishuv rad etildi",
+        "body": "«{contract_title}» shartnomasiga qoʻshimcha kelishuvni ikkinchi tomon rad etdi — kelishish toʻxtatildi."
+      },
+      "amendment.withdrawn": {
+        "subject": "Qoʻshimcha kelishuv qaytarib olindi",
+        "body": "«{contract_title}» shartnomasiga qoʻshimcha kelishuvni tashabbuskor qaytarib oldi — kelishish toʻxtatildi."
+      }
+    }
+  },
+  "vi": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "Phụ lục bị từ chối",
+        "body": "Phụ lục hợp đồng «{contract_title}» đã bị bên kia từ chối — việc thỏa thuận đã kết thúc."
+      },
+      "amendment.withdrawn": {
+        "subject": "Phụ lục đã được rút lại",
+        "body": "Phụ lục hợp đồng «{contract_title}» đã được bên khởi xướng rút lại — việc thỏa thuận đã kết thúc."
+      }
+    }
+  },
+  "zh-Hans": {
+    "notifications": {
+      "amendment.rejected": {
+        "subject": "补充协议已被拒绝",
+        "body": "合同《{contract_title}》的补充协议已被对方拒绝 — 协商已结束。"
+      },
+      "amendment.withdrawn": {
+        "subject": "补充协议已撤回",
+        "body": "合同《{contract_title}》的补充协议已被发起方撤回 — 协商已结束。"
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "aboutTitle": "Porukam nima",
+  "faqTitle": "Savol-javob",
+  "aboutLead": "Porukam — ogʻzaki kelishuvni bosqichlari, dalillari va obroʻsi boʻlgan tushunarli shartnomaga aylantiradigan xizmat. Yuristlarsiz, komissiyasiz va pul platformadan oʻtmasdan.",
+  "aboutSections": [
+    {
+      "title": "Kimlar uchun",
+      "text": "Buyurtma asosida ish qiladiganlar yoki ish buyuradiganlar uchun: taʼmir, dizayn, dasturlash, darslar, foto, tashish, buyum sotish, ijara, odamlar orasidagi qarz. Ikki kishi uchun, shaxs va yakka tartibdagi tadbirkor uchun, oʻzini oʻzi band qilganlar uchun."
+    },
+    {
+      "title": "Bu qanday ishlaydi",
+      "text": "Tayyor shakldan shartnoma yaratasiz, ishni bosqichlarga boʻlasiz, ikkinchi tarafni @hendl orqali taklif qilasiz. Ikkala taraf imzolaydi. Soʻng har bir bosqich nazorat roʻyxati boʻyicha topshiriladi va qabul qilinadi, barcha faktlar — imzo, topshirish, qabul, nizo — qayd etilib, ikkalasining obroʻsiga yoziladi."
+    },
+    {
+      "title": "Platforma nima qilmaydi",
+      "text": "Pulni saqlamaydi va oʻtkazmaydi — tanlangan usulda toʻgʻridan-toʻgʻri hisob-kitob qilasiz. Fayllaringiz asl nusxasini saqlamaydi — faqat xeshlarini. Maʼlumotlaringizni sotmaydi va reklama koʻrsatmaydi."
+    },
+    {
+      "title": "Birlashmalar",
+      "text": "Birlashma — jamoa yoki hamjamiyat uchun umumiy manzil: gildiya (bir-birining sifatiga kafolat beruvchi doimiy kasbiy hamjamiyat), klan (3–20 kishilik loyiha jamoasi), hamjamiyat (qiziqishlar boʻyicha ochiq guruh) yoki kompaniya vitrinasi. Birlashmaning oʻz @hendli, logotipi, sohasi va geografiyasi, aʼzolar roʻyxati bilan ommaviy kartasi bor; har bir aʼzoning profilida u qayerda ekani koʻrinadi. Shartnomalarni avvalgidek odamlar tuzadi — birlashma bir-biringizni topishga va jamoani koʻrsatishga yordam beradi."
+    }
+  ],
+  "howTitle": "Qanday qilish kerak",
+  "howItems": [
+    {
+      "title": "Shartnoma yaratish",
+      "text": "Bitimlar → «Yaratish». Shartnoma turini tanlang (xizmat, sotish, ijara, qarz), shaklni toʻldiring — har maydonda maslahat beruvchi «?» bor. Kontragentni @hendl boʻyicha koʻrsating, bosqichlarga boʻling, toʻlov usulini tanlang va imzoga yuboring."
+    },
+    {
+      "title": "Kontragentni taklif qilish",
+      "text": "«Taraflar» qadamida @hendl kiriting. Odamda hali hisob boʻlmasa — unga shartnoma havolasini yuboring: Google orqali kirgach, uni oʻzida koʻradi."
+    },
+    {
+      "title": "Imzolash",
+      "text": "Shartnomani oching → «Imzolash ekraniga oʻtish». Muzlatilgan versiyani tekshirib, imzolang. Ikkala taraf imzolaganda shartnoma kuchga kiradi."
+    },
+    {
+      "title": "Imzolashdan oldin tuzatish taklif qilish",
+      "text": "Koʻrib chiqish ekranida bandni tanlab, oʻzgarish taklif qiling. Ikkinchi taraf qabul qiladi yoki rad etadi; kelishilgach versiya qayta muzlatiladi."
+    },
+    {
+      "title": "Bosqichni topshirish",
+      "text": "Ijrochi bosqichni ochadi → «Topshirish», dalillarni (foto, fayllar, havolalar) biriktiradi va qabulga yuboradi."
+    },
+    {
+      "title": "Bosqichni qabul qilish yoki qayta ishlashga qaytarish",
+      "text": "Buyurtmachi bosqichni ochadi → nazorat roʻyxatidan oʻtadi → «Qabul qilish» yoki izohlar bilan «Qaytarish». Buyurtmachi tekshirish muddatidan uzoq jim tursa, bosqich avtomatik qabul qilinadi."
+    },
+    {
+      "title": "Bosqich uchun toʻlash",
+      "text": "Qabuldan keyin buyurtmachi pulni tanlangan usulda toʻgʻridan-toʻgʻri ijrochiga oʻtkazadi va bosqichda toʻlovni belgilaydi. Ijrochi olganini tasdiqlaydi."
+    },
+    {
+      "title": "Nizo ochish",
+      "text": "Kelisha olmasangiz — bosqichda «Nizo» tugmasini bosing. Ikkala taraf dalil biriktiradi; avval qayd etilganlarning bari allaqachon ishda."
+    },
+    {
+      "title": "Kontragentni topish va kontaktni saqlash",
+      "text": "Odamning kartasini @hendl havolasi orqali yoki shartnomadan oching → «Kontaktni saqlash». Shartnomalaringiz kontragentlari kontaktlarga oʻzi tushadi."
+    },
+    {
+      "title": "Oʻz kartangizni ulashish",
+      "text": "Profil → «Ulashish»: porukam.app/@hendlingiz koʻrinishidagi havola va QR-kod. Kartada faqat faktlar: nechta bitim, qanday qabul qilingan, nizo boʻlganmi."
+    },
+    {
+      "title": "Birlashma yaratish",
+      "text": "Birlashmalar → «Birlashma yaratish». @hendl tanlang (u bitta va yaratishda beriladi), tur, soha va geografiyani tanlang, tavsif, havolalar va logotip qoʻshing. Rahbar arizalarni qabul qiladi, @hendl orqali taklif qiladi va sozlamalarni oʻzgartiradi."
+    },
+    {
+      "title": "Birlashmaga kirish",
+      "text": "Birlashmani Qidiruvdan (nomi, @hendli yoki sohasi boʻyicha) toping yoki /@hendl havolasi orqali oching. Ochiq — «Kirish» darhol; yopiq — «Kirish» rahbarga ariza yuboradi. Istalgan vaqtda chiqish mumkin; rahbar birlashmani topshirmaguncha chiqa olmaydi."
+    }
+  ],
+  "faqItems": [
+    {
+      "q": "Bu bepulmi?",
+      "a": "Ha. Shartnoma tuzish, bosqichlar, dalillar, obroʻ — toʻlovsiz va toʻlovlardan komissiyasiz. Pullik imkoniyatlar paydo boʻlsa, alohida va majburiy boʻlmaydi."
+    },
+    {
+      "q": "Bunday shartnomaning yuridik kuchi bormi?",
+      "a": "Shartnoma yozma shaklda oddiy elektron imzo bilan tuziladi: ikkala taraf matnning muzlatilgan versiyasini tasdiqlaydi, xizmat esa kim, qachon va aynan nimani imzolaganini qayd etadi. Bunday shakl aksariyat mamlakatlar qonunchiligida odamlar va biznes oʻrtasidagi bitimlar uchun tan olinadi. Qonun notarius yoki davlat roʻyxatidan oʻtkazishni talab qiladigan bitimlarda (masalan, koʻchmas mulk) xizmat bu tartiblarni oʻrnini bosmaydi."
+    },
+    {
+      "q": "Pul platformadan oʻtadimi?",
+      "a": "Yoʻq. Taraflar toʻgʻridan-toʻgʻri hisob-kitob qiladi — oʻtkazma, naqd, qanday kelishgan boʻlsa. Platforma majburiyatni, toʻlov faktini va olish tasdigʻini qayd etadi."
+    },
+    {
+      "q": "Ikkinchi taraf javob bermasa-chi?",
+      "a": "Har qadamning muddati bor. Buyurtmachi topshirilgan bosqichni muddatida tekshirmasa — u avtomatik qabul qilinadi. Kontragent shartnomani imzolamasa — u qoralama boʻlib qoladi, majburiyat yoʻq."
+    },
+    {
+      "q": "Imzolangandan keyin shartnomani oʻzgartirish mumkinmi?",
+      "a": "Imzolangan matn oʻzgarmas. Oʻzgarishlar ikkala taraf imzolaydigan qoʻshimcha kelishuv bilan rasmiylashtiriladi; versiyalar tarixi saqlanadi."
+    },
+    {
+      "q": "Obroʻ nima va uni kim koʻradi?",
+      "a": "Bu bitimlaringizdan faktlar: nechta tuzilgan, nechtasi oʻz vaqtida qabul qilingan, nizo boʻlganmi va qanday tugagan. Hech qanday baho va yulduz yoʻq. Karta va alohida maydonlar koʻrinishini oʻzingiz sozlaysiz."
+    },
+    {
+      "q": "Dalil fayllarim qayerda saqlanadi?",
+      "a": "Asl nusxalar — sizda va kontragentda. Platforma izni (xesh), kichik tasvirni va biriktirilgan vaqtni saqlaydi — fayl oʻzgarmaganini isbotlash uchun yetarli."
+    },
+    {
+      "q": "Kontragent men haqimda nima koʻradi?",
+      "a": "Hisob bilan tasdiqlangan ismni, @hendl va siz ruxsat bergan doirada obroʻ kartasini. Telefon, pochta va rekvizitlar hech qachon koʻrsatilmaydi — faqat oʻzingiz shartnoma matniga yozsangiz."
+    },
+    {
+      "q": "Boshqa qurilmadan qanday kirish mumkin?",
+      "a": "Oʻsha Google hisobi bilan. Xizmatdan foydalanib turganingizda sessiya 30 kun qayta kirishsiz ishlaydi."
+    },
+    {
+      "q": "Hisobni qanday oʻchirish mumkin?",
+      "a": "Profil → Sozlamalar → Hisob → Oʻchirish. Shaxsiy maʼlumotlar qaytarib boʻlmas tarzda yoʻq qilinadi; kontragentlarda umumiy shartnomalarning oʻz nusxalari qoladi."
+    },
+    {
+      "q": "Telefonda ishlaydimi?",
+      "a": "Ha, bu veb-ilova: brauzerda porukam.app ni ochib, «Bosh ekran»ga qoʻshing — bildirishnomalari bilan oddiy ilova kabi boʻladi."
+    },
+    {
+      "q": "Siz bilan qanday bogʻlanish mumkin?",
+      "a": "hello@trust-dev.com ga yozing — xizmat, maʼlumotlar va shartnomalar haqidagi savollarga javob beramiz."
+    },
+    {
+      "q": "Birlashmalar nima va nima uchun kerak?",
+      "a": "Bu jamoa yoki hamjamiyatni bitta nom ostida koʻrsatish usuli: gildiya, klan, hamjamiyat yoki kompaniya vitrinasi. Buyurtmachi birlashmani soha va shahar boʻyicha topadi, aʼzolar va ularning obroʻ kartalarini koʻradi, shartnomani esa aniq odam bilan tuzadi. Ijrochilar uchun bu mijozlar keladigan va har birining obroʻsi koʻrinadigan umumiy manzil."
+    },
+    {
+      "q": "Birlashma shartnoma boʻyicha javob beradimi?",
+      "a": "Yoʻq. Shartnoma tarafi — doim aniq odam yoki uning YaTT/yuridik shaxsi; u shaxsan imzolaydi va javob beradi. Birlashma pul saqlamaydi va aʼzolar uchun kafolat bermaydi — bu vitrina va manzil, obroʻ esa har kimning oʻz bitimlaridan shakllanadi."
+    }
+  ],
+  "socialTitle": "Biz ijtimoiy tarmoqlarda",
+  "backToProfile": "Profil"
+}

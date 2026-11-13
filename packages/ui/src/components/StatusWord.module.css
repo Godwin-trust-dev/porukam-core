@@ -1,0 +1,16 @@
+/* ── Статус словом (DEV-20_2 §2) ──
+   В строке списка статус несёт ВТОРАЯ строка, словом-цветом, без чипа:
+   «отклонён» красным, «гарантия/защита» — зелёным/бирюзовым, «в работе/
+   согласование» — янтарным, «черновик» — приглушённым. Кегль наследуется от
+   строки (13px на телефоне), чтобы статус не спорил с названием. */
+.word {
+  font-size: inherit;
+  font-weight: var(--pr-fw-semibold);
+  white-space: nowrap;
+}
+.neutral { color: var(--pr-text-2); }
+.green   { color: var(--pr-green-ink); }
+.teal    { color: var(--pr-teal-deep); }
+.amber   { color: var(--pr-amber-ink); }
+.red     { color: var(--pr-red); }
+.ink     { color: var(--pr-ink); }

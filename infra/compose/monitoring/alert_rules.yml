@@ -1,0 +1,111 @@
+# Алёрты НФТ §11 / docs/tasks/fundament-2.md ЭФ.6 п.3.
+#
+# "*NotRunning" — общий "мертвецкий выключатель" по common.heartbeat
+# (common/metrics.py:HeartbeatCollector, porukam_task_heartbeat_age_seconds
+# = время с последнего прогона задачи, читается из БД на каждый скрейп —
+# не зависит от того, какой процесс её выполнил). Порог — период расписания
+# из CELERY_BEAT_SCHEDULE (config/settings/base.py) с запасом; `for` даёт
+# "через пару минут", а не на первом же смещении скрейпа.
+groups:
+  - name: porukam-sweep-heartbeats
+    rules:
+      - alert: PorukamDeadlineSweepNotRunning
+        expr: porukam_task_heartbeat_age_seconds{task="deadlines_sweep"} > 90
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Sweep доменных дедлайнов не запускался > 90с"
+          description: >-
+            tech-spec.md §2.5/ADR-039: на этой метрике стоит пауза тайм-аутов.
+            Похоже, Celery beat остановлен или задача deadlines_sweep падает
+            на каждом прогоне.
+
+      - alert: PorukamOutboxRelayNotRunning
+        expr: porukam_task_heartbeat_age_seconds{task="outbox_relay"} > 30
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Outbox relay (sweep каждые 5с) не запускался > 30с"
+
+      - alert: PorukamNotificationsReminderSweepNotRunning
+        expr: porukam_task_heartbeat_age_seconds{task="notifications_reminder_sweep"} > 90
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Sweep напоминаний уведомлений не запускался > 90с"
+
+      - alert: PorukamAuditVaultDailyCheckpointNotRunning
+        expr: porukam_task_heartbeat_age_seconds{task="audit_vault_daily_checkpoint"} > 93600
+        for: 10m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Ежесуточный checkpoint Audit Vault не запускался > 26ч"
+
+      - alert: PorukamAuditVaultChainVerificationNotRunning
+        expr: porukam_task_heartbeat_age_seconds{task="audit_vault_chain_verification"} > 1800
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Периодическая проверка цепочки Audit Vault не запускалась > 30 мин"
+
+  - name: porukam-legal-slo
+    rules:
+      - alert: PorukamDeadlineSweepLagSLOBreach
+        expr: >-
+          histogram_quantile(0.95, sum(rate(porukam_deadlines_sweep_lag_seconds_bucket[15m])) by (le)) > 60
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "p95 лага срабатывания доменных дедлайнов > 60с (SLO, tech-spec.md §11)"
+
+      - alert: PorukamAuditVaultChainBroken
+        expr: porukam_audit_vault_chain_ok == 0
+        for: 0m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Разрыв хеш-цепочки Audit Vault обнаружен последней verify_chain()"
+
+      - alert: PorukamAuditVaultCheckpointUnattested
+        expr: porukam_audit_vault_checkpoint_attested == 0
+        for: 0m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Суточный checkpoint Audit Vault не заверен: недобор кворума TSA (ADR-135)"
+          description: >-
+            Меньше TSA_QUORUM из TSA_ENDPOINTS вернули валидную метку RFC 3161.
+            Метку задним числом не поставить — разобраться сегодня:
+            `manage.py tsa_probe` на боевом хосте, лог события
+            audit_vault.checkpoint_unattested (поле failures).
+
+      - alert: PorukamNotificationsUndeliveredLegal
+        expr: porukam_notifications_undelivered_legal_overdue > 0
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Юрзначимое уведомление не размещено в ЛК дольше порога (ADR-057)"
+
+  - name: porukam-operational
+    rules:
+      - alert: PorukamOutboxBacklogStuck
+        expr: porukam_outbox_oldest_unpublished_age_seconds > 300
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Outbox не разгребается дольше 5 минут"
+
+      - alert: PorukamCeleryTaskFailuresRising
+        expr: increase(porukam_celery_task_total{state="FAILURE"}[10m]) > 3
+        labels:
+          severity: warning
+        annotations:
+          summary: "Рост числа упавших задач Celery за 10 минут"

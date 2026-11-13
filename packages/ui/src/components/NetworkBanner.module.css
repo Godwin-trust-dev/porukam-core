@@ -1,0 +1,14 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--pr-sp-2);
+  padding: var(--pr-sp-2) var(--pr-sp-4);
+  background: var(--pr-sand);
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.icon {
+  flex: none;
+  color: var(--pr-text-mute);
+}

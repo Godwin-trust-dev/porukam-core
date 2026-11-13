@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "Interface language",
+  "globeTriggerAria": "Interface language",
+  "rowLabel": "Interface language",
+  "listTitle": "Interface language",
+  "searchPlaceholder": "Search language…",
+  "searchAriaLabel": "Search language",
+  "searchClear": "Clear search",
+  "currentSectionTitle": "Current",
+  "allSectionTitle": "All languages",
+  "noResults": "No languages found",
+  "betaBadge": "auto-translated",
+  "betaTooltip": "Machine-translated — may be inaccurate",
+  "currentAria": "Current language",
+  "disabledToast": "{{lang}} is temporarily unavailable · showing English",
+  "closeLabel": "Close",
+  "onboardingHint": "Guessed from your browser — you can change it anytime",
+  "settingsRowLabel": "Language and region",
+  "settingsLanguageExplain": "This is the app's interface language. The contract's official language is chosen separately — your counterparty sees a translation, but the official text is what gets signed.",
+  "loadErrorRetry": "Retry",
+  "loadError": "Couldn't load the language list"
+}

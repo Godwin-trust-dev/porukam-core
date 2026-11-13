@@ -1,0 +1,139 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+}
+.label {
+  font-family: var(--pr-font-body);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text);
+}
+.labelRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-1);
+}
+/* Строка подписи, в которой подписи нет — `help` без `label` (поле запроса на
+   экране поиска). Одинокий «?» висел в пустоте у ЛЕВОГО края над полем и
+   читался как отдельная кнопка экрана (замечание владельца 18.09 о дизайне
+   поиска). Прижимаем его к правой кромке поля и подтягиваем вплотную — знак
+   принадлежит полю, а не экрану. Раскрытый текст подсказки от этого не
+   страдает: у него `flex-basis: 100%`, он и дальше занимает всю строку. */
+.labelRowHelpOnly {
+  justify-content: flex-end;
+  margin-block-end: calc(-1 * var(--pr-sp-1));
+}
+.required {
+  color: var(--pr-amber-deep);
+}
+.control {
+  font-family: var(--pr-font-body);
+  font-size: var(--pr-fs-body);
+  color: var(--pr-text);
+  background: var(--pr-white);
+  border: 1.5px solid var(--pr-line);
+  border-radius: var(--pr-r-md);
+  padding: 0 var(--pr-sp-4);
+  min-height: var(--pr-touch-min);
+  transition: border-color var(--pr-dur) var(--pr-ease), box-shadow var(--pr-dur) var(--pr-ease);
+  width: 100%;
+}
+textarea.control {
+  padding: var(--pr-sp-3) var(--pr-sp-4);
+  min-height: 96px;
+  resize: vertical;
+  line-height: var(--pr-lh-normal);
+}
+.control::placeholder {
+  color: var(--pr-text-mute);
+}
+.control:focus-visible {
+  outline: none;
+  border-color: var(--pr-amber);
+  box-shadow: 0 0 0 3px rgba(255, 158, 44, 0.22);
+}
+.control:disabled {
+  background: var(--pr-sand);
+  color: var(--pr-text-mute);
+  cursor: not-allowed;
+}
+/* Только для чтения (например «Было» в правке, ADR-123): подложка как у
+   выключенного поля, но текст полноцветный — это значение договора, его читают.
+
+   ТОЛЬКО input/textarea (ADR-192). Селектор без имени тега задевал ВСЕ
+   `SelectField` продукта: `<select>` по спецификации всегда matches
+   `:read-only` (редактируемым считается только input/textarea), поэтому
+   каждый селект в интерфейсе рисовался песочной подложкой с ПУНКТИРНОЙ
+   рамкой — видом «это не трогать». На экране поиска (замечание владельца
+   18.09 про цвета) это было заметнее всего: белое поле запроса, две белые
+   кнопки фильтров — и бежевый «Любой опыт» рядом. */
+input.control:read-only:not([type='date']),
+textarea.control:read-only {
+  background: var(--pr-sand);
+  border-style: dashed;
+  cursor: default;
+}
+.invalid {
+  border-color: var(--pr-red);
+}
+.invalid:focus-visible {
+  box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.2);
+}
+.error {
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-red);
+}
+.hint {
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+}
+
+/* Селект (DEV-17 §1): системная стрелка погашена, шеврон — свой (Icon). */
+.selectShell {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+select.select {
+  appearance: none;
+  padding-inline-end: calc(var(--pr-sp-4) + 22px);
+}
+.selectChevron {
+  position: absolute;
+  inset-inline-end: var(--pr-sp-3);
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  display: inline-flex;
+  color: var(--pr-text-2);
+}
+select.select:disabled + .selectChevron,
+.selectShell:has(select:disabled) .selectChevron {
+  color: var(--pr-text-mute);
+}
+
+/* Денежное поле: сумма + валюта */
+.money {
+  display: flex;
+  align-items: stretch;
+  gap: var(--pr-sp-2);
+}
+.money .amount {
+  flex: 1;
+}
+.money .currency {
+  width: 110px;
+  flex: none;
+}
+
+/* OTP-поле */
+.otp {
+  letter-spacing: 0.5em;
+  text-align: center;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h2);
+  padding-inline-end: 0;
+}

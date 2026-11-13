@@ -1,0 +1,57 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+}
+.fieldLabel {
+  font-weight: var(--pr-fw-medium);
+  color: var(--pr-ink);
+  font-size: var(--pr-fs-sm);
+}
+/* Доска B: две тёмные пилюли ролей и «Далее» — одна строка на десктопе,
+   стопка во всю ширину на телефоне (там «Далее» — CTA под контентом). */
+.roleRow {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  min-inline-size: 0;
+}
+.rolePills {
+  display: flex;
+  gap: var(--pr-sp-3);
+  min-inline-size: 0;
+  flex: 1 1 auto;
+}
+.roleFooter {
+  flex: none;
+  margin-inline-start: auto;
+}
+@media (max-width: 1023.98px) {
+  .roleRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .rolePills {
+    flex-direction: column;
+  }
+  .roleFooter {
+    margin-inline-start: 0;
+    margin-block-start: var(--pr-sp-2);
+  }
+}
+/* Обязательный выбор уточнения — заметная подсказка, не приглушённая
+   (отсмотр 2026-08-18 №5: блок «терялся», «Далее» выглядела сломанной). */
+.subtypeHint {
+  margin: 0;
+  color: var(--pr-text);
+  font-size: var(--pr-fs-sm);
+  font-weight: var(--pr-fw-medium);
+}
+.subtypeError {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  color: var(--pr-red);
+  font-size: var(--pr-fs-sm);
+}

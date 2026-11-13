@@ -1,0 +1,28 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-3);
+  align-items: flex-start;
+}
+
+.skeletons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-3);
+}
+
+/* Оговорка об основной версии и фолбэк-предупреждение — мелко и приглушённо:
+   акцент на документе, пометка неброская (замечание к /welcome). */
+.notice,
+.fallback {
+  margin: 0;
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-2);
+  line-height: var(--pr-lh-normal);
+}
+.fallback {
+  padding: var(--pr-sp-2) var(--pr-sp-3);
+  border-inline-start: 2px solid var(--pr-line);
+  background: var(--pr-cream);
+  border-radius: var(--pr-r-sm);
+}

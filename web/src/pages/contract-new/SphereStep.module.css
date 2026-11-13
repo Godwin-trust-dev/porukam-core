@@ -1,0 +1,30 @@
+.chosen {
+  display: inline-flex;
+  align-self: flex-start;
+  background: var(--pr-spark);
+  border: 1px solid var(--pr-amber);
+  border-radius: var(--pr-r-pill);
+  padding: var(--pr-sp-2) var(--pr-sp-4);
+  font-weight: var(--pr-fw-medium);
+  color: var(--pr-ink);
+}
+.workTypes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-2);
+}
+.chip {
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-pill);
+  padding: var(--pr-sp-2) var(--pr-sp-4);
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-ink);
+  cursor: pointer;
+  min-height: var(--pr-touch-min);
+}
+.chipActive {
+  background: var(--pr-ink);
+  color: var(--pr-text-inv);
+  border-color: var(--pr-ink);
+}

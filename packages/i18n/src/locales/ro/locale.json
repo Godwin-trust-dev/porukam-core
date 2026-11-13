@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "Limba interfeței",
+  "globeTriggerAria": "Limba interfeței",
+  "rowLabel": "Limba interfeței",
+  "listTitle": "Limba interfeței",
+  "searchPlaceholder": "Caută o limbă…",
+  "searchAriaLabel": "Caută o limbă",
+  "searchClear": "Șterge căutarea",
+  "currentSectionTitle": "Actuală",
+  "allSectionTitle": "Toate limbile",
+  "noResults": "Nu s-a găsit nicio limbă",
+  "betaBadge": "traducere automată",
+  "betaTooltip": "Tradus automat — poate fi imprecis",
+  "currentAria": "Limba actuală",
+  "disabledToast": "{{lang}} nu este disponibilă momentan · afișăm engleza",
+  "closeLabel": "Închide",
+  "onboardingHint": "Detectată automat — o poți schimba oricând",
+  "settingsRowLabel": "Limbă și regiune",
+  "settingsLanguageExplain": "Aceasta este limba aplicației. Limba oficială a contractului se alege separat — cealaltă parte vede o traducere, dar se semnează textul oficial.",
+  "loadErrorRetry": "Încearcă din nou",
+  "loadError": "Nu am reușit să încărcăm lista de limbi"
+}

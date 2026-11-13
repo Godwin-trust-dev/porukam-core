@@ -1,0 +1,12 @@
+{
+  "actorSwitcher": {
+    "triggerLabel": "تبديل الملف",
+    "personalLabel": "شخصي",
+    "legalFormIp": "مؤسسة فردية",
+    "legalFormOoo": "ذ.م.م",
+    "addOrg": "إضافة منشأة",
+    "groups": "مجموعاتي"
+  },
+  "sectionMenu": "الأقسام",
+  "logout": "تسجيل الخروج"
+}

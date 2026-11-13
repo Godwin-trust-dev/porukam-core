@@ -1,0 +1,29 @@
+.wrap {
+  display: grid;
+  gap: var(--pr-sp-2);
+}
+.label {
+  font-size: var(--pr-fs-sm);
+  font-weight: var(--pr-fw-medium);
+  color: var(--pr-ink);
+}
+.hint {
+  margin: 0;
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-mute);
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-2);
+}
+.remove {
+  border: 0;
+  background: none;
+  padding: 0;
+  margin-inline-start: 4px;
+  display: inline-flex;
+  cursor: pointer;
+  color: inherit;
+  vertical-align: middle;
+}

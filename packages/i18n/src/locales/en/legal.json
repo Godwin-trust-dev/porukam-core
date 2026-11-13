@@ -1,0 +1,25 @@
+{
+  "machineNoteLabel": "auto-translated",
+  "machineNoteTooltip": "Machine translation, provided for convenience",
+  "fallbackNotice": "This document isn't translated into your language yet — showing the English original.",
+  "loadError": "Couldn't load the document.",
+  "openAria": "Open document",
+  "accountDeletion": {
+    "title": "Deleting your Porukam account",
+    "lead": "This page explains how to delete your account in Porukam, what is deleted, what is kept and for how long.",
+    "stepsTitle": "How to delete your account",
+    "step1": "Sign in to the Porukam app or open porukam.app.",
+    "step2": "Go to Profile → Settings → Account.",
+    "step3": "Tap “Delete account” and confirm the deletion.",
+    "step4": "The account is deleted straight away and every session on every device is ended.",
+    "deletedTitle": "What is deleted straight away and for good",
+    "deletedText": "Your name, email address, phone number, profile photo and portfolio works, address book, settings and the devices registered for push notifications. The encryption keys that protect your personal data are destroyed, so neither we nor anyone else can bring that data back.",
+    "keptTitle": "What is kept and for how long",
+    "keptText": "Materials of contracts already concluded: the contract text, the signatures, the evidence, the history of milestones and payments, and the messages about the contract. They belong to both parties of the deal and protect the rights of each of them, so one party alone cannot remove them. Such materials are kept for one year after the contract is completed and are deleted after that.",
+    "keptAnon": "In those materials you stay under an anonymised identifier. Signature hashes and the evidence chain hold no personal data and are not deleted.",
+    "blockedTitle": "When the account cannot be deleted",
+    "blockedText": "While you have unfinished contracts or open disputes, deletion is held back — finish them first. The app shows how many there are and which ones.",
+    "noAccessTitle": "If you cannot sign in",
+    "noAccessText": "Write to {{email}} from the email address linked to your account and we will delete the account on request. The same address is given in the Privacy Policy."
+  }
+}

@@ -1,0 +1,170 @@
+.screen {
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  background: var(--pr-cream);
+}
+.hero {
+  background: var(--pr-grad-ink);
+  color: var(--pr-text-inv);
+  padding: var(--pr-sp-10);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--pr-sp-4);
+  position: relative;
+  overflow: hidden;
+}
+.heroGlow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(60% 60% at 40% 30%, rgba(242, 162, 52, 0.22), transparent 60%);
+  pointer-events: none;
+}
+/* Знак на якоре — над заголовком, по левому краю текстовой колонки (DEV-17 §3). */
+.heroMark {
+  align-self: flex-start;
+  position: relative;
+}
+.heroTitle {
+  font-size: var(--pr-fs-display);
+  font-weight: var(--pr-fw-black);
+  line-height: var(--pr-lh-tight);
+  max-width: 14ch;
+}
+.heroText {
+  color: var(--pr-on-ink-2);
+  max-width: 42ch;
+  font-size: var(--pr-fs-h3);
+}
+.panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--pr-sp-6);
+}
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-xl);
+  box-shadow: var(--pr-shadow-card);
+  padding: var(--pr-sp-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-4);
+}
+.title {
+  font-size: var(--pr-fs-h1);
+  color: var(--pr-ink);
+  margin: 0;
+}
+.languageChipRow {
+  display: flex;
+  justify-content: flex-start;
+}
+.tosText {
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-mute);
+  line-height: var(--pr-lh-normal);
+}
+.tosLinks {
+  display: flex;
+  gap: var(--pr-sp-3);
+}
+.tosLink {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-teal-deep);
+  cursor: pointer;
+  text-decoration: underline;
+}
+.disclaimer {
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-mute);
+  border-top: 1px solid var(--pr-line);
+  padding-top: var(--pr-sp-3);
+  line-height: var(--pr-lh-normal);
+}
+.success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--pr-sp-4);
+  text-align: center;
+  padding: var(--pr-sp-6) 0;
+}
+
+@media (max-width: 900px) {
+  .screen {
+    grid-template-columns: 1fr;
+  }
+  /* Мобильный вход — якорь остаётся якорем (DEV-17 §3): компактный ink-hero
+     со знаком и заголовком вместо полного скрытия. Длинный подтекст прячем. */
+  .hero {
+    padding: var(--pr-sp-6);
+    gap: var(--pr-sp-3);
+    justify-content: flex-start;
+  }
+  .heroTitle {
+    font-size: var(--pr-fs-h2);
+    max-width: none;
+  }
+  .heroText {
+    display: none;
+  }
+  /* Cookie-баннер (position: fixed внизу) накрывал низ карточки: на 390px
+     оговорка «Мы фиксируем факты…» и ссылки на документы оказывались под ним
+     и не прокручивались (отсмотр 2026-08-25). Пока баннер висит — карточка
+     прижата к началу, а под ней запас, чтобы до низа можно было доскроллить. */
+  .panelUnderBanner {
+    align-items: flex-start;
+    padding-block-end: 200px;
+  }
+}
+
+/* Доска B «Вход · якорь (воздушный)»: на телефоне весь экран — ink, знак,
+   заголовок и подтекст, а светлая карточка входа лежит поверх тёмного, не на
+   отдельной кремовой половине. Заголовка «Porukam» внутри карточки нет —
+   бренд уже в eyebrow над знаком. */
+@media (max-width: 900px) {
+  .screen {
+    background: var(--pr-grad-ink);
+    grid-template-rows: auto 1fr;
+  }
+  .hero {
+    padding-block: var(--pr-sp-8) var(--pr-sp-4);
+    overflow: visible;
+  }
+  .heroText {
+    display: block;
+    font-size: var(--pr-fs-body);
+  }
+  .panel {
+    align-items: flex-start;
+    padding-block-start: var(--pr-sp-2);
+    /* Те же боковые поля, что у экрана входа по почте (LoginPage.module.css):
+       два экрана входа стоят рядом в одном сценарии и не должны различаться
+       шириной колонки. Эти же 8px с каждой стороны — то, чего не хватало
+       подписи «Продолжить через Google», чтобы уместиться в одну строку. */
+    padding-inline: var(--pr-sp-4);
+  }
+  .card {
+    box-shadow: none;
+    border: none;
+    /* По вертикали воздух прежний, по горизонтали — уже: на 360px карточка и
+       так лежит во всю ширину, лишние поля забирала подпись кнопки. */
+    padding: var(--pr-sp-6) var(--pr-sp-5);
+    /* Flex-элемент по умолчанию не сжимается уже своего min-content: без этого
+       длинная подпись кнопки распирает карточку, и экран уезжает вбок
+       горизонтальной прокруткой (та же оговорка, что в LoginPage.module.css). */
+    min-width: 0;
+  }
+  .card .title {
+    display: none;
+  }
+}

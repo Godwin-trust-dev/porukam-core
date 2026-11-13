@@ -1,0 +1,54 @@
+/* Фирменная вспышка (искра) — ТОЛЬКО на событиях доверия/подтверждения (§5.1).
+   В Ф1 используется один раз — на успешном входе. Уважает prefers-reduced-motion. */
+.wrap {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+}
+.star {
+  color: var(--pr-amber-deep);
+  filter: drop-shadow(0 0 6px var(--pr-spark));
+  transform-origin: center;
+  animation: pr-spark-in var(--pr-spark-flash) var(--pr-ease) both;
+}
+.halo {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--pr-spark) 0%, transparent 62%);
+  animation: pr-halo var(--pr-spark-flash) var(--pr-ease) both;
+  pointer-events: none;
+}
+@keyframes pr-spark-in {
+  0% {
+    transform: scale(0.3) rotate(-25deg);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.15) rotate(6deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+  }
+}
+@keyframes pr-halo {
+  0% {
+    transform: scale(0.4);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1.9);
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .star,
+  .halo {
+    animation: none;
+  }
+  .halo {
+    opacity: 0;
+  }
+}

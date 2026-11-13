@@ -1,0 +1,27 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  overflow: hidden;
+}
+.col {
+  padding: var(--pr-sp-4);
+  max-height: 480px;
+  overflow-y: auto;
+}
+.col:first-child {
+  border-inline-end: 1px solid var(--pr-line);
+}
+.colTitle {
+  font-size: var(--pr-fs-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--pr-text-2);
+  margin: 0 0 var(--pr-sp-3);
+}
+.text {
+  font-size: var(--pr-fs-sm);
+  line-height: var(--pr-lh-normal);
+  white-space: pre-wrap;
+}

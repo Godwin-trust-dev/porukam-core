@@ -1,0 +1,32 @@
+{
+  "video": "tour-en.webm",
+  "lang": "en",
+  "durationMs": 45009,
+  "chapters": [
+    {
+      "key": "contract",
+      "startMs": 0,
+      "endMs": 9001
+    },
+    {
+      "key": "stages",
+      "startMs": 9001,
+      "endMs": 18002
+    },
+    {
+      "key": "payment",
+      "startMs": 18002,
+      "endMs": 27005
+    },
+    {
+      "key": "evidence",
+      "startMs": 27005,
+      "endMs": 36007
+    },
+    {
+      "key": "reputation",
+      "startMs": 36007,
+      "endMs": 45009
+    }
+  ]
+}

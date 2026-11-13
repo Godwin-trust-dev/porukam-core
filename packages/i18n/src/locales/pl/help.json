@@ -1,0 +1,134 @@
+{
+  "aboutTitle": "Czym jest Porukam",
+  "faqTitle": "Pytania i odpowiedzi",
+  "aboutLead": "Porukam zamienia ustne ustalenia w czytelną umowę z etapami, dowodami i reputacją. Bez prawników, bez prowizji i bez przepływu pieniędzy przez platformę.",
+  "aboutSections": [
+    {
+      "title": "Dla kogo",
+      "text": "Dla tych, którzy wykonują pracę na zlecenie lub ją zlecają: remont, projektowanie, programowanie, lekcje, fotografia, przewozy, sprzedaż rzeczy, wynajem, pożyczki między ludźmi. Dla dwóch osób, dla osoby i jednoosobowej firmy, dla samozatrudnionych."
+    },
+    {
+      "title": "Jak to działa",
+      "text": "Tworzysz umowę z gotowego formularza, dzielisz pracę na etapy, zapraszasz drugą stronę po @nazwie. Obie strony podpisują. Potem każdy etap jest przekazywany i odbierany według listy kontrolnej, a wszystkie fakty — podpis, przekazanie, odbiór, spór — są zapisywane i trafiają do reputacji obu stron."
+    },
+    {
+      "title": "Czego platforma nie robi",
+      "text": "Nie przechowuje i nie przekazuje pieniędzy — rozliczacie się bezpośrednio wybranym sposobem. Nie przechowuje oryginałów Twoich plików — tylko ich hashe. Nie sprzedaje Twoich danych i nie pokazuje reklam."
+    },
+    {
+      "title": "Grupy",
+      "text": "Grupa to wspólny adres zespołu lub społeczności: gildia (stała społeczność zawodowa ręcząca za jakość nawzajem), klan (zespół projektowy 3–20 osób), społeczność (otwarta grupa zainteresowań) lub wizytówka firmy. Grupa ma własną @nazwę, logo, dziedzinę i geografię, publiczną kartę z członkami, a w profilu każdego członka widać, gdzie należy. Umowy nadal zawierają ludzie — grupa pomaga się odnaleźć i pokazać zespół."
+    }
+  ],
+  "howTitle": "Jak to zrobić",
+  "howItems": [
+    {
+      "title": "Utworzyć umowę",
+      "text": "Transakcje → „Utwórz”. Wybierz rodzaj umowy (usługa, sprzedaż, wynajem, pożyczka), wypełnij formularz — przy każdym polu jest „?” z podpowiedzią. Wskaż kontrahenta po @nazwie, podziel na etapy, wybierz sposób płatności i wyślij do podpisu."
+    },
+    {
+      "title": "Zaprosić kontrahenta",
+      "text": "W kroku „Strony” wpisz @nazwę. Jeśli osoba nie ma jeszcze konta — wyślij jej link do umowy: po zalogowaniu przez Google zobaczy ją u siebie."
+    },
+    {
+      "title": "Podpisać",
+      "text": "Otwórz umowę → „Przejdź do ekranu podpisu”. Sprawdź zamrożoną wersję i podpisz. Umowa wchodzi w życie, gdy podpiszą obie strony."
+    },
+    {
+      "title": "Zaproponować poprawkę przed podpisem",
+      "text": "Na ekranie uzgadniania wybierz punkt i zaproponuj zmianę. Druga strona przyjmuje lub odrzuca; po uzgodnieniu wersja jest zamrażana ponownie."
+    },
+    {
+      "title": "Przekazać etap",
+      "text": "Wykonawca otwiera etap → „Przekaż etap”, dołącza dowody (zdjęcia, pliki, linki) i wysyła do odbioru."
+    },
+    {
+      "title": "Odebrać etap lub zwrócić do poprawy",
+      "text": "Zamawiający otwiera etap → przechodzi listę kontrolną → „Odbierz etap” lub „Zwróć z uwagami”. Jeśli zamawiający milczy dłużej niż termin sprawdzenia, etap jest przyjmowany automatycznie."
+    },
+    {
+      "title": "Zapłacić za etap",
+      "text": "Po odbiorze zamawiający przekazuje pieniądze wybranym sposobem bezpośrednio wykonawcy i oznacza płatność w etapie. Wykonawca potwierdza otrzymanie."
+    },
+    {
+      "title": "Otworzyć spór",
+      "text": "Jeśli nie udało się dogadać — w etapie naciśnij „Spór”. Obie strony dołączają dowody; wszystko, co zapisano wcześniej, jest już w sprawie."
+    },
+    {
+      "title": "Znaleźć kontrahenta i zapisać kontakt",
+      "text": "Otwórz kartę osoby z linku @nazwa albo z umowy → „Zapisz kontakt”. Kontrahenci Twoich umów trafiają do kontaktów sami."
+    },
+    {
+      "title": "Udostępnić swoją kartę",
+      "text": "Profil → „Udostępnij”: link typu porukam.app/@twojanazwa i kod QR. Na karcie tylko fakty: ile transakcji, jak odebrane, czy były spory."
+    },
+    {
+      "title": "Utworzyć grupę",
+      "text": "Grupy → „Utwórz grupę”. Wybierz @nazwę (jedną, nadawaną przy tworzeniu), typ, dziedzinę i geografię; dodaj opis, linki i logo. Lider akceptuje zgłoszenia, zaprasza po @nazwie i zmienia ustawienia."
+    },
+    {
+      "title": "Dołączyć do grupy",
+      "text": "Znajdź grupę w Szukaj (nazwa, @nazwa lub dziedzina) albo otwórz link /@nazwa. Otwarta — „Dołącz” od razu; zamknięta — „Dołącz” wysyła zgłoszenie do lidera. Wyjść można w każdej chwili; lider nie może wyjść, dopóki nie przekaże grupy."
+    }
+  ],
+  "faqItems": [
+    {
+      "q": "Czy to jest bezpłatne?",
+      "a": "Tak. Zawarcie umowy, etapy, dowody, reputacja — bez opłat i bez prowizji od płatności. Płatne funkcje, jeśli się pojawią, będą osobne i nieobowiązkowe."
+    },
+    {
+      "q": "Czy taka umowa ma moc prawną?",
+      "a": "Umowa jest zawierana w formie pisemnej zwykłym podpisem elektronicznym: obie strony potwierdzają zamrożoną wersję tekstu, a serwis zapisuje, kto, kiedy i co podpisał. Taka forma jest uznawana przez prawo większości krajów dla transakcji między ludźmi i firmami. Tam, gdzie prawo wymaga notariusza lub rejestracji państwowej (np. nieruchomości), serwis nie zastępuje tych procedur."
+    },
+    {
+      "q": "Czy pieniądze przechodzą przez platformę?",
+      "a": "Nie. Strony rozliczają się bezpośrednio — przelewem, gotówką, jak ustalono. Platforma zapisuje zobowiązanie, fakt zapłaty i potwierdzenie odbioru."
+    },
+    {
+      "q": "Co, jeśli druga strona nie odpowiada?",
+      "a": "Każdy krok ma termin. Jeśli zamawiający nie sprawdził przekazanego etapu w terminie — jest przyjmowany automatycznie. Jeśli kontrahent nie podpisał umowy — pozostaje ona szkicem, bez zobowiązań."
+    },
+    {
+      "q": "Czy można zmienić umowę po podpisaniu?",
+      "a": "Podpisany tekst jest niezmienny. Zmiany wprowadza się aneksem, który podpisują obie strony; historia wersji jest zachowywana."
+    },
+    {
+      "q": "Czym jest reputacja i kto ją widzi?",
+      "a": "To fakty z Twoich transakcji: ile zawarto, ile odebrano na czas, czy były spory i jak się skończyły. Żadnych ocen ani gwiazdek. Widoczność karty i poszczególnych pól ustawiasz sam."
+    },
+    {
+      "q": "Gdzie przechowywane są moje pliki-dowody?",
+      "a": "Oryginały — u Ciebie i u kontrahenta. Platforma przechowuje hash (skrót kryptograficzny), miniaturę i czas dołączenia — to wystarczy, by dowieść, że plik się nie zmienił."
+    },
+    {
+      "q": "Co kontrahent widzi o mnie?",
+      "a": "Imię potwierdzone kontem, @nazwę i kartę reputacji w granicach, na które zezwolisz. Telefon, e-mail i dane bankowe nigdy nie są pokazywane — chyba że samodzielnie wpiszesz je w treść umowy."
+    },
+    {
+      "q": "Jak zalogować się z innego urządzenia?",
+      "a": "Tym samym kontem Google. Sesja trwa 30 dni bez ponownego logowania, dopóki korzystasz z serwisu."
+    },
+    {
+      "q": "Jak usunąć konto?",
+      "a": "Profil → Ustawienia → Konto → Usuń. Dane osobowe są niszczone nieodwracalnie; kontrahenci zachowują swoje egzemplarze wspólnych umów."
+    },
+    {
+      "q": "Czy działa na telefonie?",
+      "a": "Tak, to aplikacja webowa: otwórz porukam.app w przeglądarce i dodaj do ekranu głównego — będzie działać jak zwykła aplikacja, z powiadomieniami."
+    },
+    {
+      "q": "Jak się z wami skontaktować?",
+      "a": "Napisz na hello@trust-dev.com — odpowiadamy na pytania o serwis, dane i umowy."
+    },
+    {
+      "q": "Czym są grupy i po co?",
+      "a": "To sposób, by pokazać zespół lub społeczność pod jedną nazwą: gildia, klan, społeczność lub wizytówka firmy. Zamawiający znajduje grupę po dziedzinie i mieście, widzi członków i ich karty reputacji, a umowę zawiera z konkretną osobą. Dla wykonawców to wspólny adres, do którego przyprowadza się klientów i gdzie widać reputację każdego."
+    },
+    {
+      "q": "Czy grupa odpowiada z umowy?",
+      "a": "Nie. Stroną umowy jest zawsze konkretna osoba lub jej działalność/firma; podpisuje i odpowiada osobiście. Grupa nie przechowuje pieniędzy i nie ręczy za członków — to wizytówka i adres, a reputacja składa się z transakcji każdego z osobna."
+    }
+  ],
+  "socialTitle": "Jesteśmy w mediach społecznościowych",
+  "backToProfile": "Profil"
+}

@@ -1,0 +1,85 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.item {
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  background: var(--pr-white);
+}
+.item[data-status='suspended'] {
+  border-inline-start: 4px solid var(--pr-amber-deep);
+}
+.item[data-status='dispute'] {
+  border-inline-start: 4px solid var(--pr-red);
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  width: 100%;
+  padding: var(--pr-sp-3) var(--pr-sp-4);
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: start;
+  min-height: var(--pr-touch-min);
+}
+button.row {
+  cursor: pointer;
+}
+button.row:hover,
+button.row:focus-visible {
+  background: var(--pr-cream);
+}
+.ix {
+  flex: none;
+  width: 24px;
+  color: var(--pr-text-mute);
+  font-variant-numeric: tabular-nums;
+  font-weight: var(--pr-fw-semibold);
+}
+.main {
+  flex: 1;
+  min-width: 0;
+  /* Без переноса внутри слова текст вылезал из сжатой колонки и рисовался
+     ПОВЕРХ суммы (отсмотр 2026-08-25, превью мастера на 390px). */
+  overflow-wrap: anywhere;
+}
+.name {
+  margin: 0;
+  color: var(--pr-ink);
+  font-weight: var(--pr-fw-medium);
+}
+.meta {
+  margin: 2px 0 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.sum {
+  flex: none;
+  font-variant-numeric: tabular-nums;
+  color: var(--pr-ink);
+  font-weight: var(--pr-fw-semibold);
+}
+.chevron {
+  flex: none;
+  transform: rotate(180deg);
+  color: var(--pr-text-mute);
+}
+
+/* Телефон: название, сумма и статус в одну строку не помещаются — сумма со
+   статусом уходят на строку под названием, а не наезжают на него. */
+@media (max-width: 560px) {
+  .row {
+    flex-wrap: wrap;
+  }
+  .main {
+    min-inline-size: 55%;
+  }
+}

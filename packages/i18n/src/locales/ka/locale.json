@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "ინტერფეისის ენა",
+  "globeTriggerAria": "ინტერფეისის ენა",
+  "rowLabel": "ინტერფეისის ენა",
+  "listTitle": "ინტერფეისის ენა",
+  "searchPlaceholder": "ენის ძებნა…",
+  "searchAriaLabel": "ენის ძებნა",
+  "searchClear": "ძებნის გასუფთავება",
+  "currentSectionTitle": "მიმდინარე",
+  "allSectionTitle": "ყველა ენა",
+  "noResults": "ენა ვერ მოიძებნა",
+  "betaBadge": "ავტომატური თარგმანი",
+  "betaTooltip": "ავტომატურად ნათარგმნი — შეიძლება იყოს უზუსტობები",
+  "currentAria": "მიმდინარე ენა",
+  "disabledToast": "{{lang}} დროებით მიუწვდომელია · ვაჩვენებთ ინგლისურს",
+  "closeLabel": "დახურვა",
+  "onboardingHint": "განისაზღვრა ავტომატურად — შეცვლა ნებისმიერ დროს შეგიძლიათ",
+  "settingsRowLabel": "ენა და რეგიონი",
+  "settingsLanguageExplain": "ეს აპლიკაციის ენაა. ხელშეკრულების ოფიციალური ენა ცალკე ირჩევა — კონტრაგენტი ხედავს თარგმანს, მაგრამ ხელს აწერენ ოფიციალურ ტექსტს.",
+  "loadErrorRetry": "ხელახლა ცდა",
+  "loadError": "ენების სიის ჩატვირთვა ვერ მოხერხდა"
+}

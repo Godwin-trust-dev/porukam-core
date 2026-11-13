@@ -1,0 +1,10 @@
+.wrap {
+  display: grid;
+  gap: var(--pr-sp-1);
+  justify-items: center;
+  text-align: center;
+}
+.hint {
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-mute);
+}

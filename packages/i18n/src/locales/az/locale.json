@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "İnterfeys dili",
+  "globeTriggerAria": "İnterfeys dili",
+  "rowLabel": "İnterfeys dili",
+  "listTitle": "İnterfeys dili",
+  "searchPlaceholder": "Dil axtarın…",
+  "searchAriaLabel": "Dil axtarışı",
+  "searchClear": "Axtarışı təmizləyin",
+  "currentSectionTitle": "Hazırkı",
+  "allSectionTitle": "Bütün dillər",
+  "noResults": "Dil tapılmadı",
+  "betaBadge": "avtomatik tərcümə",
+  "betaTooltip": "Avtomatik tərcümə — qeyri-dəqiq ola bilər",
+  "currentAria": "Hazırkı dil",
+  "disabledToast": "{{lang}} müvəqqəti əlçatan deyil · ingilis dilini göstəririk",
+  "closeLabel": "Bağlayın",
+  "onboardingHint": "Dil avtomatik təyin edildi — istənilən vaxt dəyişə bilərsiniz",
+  "settingsRowLabel": "Dil və region",
+  "settingsLanguageExplain": "Bu, tətbiqin dilidir. Müqavilənin rəsmi dili ayrıca seçilir — qarşı tərəf tərcüməni görür, imzalanan isə rəsmi mətndir.",
+  "loadErrorRetry": "Yenidən cəhd edin",
+  "loadError": "Dil siyahısını yükləmək alınmadı"
+}

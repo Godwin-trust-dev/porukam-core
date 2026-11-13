@@ -1,0 +1,35 @@
+/* Паспорт-рейл + широкое тело (DEV-19 §4, эталон №4 блок 3).
+   `≥1024` — липкий рейл `--pr-rail-passport` слева, вкладки и панели справа;
+   `<1024` — рейл сворачивается в верхнюю шапку, вкладки под ней. */
+.wrap {
+  display: grid;
+  gap: var(--pr-sp-5);
+  min-width: 0;
+  /* Одноколоночная (мобильная) раскладка: трек ОБЯЗАН быть `minmax(0, 1fr)`,
+     а не `auto`. У грид-элемента `min-width: auto`, поэтому `auto`-трек
+     растягивается до min-content содержимого — строка списка с её
+     `min-width: 200px` раздувала колонку до 408px в окне 360px и давала
+     горизонтальный скролл всей страницы (приёмка §8). */
+  grid-template-columns: minmax(0, 1fr);
+}
+.rail {
+  min-width: 0;
+}
+.body {
+  min-width: 0;
+  display: grid;
+  gap: var(--pr-sp-5);
+  align-content: start;
+}
+
+@media (min-width: 1024px) {
+  .wrap {
+    grid-template-columns: var(--pr-rail-passport) minmax(0, 1fr);
+    gap: var(--pr-sp-6);
+    align-items: start;
+  }
+  .rail {
+    position: sticky;
+    top: var(--pr-rail-sticky-top);
+  }
+}

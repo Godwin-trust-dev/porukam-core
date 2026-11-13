@@ -1,0 +1,70 @@
+.toast {
+  position: fixed;
+  inset-inline-start: 50%;
+  /* env(safe-area-inset-bottom) обязателен: в display:standalone и в TWA снизу живёт
+     жестовая полоса, и фиксированное значение сажает тост прямо на неё. */
+  bottom: calc(var(--pr-sp-6) + env(safe-area-inset-bottom, 0px));
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  padding: var(--pr-sp-3) var(--pr-sp-4);
+  border-radius: var(--pr-r-pill);
+  background: var(--pr-ink);
+  color: var(--pr-text-inv);
+  box-shadow: var(--pr-shadow-card);
+  z-index: 90;
+  animation: pr-rise var(--pr-dur) var(--pr-ease);
+  max-width: calc(100vw - var(--pr-sp-8));
+}
+.icon {
+  flex: none;
+  color: var(--pr-on-ink);
+}
+.text {
+  font-size: var(--pr-fs-sm);
+  white-space: nowrap;
+}
+.dismiss {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: none;
+  color: var(--pr-on-ink);
+  cursor: pointer;
+}
+.dismiss:focus-visible {
+  outline: 2px solid var(--pr-amber);
+  outline-offset: 2px;
+}
+/* На мобильной раскладке снизу стоят ДВЕ фиксированные поверхности: рейл ShellLayout
+   (bottom:0, z-index:30) и над ним FAB «Создать» (z-index:25, дашборд и список сделок —
+   DEV-20_2 §5). У тоста z-index:90, то есть он не прятался за ними, а садился ПОВЕРХ и
+   закрывал и вкладки навигации, и основное действие экрана. В обычной вкладке это
+   переживаемо (тост живёт до нажатия), в установленном приложении — нет: тост
+   «доступна новая версия» там единственный канал обновления (репо-ADR-150).
+   Встаём НАД FAB'ом, повторяя его же формулу отступа. */
+@media (max-width: 1023.98px) {
+  .toast {
+    bottom: calc(
+      var(--pr-bottom-nav-h) + var(--pr-sp-4) + var(--pr-fab-size) + var(--pr-sp-3) +
+        env(safe-area-inset-bottom, 0px)
+    );
+  }
+}
+
+@keyframes pr-rise {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 12px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .toast {
+    animation: none;
+  }
+}

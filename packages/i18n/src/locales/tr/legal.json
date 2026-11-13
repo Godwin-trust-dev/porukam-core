@@ -1,0 +1,25 @@
+{
+  "machineNoteLabel": "otomatik çeviri",
+  "machineNoteTooltip": "Makine çevirisi, kolaylık olsun diye sunuluyor",
+  "fallbackNotice": "Bu belge diliniz için henüz çevrilmedi — İngilizce özgün metni gösteriyoruz.",
+  "loadError": "Belge yüklenemedi.",
+  "openAria": "Belgeyi aç",
+  "accountDeletion": {
+    "title": "Porukam hesabınızın silinmesi",
+    "lead": "Bu sayfada Porukam hesabınızı nasıl sileceğiniz, bu sırada nelerin silindiği, nelerin ne kadar süreyle saklandığı anlatılıyor.",
+    "stepsTitle": "Hesap nasıl silinir",
+    "step1": "Porukam uygulamasına girin ya da porukam.app adresini açın.",
+    "step2": "Profil → Ayarlar → Hesap yolunu izleyin.",
+    "step3": "“Hesabı sil” düğmesine dokunun ve silmeyi onaylayın.",
+    "step4": "Hesap hemen silinir, tüm cihazlardaki bütün oturumlar kapanır.",
+    "deletedTitle": "Hemen ve geri dönüşsüz silinenler",
+    "deletedText": "Adınız, e-posta adresiniz, telefonunuz, profil fotoğrafınız ve portfolyodaki çalışmalarınız, kişi listeniz, ayarlarınız, push bildirimleri için kayıtlı cihazlarınız. Kişisel verilerinizi koruyan şifreleme anahtarları yok edilir — bu verileri ne biz ne de bir başkası geri getirebilir.",
+    "keptTitle": "Neler, ne kadar süreyle saklanır",
+    "keptText": "Kurulmuş sözleşmelerin belgeleri: sözleşme metni, imzalar, kanıtlar, aşamaların ve ödemelerin geçmişi, sözleşmeye ilişkin yazışmalar. Bunlar işlemin her iki tarafına aittir ve her ikisinin de haklarını korur; bu yüzden taraflardan biri bunları tek başına kaldıramaz. Bu belgeler sözleşme tamamlandıktan sonra bir yıl saklanır, ardından silinir.",
+    "keptAnon": "Bu belgelerde siz anonimleştirilmiş bir tanımlayıcı altında kalırsınız. İmzaların özetleri (hash) ve kanıt zinciri kişisel veri içermez, silinmez.",
+    "blockedTitle": "Hesabın silinemediği durumlar",
+    "blockedText": "Tamamlanmamış sözleşmeleriniz ya da açık anlaşmazlıklarınız varken silme bekletilir — önce bunları bitirin. Uygulama kaç tane olduklarını ve hangileri olduklarını gösterir.",
+    "noAccessTitle": "Giriş yapamıyorsanız",
+    "noAccessText": "Hesabınıza bağlı e-posta adresinden {{email}} adresine yazın, hesabı talebiniz üzerine silelim. Aynı adres Gizlilik Politikası’nda da veriliyor."
+  }
+}

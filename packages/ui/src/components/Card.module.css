@@ -1,0 +1,79 @@
+.card {
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  padding: var(--pr-sp-5);
+  box-shadow: var(--pr-shadow-sm);
+}
+.interactive {
+  cursor: pointer;
+  transition: box-shadow var(--pr-dur) var(--pr-ease), transform var(--pr-dur) var(--pr-ease);
+  text-align: start;
+  width: 100%;
+  font: inherit;
+  color: inherit;
+  display: block;
+}
+.interactive:hover {
+  box-shadow: var(--pr-shadow-card);
+  transform: translateY(-2px);
+}
+.interactive:focus-visible {
+  outline: 3px solid var(--pr-amber-bright);
+  outline-offset: 2px;
+}
+
+/* Карточка договора */
+.contract {
+}
+.head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+}
+.title {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-ink);
+  letter-spacing: var(--pr-ls-head);
+  margin: 0;
+}
+.parties {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+  margin: var(--pr-sp-2) 0 var(--pr-sp-3);
+}
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-2);
+  margin-bottom: var(--pr-sp-4);
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+  border-top: 1px solid var(--pr-line);
+  padding-top: var(--pr-sp-3);
+}
+.total {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-ink);
+}
+.meta {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.acceptance {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-1);
+  color: var(--pr-red);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-fs-sm);
+}

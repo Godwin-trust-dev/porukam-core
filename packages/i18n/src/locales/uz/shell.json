@@ -1,0 +1,12 @@
+{
+  "actorSwitcher": {
+    "triggerLabel": "Profilni almashtirish",
+    "personalLabel": "Shaxsiy",
+    "legalFormIp": "YaTT",
+    "legalFormOoo": "MChJ",
+    "addOrg": "Tashkilot qoʻshish",
+    "groups": "Mening birlashmalarim"
+  },
+  "sectionMenu": "Boʻlimlar",
+  "logout": "Chiqish"
+}

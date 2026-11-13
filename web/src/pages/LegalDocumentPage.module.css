@@ -1,0 +1,48 @@
+/* Публичная страница юр-документа: читается посторонним человеком с любого
+   устройства и без оболочки приложения — только колонка текста. */
+.page {
+  min-height: 100vh;
+  background: var(--pr-cream);
+  padding: var(--pr-sp-4) var(--pr-sp-3) var(--pr-sp-6);
+}
+
+.sheet {
+  max-width: 46rem; /* длина строки, комфортная для сплошного текста */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-3);
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-1);
+}
+
+.brand {
+  margin: 0;
+  font-size: var(--pr-fs-sm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pr-text-2);
+}
+
+.title {
+  margin: 0;
+  font-size: var(--pr-fs-h2);
+  line-height: 1.2;
+}
+
+.note,
+.notice {
+  margin: 0;
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+}
+
+.notice {
+  padding: var(--pr-sp-2);
+  border-radius: var(--pr-r-md);
+  background: var(--pr-sand);
+}

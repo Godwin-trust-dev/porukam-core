@@ -1,0 +1,133 @@
+/* Форма профиля — компактнее (замечание владельца 03.09: «профиль
+   редактирование — тоже проверь дизайн, компактнее»): промежутки между
+   полями по density-слою, рамок вокруг групп полей нет, «Сохранить» —
+   CTA под контентом (доска B: главное действие во всю ширину под ним). */
+.wrap {
+  display: grid;
+  gap: var(--pr-d-gap);
+  min-inline-size: 0;
+  padding-block-end: var(--pr-d-gap-section);
+}
+
+.avatarRow {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  min-inline-size: 0;
+  padding-block: var(--pr-sp-1);
+}
+.avatarActions {
+  display: grid;
+  gap: var(--pr-sp-2);
+}
+.avatarButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-2);
+}
+/* Ячейка подсказки «?» к фото профиля: FieldHelp — `display: contents`,
+   без обёртки его «?» и раскрытый текст стали бы отдельными ячейками grid. */
+.avatarHelp {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-1);
+}
+.avatarHint {
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-text-2);
+}
+.avatarError {
+  font-size: var(--pr-d-fs-2);
+  color: var(--pr-red);
+  font-weight: var(--pr-fw-medium);
+}
+.fileInput {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.handleField {
+  display: grid;
+  gap: var(--pr-sp-1);
+}
+.handleStatus {
+  font-size: var(--pr-d-fs-2);
+  color: var(--pr-teal-deep);
+  font-weight: var(--pr-fw-medium);
+}
+
+/* «Портфолио» — строка без рамки, в ритме списков доски A (hairline
+   сверху, без карточки). Галочка «Работаю удалённо» отсюда убрана (план
+   11.09 §4 п.3) — «весь мир» теперь один из масштабов WorkAreaEditor. */
+.portfolioCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+  min-inline-size: 0;
+  min-height: max(var(--pr-d-row-min-h), var(--pr-touch-min));
+  padding-block: var(--pr-sp-1);
+  border-block-start: 1px solid var(--pr-hairline);
+  font-size: var(--pr-d-fs-body);
+}
+
+.portfolioCard {
+  color: var(--pr-text-2);
+}
+.portfolioLink {
+  background: none;
+  border: none;
+  color: var(--pr-teal-deep);
+  font-weight: var(--pr-fw-semibold);
+  cursor: pointer;
+  font: inherit;
+  font-size: var(--pr-d-fs-body);
+  text-align: start;
+  min-height: var(--pr-touch-min);
+  flex: none;
+}
+
+/* Телефон (отсмотр 2026-08-25): «0 работ в портфолио» и «Управлять портфолио»
+   делили строку пополам и обе половины ломались надвое. Строкой в столбец. */
+@media (max-width: 560px) {
+  .portfolioCard {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2px;
+    padding-block: var(--pr-sp-2);
+  }
+}
+
+/* CTA под контентом: «Сохранить» во всю ширину на телефоне, по содержимому
+   на десктопе; «Сохранено» — подписью рядом/под ним. */
+.footer {
+  display: grid;
+  gap: var(--pr-sp-2);
+  justify-items: stretch;
+  margin-block-start: var(--pr-sp-2);
+}
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    align-items: center;
+    gap: var(--pr-sp-3);
+  }
+  /* `block` нужен только телефону: на десктопе кнопка — по содержимому,
+     иначе «Сохранить» растягивается на всю колонку формы. */
+  .footer > button {
+    inline-size: auto;
+    flex: none;
+  }
+}
+.savedNote {
+  color: var(--pr-teal-deep);
+  font-size: var(--pr-d-fs-2);
+  font-weight: var(--pr-fw-medium);
+}

@@ -1,0 +1,12 @@
+{
+  "actorSwitcher": {
+    "triggerLabel": "Profili dəyişin",
+    "personalLabel": "Şəxsi",
+    "legalFormIp": "Fərdi sahibkar",
+    "legalFormOoo": "MMC",
+    "addOrg": "Təşkilat əlavə edin",
+    "groups": "Mənim birliklərim"
+  },
+  "sectionMenu": "Bölmələr",
+  "logout": "Çıxış"
+}

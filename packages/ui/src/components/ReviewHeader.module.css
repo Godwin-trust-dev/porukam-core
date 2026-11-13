@@ -1,0 +1,50 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-3);
+}
+
+.top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+  /* Заголовок + счётчики правок на 390px в строку не влезают. */
+  flex-wrap: wrap;
+}
+.top > * {
+  min-width: 0;
+}
+
+.title {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h1);
+  color: var(--pr-ink);
+  margin: 0;
+}
+
+.counterparty {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  color: var(--pr-text-2);
+  margin: var(--pr-sp-1) 0 0;
+}
+
+.counters {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+}
+
+.openCount {
+  font-weight: var(--pr-fw-medium);
+  color: var(--pr-ink);
+}
+
+.menu {
+  display: flex;
+  gap: var(--pr-sp-2);
+  flex-wrap: wrap;
+}

@@ -1,0 +1,73 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-1);
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--pr-sp-3);
+  cursor: pointer;
+}
+
+.hit {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--pr-touch-min);
+  height: var(--pr-touch-min);
+  margin: calc(var(--pr-touch-min) / -2 + 10px);
+  flex: none;
+}
+
+.input {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.box {
+  width: 20px;
+  height: 20px;
+  border-radius: var(--pr-r-sm);
+  border: 1.8px solid var(--pr-line);
+  background: var(--pr-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+  transition: background var(--pr-dur-fast) var(--pr-ease), border-color var(--pr-dur-fast) var(--pr-ease),
+    color var(--pr-dur-fast) var(--pr-ease);
+}
+
+.input:checked ~ .box {
+  background: var(--pr-teal);
+  border-color: var(--pr-teal);
+  color: var(--pr-white);
+}
+
+.input:focus-visible ~ .box {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: 2px;
+}
+
+.input:disabled ~ .box {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.label {
+  font-size: var(--pr-fs-body);
+  color: var(--pr-text);
+  padding-top: 11px;
+}
+
+.hint {
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-2);
+  padding-inline-start: calc(var(--pr-touch-min) - 10px);
+}

@@ -1,0 +1,144 @@
+.wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--pr-sp-5);
+  /* DEV-19 §5: форма/экран-действие — контейнер по центру рабочей области,
+     поля не разъезжаются на всю ширину монитора. */
+  max-inline-size: var(--pr-form-max);
+  margin-inline: auto;
+}
+/* У неявной грид-колонки `auto` минимальный размер — min-content, поэтому
+   ЛЮБОЙ длинный неразрывный кусок (имя файла + чип привязки в строке
+   доказательства) распирал колонку и всю страницу. Явный `minmax(0, 1fr)` на
+   каждом уровне вложенности (отсмотр 2026-08-25, 390 и 1280). */
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--pr-sp-5);
+}
+.left,
+.right {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--pr-sp-5);
+  min-width: 0;
+}
+.card {
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  padding: var(--pr-sp-5);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--pr-sp-3);
+  min-width: 0;
+}
+.sectionTitle {
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-ink);
+  margin: 0;
+}
+.hint {
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+  margin: 0;
+}
+/* DEV-20 §3: CTA идёт СРАЗУ под контентом. Раньше блок был липким
+   (`position: sticky; bottom`) и страница резервировала под него запас снизу —
+   на коротком экране между текстом и кнопкой зияла пустота. Липкий низ
+   оставлен только там, где контент реально уходит за фолд (подписание —
+   якорь §7) и где низ занят вводом (композер чата). */
+.actionsBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--pr-sp-2) var(--pr-sp-3);
+}
+.actionsHint {
+  /* Пояснение — под кнопками, своей строкой. */
+  flex-basis: 100%;
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-mute);
+  max-width: 480px;
+}
+.centeredState {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: var(--pr-sp-3);
+  padding: var(--pr-sp-6) 0;
+}
+
+.reviewList {
+  display: grid;
+  gap: var(--pr-sp-3);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.reviewItem {
+  display: grid;
+  gap: var(--pr-sp-2);
+  padding: var(--pr-sp-3);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-md);
+}
+.reviewChoice {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  font-size: var(--pr-fs-body);
+  color: var(--pr-ink);
+}
+.reviewEvidence {
+  display: grid;
+  gap: var(--pr-sp-1);
+  padding-left: var(--pr-sp-6);
+}
+.evidenceOption {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+}
+
+@media (min-width: 1024px) {
+  .wrap {
+    max-inline-size: var(--pr-work-max);
+    margin-inline: auto;
+  }
+  .layout {
+    /* `minmax(0, 1fr)`: у колонки `1fr` min-размер — min-content, и длинный
+       неразрывный чип привязки («к пункту «Плитка уложена по всей площади»»)
+       распирал правую колонку до 1453px при окне 1280 — у страницы появлялся
+       горизонтальный скролл (отсмотр 2026-08-25, контроль 1280). */
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+  }
+}
+
+/* Телефон (отсмотр 2026-08-25 «окна слишком большие»): карточки плотнее. */
+@media (max-width: 480px) {
+  .card {
+    padding: var(--pr-sp-4);
+    gap: var(--pr-sp-2);
+  }
+  .wrap,
+  .layout,
+  .left,
+  .right {
+    gap: var(--pr-sp-3);
+  }
+}
+
+/* Список счетов внутри карточки оплаты этапа (ADR-130): сама строка
+   стилизована в `features/payments/RealPaymentRow.module.css` — здесь
+   только сброс маркеров и отступ между авансом и постоплатой. */
+.paymentList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--pr-sp-3);
+}

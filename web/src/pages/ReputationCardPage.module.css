@@ -1,0 +1,469 @@
+/* «Как гость» — та же компакт-плотность, что профиль по доске A (замечание
+   владельца 03.09: «смотреть как гость — тоже большие рамки, отступы»):
+   паддинг экрана и промежутки — density-токены, разделы — надпись + строки
+   на одной поверхности, а не карточка с рамкой на каждый блок. */
+.page {
+  min-height: 100%;
+  background: var(--pr-cream);
+  padding: var(--pr-d-pad-card);
+}
+.loading,
+.centered {
+  max-width: 640px;
+  margin: 0 auto;
+  display: grid;
+  gap: var(--pr-sp-4);
+  padding: var(--pr-sp-8) 0;
+}
+
+/* Полоса предпросмотра «как гость» — в общей колонке карточки, НАД героем.
+   Обёртки у неё нет намеренно: sticky живёт на самой полосе, а внутри
+   div-обёртки высотой в одну полосу липнуть было бы негде. */
+.previewBar {
+  max-width: 1100px;
+  margin: 0 auto var(--pr-d-gap-section);
+}
+
+.layout {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-d-gap-section);
+  min-inline-size: 0;
+}
+.rail,
+.body {
+  display: contents;
+}
+
+/* Порядок на узком экране. `.rail`/`.body` — `display: contents`, поэтому
+   ВСЕ их прямые дети становятся flex-элементами `.layout` и КАЖДОМУ нужен
+   явный `order`: блок без него получает 0 и всплывает выше шапки (баг
+   05.09: «По сферам и ролям» и «Надёжность» рисовались над именем). */
+.header {
+  order: 1;
+}
+.numberArea {
+  order: 2;
+}
+.columns {
+  order: 3;
+}
+.dealsArea {
+  order: 4;
+}
+
+/* Заголовок блока карточки — в плотности рабочих экранов (ADR-152: 15/13),
+   а не h3: карточка репутации стояла в другом кегле, чем «Сделки» рядом. */
+.sectionTitle {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-body);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-ink);
+  margin: 0 0 var(--pr-sp-2);
+}
+
+.numberArea {
+  display: grid;
+  gap: var(--pr-sp-2);
+  min-inline-size: 0;
+}
+
+/* Плитка факта. Рамки и радиуса у неё БОЛЬШЕ НЕТ по умолчанию: на узком
+   экране плитки живут одной bleed-поверхностью с hairline-сеткой
+   (`.facts`, макет 05.09), а рамка возвращается только на десктопе. */
+.stat {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+  min-inline-size: 0;
+  padding: var(--pr-d-pad-card) var(--pr-sp-3);
+}
+.statValue {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-value);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-ink);
+}
+.statHidden {
+  /* --pr-fs-md в токенах нет: размер молча падал в наследование. */
+  font-size: var(--pr-fs-body);
+  color: var(--pr-text-2);
+}
+.statLabel {
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-text-2);
+  overflow-wrap: anywhere;
+}
+.since {
+  margin: 0;
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-text-2);
+}
+
+/* Объединения — строки hairline на одной поверхности (доска A), а не пилюли
+   вперемешку в карточке. */
+.groupRow {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  inline-size: 100%;
+  min-inline-size: 0;
+  min-height: max(var(--pr-d-row-min-h), var(--pr-touch-min));
+  padding: var(--pr-d-row-pad-y) var(--pr-d-row-pad-x);
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+.groupRow:hover {
+  background: var(--pr-cream);
+}
+.groupRow:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: -2px;
+}
+.groupName {
+  flex: 1;
+  min-inline-size: 0;
+  font-size: var(--pr-d-fs-body);
+  color: var(--pr-ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.groupKind {
+  flex: none;
+  font-size: var(--pr-d-fs-2);
+  color: var(--pr-text-2);
+}
+
+/* Сделки — строки на одной поверхности: hairline между ними даёт `Surface`,
+   своей рамки у строки нет. */
+.dealList {
+  display: block;
+}
+.deal {
+  display: grid;
+  gap: var(--pr-sp-1);
+  padding: var(--pr-d-row-pad-y) var(--pr-d-row-pad-x);
+  min-inline-size: 0;
+}
+.dealHead {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-2);
+  align-items: center;
+}
+.dealSpheres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-2);
+}
+.sphereChip {
+  font-size: var(--pr-d-fs-2);
+  color: var(--pr-text-2);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-sm);
+  padding: 2px var(--pr-sp-2);
+}
+.dealMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-1) var(--pr-sp-3);
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-text-2);
+}
+
+.lockedCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--pr-sp-3);
+  color: var(--pr-text-2);
+}
+.lockedText {
+  color: var(--pr-text-2);
+}
+
+.linkBtn {
+  justify-self: start;
+  font-size: var(--pr-d-fs-2);
+  background: none;
+  border: none;
+  color: var(--pr-teal-deep);
+  cursor: pointer;
+  font: inherit;
+  font-weight: var(--pr-fw-semibold);
+  /* Кнопка центрирует текст по умолчанию: длинное имя объединения
+     переносилось и вставало по центру, рядом с короткими по левому краю
+     (отсмотр 2026-08-25). */
+  text-align: start;
+  padding: var(--pr-sp-2) 0;
+  min-height: var(--pr-touch-min);
+}
+
+.shareBody {
+  display: grid;
+  gap: var(--pr-sp-4);
+}
+.shareField {
+  display: grid;
+  gap: var(--pr-sp-1);
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+}
+.shareField input {
+  font-family: ui-monospace, monospace;
+  padding: var(--pr-sp-2) var(--pr-sp-3);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-sm);
+  background: var(--pr-cream);
+  color: var(--pr-text);
+}
+
+/* ── Desktop: чернильный липкий рейл слева, светлые факты справа (§6) ──
+   Брейкпоинт 1024, а не 901: `Surface bleed` перестаёт растягиваться во всю
+   ширину именно на 1024 (Surface.module.css), и между 901 и 1023 страница
+   рисовала две колонки, у которых поверхности всё ещё вылезали за края
+   отрицательным margin-inline. */
+@media (min-width: 1024px) {
+  .layout {
+    display: grid;
+    grid-template-columns: 320px minmax(0, 1fr);
+    align-items: start;
+    gap: var(--pr-d-gap-section);
+  }
+  .rail {
+    display: flex;
+    flex-direction: column;
+    gap: var(--pr-d-gap-section);
+    position: sticky;
+    top: var(--pr-d-gap-section);
+  }
+  .body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--pr-d-gap-section);
+    min-inline-size: 0;
+  }
+  .header,
+  .numberArea,
+  .columns,
+  .dealsArea {
+    order: initial;
+  }
+}
+
+/* ADR-115: работы портфолио на карточке. */
+.worksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: var(--pr-sp-2);
+}
+.workItem {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-1);
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-ink);
+}
+.workPhoto {
+  width: 100%;
+  border-radius: var(--pr-r-md);
+  display: block;
+}
+
+/* ADR-120: работа кликабельна — просмотр галереи и описания. */
+.workButton {
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  text-align: start;
+  font: inherit;
+  color: inherit;
+  display: grid;
+  gap: var(--pr-sp-1);
+}
+.workButton:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: 2px;
+}
+
+/* ── Дашборд репутации по макету 05.09 (ADR-163) ─────────────────────── */
+
+/* Плитки фактов: на узком экране — ОДНА поверхность 2×2 с hairline вместо
+   четырёх карточек с рамками (замечание владельца: «без боковых рамок»). */
+.factsSurface {
+  padding: 0;
+}
+.facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  min-inline-size: 0;
+}
+.facts > * {
+  border-block-start: 1px solid var(--pr-hairline);
+  border-inline-start: 1px solid var(--pr-hairline);
+}
+.facts > *:nth-child(-n + 2) {
+  border-block-start: none;
+}
+.facts > *:nth-child(odd) {
+  border-inline-start: none;
+}
+
+.legendFooter {
+  margin: 0;
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-text-2);
+  overflow-wrap: anywhere;
+}
+
+/* Легенда зон у заголовка блока. */
+.zoneLegend {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  min-inline-size: 0;
+}
+.zoneDot {
+  inline-size: 8px;
+  block-size: 8px;
+  border-radius: 50%;
+  flex: none;
+}
+.zoneRed {
+  background: var(--pr-red);
+}
+.zoneAmber {
+  background: var(--pr-amber);
+}
+.zoneGreen {
+  background: var(--pr-green);
+}
+.zoneLegendText {
+  flex: 1 1 auto;
+  min-inline-size: 0;
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-text-2);
+  overflow-wrap: anywhere;
+}
+
+/* Разделы «как исполнитель» / «как заказчик». */
+.roleBlock {
+  display: grid;
+  gap: var(--pr-sp-1);
+  min-inline-size: 0;
+}
+.roleTitle {
+  margin: var(--pr-sp-2) 0 0;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-body);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-ink);
+  overflow-wrap: anywhere;
+}
+
+.barHint {
+  display: grid;
+  gap: 2px;
+  min-inline-size: 0;
+}
+.barHintBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  justify-self: start;
+  padding: var(--pr-sp-1) 0;
+  min-height: var(--pr-touch-min);
+  background: none;
+  border: none;
+  font: inherit;
+  font-size: var(--pr-d-fs-2);
+  color: var(--pr-teal-deep);
+  text-align: start;
+  cursor: pointer;
+}
+.barHintMark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 16px;
+  block-size: 16px;
+  flex: none;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+  font-size: 11px;
+  line-height: 1;
+}
+.barHintText {
+  margin: 0;
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-text-2);
+  overflow-wrap: anywhere;
+}
+
+.reliabilityRow {
+  margin: 0;
+  padding: var(--pr-d-row-pad-y) var(--pr-d-row-pad-x);
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-text-2);
+  font-variant-numeric: tabular-nums;
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Колонки: один поток на узком экране, две колонки с ≥1024. */
+.columns {
+  display: grid;
+  gap: var(--pr-d-gap-section);
+  min-inline-size: 0;
+}
+.colMain,
+.colSide {
+  display: grid;
+  gap: var(--pr-d-gap-section);
+  align-content: start;
+  min-inline-size: 0;
+}
+
+@media (min-width: 1024px) {
+  .columns {
+    grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+    align-items: start;
+  }
+  /* Десктоп — плитки с собственной рамкой, как было до макета 05.09:
+     поверхность здесь и так не во всю ширину, hairline-сетка читалась бы
+     как таблица. */
+  .factsSurface {
+    border: none;
+    background: none;
+    overflow: visible;
+  }
+  .facts {
+    gap: var(--pr-sp-2);
+  }
+  .facts > * {
+    border: 1px solid var(--pr-line);
+    border-radius: var(--pr-d-r-surface);
+    background: var(--pr-white);
+  }
+}

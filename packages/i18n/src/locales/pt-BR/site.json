@@ -1,0 +1,14 @@
+{
+  "hook": "O Porukam transforma um acordo de palavra em um contrato juridicamente relevante e conduz o negócio passo a passo, até o acerto final.",
+  "problem": "Combinar de boca é fácil. Difícil é provar depois o que foi combinado, quando o serviço foi entregue e pelo que se paga. O Porukam guarda esse registro para os dois lados.",
+  "contractTitle": "Um contrato em minutos",
+  "contractText": "Escolha o tipo de negócio: serviço, venda, aluguel ou empréstimo. Responda a perguntas em linguagem simples e receba um documento pronto. Não é preciso escrever nenhuma fórmula jurídica.",
+  "stagesTitle": "Etapas e aceite por checklist",
+  "stagesText": "Divida o negócio em etapas, cada uma com a lista do que precisa ser feito. O prestador marca o que fez e anexa fotos; o contratante dá o aceite na etapa ou a devolve com observações. Os dois lados sempre veem em que ponto está o negócio e de quem é a vez.",
+  "paymentTitle": "Pagamento ligado ao resultado",
+  "paymentText": "O pagamento acompanha as etapas: aceitou, pagou. Não guardamos o seu dinheiro e não cobramos taxa pela assinatura. Os acertos ficam entre as partes; a plataforma registra o que foi aceito e pago, e quando.",
+  "evidenceTitle": "Provas que ficam",
+  "evidenceText": "Fotos, arquivos e mensagens ficam presos à etapa e são selados com um carimbo de tempo confiável. Um contrato assinado não muda: só por um aditivo que as duas partes veem e confirmam. Se vier uma disputa, você tem com que encerrá-la.",
+  "reputationTitle": "Reputação construída em fatos",
+  "reputationText": "A ficha de reputação é montada a partir de negócios concluídos, e não de avaliações que qualquer um pode escrever sobre qualquer um."
+}

@@ -1,0 +1,12 @@
+{
+  "actorSwitcher": {
+    "triggerLabel": "프로필 전환",
+    "personalLabel": "개인",
+    "legalFormIp": "개인사업자",
+    "legalFormOoo": "주식회사",
+    "addOrg": "조직 추가",
+    "groups": "내 그룹"
+  },
+  "sectionMenu": "섹션",
+  "logout": "로그아웃"
+}

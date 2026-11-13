@@ -1,0 +1,12 @@
+{
+  "actorSwitcher": {
+    "triggerLabel": "प्रोफ़ाइल बदलें",
+    "personalLabel": "निजी",
+    "legalFormIp": "एकल स्वामित्व",
+    "legalFormOoo": "प्राइवेट लिमिटेड",
+    "addOrg": "संस्था जोड़ें",
+    "groups": "मेरे समूह"
+  },
+  "sectionMenu": "अनुभाग",
+  "logout": "लॉग आउट"
+}

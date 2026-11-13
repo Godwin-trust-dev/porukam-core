@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "Interfeys tili",
+  "globeTriggerAria": "Interfeys tili",
+  "rowLabel": "Interfeys tili",
+  "listTitle": "Interfeys tili",
+  "searchPlaceholder": "Tilni izlash…",
+  "searchAriaLabel": "Tilni izlash",
+  "searchClear": "Izlashni tozalash",
+  "currentSectionTitle": "Hozirgi",
+  "allSectionTitle": "Barcha tillar",
+  "noResults": "Til topilmadi",
+  "betaBadge": "avto-tarjima",
+  "betaTooltip": "Avtomatik tarjima — aniq boʻlmasligi mumkin",
+  "currentAria": "Hozirgi til",
+  "disabledToast": "{{lang}} vaqtincha mavjud emas · ingliz tilini koʻrsatamiz",
+  "closeLabel": "Yopish",
+  "onboardingHint": "Avtomatik aniqlandi — istalgan vaqtda oʻzgartirishingiz mumkin",
+  "settingsRowLabel": "Til va hudud",
+  "settingsLanguageExplain": "Bu — ilovaning tili. Shartnomaning rasmiy tili alohida tanlanadi — kontragent tarjimani koʻradi, imzolanadigani esa rasmiy matn.",
+  "loadErrorRetry": "Qayta urinish",
+  "loadError": "Tillar roʻyxatini yuklash amalga oshmadi"
+}

@@ -1,0 +1,92 @@
+/* Доска B: условия старта — hairline-строки на ОДНОЙ поверхности, без
+   рамки вокруг каждой (коробок в коробках нет). Состояние — СЛОВОМ в конце
+   строки и цветом слова; иконка галочки только у «готово» (§7: смысл не
+   держится на одном цвете). */
+.title {
+  font-family: var(--pr-font-head);
+  font-size: var(--pr-d-fs-section);
+  font-weight: var(--pr-fw-semibold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--pr-text-2);
+  margin: 0 0 var(--pr-sp-2);
+}
+.list {
+  margin: 0;
+  padding: 0 var(--pr-d-row-pad-x);
+  list-style: none;
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-d-r-surface);
+}
+.item {
+  border-block-start: 1px solid var(--pr-hairline);
+}
+.item:first-child {
+  border-block-start: none;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  width: 100%;
+  padding: var(--pr-sp-2) 0;
+  min-block-size: var(--pr-d-row-min-h);
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: start;
+}
+button.row {
+  cursor: pointer;
+}
+button.row:hover .label,
+button.row:focus-visible .label {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.main {
+  flex: 1;
+  min-width: 0;
+  display: grid;
+  gap: 2px;
+}
+.label {
+  margin: 0;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-title);
+  color: var(--pr-ink);
+  overflow-wrap: anywhere;
+}
+.sub {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-d-fs-2);
+  overflow-wrap: anywhere;
+}
+.state {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-1);
+  font-size: var(--pr-d-fs-2);
+  font-weight: var(--pr-fw-semibold);
+  text-align: end;
+}
+.stateMet {
+  color: var(--pr-green-ink);
+}
+.stateWaiting {
+  color: var(--pr-amber-ink);
+}
+.stateNa {
+  color: var(--pr-text-mute);
+  font-weight: var(--pr-fw-regular);
+}
+.chevron {
+  flex: none;
+  transform: rotate(180deg);
+  color: var(--pr-text-mute);
+}

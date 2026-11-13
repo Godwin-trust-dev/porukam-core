@@ -1,0 +1,292 @@
+{
+  "ar": {
+    "ui": {
+      "timeline.milestone.material_added": "أُضيفت مادة",
+      "timeline.milestone.material_added.detail": "«{milestone_title}»",
+      "timeline.milestone.material_updated": "عُدّلت مادة",
+      "timeline.milestone.material_updated.detail": "«{milestone_title}»",
+      "timeline.milestone.material_removed": "حُذفت مادة",
+      "timeline.milestone.material_removed.detail": "«{milestone_title}»"
+    }
+  },
+  "az": {
+    "ui": {
+      "timeline.milestone.material_added": "Material əlavə edildi",
+      "timeline.milestone.material_added.detail": "«{milestone_title}»",
+      "timeline.milestone.material_updated": "Material dəyişdirildi",
+      "timeline.milestone.material_updated.detail": "«{milestone_title}»",
+      "timeline.milestone.material_removed": "Material silindi",
+      "timeline.milestone.material_removed.detail": "«{milestone_title}»"
+    }
+  },
+  "bn": {
+    "ui": {
+      "timeline.milestone.material_added": "ম্যাটেরিয়াল যোগ করা হয়েছে",
+      "timeline.milestone.material_added.detail": "“{milestone_title}”",
+      "timeline.milestone.material_updated": "ম্যাটেরিয়াল পরিবর্তন করা হয়েছে",
+      "timeline.milestone.material_updated.detail": "“{milestone_title}”",
+      "timeline.milestone.material_removed": "ম্যাটেরিয়াল সরানো হয়েছে",
+      "timeline.milestone.material_removed.detail": "“{milestone_title}”"
+    }
+  },
+  "de": {
+    "ui": {
+      "timeline.milestone.material_added": "Material hinzugefügt",
+      "timeline.milestone.material_added.detail": "„{milestone_title}“",
+      "timeline.milestone.material_updated": "Material geändert",
+      "timeline.milestone.material_updated.detail": "„{milestone_title}“",
+      "timeline.milestone.material_removed": "Material entfernt",
+      "timeline.milestone.material_removed.detail": "„{milestone_title}“"
+    }
+  },
+  "en": {
+    "ui": {
+      "timeline.milestone.material_added": "Material added",
+      "timeline.milestone.material_added.detail": "“{milestone_title}”",
+      "timeline.milestone.material_updated": "Material changed",
+      "timeline.milestone.material_updated.detail": "“{milestone_title}”",
+      "timeline.milestone.material_removed": "Material removed",
+      "timeline.milestone.material_removed.detail": "“{milestone_title}”"
+    }
+  },
+  "es": {
+    "ui": {
+      "timeline.milestone.material_added": "Material añadido",
+      "timeline.milestone.material_added.detail": "«{milestone_title}»",
+      "timeline.milestone.material_updated": "Material modificado",
+      "timeline.milestone.material_updated.detail": "«{milestone_title}»",
+      "timeline.milestone.material_removed": "Material eliminado",
+      "timeline.milestone.material_removed.detail": "«{milestone_title}»"
+    }
+  },
+  "fa": {
+    "ui": {
+      "timeline.milestone.material_added": "مادّه افزوده شد",
+      "timeline.milestone.material_added.detail": "«{milestone_title}»",
+      "timeline.milestone.material_updated": "مادّه ویرایش شد",
+      "timeline.milestone.material_updated.detail": "«{milestone_title}»",
+      "timeline.milestone.material_removed": "مادّه حذف شد",
+      "timeline.milestone.material_removed.detail": "«{milestone_title}»"
+    }
+  },
+  "fr": {
+    "ui": {
+      "timeline.milestone.material_added": "Matériau ajouté",
+      "timeline.milestone.material_added.detail": "« {milestone_title} »",
+      "timeline.milestone.material_updated": "Matériau modifié",
+      "timeline.milestone.material_updated.detail": "« {milestone_title} »",
+      "timeline.milestone.material_removed": "Matériau supprimé",
+      "timeline.milestone.material_removed.detail": "« {milestone_title} »"
+    }
+  },
+  "he": {
+    "ui": {
+      "timeline.milestone.material_added": "חומר נוסף",
+      "timeline.milestone.material_added.detail": "„{milestone_title}”",
+      "timeline.milestone.material_updated": "חומר שונה",
+      "timeline.milestone.material_updated.detail": "„{milestone_title}”",
+      "timeline.milestone.material_removed": "חומר הוסר",
+      "timeline.milestone.material_removed.detail": "„{milestone_title}”"
+    }
+  },
+  "hi": {
+    "ui": {
+      "timeline.milestone.material_added": "सामग्री जोड़ी गई",
+      "timeline.milestone.material_added.detail": "“{milestone_title}”",
+      "timeline.milestone.material_updated": "सामग्री बदली गई",
+      "timeline.milestone.material_updated.detail": "“{milestone_title}”",
+      "timeline.milestone.material_removed": "सामग्री हटाई गई",
+      "timeline.milestone.material_removed.detail": "“{milestone_title}”"
+    }
+  },
+  "hy": {
+    "ui": {
+      "timeline.milestone.material_added": "Նյութ ավելացվել է",
+      "timeline.milestone.material_added.detail": "«{milestone_title}»",
+      "timeline.milestone.material_updated": "Նյութը փոփոխվել է",
+      "timeline.milestone.material_updated.detail": "«{milestone_title}»",
+      "timeline.milestone.material_removed": "Նյութը հեռացվել է",
+      "timeline.milestone.material_removed.detail": "«{milestone_title}»"
+    }
+  },
+  "id": {
+    "ui": {
+      "timeline.milestone.material_added": "Material ditambahkan",
+      "timeline.milestone.material_added.detail": "“{milestone_title}”",
+      "timeline.milestone.material_updated": "Material diubah",
+      "timeline.milestone.material_updated.detail": "“{milestone_title}”",
+      "timeline.milestone.material_removed": "Material dihapus",
+      "timeline.milestone.material_removed.detail": "“{milestone_title}”"
+    }
+  },
+  "it": {
+    "ui": {
+      "timeline.milestone.material_added": "Materiale aggiunto",
+      "timeline.milestone.material_added.detail": "«{milestone_title}»",
+      "timeline.milestone.material_updated": "Materiale modificato",
+      "timeline.milestone.material_updated.detail": "«{milestone_title}»",
+      "timeline.milestone.material_removed": "Materiale rimosso",
+      "timeline.milestone.material_removed.detail": "«{milestone_title}»"
+    }
+  },
+  "ja": {
+    "ui": {
+      "timeline.milestone.material_added": "資材を追加",
+      "timeline.milestone.material_added.detail": "「{milestone_title}」",
+      "timeline.milestone.material_updated": "資材を変更",
+      "timeline.milestone.material_updated.detail": "「{milestone_title}」",
+      "timeline.milestone.material_removed": "資材を削除",
+      "timeline.milestone.material_removed.detail": "「{milestone_title}」"
+    }
+  },
+  "ka": {
+    "ui": {
+      "timeline.milestone.material_added": "მასალა დაემატა",
+      "timeline.milestone.material_added.detail": "„{milestone_title}“",
+      "timeline.milestone.material_updated": "მასალა შეიცვალა",
+      "timeline.milestone.material_updated.detail": "„{milestone_title}“",
+      "timeline.milestone.material_removed": "მასალა წაიშალა",
+      "timeline.milestone.material_removed.detail": "„{milestone_title}“"
+    }
+  },
+  "kk": {
+    "ui": {
+      "timeline.milestone.material_added": "Материал қосылды",
+      "timeline.milestone.material_added.detail": "«{milestone_title}»",
+      "timeline.milestone.material_updated": "Материал өзгертілді",
+      "timeline.milestone.material_updated.detail": "«{milestone_title}»",
+      "timeline.milestone.material_removed": "Материал жойылды",
+      "timeline.milestone.material_removed.detail": "«{milestone_title}»"
+    }
+  },
+  "ko": {
+    "ui": {
+      "timeline.milestone.material_added": "자재 추가됨",
+      "timeline.milestone.material_added.detail": "“{milestone_title}”",
+      "timeline.milestone.material_updated": "자재 변경됨",
+      "timeline.milestone.material_updated.detail": "“{milestone_title}”",
+      "timeline.milestone.material_removed": "자재 삭제됨",
+      "timeline.milestone.material_removed.detail": "“{milestone_title}”"
+    }
+  },
+  "pl": {
+    "ui": {
+      "timeline.milestone.material_added": "Dodano materiał",
+      "timeline.milestone.material_added.detail": "„{milestone_title}”",
+      "timeline.milestone.material_updated": "Zmieniono materiał",
+      "timeline.milestone.material_updated.detail": "„{milestone_title}”",
+      "timeline.milestone.material_removed": "Usunięto materiał",
+      "timeline.milestone.material_removed.detail": "„{milestone_title}”"
+    }
+  },
+  "pt-BR": {
+    "ui": {
+      "timeline.milestone.material_added": "Material adicionado",
+      "timeline.milestone.material_added.detail": "“{milestone_title}”",
+      "timeline.milestone.material_updated": "Material alterado",
+      "timeline.milestone.material_updated.detail": "“{milestone_title}”",
+      "timeline.milestone.material_removed": "Material removido",
+      "timeline.milestone.material_removed.detail": "“{milestone_title}”"
+    }
+  },
+  "ro": {
+    "ui": {
+      "timeline.milestone.material_added": "Material adăugat",
+      "timeline.milestone.material_added.detail": "„{milestone_title}”",
+      "timeline.milestone.material_updated": "Material modificat",
+      "timeline.milestone.material_updated.detail": "„{milestone_title}”",
+      "timeline.milestone.material_removed": "Material eliminat",
+      "timeline.milestone.material_removed.detail": "„{milestone_title}”"
+    }
+  },
+  "ru": {
+    "ui": {
+      "timeline.milestone.material_added": "Материал добавлен",
+      "timeline.milestone.material_added.detail": "«{milestone_title}»",
+      "timeline.milestone.material_updated": "Материал изменён",
+      "timeline.milestone.material_updated.detail": "«{milestone_title}»",
+      "timeline.milestone.material_removed": "Материал удалён",
+      "timeline.milestone.material_removed.detail": "«{milestone_title}»"
+    }
+  },
+  "sw": {
+    "ui": {
+      "timeline.milestone.material_added": "Kifaa kimeongezwa",
+      "timeline.milestone.material_added.detail": "“{milestone_title}”",
+      "timeline.milestone.material_updated": "Kifaa kimebadilishwa",
+      "timeline.milestone.material_updated.detail": "“{milestone_title}”",
+      "timeline.milestone.material_removed": "Kifaa kimeondolewa",
+      "timeline.milestone.material_removed.detail": "“{milestone_title}”"
+    }
+  },
+  "th": {
+    "ui": {
+      "timeline.milestone.material_added": "เพิ่มวัสดุแล้ว",
+      "timeline.milestone.material_added.detail": "“{milestone_title}”",
+      "timeline.milestone.material_updated": "แก้ไขวัสดุแล้ว",
+      "timeline.milestone.material_updated.detail": "“{milestone_title}”",
+      "timeline.milestone.material_removed": "ลบวัสดุแล้ว",
+      "timeline.milestone.material_removed.detail": "“{milestone_title}”"
+    }
+  },
+  "tr": {
+    "ui": {
+      "timeline.milestone.material_added": "Malzeme eklendi",
+      "timeline.milestone.material_added.detail": "“{milestone_title}”",
+      "timeline.milestone.material_updated": "Malzeme değiştirildi",
+      "timeline.milestone.material_updated.detail": "“{milestone_title}”",
+      "timeline.milestone.material_removed": "Malzeme kaldırıldı",
+      "timeline.milestone.material_removed.detail": "“{milestone_title}”"
+    }
+  },
+  "uk": {
+    "ui": {
+      "timeline.milestone.material_added": "Матеріал додано",
+      "timeline.milestone.material_added.detail": "«{milestone_title}»",
+      "timeline.milestone.material_updated": "Матеріал змінено",
+      "timeline.milestone.material_updated.detail": "«{milestone_title}»",
+      "timeline.milestone.material_removed": "Матеріал вилучено",
+      "timeline.milestone.material_removed.detail": "«{milestone_title}»"
+    }
+  },
+  "ur": {
+    "ui": {
+      "timeline.milestone.material_added": "سامان شامل کیا گیا",
+      "timeline.milestone.material_added.detail": "«{milestone_title}»",
+      "timeline.milestone.material_updated": "سامان تبدیل کیا گیا",
+      "timeline.milestone.material_updated.detail": "«{milestone_title}»",
+      "timeline.milestone.material_removed": "سامان ہٹا دیا گیا",
+      "timeline.milestone.material_removed.detail": "«{milestone_title}»"
+    }
+  },
+  "uz": {
+    "ui": {
+      "timeline.milestone.material_added": "Material qo'shildi",
+      "timeline.milestone.material_added.detail": "«{milestone_title}»",
+      "timeline.milestone.material_updated": "Material o'zgartirildi",
+      "timeline.milestone.material_updated.detail": "«{milestone_title}»",
+      "timeline.milestone.material_removed": "Material o'chirildi",
+      "timeline.milestone.material_removed.detail": "«{milestone_title}»"
+    }
+  },
+  "vi": {
+    "ui": {
+      "timeline.milestone.material_added": "Đã thêm vật tư",
+      "timeline.milestone.material_added.detail": "“{milestone_title}”",
+      "timeline.milestone.material_updated": "Đã sửa vật tư",
+      "timeline.milestone.material_updated.detail": "“{milestone_title}”",
+      "timeline.milestone.material_removed": "Đã xóa vật tư",
+      "timeline.milestone.material_removed.detail": "“{milestone_title}”"
+    }
+  },
+  "zh-Hans": {
+    "ui": {
+      "timeline.milestone.material_added": "已新增材料",
+      "timeline.milestone.material_added.detail": "“{milestone_title}”",
+      "timeline.milestone.material_updated": "已修改材料",
+      "timeline.milestone.material_updated.detail": "“{milestone_title}”",
+      "timeline.milestone.material_removed": "已删除材料",
+      "timeline.milestone.material_removed.detail": "“{milestone_title}”"
+    }
+  }
+}

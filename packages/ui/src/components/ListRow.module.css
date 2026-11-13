@@ -1,0 +1,170 @@
+.row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  inline-size: 100%;
+  min-inline-size: 0;
+  /* Визуальная высота 54–64 при паддинге 8×13 (§1); тап-таргет всё равно
+     не меньше 44 — плотность не должна ломать попадание пальцем (§8). */
+  min-block-size: max(var(--pr-d-row-min-h), var(--pr-touch-min));
+  padding: var(--pr-d-row-pad-y) var(--pr-d-row-pad-x);
+  background: var(--pr-white);
+  color: inherit;
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+.row:hover {
+  background: var(--pr-cream);
+}
+.row:focus-visible {
+  outline: 2px solid var(--pr-amber);
+  outline-offset: -2px;
+}
+.muted {
+  opacity: 0.65;
+}
+/* Строку видно, но выбрать нельзя (контакт без @хендла): приглушённый текст,
+   курсор по умолчанию и НЕТ подсветки на наведение — иначе строка обещает
+   действие, которого не будет. Фокус с клавиатуры остаётся: скринридер
+   прочитает её вместе с `aria-disabled` и подсказкой-причиной. */
+.disabled,
+.disabled:hover {
+  background: var(--pr-white);
+  color: var(--pr-text-mute);
+  cursor: default;
+}
+.disabled .title,
+.disabled .meta {
+  color: var(--pr-text-mute);
+}
+/* Непрочитанное — только точка в жёлобе и вес заголовка (финал доска A):
+   песочная подложка на всю строку делала ленту «полосатой». */
+.unread {
+  background: var(--pr-white);
+}
+.unread .title {
+  font-weight: var(--pr-fw-bold);
+}
+.unread:hover {
+  background: var(--pr-cream);
+}
+/* Выбранная строка master-detail (DEV-19 §2) — тот же язык выделения на всех
+   списках: фон spark + янтарная метка у начала строки (логическое свойство —
+   в RTL метка сама переезжает вправо). */
+.selected,
+.selected:hover {
+  background: var(--pr-spark);
+}
+.selected::after {
+  content: '';
+  position: absolute;
+  inset-block: 0;
+  inset-inline-start: 0;
+  inline-size: 3px;
+  background: var(--pr-grad-amber);
+}
+
+/* Точка непрочитанного — в жёлобе перед аватаром, строку не сдвигает. */
+.dot {
+  position: absolute;
+  inset-inline-start: 4px;
+  inline-size: 6px;
+  block-size: 6px;
+  border-radius: 50%;
+  background: var(--pr-amber-deep);
+}
+
+.lead {
+  flex: none;
+  display: inline-flex;
+}
+.body {
+  flex: 1;
+  min-inline-size: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.line {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  min-inline-size: 0;
+}
+.title {
+  flex: 1;
+  min-inline-size: 0;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-title);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.titleAside {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+}
+.meta {
+  flex: 1;
+  min-inline-size: 0;
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-text-2);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.amount {
+  flex: none;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  /* Сумма — на ПЕРВОЙ строке, в одном кегле с названием (DEV-20_2 §2):
+     «название + сумма» читаются как одна пара, статус ушёл строкой ниже. */
+  font-size: var(--pr-d-fs-title);
+  color: var(--pr-ink);
+  /* Суммы — по правому краю и моноширинными цифрами (§1), чтобы разряды
+     стояли столбиком в списке. */
+  font-variant-numeric: tabular-nums;
+  text-align: end;
+}
+/* Статус словом-цветом в конце второй строки (§2). Не сжимается: скорее
+   усечётся «контрагент · роль», чем пропадёт смысл статуса. */
+.status {
+  flex: none;
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+}
+.metaAside {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--pr-d-fs-2);
+  color: var(--pr-text-mute);
+  font-variant-numeric: tabular-nums;
+}
+.extra {
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-mute);
+}
+.trailing {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  /* Кнопка внутри сама держит 44×44 — здесь только место под неё. */
+  margin-inline-start: var(--pr-sp-1);
+}
+
+.srOnly {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

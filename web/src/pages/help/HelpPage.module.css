@@ -1,0 +1,95 @@
+/* Справка и FAQ — плотность рабочих экранов (ADR-152, замечание владельца
+   03.09: «текст компактно, мельче, без рамок и лишних отступов»). Своего
+   паддинга у страницы нет: его даёт полоса контента оболочки, иначе
+   `Surface bleed` не дошёл бы до краёв телефона. */
+.page {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--pr-d-gap-section);
+  max-width: 760px;
+}
+
+/* «‹» слева от заголовка: ширина по значку, тач-таргет — по токену. */
+.back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 0;
+  padding: 0;
+  min-width: var(--pr-touch-min);
+  min-height: var(--pr-touch-min);
+  margin-inline-start: calc(-1 * var(--pr-sp-3));
+  color: var(--pr-text-2);
+  cursor: pointer;
+  font: inherit;
+}
+.back:focus-visible {
+  outline: 2px solid var(--pr-amber);
+  outline-offset: -2px;
+}
+
+.lead {
+  margin: 0;
+  font-size: var(--pr-d-fs-body);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-ink);
+}
+
+.section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--pr-sp-1);
+  min-width: 0;
+}
+
+.sectionTitle {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-title);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-ink);
+  margin: 0;
+}
+
+.text {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+}
+
+/* Ответ внутри раскрытого пункта: кегль и цвет задаёт панель `Disclosure`. */
+.answer {
+  margin: 0;
+}
+
+.links {
+  display: flex;
+  gap: var(--pr-sp-2);
+  flex-wrap: wrap;
+}
+
+/* Подпись автора продукта под иконками соцсетей (решение владельца 30.10.2026).
+   Тише основного текста и не кнопка: это ссылка «почитать про нас», а не
+   действие экрана. Те же правила, что в подвале витрины
+   (`PublicSite.module.css`, `.madeBy`). */
+.madeBy {
+  margin: 0;
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+}
+
+.madeBy a {
+  color: var(--pr-text-2);
+  min-height: var(--pr-touch-min);
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.madeBy a:hover,
+.madeBy a:focus-visible {
+  color: var(--pr-text);
+  text-decoration: underline;
+}

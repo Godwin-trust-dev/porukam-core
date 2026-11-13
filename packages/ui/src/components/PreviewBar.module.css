@@ -1,0 +1,68 @@
+/* Полоса режима предпросмотра (замечание владельца 05.09: «при просмотре своей
+   карточки „как гость“ на десктопе не понятно как вернуться обратно — зависает
+   в неопределённости; общее решение и для мобильного»).
+
+   Липкая сверху и одинаковая на всех ширинах: выход из режима виден не только
+   в самом верху страницы. Белая поверхность с hairline-рамкой и мягкой тенью —
+   она стоит НАД чернильным героем карточки, где `--pr-ink`-плашка (как у
+   CookieBanner) слилась бы с фоном. */
+.bar {
+  position: sticky;
+  top: var(--pr-sp-2);
+  z-index: 40;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--pr-sp-1) var(--pr-sp-3);
+  padding: var(--pr-sp-1) var(--pr-sp-3);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-d-r-surface);
+  background: var(--pr-white);
+  box-shadow: var(--pr-shadow-sm);
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  flex: 1 1 auto;
+  min-inline-size: 0;
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-text-2);
+}
+
+.icon {
+  flex: none;
+  color: var(--pr-text-mute);
+}
+
+/* Кнопка возврата — тач-таргет 44px (§8) и всегда у конца строки: на 360px
+   она переносится на вторую строку, `margin-inline-start: auto` держит её
+   под большим пальцем справа (в RTL — слева, свойство логическое). */
+.back {
+  flex: none;
+  margin-inline-start: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-1);
+  min-height: var(--pr-touch-min);
+  padding: var(--pr-sp-1) var(--pr-sp-2);
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: var(--pr-d-fs-body);
+  font-weight: var(--pr-fw-semibold);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-teal-deep);
+  cursor: pointer;
+  text-align: start;
+}
+.back:hover {
+  color: var(--pr-teal);
+}
+.back:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: 2px;
+  border-radius: var(--pr-r-sm);
+}

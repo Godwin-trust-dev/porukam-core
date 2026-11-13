@@ -1,0 +1,53 @@
+.wrap {
+  display: grid;
+  gap: var(--pr-sp-4);
+}
+
+.sectionTitle {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  /* DEV-20 §1: заголовок раздела — «надпись» 13–14, не h3-плакат. */
+  font-size: var(--pr-d-fs-section);
+  text-transform: uppercase;
+  letter-spacing: var(--pr-ls-eyebrow);
+  color: var(--pr-text-2);
+  margin-bottom: var(--pr-sp-3);
+}
+
+.sessionRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+  min-height: var(--pr-touch-min);
+  padding: var(--pr-sp-3) 0;
+  border-top: 1px solid var(--pr-line);
+}
+.sessionRow:first-of-type {
+  border-top: none;
+}
+.sessionInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.sessionDevice {
+  font-weight: var(--pr-fw-medium);
+  color: var(--pr-ink);
+}
+.sessionMeta {
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+}
+
+.verifRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-4);
+}
+.verifText {
+  color: var(--pr-text-2);
+  margin-top: var(--pr-sp-1);
+}

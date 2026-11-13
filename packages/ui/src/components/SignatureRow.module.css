@@ -1,0 +1,42 @@
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  padding: var(--pr-sp-3) 0;
+  border-bottom: 1px solid var(--pr-line);
+}
+.row:last-child {
+  border-bottom: none;
+}
+.icon {
+  color: var(--pr-text-2);
+  flex-shrink: 0;
+}
+.row[data-state='signed'] .icon {
+  color: var(--pr-green);
+}
+.body {
+  flex: 1;
+  min-width: 0;
+}
+.name {
+  margin: 0;
+  color: var(--pr-ink);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-fs-sm);
+}
+.role {
+  color: var(--pr-text-2);
+  font-weight: var(--pr-fw-regular);
+}
+.signerNote {
+  margin: 2px 0 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+}
+.signedAt {
+  margin: 2px 0 0;
+  color: var(--pr-text-mute);
+  font-size: var(--pr-fs-xs);
+  font-variant-numeric: tabular-nums;
+}

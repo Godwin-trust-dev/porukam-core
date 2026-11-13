@@ -1,0 +1,57 @@
+.wrap {
+  display: grid;
+  gap: var(--pr-sp-5);
+  /* Мок-контур карточки со вкладками: читаемая колонка ПО ЦЕНТРУ рабочей
+     области, а не прижатый к левому краю столбец (DEV-19 §5). */
+  max-inline-size: var(--pr-form-max);
+  margin-inline: auto;
+}
+.tab {
+  display: grid;
+  gap: var(--pr-sp-5);
+}
+.card {
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  padding: var(--pr-sp-5);
+  display: grid;
+  gap: var(--pr-sp-2);
+}
+.sectionTitle {
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-ink);
+  margin: 0 0 var(--pr-sp-2);
+}
+.progressBar {
+  height: 8px;
+  border-radius: var(--pr-r-pill);
+  background: var(--pr-sand);
+  overflow: hidden;
+}
+.progressFill {
+  height: 100%;
+  background: var(--pr-teal-deep);
+  border-radius: var(--pr-r-pill);
+  transition: width var(--pr-dur) var(--pr-ease);
+}
+.progressCaption {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.dateRow {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.chips {
+  display: flex;
+  gap: var(--pr-sp-2);
+  flex-wrap: wrap;
+}
+.notFoundText {
+  text-align: center;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}

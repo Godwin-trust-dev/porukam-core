@@ -1,0 +1,51 @@
+.wrap {
+  display: contents;
+}
+.button {
+  position: relative;
+  inline-size: 18px;
+  block-size: 18px;
+  flex: none;
+  border-radius: 50%;
+  border: 1px solid var(--pr-line);
+  background: transparent;
+  color: var(--pr-text-mute);
+  font-size: 12px;
+  font-weight: var(--pr-fw-semibold);
+  line-height: 1;
+  padding: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Тач-цель 40x40 вокруг кружка 18px (отсмотр 2026-08-25): сам кружок
+   остаётся мелким знаком у подписи, но пальцем в него теперь попадают. */
+.button::after {
+  content: '';
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  inline-size: 40px;
+  block-size: 40px;
+  transform: translate(-50%, -50%);
+}
+.button:hover,
+.button[aria-expanded='true'] {
+  color: var(--pr-ink);
+  border-color: var(--pr-ink);
+}
+.button:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: 2px;
+}
+/* Текст занимает всю ширину строки подписи (родитель — flex с wrap). */
+.text {
+  flex-basis: 100%;
+  font-size: var(--pr-fs-sm);
+  font-weight: var(--pr-fw-regular, 400);
+  color: var(--pr-text-2);
+  background: var(--pr-cream);
+  border-radius: 8px;
+  padding: var(--pr-sp-2);
+}

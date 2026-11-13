@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "Langue de l’interface",
+  "globeTriggerAria": "Langue de l’interface",
+  "rowLabel": "Langue de l’interface",
+  "listTitle": "Langue de l’interface",
+  "searchPlaceholder": "Rechercher une langue…",
+  "searchAriaLabel": "Rechercher une langue",
+  "searchClear": "Effacer la recherche",
+  "currentSectionTitle": "Actuelle",
+  "allSectionTitle": "Toutes les langues",
+  "noResults": "Aucune langue trouvée",
+  "betaBadge": "traduction automatique",
+  "betaTooltip": "Traduit automatiquement — peut comporter des imprécisions",
+  "currentAria": "Langue actuelle",
+  "disabledToast": "{{lang}} est momentanément indisponible · nous affichons l’anglais",
+  "closeLabel": "Fermer",
+  "onboardingHint": "Détectée automatiquement — modifiable à tout moment",
+  "settingsRowLabel": "Langue et région",
+  "settingsLanguageExplain": "C’est la langue de l’application. La langue officielle du contrat se choisit séparément — votre cocontractant voit une traduction, mais c’est le texte officiel qui est signé.",
+  "loadErrorRetry": "Réessayer",
+  "loadError": "Impossible de charger la liste des langues"
+}

@@ -1,0 +1,134 @@
+{
+  "aboutTitle": "Porukam là gì",
+  "faqTitle": "Hỏi và đáp",
+  "aboutLead": "Porukam biến thỏa thuận miệng thành hợp đồng rõ ràng với các giai đoạn, chứng cứ và uy tín. Không cần luật sư, không hoa hồng, và tiền không đi qua nền tảng.",
+  "aboutSections": [
+    {
+      "title": "Dành cho ai",
+      "text": "Cho người nhận việc theo đơn hàng hoặc người đặt việc: sửa chữa, thiết kế, lập trình, dạy học, chụp ảnh, vận chuyển, bán đồ, cho thuê, vay mượn giữa cá nhân. Cho hai người, cho cá nhân và hộ kinh doanh, cho người làm tự do."
+    },
+    {
+      "title": "Cách hoạt động",
+      "text": "Bạn tạo hợp đồng từ mẫu có sẵn, chia công việc thành giai đoạn, mời bên kia bằng @tên. Cả hai ký. Sau đó mỗi giai đoạn được bàn giao và nghiệm thu theo danh mục kiểm tra, và mọi sự kiện — ký, bàn giao, nghiệm thu, tranh chấp — đều được ghi nhận và tính vào uy tín của cả hai."
+    },
+    {
+      "title": "Nền tảng không làm gì",
+      "text": "Không giữ và không chuyển tiền — bạn thanh toán trực tiếp theo cách đã chọn. Không lưu bản gốc tệp của bạn — chỉ lưu mã băm (hash) của tệp. Không bán dữ liệu của bạn và không hiện quảng cáo."
+    },
+    {
+      "title": "Nhóm",
+      "text": "Nhóm là địa chỉ chung cho một đội hoặc cộng đồng: phường hội (cộng đồng nghề nghiệp lâu dài cùng bảo đảm chất lượng cho nhau), thị tộc (đội dự án 3–20 người), cộng đồng (nhóm sở thích mở) hoặc gian hàng công ty. Nhóm có @tên, logo, lĩnh vực và địa lý riêng, thẻ công khai với danh sách thành viên, và trang cá nhân mỗi thành viên hiển thị nơi họ tham gia. Hợp đồng vẫn được ký giữa người với người — nhóm giúp tìm thấy nhau và giới thiệu đội."
+    }
+  ],
+  "howTitle": "Hướng dẫn",
+  "howItems": [
+    {
+      "title": "Tạo hợp đồng",
+      "text": "Giao dịch → “Tạo”. Chọn loại hợp đồng (dịch vụ, mua bán, thuê, vay), điền mẫu — mỗi trường có dấu “?” gợi ý. Chỉ định đối tác bằng @tên, chia giai đoạn, chọn cách thanh toán và gửi ký."
+    },
+    {
+      "title": "Mời đối tác",
+      "text": "Ở bước “Các bên” nhập @tên người dùng. Nếu người đó chưa có tài khoản — gửi cho họ liên kết hợp đồng: sau khi đăng nhập bằng Google họ sẽ thấy nó."
+    },
+    {
+      "title": "Ký",
+      "text": "Mở hợp đồng → “Sang màn hình ký”. Kiểm tra phiên bản đã đóng băng rồi ký. Hợp đồng có hiệu lực khi cả hai bên đã ký."
+    },
+    {
+      "title": "Đề xuất sửa trước khi ký",
+      "text": "Trên màn hình xem xét, chọn điều khoản và đề xuất thay đổi. Bên kia chấp nhận hoặc từ chối; sau khi thống nhất, phiên bản được đóng băng lại."
+    },
+    {
+      "title": "Bàn giao giai đoạn",
+      "text": "Bên thực hiện mở giai đoạn → “Bàn giao”, đính kèm chứng cứ (ảnh, tệp, liên kết) và gửi nghiệm thu."
+    },
+    {
+      "title": "Nghiệm thu hoặc trả lại giai đoạn",
+      "text": "Bên đặt việc mở giai đoạn → đi qua danh mục kiểm tra → “Nghiệm thu” hoặc “Trả lại kèm ghi chú”. Nếu bên đặt việc im lặng quá thời hạn kiểm tra, giai đoạn được tự động nghiệm thu."
+    },
+    {
+      "title": "Thanh toán giai đoạn",
+      "text": "Sau nghiệm thu, bên đặt việc chuyển tiền trực tiếp cho bên thực hiện theo cách đã chọn và đánh dấu đã thanh toán trong giai đoạn. Bên thực hiện xác nhận đã nhận."
+    },
+    {
+      "title": "Mở tranh chấp",
+      "text": "Nếu không thỏa thuận được — bấm “Tranh chấp” trong giai đoạn. Cả hai bên đính kèm chứng cứ; mọi thứ đã ghi nhận trước đó đều đã có trong hồ sơ vụ việc."
+    },
+    {
+      "title": "Tìm đối tác và lưu liên hệ",
+      "text": "Mở thẻ của người đó qua liên kết @tên hoặc từ hợp đồng → “Lưu liên hệ”. Đối tác trong hợp đồng của bạn tự động vào danh bạ."
+    },
+    {
+      "title": "Chia sẻ thẻ của bạn",
+      "text": "Trang cá nhân → “Chia sẻ”: liên kết dạng porukam.app/@tên-của-bạn và mã QR. Trên thẻ chỉ có sự thật: bao nhiêu giao dịch, nghiệm thu thế nào, có tranh chấp không."
+    },
+    {
+      "title": "Tạo nhóm",
+      "text": "Nhóm → “Tạo nhóm”. Chọn @tên (duy nhất, đặt khi tạo), loại, lĩnh vực và địa lý; thêm mô tả, liên kết và logo. Trưởng nhóm duyệt yêu cầu, mời theo @tên và thay đổi cài đặt."
+    },
+    {
+      "title": "Tham gia nhóm",
+      "text": "Tìm nhóm trong Tìm kiếm (theo tên, @tên hoặc lĩnh vực) hoặc mở liên kết /@tên. Nhóm mở — “Tham gia” ngay; nhóm kín — “Tham gia” gửi yêu cầu cho trưởng nhóm. Có thể rời bất cứ lúc nào; trưởng nhóm không thể rời cho đến khi bàn giao nhóm."
+    }
+  ],
+  "faqItems": [
+    {
+      "q": "Có miễn phí không?",
+      "a": "Có. Ký hợp đồng, giai đoạn, chứng cứ, uy tín — không phí và không hoa hồng trên thanh toán. Tính năng trả phí, nếu có, sẽ tách riêng và tùy chọn."
+    },
+    {
+      "q": "Hợp đồng như vậy có giá trị pháp lý không?",
+      "a": "Hợp đồng được lập bằng văn bản với chữ ký điện tử đơn giản: cả hai bên xác nhận phiên bản văn bản đã đóng băng, và dịch vụ ghi lại ai ký gì vào lúc nào. Hình thức này được công nhận ở hầu hết các nước cho giao dịch giữa cá nhân và doanh nghiệp. Với giao dịch mà luật yêu cầu công chứng hoặc đăng ký nhà nước (ví dụ bất động sản), dịch vụ không thay thế các thủ tục đó."
+    },
+    {
+      "q": "Tiền có đi qua nền tảng không?",
+      "a": "Không. Các bên thanh toán trực tiếp — chuyển khoản, tiền mặt, như đã thỏa thuận. Nền tảng ghi nhận nghĩa vụ, việc thanh toán và xác nhận đã nhận."
+    },
+    {
+      "q": "Nếu bên kia không phản hồi?",
+      "a": "Mỗi bước có thời hạn. Nếu bên đặt việc không kiểm tra giai đoạn đã bàn giao đúng hạn — nó được tự động nghiệm thu. Nếu đối tác không ký hợp đồng — nó vẫn là bản nháp, không có nghĩa vụ."
+    },
+    {
+      "q": "Có thể sửa hợp đồng sau khi ký không?",
+      "a": "Văn bản đã ký không thể thay đổi. Thay đổi được thực hiện bằng phụ lục do cả hai bên ký; lịch sử phiên bản được lưu."
+    },
+    {
+      "q": "Uy tín là gì và ai thấy?",
+      "a": "Sự thật từ các giao dịch của bạn: bao nhiêu đã ký, bao nhiêu nghiệm thu đúng hạn, có tranh chấp không và kết thúc ra sao. Không có điểm hay sao. Bạn tự đặt mức hiển thị của thẻ và từng trường."
+    },
+    {
+      "q": "Tệp chứng cứ của tôi lưu ở đâu?",
+      "a": "Bản gốc ở bạn và đối tác. Nền tảng lưu mã băm (hash), ảnh thu nhỏ và thời điểm đính kèm — đủ để chứng minh tệp không bị sửa."
+    },
+    {
+      "q": "Đối tác thấy gì về tôi?",
+      "a": "Tên được xác nhận bằng tài khoản, @tên người dùng và thẻ uy tín trong phạm vi bạn cho phép. Điện thoại, email và thông tin ngân hàng không bao giờ hiển thị — trừ khi bạn tự ghi vào văn bản hợp đồng."
+    },
+    {
+      "q": "Đăng nhập từ thiết bị khác thế nào?",
+      "a": "Bằng cùng tài khoản Google. Phiên kéo dài 30 ngày không cần đăng nhập lại khi bạn vẫn dùng dịch vụ."
+    },
+    {
+      "q": "Xóa tài khoản thế nào?",
+      "a": "Trang cá nhân → Cài đặt → Tài khoản → Xóa. Dữ liệu cá nhân bị hủy không thể khôi phục; đối tác vẫn giữ bản sao hợp đồng chung của họ."
+    },
+    {
+      "q": "Dùng trên điện thoại được không?",
+      "a": "Được, đây là ứng dụng web: mở porukam.app trong trình duyệt và thêm vào màn hình chính — sẽ chạy như ứng dụng thường, có thông báo."
+    },
+    {
+      "q": "Liên hệ thế nào?",
+      "a": "Viết đến hello@trust-dev.com — chúng tôi trả lời câu hỏi về dịch vụ, dữ liệu và hợp đồng."
+    },
+    {
+      "q": "Nhóm là gì và để làm gì?",
+      "a": "Cách giới thiệu một đội hoặc cộng đồng dưới một tên: phường hội, thị tộc, cộng đồng hoặc gian hàng công ty. Bên đặt việc tìm nhóm theo lĩnh vực và thành phố, xem thành viên và thẻ uy tín của họ, rồi ký hợp đồng với một người cụ thể. Với bên thực hiện, đó là địa chỉ chung nơi khách được dẫn đến và nơi thấy được uy tín của từng người."
+    },
+    {
+      "q": "Nhóm có chịu trách nhiệm theo hợp đồng không?",
+      "a": "Không. Bên trong hợp đồng luôn là một người cụ thể hoặc hộ kinh doanh/pháp nhân của họ; họ ký và chịu trách nhiệm cá nhân. Nhóm không giữ tiền và không bảo lãnh cho thành viên — nhóm là gian hàng và địa chỉ, còn uy tín thì hình thành từ các giao dịch của từng người."
+    }
+  ],
+  "socialTitle": "Theo dõi chúng tôi",
+  "backToProfile": "Trang cá nhân"
+}

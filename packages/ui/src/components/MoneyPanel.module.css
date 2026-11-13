@@ -1,0 +1,67 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-4);
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-1);
+}
+.headlineLabel {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.headlineAmount {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h1);
+  color: var(--pr-ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.pctRow {
+  display: flex;
+  gap: var(--pr-sp-4);
+  padding: var(--pr-sp-3) 0;
+  border-top: 1px solid var(--pr-line);
+  border-bottom: 1px solid var(--pr-line);
+}
+.pctCell {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.pctValue {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-teal-deep);
+  font-variant-numeric: tabular-nums;
+}
+.pctLabel {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+}
+
+.footer {
+  display: flex;
+  gap: var(--pr-sp-4);
+}
+.footerCell {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.footerLabel {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+}
+.footerAmount {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-fs-body);
+  color: var(--pr-ink);
+  font-variant-numeric: tabular-nums;
+}

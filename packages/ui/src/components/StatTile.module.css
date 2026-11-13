@@ -1,0 +1,70 @@
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--pr-sp-1);
+  min-height: var(--pr-touch-min);
+  /* Компакт (DEV-20_2 §6): плитка — в ритме списков, а не отдельный крупный
+     блок; ширину доли она не раздувает (`min-width: 0`, ADR-146). */
+  min-width: 0;
+  padding: var(--pr-d-pad-card) var(--pr-sp-2);
+  border-radius: var(--pr-d-r-surface);
+  border: 1px solid var(--pr-line);
+  background: var(--pr-white);
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  text-align: center;
+}
+.tile:hover {
+  background: var(--pr-cream);
+}
+.tile:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: 2px;
+}
+
+.iconWrap {
+  position: relative;
+  display: inline-flex;
+  color: var(--pr-ink);
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  inset-inline-end: -10px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: var(--pr-r-pill);
+  /* Финал доска A: янтарный бейдж с тёмной цифрой. */
+  background: var(--pr-amber);
+  color: var(--pr-ink);
+  font-size: var(--pr-fs-xs);
+  font-weight: var(--pr-fw-bold);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.label {
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-text-2);
+  /* Длинная подпись переносится, а не распирает плитку. `nowrap` тут был бы
+     хуже обрезки: он поднимает min-content всего ряда плиток, и ряд
+     вытаскивает за экран колонку, в которой стоит (ADR-146). */
+  max-inline-size: 100%;
+  overflow-wrap: anywhere;
+}
+
+.srBadge {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

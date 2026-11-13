@@ -1,0 +1,134 @@
+{
+  "aboutTitle": "Ce este Porukam",
+  "faqTitle": "Întrebări și răspunsuri",
+  "aboutLead": "Porukam transformă o înțelegere verbală într-un contract clar, cu etape, probe și reputație. Fără avocați, fără comisioane și fără ca banii să treacă prin platformă.",
+  "aboutSections": [
+    {
+      "title": "Pentru cine",
+      "text": "Pentru cei care execută lucrări la comandă sau le comandă: renovări, design, programare, lecții, foto, transport, vânzare de lucruri, închiriere, împrumuturi între persoane. Pentru două persoane, pentru o persoană și un PFA, pentru liber-profesioniști."
+    },
+    {
+      "title": "Cum funcționează",
+      "text": "Creezi un contract dintr-un formular gata făcut, împarți lucrarea în etape, inviți cealaltă parte după @handle. Ambele părți semnează. Apoi fiecare etapă se predă și se recepționează după o listă de verificare, iar fiecare fapt — semnare, predare, recepție, dezacord — se înregistrează și intră în reputația ambilor."
+    },
+    {
+      "title": "Ce nu face platforma",
+      "text": "Nu păstrează și nu transferă bani — vă decontați direct prin modul ales. Nu stochează originalele fișierelor tale — doar hash-urile lor. Nu vinde datele tale și nu afișează reclame."
+    },
+    {
+      "title": "Grupuri",
+      "text": "Un grup este o adresă comună pentru o echipă sau o comunitate: breaslă (comunitate profesională permanentă care garantează calitatea reciproc), clan (echipă de proiect de 3–20 persoane), comunitate (grup deschis de interese) sau vitrina companiei. Grupul are propriul @handle, siglă, domeniu și geografie, o fișă publică cu membrii; în profilul fiecărui membru se vede unde aparține. Contractele se încheie în continuare între oameni — grupul ajută să vă găsiți și să arătați echipa."
+    }
+  ],
+  "howTitle": "Cum se face",
+  "howItems": [
+    {
+      "title": "Creezi un contract",
+      "text": "Tranzacții → „Creează”. Alege tipul de contract (serviciu, vânzare, închiriere, împrumut), completează formularul — fiecare câmp are un „?” cu indiciu. Indică cealaltă parte după @handle, împarte în etape, alege modul de plată și trimite la semnare."
+    },
+    {
+      "title": "Inviți cealaltă parte",
+      "text": "La pasul „Părți” introdu @handle. Dacă persoana nu are încă un cont, trimite-i linkul contractului: după autentificarea cu Google îl va vedea la ea."
+    },
+    {
+      "title": "Semnezi",
+      "text": "Deschide contractul → „Mergi la semnare”. Verifică versiunea înghețată și semnează. Contractul intră în vigoare când au semnat ambele părți."
+    },
+    {
+      "title": "Propui o modificare înainte de semnare",
+      "text": "Pe ecranul de examinare alege un punct și propune o modificare. Cealaltă parte acceptă sau respinge; după acord, versiunea se îngheață din nou."
+    },
+    {
+      "title": "Predai o etapă",
+      "text": "Prestatorul deschide etapa → „Predă”, atașează probe (foto, fișiere, linkuri) și o trimite la recepție."
+    },
+    {
+      "title": "Recepționezi o etapă sau o returnezi",
+      "text": "Beneficiarul deschide etapa → parcurge lista de verificare → „Recepționează” sau „Returnează” cu observații. Dacă beneficiarul tace peste termenul de verificare, etapa se recepționează automat."
+    },
+    {
+      "title": "Plătești o etapă",
+      "text": "După recepție, beneficiarul transferă banii prin modul ales direct prestatorului și marchează plata în etapă. Prestatorul confirmă primirea."
+    },
+    {
+      "title": "Deschizi un dezacord",
+      "text": "Dacă nu v-ați înțeles — apasă „Dezacord” în etapă. Ambele părți atașează probe; tot ce a fost înregistrat înainte e deja în dosar."
+    },
+    {
+      "title": "Găsești cealaltă parte și salvezi contactul",
+      "text": "Deschide fișa persoanei din linkul @handle sau din contract → „Salvează contactul”. Părțile contractelor tale ajung singure în contacte."
+    },
+    {
+      "title": "Distribui fișa ta",
+      "text": "Profil → „Distribuie”: link de forma porukam.app/@handleultau și cod QR. Pe fișă — doar fapte: câte tranzacții, cum au fost recepționate, dacă au existat dezacorduri."
+    },
+    {
+      "title": "Creezi un grup",
+      "text": "Grupuri → „Creează grup”. Alege un @handle (unul singur, stabilit la creare), tipul, domeniul și geografia; adaugă descriere, linkuri și siglă. Liderul aprobă cererile, invită după @handle și modifică setările."
+    },
+    {
+      "title": "Intri într-un grup",
+      "text": "Găsește grupul în Căutare (după nume, @handle sau domeniu) sau deschide linkul /@handle. Deschis — „Intră” imediat; închis — „Intră” trimite o cerere liderului. Poți ieși oricând; liderul nu poate ieși până nu predă grupul."
+    }
+  ],
+  "faqItems": [
+    {
+      "q": "Este gratuit?",
+      "a": "Da. Încheierea contractului, etapele, probele, reputația — fără plată și fără comision la plăți. Funcțiile plătite, dacă vor apărea, vor fi separate și opționale."
+    },
+    {
+      "q": "Are un astfel de contract valoare juridică?",
+      "a": "Contractul se încheie în formă scrisă cu semnătură electronică simplă: ambele părți confirmă versiunea înghețată a textului, iar serviciul înregistrează cine, când și ce a semnat. Această formă e recunoscută de legislația majorității țărilor pentru tranzacții între persoane și afaceri. Acolo unde legea cere notar sau înregistrare de stat (de ex. imobiliare), serviciul nu înlocuiește aceste proceduri."
+    },
+    {
+      "q": "Trec banii prin platformă?",
+      "a": "Nu. Părțile se decontează direct — transfer, numerar, cum au convenit. Platforma înregistrează obligația, faptul plății și confirmarea primirii."
+    },
+    {
+      "q": "Ce se întâmplă dacă cealaltă parte nu răspunde?",
+      "a": "Fiecare pas are un termen. Dacă beneficiarul nu a verificat la timp etapa predată — se recepționează automat. Dacă cealaltă parte nu a semnat contractul — rămâne ciornă, fără obligații."
+    },
+    {
+      "q": "Se poate modifica contractul după semnare?",
+      "a": "Textul semnat este imuabil. Modificările se fac printr-un act adițional semnat de ambele părți; istoricul versiunilor se păstrează."
+    },
+    {
+      "q": "Ce este reputația și cine o vede?",
+      "a": "Fapte din tranzacțiile tale: câte încheiate, câte recepționate la timp, dacă au existat dezacorduri și cum s-au încheiat. Fără note și stele. Vizibilitatea fișei și a câmpurilor o setezi tu."
+    },
+    {
+      "q": "Unde sunt stocate fișierele mele-probe?",
+      "a": "Originalele — la tine și la cealaltă parte. Platforma păstrează o amprentă (hash), o miniatură și ora atașării — suficient pentru a dovedi că fișierul nu s-a schimbat."
+    },
+    {
+      "q": "Ce vede cealaltă parte despre mine?",
+      "a": "Numele confirmat de cont, @handle și fișa de reputație în limitele permise de tine. Telefonul, e-mailul și datele bancare nu se afișează niciodată — doar dacă le-ai scris tu în textul contractului."
+    },
+    {
+      "q": "Cum mă autentific de pe alt dispozitiv?",
+      "a": "Cu același cont Google. Sesiunea durează 30 de zile fără re-autentificare cât timp folosești serviciul."
+    },
+    {
+      "q": "Cum îmi șterg contul?",
+      "a": "Profil → Setări → Cont → Șterge. Datele personale se distrug ireversibil; celelalte părți păstrează exemplarele lor ale contractelor comune."
+    },
+    {
+      "q": "Funcționează pe telefon?",
+      "a": "Da, e o aplicație web: deschide porukam.app în browser și adaug-o pe ecranul principal — se va comporta ca o aplicație obișnuită, cu notificări."
+    },
+    {
+      "q": "Cum vă contactez?",
+      "a": "Scrie la hello@trust-dev.com — răspundem la întrebări despre serviciu, date și contracte."
+    },
+    {
+      "q": "Ce sunt grupurile și la ce folosesc?",
+      "a": "O modalitate de a prezenta o echipă sau o comunitate sub un singur nume: breaslă, clan, comunitate sau vitrina companiei. Beneficiarul găsește grupul după domeniu și oraș, vede membrii și fișele lor de reputație și încheie contractul cu o persoană anume. Pentru prestatori e o adresă comună, unde sunt aduși beneficiarii și unde se vede reputația fiecăruia."
+    },
+    {
+      "q": "Răspunde grupul pentru contract?",
+      "a": "Nu. Partea contractului este întotdeauna o persoană anume sau PFA/firma sa; semnează și răspunde personal. Grupul nu păstrează bani și nu garantează pentru membri — este o vitrină și o adresă, iar reputația se adună din tranzacțiile fiecăruia."
+    }
+  ],
+  "socialTitle": "Suntem pe rețelele sociale",
+  "backToProfile": "Profil"
+}

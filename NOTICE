@@ -1,0 +1,33 @@
+Porukam (porukam-core)
+Copyright 2026 Trust Dev (https://trust-dev.com/)
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+The name and logo "Porukam" / "По рукам" (web/public/brand/, web/public/icons/)
+are not licensed for use as a trademark of derived products.
+
+Third-party components bundled in or required by this repository:
+
+Fonts (web/public/fonts/)
+  Inter and Onest, SIL Open Font License 1.1.
+  Inter: Copyright The Inter Project Authors (https://github.com/rsms/inter).
+  Onest: Copyright The Onest Project Authors (https://github.com/simple-ui/onest).
+  License text: https://openfontlicense.org/open-font-license-official-text/
+  The fonts are redistributed unmodified apart from subsetting/format conversion.
+
+caniuse-lite (npm), CC-BY-4.0
+  Copyright Ben Briggs and contributors, data from caniuse.com.
+  https://creativecommons.org/licenses/by/4.0/
+
+Mock Service Worker (web/public/mockServiceWorker.js), MIT
+  Copyright Artem Zakharchenko and contributors. The license header in the file is kept.
+
+psycopg (Python dependency), LGPL-3.0
+  Used as an unmodified, dynamically linked library.
+
+axe-core (npm, development only), MPL-2.0
+  Used unmodified in tests; not distributed.
+
+All other npm and Python dependencies are used under their own licenses
+(mostly MIT, ISC, BSD and Apache-2.0); see package-lock.json and backend/uv.lock.
+Test fixtures under backend/services/audit_vault/tests/fixtures/ contain public
+certificate chains of a time-stamping authority; they are not secrets.

@@ -1,0 +1,46 @@
+/* Строка-подсказка в ритме ленты (финал доска A): кремовая, без тени,
+   текст 13, действие — словом, крестик справа. */
+.promo {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  min-block-size: var(--pr-touch-min);
+  padding: var(--pr-sp-1) var(--pr-sp-2) var(--pr-sp-1) var(--pr-sp-3);
+  border-radius: var(--pr-d-r-surface);
+  background: var(--pr-spark);
+  border: 1px solid var(--pr-hairline);
+}
+.icon {
+  flex: none;
+  color: var(--pr-amber-deep);
+}
+.text {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  color: var(--pr-ink);
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+}
+.cta {
+  flex: none;
+}
+.dismiss {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: none;
+  color: var(--pr-text-mute);
+  cursor: pointer;
+}
+.dismiss:hover {
+  color: var(--pr-ink);
+}
+.dismiss:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: 2px;
+}

@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "界面语言",
+  "globeTriggerAria": "界面语言",
+  "rowLabel": "界面语言",
+  "listTitle": "界面语言",
+  "searchPlaceholder": "搜索语言…",
+  "searchAriaLabel": "搜索语言",
+  "searchClear": "清除搜索",
+  "currentSectionTitle": "当前",
+  "allSectionTitle": "所有语言",
+  "noResults": "未找到语言",
+  "betaBadge": "机器翻译",
+  "betaTooltip": "机器翻译——可能不够准确",
+  "currentAria": "当前语言",
+  "disabledToast": "{{lang}} 暂时不可用 · 我们显示英文",
+  "closeLabel": "关闭",
+  "onboardingHint": "已自动识别——随时可以更改",
+  "settingsRowLabel": "语言与地区",
+  "settingsLanguageExplain": "这是应用的界面语言。合同的正式语言另行选择——对方看到的是译文，但签署的是正式文本。",
+  "loadErrorRetry": "重试",
+  "loadError": "无法加载语言列表"
+}

@@ -1,0 +1,106 @@
+.wrap {
+  position: relative;
+  display: inline-block;
+}
+
+/* ── Триггеры chip/globe ── */
+.chip,
+.globeTrigger {
+  appearance: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  min-height: var(--pr-touch-min);
+  color: var(--pr-ink);
+  font: inherit;
+  font-size: var(--pr-fs-sm);
+}
+.chip {
+  border: 1px solid var(--pr-line);
+  background: var(--pr-white);
+  border-radius: var(--pr-r-pill);
+  padding: var(--pr-sp-2) var(--pr-sp-3);
+}
+.chip:hover,
+.chip:focus-visible {
+  background: var(--pr-cream);
+}
+.globeTrigger {
+  border: none;
+  background: none;
+  padding: var(--pr-sp-2);
+  border-radius: var(--pr-r-pill);
+}
+.globeTrigger:hover,
+.globeTrigger:focus-visible {
+  background: var(--pr-cream);
+}
+/* on-ink — триггер на чернильном герое (гостевая карточка репутации):
+   чернильные --pr-ink/--pr-text-2 на тёмном фоне нечитаемы; полупрозрачная
+   подложка — как .glass у PassportHeader. */
+.onInk.chip,
+.onInk.globeTrigger {
+  color: var(--pr-on-ink);
+}
+.onInk .caret,
+.onInk .codeOnly {
+  color: var(--pr-on-ink);
+  opacity: 0.75;
+}
+.onInk.chip {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.22);
+}
+.onInk.chip:hover,
+.onInk.chip:focus-visible,
+.onInk.globeTrigger:hover,
+.onInk.globeTrigger:focus-visible {
+  background: rgba(255, 255, 255, 0.22);
+}
+.caret {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+}
+.chipText {
+  white-space: nowrap;
+}
+/* globe-триггер: на mobile — только код локали (иконка + код), self_name скрыт;
+   на desktop — полное само-название, код скрыт (DEV-16a §1 «globe»). Это чисто
+   визуальный переключатель (не структурный, как Sheet/popover) — остаётся на CSS. */
+.globeText {
+  display: none;
+}
+.codeOnly {
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-2);
+  text-transform: uppercase;
+}
+@media (min-width: 640px) {
+  .globeText {
+    display: inline;
+    white-space: nowrap;
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .codeOnly {
+    display: none;
+  }
+}
+
+/* ── desktop: anchored dropdown у триггера (рендерится только когда isDesktop, см. .tsx) ── */
+.popover {
+  position: absolute;
+  inset-inline-start: 0;
+  top: calc(100% + 4px);
+  z-index: 100;
+  width: max-content;
+  min-width: 300px;
+  max-width: 360px;
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-md);
+  box-shadow: var(--pr-shadow-card);
+  padding: var(--pr-sp-3);
+}

@@ -1,0 +1,48 @@
+/* Материалы этапа на карточке договора — тот же приглушённый вид, что у
+   чек-листа этапа (ContractDetailPage.module.css .checklist/.material). */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-inline-start: var(--pr-sp-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-1);
+}
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--pr-sp-2);
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+  min-width: 0;
+}
+.item > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Протокол передачи (ADR-155 §6) на карточке — статус словом-цветом сразу
+   после метаданных позиции, кнопки своей стороны отдельной строкой. */
+.handover {
+  margin-inline-start: var(--pr-sp-2);
+  font-weight: var(--pr-fw-semibold);
+  color: var(--pr-text-2);
+}
+.item[data-state='received'] .handover {
+  color: var(--pr-green-ink);
+}
+.item[data-state='handed_over'] .handover {
+  color: var(--pr-amber-ink);
+}
+.item[data-state='expected'] .handover {
+  color: var(--pr-text-mute);
+  font-weight: var(--pr-fw-regular);
+}
+.handoverActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-2);
+  flex-basis: 100%;
+}

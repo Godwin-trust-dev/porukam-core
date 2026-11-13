@@ -1,0 +1,33 @@
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  width: 100%;
+  padding: var(--pr-sp-3) 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--pr-line);
+  cursor: pointer;
+  font: inherit;
+  color: var(--pr-ink);
+  text-align: start;
+  min-height: var(--pr-touch-min);
+}
+.list li:last-child .row {
+  border-bottom: none;
+}
+.label {
+  font-weight: var(--pr-fw-medium);
+}
+.hint {
+  flex: 1;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}

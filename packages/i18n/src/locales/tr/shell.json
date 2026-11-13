@@ -1,0 +1,12 @@
+{
+  "actorSwitcher": {
+    "triggerLabel": "Profil değiştir",
+    "personalLabel": "Kişisel",
+    "legalFormIp": "Şahıs şirketi",
+    "legalFormOoo": "Ltd. Şti.",
+    "addOrg": "Kuruluş ekle",
+    "groups": "Birliklerim"
+  },
+  "sectionMenu": "Bölümler",
+  "logout": "Çıkış yap"
+}

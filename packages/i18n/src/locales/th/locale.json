@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "ภาษาของส่วนติดต่อผู้ใช้",
+  "globeTriggerAria": "ภาษาของส่วนติดต่อผู้ใช้",
+  "rowLabel": "ภาษาของส่วนติดต่อผู้ใช้",
+  "listTitle": "ภาษาของส่วนติดต่อผู้ใช้",
+  "searchPlaceholder": "ค้นหาภาษา…",
+  "searchAriaLabel": "ค้นหาภาษา",
+  "searchClear": "ล้างการค้นหา",
+  "currentSectionTitle": "ปัจจุบัน",
+  "allSectionTitle": "ทุกภาษา",
+  "noResults": "ไม่พบภาษา",
+  "betaBadge": "แปลอัตโนมัติ",
+  "betaTooltip": "แปลโดยเครื่อง — อาจไม่แม่นยำ",
+  "currentAria": "ภาษาปัจจุบัน",
+  "disabledToast": "{{lang}} ใช้ไม่ได้ชั่วคราว · เราแสดงภาษาอังกฤษ",
+  "closeLabel": "ปิด",
+  "onboardingHint": "ตรวจพบโดยอัตโนมัติ — เปลี่ยนได้ทุกเมื่อ",
+  "settingsRowLabel": "ภาษาและภูมิภาค",
+  "settingsLanguageExplain": "นี่คือภาษาของแอป ภาษาอย่างเป็นทางการของสัญญาเลือกแยกกัน — คู่สัญญาเห็นคำแปล แต่สิ่งที่ลงนามคือข้อความอย่างเป็นทางการ",
+  "loadErrorRetry": "ลองอีกครั้ง",
+  "loadError": "โหลดรายการภาษาไม่สำเร็จ"
+}

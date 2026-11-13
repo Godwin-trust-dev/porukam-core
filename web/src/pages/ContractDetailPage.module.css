@@ -1,0 +1,345 @@
+.wrap {
+  display: grid;
+  gap: var(--pr-sp-5);
+  /* Ширину даёт рабочая область оболочки; раскладку «рейл + тело» —
+     PassportLayout (DEV-19 §4). Своего max-width у страницы нет. */
+}
+/* Мок-контур карточки (LegacyContractDetail) — простая стопка без рейла:
+   её растягивать на весь монитор незачем, держим ширину формы. */
+.narrow {
+  max-inline-size: var(--pr-form-max);
+}
+.head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--pr-sp-4);
+  flex-wrap: wrap;
+}
+.title {
+  font-size: var(--pr-d-fs-screen);
+  color: var(--pr-ink);
+}
+.sub {
+  display: flex;
+  gap: var(--pr-sp-2);
+  flex-wrap: wrap;
+  margin-top: var(--pr-sp-2);
+}
+.viewAs {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  background: var(--pr-white);
+  border: 1px dashed var(--pr-line);
+  border-radius: var(--pr-r-md);
+  padding: var(--pr-sp-2) var(--pr-sp-3);
+}
+.viewAsLabel {
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-mute);
+}
+.segmented {
+  display: inline-flex;
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-pill);
+  overflow: hidden;
+}
+.segBtn {
+  border: none;
+  background: var(--pr-white);
+  padding: var(--pr-sp-1) var(--pr-sp-3);
+  min-height: 36px;
+  cursor: pointer;
+  font: inherit;
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+}
+.segBtnActive {
+  background: var(--pr-ink);
+  color: var(--pr-text-inv);
+}
+.panel {
+  display: grid;
+  gap: var(--pr-sp-4);
+}
+.card {
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  padding: var(--pr-sp-5);
+  display: grid;
+  gap: var(--pr-sp-3);
+}
+.rowBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+  flex-wrap: wrap;
+}
+.sectionTitle {
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-ink);
+}
+.actions {
+  display: flex;
+  gap: var(--pr-sp-3);
+  flex-wrap: wrap;
+}
+.party {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  padding: var(--pr-sp-2) 0;
+}
+.cardLink {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-teal-deep);
+  font-weight: var(--pr-fw-semibold);
+  cursor: pointer;
+}
+.handle {
+  font-family: ui-monospace, monospace;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+
+/* Дерево этапов */
+.node {
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-md);
+  padding: var(--pr-sp-3);
+  background: var(--pr-white);
+}
+.nodeHead {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  flex-wrap: wrap;
+}
+.nodeTitleInput {
+  flex: 1;
+  min-width: 160px;
+  border: 1px solid transparent;
+  border-radius: var(--pr-r-sm);
+  padding: var(--pr-sp-2);
+  font: inherit;
+  font-weight: var(--pr-fw-semibold);
+  color: var(--pr-ink);
+  background: var(--pr-cream);
+}
+.amountInput {
+  width: 130px;
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-sm);
+  padding: var(--pr-sp-2);
+  font: inherit;
+  text-align: end;
+}
+.nodeMeta {
+  display: flex;
+  gap: var(--pr-sp-2);
+  margin-top: var(--pr-sp-2);
+  flex-wrap: wrap;
+}
+.iconBtn {
+  border: 1px solid var(--pr-line);
+  background: var(--pr-white);
+  border-radius: var(--pr-r-sm);
+  min-height: 36px;
+  min-width: 36px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 var(--pr-sp-2);
+  cursor: pointer;
+  font: inherit;
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-2);
+}
+.iconBtn:hover {
+  border-color: var(--pr-amber);
+}
+.checklist {
+  margin: var(--pr-sp-2) 0 0;
+  padding-inline-start: var(--pr-sp-5);
+  display: grid;
+  gap: var(--pr-sp-1);
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text);
+}
+.inlineAdd {
+  display: flex;
+  gap: var(--pr-sp-2);
+  margin-top: var(--pr-sp-2);
+  flex-wrap: wrap;
+}
+.inlineInput {
+  flex: 1;
+  min-width: 140px;
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-sm);
+  padding: var(--pr-sp-2);
+  font: inherit;
+}
+.material {
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+  padding-inline-start: var(--pr-sp-5);
+}
+
+/* Согласование */
+.revision {
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-md);
+  padding: var(--pr-sp-3);
+  display: grid;
+  gap: var(--pr-sp-2);
+}
+.change {
+  font-family: ui-monospace, monospace;
+  font-size: var(--pr-fs-sm);
+}
+.before {
+  color: var(--pr-red);
+  text-decoration: line-through;
+}
+.after {
+  color: var(--pr-green);
+}
+
+/* Timeline */
+.timeline {
+  display: grid;
+  gap: 0;
+}
+.tlItem {
+  display: grid;
+  /* `minmax(0, 1fr)`: у колонки `1fr` min-размер — min-content, и длинный
+     неразрывный код события (`negotiation.signature_requested`) распирал
+     вкладку «История» шире экрана на 390px (отсмотр 2026-08-25). */
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: var(--pr-sp-3);
+  padding: var(--pr-sp-3) 0;
+  border-top: 1px solid var(--pr-line);
+  overflow-wrap: anywhere;
+}
+/* На телефоне 150px под дату — это половина строки: время над событием. */
+@media (max-width: 560px) {
+  .tlItem {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--pr-sp-1);
+  }
+}
+.tlItem:first-child {
+  border-top: none;
+}
+.tlTime {
+  color: var(--pr-text-mute);
+  font-size: var(--pr-fs-sm);
+}
+/* Хроника (ADR-134): подпись с бэка + пояснение + ссылка на сущность. */
+.tlBody {
+  display: grid;
+  gap: var(--pr-sp-1);
+  min-width: 0;
+}
+.tlTitle {
+  color: var(--pr-ink);
+}
+/* Старый бэк без `title`: код события — мелко и моноширинно, не заголовком. */
+.tlCode {
+  font-family: ui-monospace, monospace;
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-mute);
+}
+.tlDetail {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.tlSubject {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-teal-deep);
+  font-weight: var(--pr-fw-semibold);
+  text-decoration: none;
+  text-align: left;
+  cursor: pointer;
+  justify-self: start;
+}
+.tlSubjectPlain {
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+}
+.tlEmpty {
+  color: var(--pr-text-mute);
+}
+/* Вложенные события (этапы, допники, споры…) — одна свёрнутая группа. */
+.tlNested {
+  margin-top: var(--pr-sp-3);
+  border-top: 1px solid var(--pr-line);
+}
+.tlNestedToggle {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  width: 100%;
+  min-height: 44px;
+  padding: var(--pr-sp-2) 0;
+  background: none;
+  border: none;
+  font: inherit;
+  font-weight: var(--pr-fw-semibold);
+  color: var(--pr-ink);
+  text-align: left;
+  cursor: pointer;
+}
+.tlNestedHint {
+  margin-left: auto;
+  font-weight: var(--pr-fw-regular);
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-teal-deep);
+  white-space: nowrap;
+}
+.tlChevron {
+  transform: rotate(-90deg);
+  transition: transform 0.15s ease;
+  flex-shrink: 0;
+}
+.tlChevronOpen {
+  transform: rotate(0deg);
+  transition: transform 0.15s ease;
+  flex-shrink: 0;
+}
+.signedBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  text-align: center;
+  padding: var(--pr-sp-6);
+  background: var(--pr-grad-tile);
+  border-radius: var(--pr-r-lg);
+}
+.confirmList {
+  display: grid;
+  gap: var(--pr-sp-2);
+  margin-top: var(--pr-sp-2);
+}
+
+/* Список замечаний внутри раскрытого `Disclosure` (DEV-20_2 §4) — на всю
+   ширину блока, без собственной колонки-отступа под маркеры. */
+.warningsList {
+  margin: 0;
+  padding-inline-start: var(--pr-sp-4);
+  display: grid;
+  gap: var(--pr-sp-2);
+}

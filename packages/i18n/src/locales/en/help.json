@@ -1,0 +1,134 @@
+{
+  "aboutTitle": "What is Porukam",
+  "faqTitle": "Questions and answers",
+  "aboutLead": "Porukam turns a verbal agreement into a clear contract with stages, evidence and reputation. No lawyers, no fees, and the money never passes through the platform.",
+  "aboutSections": [
+    {
+      "title": "Who it is for",
+      "text": "For anyone who does work on order or orders it: renovation, design, development, lessons, photo, transport, selling things, rent, loans between people. For two people, a person and a sole trader, the self-employed."
+    },
+    {
+      "title": "How it works",
+      "text": "You create a contract from a ready form, split the work into stages, invite the other party by @handle. Both sides sign. Then every stage is delivered and accepted by a checklist, and every fact — signing, delivery, acceptance, dispute — is recorded and goes into both reputations."
+    },
+    {
+      "title": "What the platform does not do",
+      "text": "It never holds or moves money — you settle directly the way you chose. It does not store your original files — only their fingerprints. It does not sell your data and shows no ads."
+    },
+    {
+      "title": "Groups",
+      "text": "A group is a shared address for a team or community: a guild (a standing professional community that vouches for each other's quality), a clan (a project team of 3–20), a community (an open interest group) or a company showcase. A group has its own @handle, logo, field and geography, a public card with its members, and every member's profile shows where they belong. Contracts are still made between people — the group helps you find each other and show the team."
+    }
+  ],
+  "howTitle": "How to",
+  "howItems": [
+    {
+      "title": "Create a contract",
+      "text": "Deals → “Create”. Choose the kind of contract (service, sale, rent, loan), fill in the form — every field has a “?” hint. Set the counterparty by @handle, split into stages, choose a payment method and send for signing."
+    },
+    {
+      "title": "Invite a counterparty",
+      "text": "On the “Parties” step enter the @handle. If the person has no account yet, send them the contract link: after signing in with Google they will see it."
+    },
+    {
+      "title": "Sign",
+      "text": "Open the contract → “Go to signing”. Check the frozen version and sign. The contract is in force once both parties have signed."
+    },
+    {
+      "title": "Propose a change before signing",
+      "text": "On the review screen pick a clause and propose a change. The other side accepts or rejects; after agreement the version is frozen again."
+    },
+    {
+      "title": "Deliver a stage",
+      "text": "The contractor opens the stage → “Deliver”, attaches evidence (photos, files, links) and sends it for acceptance."
+    },
+    {
+      "title": "Accept a stage or return it",
+      "text": "The customer opens the stage → goes through the checklist → “Accept” or “Return” with remarks. If the customer stays silent past the review window, the stage is accepted automatically."
+    },
+    {
+      "title": "Pay for a stage",
+      "text": "After acceptance the customer pays the contractor directly by the chosen method and marks the payment in the stage. The contractor confirms receipt."
+    },
+    {
+      "title": "Open a dispute",
+      "text": "If you could not agree — press “Dispute” in the stage. Both sides attach evidence; everything recorded earlier is already in the case."
+    },
+    {
+      "title": "Find a counterparty and save a contact",
+      "text": "Open a person’s card by their @handle link or from a contract → “Save contact”. Counterparties of your contracts are added to contacts automatically."
+    },
+    {
+      "title": "Share your card",
+      "text": "Profile → “Share”: a link like porukam.app/@yourhandle and a QR code. The card shows only facts: how many deals, how they were accepted, whether there were disputes."
+    },
+    {
+      "title": "Create a group",
+      "text": "Groups → “Create group”. Pick a @handle (one per group, set at creation), choose the type, field and geography, add a description, links and a logo. The leader approves requests, invites by @handle and changes settings."
+    },
+    {
+      "title": "Join a group",
+      "text": "Find the group in Search (by name, @handle or field) or open its /@handle link. Open groups — “Join” right away; closed ones — “Join” sends a request to the leader. You can leave at any time; the leader cannot leave until the group is handed over."
+    }
+  ],
+  "faqItems": [
+    {
+      "q": "Is it free?",
+      "a": "Yes. Contracts, stages, evidence, reputation — no charge and no commission on payments. Paid features, if they appear, will be separate and optional."
+    },
+    {
+      "q": "Is such a contract legally binding?",
+      "a": "The contract is made in written form with a simple electronic signature: both parties confirm the frozen text and the service records who signed what and when. This form is recognised in most countries for deals between people and businesses. Where the law requires a notary or state registration (e.g. real estate), the service does not replace those procedures."
+    },
+    {
+      "q": "Does money pass through the platform?",
+      "a": "No. The parties settle directly — by transfer, cash, as agreed. The platform records the obligation, the payment and the confirmation of receipt."
+    },
+    {
+      "q": "What if the other side does not respond?",
+      "a": "Every step has a deadline. If the customer does not review a delivered stage in time, it is accepted automatically. If the counterparty never signs, the contract stays a draft — no obligations."
+    },
+    {
+      "q": "Can the contract be changed after signing?",
+      "a": "The signed text is immutable. Changes are made by an amendment signed by both parties; the version history is kept."
+    },
+    {
+      "q": "What is reputation and who sees it?",
+      "a": "Facts from your deals: how many concluded, how many accepted on time, whether there were disputes and how they ended. No ratings or stars. You control the visibility of the card and its fields."
+    },
+    {
+      "q": "Where are my evidence files stored?",
+      "a": "The originals stay with you and your counterparty. The platform keeps a fingerprint (hash), a thumbnail and the attachment time — enough to prove the file was not altered."
+    },
+    {
+      "q": "What does the counterparty see about me?",
+      "a": "The name confirmed by your account, your @handle and your reputation card within the limits you allowed. Phone, e-mail and bank details are never shown — unless you put them in the contract text yourself."
+    },
+    {
+      "q": "How do I sign in on another device?",
+      "a": "With the same Google account. The session lasts 30 days without re-login while you keep using the service."
+    },
+    {
+      "q": "How do I delete my account?",
+      "a": "Profile → Settings → Account → Delete. Personal data is destroyed irreversibly; counterparties keep their copies of shared contracts."
+    },
+    {
+      "q": "Does it work on a phone?",
+      "a": "Yes, it is a web app: open porukam.app in the browser and add it to the Home screen — it behaves like a regular app, with notifications."
+    },
+    {
+      "q": "How do I contact you?",
+      "a": "Write to hello@trust-dev.com — we answer questions about the service, data and contracts."
+    },
+    {
+      "q": "What are groups and what are they for?",
+      "a": "A way to present a team or community under one name: a guild, clan, community or company showcase. A customer finds a group by field and city, sees the members and their reputation cards, and makes the contract with a specific person. For contractors it is a shared address that brings clients and shows each member's reputation."
+    },
+    {
+      "q": "Is a group liable under a contract?",
+      "a": "No. A party to a contract is always a specific person or their sole-trader business or company; they sign and are responsible personally. A group holds no money and gives no guarantees for its members — it is a showcase and an address, and reputation is built from each member's deals."
+    }
+  ],
+  "socialTitle": "Follow us",
+  "backToProfile": "Profile"
+}

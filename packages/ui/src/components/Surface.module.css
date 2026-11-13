@@ -1,0 +1,42 @@
+.surface {
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-d-r-surface);
+  /* Тени на каждый элемент списка нет (DEV-20 §0) — поверхность одна. */
+  overflow: hidden;
+  /* Списочная разметка (`as="ul"`) не должна тащить браузерные маркеры. */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-inline-size: 0;
+}
+.padded {
+  padding: var(--pr-d-pad-card);
+}
+.flush {
+  border: none;
+  border-radius: 0;
+}
+
+/* Во всю ширину телефона (финал доска A): рамки и радиуса нет, поверхность
+   выходит за паддинг контента (`--pr-d-pad-card`) к краям экрана; края
+   списка сверху и снизу — hairline, как между строками. Правило только
+   узкого экрана: на десктопе список стоит в колонке и рамка ему нужна. */
+@media (max-width: 1023.98px) {
+  .bleed {
+    border-inline: none;
+    border-block: 1px solid var(--pr-hairline);
+    border-radius: 0;
+    margin-inline: calc(-1 * var(--pr-d-pad-card));
+  }
+}
+
+/* Hairline — МЕЖДУ строками, не вокруг каждой (§1). Логическая граница:
+   в RTL порядок строк вертикальный, так что border-block-start корректен. */
+.surface > * + * {
+  border-block-start: 1px solid var(--pr-hairline);
+}
+/* `as="ul"`: разделитель ставится на сам <li>, дети внутри его не наследуют. */
+.padded > * + * {
+  border-block-start: none;
+}

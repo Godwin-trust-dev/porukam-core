@@ -1,0 +1,64 @@
+.willTitle {
+  margin: 0 0 var(--pr-sp-2);
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+  text-transform: uppercase;
+  letter-spacing: var(--pr-ls-eyebrow);
+}
+.willList {
+  display: grid;
+  gap: var(--pr-sp-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.willItem {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--pr-sp-2);
+  color: var(--pr-ink);
+  font-size: var(--pr-fs-body);
+}
+.willIcon {
+  flex: none;
+  margin-top: 2px;
+  color: var(--pr-teal-deep);
+}
+/* «Отправка 3 из 5» — прогресс выгрузки черновиков перед сдачей (ADR-160). */
+.progress {
+  margin: var(--pr-sp-3) 0 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.error {
+  margin: var(--pr-sp-3) 0 0;
+  color: var(--pr-red);
+  font-size: var(--pr-fs-sm);
+}
+/* ADR-164: непокрытые пункты чек-листа — ПРЕДУПРЕЖДЕНИЕ, не отказ. Янтарь
+   Callout tone="warn", не красный `.error`: сдача остаётся разрешённой. */
+.warning {
+  display: flex;
+  gap: var(--pr-sp-3);
+  align-items: flex-start;
+  margin: 0 0 var(--pr-sp-4);
+  padding: var(--pr-sp-3) var(--pr-sp-4);
+  border-radius: var(--pr-r-md);
+  border-inline-start: 4px solid var(--pr-amber);
+  background: rgba(255, 158, 44, 0.14);
+  color: var(--pr-amber-deep);
+  font-size: var(--pr-fs-sm);
+  line-height: var(--pr-lh-normal);
+}
+.warningIcon {
+  flex: none;
+  margin-top: 2px;
+}
+.warningTitle {
+  margin: 0;
+  font-weight: var(--pr-fw-semibold);
+}
+.warningList {
+  margin: var(--pr-sp-1) 0 0;
+  padding-inline-start: var(--pr-sp-4);
+}

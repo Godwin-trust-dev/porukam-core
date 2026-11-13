@@ -1,0 +1,55 @@
+.state {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: var(--pr-sp-2);
+  padding: var(--pr-sp-8) var(--pr-sp-4);
+}
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--pr-line);
+  border-top-color: var(--pr-amber-deep);
+  border-radius: 50%;
+  animation: pr-archive-spin 0.7s linear infinite;
+}
+@keyframes pr-archive-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation-duration: 1.4s;
+  }
+}
+.title {
+  margin: var(--pr-sp-2) 0 0;
+  color: var(--pr-ink);
+  font-family: var(--pr-font-head);
+  font-size: var(--pr-fs-h3);
+}
+.track {
+  width: 100%;
+  max-width: 280px;
+  height: 8px;
+  border-radius: var(--pr-r-pill);
+  background: var(--pr-sand);
+  overflow: hidden;
+}
+.fill {
+  height: 100%;
+  background: var(--pr-grad-amber);
+  transition: width var(--pr-dur) var(--pr-ease);
+}
+.value {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+  font-variant-numeric: tabular-nums;
+}
+.hint {
+  margin: 0;
+  color: var(--pr-text-mute);
+  font-size: var(--pr-fs-xs);
+}

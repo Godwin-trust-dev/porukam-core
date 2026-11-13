@@ -1,0 +1,80 @@
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-4);
+  width: 100%;
+  padding: var(--pr-sp-4);
+  border-radius: var(--pr-r-lg);
+  border: 1px solid var(--pr-line);
+  background: var(--pr-white);
+  font: inherit;
+  color: inherit;
+  text-align: start;
+}
+.interactive {
+  cursor: pointer;
+  transition: box-shadow var(--pr-dur) var(--pr-ease);
+}
+.interactive:hover {
+  box-shadow: var(--pr-shadow-sm);
+}
+.interactive:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: 2px;
+}
+
+.main {
+  min-width: 0;
+  flex: 1;
+}
+.title {
+  margin: 0;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-ink);
+  letter-spacing: var(--pr-ls-head);
+}
+.counterparty {
+  margin: var(--pr-sp-1) 0 var(--pr-sp-2);
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-2);
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--pr-sp-1);
+  flex: none;
+  min-width: 140px;
+}
+.amount {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-ink);
+  font-variant-numeric: tabular-nums;
+}
+.progressBar {
+  width: 100px;
+  height: 4px;
+  border-radius: var(--pr-r-pill);
+  background: var(--pr-sand);
+  overflow: hidden;
+}
+.progressFill {
+  height: 100%;
+  background: var(--pr-teal);
+  border-radius: var(--pr-r-pill);
+}
+.progress {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+}

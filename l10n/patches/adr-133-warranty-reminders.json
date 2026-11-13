@@ -1,0 +1,234 @@
+{
+  "ar": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "تنتهي مهلة تأكيد مطالبة الضمان",
+        "body": "تذكير: أبلغ المنفّذ عن إصلاح العيب موضوع مطالبة الضمان على العقد «{contract_title}»، ولم يصل ردّك بعد. أكّد الإصلاح أو اعترض بـ«لم يُصلَح» قبل انتهاء المهلة — وإلا ستُغلق المطالبة تلقائيًا."
+      }
+    }
+  },
+  "az": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "Zəmanət iddiasının təsdiq müddəti bitmək üzrədir",
+        "body": "Xatırlatma: icraçı «{contract_title}» müqaviləsi üzrə zəmanət iddiasındakı qüsurun aradan qaldırıldığını bildirdi, sizdən isə hələ cavab yoxdur. Müddət bitənədək aradan qaldırmanı təsdiq edin və ya «aradan qaldırılmayıb» deyə etiraz edin — əks halda iddia avtomatik bağlanacaq."
+      }
+    }
+  },
+  "bn": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "ওয়ারেন্টি দাবি নিশ্চিতকরণের সময়সীমা শেষ হতে চলেছে",
+        "body": "অনুস্মারক: ঠিকাদার চুক্তি «{contract_title}»-এর ওয়ারেন্টি দাবির ত্রুটি সমাধানের কথা জানিয়েছেন, আর আপনার উত্তর এখনও আসেনি। সময়সীমা শেষ হওয়ার আগে সমাধান নিশ্চিত করুন বা «সমাধান হয়নি» বলে আপত্তি জানান — অন্যথায় দাবিটি স্বয়ংক্রিয়ভাবে বন্ধ হবে।"
+      }
+    }
+  },
+  "de": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "Bestätigungsfrist zur Gewährleistungsreklamation läuft ab",
+        "body": "Erinnerung: Der Auftragnehmer meldet den Mangel aus der Gewährleistungsreklamation zum Vertrag „{contract_title}“ als behoben, Ihre Antwort steht noch aus. Bestätigen Sie die Behebung oder widersprechen Sie mit „nicht behoben“ vor Fristende — sonst wird die Reklamation automatisch geschlossen."
+      }
+    }
+  },
+  "en": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "Warranty claim confirmation window is closing",
+        "body": "Reminder: the contractor reports the defect under the warranty claim on the contract “{contract_title}” as fixed, and you have not responded yet. Confirm the fix or object before the window closes — otherwise the claim closes automatically."
+      }
+    }
+  },
+  "es": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "Vence el plazo de confirmación de la reclamación de garantía",
+        "body": "Recordatorio: el contratista ha informado de que el defecto de la reclamación de garantía del contrato «{contract_title}» está corregido y usted aún no ha respondido. Confirme la corrección u objete «no corregido» antes de que venza el plazo; de lo contrario, la reclamación se cerrará automáticamente."
+      }
+    }
+  },
+  "fa": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "مهلت تأیید ادعای گارانتی رو به پایان است",
+        "body": "یادآوری: پیمانکار اعلام کرده که نقص موضوع ادعای گارانتی قرارداد «{contract_title}» برطرف شده و هنوز پاسخی از شما ثبت نشده است. پیش از پایان مهلت، رفع نقص را تأیید کنید یا با «برطرف نشده» اعتراض کنید — در غیر این صورت ادعا به‌طور خودکار بسته می‌شود."
+      }
+    }
+  },
+  "fr": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "Le délai de confirmation de la réclamation de garantie expire",
+        "body": "Rappel : le prestataire a signalé la correction du défaut visé par la réclamation de garantie sur le contrat « {contract_title} », et vous n'avez pas encore répondu. Confirmez la correction ou contestez « non corrigé » avant la fin du délai — sinon la réclamation sera clôturée automatiquement."
+      }
+    }
+  },
+  "he": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "מועד אישור תביעת האחריות עומד להסתיים",
+        "body": "תזכורת: הקבלן דיווח כי הליקוי נשוא תביעת האחריות בחוזה «{contract_title}» תוקן, וטרם התקבלה תגובתך. אשר/י את התיקון או הגש/י התנגדות «לא תוקן» לפני תום המועד — אחרת התביעה תיסגר אוטומטית."
+      }
+    }
+  },
+  "hi": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "वारंटी दावे की पुष्टि की समय-सीमा समाप्त हो रही है",
+        "body": "अनुस्मारक: ठेकेदार ने अनुबंध «{contract_title}» के वारंटी दावे में दोष दूर होने की सूचना दी है, और आपका उत्तर अभी तक नहीं आया है। समय-सीमा समाप्त होने से पहले सुधार की पुष्टि करें या «दूर नहीं हुआ» कहकर आपत्ति दर्ज करें — अन्यथा दावा स्वतः बंद हो जाएगा।"
+      }
+    }
+  },
+  "hy": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "Երաշխիքային պահանջի հաստատման ժամկետն ավարտվում է",
+        "body": "Հիշեցում. կատարողը հայտնել է «{contract_title}» պայմանագրի երաշխիքային պահանջով թերության վերացման մասին, իսկ ձեր պատասխանը դեռ չկա։ Մինչև ժամկետի ավարտը հաստատեք վերացումը կամ առարկեք «չի վերացվել» — հակառակ դեպքում պահանջը կփակվի ավտոմատ։"
+      }
+    }
+  },
+  "id": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "Batas waktu konfirmasi klaim garansi akan berakhir",
+        "body": "Pengingat: kontraktor melaporkan bahwa cacat dalam klaim garansi pada kontrak “{contract_title}” telah diperbaiki, dan Anda belum menanggapi. Konfirmasi perbaikan atau ajukan keberatan “belum diperbaiki” sebelum batas waktu berakhir — jika tidak, klaim akan ditutup secara otomatis."
+      }
+    }
+  },
+  "it": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "Scade il termine di conferma del reclamo in garanzia",
+        "body": "Promemoria: l'appaltatore ha segnalato la risoluzione del difetto oggetto del reclamo in garanzia sul contratto «{contract_title}» e non hai ancora risposto. Conferma la risoluzione o contesta con «non risolto» prima della scadenza, altrimenti il reclamo verrà chiuso automaticamente."
+      }
+    }
+  },
+  "ja": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "保証クレームの確認期限が近づいています",
+        "body": "リマインダー：受注者は契約「{contract_title}」の保証クレームに関する不具合を是正したと報告しましたが、まだご回答がありません。期限までに是正を確認するか、「是正されていない」として異議を申し立ててください。そうしない場合、クレームは自動的に終了します。"
+      }
+    }
+  },
+  "ka": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "გარანტიული პრეტენზიის დადასტურების ვადა იწურება",
+        "body": "შეხსენება: შემსრულებელმა შეატყობინა «{contract_title}» ხელშეკრულების გარანტიული პრეტენზიით ხარვეზის აღმოფხვრის შესახებ, თქვენი პასუხი კი ჯერ არ არის. ვადის ამოწურვამდე დაადასტურეთ აღმოფხვრა ან შეედავეთ «არ არის აღმოფხვრილი» — წინააღმდეგ შემთხვევაში პრეტენზია ავტომატურად დაიხურება."
+      }
+    }
+  },
+  "kk": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "Кепілдік шағымын растау мерзімі аяқталуда",
+        "body": "Еске салу: орындаушы «{contract_title}» шарты бойынша кепілдік шағымындағы кемшіліктің жойылғанын хабарлады, бірақ сізден жауап әлі жоқ. Мерзім аяқталғанға дейін жойылғанын растаңыз немесе «жойылмады» деп қарсылық білдіріңіз — әйтпесе шағым автоматты түрде жабылады."
+      }
+    }
+  },
+  "ko": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "보증 클레임 확인 기한이 임박했습니다",
+        "body": "알림: 수급인이 계약 「{contract_title}」의 보증 클레임에 대한 하자를 시정했다고 보고했으나 아직 회신이 없습니다. 기한 내에 시정을 확인하거나 「시정되지 않음」으로 이의를 제기하세요. 그렇지 않으면 클레임이 자동으로 종료됩니다."
+      }
+    }
+  },
+  "pl": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "Upływa termin potwierdzenia reklamacji gwarancyjnej",
+        "body": "Przypomnienie: wykonawca zgłosił usunięcie wady z reklamacji gwarancyjnej do umowy „{contract_title}”, a Twojej odpowiedzi wciąż brak. Potwierdź usunięcie lub zgłoś sprzeciw „nie usunięto” przed upływem terminu — w przeciwnym razie reklamacja zostanie zamknięta automatycznie."
+      }
+    }
+  },
+  "pt-BR": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "O prazo de confirmação da reclamação de garantia está acabando",
+        "body": "Lembrete: o contratado informou que o defeito da reclamação de garantia do contrato “{contract_title}” foi corrigido, e você ainda não respondeu. Confirme a correção ou conteste como “não corrigido” antes do fim do prazo — caso contrário, a reclamação será encerrada automaticamente."
+      }
+    }
+  },
+  "ro": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "Expiră termenul de confirmare a reclamației de garanție",
+        "body": "Memento: executantul a raportat remedierea defectului din reclamația de garanție la contractul „{contract_title}”, iar răspunsul dvs. încă lipsește. Confirmați remedierea sau contestați „neremediat” înainte de expirarea termenului — altfel reclamația se va închide automat."
+      }
+    }
+  },
+  "ru": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "Истекает срок подтверждения по гарантийной претензии",
+        "body": "Напоминание: исполнитель сообщил об устранении недостатка по гарантийной претензии к договору «{contract_title}», а вашего ответа ещё нет. Подтвердите устранение или возразите «не устранено» до конца срока — иначе претензия закроется автоматически."
+      }
+    }
+  },
+  "sw": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "Muda wa kuthibitisha dai la dhamana unakaribia kuisha",
+        "body": "Kikumbusho: mkandarasi ameripoti kuwa kasoro katika dai la dhamana kwa mkataba “{contract_title}” imerekebishwa, na bado hujajibu. Thibitisha urekebishaji au pinga kwa “haijarekebishwa” kabla muda haujaisha — vinginevyo dai litafungwa kiotomatiki."
+      }
+    }
+  },
+  "th": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "ใกล้หมดเวลายืนยันข้อเรียกร้องการรับประกัน",
+        "body": "แจ้งเตือน: ผู้รับจ้างแจ้งว่าได้แก้ไขข้อบกพร่องตามข้อเรียกร้องการรับประกันในสัญญา “{contract_title}” แล้ว และคุณยังไม่ได้ตอบกลับ โปรดยืนยันการแก้ไขหรือคัดค้านว่า “ยังไม่ได้แก้ไข” ก่อนหมดเวลา — มิฉะนั้นข้อเรียกร้องจะถูกปิดโดยอัตโนมัติ"
+      }
+    }
+  },
+  "tr": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "Garanti talebi onay süresi doluyor",
+        "body": "Hatırlatma: yüklenici, «{contract_title}» sözleşmesine ilişkin garanti talebindeki kusurun giderildiğini bildirdi, ancak henüz yanıt vermediniz. Süre dolmadan giderildiğini onaylayın veya «giderilmedi» diye itiraz edin — aksi halde talep otomatik olarak kapatılacaktır."
+      }
+    }
+  },
+  "uk": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "Спливає строк підтвердження за гарантійною претензією",
+        "body": "Нагадування: виконавець повідомив про усунення недоліку за гарантійною претензією до договору «{contract_title}», а вашої відповіді ще немає. Підтвердьте усунення або заперечте «не усунено» до кінця строку — інакше претензію буде закрито автоматично."
+      }
+    }
+  },
+  "ur": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "وارنٹی دعوے کی تصدیق کی مہلت ختم ہونے والی ہے",
+        "body": "یاد دہانی: ٹھیکیدار نے معاہدہ «{contract_title}» کے وارنٹی دعوے میں خرابی دور کرنے کی اطلاع دی ہے، اور آپ کا جواب ابھی تک موصول نہیں ہوا۔ مہلت ختم ہونے سے پہلے خرابی دور ہونے کی تصدیق کریں یا «دور نہیں ہوئی» کہہ کر اعتراض کریں — ورنہ دعویٰ خود بخود بند ہو جائے گا۔"
+      }
+    }
+  },
+  "uz": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "Kafolat da'vosini tasdiqlash muddati tugayapti",
+        "body": "Eslatma: ijrochi «{contract_title}» shartnomasi bo'yicha kafolat da'vosidagi nuqson bartaraf etilganini xabar qildi, sizdan esa hali javob yo'q. Muddat tugagunga qadar bartaraf etilganini tasdiqlang yoki «bartaraf etilmagan» deb e'tiroz bildiring — aks holda da'vo avtomatik yopiladi."
+      }
+    }
+  },
+  "vi": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "Sắp hết thời hạn xác nhận khiếu nại bảo hành",
+        "body": "Nhắc nhở: nhà thầu đã báo cáo khắc phục xong lỗi trong khiếu nại bảo hành theo hợp đồng “{contract_title}”, và bạn vẫn chưa phản hồi. Hãy xác nhận việc khắc phục hoặc phản đối “chưa khắc phục” trước khi hết hạn — nếu không, khiếu nại sẽ tự động được đóng."
+      }
+    }
+  },
+  "zh-Hans": {
+    "notifications": {
+      "warranty_claim_acceptance_reminder": {
+        "subject": "保修索赔确认期限即将届满",
+        "body": "提醒：承包方已报告合同“{contract_title}”保修索赔中的缺陷已修复，而您尚未回复。请在期限届满前确认修复或提出“未修复”的异议，否则索赔将自动关闭。"
+      }
+    }
+  }
+}

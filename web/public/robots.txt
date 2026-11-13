@@ -1,0 +1,40 @@
+# Публичный контур Porukam (ADR-195). Индексируется ровно то, что человек может
+# прочитать без входа: лендинг, страницы о проекте на 29 языках и юр-документы.
+#
+# Почему здесь есть явные Disallow. SPA отдаёт свою оболочку (`index.html`) на
+# ЛЮБОЙ путь, которого нет на диске (`try_files`, конфиг nginx),
+# и с кодом 200. Для краулера это значит, что `/contracts/123` — существующая
+# страница с пустым содержимым: без запрета в индекс попадут сотни одинаковых
+# пустых оболочек, и ими же разбавится выдача по бренду.
+User-agent: *
+Allow: /
+
+# Рабочие экраны приложения — за входом, краулеру достаётся пустая оболочка.
+Disallow: /welcome
+Disallow: /login
+Disallow: /onboarding
+Disallow: /contracts
+Disallow: /chat
+Disallow: /me
+Disallow: /notifications
+Disallow: /search
+Disallow: /groups
+Disallow: /stages
+Disallow: /payments
+Disallow: /disputes
+Disallow: /settings
+
+# Публичные карточки репутации (`/@хендл`). Карточка открыта по ссылке
+# намеренно, но её видимость настраивает сам человек, и попадание имён в
+# поисковую выдачу — отдельное решение, которого ещё нет.
+Disallow: /@
+
+# Бэкенд и служебное: API, ссылка на архив сделки, админка, мониторинг.
+Disallow: /v1/
+Disallow: /a/
+Disallow: /admin/
+Disallow: /grafana/
+Disallow: /prometheus/
+Disallow: /alertmanager/
+
+Sitemap: https://porukam.app/sitemap.xml

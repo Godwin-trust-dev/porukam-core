@@ -1,0 +1,213 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--pr-sp-2);
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-body);
+  line-height: 1;
+  border: none;
+  border-radius: var(--pr-r-md);
+  padding: 0 var(--pr-sp-6);
+  min-height: var(--pr-touch-min);
+  min-width: var(--pr-touch-min);
+  cursor: pointer;
+  transition: filter var(--pr-dur) var(--pr-ease), transform var(--pr-dur) var(--pr-ease),
+    box-shadow var(--pr-dur) var(--pr-ease);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn:focus-visible {
+  outline: 3px solid var(--pr-amber-bright);
+  outline-offset: 2px;
+}
+.btn:not(:disabled):hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+.btn:not(:disabled):active {
+  filter: brightness(0.94);
+  transform: translateY(1px);
+}
+.btn:disabled,
+.btn[aria-disabled='true'] {
+  cursor: not-allowed;
+  background: var(--pr-sand);
+  color: var(--pr-text-mute);
+  box-shadow: none;
+  filter: none;
+  transform: none;
+}
+
+/* Размеры */
+.sm {
+  font-size: var(--pr-fs-sm);
+  padding: 0 var(--pr-sp-4);
+  min-height: 36px;
+}
+/* На телефоне мелкая кнопка — всё равно основное действие карточки
+   («Открыть приёмку», «Подписать» на рабочем столе): 36px под палец мало
+   (отсмотр 2026-08-25, проверка тач-целей). */
+@media (max-width: 560px) {
+  .sm {
+    min-height: 40px;
+  }
+}
+.lg {
+  font-size: var(--pr-fs-h3);
+  padding: 0 var(--pr-sp-8);
+  min-height: 52px;
+}
+/* Кнопка во всю ширину колонки. Здесь `nowrap` и широкие поля из `.btn`
+   вредны: ширину задаёт колонка, а не подпись, и длинная подпись (в первую
+   очередь «Продолжить через Google» и её переводы — по-немецки и по-французски
+   она ещё длиннее) распирала карточку изнутри, уводя весь экран входа в
+   горизонтальную прокрутку на 360px. Поля уже, перенос разрешён: подпись
+   сначала пытается уместиться в строку, а если язык длинный — переносится
+   вторая строка, и кнопка остаётся в колонке. Высота от этого не прыгает —
+   две строки в `--pr-lh-tight` (37px) всё ещё ниже тач-минимума в 44px. */
+.block {
+  width: 100%;
+  min-width: 0;
+  padding-inline: var(--pr-sp-4);
+  white-space: normal;
+  line-height: var(--pr-lh-tight);
+}
+
+/* Варианты — только токены */
+.primary {
+  background: var(--pr-grad-amber);
+  color: var(--pr-ink);
+  box-shadow: var(--pr-shadow-amber);
+}
+.secondary {
+  background: var(--pr-grad-dark);
+  color: var(--pr-text-inv);
+  box-shadow: var(--pr-shadow-dark);
+}
+.teal {
+  background: var(--pr-grad-teal);
+  color: var(--pr-text-inv);
+  box-shadow: var(--pr-shadow-teal);
+}
+/* Мягкая янтарная заливка с тёмным текстом (`--pr-spark` + `--pr-amber-ink`,
+   контраст 4.6:1) — вторичное действие переговоров на ТЁМНОМ паспорт-рейле
+   («Предложить правку», замечание владельца 07.09). Рядом с насыщенной
+   `primary` («Перейти к подписанию») читается как другая кнопка, а не как
+   вторая главная: у primary — градиент и тень янтаря, здесь — светлая плашка.
+   На светлой поверхности не использовать: теряется на кремовом фоне. */
+.spark {
+  background: var(--pr-spark);
+  color: var(--pr-amber-ink);
+  box-shadow: var(--pr-shadow-sm);
+}
+/* Финал доски A/B: вторичная кнопка — белая с рамкой («Как гость», «Экспорт»,
+   «Проверить»), не кремовая плитка. */
+.ghost {
+  background: var(--pr-white);
+  color: var(--pr-ink);
+  border: 1px solid var(--pr-line);
+}
+/* Действие-ссылка в шапке («Прочитать все», «Все сделки»): текст без
+   подложки и тени, бирюзовый — как на финал доске A. */
+.link {
+  background: none;
+  color: var(--pr-teal-deep);
+  padding: 0 var(--pr-sp-2);
+  box-shadow: none;
+  font-weight: var(--pr-fw-semibold);
+}
+.link:not(:disabled):hover {
+  filter: none;
+  transform: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.link:disabled,
+.link[aria-disabled='true'] {
+  background: none;
+}
+/* Тихое опасное действие — `link` + `data-quiet` (решение владельца 07.09:
+   «Отозвать»/«Отклонить» не должны выглядеть основным действием и попадаться
+   под палец, но кто ищет — должен находить). Это МОДИФИКАТОР, а не новый
+   вариант: заливки и рамки нет, кегль обычный, цвет приглушённый; красным
+   становится только на наведении, когда человек уже целится. На тёмном
+   паспорт-рейле (`data-surface="ink"`, ContractPassport) бирюза `link` и
+   серый `--pr-text-2` не читаются — там текст светлеет. */
+.link[data-quiet] {
+  color: var(--pr-text-2);
+  font-weight: var(--pr-fw-regular);
+}
+.link[data-quiet]:not(:disabled):hover {
+  color: var(--pr-red);
+}
+[data-surface='ink'] .link[data-quiet] {
+  color: var(--pr-on-ink-2);
+}
+[data-surface='ink'] .link[data-quiet]:not(:disabled):hover {
+  color: var(--pr-white);
+}
+.link[data-quiet] .spinner {
+  color: var(--pr-text-2);
+}
+[data-surface='ink'] .link[data-quiet] .spinner {
+  color: var(--pr-on-ink-2);
+}
+
+/* Outline-семейство (финал доска B): белая с рамкой `--pr-line` — вторичные
+   действия детальных экранов («Чат», «Архив», «Вернуть», «Решение»);
+   `outline-danger` — то же, но красным текстом («Передать в суд»):
+   разрушительное — словом-цветом, не заливкой; выход из сделки с 07.09 ещё
+   тише — `link` + `data-quiet` выше;
+   `outline-ink` — outline на тёмном паспорт-рейле/церемонии. */
+.outline {
+  background: var(--pr-white);
+  color: var(--pr-ink);
+  border: 1px solid var(--pr-line);
+}
+.outline-danger {
+  background: var(--pr-white);
+  color: var(--pr-red);
+  border: 1px solid var(--pr-line);
+}
+.outline-ink {
+  background: transparent;
+  color: var(--pr-white);
+  border: 1px solid var(--pr-on-ink-2);
+}
+.destructive {
+  background: var(--pr-red);
+  color: var(--pr-text-inv);
+}
+
+.loading {
+  position: relative;
+  color: transparent !important;
+}
+.spinner {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 2.5px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: pr-spin 0.7s linear infinite;
+  color: var(--pr-ink);
+}
+.secondary .spinner,
+.teal .spinner,
+.outline-ink .spinner,
+.destructive .spinner {
+  color: var(--pr-text-inv);
+}
+@keyframes pr-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation-duration: 1.4s;
+  }
+}

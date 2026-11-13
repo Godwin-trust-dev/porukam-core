@@ -1,0 +1,82 @@
+.wrap {
+  display: inline-flex;
+  align-items: center;
+  /* Хендл с кнопкой уезжает на вторую строку вместо «@marat_ot…» —
+     390px паспорта договора на одну строку всё это не вмещает. */
+  flex-wrap: wrap;
+  gap: var(--pr-sp-1);
+  min-width: 0;
+  max-width: 100%;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  min-width: 0;
+  color: inherit;
+  text-decoration: none;
+  border-radius: var(--pr-r-sm);
+}
+
+/* Подчёркивание — не только на hover: на тач-экране hover'а нет, а имя
+   обязано читаться как ссылка. Цвет наследуется от контекста (список — тил,
+   тёмный паспорт — белый). */
+a.link .name {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+/* Строка списка (финал доска A): имя — обычный текст второй строки; ссылкой
+   остаётся (тап по имени ведёт в карточку), но не подчёркивается. */
+a.link.plain .name {
+  text-decoration: none;
+}
+
+a.link:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: 2px;
+}
+
+.name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.handle {
+  min-width: 0;
+  /* Приглушение — от цвета контекста, а не фиксированный светлый серый:
+     компонент живёт и на тёмном паспорте договора. */
+  color: inherit;
+  opacity: 0.72;
+  font-size: var(--pr-fs-sm);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.copy {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  opacity: 0.72;
+  cursor: pointer;
+}
+
+.copy:hover {
+  opacity: 1;
+}
+
+.copy:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: 2px;
+  border-radius: var(--pr-r-sm);
+}

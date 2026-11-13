@@ -1,0 +1,14 @@
+{
+  "hook": "Porukam transforme un accord verbal en contrat juridiquement valable et mène l’affaire étape par étape, jusqu’au règlement.",
+  "problem": "S’entendre à l’oral est facile. Prouver ensuite ce qui avait été convenu, quand la prestation a été remise et ce qu’il faut payer est difficile. Porukam tient cette trace pour les deux parties.",
+  "contractTitle": "Un contrat en quelques minutes",
+  "contractText": "Choisissez le type d’affaire : prestation, vente, location ou prêt. Répondez à des questions en langage courant et obtenez un document prêt à signer. Aucune formule juridique à rédiger.",
+  "stagesTitle": "Étapes et réception par liste de contrôle",
+  "stagesText": "Découpez l’affaire en étapes, chacune avec la liste de ce qui doit être fait. Le prestataire coche les points et joint des photos ; le client réceptionne l’étape ou la renvoie avec des remarques. Les deux parties voient à tout moment où en est l’affaire et à qui de jouer.",
+  "paymentTitle": "Paiement lié au résultat",
+  "paymentText": "Le paiement suit les étapes : réceptionné, donc payé. Nous ne conservons pas votre argent et ne prenons aucune commission à la signature. Les règlements restent entre vous ; la plateforme enregistre ce qui a été réceptionné et payé, et quand.",
+  "evidenceTitle": "Des preuves qui restent",
+  "evidenceText": "Photos, fichiers et messages sont rattachés à l’étape et scellés par un horodatage de confiance. Un contrat signé ne change plus : uniquement par un avenant que les deux parties voient et confirment. En cas de litige, vous avez de quoi le clore.",
+  "reputationTitle": "Une réputation fondée sur des faits",
+  "reputationText": "La fiche de réputation se compose des affaires menées à leur terme, et non d’avis que n’importe qui peut écrire sur n’importe qui."
+}

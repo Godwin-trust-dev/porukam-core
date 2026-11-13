@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "Lugha ya kiolesura",
+  "globeTriggerAria": "Lugha ya kiolesura",
+  "rowLabel": "Lugha ya kiolesura",
+  "listTitle": "Lugha ya kiolesura",
+  "searchPlaceholder": "Tafuta lugha…",
+  "searchAriaLabel": "Tafuta lugha",
+  "searchClear": "Ondoa utafutaji",
+  "currentSectionTitle": "Ya sasa",
+  "allSectionTitle": "Lugha zote",
+  "noResults": "Hakuna lugha iliyopatikana",
+  "betaBadge": "tafsiri ya kiotomatiki",
+  "betaTooltip": "Imetafsiriwa kwa mashine — inaweza kuwa si sahihi kabisa",
+  "currentAria": "Lugha ya sasa",
+  "disabledToast": "{{lang}} haipatikani kwa sasa · tunaonyesha Kiingereza",
+  "closeLabel": "Funga",
+  "onboardingHint": "Imetambuliwa yenyewe — unaweza kubadilisha wakati wowote",
+  "settingsRowLabel": "Lugha na eneo",
+  "settingsLanguageExplain": "Hii ni lugha ya programu. Lugha rasmi ya mkataba huchaguliwa tofauti — mwenzako huona tafsiri, lakini kinachosainiwa ni maandishi rasmi.",
+  "loadErrorRetry": "Jaribu tena",
+  "loadError": "Orodha ya lugha haikupakia"
+}

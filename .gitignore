@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.pyc
+.venv
+venv
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Env and secrets
+.env
+.env.*
+!.env.example
+*.csv
+*.jks
+*.keystore
+*.p12
+*.pem
+!backend/services/audit_vault/tests/fixtures/**/*.pem
+*:Zone.Identifier
+*.pgpass
+
+# Node
+node_modules
+dist/
+dist-ssr/
+storybook-static/
+.storybook-out/
+coverage/
+playwright-report/
+playwright-report-pwa/
+test-results/
+.lighthouseci/
+*.local
+*.tsbuildinfo
+
+# IDE
+.idea/
+.vscode/
+.claude/
+
+# Local data and logs
+*.log
+postgres-data/
+minio-data/
+celerybeat-schedule*
+backend/error_registry.json
+scripts/smoke/shots/
+web/.probe-*.mjs
+
+# OS
+.DS_Store

@@ -1,0 +1,104 @@
+.wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  /* Плотный ритм между секциями экрана (ADR-152/DEV-20 §1) — 12, не 20. */
+  gap: var(--pr-d-gap-section);
+}
+
+/* Секция результата: подпись раздела + одна поверхность строк, без карточки. */
+.section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--pr-sp-1);
+  min-width: 0;
+}
+
+.spheres {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  color: var(--pr-text-2);
+  font-size: var(--pr-d-fs-2);
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+}
+
+/* Панель фильтров каталога (план 11.09 §6; раскладка выровнена — ADR-189,
+   цвета и перенос — ADR-192) — гео-кнопка, сферы, порог опыта, сброс: одна
+   ровная строка на десктопе (`align-items: center` — контролы без подписи
+   над ними, все одной высоты из токенов Field/Button, выравниваются по
+   центру строки, а не по верху).
+
+   На телефоне они больше НЕ выстраиваются в столбик во всю ширину: три
+   полосы подряд читались как три главных действия экрана (замечание
+   владельца 18.09 о дизайне поиска). Вместо `flex-direction: column` —
+   обычный перенос по две штуки в строку: контролы остаются контролами, а
+   вертикаль экрана не съедается.
+
+   Сферы из этой строки вынесены НИЖЕ отдельным блоком (ADR-192): открытый
+   пикер сфер — это половина экрана, и центрированная по вертикали соседняя
+   гео-кнопка оказывалась посреди него. */
+.catalogFilters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--pr-sp-2);
+}
+.catalogFilters > * {
+  min-width: 0;
+}
+
+@media (max-width: 600px) {
+  .catalogFilters > * {
+    flex: 1 1 calc(50% - var(--pr-sp-2));
+  }
+}
+
+/* Гео-кнопка в этой строке: длинное место («Алматы, Казахстан») переносится
+   второй строкой внутри кнопки, а не распирает её за край экрана — тот же
+   приём, что у `Button.block`, только ширину здесь задаёт не колонка, а
+   доля строки фильтров. */
+.filterButton {
+  max-width: 100%;
+  padding-inline: var(--pr-sp-4);
+  white-space: normal;
+  line-height: var(--pr-lh-tight);
+}
+
+.showMore {
+  padding-top: var(--pr-sp-1);
+}
+.showMore > button {
+  min-height: var(--pr-touch-min);
+}
+
+/* «В выбранном месте» пусто, а «Работают удалённо» — не обязательно (ADR-194,
+   владелец 18.09: пустота выбранного места должна быть ВИДНА, а не молчаливо
+   заменяться удалёнными исполнителями). Короткая строка + кнопка «искать
+   шире» (решение владельца после ADR-194), не `EmptyState` — рядом всё ещё
+   может быть непустой блок «Работают удалённо». */
+.catalogLocalEmpty {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  padding: var(--pr-sp-3) 0;
+}
+.catalogLocalEmptyText {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+
+/* Заголовок блока внутри карточки объединения (`GroupDetailPage`). */
+.sectionTitle {
+  font-family: var(--pr-font-head);
+  font-size: var(--pr-fs-h3);
+  margin: 0 0 var(--pr-sp-2);
+  color: var(--pr-ink);
+}

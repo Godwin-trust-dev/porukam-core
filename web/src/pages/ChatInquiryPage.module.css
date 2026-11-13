@@ -1,0 +1,108 @@
+.wrap {
+  display: grid;
+  gap: var(--pr-sp-5);
+}
+
+.title {
+  font-size: var(--pr-d-fs-screen);
+  font-weight: var(--pr-fw-bold);
+  color: var(--pr-ink);
+  margin: 0;
+}
+
+.sub {
+  color: var(--pr-text-2);
+  margin: 0;
+}
+
+.selectedRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.selectedName {
+  font-weight: var(--pr-fw-semibold);
+  color: var(--pr-ink);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.selectedHandle {
+  color: var(--pr-text-2);
+  font-weight: var(--pr-fw-regular);
+}
+
+.results {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--pr-sp-1);
+}
+
+.resultRow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-1) var(--pr-sp-3);
+  min-width: 0;
+  overflow-wrap: anywhere;
+  width: 100%;
+  min-height: var(--pr-touch-min);
+  padding: var(--pr-sp-2) var(--pr-sp-3);
+  border: none;
+  border-radius: var(--pr-r-md);
+  background: transparent;
+  color: var(--pr-ink);
+  cursor: pointer;
+  text-align: start;
+}
+
+.resultRow:hover {
+  background: var(--pr-cream);
+}
+
+.contacts {
+  display: grid;
+  gap: var(--pr-sp-2);
+}
+
+.contactsLabel {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-2);
+}
+
+.chip {
+  min-height: var(--pr-touch-min);
+  padding: var(--pr-sp-2) var(--pr-sp-3);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-pill);
+  background: transparent;
+  color: var(--pr-ink);
+  cursor: pointer;
+}
+
+.chip:hover {
+  background: var(--pr-cream);
+}
+
+.error {
+  color: var(--pr-red);
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--pr-sp-3);
+}

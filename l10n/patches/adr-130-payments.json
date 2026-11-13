@@ -1,0 +1,582 @@
+{
+  "ar": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "سُحبت المطالبة الخاصة بمرحلة «{milestone_title}».",
+        "subject": "سُحبت المطالبة"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "سحب الطرف الآخر المطالبة الخاصة بمرحلة «{milestone_title}».",
+        "subject": "سحب الطرف الآخر المطالبة"
+      },
+      "payment.created": {
+        "body": "صدرت مطالبة بمبلغ {amount} {currency} عن مرحلة «{milestone_title}».",
+        "subject": "صدرت مطالبة بالدفع"
+      },
+      "payment.overdue": {
+        "body": "انتهت مهلة دفع مرحلة «{milestone_title}».",
+        "subject": "تأخّر الدفع"
+      }
+    }
+  },
+  "az": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "“{milestone_title}” mərhələsi üzrə hesab geri götürüldü.",
+        "subject": "Hesab geri götürüldü"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "Qarşı tərəf “{milestone_title}” mərhələsi üzrə hesabı geri götürdü.",
+        "subject": "Qarşı tərəf hesabı geri götürdü"
+      },
+      "payment.created": {
+        "body": "“{milestone_title}” mərhələsi üçün {amount} {currency} məbləğində hesab verildi.",
+        "subject": "Ödəniş üçün hesab verildi"
+      },
+      "payment.overdue": {
+        "body": "“{milestone_title}” mərhələsinin ödəniş müddəti bitdi.",
+        "subject": "Ödəniş gecikdi"
+      }
+    }
+  },
+  "bn": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "“{milestone_title}” ধাপের বিল প্রত্যাহার করা হয়েছে।",
+        "subject": "বিল প্রত্যাহার করা হয়েছে"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "অন্য পক্ষ “{milestone_title}” ধাপের বিল প্রত্যাহার করেছে।",
+        "subject": "অন্য পক্ষ বিল প্রত্যাহার করেছে"
+      },
+      "payment.created": {
+        "body": "“{milestone_title}” ধাপের জন্য {amount} {currency} এর বিল জারি করা হয়েছে।",
+        "subject": "পেমেন্ট বাকি আছে"
+      },
+      "payment.overdue": {
+        "body": "“{milestone_title}” ধাপের পেমেন্টের সময়সীমা শেষ হয়েছে।",
+        "subject": "পেমেন্টের সময় পেরিয়ে গেছে"
+      }
+    }
+  },
+  "de": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "Die Rechnung für die Etappe „{milestone_title}“ wurde zurückgezogen.",
+        "subject": "Rechnung zurückgezogen"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "Die Gegenseite hat die Rechnung für die Etappe „{milestone_title}“ zurückgezogen.",
+        "subject": "Die Gegenseite hat die Rechnung zurückgezogen"
+      },
+      "payment.created": {
+        "body": "Für die Etappe „{milestone_title}“ wurde eine Rechnung über {amount} {currency} ausgestellt.",
+        "subject": "Zahlung fällig"
+      },
+      "payment.overdue": {
+        "body": "Die Zahlungsfrist für die Etappe „{milestone_title}“ ist abgelaufen.",
+        "subject": "Zahlung überfällig"
+      }
+    }
+  },
+  "en": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "The invoice for stage “{milestone_title}” has been withdrawn.",
+        "subject": "Invoice withdrawn"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "The other party withdrew the invoice for stage “{milestone_title}”.",
+        "subject": "The other party withdrew the invoice"
+      },
+      "payment.created": {
+        "body": "An invoice for {amount} {currency} has been issued for stage “{milestone_title}”.",
+        "subject": "Payment due"
+      },
+      "payment.overdue": {
+        "body": "The payment deadline for stage “{milestone_title}” has passed.",
+        "subject": "Payment overdue"
+      }
+    }
+  },
+  "es": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "La factura de la etapa «{milestone_title}» ha sido retirada.",
+        "subject": "Factura retirada"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "La otra parte retiró la factura de la etapa «{milestone_title}».",
+        "subject": "La otra parte retiró la factura"
+      },
+      "payment.created": {
+        "body": "Se ha emitido una factura de {amount} {currency} por la etapa «{milestone_title}».",
+        "subject": "Pago pendiente"
+      },
+      "payment.overdue": {
+        "body": "El plazo de pago de la etapa «{milestone_title}» ha vencido.",
+        "subject": "Pago vencido"
+      }
+    }
+  },
+  "fa": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "صورت‌حساب مرحلهٔ «{milestone_title}» پس گرفته شد.",
+        "subject": "صورت‌حساب پس گرفته شد"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "طرف مقابل صورت‌حساب مرحلهٔ «{milestone_title}» را پس گرفت.",
+        "subject": "طرف مقابل صورت‌حساب را پس گرفت"
+      },
+      "payment.created": {
+        "body": "برای مرحلهٔ «{milestone_title}» صورت‌حسابی به مبلغ {amount} {currency} صادر شد.",
+        "subject": "صورت‌حساب صادر شد"
+      },
+      "payment.overdue": {
+        "body": "مهلت پرداخت مرحلهٔ «{milestone_title}» به پایان رسید.",
+        "subject": "پرداخت با تأخیر"
+      }
+    }
+  },
+  "fr": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "La facture de l'étape « {milestone_title} » a été annulée.",
+        "subject": "Facture annulée"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "L'autre partie a annulé la facture de l'étape « {milestone_title} ».",
+        "subject": "L'autre partie a annulé la facture"
+      },
+      "payment.created": {
+        "body": "Une facture de {amount} {currency} a été émise pour l'étape « {milestone_title} ».",
+        "subject": "Paiement à effectuer"
+      },
+      "payment.overdue": {
+        "body": "Le délai de paiement de l'étape « {milestone_title} » est dépassé.",
+        "subject": "Paiement en retard"
+      }
+    }
+  },
+  "he": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "דרישת התשלום עבור השלב „{milestone_title}” בוטלה.",
+        "subject": "דרישת התשלום בוטלה"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "הצד השני ביטל את דרישת התשלום עבור השלב „{milestone_title}”.",
+        "subject": "הצד השני ביטל את דרישת התשלום"
+      },
+      "payment.created": {
+        "body": "עבור השלב „{milestone_title}” הונפקה דרישת תשלום על סך {amount} {currency}.",
+        "subject": "הונפקה דרישת תשלום"
+      },
+      "payment.overdue": {
+        "body": "מועד התשלום עבור השלב „{milestone_title}” חלף.",
+        "subject": "התשלום באיחור"
+      }
+    }
+  },
+  "hi": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "“{milestone_title}” चरण का बिल वापस ले लिया गया है।",
+        "subject": "बिल वापस लिया गया"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "दूसरे पक्ष ने “{milestone_title}” चरण का बिल वापस ले लिया है।",
+        "subject": "दूसरे पक्ष ने बिल वापस लिया"
+      },
+      "payment.created": {
+        "body": "“{milestone_title}” चरण के लिए {amount} {currency} का बिल जारी किया गया है।",
+        "subject": "भुगतान देय है"
+      },
+      "payment.overdue": {
+        "body": "“{milestone_title}” चरण के भुगतान की अवधि समाप्त हो गई है।",
+        "subject": "भुगतान की अवधि बीत गई"
+      }
+    }
+  },
+  "hy": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "«{milestone_title}» փուլի հաշիվը հետ է կանչվել։",
+        "subject": "Հաշիվը հետ է կանչվել"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "Մյուս կողմը հետ է կանչել «{milestone_title}» փուլի հաշիվը։",
+        "subject": "Մյուս կողմը հետ է կանչել հաշիվը"
+      },
+      "payment.created": {
+        "body": "«{milestone_title}» փուլի համար դուրս է գրվել {amount} {currency} հաշիվ։",
+        "subject": "Վճարման հաշիվ է դուրս գրվել"
+      },
+      "payment.overdue": {
+        "body": "«{milestone_title}» փուլի վճարման ժամկետը լրացել է։",
+        "subject": "Վճարումը ժամկետանց է"
+      }
+    }
+  },
+  "id": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "Tagihan untuk tahap “{milestone_title}” telah ditarik.",
+        "subject": "Tagihan ditarik"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "Pihak lain menarik tagihan untuk tahap “{milestone_title}”.",
+        "subject": "Pihak lain menarik tagihan"
+      },
+      "payment.created": {
+        "body": "Tagihan sebesar {amount} {currency} telah diterbitkan untuk tahap “{milestone_title}”.",
+        "subject": "Tagihan diterbitkan"
+      },
+      "payment.overdue": {
+        "body": "Batas waktu pembayaran tahap “{milestone_title}” telah lewat.",
+        "subject": "Pembayaran terlambat"
+      }
+    }
+  },
+  "it": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "La fattura della fase «{milestone_title}» è stata ritirata.",
+        "subject": "Fattura ritirata"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "L'altra parte ha ritirato la fattura della fase «{milestone_title}».",
+        "subject": "L'altra parte ha ritirato la fattura"
+      },
+      "payment.created": {
+        "body": "È stata emessa una fattura di {amount} {currency} per la fase «{milestone_title}».",
+        "subject": "Pagamento da effettuare"
+      },
+      "payment.overdue": {
+        "body": "Il termine di pagamento della fase «{milestone_title}» è scaduto.",
+        "subject": "Pagamento scaduto"
+      }
+    }
+  },
+  "ja": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "工程「{milestone_title}」の請求が取り下げられました。",
+        "subject": "請求が取り下げられました"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "相手方が工程「{milestone_title}」の請求を取り下げました。",
+        "subject": "相手方が請求を取り下げました"
+      },
+      "payment.created": {
+        "body": "工程「{milestone_title}」について {amount} {currency} の請求が発行されました。",
+        "subject": "支払いのご案内"
+      },
+      "payment.overdue": {
+        "body": "工程「{milestone_title}」の支払い期限が過ぎました。",
+        "subject": "支払い期限が過ぎました"
+      }
+    }
+  },
+  "ka": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "ეტაპის „{milestone_title}“ ანგარიში გაუქმებულია.",
+        "subject": "ანგარიში გაუქმებულია"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "მეორე მხარემ გააუქმა ეტაპის „{milestone_title}“ ანგარიში.",
+        "subject": "მეორე მხარემ გააუქმა ანგარიში"
+      },
+      "payment.created": {
+        "body": "ეტაპისთვის „{milestone_title}“ გამოწერილია ანგარიში {amount} {currency}.",
+        "subject": "გამოწერილია ანგარიში გადასახდელად"
+      },
+      "payment.overdue": {
+        "body": "ეტაპის „{milestone_title}“ გადახდის ვადა ამოიწურა.",
+        "subject": "გადახდა ვადაგადაცილებულია"
+      }
+    }
+  },
+  "kk": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "«{milestone_title}» кезеңі бойынша шот кері қайтарылды.",
+        "subject": "Шот кері қайтарылды"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "Екінші тарап «{milestone_title}» кезеңі бойынша шотты кері қайтарды.",
+        "subject": "Екінші тарап шотты кері қайтарды"
+      },
+      "payment.created": {
+        "body": "«{milestone_title}» кезеңі бойынша {amount} {currency} шот қойылды.",
+        "subject": "Төлемге шот қойылды"
+      },
+      "payment.overdue": {
+        "body": "«{milestone_title}» кезеңін төлеу мерзімі аяқталды.",
+        "subject": "Төлем мерзімі өтті"
+      }
+    }
+  },
+  "ko": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "'{milestone_title}' 단계의 청구가 취소되었습니다.",
+        "subject": "청구가 취소되었습니다"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "상대방이 '{milestone_title}' 단계의 청구를 취소했습니다.",
+        "subject": "상대방이 청구를 취소했습니다"
+      },
+      "payment.created": {
+        "body": "'{milestone_title}' 단계에 대해 {amount} {currency} 청구서가 발행되었습니다.",
+        "subject": "결제 요청"
+      },
+      "payment.overdue": {
+        "body": "'{milestone_title}' 단계의 결제 기한이 지났습니다.",
+        "subject": "결제 기한이 지났습니다"
+      }
+    }
+  },
+  "pl": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "Rachunek za etap „{milestone_title}” został wycofany.",
+        "subject": "Rachunek wycofany"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "Druga strona wycofała rachunek za etap „{milestone_title}”.",
+        "subject": "Druga strona wycofała rachunek"
+      },
+      "payment.created": {
+        "body": "Dla etapu „{milestone_title}” wystawiono rachunek na {amount} {currency}.",
+        "subject": "Płatność do uregulowania"
+      },
+      "payment.overdue": {
+        "body": "Termin płatności za etap „{milestone_title}” minął.",
+        "subject": "Płatność po terminie"
+      }
+    }
+  },
+  "pt-BR": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "A cobrança da etapa “{milestone_title}” foi cancelada.",
+        "subject": "Cobrança cancelada"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "A outra parte cancelou a cobrança da etapa “{milestone_title}”.",
+        "subject": "A outra parte cancelou a cobrança"
+      },
+      "payment.created": {
+        "body": "Foi emitida uma cobrança de {amount} {currency} para a etapa “{milestone_title}”.",
+        "subject": "Pagamento pendente"
+      },
+      "payment.overdue": {
+        "body": "O prazo de pagamento da etapa “{milestone_title}” venceu.",
+        "subject": "Pagamento em atraso"
+      }
+    }
+  },
+  "ro": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "Factura pentru etapa „{milestone_title}” a fost retrasă.",
+        "subject": "Factură retrasă"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "Cealaltă parte a retras factura pentru etapa „{milestone_title}”.",
+        "subject": "Cealaltă parte a retras factura"
+      },
+      "payment.created": {
+        "body": "Pentru etapa „{milestone_title}” a fost emisă o factură de {amount} {currency}.",
+        "subject": "Plată de efectuat"
+      },
+      "payment.overdue": {
+        "body": "Termenul de plată pentru etapa „{milestone_title}” a expirat.",
+        "subject": "Plată restantă"
+      }
+    }
+  },
+  "ru": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "Счёт по этапу «{milestone_title}» отозван.",
+        "subject": "Счёт отозван"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "Вторая сторона отозвала счёт по этапу «{milestone_title}».",
+        "subject": "Вторая сторона отозвала счёт"
+      },
+      "payment.created": {
+        "body": "По этапу «{milestone_title}» выставлен счёт на {amount} {currency}.",
+        "subject": "Выставлен счёт к оплате"
+      },
+      "payment.overdue": {
+        "body": "Срок оплаты этапа «{milestone_title}» истёк.",
+        "subject": "Просрочена оплата"
+      }
+    }
+  },
+  "sw": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "Ankara ya hatua “{milestone_title}” imeondolewa.",
+        "subject": "Ankara imeondolewa"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "Upande mwingine umeondoa ankara ya hatua “{milestone_title}”.",
+        "subject": "Upande mwingine umeondoa ankara"
+      },
+      "payment.created": {
+        "body": "Ankara ya {amount} {currency} imetolewa kwa hatua “{milestone_title}”.",
+        "subject": "Malipo yanahitajika"
+      },
+      "payment.overdue": {
+        "body": "Muda wa kulipa hatua “{milestone_title}” umepita.",
+        "subject": "Malipo yamechelewa"
+      }
+    }
+  },
+  "th": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "ใบเรียกเก็บเงินสำหรับขั้นตอน “{milestone_title}” ถูกยกเลิกแล้ว",
+        "subject": "ยกเลิกใบเรียกเก็บเงินแล้ว"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "อีกฝ่ายยกเลิกใบเรียกเก็บเงินสำหรับขั้นตอน “{milestone_title}”",
+        "subject": "อีกฝ่ายยกเลิกใบเรียกเก็บเงิน"
+      },
+      "payment.created": {
+        "body": "มีการออกใบเรียกเก็บเงิน {amount} {currency} สำหรับขั้นตอน “{milestone_title}”",
+        "subject": "มีการเรียกเก็บเงิน"
+      },
+      "payment.overdue": {
+        "body": "ครบกำหนดชำระเงินสำหรับขั้นตอน “{milestone_title}” แล้ว",
+        "subject": "เลยกำหนดชำระเงิน"
+      }
+    }
+  },
+  "tr": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "“{milestone_title}” aşamasına ait fatura geri çekildi.",
+        "subject": "Fatura geri çekildi"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "Karşı taraf “{milestone_title}” aşamasına ait faturayı geri çekti.",
+        "subject": "Karşı taraf faturayı geri çekti"
+      },
+      "payment.created": {
+        "body": "“{milestone_title}” aşaması için {amount} {currency} tutarında fatura düzenlendi.",
+        "subject": "Ödeme bekleniyor"
+      },
+      "payment.overdue": {
+        "body": "“{milestone_title}” aşamasının ödeme süresi doldu.",
+        "subject": "Ödeme gecikti"
+      }
+    }
+  },
+  "uk": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "Рахунок за етапом «{milestone_title}» відкликано.",
+        "subject": "Рахунок відкликано"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "Друга сторона відкликала рахунок за етапом «{milestone_title}».",
+        "subject": "Друга сторона відкликала рахунок"
+      },
+      "payment.created": {
+        "body": "За етапом «{milestone_title}» виставлено рахунок на {amount} {currency}.",
+        "subject": "Виставлено рахунок до оплати"
+      },
+      "payment.overdue": {
+        "body": "Строк оплати етапу «{milestone_title}» минув.",
+        "subject": "Прострочено оплату"
+      }
+    }
+  },
+  "ur": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "“{milestone_title}” کا بل واپس لے لیا گیا ہے۔",
+        "subject": "بل واپس لے لیا گیا"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "دوسرے فریق نے “{milestone_title}” کا بل واپس لے لیا ہے۔",
+        "subject": "دوسرے فریق نے بل واپس لے لیا"
+      },
+      "payment.created": {
+        "body": "“{milestone_title}” کے لیے {amount} {currency} کا بل جاری کیا گیا ہے۔",
+        "subject": "ادائیگی واجب الادا ہے"
+      },
+      "payment.overdue": {
+        "body": "“{milestone_title}” کی ادائیگی کی مدت ختم ہو گئی ہے۔",
+        "subject": "ادائیگی میں تاخیر"
+      }
+    }
+  },
+  "uz": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "“{milestone_title}” bosqichi bo'yicha hisob qaytarib olindi.",
+        "subject": "Hisob qaytarib olindi"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "Ikkinchi tomon “{milestone_title}” bosqichi bo'yicha hisobni qaytarib oldi.",
+        "subject": "Ikkinchi tomon hisobni qaytarib oldi"
+      },
+      "payment.created": {
+        "body": "“{milestone_title}” bosqichi uchun {amount} {currency} hisob qo'yildi.",
+        "subject": "To'lov uchun hisob qo'yildi"
+      },
+      "payment.overdue": {
+        "body": "“{milestone_title}” bosqichini to'lash muddati tugadi.",
+        "subject": "To'lov muddati o'tdi"
+      }
+    }
+  },
+  "vi": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "Hóa đơn cho giai đoạn “{milestone_title}” đã được thu hồi.",
+        "subject": "Hóa đơn đã được thu hồi"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "Bên kia đã thu hồi hóa đơn cho giai đoạn “{milestone_title}”.",
+        "subject": "Bên kia đã thu hồi hóa đơn"
+      },
+      "payment.created": {
+        "body": "Đã phát hành hóa đơn {amount} {currency} cho giai đoạn “{milestone_title}”.",
+        "subject": "Cần thanh toán"
+      },
+      "payment.overdue": {
+        "body": "Thời hạn thanh toán giai đoạn “{milestone_title}” đã hết.",
+        "subject": "Thanh toán quá hạn"
+      }
+    }
+  },
+  "zh-Hans": {
+    "notifications": {
+      "payment.cancelled": {
+        "body": "阶段“{milestone_title}”的账单已撤回。",
+        "subject": "账单已撤回"
+      },
+      "payment.cancelled.counterparty": {
+        "body": "对方撤回了阶段“{milestone_title}”的账单。",
+        "subject": "对方撤回了账单"
+      },
+      "payment.created": {
+        "body": "已为阶段“{milestone_title}”开具 {amount} {currency} 的账单。",
+        "subject": "待付款"
+      },
+      "payment.overdue": {
+        "body": "阶段“{milestone_title}”的付款期限已过。",
+        "subject": "付款已逾期"
+      }
+    }
+  }
+}

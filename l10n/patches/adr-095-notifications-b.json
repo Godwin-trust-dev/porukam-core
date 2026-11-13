@@ -1,0 +1,362 @@
+{
+  "az": {
+    "notifications": {
+      "negotiation.sent": {
+        "subject": "Müqavilə razılaşdırmaya göndərildi",
+        "body": "“{contract_title}” razılaşdırmaya göndərildi."
+      },
+      "negotiation.revised": {
+        "subject": "Dəyişikliklər qeydə alındı",
+        "body": "“{contract_title}” üzrə dəyişikliklər qeydə alındı."
+      },
+      "negotiation.frozen": {
+        "subject": "Müqavilə imzalanmağa hazırdır",
+        "body": "“{contract_title}” dondurulub və imzalanmağa hazırdır."
+      },
+      "negotiation.signed": {
+        "subject": "İmza qəbul edildi",
+        "body": "“{contract_title}” üzrə imzanız qəbul edildi. Qarşı tərəfin imzasını gözləyirik."
+      },
+      "milestone.started": {
+        "subject": "İş başladı",
+        "body": "“{milestone_title}” mərhələsi üzrə iş başladı."
+      },
+      "milestone.accepted": {
+        "subject": "İş qəbul edildi",
+        "body": "“{milestone_title}” qəbul edildi."
+      },
+      "milestone.rejected": {
+        "subject": "İş rədd edildi",
+        "body": "“{milestone_title}” yoxlama siyahısının bir bəndinə istinadla rədd edildi."
+      },
+      "dispute.resolved": {
+        "subject": "Fikir ayrılığı həll olundu",
+        "body": "“{milestone_title}” mərhələsi üzrə fikir ayrılığı həll olundu."
+      },
+      "entity_claimed": {
+        "subject": "Hüquqi şəxs üzərində nəzarət təsdiqləndi",
+        "body": "Hüquqi şəxs üzərində nəzarət təsdiqləndi."
+      }
+    }
+  },
+  "uz": {
+    "notifications": {
+      "negotiation.sent": {
+        "subject": "Shartnoma kelishuvga yuborildi",
+        "body": "“{contract_title}” kelishuvga yuborildi."
+      },
+      "negotiation.revised": {
+        "subject": "O'zgarishlar qayd etildi",
+        "body": "“{contract_title}” bo'yicha o'zgarishlar qayd etildi."
+      },
+      "negotiation.frozen": {
+        "subject": "Shartnoma imzolashga tayyor",
+        "body": "“{contract_title}” muzlatildi va imzolashga tayyor."
+      },
+      "negotiation.signed": {
+        "subject": "Imzo qabul qilindi",
+        "body": "“{contract_title}” ostidagi imzoyingiz qabul qilindi. Ikkinchi tomon imzosini kutmoqdamiz."
+      },
+      "milestone.started": {
+        "subject": "Ish boshlandi",
+        "body": "“{milestone_title}” bosqichi bo'yicha ish boshlandi."
+      },
+      "milestone.accepted": {
+        "subject": "Ish qabul qilindi",
+        "body": "“{milestone_title}” qabul qilindi."
+      },
+      "milestone.rejected": {
+        "subject": "Ish rad etildi",
+        "body": "“{milestone_title}” nazorat ro'yxatining bandiga havola qilingan holda rad etildi."
+      },
+      "dispute.resolved": {
+        "subject": "Kelishmovchilik hal qilindi",
+        "body": "“{milestone_title}” bosqichi bo'yicha kelishmovchilik hal qilindi."
+      },
+      "entity_claimed": {
+        "subject": "Yuridik shaxs ustidan nazorat tasdiqlandi",
+        "body": "Yuridik shaxs ustidan nazorat tasdiqlandi."
+      }
+    }
+  },
+  "kk": {
+    "notifications": {
+      "negotiation.sent": {
+        "subject": "Шарт келісуге жіберілді",
+        "body": "«{contract_title}» келісуге жіберілді."
+      },
+      "negotiation.revised": {
+        "subject": "Өзгерістер тіркелді",
+        "body": "«{contract_title}» бойынша өзгерістер тіркелді."
+      },
+      "negotiation.frozen": {
+        "subject": "Шарт қол қоюға дайын",
+        "body": "«{contract_title}» бекітілді және қол қоюға дайын."
+      },
+      "negotiation.signed": {
+        "subject": "Қол қабылданды",
+        "body": "«{contract_title}» бойынша қолыңыз қабылданды. Екінші тараптың қоюын күтудеміз."
+      },
+      "milestone.started": {
+        "subject": "Жұмыс басталды",
+        "body": "«{milestone_title}» кезеңі бойынша жұмыс басталды."
+      },
+      "milestone.accepted": {
+        "subject": "Жұмыс қабылданды",
+        "body": "«{milestone_title}» қабылданды."
+      },
+      "milestone.rejected": {
+        "subject": "Жұмыс қабылданбады",
+        "body": "«{milestone_title}» тексеру парағының тармағына сілтеме жасай отырып қабылданбады."
+      },
+      "dispute.resolved": {
+        "subject": "Келіспеушілік реттелді",
+        "body": "«{milestone_title}» кезеңі бойынша келіспеушілік реттелді."
+      },
+      "entity_claimed": {
+        "subject": "Заңды тұлғаға бақылау расталды",
+        "body": "Заңды тұлғаға бақылау расталды."
+      }
+    }
+  },
+  "hy": {
+    "notifications": {
+      "negotiation.sent": {
+        "subject": "Պայմանագիրն ուղարկվել է համաձայնեցման",
+        "body": "«{contract_title}»-ն ուղարկվել է համաձայնեցման։"
+      },
+      "negotiation.revised": {
+        "subject": "Փոփոխությունները գրանցվել են",
+        "body": "«{contract_title}»-ի փոփոխությունները գրանցվել են։"
+      },
+      "negotiation.frozen": {
+        "subject": "Պայմանագիրը պատրաստ է ստորագրման",
+        "body": "«{contract_title}»-ը սառեցված է և պատրաստ ստորագրման։"
+      },
+      "negotiation.signed": {
+        "subject": "Ստորագրությունն ընդունված է",
+        "body": "«{contract_title}»-ի տակ ձեր ստորագրությունն ընդունված է։ Սպասում ենք մյուս կողմի ստորագրությանը։"
+      },
+      "milestone.started": {
+        "subject": "Աշխատանքը սկսվել է",
+        "body": "«{milestone_title}» փուլի աշխատանքը սկսվել է։"
+      },
+      "milestone.accepted": {
+        "subject": "Աշխատանքն ընդունված է",
+        "body": "«{milestone_title}»-ն ընդունված է։"
+      },
+      "milestone.rejected": {
+        "subject": "Աշխատանքը մերժված է",
+        "body": "«{milestone_title}»-ը մերժվել է՝ հղում կատարելով ստուգաթերթի կետին։"
+      },
+      "dispute.resolved": {
+        "subject": "Տարաձայնությունը կարգավորված է",
+        "body": "«{milestone_title}» փուլի վերաբերյալ տարաձայնությունը կարգավորված է։"
+      },
+      "entity_claimed": {
+        "subject": "Իրավաբանական անձի նկատմամբ վերահսկողությունը հաստատված է",
+        "body": "Իրավաբանական անձի նկատմամբ վերահսկողությունը հաստատվել է։"
+      }
+    }
+  },
+  "ka": {
+    "notifications": {
+      "negotiation.sent": {
+        "subject": "ხელშეკრულება გაგზავნილია შესათანხმებლად",
+        "body": "„{contract_title}“ გაიგზავნა შესათანხმებლად."
+      },
+      "negotiation.revised": {
+        "subject": "ცვლილებები დაფიქსირდა",
+        "body": "„{contract_title}“-ში ცვლილებები დაფიქსირდა."
+      },
+      "negotiation.frozen": {
+        "subject": "ხელშეკრულება მზადაა ხელმოსაწერად",
+        "body": "„{contract_title}“ დაფიქსირებულია და მზადაა ხელმოსაწერად."
+      },
+      "negotiation.signed": {
+        "subject": "ხელმოწერა მიღებულია",
+        "body": "თქვენი ხელმოწერა „{contract_title}“-ზე მიღებულია. ველოდებით მეორე მხარის ხელმოწერას."
+      },
+      "milestone.started": {
+        "subject": "სამუშაო დაიწყო",
+        "body": "სამუშაო ეტაპზე „{milestone_title}“ დაიწყო."
+      },
+      "milestone.accepted": {
+        "subject": "სამუშაო მიღებულია",
+        "body": "„{milestone_title}“ მიღებულია."
+      },
+      "milestone.rejected": {
+        "subject": "სამუშაო უარყოფილია",
+        "body": "„{milestone_title}“ უარყოფილია საკონტროლო სიის პუნქტზე მითითებით."
+      },
+      "dispute.resolved": {
+        "subject": "უთანხმოება მოგვარებულია",
+        "body": "უთანხმოება ეტაპზე „{milestone_title}“ მოგვარებულია."
+      },
+      "entity_claimed": {
+        "subject": "იურიდიულ პირზე კონტროლი დადასტურებულია",
+        "body": "იურიდიულ პირზე კონტროლი დადასტურდა."
+      }
+    }
+  },
+  "ja": {
+    "notifications": {
+      "negotiation.sent": {
+        "subject": "契約書を確認に送付しました",
+        "body": "「{contract_title}」を確認に送付しました。"
+      },
+      "negotiation.revised": {
+        "subject": "変更を記録しました",
+        "body": "「{contract_title}」の変更を記録しました。"
+      },
+      "negotiation.frozen": {
+        "subject": "契約書は署名可能です",
+        "body": "「{contract_title}」は確定し、署名できる状態になりました。"
+      },
+      "negotiation.signed": {
+        "subject": "署名を受け付けました",
+        "body": "「{contract_title}」へのあなたの署名を受け付けました。相手方の署名を待っています。"
+      },
+      "milestone.started": {
+        "subject": "作業を開始しました",
+        "body": "「{milestone_title}」の作業を開始しました。"
+      },
+      "milestone.accepted": {
+        "subject": "作業が受理されました",
+        "body": "「{milestone_title}」が受理されました。"
+      },
+      "milestone.rejected": {
+        "subject": "作業が差し戻されました",
+        "body": "「{milestone_title}」はチェックリストの項目を理由に差し戻されました。"
+      },
+      "dispute.resolved": {
+        "subject": "意見の相違が解決しました",
+        "body": "「{milestone_title}」に関する意見の相違が解決しました。"
+      },
+      "entity_claimed": {
+        "subject": "法人の管理権が確認されました",
+        "body": "法人に対する管理権が確認されました。"
+      }
+    }
+  },
+  "ko": {
+    "notifications": {
+      "negotiation.sent": {
+        "subject": "계약서를 검토 요청했습니다",
+        "body": "'{contract_title}'을(를) 검토 요청했습니다."
+      },
+      "negotiation.revised": {
+        "subject": "변경 사항이 기록되었습니다",
+        "body": "'{contract_title}'의 변경 사항이 기록되었습니다."
+      },
+      "negotiation.frozen": {
+        "subject": "계약서가 서명 준비되었습니다",
+        "body": "'{contract_title}'이(가) 확정되어 서명할 수 있습니다."
+      },
+      "negotiation.signed": {
+        "subject": "서명이 접수되었습니다",
+        "body": "'{contract_title}'에 대한 회원님의 서명이 접수되었습니다. 상대방의 서명을 기다리고 있습니다."
+      },
+      "milestone.started": {
+        "subject": "작업이 시작되었습니다",
+        "body": "'{milestone_title}' 작업이 시작되었습니다."
+      },
+      "milestone.accepted": {
+        "subject": "작업이 승인되었습니다",
+        "body": "'{milestone_title}'이(가) 승인되었습니다."
+      },
+      "milestone.rejected": {
+        "subject": "작업이 반려되었습니다",
+        "body": "'{milestone_title}'이(가) 체크리스트 항목을 근거로 반려되었습니다."
+      },
+      "dispute.resolved": {
+        "subject": "이견이 해결되었습니다",
+        "body": "'{milestone_title}'에 대한 이견이 해결되었습니다."
+      },
+      "entity_claimed": {
+        "subject": "법인 지배권이 확인되었습니다",
+        "body": "법인에 대한 지배권이 확인되었습니다."
+      }
+    }
+  },
+  "zh-Hans": {
+    "notifications": {
+      "negotiation.sent": {
+        "subject": "合同已发送审阅",
+        "body": "“{contract_title}”已发送审阅。"
+      },
+      "negotiation.revised": {
+        "subject": "变更已记录",
+        "body": "“{contract_title}”的变更已记录。"
+      },
+      "negotiation.frozen": {
+        "subject": "合同可以签署",
+        "body": "“{contract_title}”已定稿，可以签署。"
+      },
+      "negotiation.signed": {
+        "subject": "签署已记录",
+        "body": "您对“{contract_title}”的签署已记录。正在等待对方签署。"
+      },
+      "milestone.started": {
+        "subject": "工作已开始",
+        "body": "“{milestone_title}”的工作已开始。"
+      },
+      "milestone.accepted": {
+        "subject": "工作已验收",
+        "body": "“{milestone_title}”已验收。"
+      },
+      "milestone.rejected": {
+        "subject": "工作被退回",
+        "body": "“{milestone_title}”被退回，理由为核对清单中的某一项。"
+      },
+      "dispute.resolved": {
+        "subject": "分歧已解决",
+        "body": "关于“{milestone_title}”的分歧已解决。"
+      },
+      "entity_claimed": {
+        "subject": "已确认对法人主体的控制权",
+        "body": "已确认对该法人主体的控制权。"
+      }
+    }
+  },
+  "vi": {
+    "notifications": {
+      "negotiation.sent": {
+        "subject": "Hợp đồng đã gửi để thống nhất",
+        "body": "“{contract_title}” đã được gửi để thống nhất."
+      },
+      "negotiation.revised": {
+        "subject": "Đã ghi nhận thay đổi",
+        "body": "Các thay đổi của “{contract_title}” đã được ghi nhận."
+      },
+      "negotiation.frozen": {
+        "subject": "Hợp đồng sẵn sàng để ký",
+        "body": "“{contract_title}” đã được chốt và sẵn sàng để ký."
+      },
+      "negotiation.signed": {
+        "subject": "Đã ghi nhận chữ ký",
+        "body": "Chữ ký của bạn trên “{contract_title}” đã được ghi nhận. Đang chờ bên kia ký."
+      },
+      "milestone.started": {
+        "subject": "Đã bắt đầu công việc",
+        "body": "Công việc ở giai đoạn “{milestone_title}” đã bắt đầu."
+      },
+      "milestone.accepted": {
+        "subject": "Công việc đã được nghiệm thu",
+        "body": "“{milestone_title}” đã được nghiệm thu."
+      },
+      "milestone.rejected": {
+        "subject": "Công việc bị từ chối",
+        "body": "“{milestone_title}” bị từ chối, có dẫn chiếu một mục trong danh sách kiểm tra."
+      },
+      "dispute.resolved": {
+        "subject": "Bất đồng đã được giải quyết",
+        "body": "Bất đồng về “{milestone_title}” đã được giải quyết."
+      },
+      "entity_claimed": {
+        "subject": "Đã xác nhận quyền kiểm soát pháp nhân",
+        "body": "Quyền kiểm soát pháp nhân đã được xác nhận."
+      }
+    }
+  }
+}

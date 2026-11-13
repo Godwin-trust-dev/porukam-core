@@ -1,0 +1,26 @@
+/* Строка статуса устройства живёт ВНУТРИ той же поверхности, что и тумблер
+   (Surface сам ставит hairline между детьми) — это продолжение строки push,
+   а не отдельная плашка-предупреждение. */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--pr-sp-1) var(--pr-sp-2);
+  padding: var(--pr-sp-2) var(--pr-d-pad-card);
+}
+
+.text {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+
+/* Текст, который сказало само устройство: нужен при разборе жалобы,
+   но не должен спорить за внимание с подписью статуса. */
+.detail {
+  margin: 0;
+  flex-basis: 100%;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+  overflow-wrap: anywhere;
+}

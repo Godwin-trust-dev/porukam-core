@@ -1,0 +1,79 @@
+.wrap {
+  display: grid;
+  /* DEV-20 §1: плотный ритм между секциями экрана — 12, не 20. */
+  gap: var(--pr-d-gap-section);
+  /* Ширину держит рабочая область оболочки (WorkArea, DEV-19 §1) —
+     собственного max-width у страницы нет, иначе на десктопе список снова
+     схлопнется в мобильный столбец. Трек — `minmax(0, 1fr)`, а не `auto`:
+     у грид-элемента `min-width: auto`, и `auto`-колонка растянулась бы до
+     min-content содержимого (DEV-19 §8, «нет горизонтального скролла»). */
+  grid-template-columns: minmax(0, 1fr);
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+  flex-wrap: wrap;
+}
+
+/* Колонка списка master-detail: поиск/фильтры едут вместе со списком, не
+   над всей шириной экрана (DEV-19 §2). */
+.listColumn {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--pr-d-gap);
+  align-content: start;
+}
+/* Поиск над списком — только десктоп (compact-десктоп); на телефоне над
+   списком его нет (финал доска A), то же поле стоит первым в шите по воронке. */
+.toolbar {
+  display: none;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--pr-sp-3);
+}
+@media (min-width: 1024px) {
+  .toolbar {
+    display: grid;
+  }
+}
+.searchRow {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  min-width: 0;
+}
+.searchRow > :first-child {
+  flex: 1;
+  /* Поле поиска обязано сжиматься: без этого его min-content (иконка + поле +
+     «очистить») складывается с кнопкой «Фильтр» и распирает строку шире окна
+     (DEV-19 §8, окно 360px). */
+  min-width: 0;
+}
+/* «Создать» в шапке — только там, где нет FAB (DEV-20_2 §5). */
+.createDesktop {
+  display: none;
+}
+/* Список — одна поверхность со строками (DEV-20 §2): собственного зазора
+   между элементами нет, разделяет hairline внутри `Surface`. */
+.list {
+  display: block;
+}
+.groupDivider {
+  margin: var(--pr-sp-2) 0 0;
+  padding-inline: var(--pr-d-row-pad-x);
+  color: var(--pr-text-mute);
+  font-size: var(--pr-fs-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--pr-ls-eyebrow);
+}
+.loadingList {
+  display: grid;
+  gap: var(--pr-sp-2);
+}
+
+@media (min-width: 1024px) {
+  .createDesktop {
+    display: inline-flex;
+  }
+}

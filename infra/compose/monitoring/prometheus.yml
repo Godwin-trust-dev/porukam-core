@@ -1,0 +1,38 @@
+# Prometheus (docs/tasks/fundament-2.md ЭФ.6 п.3). core и celery worker
+# запускаются на ХОСТЕ (dev-setup.md §2: `make run`/PyCharm-конфигурации,
+# не в compose) — поэтому цели через host.docker.internal, а не по имени
+# сервиса compose. extra_hosts в docker-compose.local.yml прописывает этот
+# алиас и на "чистом" (не Docker Desktop) движке Linux.
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: ["alertmanager:9093"]
+
+rule_files:
+  - /etc/prometheus/alert_rules.yml
+  - /etc/prometheus/alert_rules_resources.yml
+
+scrape_configs:
+  - job_name: prometheus
+    static_configs:
+      - targets: ["localhost:9090"]
+
+  # RED по эндпоинтам (django-prometheus) + кастомные коллекторы
+  # (common/metrics.py, apps/deadlines/metrics.py, apps/notifications/metrics.py,
+  # services/audit_vault/metrics.py) — все живут на /metrics core.
+  - job_name: core
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["host.docker.internal:8000"]
+
+  # Метрики задач Celery worker (common/celery_metrics.py) — отдельный
+  # порт, НЕ /metrics core (см. докстринг common/celery_metrics.py: worker
+  # с prefork-пулом отдаёт multiprocess-агрегат отдельным HTTP-сервером).
+  - job_name: celery_worker
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["host.docker.internal:9808"]

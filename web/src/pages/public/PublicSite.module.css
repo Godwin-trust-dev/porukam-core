@@ -1,0 +1,561 @@
+/* Публичный контур (ADR-195): лендинг и страницы о проекте без входа.
+   Все значения — токены `packages/ui/src/styles/tokens.css` (web/CLAUDE.md §2.1):
+   ни одного hex и ни одного «магического» px. */
+
+.site {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  /* Колонку задаём ЯВНО. Неявная колонка грид-контейнера имеет ширину `auto`,
+     то есть не ýже min-content своих строк, а min-content шапки — это четыре
+     ссылки с `white-space: nowrap`: на телефоне колонка выходила 480px при
+     вьюпорте 390, и вся страница (герой, блоки, подвал) уезжала в
+     горизонтальную прокрутку с обрезанным справа текстом. */
+  grid-template-columns: minmax(0, 1fr);
+  background: var(--pr-cream);
+}
+
+/* ── Шапка гостя ───────────────────────────────────────────────────────── */
+.header {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  flex-wrap: wrap;
+  padding-block: var(--pr-sp-3);
+  /* Полоса шапки — во всю ширину (фон и нижняя линия обязаны доходить до краёв),
+     а её СОДЕРЖИМОЕ стоит на той же сетке, что страница. Отсюда паддинг
+     «не меньше поля телефона, а на широком экране — половина остатка»: логотип
+     и кнопка входа оказываются ровно над краями контента, а не у краёв экрана.
+     Через паддинг, а не через вложенную обёртку, — чтобы не плодить div ради
+     выравнивания. */
+  padding-inline: max(var(--pr-sp-4), calc((100% - var(--pr-maxw-site)) / 2));
+  border-bottom: 1px solid var(--pr-line);
+  background: var(--pr-white);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  min-height: var(--pr-touch-min);
+}
+
+/* На телефоне навигация уезжает во вторую строку и прокручивается по
+   горизонтали: четыре раздела на 29 языках в одну строку шириной 360px не
+   встают ни при каком кегле, а прятать их в «гамбургер» на странице из пяти
+   ссылок — лишний слой. */
+.nav {
+  order: 3;
+  flex-basis: 100%;
+  /* `min-width: 0` обязателен: по умолчанию flex-элемент не сжимается уже
+     своего содержимого (`min-width: auto`), а внутри — четыре ссылки с
+     `white-space: nowrap`. Без этого шапка распирала ВСЮ страницу до ~760px,
+     и на телефоне документ уезжал в горизонтальную прокрутку вместе с героем,
+     блоками и подвалом — текст обрезался справа. */
+  min-width: 0;
+  display: flex;
+  gap: var(--pr-sp-3);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.nav::-webkit-scrollbar {
+  display: none;
+}
+
+.navLink {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--pr-touch-min);
+  white-space: nowrap;
+  color: var(--pr-text-2);
+  text-decoration: none;
+  font-size: var(--pr-d-fs-2);
+}
+.navLink:hover,
+.navLink[aria-current='page'] {
+  color: var(--pr-ink);
+}
+.navLink:focus-visible,
+.brand:focus-visible,
+.loginLink:focus-visible,
+.heroCta:focus-visible,
+.ctaLink:focus-visible {
+  outline: 2px solid var(--pr-amber);
+  outline-offset: 2px;
+  border-radius: var(--pr-r-sm);
+}
+
+.headerActions {
+  margin-inline-start: auto;
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+}
+
+.loginLink {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--pr-touch-min);
+  padding-inline: var(--pr-sp-3);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  color: var(--pr-ink);
+  text-decoration: none;
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-2);
+}
+
+@media (min-width: 640px) {
+  .nav {
+    order: initial;
+    flex-basis: auto;
+    overflow: visible;
+    gap: var(--pr-sp-4);
+    margin-inline-start: var(--pr-sp-4);
+  }
+}
+
+/* ── Контент ───────────────────────────────────────────────────────────── */
+.main {
+  display: block;
+}
+
+/* Две ширины, и это разные задачи. `.page` — страницы сплошного текста
+   («о проекте», «как это работает», «вопросы»): их ширину задаёт читаемость
+   строки, а не размер монитора. `.pageWide` — лендинг: он состоит из блоков,
+   и на широком экране им нужна вся сетка витрины, иначе страница выглядит
+   уменьшенной копией телефонной. */
+.page {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  width: 100%;
+  gap: var(--pr-d-gap-section);
+  max-width: var(--pr-maxw-site);
+  margin: 0 auto;
+  padding: var(--pr-sp-5) var(--pr-sp-4);
+}
+
+/* Текстовая страница живёт в том же контейнере, что шапка и лендинг, но её
+   содержимое ограничено читаемой строкой и прижато к НАЧАЛУ контейнера, а не
+   отцентровано. Иначе на широком экране получается именно то, на что жалуются:
+   логотип и навигация у одного края, текст узкой колонкой посередине — две
+   разные сетки на одной странице. `:not(.pageWide)` — потому что лендингу,
+   наоборот, нужна вся ширина: он собран из блоков, а не из абзацев.
+   Начало, а не «слева»: на арабском и фарси это правый край. */
+.page:not(.pageWide) > * {
+  max-width: var(--pr-maxw-prose);
+}
+
+@media (min-width: 1024px) {
+  .page {
+    gap: var(--pr-sp-12);
+    padding-block: var(--pr-sp-16);
+  }
+}
+
+.pageTitle {
+  margin: 0;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-black);
+  font-size: var(--pr-fs-h1);
+  line-height: var(--pr-lh-tight);
+  color: var(--pr-ink);
+}
+
+.lead {
+  margin: 0;
+  font-size: var(--pr-d-fs-body);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-ink);
+}
+
+/* Правило идёт ПОСЛЕ базового `.pageTitle`: специфичность у них одинаковая,
+   и в медиазапросе выше по файлу его перебил бы базовый кегль. */
+@media (min-width: 1024px) {
+  .pageTitle {
+    font-size: var(--pr-fs-h1-lg);
+  }
+}
+
+/* ── Герой лендинга ───────────────────────────────────────────────────── */
+.hero {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--pr-sp-4);
+  padding: var(--pr-sp-8) var(--pr-sp-4);
+  border-radius: var(--pr-r-xl);
+  background: var(--pr-grad-ink);
+  color: var(--pr-text-inv);
+}
+
+.heroGlow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(60% 60% at 40% 30%, rgba(242, 162, 52, 0.22), transparent 60%);
+  pointer-events: none;
+}
+
+.heroMark {
+  position: relative;
+}
+
+.heroTitle {
+  position: relative;
+  margin: 0;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-black);
+  font-size: var(--pr-fs-display);
+  line-height: var(--pr-lh-tight);
+  max-width: 18ch;
+  /* Строки заголовка выравниваются по длине: иначе на части языков последняя
+     строка — одно висящее слово (а на русском — хвост переноса «честному»).
+     Браузер без поддержки просто переносит как раньше. */
+  text-wrap: balance;
+}
+
+.heroLead {
+  position: relative;
+  margin: 0;
+  font-size: var(--pr-fs-h3);
+  max-width: 46ch;
+}
+
+.heroText {
+  position: relative;
+  margin: 0;
+  color: var(--pr-on-ink-2);
+  max-width: 52ch;
+  line-height: var(--pr-d-lh);
+}
+
+.heroCta {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--pr-touch-min);
+  padding-inline: var(--pr-sp-5);
+  border-radius: var(--pr-r-lg);
+  background: var(--pr-amber);
+  color: var(--pr-ink);
+  font-weight: var(--pr-fw-semibold);
+  text-decoration: none;
+}
+
+/* Герой на широком экране: ЗАГОЛОВОК ВО ВСЮ ШИРИНУ, под ним две колонки.
+   Правка 30.10 по замечанию владельца («текст на баннере смотрится неаккуратно,
+   висит»). Было: заголовок зажат в левую колонку с `max-width: 18ch`, то есть
+   ломался на три короткие строки, а справа от него оставалось пустое поле во всю
+   высоту — и абзац про проблему действительно висел в этой пустоте один.
+   Стало: верхняя строка баннера растянута (ширину всё равно держит `max-width`
+   по числу знаков — заголовок на 29 языках разной длины, и строка во всю
+   полосу 1148px была бы нечитаема), слева — рассказ и кнопка сплошной
+   колонкой, справа — ролик во всю высоту этой колонки.
+   Раскладка явная (`grid-row`/`grid-column`), а не автопотоком: порядок в DOM
+   задан смыслом и чтением с экрана, и менять его ради колонок нельзя. */
+@media (min-width: 1024px) {
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    column-gap: var(--pr-sp-16);
+    row-gap: var(--pr-sp-5);
+    align-items: start;
+    padding: var(--pr-sp-16);
+  }
+  .heroMark {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+  .heroTitle {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    font-size: var(--pr-fs-display-lg);
+    /* Шире телефонных 18ch: во всю ширину баннера заголовок встаёт в две
+       строки вместо трёх, и это та самая «растянутая верхняя строка». */
+    max-width: 26ch;
+  }
+  .heroLead {
+    grid-column: 1;
+    grid-row: 3;
+    font-size: var(--pr-fs-h2);
+  }
+  /* Левая колонка читается подряд: обещание → проблема → кнопка. Абзац про
+     проблему переехал сюда из правой колонки — там он был единственным
+     содержимым и висел в пустоте, пока ролик не загрузится (а на странице
+     без ролика — всегда). */
+  .heroText {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .heroCta {
+    grid-column: 1;
+    grid-row: 5;
+    justify-self: start;
+    align-self: start;
+  }
+  /* Правая колонка целиком — ролик: он объясняет быстрее любого абзаца.
+     По центру высоты текстовой колонки, иначе прижат к её верхнему краю. */
+  .heroVideo {
+    grid-column: 2;
+    grid-row: 3 / span 3;
+    align-self: center;
+  }
+}
+
+/* Плеер ролика. На телефоне — во всю ширину героя, под текстом; на широком
+   экране уезжает во вторую колонку (ниже, в медиазапросе). Рамки нет: кадр
+   ролика — светлый интерфейс на чернильном фоне героя, и ещё одна рамка
+   превратила бы это в коробку в коробке. */
+.heroVideo {
+  position: relative;
+  margin: 0;
+  width: 100%;
+}
+
+.heroVideoPlayer {
+  display: block;
+  width: 100%;
+  /* Соотношение задано разметкой, а не высотой: пока постер не загрузился,
+     блок всё равно занимает своё место и страница не прыгает. */
+  aspect-ratio: 16 / 9;
+  border-radius: var(--pr-r-lg);
+  background: var(--pr-ink);
+  box-shadow: var(--pr-shadow-card);
+}
+
+/* ── Полоса кадров интерфейса ─────────────────────────────────────────── */
+/* Кадры показываются полосой с горизонтальной прокруткой — ровно как в карточке
+   магазина. Сеткой их класть нельзя: восемь портретов телефона в ряд на широком
+   экране превращаются в восемь марок, а на телефоне — в столбец высотой
+   в четыре экрана, который приходится пролистывать до текста. */
+.shots {
+  /* Ширина кадра на странице — 240px при файле в 540px: двойная плотность для
+     экранов с retina, и один и тот же файл на телефоне и на мониторе. */
+  --pr-site-shot-w: 240px;
+  /* `min-width: 0` обязателен: иначе флексовая полоса внутри растягивает
+     грид-колонку по своему содержимому, и ВСЯ страница уезжает в
+     горизонтальную прокрутку (так уже было с навигацией шапки, см. `.nav`). */
+  min-width: 0;
+}
+
+.shotStrip {
+  display: flex;
+  gap: var(--pr-sp-4);
+  margin: 0;
+  /* Нижний отступ — под тень кадра и полосу прокрутки, верхний нулевой. */
+  padding: 0 0 var(--pr-sp-3);
+  list-style: none;
+  overflow-x: auto;
+  /* Прилипание по началу строки: палец отпускают — кадр встаёт ровно.
+     `proximity`, а не `mandatory`: при мелкой прокрутке mandatory дёргает
+     полосу обратно и мешает просто смотреть. */
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+}
+
+.shot {
+  flex: 0 0 auto;
+  display: grid;
+  gap: var(--pr-sp-2);
+  justify-items: center;
+  width: var(--pr-site-shot-w);
+  scroll-snap-align: start;
+}
+
+.shotImage {
+  display: block;
+  width: var(--pr-site-shot-w);
+  /* Высота — из пропорций файла: наборы en (2:1) и ru (9:16) разной формы,
+     фиксировать высоту значит растянуть один из них. */
+  height: auto;
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  background: var(--pr-white);
+  box-shadow: var(--pr-shadow-card);
+}
+
+.shotCaption {
+  color: var(--pr-text-2);
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+  text-align: center;
+}
+
+/* ── Блоки ────────────────────────────────────────────────────────────── */
+.blocks {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--pr-d-gap-section);
+}
+
+@media (min-width: 640px) {
+  .blocks {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--pr-sp-5);
+  }
+  /* С планшета блоки становятся карточками. На телефоне они остаются простым
+     текстом: там колонка одна, рамка вокруг каждого абзаца — лишний шум. */
+  .block {
+    padding: var(--pr-sp-5);
+    border: 1px solid var(--pr-line);
+    border-radius: var(--pr-r-xl);
+    background: var(--pr-white);
+    align-content: start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .blocks {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--pr-sp-6);
+  }
+  .block {
+    padding: var(--pr-sp-6);
+  }
+}
+
+.block {
+  display: grid;
+  gap: var(--pr-sp-1);
+  min-width: 0;
+}
+
+.blockTitle {
+  margin: 0;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-title);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-ink);
+}
+
+.blockText {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+}
+
+.cta {
+  display: grid;
+  gap: var(--pr-sp-2);
+  padding: var(--pr-sp-5);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-xl);
+  background: var(--pr-white);
+}
+
+/* На широком экране этот блок — полоса: слева рассказ, справа ссылки.
+   Колонка ссылок по центру по вертикали, текст ограничен по числу знаков. */
+@media (min-width: 1024px) {
+  .cta {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    column-gap: var(--pr-sp-12);
+    padding: var(--pr-sp-8) var(--pr-sp-10);
+  }
+  .ctaTitle {
+    grid-column: 1;
+  }
+  .cta > .blockText {
+    grid-column: 1;
+    max-width: 68ch;
+  }
+  .ctaLinks {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.ctaTitle {
+  margin: 0;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-ink);
+}
+
+.ctaLinks {
+  display: flex;
+  gap: var(--pr-sp-3);
+  flex-wrap: wrap;
+}
+
+.ctaLink {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--pr-touch-min);
+  color: var(--pr-ink);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-2);
+}
+
+/* Атрибуция источника гео-данных (ADR-179, CC BY 4.0) — мелким у низа страницы:
+   лицензия требует указать источник, но это сноска, а не часть рассказа. */
+.attribution {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+}
+
+/* ── Подвал ───────────────────────────────────────────────────────────── */
+.footer {
+  display: grid;
+  gap: var(--pr-sp-3);
+  padding-block: var(--pr-sp-6);
+  /* То же, что у шапки: фон во всю ширину, содержимое — по контейнеру витрины. */
+  padding-inline: max(var(--pr-sp-4), calc((100% - var(--pr-maxw-site)) / 2));
+  border-top: 1px solid var(--pr-line);
+  background: var(--pr-white);
+}
+
+.footerLinks {
+  display: flex;
+  gap: var(--pr-sp-4);
+  flex-wrap: wrap;
+}
+
+.footerLinks a {
+  color: var(--pr-text-2);
+  font-size: var(--pr-d-fs-2);
+  min-height: var(--pr-touch-min);
+  display: inline-flex;
+  align-items: center;
+}
+
+.footerNote {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+  max-width: 60ch;
+}
+
+/* Авторство продукта — последняя строка подвала, тише юр-ссылок: это
+   подпись, а не навигация. Поэтому тот же вторичный цвет, что у ссылок
+   подвала, и подчёркивание только по наведению/фокусу — отдельного
+   токена для ссылок в системе нет, и заводить его ради подписи не за чем. */
+.madeBy {
+  margin: 0;
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+}
+
+.madeBy a {
+  color: var(--pr-text-2);
+  min-height: var(--pr-touch-min);
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.madeBy a:hover,
+.madeBy a:focus-visible {
+  color: var(--pr-text);
+  text-decoration: underline;
+}

@@ -1,0 +1,35 @@
+/* Вкладка «Оплаты» карточки договора: список счетов (сама строка — в
+   `features/payments/RealPaymentRow.module.css`, общая с экраном этапа),
+   итог «всего / оплачено» под списком. Токены — как у MilestoneList. */
+.wrap {
+  display: grid;
+  gap: var(--pr-sp-4);
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--pr-sp-3);
+}
+.sum {
+  display: grid;
+  gap: var(--pr-sp-2);
+  border-block-start: 1px solid var(--pr-line);
+  padding-block-start: var(--pr-sp-3);
+}
+.sumRow {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+}
+.sumLabel {
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+}
+.sumValue {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-variant-numeric: tabular-nums;
+  color: var(--pr-ink);
+}

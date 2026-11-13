@@ -1,0 +1,40 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  padding: var(--pr-sp-3);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-md);
+  background: var(--pr-white);
+}
+.icon {
+  flex: none;
+  color: var(--pr-icon-color);
+}
+.main {
+  flex: 1;
+  min-width: 0;
+}
+.name {
+  margin: 0;
+  color: var(--pr-ink);
+  font-weight: var(--pr-fw-medium);
+}
+.meta {
+  margin: 2px 0 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.problemNote {
+  margin: 0;
+  padding: var(--pr-sp-2) var(--pr-sp-3);
+  border-radius: var(--pr-r-md);
+  background: var(--pr-cream);
+  color: var(--pr-ink-2);
+  font-size: var(--pr-fs-sm);
+}

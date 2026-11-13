@@ -1,0 +1,12 @@
+{
+  "title": "Sezione «{{name}}»",
+  "text": "L’area di lavoro di questa sezione arriva presto.",
+  "feed": "Qui troverai il feed degli eventi dei tuoi affari e contatti.",
+  "search": "Qui troverai la ricerca di esecutori e ordini nel catalogo.",
+  "stages": "Qui si raccoglieranno le fasi di tutti i tuoi affari: cosa viene consegnato, cosa è in accettazione, quali scadenze corrono.",
+  "payments": "Qui troverai la cronologia dei pagamenti per fasi e contratti, con stati e conferme.",
+  "disputes": "Qui compariranno le tue controversie: stati, scadenze e prove per ciascuna.",
+  "reputation": "Qui troverai la tua reputazione: affari confermati e recensioni basate sui fatti.",
+  "chat": "Qui troverai la messaggistica degli affari, collegata al contratto e alle sue fasi.",
+  "groups": "Qui compariranno i gruppi: un indirizzo comune, membri e affari sotto un unico nome."
+}

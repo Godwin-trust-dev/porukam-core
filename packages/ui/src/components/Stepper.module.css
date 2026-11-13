@@ -1,0 +1,138 @@
+/* ── Полный ряд шагов (доска B: «Создание договора — центр 760px») ──
+   Кружок с номером · подпись · тонкая линия-коннектор до следующего шага.
+   Строка ОДНА и не переносится: коннектор тянется (`flex: 1`), подписи
+   усекаются. Было `flex-wrap: wrap` с чёрточкой 22px — семь шагов услуги
+   уезжали во вторую строку. */
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  flex-wrap: nowrap;
+  /* Ряд занимает всю строку: коннекторы растягиваются, как на доске B. */
+  flex: 1 1 auto;
+  min-inline-size: 0;
+}
+.step {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  min-inline-size: 0;
+  color: var(--pr-text-2);
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-fs-sm);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--pr-sand);
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+  flex: none;
+}
+.current .dot {
+  background: var(--pr-grad-amber);
+  color: var(--pr-ink);
+}
+.current {
+  color: var(--pr-ink);
+}
+.done .dot {
+  background: var(--pr-green);
+  color: var(--pr-text-inv);
+}
+.done {
+  color: var(--pr-ink);
+}
+/* Шаг с ошибкой — красный кружок (отсмотр 2026-08-19). */
+.error .dot {
+  background: var(--pr-red);
+  color: var(--pr-text-inv);
+}
+.error {
+  color: var(--pr-red);
+}
+/* Пройденный шаг-кнопка — возврат назад по конвейеру. */
+.clickable {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  border-radius: var(--pr-r-md);
+}
+.clickable:hover {
+  color: var(--pr-amber-deep);
+}
+/* Коннектор тянется на всю свободную ширину — как на доске B. */
+.sep {
+  flex: 1 1 auto;
+  min-inline-size: var(--pr-sp-3);
+  block-size: 1px;
+  background: var(--pr-line);
+}
+
+/* ── Компакт-степпер (DEV-20_2 §6, доска B) ──
+   «▬ ● ● ●  Шаг N из M · Название» в ОДНУ строку, без переноса. Показывается
+   вместо полного ряда шагов на узком экране: семь кружков с подписями
+   переносились в три ряда (отсмотр 2026-08-25 чинил чёрточки между ними, но
+   не саму высоту блока). */
+.compact {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  flex: 1 1 auto;
+  min-inline-size: 0;
+}
+.compactDots {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex: none;
+}
+.compactDot {
+  inline-size: 6px;
+  block-size: 6px;
+  border-radius: var(--pr-r-pill);
+  background: var(--pr-sand);
+}
+.compactDotDone {
+  background: var(--pr-green);
+}
+.compactDotCurrent {
+  /* Доска B: текущий шаг — янтарная КАПСУЛА, остальные точки серые.
+     «Где я» читается и без цвета — форма отличается, не только оттенок. */
+  background: var(--pr-grad-amber);
+  inline-size: 18px;
+}
+.compactDotError {
+  background: var(--pr-red);
+}
+.compactLabel {
+  min-inline-size: 0;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-2);
+  color: var(--pr-ink);
+  font-variant-numeric: tabular-nums;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Полный ряд шагов — только там, где он влезает в одну строку. */
+@media (max-width: 767.98px) {
+  .stepper {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .compact {
+    display: none;
+  }
+}

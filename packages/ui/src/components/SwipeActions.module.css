@@ -1,0 +1,95 @@
+.wrap {
+  position: relative;
+  /* Сдвиг строки живёт внутри неё: наружу горизонтальной прокрутки не даём. */
+  overflow: clip;
+  background: var(--pr-sand);
+}
+/* На десктопе жеста нет (DEV-20_2 §2: свайп — только тач), зато есть меню «⋯»,
+   и оно раскрывается ВНИЗ, за нижнюю границу строки. `overflow: clip` резал его
+   ровно по краю: сам пункт оставался в раскладке, но клик по нему уходил
+   следующей строке — Playwright ловил это как «amount из соседней строки
+   перехватывает указатель». Клип нужен только там, где строка реально ездит. */
+@media (min-width: 1024px) {
+  .wrap {
+    overflow: visible;
+  }
+}
+/* Направление свайпа — логическое: в RTL строка уезжает в другую сторону. */
+.wrap {
+  --pr-swipe-dir: -1;
+}
+:global([dir='rtl']) .wrap {
+  --pr-swipe-dir: 1;
+}
+.actions {
+  position: absolute;
+  inset-block: 0;
+  inset-inline-end: 0;
+  display: flex;
+  align-items: stretch;
+}
+.action {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  background: var(--pr-sand);
+  color: var(--pr-ink);
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-2);
+  padding-inline: var(--pr-sp-3);
+  min-inline-size: 56px;
+}
+.action + .action {
+  border-inline-start: 1px solid var(--pr-hairline);
+}
+.destructive {
+  color: var(--pr-red);
+}
+.sled {
+  position: relative;
+  background: var(--pr-white);
+  touch-action: pan-y;
+  transition: transform var(--pr-dur) var(--pr-ease);
+}
+.dragging {
+  transition: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .sled {
+    transition: none;
+  }
+}
+/* Запасной вход для клавиатуры и скринридера: жеста у них нет, а действия
+   должны быть. Видимым становится только по фокусу (§10). */
+.a11yTrigger {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  appearance: none;
+  border: none;
+  background: none;
+}
+.a11yTrigger:focus-visible {
+  position: absolute;
+  inset-block-start: var(--pr-sp-1);
+  inset-inline-end: var(--pr-sp-1);
+  inline-size: auto;
+  block-size: auto;
+  clip-path: none;
+  overflow: visible;
+  z-index: 2;
+  padding: var(--pr-sp-1) var(--pr-sp-2);
+  border-radius: var(--pr-r-sm);
+  background: var(--pr-white);
+  color: var(--pr-ink);
+  font-size: var(--pr-fs-xs);
+  outline: 2px solid var(--pr-amber);
+}
+.sheetActions {
+  display: grid;
+  gap: var(--pr-sp-2);
+}

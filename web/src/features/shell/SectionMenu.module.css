@@ -1,0 +1,107 @@
+.wrap {
+  position: relative;
+  min-width: 0;
+  display: none;
+}
+@media (max-width: 1023.98px) {
+  .wrap {
+    display: block;
+  }
+}
+/* DEV-20 §4 отменяет янтарный пилл отсмотра 24.08: заголовок экрана —
+   компактный (16–18) и без «плаката» в углу. Кликабельность несёт шеврон и
+   состояние наведения, а не заливка: на плотном экране яркая плашка спорит
+   с единственной primary-кнопкой экрана («одна вспышка на экран», DEV-17 §3). */
+.trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-1);
+  max-width: 100%;
+  min-height: var(--pr-touch-min);
+  padding: var(--pr-sp-1) var(--pr-sp-2);
+  border: 0;
+  border-radius: var(--pr-r-md);
+  background: none;
+  color: var(--pr-ink);
+  font: inherit;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-screen);
+  cursor: pointer;
+}
+.trigger:hover {
+  background: var(--pr-sand);
+}
+.trigger:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: 2px;
+}
+.triggerTitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.chevronOpen {
+  transform: rotate(180deg);
+}
+.menu {
+  position: absolute;
+  top: calc(100% + var(--pr-sp-2));
+  inset-inline-start: 0;
+  z-index: 40;
+  min-width: 260px;
+  max-width: calc(100vw - var(--pr-sp-8));
+  margin: 0;
+  padding: var(--pr-sp-2);
+  list-style: none;
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  box-shadow: 0 12px 32px rgba(20, 30, 40, 0.18);
+  display: grid;
+  gap: 2px;
+}
+.item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  min-height: var(--pr-touch-min);
+  padding: var(--pr-sp-2) var(--pr-sp-3);
+  border: 0;
+  border-radius: var(--pr-r-md);
+  background: none;
+  color: var(--pr-ink);
+  font: inherit;
+  cursor: pointer;
+  text-align: start;
+}
+.item:hover,
+.item:focus-visible {
+  background: var(--pr-cream);
+  outline: none;
+}
+.itemActive {
+  background: var(--pr-sand);
+  font-weight: var(--pr-fw-semibold);
+}
+.itemLabel {
+  flex: 1;
+  min-width: 0;
+}
+.badge {
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: var(--pr-r-pill);
+  background: var(--pr-amber-deep);
+  color: var(--pr-text-inv);
+  font-size: var(--pr-fs-xs);
+  font-weight: var(--pr-fw-semibold);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.check {
+  color: var(--pr-teal);
+}

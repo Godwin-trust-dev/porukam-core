@@ -1,0 +1,21 @@
+.wrap {
+  display: grid;
+  gap: var(--pr-sp-2);
+}
+
+.sectionTitle {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  /* DEV-20 §1: заголовок раздела — «надпись» 13–14, не h3-плакат. */
+  font-size: var(--pr-d-fs-section);
+  text-transform: uppercase;
+  letter-spacing: var(--pr-ls-eyebrow);
+  color: var(--pr-text-2);
+  margin-top: var(--pr-sp-5);
+}
+
+.groupsHint {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+  margin: 0 0 var(--pr-sp-2);
+}

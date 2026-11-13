@@ -1,0 +1,109 @@
+.trigger {
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  color: var(--pr-teal-deep);
+  font-size: var(--pr-fs-sm);
+  font-weight: var(--pr-fw-medium);
+  min-height: var(--pr-touch-min);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  text-align: start;
+}
+.trigger:focus-visible,
+.rowTrigger:focus-visible {
+  outline: 2px solid var(--pr-amber);
+  outline-offset: 2px;
+}
+.panel {
+  margin-top: var(--pr-sp-3);
+  display: grid;
+  gap: var(--pr-sp-3);
+}
+
+/* ── variant="row": строка-заголовок на поверхности (DEV-20_2 §4) ── */
+.rowWrap {
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-d-r-surface);
+  background: var(--pr-white);
+  overflow: clip;
+}
+/* Внутри `Surface` рамка и радиус — у поверхности, а не у каждого блока. */
+.rowFlush {
+  border: none;
+  border-radius: 0;
+}
+.rowTrigger {
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  inline-size: 100%;
+  min-block-size: var(--pr-touch-min);
+  padding: var(--pr-d-row-pad-y) var(--pr-d-row-pad-x);
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-body);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-ink);
+  text-align: start;
+}
+.attention {
+  box-shadow: inset 3px 0 0 0 var(--pr-amber);
+}
+:global([dir='rtl']) .attention {
+  box-shadow: inset -3px 0 0 0 var(--pr-amber);
+}
+.label {
+  flex: 1;
+  min-inline-size: 0;
+}
+.count {
+  flex: none;
+  min-inline-size: 20px;
+  padding: 1px var(--pr-sp-2);
+  border-radius: var(--pr-r-pill);
+  background: var(--pr-spark);
+  color: var(--pr-amber-ink);
+  font-size: var(--pr-fs-xs);
+  font-weight: var(--pr-fw-bold);
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+/* Шеврон рисуем рамкой, а не иконкой: в наборе (37 икон) его нет, а заводить
+   38-ю ради одного угла — лишняя сущность. */
+.chevron {
+  flex: none;
+  inline-size: 8px;
+  block-size: 8px;
+  border-inline-end: 2px solid var(--pr-text-2);
+  border-block-end: 2px solid var(--pr-text-2);
+  transform: rotate(45deg);
+  margin-block-end: 3px;
+  transition: transform var(--pr-dur-fast) var(--pr-ease);
+}
+.chevron[data-open] {
+  transform: rotate(-135deg);
+  margin-block: 3px 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .chevron {
+    transition: none;
+  }
+}
+/* Тело — на всю ширину блока (§4), а не колонкой под заголовком. */
+.rowPanel {
+  border-block-start: 1px solid var(--pr-hairline);
+  padding: var(--pr-d-pad-card) var(--pr-d-row-pad-x);
+  display: grid;
+  gap: var(--pr-sp-3);
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-text-2);
+}

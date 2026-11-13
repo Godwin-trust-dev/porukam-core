@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "Ngôn ngữ giao diện",
+  "globeTriggerAria": "Ngôn ngữ giao diện",
+  "rowLabel": "Ngôn ngữ giao diện",
+  "listTitle": "Ngôn ngữ giao diện",
+  "searchPlaceholder": "Tìm ngôn ngữ…",
+  "searchAriaLabel": "Tìm ngôn ngữ",
+  "searchClear": "Xóa nội dung tìm",
+  "currentSectionTitle": "Hiện tại",
+  "allSectionTitle": "Tất cả ngôn ngữ",
+  "noResults": "Không tìm thấy ngôn ngữ nào",
+  "betaBadge": "dịch tự động",
+  "betaTooltip": "Dịch tự động — có thể chưa chính xác",
+  "currentAria": "Ngôn ngữ hiện tại",
+  "disabledToast": "{{lang}} tạm thời không dùng được · chúng tôi hiển thị tiếng Anh",
+  "closeLabel": "Đóng",
+  "onboardingHint": "Được nhận diện tự động — bạn có thể đổi bất cứ lúc nào",
+  "settingsRowLabel": "Ngôn ngữ và khu vực",
+  "settingsLanguageExplain": "Đây là ngôn ngữ của ứng dụng. Ngôn ngữ chính thức của hợp đồng được chọn riêng — đối tác thấy bản dịch, nhưng bản được ký là văn bản chính thức.",
+  "loadErrorRetry": "Thử lại",
+  "loadError": "Không tải được danh sách ngôn ngữ"
+}

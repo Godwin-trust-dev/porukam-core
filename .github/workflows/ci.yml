@@ -1,0 +1,80 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: porukam
+          POSTGRES_PASSWORD: porukam
+          POSTGRES_DB: porukam
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U porukam" --health-interval 5s
+          --health-timeout 3s --health-retries 10
+      postgres_audit:
+        image: postgres:16
+        env:
+          POSTGRES_USER: audit_vault
+          POSTGRES_PASSWORD: audit_vault
+          POSTGRES_DB: audit_vault
+        ports: ["5433:5432"]
+        options: >-
+          --health-cmd "pg_isready -U audit_vault" --health-interval 5s
+          --health-timeout 3s --health-retries 10
+      redis_cache:
+        image: redis:7
+        ports: ["6379:6379"]
+      redis_broker:
+        image: redis:7
+        ports: ["6380:6379"]
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+          cache-dependency-glob: backend/uv.lock
+      - name: Environment for tests (development defaults only)
+        run: cp .env.example .env
+      - run: uv sync --frozen
+      - name: Lint (ruff, mypy, import-linter)
+        run: |
+          uv run ruff check .
+          uv run ruff format --check .
+          uv run mypy manage.py config common apps services
+          uv run lint-imports
+      - name: Tests
+        run: uv run pytest
+
+  frontend:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npm run lint:terms
+      - run: npm run lint:i18n
+      - run: npm run typecheck
+      - run: npm test

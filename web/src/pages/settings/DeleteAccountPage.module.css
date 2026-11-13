@@ -1,0 +1,56 @@
+.wrap {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: var(--pr-density-cozy);
+  display: grid;
+  /* `minmax(0, 1fr)`, а не `auto`: колонка `auto` растягивалась до min-content
+     пары кнопок «Отмена/Понимаю, продолжить» и уносила весь экран за правый
+     край на 390px (отсмотр 2026-08-25). */
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--pr-sp-4);
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--pr-touch-min);
+  height: var(--pr-touch-min);
+  border: none;
+  background: none;
+  color: var(--pr-ink);
+  cursor: pointer;
+  justify-self: start;
+}
+.backBtn:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: 2px;
+}
+
+.title {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-fs-h2);
+  color: var(--pr-ink);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-3);
+}
+
+.docLink {
+  justify-self: start;
+  color: var(--pr-teal);
+  font-size: var(--pr-fs-sm);
+}
+
+.blockedText {
+  margin: 0 0 var(--pr-sp-2);
+}
+
+.error {
+  margin: 0;
+  color: var(--pr-red);
+}

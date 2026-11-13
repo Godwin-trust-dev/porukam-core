@@ -1,0 +1,26 @@
+/* Плашка стоит между блоками страницы, поэтому отступ снаружи задаём здесь,
+   а не в Callout: сам Callout используется и внутри карточек. */
+.wrap {
+  display: grid;
+  gap: var(--pr-sp-2);
+}
+
+.text {
+  margin: 0;
+  font-size: var(--pr-fs-sm);
+}
+
+/* Путь по системным настройкам читается как инструкция, а не как проза:
+   моноширинным не делаем (это не код), но отделяем от объяснения. */
+.steps {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--pr-sp-1) var(--pr-sp-3);
+}

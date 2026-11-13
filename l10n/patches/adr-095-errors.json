@@ -1,0 +1,292 @@
+{
+  "en": {
+    "errors": {
+      "acting_profile_not_allowed": "This profile is not yours, and you are not a representative of its legal entity.",
+      "invalid_acting_profile_header": "The acting profile header must be a UUID.",
+      "drive_connect_state_invalid": "The Drive connection session has expired or is no longer valid.",
+      "drive_connect_code_invalid": "Google did not recognise the code, or it granted no offline access.",
+      "drive_no_google_login": "Sign in with Google first, then connect Drive.",
+      "legal_document_not_published": "This document has not been published yet."
+    }
+  },
+  "ru": {
+    "errors": {
+      "acting_profile_not_allowed": "Профиль не принадлежит вам, и вы не представитель его юрлица.",
+      "invalid_acting_profile_header": "Заголовок действующего профиля должен быть UUID.",
+      "drive_connect_state_invalid": "Сессия подключения Drive истекла или недействительна.",
+      "drive_connect_code_invalid": "Код Google не распознан или не дал офлайн-доступа.",
+      "drive_no_google_login": "Сначала войдите через Google, потом подключайте Drive.",
+      "legal_document_not_published": "Документ пока не опубликован."
+    }
+  },
+  "de": {
+    "errors": {
+      "acting_profile_not_allowed": "Dieses Profil gehört Ihnen nicht, und Sie sind kein Vertreter seiner juristischen Person.",
+      "invalid_acting_profile_header": "Der Header des handelnden Profils muss eine UUID sein.",
+      "drive_connect_state_invalid": "Die Sitzung zur Drive-Verbindung ist abgelaufen oder ungültig.",
+      "drive_connect_code_invalid": "Google hat den Code nicht erkannt oder keinen Offline-Zugriff gewährt.",
+      "drive_no_google_login": "Melden Sie sich zuerst mit Google an und verbinden Sie dann Drive.",
+      "legal_document_not_published": "Dieses Dokument wurde noch nicht veröffentlicht."
+    }
+  },
+  "es": {
+    "errors": {
+      "acting_profile_not_allowed": "Este perfil no es suyo y usted no es representante de su persona jurídica.",
+      "invalid_acting_profile_header": "La cabecera del perfil activo debe ser un UUID.",
+      "drive_connect_state_invalid": "La sesión de conexión con Drive ha caducado o no es válida.",
+      "drive_connect_code_invalid": "Google no reconoció el código o no concedió acceso sin conexión.",
+      "drive_no_google_login": "Primero inicie sesión con Google y después conecte Drive.",
+      "legal_document_not_published": "Este documento aún no está publicado."
+    }
+  },
+  "fr": {
+    "errors": {
+      "acting_profile_not_allowed": "Ce profil ne vous appartient pas et vous n'êtes pas représentant de sa personne morale.",
+      "invalid_acting_profile_header": "L'en-tête du profil actif doit être un UUID.",
+      "drive_connect_state_invalid": "La session de connexion à Drive a expiré ou n'est plus valide.",
+      "drive_connect_code_invalid": "Google n'a pas reconnu le code ou n'a pas accordé d'accès hors ligne.",
+      "drive_no_google_login": "Connectez-vous d'abord avec Google, puis reliez Drive.",
+      "legal_document_not_published": "Ce document n'est pas encore publié."
+    }
+  },
+  "it": {
+    "errors": {
+      "acting_profile_not_allowed": "Questo profilo non è suo e lei non è rappresentante della sua persona giuridica.",
+      "invalid_acting_profile_header": "L'intestazione del profilo attivo deve essere un UUID.",
+      "drive_connect_state_invalid": "La sessione di collegamento a Drive è scaduta o non è più valida.",
+      "drive_connect_code_invalid": "Google non ha riconosciuto il codice o non ha concesso l'accesso offline.",
+      "drive_no_google_login": "Acceda prima con Google, poi colleghi Drive.",
+      "legal_document_not_published": "Questo documento non è ancora pubblicato."
+    }
+  },
+  "pt-BR": {
+    "errors": {
+      "acting_profile_not_allowed": "Este perfil não é seu e você não é representante da pessoa jurídica dele.",
+      "invalid_acting_profile_header": "O cabeçalho do perfil ativo deve ser um UUID.",
+      "drive_connect_state_invalid": "A sessão de conexão com o Drive expirou ou não é mais válida.",
+      "drive_connect_code_invalid": "O Google não reconheceu o código ou não concedeu acesso off-line.",
+      "drive_no_google_login": "Entre com o Google primeiro e depois conecte o Drive.",
+      "legal_document_not_published": "Este documento ainda não foi publicado."
+    }
+  },
+  "pl": {
+    "errors": {
+      "acting_profile_not_allowed": "Ten profil nie należy do Ciebie i nie jesteś przedstawicielem jego osoby prawnej.",
+      "invalid_acting_profile_header": "Nagłówek profilu działającego musi być identyfikatorem UUID.",
+      "drive_connect_state_invalid": "Sesja połączenia z Dyskiem wygasła lub jest nieważna.",
+      "drive_connect_code_invalid": "Google nie rozpoznał kodu albo nie przyznał dostępu offline.",
+      "drive_no_google_login": "Najpierw zaloguj się przez Google, potem podłącz Dysk.",
+      "legal_document_not_published": "Ten dokument nie został jeszcze opublikowany."
+    }
+  },
+  "ro": {
+    "errors": {
+      "acting_profile_not_allowed": "Acest profil nu vă aparține și nu sunteți reprezentantul persoanei juridice a acestuia.",
+      "invalid_acting_profile_header": "Antetul profilului activ trebuie să fie un UUID.",
+      "drive_connect_state_invalid": "Sesiunea de conectare la Drive a expirat sau nu mai este valabilă.",
+      "drive_connect_code_invalid": "Google nu a recunoscut codul sau nu a acordat acces offline.",
+      "drive_no_google_login": "Conectați-vă mai întâi cu Google, apoi conectați Drive.",
+      "legal_document_not_published": "Acest document nu este încă publicat."
+    }
+  },
+  "uk": {
+    "errors": {
+      "acting_profile_not_allowed": "Цей профіль не належить вам, і ви не представник його юридичної особи.",
+      "invalid_acting_profile_header": "Заголовок чинного профілю має бути UUID.",
+      "drive_connect_state_invalid": "Сесія підключення Drive завершилася або недійсна.",
+      "drive_connect_code_invalid": "Google не розпізнав код або не надав офлайн-доступу.",
+      "drive_no_google_login": "Спочатку увійдіть через Google, а потім підключайте Drive.",
+      "legal_document_not_published": "Документ ще не опубліковано."
+    }
+  },
+  "tr": {
+    "errors": {
+      "acting_profile_not_allowed": "Bu profil size ait değil ve tüzel kişiliğinin temsilcisi de değilsiniz.",
+      "invalid_acting_profile_header": "Etkin profil başlığı bir UUID olmalıdır.",
+      "drive_connect_state_invalid": "Drive bağlantı oturumunun süresi doldu veya oturum geçersiz.",
+      "drive_connect_code_invalid": "Google kodu tanımadı ya da çevrimdışı erişim vermedi.",
+      "drive_no_google_login": "Önce Google ile oturum açın, sonra Drive'ı bağlayın.",
+      "legal_document_not_published": "Bu belge henüz yayımlanmadı."
+    }
+  },
+  "az": {
+    "errors": {
+      "acting_profile_not_allowed": "Bu profil sizə aid deyil və siz onun hüquqi şəxsinin nümayəndəsi deyilsiniz.",
+      "invalid_acting_profile_header": "Fəaliyyət göstərən profil başlığı UUID olmalıdır.",
+      "drive_connect_state_invalid": "Drive qoşulma sessiyasının vaxtı bitib və ya sessiya etibarsızdır.",
+      "drive_connect_code_invalid": "Google kodu tanımadı və ya oflayn giriş vermədi.",
+      "drive_no_google_login": "Əvvəlcə Google ilə daxil olun, sonra Drive-ı qoşun.",
+      "legal_document_not_published": "Bu sənəd hələ dərc edilməyib."
+    }
+  },
+  "uz": {
+    "errors": {
+      "acting_profile_not_allowed": "Bu profil sizga tegishli emas va siz uning yuridik shaxsi vakili ham emassiz.",
+      "invalid_acting_profile_header": "Amaldagi profil sarlavhasi UUID bo'lishi kerak.",
+      "drive_connect_state_invalid": "Drive'ga ulanish seansi tugadi yoki yaroqsiz.",
+      "drive_connect_code_invalid": "Google kodni tanimadi yoki oflayn kirish bermadi.",
+      "drive_no_google_login": "Avval Google orqali kiring, so'ng Drive'ni ulang.",
+      "legal_document_not_published": "Bu hujjat hali chop etilmagan."
+    }
+  },
+  "kk": {
+    "errors": {
+      "acting_profile_not_allowed": "Бұл профиль сізге тиесілі емес және сіз оның заңды тұлғасының өкілі емессіз.",
+      "invalid_acting_profile_header": "Әрекеттегі профиль тақырыбы UUID болуы тиіс.",
+      "drive_connect_state_invalid": "Drive-қа қосылу сеансының мерзімі бітті немесе жарамсыз.",
+      "drive_connect_code_invalid": "Google кодты танымады немесе офлайн қатынас бермеді.",
+      "drive_no_google_login": "Алдымен Google арқылы кіріңіз, содан кейін Drive-ты қосыңыз.",
+      "legal_document_not_published": "Бұл құжат әлі жарияланбаған."
+    }
+  },
+  "hy": {
+    "errors": {
+      "acting_profile_not_allowed": "Այս պրոֆիլը ձերը չէ, և դուք դրա իրավաբանական անձի ներկայացուցիչը չեք։",
+      "invalid_acting_profile_header": "Գործող պրոֆիլի վերնագիրը պետք է լինի UUID։",
+      "drive_connect_state_invalid": "Drive-ի միացման նստաշրջանը լրացել է կամ վավեր չէ։",
+      "drive_connect_code_invalid": "Google-ը կոդը չճանաչեց կամ չտրամադրեց օֆլայն մուտք։",
+      "drive_no_google_login": "Նախ մուտք գործեք Google-ով, ապա միացրեք Drive-ը։",
+      "legal_document_not_published": "Այս փաստաթուղթը դեռ հրապարակված չէ։"
+    }
+  },
+  "ka": {
+    "errors": {
+      "acting_profile_not_allowed": "ეს პროფილი თქვენი არ არის და მისი იურიდიული პირის წარმომადგენელიც არ ხართ.",
+      "invalid_acting_profile_header": "მოქმედი პროფილის სათაური UUID უნდა იყოს.",
+      "drive_connect_state_invalid": "Drive-თან დაკავშირების სესიას ვადა გაუვიდა ან ის აღარ მოქმედებს.",
+      "drive_connect_code_invalid": "Google-მა კოდი ვერ ამოიცნო ან ოფლაინ წვდომა არ მოგცათ.",
+      "drive_no_google_login": "ჯერ Google-ით შედით, შემდეგ დააკავშირეთ Drive.",
+      "legal_document_not_published": "ეს დოკუმენტი ჯერ არ გამოქვეყნებულა."
+    }
+  },
+  "ja": {
+    "errors": {
+      "acting_profile_not_allowed": "このプロフィールはあなたのものではなく、その法人の代表者でもありません。",
+      "invalid_acting_profile_header": "操作プロフィールのヘッダーは UUID である必要があります。",
+      "drive_connect_state_invalid": "Drive 接続のセッションが期限切れか、無効です。",
+      "drive_connect_code_invalid": "Google がコードを認識しなかったか、オフラインアクセスが許可されませんでした。",
+      "drive_no_google_login": "先に Google でログインしてから Drive を接続してください。",
+      "legal_document_not_published": "この文書はまだ公開されていません。"
+    }
+  },
+  "ko": {
+    "errors": {
+      "acting_profile_not_allowed": "이 프로필은 회원님의 것이 아니며, 해당 법인의 대리인도 아닙니다.",
+      "invalid_acting_profile_header": "활동 프로필 헤더는 UUID여야 합니다.",
+      "drive_connect_state_invalid": "Drive 연결 세션이 만료되었거나 유효하지 않습니다.",
+      "drive_connect_code_invalid": "Google이 코드를 인식하지 못했거나 오프라인 액세스를 허용하지 않았습니다.",
+      "drive_no_google_login": "먼저 Google로 로그인한 다음 Drive를 연결하세요.",
+      "legal_document_not_published": "이 문서는 아직 공개되지 않았습니다."
+    }
+  },
+  "zh-Hans": {
+    "errors": {
+      "acting_profile_not_allowed": "该档案不属于您，您也不是其法人主体的代表。",
+      "invalid_acting_profile_header": "当前操作档案的请求头必须是 UUID。",
+      "drive_connect_state_invalid": "Drive 连接会话已过期或失效。",
+      "drive_connect_code_invalid": "Google 未能识别该授权码，或未授予离线访问权限。",
+      "drive_no_google_login": "请先使用 Google 登录，然后再连接 Drive。",
+      "legal_document_not_published": "该文件尚未发布。"
+    }
+  },
+  "vi": {
+    "errors": {
+      "acting_profile_not_allowed": "Hồ sơ này không thuộc về bạn và bạn cũng không phải người đại diện pháp nhân của hồ sơ.",
+      "invalid_acting_profile_header": "Tiêu đề hồ sơ đang hoạt động phải là một UUID.",
+      "drive_connect_state_invalid": "Phiên kết nối Drive đã hết hạn hoặc không còn hợp lệ.",
+      "drive_connect_code_invalid": "Google không nhận diện được mã hoặc không cấp quyền truy cập ngoại tuyến.",
+      "drive_no_google_login": "Hãy đăng nhập bằng Google trước, sau đó kết nối Drive.",
+      "legal_document_not_published": "Tài liệu này chưa được công bố."
+    }
+  },
+  "th": {
+    "errors": {
+      "acting_profile_not_allowed": "โปรไฟล์นี้ไม่ใช่ของคุณ และคุณก็ไม่ใช่ผู้แทนนิติบุคคลของโปรไฟล์นี้",
+      "invalid_acting_profile_header": "ส่วนหัวของโปรไฟล์ที่ใช้งานต้องเป็น UUID",
+      "drive_connect_state_invalid": "เซสชันการเชื่อมต่อ Drive หมดอายุหรือไม่ถูกต้องแล้ว",
+      "drive_connect_code_invalid": "Google ไม่รู้จักรหัสนี้ หรือไม่ได้ให้สิทธิ์เข้าถึงแบบออฟไลน์",
+      "drive_no_google_login": "กรุณาเข้าสู่ระบบด้วย Google ก่อน แล้วจึงเชื่อมต่อ Drive",
+      "legal_document_not_published": "เอกสารนี้ยังไม่ได้เผยแพร่"
+    }
+  },
+  "id": {
+    "errors": {
+      "acting_profile_not_allowed": "Profil ini bukan milik Anda dan Anda juga bukan perwakilan badan hukumnya.",
+      "invalid_acting_profile_header": "Header profil yang sedang bertindak harus berupa UUID.",
+      "drive_connect_state_invalid": "Sesi koneksi Drive sudah kedaluwarsa atau tidak berlaku.",
+      "drive_connect_code_invalid": "Google tidak mengenali kode tersebut atau tidak memberikan akses luring.",
+      "drive_no_google_login": "Masuk dengan Google terlebih dahulu, lalu hubungkan Drive.",
+      "legal_document_not_published": "Dokumen ini belum dipublikasikan."
+    }
+  },
+  "hi": {
+    "errors": {
+      "acting_profile_not_allowed": "यह प्रोफ़ाइल आपकी नहीं है और आप इसकी कानूनी इकाई के प्रतिनिधि भी नहीं हैं।",
+      "invalid_acting_profile_header": "सक्रिय प्रोफ़ाइल हेडर UUID होना चाहिए।",
+      "drive_connect_state_invalid": "Drive कनेक्शन सत्र समाप्त हो गया है या अमान्य है।",
+      "drive_connect_code_invalid": "Google ने कोड नहीं पहचाना या ऑफ़लाइन पहुँच नहीं दी।",
+      "drive_no_google_login": "पहले Google से साइन इन करें, फिर Drive जोड़ें।",
+      "legal_document_not_published": "यह दस्तावेज़ अभी प्रकाशित नहीं हुआ है।"
+    }
+  },
+  "bn": {
+    "errors": {
+      "acting_profile_not_allowed": "এই প্রোফাইলটি আপনার নয় এবং আপনি এর আইনি সত্তার প্রতিনিধিও নন।",
+      "invalid_acting_profile_header": "সক্রিয় প্রোফাইলের হেডার অবশ্যই UUID হতে হবে।",
+      "drive_connect_state_invalid": "Drive সংযোগের সেশনের মেয়াদ শেষ হয়েছে বা এটি আর বৈধ নয়।",
+      "drive_connect_code_invalid": "Google কোডটি শনাক্ত করেনি অথবা অফলাইন অ্যাক্সেস দেয়নি।",
+      "drive_no_google_login": "আগে Google দিয়ে সাইন ইন করুন, তারপর Drive যুক্ত করুন।",
+      "legal_document_not_published": "এই নথিটি এখনও প্রকাশিত হয়নি।"
+    }
+  },
+  "ur": {
+    "errors": {
+      "acting_profile_not_allowed": "یہ پروفائل آپ کی نہیں ہے اور آپ اس کے قانونی ادارے کے نمائندے بھی نہیں ہیں۔",
+      "invalid_acting_profile_header": "فعال پروفائل کا ہیڈر UUID ہونا چاہیے۔",
+      "drive_connect_state_invalid": "Drive کنکشن کا سیشن ختم ہو چکا ہے یا غیر مؤثر ہے۔",
+      "drive_connect_code_invalid": "Google نے کوڈ کو نہیں پہچانا یا آف لائن رسائی نہیں دی۔",
+      "drive_no_google_login": "پہلے Google سے سائن اِن کریں، پھر Drive منسلک کریں۔",
+      "legal_document_not_published": "یہ دستاویز ابھی شائع نہیں ہوئی۔"
+    }
+  },
+  "sw": {
+    "errors": {
+      "acting_profile_not_allowed": "Wasifu huu si wako, na wewe si mwakilishi wa taasisi yake ya kisheria.",
+      "invalid_acting_profile_header": "Kichwa cha wasifu unaotumika lazima kiwe UUID.",
+      "drive_connect_state_invalid": "Kipindi cha kuunganisha Drive kimeisha muda au si halali.",
+      "drive_connect_code_invalid": "Google haikutambua msimbo au haikutoa ufikiaji nje ya mtandao.",
+      "drive_no_google_login": "Ingia kwa Google kwanza, kisha unganisha Drive.",
+      "legal_document_not_published": "Hati hii bado haijachapishwa."
+    }
+  },
+  "ar": {
+    "errors": {
+      "acting_profile_not_allowed": "هذا الملف الشخصي ليس ملكك، ولست ممثلاً للكيان القانوني التابع له.",
+      "invalid_acting_profile_header": "يجب أن يكون ترويسة الملف الشخصي الفاعل من نوع UUID.",
+      "drive_connect_state_invalid": "انتهت صلاحية جلسة الاتصال بـ Drive أو لم تعد صالحة.",
+      "drive_connect_code_invalid": "لم يتعرّف Google على الرمز أو لم يمنح وصولاً دون اتصال.",
+      "drive_no_google_login": "سجّل الدخول عبر Google أولاً، ثم اربط Drive.",
+      "legal_document_not_published": "لم يُنشر هذا المستند بعد."
+    }
+  },
+  "fa": {
+    "errors": {
+      "acting_profile_not_allowed": "این نمایه از آنِ شما نیست و نمایندهٔ شخصیت حقوقی آن هم نیستید.",
+      "invalid_acting_profile_header": "سرایند نمایهٔ فعال باید UUID باشد.",
+      "drive_connect_state_invalid": "نشست اتصال به Drive منقضی شده یا دیگر معتبر نیست.",
+      "drive_connect_code_invalid": "Google کد را نشناخت یا دسترسی برون‌خط نداد.",
+      "drive_no_google_login": "ابتدا با Google وارد شوید، سپس Drive را متصل کنید.",
+      "legal_document_not_published": "این سند هنوز منتشر نشده است."
+    }
+  },
+  "he": {
+    "errors": {
+      "acting_profile_not_allowed": "הפרופיל הזה אינו שלך, ואינך נציג של הישות המשפטית שלו.",
+      "invalid_acting_profile_header": "הכותרת של הפרופיל הפעיל חייבת להיות UUID.",
+      "drive_connect_state_invalid": "תוקף הפעלת החיבור ל-Drive פג או שאינה תקפה עוד.",
+      "drive_connect_code_invalid": "Google לא זיהה את הקוד או שלא העניק גישה לא מקוונת.",
+      "drive_no_google_login": "התחבר תחילה באמצעות Google, ולאחר מכן חבר את Drive.",
+      "legal_document_not_published": "המסמך הזה טרם פורסם."
+    }
+  }
+}

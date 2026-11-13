@@ -1,0 +1,65 @@
+/* Строку рисует ListRow (DEV-20 §2); здесь — только то, что специфично
+   для сделки: ссылка на контрагента и десктопное меню действий. */
+
+.counterparty {
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+  color: var(--pr-teal-deep);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+/* Слот контрагента (веб-слой отдаёт готовую ссылку) — в потоке меты, тем
+   же цветом, что вся вторая строка (финал доска A: «Анна К. · вы
+   исполнитель · в работе» без подчёркиваний и бирюзы). */
+.counterpartySlot {
+  color: inherit;
+  display: inline;
+  min-inline-size: 0;
+}
+
+/* Сфера/способ расчёта во второй строке — только с 600px: на телефоне
+   роль и статус словом важнее, а третий сегмент усекал роль до «вы …». */
+@media (max-width: 599.98px) {
+  .tailOptional {
+    display: none;
+  }
+}
+
+/* На тач-экране действий в строке нет вовсе (DEV-20_2 §2): свайп и долгий
+   тап — `SwipeActions`. Меню остаётся только там, где жеста не существует. */
+.actionsDesktop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .actionsDesktop {
+    /* Поверх правого края строки (ListRow — `position: relative`), места в
+       потоке не занимает: в колонке master-detail 440px резерв под «⋯»
+       обрезал название до «Дизайн-проект ку…» (compact-десктоп такого не
+       показывает). Проявляется по наведению/фокусу строки. */
+    position: absolute;
+    inset-inline-end: var(--pr-sp-1);
+    inset-block-start: 50%;
+    transform: translateY(-50%);
+    /* Заведомо выше остального содержимого строки — раскрытое меню перекрывает
+       соседние строки, не только собственную колонку. */
+    z-index: 20;
+    display: block;
+    opacity: 0;
+    transition: opacity var(--pr-dur-fast) var(--pr-ease);
+  }
+  :global([data-testid='contract-list-row']):hover .actionsDesktop,
+  :global([data-testid='contract-list-row']):focus-within .actionsDesktop,
+  .actionsDesktop:focus-within {
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .actionsDesktop {
+    transition: none;
+  }
+}

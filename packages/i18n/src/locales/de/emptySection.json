@@ -1,0 +1,12 @@
+{
+  "title": "Bereich „{{name}}“",
+  "text": "Der Arbeitsbereich für diesen Abschnitt kommt bald.",
+  "feed": "Hier entsteht ein Ereignis-Feed zu Ihren Verträgen und Kontakten.",
+  "search": "Hier entsteht die Suche nach Auftragnehmern und Aufträgen im Katalog.",
+  "stages": "Hier sammeln sich die Etappen aller Ihrer Geschäfte: was übergeben wird, was in der Abnahme ist, welche Fristen laufen.",
+  "payments": "Hier entsteht die Zahlungshistorie zu Etappen und Verträgen – mit Status und Bestätigungen.",
+  "disputes": "Hier finden Sie Ihre Streitfälle: Status, Fristen und Nachweise zu jedem Fall.",
+  "reputation": "Hier entsteht Ihre Reputation: bestätigte Geschäfte und faktenbasierte Bewertungen.",
+  "chat": "Hier entsteht die Kommunikation zu Geschäften – verknüpft mit Vertrag und Etappen.",
+  "groups": "Hier entstehen Gruppen: gemeinsame Adresse, Mitglieder und Geschäfte unter einem Namen."
+}

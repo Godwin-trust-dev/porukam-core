@@ -1,0 +1,12 @@
+{
+  "title": "Sehemu ya “{{name}}”",
+  "text": "Eneo la kazi la sehemu hii linakuja hivi karibuni.",
+  "feed": "Hapa kutakuwa na mkondo wa matukio ya miamala na mawasiliano yako.",
+  "search": "Hapa kutakuwa na utafutaji wa wakandarasi na oda kwenye katalogi.",
+  "stages": "Hapa zitakusanyika hatua za miamala yako yote: kinachokabidhiwa, kilicho kwenye upokeaji, muda upi unaendelea.",
+  "payments": "Hapa kutakuwa na historia ya malipo kwa hatua na mikataba — pamoja na hali na uthibitisho.",
+  "disputes": "Hapa kutakuwa na migogoro yako: hali, muda na ushahidi wa kila mmoja.",
+  "reputation": "Hapa kutakuwa na sifa yako: miamala iliyothibitishwa na maoni yanayotegemea ukweli.",
+  "chat": "Hapa kutakuwa na mawasiliano ya miamala — yaliyofungwa na mkataba na hatua zake.",
+  "groups": "Hapa kutakuwa na vikundi: anwani ya pamoja, wanachama na miamala chini ya jina moja."
+}

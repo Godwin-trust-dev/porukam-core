@@ -1,0 +1,12 @@
+{
+  "title": "Bagian “{{name}}”",
+  "text": "Ruang kerja bagian ini akan segera hadir.",
+  "feed": "Di sini akan ada umpan peristiwa dari transaksi dan kontak Anda.",
+  "search": "Di sini akan ada pencarian penyedia dan pesanan di katalog.",
+  "stages": "Di sini akan terkumpul tahap dari semua transaksi Anda: apa yang diserahkan, apa yang dalam penerimaan, tenggat mana yang berjalan.",
+  "payments": "Di sini akan ada riwayat pembayaran per tahap dan kontrak — dengan status dan konfirmasi.",
+  "disputes": "Di sini akan ada sengketa Anda: status, tenggat, dan bukti untuk masing-masing.",
+  "reputation": "Di sini akan ada reputasi Anda: transaksi terkonfirmasi dan ulasan berbasis fakta.",
+  "chat": "Di sini akan ada percakapan transaksi — terhubung dengan kontrak dan tahapnya.",
+  "groups": "Di sini akan ada grup: alamat bersama, anggota, dan transaksi di bawah satu nama."
+}

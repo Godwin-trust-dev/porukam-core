@@ -1,0 +1,32 @@
+/* Раздел «Платежи» — доска A (ADR-152): группы одна под другой, каждая —
+   подпись раздела + одна поверхность строк. Карточки с рамкой на группу нет
+   (замечание владельца 03.09: «платежи тоже с рамкой»). */
+.groups {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--pr-d-gap-section);
+}
+
+.group {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--pr-sp-1);
+  min-width: 0;
+}
+
+/* Итог по валютам — довесок подписи раздела: приглушённый, моноширинные
+   цифры, усечение вместо переноса (на 360px он длиннее самой подписи). */
+.groupTotal {
+  color: var(--pr-text-mute);
+  font-size: var(--pr-fs-xs);
+  font-variant-numeric: tabular-nums;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+}

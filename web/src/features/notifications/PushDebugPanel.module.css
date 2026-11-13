@@ -1,0 +1,76 @@
+/* Панель диагностики (`?debug=push`) — не часть продуктовой поверхности: живёт
+   отдельной плашкой под настройками и намеренно выглядит как техническая
+   распечатка, а не как строка интерфейса. */
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+  padding: var(--pr-sp-3);
+  border: 1px solid var(--pr-hairline);
+  border-radius: var(--pr-r-md);
+  background: var(--pr-white);
+}
+
+.title {
+  margin: 0;
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+}
+
+.list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-1);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-1);
+}
+
+/* Моноширинный шрифт: значения читают и сверяют посимвольно (длина ключа, хост). */
+.key,
+.value {
+  margin: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: var(--pr-fs-xs);
+  overflow-wrap: anywhere;
+}
+
+.key {
+  color: var(--pr-text-2);
+}
+
+.key::after {
+  content: ':';
+}
+
+.value {
+  color: var(--pr-text);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-2);
+}
+
+.hint {
+  margin: 0;
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-2);
+}
+
+/* Запасной путь, когда клипборда нет: текст должен выделяться пальцем целиком. */
+.fallback {
+  width: 100%;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text);
+  background: var(--pr-cream);
+  border: 1px solid var(--pr-hairline);
+  border-radius: var(--pr-r-sm);
+  padding: var(--pr-sp-2);
+}

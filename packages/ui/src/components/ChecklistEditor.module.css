@@ -1,0 +1,162 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  padding: var(--pr-sp-2) 0;
+  /* На 360 отметка «нужно доказательство» + «×» не помещались рядом с текстом:
+     критерий сжимался в колонку по одному слову, а «×» выдавливался за край
+     строки. Теперь хвост строки переезжает ПОД текст (отсмотр 05.09). */
+  flex-wrap: wrap;
+}
+.icon {
+  color: var(--pr-teal);
+  flex-shrink: 0;
+}
+.text {
+  flex: 1;
+  /* Не даём тексту ужаться уже половины строки — вместо этого переносится хвост. */
+  min-width: 55%;
+  color: var(--pr-ink);
+  font-size: var(--pr-fs-sm);
+}
+.remove {
+  background: none;
+  border: none;
+  color: var(--pr-text-2);
+  cursor: pointer;
+  min-width: var(--pr-touch-min);
+  min-height: var(--pr-touch-min);
+  display: grid;
+  place-items: center;
+  border-radius: var(--pr-r-md);
+}
+.remove:hover {
+  background: var(--pr-cream);
+  color: var(--pr-red);
+}
+/* Рекомендации — кликабельные строки «+ критерий» (отсмотр DEV 2026-08-19:
+   вместо предзаполнения с удалением крестиком — явный выбор). С 02.09 — inline
+   listbox под полем ввода (не портал: на мобиле 360–430px с экранной
+   клавиатурой список остаётся в потоке и не выпрыгивает за экран), при пустом
+   вводе — короткая верхушка + «Показать все». */
+.suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-1);
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-1);
+}
+.suggestionsTitle {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+  font-weight: var(--pr-fw-semibold);
+}
+.suggestion {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  padding: var(--pr-sp-2);
+  background: var(--pr-cream);
+  border: 1px dashed var(--pr-line);
+  border-radius: var(--pr-r-md);
+  cursor: pointer;
+  text-align: start;
+  min-height: var(--pr-touch-min);
+  transition: border-color var(--pr-dur) var(--pr-ease), background var(--pr-dur) var(--pr-ease);
+}
+.suggestion:hover,
+.suggestionActive {
+  border-color: var(--pr-amber);
+  background: var(--pr-white);
+}
+/* «Показать все (N)» / «Свернуть» — текстовая кнопка в тон подсказкам. */
+.more {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  padding: var(--pr-sp-1) 0;
+  min-height: var(--pr-touch-min);
+  color: var(--pr-teal-deep);
+  font-size: var(--pr-fs-sm);
+  font-weight: var(--pr-fw-semibold);
+  cursor: pointer;
+}
+.more:hover {
+  text-decoration: underline;
+}
+.noMatch {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+}
+.suggestionIcon {
+  color: var(--pr-teal-deep);
+  flex-shrink: 0;
+}
+.suggestionText {
+  flex: 1;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.add {
+  display: flex;
+  gap: var(--pr-sp-2);
+  align-items: flex-start;
+}
+.add > :first-child {
+  flex: 1;
+}
+.addBtn {
+  /* Поле ввода может нести строку подписи с «?» и раскрытой подсказкой —
+     кнопка «+» держится низа поля, а не верха строки (отсмотр 22.08). */
+  align-self: flex-end;
+  background: var(--pr-cream);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-md);
+  min-width: var(--pr-touch-min);
+  min-height: var(--pr-touch-min);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  color: var(--pr-teal-deep);
+}
+.warning {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+  margin: 0;
+}
+/* «Нужно доказательство» на строке пункта — компактный нативный чекбокс с
+   подписью (решение владельца 05.09: новый пункт создаётся БЕЗ требования,
+   требование включается вручную). Нативный input вместо общего Checkbox:
+   тот — блочная строка формы (fs-body, подпись со смещением), здесь нужен
+   инлайновый переключатель в одну строку с текстом критерия и «×». */
+.evidence {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-1);
+  flex-shrink: 0;
+  min-height: var(--pr-touch-min);
+  padding-inline: var(--pr-sp-1);
+  cursor: pointer;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+}
+.evidenceInput {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: var(--pr-teal);
+  cursor: pointer;
+}
+.evidenceText {
+  white-space: nowrap;
+}

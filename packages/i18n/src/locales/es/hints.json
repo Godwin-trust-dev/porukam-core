@@ -1,0 +1,113 @@
+{
+  "helpButton": "Ayuda del campo",
+  "onboarding": {
+    "handle": "Tu dirección pública en Porukam, como un @nombre en un mensajero. Por ella te encuentran las contrapartes y abre tu ficha de reputación. Letras latinas, cifras, punto y guion bajo.",
+    "name": "El nombre que verá la otra parte en el contrato y en tu ficha. Solo nombre o nombre y apellido, como te presentas en el trabajo."
+  },
+  "contractNew": {
+    "title": "Nombre corto del contrato para la lista, p. ej. «Reforma de cocina» o «Logo para una cafetería». Si lo dejas vacío se usará la descripción.",
+    "workDescription": "Qué hay que hacer exactamente: alcance, resultado, qué se considera terminado. Cuanto más concreto, más fácil la aceptación y menos disputas.",
+    "locationType": "Dónde se realiza el trabajo: en casa del cliente, del contratista, a distancia o en una dirección. De ello dependen las condiciones de acceso y entrega.",
+    "locationAddress": "Dirección del lugar de trabajo: calle, número, piso y puerta si hace falta. Visible solo para las partes.",
+    "termType": "Cómo se cuenta el plazo: por fechas de inicio y fin o por días desde la firma.",
+    "start": "Fecha en que el contratista empieza el trabajo.",
+    "end": "Fecha límite para entregar el trabajo completo.",
+    "durationDays": "Cuántos días naturales dura el trabajo, contados desde la firma del contrato.",
+    "priceType": "Precio fijo por todo el alcance o pago por etapas/unidades. Para trabajos complejos conviene por etapas.",
+    "currency": "Moneda de todos los importes del contrato. Una por contrato; no se puede cambiar tras la firma.",
+    "warrantyDays": "Cuántos días tras la aceptación responde el contratista por defectos. 0 significa sin garantía.",
+    "acceptanceHours": "Cuántas horas tiene el cliente para revisar una etapa entregada. Si no responde a tiempo, la etapa se acepta automáticamente.",
+    "paymentMethod": "Cómo liquidan las partes: transferencia, efectivo, otro. La plataforma no custodia ni mueve dinero: solo registra el acuerdo y los hechos.",
+    "paymentOrder": "Cuándo se paga cada etapa: antes de que empiece (pago anticipado) o después de que el cliente la acepte (pago posterior). Se aplica a todas las etapas del contrato.",
+    "subcontract": "Si el contratista puede recurrir a ayudantes u otros contratistas para parte del trabajo.",
+    "premisesAccess": "Si el contratista necesita acceso al local del cliente y en qué condiciones (horario, llaves, presencia).",
+    "portfolioConsent": "Si el cliente permite mostrar el resultado en el portafolio del contratista tras la aceptación.",
+    "stages": "Divide el trabajo en etapas: cada una se entrega y acepta por separado, y la suma de las etapas es el precio del contrato. Para un trabajo pequeño basta una etapa.",
+    "stageTitle": "Qué se entrega en esta etapa, p. ej. «Boceto» o «Montaje».",
+    "stageAmount": "Precio de esta etapa solamente. Todas las etapas juntas deben coincidir con el precio del contrato.",
+    "stageDeadline": "Fecha límite para entregar la etapa al cliente para su revisión.",
+    "counterparty": "Quién es la otra parte: busca por @usuario o elige de los contactos guardados. Esa persona recibirá la invitación.",
+    "sale": {
+      "what": "Qué se vende: el nombre del artículo tal como se lo describirías a un comprador: «iPhone 13 128 GB», «Bicicleta Trek FX 2».",
+      "description": "Estado, contenido, particularidades: todo lo que el comprador debe saber antes del trato.",
+      "condition": "Nuevo, como nuevo, usado con desgaste: una descripción honesta protege a ambas partes en una disputa.",
+      "defects": "Defectos conocidos. Si no se indica nada, el comprador puede esperar que no los haya.",
+      "completeness": "Qué incluye: caja, cargador, documentos, accesorios.",
+      "identifiers": "Número de serie, IMEI, VIN, etc.: permiten confirmar que se entregó exactamente este artículo.",
+      "householdPlot": "Marca si vendes productos de tu propia huerta doméstica: afecta al régimen fiscal.",
+      "price": "Precio completo del artículo. El envío, si es de pago, se indica aparte más abajo.",
+      "deliveryType": "Cómo se entrega: recogida, mensajería, correo o transportista.",
+      "address": "Dirección de entrega. Visible solo para las partes.",
+      "deliveryPayer": "Quién paga el envío: el vendedor o el comprador.",
+      "tracking": "Si se necesita número de seguimiento. Con él es más fácil demostrar el envío y la recepción.",
+      "deliveryTerm": "Plazo de entrega: una fecha concreta o días después del pago.",
+      "deliveryDate": "Fecha límite para entregar el artículo al comprador.",
+      "deliveryDays": "Cuántos días para la entrega, contados desde el pago.",
+      "inspectionHours": "Cuántas horas tiene el comprador para revisar el artículo tras recibirlo antes de que el trato se considere cerrado."
+    }
+  },
+  "settings": {
+    "displayName": "El nombre que las contrapartes ven junto a tu identificador. Escríbelo como te conocen tus clientes.",
+    "city": "Una leyenda de texto libre para localidades que aún no están en nuestro directorio: se muestra en tu tarjeta, pero no afecta a la búsqueda. Indica abajo tu zona de trabajo con la que se te puede encontrar.",
+    "handle": "Tu dirección pública: por ella te encuentran y abren tu ficha de reputación. De 3 a 20 caracteres: letras latinas, cifras, guion bajo.",
+    "avatar": "Las contrapartes ven tu foto de perfil en los contratos, los chats y tu ficha. Una cara real invita al trato más que un dibujo.",
+    "country": "El país cuya ley rige tus contratos (jurisdicción). No tiene nada que ver con tu dirección ni con dónde buscas trabajo, y las monedas y los impuestos no dependen de él.",
+    "phone": "El número sirve para que te encuentren por teléfono quienes ya lo tienen. En el perfil no se publica.",
+    "notif": {
+      "deals": "Invitaciones a un contrato, cambios propuestos, la firma, la aceptación de etapas: todo sobre la marcha de los tratos.",
+      "chats": "Mensajes nuevos en los chats de los contratos y en las consultas.",
+      "payments": "Pagos de etapas y confirmaciones de liquidación.",
+      "deadlines": "Recordatorios de plazos: se agota la ventana de aceptación, se acerca la fecha de entrega de una etapa.",
+      "disputes": "Apertura de una disputa, respuestas de las partes y decisiones sobre la disputa."
+    }
+  },
+  "stage": {
+    "totalCost": "Coste total de los trabajos. Si lo indicas, el importe se reparte a partes iguales entre las etapas; luego puedes ajustar cada etapa a mano.",
+    "title": "Qué se entrega en esta etapa: «Boceto», «Montaje», «Primer lote». Ambas partes ven el nombre y pasa al contrato.",
+    "amount": "Cuánto cuesta precisamente esta etapa. La suma de todas las etapas debe coincidir con el precio del contrato; si no, el contrato no se puede congelar.",
+    "duration": "Cuántos días se dan para la etapa. Se cuentan desde el inicio de la etapa, no desde la firma del contrato.",
+    "checklist": "Criterios de aceptación: por qué puntos revisa el cliente la etapa. Formúlalos de forma medible: «dos rondas de cambios del boceto», «paredes sin chorreones»; sobre eso casi no hay nada que discutir.",
+    "evidence": "Un punto marcado con «se requiere prueba» espera una foto o un archivo adjunto: sin él aparece un aviso al entregar la etapa, pero la entrega no se bloquea. Las pruebas quedan en el expediente del contrato y sirven en una disputa.",
+    "materials": {
+      "name": "Un material del catálogo: así el nombre y las unidades coinciden para ambas partes. ¿No está? Elige «otro» y escribe el tuyo.",
+      "customName": "El nombre del material con tus palabras, si el catálogo no lo tiene.",
+      "quantity": "Cuánto hace falta: en número y en las unidades elegidas.",
+      "unit": "Unidad de medida de la cantidad: unidades, metros, kilogramos, litros.",
+      "delivery": "Cuántos días tarda en llegar el material. Ayuda a ver si el plazo de la etapa es realista.",
+      "deliveryBase": "El evento desde el que se cuenta el plazo de entrega: la firma del contrato, el anticipo o el inicio de la etapa. Así el plazo no depende de una fecha del calendario.",
+      "suppliedBy": "Quién compra y trae el material: el cliente o el contratista. El desacuerdo en este punto es una causa habitual de parones.",
+      "price": "El precio de una unidad en la moneda del contrato. En un material del contratista es obligatorio y mayor que cero; el material del cliente puede tener precio cero."
+    }
+  },
+  "group": {
+    "handle": "Dirección pública del grupo, como un @nombre en un mensajero. Con ella se abre su página y es a lo que se enlaza.",
+    "name": "Cómo se llama el grupo para la gente. Lo ve cualquiera que abra su página.",
+    "sphere": "Ámbito principal de actividad del grupo. Por él lo encuentran en la búsqueda y se le proponen miembros.",
+    "geo": "Alcance del grupo: todo el mundo, un país o una sola ciudad. De ello depende a quién se le muestra en la búsqueda.",
+    "country": "País del alcance. Obligatorio si el alcance es «país» o «ciudad».",
+    "city": "Ciudad principal del alcance. Obligatoria cuando el alcance es «ciudad».",
+    "description": "De qué va el grupo y a quién esperáis: a qué os dedicáis, qué reglas hay, en qué ayudáis a los miembros.",
+    "visibility": "Un grupo abierto lo ve todo el mundo y aparece en la búsqueda; uno cerrado, solo los miembros y por enlace directo.",
+    "joinPolicy": "Cómo se entra: libremente con un botón o por solicitud aprobada por el propietario.",
+    "links": "Enlaces al grupo en otros servicios: un sitio, un canal, un chat. Hasta 10, visibles en la página del grupo.",
+    "logo": "Imagen del logotipo del grupo: se ve en la búsqueda, en la ficha y junto al nombre. Una imagen cuadrada queda mejor."
+  },
+  "portfolio": {
+    "title": "Cómo llamar a este trabajo: «Cocina en un bloque de pisos», «Sitio de una página para una cafetería».",
+    "sphere": "Ámbito al que pertenece el trabajo. Por él encuentran tu trabajo quienes necesitan algo parecido.",
+    "startedAt": "Cuándo te pusiste con el trabajo. No es obligatorio, pero junto con la fecha de fin muestra cuánto llevó.",
+    "completedAt": "Cuándo terminó el trabajo. Campo obligatorio: por esta fecha se ordenan los trabajos del portafolio.",
+    "city": "Ciudad donde se hizo el trabajo. Ayuda a los clientes cercanos a elegir a alguien de al lado.",
+    "description": "Qué se hizo, qué dificultades resolviste, cómo quedó al final. Sin límite de longitud.",
+    "photos": "Hasta 5 fotos del trabajo. La primera es la portada en la lista; la portada se puede cambiar en cualquier momento."
+  },
+  "revision": {
+    "item": "Qué condición del contrato propones cambiar. En la lista están los campos de este contrato; «otro» es texto libre.",
+    "before": "Valor actual del contrato. Se rellena solo y no se edita: así ambas partes ven lo mismo.",
+    "after": "Nuevo valor de la condición. La otra parte lo aceptará o lo rechazará; hasta que haya acuerdo, el contrato sigue igual.",
+    "comment": "Para qué hace falta el cambio. La otra parte verá el comentario: una explicación breve acelera el acuerdo."
+  },
+  "signing": {
+    "declineComment": "Qué es exactamente lo que no te convence y qué corregir. La otra parte verá el texto y quedará en el historial del contrato."
+  }
+}

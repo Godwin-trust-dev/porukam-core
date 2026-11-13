@@ -1,0 +1,96 @@
+/* Строка платежа (ADR-130) — общая для вкладки «Оплаты» и экрана этапа.
+   Токены и раскладка — как у карточки этапа: заголовок слева, сумма
+   справа, на узком экране сумма переносится (390px, мобильный проход). */
+.row {
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  box-shadow: var(--pr-shadow-sm);
+  padding: var(--pr-sp-4);
+  display: grid;
+  gap: var(--pr-sp-3);
+}
+/* Строка внутри чужой карточки (экран этапа): рамку и отступы задаёт
+   родитель — иначе карточка в карточке и +32px к минимальной ширине. */
+.plain {
+  background: none;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+}
+.head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+  flex-wrap: wrap;
+}
+.body {
+  display: grid;
+  gap: var(--pr-sp-2);
+  min-inline-size: 0;
+}
+.title {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-ink);
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.meta {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  flex-wrap: wrap;
+}
+.kind {
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+}
+/* Доска B: статус счёта — СЛОВОМ и цветом слова, не чипом. Просрочка стоит
+   рядом отдельным словом: это не статус (платёж по-прежнему `pending`), а
+   факт «срок вышел» (ADR-130 §3). */
+.status {
+  font-size: var(--pr-fs-sm);
+  font-weight: var(--pr-fw-semibold);
+}
+.statusPaid {
+  color: var(--pr-green-ink);
+}
+.statusPending {
+  color: var(--pr-text-2);
+}
+.statusProgress {
+  color: var(--pr-amber-ink);
+}
+.statusOff {
+  color: var(--pr-text-mute);
+  font-weight: var(--pr-fw-regular);
+}
+.statusAlert {
+  color: var(--pr-red);
+}
+.amount {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-variant-numeric: tabular-nums;
+  color: var(--pr-ink);
+  white-space: nowrap;
+}
+.hint {
+  margin: 0;
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+}
+.actions {
+  display: flex;
+  gap: var(--pr-sp-2);
+  flex-wrap: wrap;
+}
+.cancelForm {
+  display: grid;
+  gap: var(--pr-sp-3);
+  border-block-start: 1px solid var(--pr-line);
+  padding-block-start: var(--pr-sp-3);
+}

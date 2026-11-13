@@ -1,0 +1,25 @@
+{
+  "machineNoteLabel": "traduzione automatica",
+  "machineNoteTooltip": "Traduzione automatica, fornita per comodità",
+  "fallbackNotice": "Questo documento non è ancora tradotto nella tua lingua: mostriamo l’originale inglese.",
+  "loadError": "Non è stato possibile caricare il documento.",
+  "openAria": "Apri il documento",
+  "accountDeletion": {
+    "title": "Eliminare il tuo account Porukam",
+    "lead": "Qui è spiegato come eliminare il tuo account su Porukam, che cosa viene eliminato, che cosa resta e per quanto tempo.",
+    "stepsTitle": "Come eliminare l’account",
+    "step1": "Accedi all’app Porukam oppure apri porukam.app.",
+    "step2": "Apri Profilo → Impostazioni → Account.",
+    "step3": "Tocca «Elimina account» e conferma l’eliminazione.",
+    "step4": "L’account viene eliminato subito e tutte le sessioni su tutti i dispositivi si chiudono.",
+    "deletedTitle": "Che cosa viene eliminato subito e per sempre",
+    "deletedText": "Il tuo nome, l’indirizzo e-mail, il telefono, la foto del profilo e i lavori del portfolio, la rubrica dei contatti, le impostazioni e i dispositivi registrati per le notifiche push. Le chiavi di cifratura che proteggono i tuoi dati personali vengono distrutte: quei dati non potremo recuperarli né noi né nessun altro.",
+    "keptTitle": "Che cosa resta e per quanto tempo",
+    "keptText": "I materiali dei contratti già conclusi: il testo del contratto, le firme, le prove, la cronologia delle fasi e dei pagamenti e i messaggi relativi al contratto. Appartengono a entrambe le parti dell’affare e tutelano i diritti di ciascuna, perciò una sola parte non può rimuoverli. Questi materiali si conservano per un anno dopo la conclusione del contratto e poi vengono eliminati.",
+    "keptAnon": "In questi materiali resti con un identificatore anonimizzato. Gli hash delle firme e la catena delle prove non contengono dati personali e non vengono eliminati.",
+    "blockedTitle": "Quando l’account non si può eliminare",
+    "blockedText": "Finché hai contratti non conclusi o controversie aperte, l’eliminazione resta sospesa: prima portali a termine. L’app mostra quanti sono e quali.",
+    "noAccessTitle": "Se non riesci ad accedere",
+    "noAccessText": "Scrivi a {{email}} dall’indirizzo e-mail collegato al tuo account: elimineremo l’account su richiesta. Lo stesso indirizzo è indicato nell’Informativa sulla privacy."
+  }
+}

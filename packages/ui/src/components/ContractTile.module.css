@@ -1,0 +1,117 @@
+/* Плитка сделки для грида дашборда (DEV-19 §3, эталон №4 блок 1).
+   Это ДРУГАЯ поверхность той же сделки, а не другая правда о ней: подписи
+   статуса/типа/способа берутся из тех же карт, что строка списка. */
+.tile {
+  display: grid;
+  gap: var(--pr-sp-3);
+  align-content: start;
+  inline-size: 100%;
+  min-block-size: 132px;
+  padding: var(--pr-sp-4);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  background: var(--pr-white);
+  box-shadow: var(--pr-shadow-sm);
+  text-align: start;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  transition: box-shadow var(--pr-dur) var(--pr-ease), transform var(--pr-dur) var(--pr-ease),
+    border-color var(--pr-dur) var(--pr-ease);
+}
+.tile:hover {
+  border-color: var(--pr-amber-deep);
+  box-shadow: var(--pr-shadow-card);
+  transform: translateY(-2px);
+}
+.tile:focus-visible {
+  outline: 3px solid var(--pr-amber-bright);
+  outline-offset: 2px;
+}
+.muted {
+  opacity: 0.65;
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-2);
+}
+.no {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-mute);
+  font-variant-numeric: tabular-nums;
+}
+.title {
+  margin: 0;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h3);
+  line-height: var(--pr-lh-tight);
+  color: var(--pr-ink);
+  /* Две строки максимум — плитки в гриде должны стоять ровно. */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.meta {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.bottom {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--pr-sp-2);
+  padding-block-start: var(--pr-sp-3);
+  border-block-start: 1px solid var(--pr-line);
+}
+.pay {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.amount {
+  flex: none;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  color: var(--pr-ink);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Плитка «создать договор» — пунктирная, того же размера, замыкает грид. */
+.createTile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--pr-sp-2);
+  inline-size: 100%;
+  min-block-size: 132px;
+  padding: var(--pr-sp-4);
+  border: 1.5px dashed var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  background: none;
+  font: inherit;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  color: var(--pr-text-2);
+  cursor: pointer;
+  transition: border-color var(--pr-dur) var(--pr-ease), color var(--pr-dur) var(--pr-ease);
+}
+.createTile:hover {
+  border-color: var(--pr-amber-deep);
+  color: var(--pr-amber-deep);
+}
+.createTile:focus-visible {
+  outline: 3px solid var(--pr-amber-bright);
+  outline-offset: 2px;
+}

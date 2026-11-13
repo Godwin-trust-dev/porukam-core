@@ -1,0 +1,134 @@
+{
+  "aboutTitle": "Apa itu Porukam",
+  "faqTitle": "Tanya jawab",
+  "aboutLead": "Porukam mengubah kesepakatan lisan menjadi kontrak yang jelas dengan tahap, bukti, dan reputasi. Tanpa pengacara, tanpa komisi, dan uang tidak pernah lewat platform.",
+  "aboutSections": [
+    {
+      "title": "Untuk siapa",
+      "text": "Untuk yang mengerjakan pesanan atau memesannya: renovasi, desain, pengembangan, les, foto, angkutan, jual barang, sewa, pinjaman antarorang. Untuk dua orang, untuk orang dan usaha perorangan, untuk pekerja mandiri."
+    },
+    {
+      "title": "Cara kerjanya",
+      "text": "Anda membuat kontrak dari formulir siap pakai, membagi pekerjaan menjadi tahap, mengundang pihak lain lewat @handle. Keduanya menandatangani. Lalu tiap tahap diserahkan dan diterima berdasarkan daftar periksa, dan setiap fakta — tanda tangan, penyerahan, penerimaan, sengketa — dicatat dan masuk ke reputasi keduanya."
+    },
+    {
+      "title": "Yang tidak dilakukan platform",
+      "text": "Tidak menyimpan atau memindahkan uang — Anda membayar langsung dengan cara yang dipilih. Tidak menyimpan berkas asli Anda — hanya hash-nya. Tidak menjual data Anda dan tidak menampilkan iklan."
+    },
+    {
+      "title": "Grup",
+      "text": "Grup adalah alamat bersama untuk tim atau komunitas: gilda (komunitas profesional tetap yang saling menjamin kualitas), klan (tim proyek 3–20 orang), komunitas (grup minat terbuka), atau etalase perusahaan. Grup punya @handle, logo, bidang, dan geografi sendiri, kartu publik dengan daftar anggota, dan profil setiap anggota menunjukkan keanggotaannya. Kontrak tetap dibuat antar orang — grup membantu saling menemukan dan menampilkan tim."
+    }
+  ],
+  "howTitle": "Cara melakukan",
+  "howItems": [
+    {
+      "title": "Membuat kontrak",
+      "text": "Transaksi → “Buat”. Pilih jenis kontrak (jasa, jual beli, sewa, pinjaman), isi formulir — tiap kolom punya “?” berisi petunjuk. Tentukan pihak lain lewat @handle, bagi ke tahap, pilih metode pembayaran, dan kirim untuk ditandatangani."
+    },
+    {
+      "title": "Mengundang pihak lain",
+      "text": "Di langkah “Pihak” masukkan @handle. Jika orangnya belum punya akun — kirimkan tautan kontrak: setelah masuk lewat Google ia akan melihatnya."
+    },
+    {
+      "title": "Menandatangani",
+      "text": "Buka kontrak → “Ke layar tanda tangan”. Periksa versi beku lalu tanda tangani. Kontrak berlaku saat kedua pihak sudah menandatangani."
+    },
+    {
+      "title": "Mengusulkan perubahan sebelum tanda tangan",
+      "text": "Di layar penelaahan pilih butir dan usulkan perubahan. Pihak lain menerima atau menolak; setelah sepakat versi dibekukan lagi."
+    },
+    {
+      "title": "Menyerahkan tahap",
+      "text": "Penyedia membuka tahap → “Serahkan”, melampirkan bukti (foto, file, tautan), dan mengirim untuk penerimaan."
+    },
+    {
+      "title": "Menerima tahap atau mengembalikannya",
+      "text": "Pemesan membuka tahap → menjalani daftar periksa → “Terima” atau “Kembalikan” dengan catatan. Jika pemesan diam melewati batas waktu pemeriksaan, tahap diterima otomatis."
+    },
+    {
+      "title": "Membayar tahap",
+      "text": "Setelah diterima, pemesan membayar langsung ke penyedia dengan cara yang dipilih dan menandai pembayaran di tahap. Penyedia mengonfirmasi penerimaan."
+    },
+    {
+      "title": "Membuka sengketa",
+      "text": "Jika tidak tercapai kesepakatan — tekan “Sengketa” di tahap. Kedua pihak melampirkan bukti; semua yang sudah dicatat sebelumnya sudah ada dalam berkas."
+    },
+    {
+      "title": "Menemukan pihak lain dan menyimpan kontak",
+      "text": "Buka kartu orang lewat tautan @handle atau dari kontrak → “Simpan kontak”. Pihak lain dari kontrak Anda masuk ke kontak otomatis."
+    },
+    {
+      "title": "Membagikan kartu Anda",
+      "text": "Profil → “Bagikan”: tautan berbentuk porukam.app/@handleanda dan kode QR. Di kartu hanya fakta: berapa transaksi, bagaimana diterima, apakah ada sengketa."
+    },
+    {
+      "title": "Membuat grup",
+      "text": "Grup → “Buat grup”. Pilih @handle (satu saja, ditetapkan saat pembuatan), tipe, bidang, dan geografi; tambahkan deskripsi, tautan, dan logo. Pemimpin menyetujui permintaan, mengundang lewat @handle, dan mengubah pengaturan."
+    },
+    {
+      "title": "Bergabung ke grup",
+      "text": "Cari grup di Pencarian (nama, @handle, atau bidang) atau buka tautan /@handle. Terbuka — “Gabung” langsung; tertutup — “Gabung” mengirim permintaan ke pemimpin. Anda bisa keluar kapan saja; pemimpin tidak bisa keluar sebelum menyerahkan grup."
+    }
+  ],
+  "faqItems": [
+    {
+      "q": "Apakah gratis?",
+      "a": "Ya. Pembuatan kontrak, tahap, bukti, reputasi — tanpa biaya dan tanpa komisi pembayaran. Fitur berbayar, jika ada, akan terpisah dan opsional."
+    },
+    {
+      "q": "Apakah kontrak seperti ini sah secara hukum?",
+      "a": "Kontrak dibuat secara tertulis dengan tanda tangan elektronik sederhana: kedua pihak mengonfirmasi versi teks yang dibekukan, dan layanan mencatat siapa, kapan, dan apa yang ditandatangani. Bentuk ini diakui hukum di sebagian besar negara untuk transaksi antara orang dan usaha. Untuk transaksi yang menurut hukum memerlukan notaris atau pendaftaran negara (mis. properti), layanan tidak menggantikan prosedur itu."
+    },
+    {
+      "q": "Apakah uang lewat platform?",
+      "a": "Tidak. Para pihak membayar langsung — transfer, tunai, sesuai kesepakatan. Platform mencatat kewajiban, fakta pembayaran, dan konfirmasi penerimaan."
+    },
+    {
+      "q": "Bagaimana jika pihak lain tidak merespons?",
+      "a": "Setiap langkah punya batas waktu. Jika pemesan tidak memeriksa tahap yang diserahkan tepat waktu — tahap diterima otomatis. Jika pihak lain tidak menandatangani kontrak — kontrak tetap draf, tidak ada kewajiban."
+    },
+    {
+      "q": "Bisakah kontrak diubah setelah ditandatangani?",
+      "a": "Teks yang sudah ditandatangani tidak bisa diubah. Perubahan dibuat lewat adendum yang ditandatangani kedua pihak; riwayat versi disimpan."
+    },
+    {
+      "q": "Apa itu reputasi dan siapa yang melihatnya?",
+      "a": "Fakta dari transaksi Anda: berapa yang dibuat, berapa yang diterima tepat waktu, apakah ada sengketa dan bagaimana akhirnya. Tanpa nilai atau bintang. Visibilitas kartu dan tiap kolom Anda atur sendiri."
+    },
+    {
+      "q": "Di mana file bukti saya disimpan?",
+      "a": "Aslinya — di Anda dan pihak lain. Platform menyimpan hash, gambar mini, dan waktu lampiran — cukup untuk membuktikan berkas tidak berubah."
+    },
+    {
+      "q": "Apa yang dilihat pihak lain tentang saya?",
+      "a": "Nama yang dikonfirmasi akun, @handle, dan kartu reputasi sebatas yang Anda izinkan. Telepon, email, dan rekening tidak pernah ditampilkan — kecuali Anda sendiri menulisnya di teks kontrak."
+    },
+    {
+      "q": "Bagaimana masuk dari perangkat lain?",
+      "a": "Dengan akun Google yang sama. Sesi bertahan 30 hari tanpa masuk ulang selama Anda memakai layanan."
+    },
+    {
+      "q": "Bagaimana menghapus akun?",
+      "a": "Profil → Pengaturan → Akun → Hapus. Data pribadi dimusnahkan permanen; pihak lain tetap memegang salinan kontrak bersama."
+    },
+    {
+      "q": "Apakah bisa di ponsel?",
+      "a": "Ya, ini aplikasi web: buka porukam.app di browser dan tambahkan ke layar utama — akan berjalan seperti aplikasi biasa, dengan notifikasi."
+    },
+    {
+      "q": "Bagaimana menghubungi Anda?",
+      "a": "Tulis ke hello@trust-dev.com — kami menjawab pertanyaan tentang layanan, data, dan kontrak."
+    },
+    {
+      "q": "Apa itu grup dan untuk apa?",
+      "a": "Cara menampilkan tim atau komunitas dengan satu nama: gilda, klan, komunitas, atau etalase perusahaan. Pemesan menemukan grup berdasarkan bidang dan kota, melihat anggota dan kartu reputasinya, lalu membuat kontrak dengan orang tertentu. Bagi penyedia, grup adalah alamat bersama tempat pemesan berdatangan dan tempat reputasi tiap anggota terlihat."
+    },
+    {
+      "q": "Apakah grup bertanggung jawab atas kontrak?",
+      "a": "Tidak. Pihak dalam kontrak selalu orang tertentu atau usaha/badan hukumnya; ia menandatangani dan bertanggung jawab secara pribadi. Grup tidak menyimpan uang dan tidak menjamin anggotanya — grup adalah etalase dan alamat, sedangkan reputasi terbentuk dari transaksi masing-masing anggota."
+    }
+  ],
+  "socialTitle": "Ikuti kami",
+  "backToProfile": "Profil"
+}

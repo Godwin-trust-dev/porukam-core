@@ -1,0 +1,23 @@
+.wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+}
+.dots {
+  display: inline-flex;
+  gap: 3px;
+}
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--pr-line);
+}
+.dotDone {
+  background: var(--pr-teal-deep);
+}
+.label {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+  font-variant-numeric: tabular-nums;
+}

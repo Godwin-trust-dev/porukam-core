@@ -1,0 +1,21 @@
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-4);
+}
+/* Тумблер с видимой подписью (отсмотр 2026-08-19) — как toggleRow онбординга. */
+.toggleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+}
+.toggleLabel {
+  color: var(--pr-ink);
+  font-size: var(--pr-fs-sm);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-1);
+  min-width: 0;
+}

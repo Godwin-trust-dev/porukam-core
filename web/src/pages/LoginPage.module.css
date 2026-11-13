@@ -1,0 +1,222 @@
+.screen {
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  background: var(--pr-cream);
+}
+.hero {
+  background: var(--pr-grad-ink);
+  color: var(--pr-text-inv);
+  padding: var(--pr-sp-10);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--pr-sp-4);
+  position: relative;
+  overflow: hidden;
+}
+.heroGlow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(60% 60% at 40% 30%, rgba(242, 162, 52, 0.22), transparent 60%);
+  pointer-events: none;
+}
+/* Знак на якоре — над заголовком, по левому краю текстовой колонки (DEV-17 §3). */
+.heroMark {
+  align-self: flex-start;
+  position: relative;
+}
+.heroTitle {
+  font-size: var(--pr-fs-display);
+  font-weight: var(--pr-fw-black);
+  line-height: var(--pr-lh-tight);
+  max-width: 12ch;
+}
+.heroText {
+  color: var(--pr-on-ink-2);
+  max-width: 42ch;
+  font-size: var(--pr-fs-h3);
+}
+.panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--pr-sp-6);
+}
+.card {
+  width: 100%;
+  max-width: 400px;
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-xl);
+  box-shadow: var(--pr-shadow-card);
+  padding: var(--pr-sp-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-5);
+}
+.title {
+  font-size: var(--pr-fs-h1);
+  color: var(--pr-ink);
+}
+.subtitle {
+  color: var(--pr-text-2);
+  margin: calc(-1 * var(--pr-sp-3)) 0 0;
+}
+/* Подпись под полем кода: срок годности и «проверьте Спам» (замечание
+   владельца 07.09). Мелкий кегль — это сноска, а не второй подзаголовок. */
+.hint {
+  margin: calc(-1 * var(--pr-sp-3)) 0 0;
+  font-size: var(--pr-fs-sm);
+  line-height: var(--pr-lh-normal);
+  color: var(--pr-text-mute);
+}
+.consent {
+  display: flex;
+  gap: var(--pr-sp-3);
+  align-items: flex-start;
+  background: var(--pr-cream);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-md);
+  padding: var(--pr-sp-3) var(--pr-sp-4);
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+}
+.consent input {
+  margin-top: 3px;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--pr-amber);
+  flex: none;
+}
+.devHint {
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-teal-deep);
+  background: rgba(30, 138, 128, 0.1);
+  border-radius: var(--pr-r-sm);
+  padding: var(--pr-sp-2) var(--pr-sp-3);
+}
+.linkRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--pr-fs-sm);
+}
+/* Две ссылки по краям строки: при переносе длинной подписи («Отправить ещё
+   раз (через 30 с)») строки должны выравниваться по своему краю, а не
+   центрироваться посреди колонки. */
+.linkRow .linkBtn:first-child {
+  text-align: start;
+}
+.linkRow .linkBtn:last-child {
+  text-align: end;
+}
+.linkBtn {
+  background: none;
+  border: none;
+  color: var(--pr-teal-deep);
+  cursor: pointer;
+  font: inherit;
+  font-weight: var(--pr-fw-semibold);
+  padding: var(--pr-sp-1) 0;
+}
+.linkBtn:disabled {
+  color: var(--pr-text-mute);
+  cursor: not-allowed;
+}
+.success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--pr-sp-4);
+  text-align: center;
+  padding: var(--pr-sp-6) 0;
+}
+@media (max-width: 900px) {
+  .screen {
+    grid-template-columns: 1fr;
+  }
+  /* Узкий телефон (360px, минимальная ширина проекта): grid-элемент по
+     умолчанию не сжимается уже своего min-content (`min-width: auto`), а
+     карточка в 400px плюс поля панели держали 448 — экран уезжал вбок
+     горизонтальной прокруткой на ОБОИХ экранах входа (телефон и почта,
+     ADR-168). Разрешаем сжатие и убираем лишние поля. */
+  .hero,
+  .panel {
+    min-width: 0;
+  }
+  .panel {
+    padding: var(--pr-sp-4);
+  }
+  .card {
+    min-width: 0;
+    padding: var(--pr-sp-6);
+  }
+  /* `<input>` несёт собственную min-content ширину от атрибута `size` (20
+     символов по умолчанию) — у крупного OTP-поля с трекингом это заметно
+     больше экрана. */
+  .card input {
+    min-width: 0;
+  }
+  /* Мобильный вход — якорь остаётся якорем (DEV-17 §3): компактный ink-hero
+     со знаком и заголовком вместо полного скрытия. Длинный подтекст прячем. */
+  .hero {
+    padding: var(--pr-sp-6);
+    gap: var(--pr-sp-3);
+    justify-content: flex-start;
+  }
+  .heroTitle {
+    font-size: var(--pr-fs-h2);
+    max-width: none;
+  }
+  .heroText {
+    display: none;
+  }
+  /* Кегль карточки — как на экране приветствия (замечание владельца 07.09:
+     «шрифт крупный получился»). Там на телефоне заголовок карточки вообще
+     скрыт (`AuthScreen.module.css`), а самая крупная строка экрана — заголовок
+     hero в --pr-fs-h2. Здесь заголовок нужен (он объясняет шаг: адрес или
+     код), поэтому он опускается на ступень НИЖЕ hero — иначе на 390px друг
+     под другом стояли 24px hero и 30px карточки, и экран читался как две
+     конкурирующие «шапки». Глобальные токены не трогаем — только эта
+     страница. */
+  .title {
+    font-size: var(--pr-fs-h3);
+  }
+  .subtitle,
+  .hint {
+    font-size: var(--pr-fs-sm);
+  }
+}
+
+/* Доска B «Вход · якорь (воздушный)» — то же, что на экране приветствия
+   (AuthScreen.module.css, тот же блок), замечание владельца 08.09 «хочется
+   единый стиль страницы». Человек приходит сюда прямо с /welcome кнопкой
+   «Войти по почте», и до этой ветки следующий кадр выглядел другим продуктом:
+   там весь экран чернильный и карточка лежит поверх него без рамки, здесь —
+   кремовый фон и белая карточка с рамкой и тенью, а слоган под знаком исчезал
+   совсем. Композиция не меняется: те же hero и карточка, тот же порядок
+   полей — меняется только фон, оправа карточки и поля. */
+@media (max-width: 900px) {
+  .screen {
+    background: var(--pr-grad-ink);
+    grid-template-rows: auto 1fr;
+  }
+  .hero {
+    padding-block: var(--pr-sp-8) var(--pr-sp-4);
+    overflow: visible;
+  }
+  .heroText {
+    display: block;
+    font-size: var(--pr-fs-body);
+  }
+  .panel {
+    align-items: flex-start;
+    padding-block-start: var(--pr-sp-2);
+  }
+  .card {
+    box-shadow: none;
+    border: none;
+    padding: var(--pr-sp-6) var(--pr-sp-5);
+  }
+}

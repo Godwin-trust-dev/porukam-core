@@ -1,0 +1,239 @@
+/* Экспорт архива (DEV-12 + ADR-139): два артефакта одной сборки, список
+   экспортов, ссылки сторон, сроки хранения. Только токены `--pr-*`. */
+
+.artifacts {
+  display: grid;
+  gap: var(--pr-sp-3);
+}
+.artifact {
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  background: var(--pr-white);
+  padding: var(--pr-sp-4);
+  display: grid;
+  gap: var(--pr-sp-2);
+  min-width: 0;
+}
+.artifactHead {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  flex-wrap: wrap;
+}
+.artifactIcon {
+  color: var(--pr-teal-deep);
+  flex: none;
+}
+.artifactTitle {
+  margin: 0;
+  font-family: var(--pr-font-head);
+  font-size: var(--pr-fs-body);
+  font-weight: var(--pr-fw-semibold);
+  color: var(--pr-ink);
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.artifactText {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.meta {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+  font-variant-numeric: tabular-nums;
+}
+.sha {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-1);
+  min-width: 0;
+}
+.shaCode {
+  font-family: monospace;
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+  flex: 1 1 auto;
+  direction: ltr;
+}
+.iconBtn {
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--pr-touch-min);
+  min-height: var(--pr-touch-min);
+  color: var(--pr-teal-deep);
+  border-radius: var(--pr-r-sm);
+  flex: none;
+}
+.iconBtn:focus-visible {
+  outline: 2px solid var(--pr-amber);
+  outline-offset: 2px;
+}
+/* Скачивание — обычная ссылка `/a/<token>` (без Authorization, ADR-137),
+   оформлена как secondary-кнопка: те же токены, что `Button`. */
+.dl {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--pr-sp-2);
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-body);
+  line-height: 1;
+  border-radius: var(--pr-r-md);
+  padding: 0 var(--pr-sp-6);
+  min-height: var(--pr-touch-min);
+  background: var(--pr-grad-dark);
+  color: var(--pr-text-inv);
+  box-shadow: var(--pr-shadow-dark);
+  text-decoration: none;
+  width: 100%;
+}
+.dl:focus-visible {
+  outline: 3px solid var(--pr-amber-bright);
+  outline-offset: 2px;
+}
+.dlSize {
+  font-weight: var(--pr-fw-medium);
+  font-variant-numeric: tabular-nums;
+  opacity: 0.85;
+}
+.warnText {
+  margin: 0;
+  color: var(--pr-text);
+  font-size: var(--pr-fs-sm);
+}
+
+/* Список экспортов */
+.exports {
+  display: grid;
+  gap: var(--pr-sp-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.exportRow {
+  display: grid;
+  gap: var(--pr-sp-1);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-md);
+  padding: var(--pr-sp-3);
+  background: var(--pr-white);
+}
+.exportRow[aria-current='true'] {
+  border-color: var(--pr-teal-deep);
+}
+.exportTop {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  flex-wrap: wrap;
+}
+.exportDate {
+  margin: 0;
+  font-weight: var(--pr-fw-semibold);
+  color: var(--pr-ink);
+  flex: 1 1 auto;
+}
+.exportMeta {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+}
+.exportBar {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--pr-sand);
+  overflow: hidden;
+}
+.exportFill {
+  height: 100%;
+  background: var(--pr-teal-deep);
+}
+.exportActions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Ссылки сторон */
+.links {
+  display: grid;
+  gap: var(--pr-sp-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.linkRow {
+  display: grid;
+  gap: var(--pr-sp-1);
+  border-top: 1px solid var(--pr-line);
+  padding-top: var(--pr-sp-2);
+}
+.linkTop {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  flex-wrap: wrap;
+}
+.linkKind {
+  margin: 0;
+  font-weight: var(--pr-fw-semibold);
+  color: var(--pr-ink);
+}
+.linkUrlRow {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-1);
+  min-width: 0;
+}
+.linkUrl {
+  font-family: monospace;
+  font-size: var(--pr-fs-xs);
+  /* Ссылка, а не текст (03.09): цвет и подчёркивание — признак кликабельности. */
+  color: var(--pr-teal-deep);
+  text-decoration: underline;
+  /* Тач-таргет ≥ 44px (web/CLAUDE.md §2.8): строка одна, поэтому высоту даёт
+     line-height — многоточие при переполнении так и остаётся работать
+     (в отличие от display:flex, где обрезался бы уже дочерний бокс). */
+  display: block;
+  line-height: var(--pr-touch-min);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+  flex: 1 1 auto;
+  direction: ltr;
+}
+.linkUrl:focus-visible {
+  outline: 2px solid var(--pr-amber);
+  outline-offset: 2px;
+}
+.linkActions {
+  display: flex;
+  gap: var(--pr-sp-2);
+  flex-wrap: wrap;
+}
+
+/* Сроки хранения */
+.retention {
+  display: grid;
+  gap: var(--pr-sp-2);
+}
+.retentionFacts {
+  margin: 0;
+  padding-inline-start: var(--pr-sp-4);
+  display: grid;
+  gap: var(--pr-sp-1);
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}

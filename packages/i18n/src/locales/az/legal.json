@@ -1,0 +1,25 @@
+{
+  "machineNoteLabel": "avtomatik tərcümə",
+  "machineNoteTooltip": "Maşın tərcüməsi, rahatlıq üçün verilir",
+  "fallbackNotice": "Bu sənəd hələ sizin dilinizə tərcümə olunmayıb — ingilis dilindəki əslini göstəririk.",
+  "loadError": "Sənədi yükləmək alınmadı.",
+  "openAria": "Sənədi açın",
+  "accountDeletion": {
+    "title": "Porukam hesabının silinməsi",
+    "lead": "Burada Porukam hesabını necə silmək, bu zaman nələrin silindiyi, nələrin və hansı müddətə saxlanıldığı izah olunur.",
+    "stepsTitle": "Hesabı necə silmək olar",
+    "step1": "Porukam tətbiqinə daxil olun və ya porukam.app ünvanını açın.",
+    "step2": "Profil → Tənzimləmələr → Hesab bölməsini açın.",
+    "step3": "«Hesabı silin» düyməsinə toxunun və silinməni təsdiqləyin.",
+    "step4": "Hesab dərhal silinir, bütün cihazlardakı bütün seanslar bağlanır.",
+    "deletedTitle": "Dərhal və geri dönməz şəkildə nə silinir",
+    "deletedText": "Adınız, e-poçt ünvanınız, telefonunuz, profil fotonuz və portfoliodakı işləriniz, ünvan kitabçanız, tənzimləmələriniz, push-bildirişlər üçün qeydə alınmış cihazlarınız. Şəxsi məlumatlarınızı qoruyan şifrələmə açarları məhv edilir — bu məlumatları nə biz, nə də başqa birisi geri qaytara bilməz.",
+    "keptTitle": "Nələr və hansı müddətə saxlanılır",
+    "keptText": "Artıq bağlanmış müqavilələrin materialları: müqavilə mətni, imzalar, sübutlar, mərhələlərin və ödənişlərin tarixçəsi, müqavilə üzrə yazışma. Onlar sazişin hər iki tərəfinə aiddir və hər birinin hüquqlarını qoruyur, ona görə də bir tərəf onları tək başına silə bilməz. Belə materiallar müqavilə tamamlandıqdan sonra bir il saxlanılır, sonra silinir.",
+    "keptAnon": "Həmin materiallarda Siz şəxssizləşdirilmiş identifikator altında qalırsınız. İmza heşləri və sübutlar zənciri şəxsi məlumat saxlamır və silinmir.",
+    "blockedTitle": "Hesabı nə vaxt silmək olmaz",
+    "blockedText": "Tamamlanmamış müqavilələriniz və ya açıq mübahisələriniz olduğu müddətdə silinmə saxlanılır — əvvəlcə onları başa çatdırın. Tətbiq onların sayını və hansılar olduğunu göstərir.",
+    "noAccessTitle": "Daxil ola bilmirsinizsə",
+    "noAccessText": "Hesabınıza bağlı e-poçt ünvanından {{email}} ünvanına yazın — hesabı sorğunuza əsasən siləcəyik. Eyni ünvan Məxfilik Siyasətində də göstərilib."
+  }
+}

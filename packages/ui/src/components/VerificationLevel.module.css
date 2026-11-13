@@ -1,0 +1,26 @@
+.wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+}
+
+.segments {
+  display: inline-flex;
+  gap: 3px;
+}
+
+.segment {
+  width: 18px;
+  height: 6px;
+  border-radius: var(--pr-r-pill);
+  background: var(--pr-line);
+}
+.filled {
+  background: var(--pr-amber-deep);
+}
+
+.label {
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+  font-variant-numeric: tabular-nums;
+}

@@ -1,0 +1,83 @@
+/* Доска B: плитки 2×2 на телефоне, 4 в ряд на широком; иконка — в маленьком
+   песочном квадрате, выбранная плитка обведена бирюзой с мягким кольцом. */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--pr-sp-3);
+}
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+.tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--pr-sp-2);
+  min-inline-size: 0;
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  padding: var(--pr-sp-4);
+  text-align: start;
+  cursor: pointer;
+  min-height: var(--pr-touch-min);
+  transition: border-color var(--pr-dur-fast) var(--pr-ease), box-shadow var(--pr-dur-fast) var(--pr-ease);
+}
+.tile:hover {
+  border-color: var(--pr-teal);
+}
+.tile:focus-visible {
+  outline: 3px solid var(--pr-amber-bright);
+  outline-offset: 2px;
+}
+/* Выбор — бирюзовая рамка 2px + мягкое кольцо (доска B), а не янтарная
+   заливка: плитки стоят рядом, заливка спорила с янтарной кнопкой «Далее». */
+.active {
+  border-color: var(--pr-teal);
+  box-shadow: 0 0 0 1px var(--pr-teal), 0 0 0 5px var(--pr-teal-ring);
+  background: var(--pr-white);
+}
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+/* Значок в песочном квадрате — как на доске B (иконка «в воздухе» терялась). */
+.iconBox {
+  display: grid;
+  place-items: center;
+  inline-size: 36px;
+  block-size: 36px;
+  border-radius: var(--pr-r-md);
+  background: var(--pr-grad-tile);
+  border: 1px solid var(--pr-line);
+  flex: none;
+}
+.icon {
+  color: var(--pr-teal-deep);
+}
+.title {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-d-fs-body);
+  color: var(--pr-ink);
+  max-inline-size: 100%;
+  overflow-wrap: anywhere;
+}
+.desc {
+  color: var(--pr-text-2);
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+  max-inline-size: 100%;
+  overflow-wrap: anywhere;
+}
+.badge {
+  align-self: flex-start;
+  background: var(--pr-sand);
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+  padding: 2px var(--pr-sp-2);
+  border-radius: var(--pr-r-pill);
+}

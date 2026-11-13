@@ -1,0 +1,127 @@
+.log {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+  padding: var(--pr-d-gap) 0;
+  min-inline-size: 0;
+}
+
+.bubble {
+  max-inline-size: 78%;
+  padding: var(--pr-d-row-pad-y) var(--pr-d-row-pad-x);
+  border-radius: var(--pr-r-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: var(--pr-d-fs-body);
+  line-height: var(--pr-d-lh);
+}
+/* Своё — янтарное справа, чужое — белое с hairline слева (эталон доски A). */
+.out {
+  align-self: flex-end;
+  background: var(--pr-grad-amber);
+  color: var(--pr-ink);
+  border-end-end-radius: var(--pr-r-sm);
+}
+.in {
+  align-self: flex-start;
+  background: var(--pr-white);
+  color: var(--pr-ink);
+  border: 1px solid var(--pr-hairline);
+  border-end-start-radius: var(--pr-r-sm);
+}
+.body {
+  margin: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.time {
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-2);
+  align-self: flex-end;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Событие сделки — плашка по центру ленты, нейтральная (не пузырь). */
+.system {
+  align-self: center;
+  max-inline-size: 88%;
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--pr-sp-2);
+  padding: 6px var(--pr-sp-3);
+  border-radius: var(--pr-r-pill);
+  background: var(--pr-cream);
+  border: 1px solid var(--pr-hairline);
+  text-align: center;
+}
+.systemText {
+  font-size: var(--pr-d-fs-2);
+  color: var(--pr-teal-deep);
+}
+.systemTime {
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-mute);
+  font-variant-numeric: tabular-nums;
+  flex: none;
+}
+
+.day {
+  align-self: center;
+}
+.dayChip {
+  display: inline-block;
+  padding: 2px var(--pr-sp-3);
+  border-radius: var(--pr-r-pill);
+  background: var(--pr-sand);
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+}
+
+/* Композер: низ занят вводом — это осознанное исключение из правила
+   «CTA под контентом» (§3). */
+.composer {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  padding: var(--pr-sp-2) 0;
+  background: var(--pr-cream);
+}
+.input {
+  flex: 1;
+  min-inline-size: 0;
+  font: inherit;
+  font-size: var(--pr-d-fs-body);
+  color: var(--pr-ink);
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-pill);
+  padding: var(--pr-sp-2) var(--pr-sp-4);
+  min-block-size: var(--pr-touch-min);
+}
+.input:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: 1px;
+}
+.send {
+  flex: none;
+  inline-size: var(--pr-touch-min);
+  block-size: var(--pr-touch-min);
+  border: none;
+  border-radius: 50%;
+  background: var(--pr-grad-amber);
+  color: var(--pr-ink);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: var(--pr-shadow-amber);
+}
+.send:disabled {
+  background: var(--pr-sand);
+  color: var(--pr-text-mute);
+  box-shadow: none;
+  cursor: default;
+}

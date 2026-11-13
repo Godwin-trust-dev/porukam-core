@@ -1,0 +1,12 @@
+{
+  "actorSwitcher": {
+    "triggerLabel": "Փոխել պրոֆիլը",
+    "personalLabel": "Անձնական",
+    "legalFormIp": "ԱՁ",
+    "legalFormOoo": "ՍՊԸ",
+    "addOrg": "Ավելացնել կազմակերպություն",
+    "groups": "Իմ միավորումները"
+  },
+  "sectionMenu": "Բաժիններ",
+  "logout": "Դուրս գալ"
+}

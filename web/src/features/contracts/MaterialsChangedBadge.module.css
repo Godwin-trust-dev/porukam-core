@@ -1,0 +1,28 @@
+/* Бейдж внимания «материалы изменены» — строка-хэйрлайн, не плашка:
+   на карточке договора рамки несут панели, а внутри них разделяет линия
+   (ContractDetailPage.module.css .checklist/.material — тот же приём). */
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-2);
+  width: 100%;
+  padding: var(--pr-sp-3) 0;
+  border: 0;
+  border-top: 1px solid var(--pr-hairline);
+  background: none;
+  color: var(--pr-text);
+  font: inherit;
+  font-size: var(--pr-fs-sm);
+  text-align: start;
+  cursor: pointer;
+}
+.row:hover .hint,
+.row:focus-visible .hint {
+  color: var(--pr-text);
+}
+.hint {
+  color: var(--pr-text-2);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}

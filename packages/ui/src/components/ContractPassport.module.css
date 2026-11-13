@@ -1,0 +1,171 @@
+/* Паспорт сделки (DEV-19 §4, эталон №4 блок 3) — тёмная карточка на
+   `--pr-grad-dark`: статус, стороны, защита, сумма, главные действия.
+   Рабочий экран остаётся светлым: тёмный тут — рейл-паспорт, не ink-hero
+   (правило «якорь vs рабочий экран», Промт web-v2 §3), знака и искры нет. */
+.wrap {
+  background: var(--pr-grad-dark);
+  color: var(--pr-on-ink);
+  border-radius: var(--pr-r-lg);
+  box-shadow: var(--pr-shadow-dark);
+  padding: var(--pr-sp-5);
+  display: grid;
+  /* `minmax(0, 1fr)`, а не дефолтное `auto`: иначе самая широкая строка
+     (сторона с именем и @хендлом) растягивает колонку по своему min-content
+     и вываливает весь паспорт за 390px. */
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--pr-sp-4);
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-2);
+  flex-wrap: wrap;
+}
+.no {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-on-ink-2);
+  font-variant-numeric: tabular-nums;
+}
+.titleBlock {
+  display: grid;
+  gap: var(--pr-sp-1);
+}
+.title {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h3);
+  line-height: var(--pr-lh-tight);
+  color: var(--pr-white);
+  margin: 0;
+}
+.subtitle {
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-on-ink-2);
+}
+.rows {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--pr-sp-2);
+  margin: 0;
+  padding-block-start: var(--pr-sp-4);
+  border-block-start: 1px solid rgba(255, 255, 255, 0.12);
+}
+.row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+  font-size: var(--pr-fs-sm);
+}
+.rowLabel {
+  color: var(--pr-on-ink);
+  margin: 0;
+}
+.rowValue {
+  color: var(--pr-white);
+  font-weight: var(--pr-fw-semibold);
+  text-align: end;
+  margin: 0;
+  min-width: 0;
+}
+.sumBlock {
+  padding-block-start: var(--pr-sp-4);
+  border-block-start: 1px solid rgba(255, 255, 255, 0.12);
+  display: grid;
+  gap: var(--pr-sp-1);
+}
+/* Суммы — Onest 700+, tabular-nums (Промт web-v2 §2, DEV-16 §5). */
+.sum {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h1);
+  line-height: var(--pr-lh-tight);
+  color: var(--pr-white);
+  font-variant-numeric: tabular-nums;
+}
+.sumUnset {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-on-ink);
+}
+.sumNote {
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-on-ink-2);
+  font-variant-numeric: tabular-nums;
+}
+.actions {
+  display: grid;
+  gap: var(--pr-sp-2);
+}
+
+/* Значение-ссылка в строке паспорта (сторона → её карточка репутации). */
+.rowLink {
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+  font-weight: var(--pr-fw-semibold);
+  color: var(--pr-amber-hi);
+  text-align: end;
+  cursor: pointer;
+  border-radius: var(--pr-r-sm);
+}
+.rowLink:hover {
+  text-decoration: underline;
+}
+
+/* ── surface="light": светлая рабочая карточка (DEV-20_2 §7) ──
+   Тот же паспорт в языке рабочих экранов: белая поверхность, hairline вместо
+   полупрозрачных разделителей, плотность из density-слоя. Тёмная плашка на
+   телефоне занимала весь первый экран и читалась как якорь-церемония, хотя
+   это обычный рабочий обзор сделки. */
+.light {
+  background: var(--pr-white);
+  color: var(--pr-text);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-d-r-surface);
+  box-shadow: none;
+  padding: var(--pr-d-pad-card);
+  gap: var(--pr-d-gap);
+}
+.light .no {
+  color: var(--pr-text-mute);
+}
+.light .title {
+  font-size: var(--pr-d-fs-screen);
+  color: var(--pr-ink);
+}
+.light .subtitle,
+.light .rowLabel,
+.light .sumNote {
+  color: var(--pr-text-2);
+}
+.light .rows,
+.light .sumBlock {
+  padding-block-start: var(--pr-d-gap);
+  border-block-start: 1px solid var(--pr-hairline);
+}
+.light .rows {
+  gap: var(--pr-sp-1);
+}
+.light .row {
+  font-size: var(--pr-d-fs-2);
+}
+.light .rowValue {
+  color: var(--pr-ink);
+}
+.light .rowLink {
+  color: var(--pr-teal-deep);
+}
+.light .sum {
+  font-size: var(--pr-d-fs-value);
+  color: var(--pr-ink);
+}
+.light .sumUnset {
+  font-size: var(--pr-d-fs-body);
+  color: var(--pr-text-2);
+}

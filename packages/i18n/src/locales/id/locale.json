@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "Bahasa antarmuka",
+  "globeTriggerAria": "Bahasa antarmuka",
+  "rowLabel": "Bahasa antarmuka",
+  "listTitle": "Bahasa antarmuka",
+  "searchPlaceholder": "Cari bahasa…",
+  "searchAriaLabel": "Cari bahasa",
+  "searchClear": "Hapus pencarian",
+  "currentSectionTitle": "Saat ini",
+  "allSectionTitle": "Semua bahasa",
+  "noResults": "Bahasa tidak ditemukan",
+  "betaBadge": "terjemahan otomatis",
+  "betaTooltip": "Diterjemahkan otomatis — bisa kurang tepat",
+  "currentAria": "Bahasa saat ini",
+  "disabledToast": "{{lang}} sedang tidak tersedia · kami menampilkan bahasa Inggris",
+  "closeLabel": "Tutup",
+  "onboardingHint": "Terdeteksi otomatis — bisa Anda ubah kapan saja",
+  "settingsRowLabel": "Bahasa dan wilayah",
+  "settingsLanguageExplain": "Ini bahasa aplikasi. Bahasa resmi kontrak dipilih terpisah — pihak lain melihat terjemahan, tetapi yang ditandatangani adalah teks resmi.",
+  "loadErrorRetry": "Coba lagi",
+  "loadError": "Daftar bahasa tidak bisa dimuat"
+}

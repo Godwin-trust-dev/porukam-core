@@ -1,0 +1,25 @@
+{
+  "machineNoteLabel": "tradução automática",
+  "machineNoteTooltip": "Tradução automática, oferecida para sua comodidade",
+  "fallbackNotice": "Este documento ainda não está traduzido para o seu idioma — mostramos o original em inglês.",
+  "loadError": "Não foi possível carregar o documento.",
+  "openAria": "Abrir o documento",
+  "accountDeletion": {
+    "title": "Excluir sua conta no Porukam",
+    "lead": "Esta página explica como excluir sua conta no Porukam, o que é excluído, o que fica guardado e por quanto tempo.",
+    "stepsTitle": "Como excluir a conta",
+    "step1": "Entre no aplicativo Porukam ou abra porukam.app.",
+    "step2": "Abra Perfil → Configurações → Conta.",
+    "step3": "Toque em “Excluir conta” e confirme a exclusão.",
+    "step4": "A conta é excluída na hora e todas as sessões em todos os dispositivos são encerradas.",
+    "deletedTitle": "O que é excluído na hora e para sempre",
+    "deletedText": "Seu nome, o endereço de e-mail, o telefone, a foto do perfil e os trabalhos do portfólio, a agenda de contatos, as configurações e os dispositivos registrados para notificações push. As chaves de criptografia que protegem seus dados pessoais são destruídas — nem nós nem ninguém conseguirá trazer esses dados de volta.",
+    "keptTitle": "O que fica guardado e por quanto tempo",
+    "keptText": "Os materiais dos contratos já celebrados: o texto do contrato, as assinaturas, as provas, o histórico de etapas e pagamentos e as mensagens sobre o contrato. Eles pertencem às duas partes do negócio e protegem os direitos de cada uma, por isso uma parte sozinha não pode removê-los. Esses materiais ficam guardados por um ano após o fim do contrato e depois são excluídos.",
+    "keptAnon": "Nesses materiais você fica sob um identificador anonimizado. Os hashes das assinaturas e a cadeia de provas não contêm dados pessoais e não são excluídos.",
+    "blockedTitle": "Quando a conta não pode ser excluída",
+    "blockedText": "Enquanto você tiver contratos não concluídos ou disputas abertas, a exclusão fica retida — conclua-os primeiro. O aplicativo mostra quantos são e quais.",
+    "noAccessTitle": "Se você não conseguir entrar",
+    "noAccessText": "Escreva para {{email}} do endereço de e-mail vinculado à sua conta e excluiremos a conta a pedido. Esse mesmo endereço consta na Política de Privacidade."
+  }
+}

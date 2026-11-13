@@ -1,0 +1,12 @@
+{
+  "actorSwitcher": {
+    "triggerLabel": "Ganti profil",
+    "personalLabel": "Pribadi",
+    "legalFormIp": "Usaha perorangan",
+    "legalFormOoo": "PT",
+    "addOrg": "Tambah organisasi",
+    "groups": "Grup saya"
+  },
+  "sectionMenu": "Bagian",
+  "logout": "Keluar"
+}

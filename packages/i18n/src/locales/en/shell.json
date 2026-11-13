@@ -1,0 +1,12 @@
+{
+  "actorSwitcher": {
+    "triggerLabel": "Switch profile",
+    "personalLabel": "Personal",
+    "legalFormIp": "Sole trader",
+    "legalFormOoo": "Limited company",
+    "addOrg": "Add organization",
+    "groups": "My groups"
+  },
+  "sectionMenu": "Sections",
+  "logout": "Sign out"
+}

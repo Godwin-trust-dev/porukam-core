@@ -1,0 +1,9 @@
+# Фикстура для тестов apps.geo — подмножество countryInfo.txt (GeoNames, CC BY 4.0).
+#ISO	ISO3	ISO-Numeric	fips	Country	Capital	Area(in sq km)	Population	Continent	tld	CurrencyCode	CurrencyName	Phone	Postal Code Format	Postal Code Regex	Languages	geonameid	neighbours	EquivalentFipsCode
+AL	ALB	008	AL	Albania	Tirana	28748	2866376	EU	.al	ALL	Lek	355	####	^(\d{4})$	sq,el	783754	MK,GR,ME,RS,XK	
+BY	BLR	112	BO	Belarus	Minsk	207600	9485386	EU	.by	BYN	Belarusian ruble	375	######	^(\d{6})$	be,ru	630336	PL,LT,UA,RU,LV	
+DE	DEU	276	GM	Germany	Berlin	357021	82927922	EU	.de	EUR	Euro	49	#####	^(\d{5})$	de	2921044	CH,PL,NL,DK,BE,CZ,LU,FR,AT	
+KZ	KAZ	398	KZ	Kazakhstan	Nur-Sultan	2717300	18276499	AS	.kz	KZT	Tenge	7	######	^(\d{6})$	kk,ru	1522867	TM,CN,KG,UZ,RU	
+RU	RUS	643	RS	Russia	Moscow	17100000	144478050	EU	.ru	RUB	Ruble	7	######	^(\d{6})$	ru,tt,xal,cau,ady,kv,ce,tyv,cv,udm,tut,mns,bua,myv,mdf,chm,ba,inh,kbd,krc,av,sah,nog	2017370	GE,CN,BY,UA,KZ,LV,PL,EE,LT,FI,MN,NO,AZ,KP	
+US	USA	840	US	United States	Washington	9629091	327167434	NA	.us	USD	Dollar	1	#####-####	^\d{5}(-\d{4})?$	en-US,es-US,haw,fr	6252001	CA,MX,CU	
+XYZ	XYZ	999	XY	Nowhere	Capital	1	1	XX	.xx	XXX	X	1			xx	1		

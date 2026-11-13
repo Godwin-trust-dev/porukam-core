@@ -1,0 +1,141 @@
+/* Приватный разбор своей репутации (ADR-163 §8) — та же компакт-плотность
+   и тот же «без боковых рамок» на узком экране, что у карточки: разделы —
+   надпись + строки на одной bleed-поверхности. */
+.page {
+  min-height: 100%;
+  background: var(--pr-cream);
+  padding: var(--pr-d-pad-card);
+}
+.layout {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-d-gap-section);
+  min-inline-size: 0;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-screen);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-ink);
+  overflow-wrap: anywhere;
+}
+
+.section {
+  display: grid;
+  gap: var(--pr-sp-2);
+  min-inline-size: 0;
+}
+
+.guestRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-2);
+  min-inline-size: 0;
+}
+.guestText {
+  margin: 0;
+  flex: 1 1 200px;
+  min-inline-size: 0;
+  font-size: var(--pr-d-fs-body);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-ink);
+  overflow-wrap: anywhere;
+}
+
+.row {
+  margin: 0;
+  padding: var(--pr-d-row-pad-y) var(--pr-d-row-pad-x);
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-text-2);
+  font-variant-numeric: tabular-nums;
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+}
+
+.metric {
+  display: grid;
+  gap: var(--pr-sp-2);
+  padding: var(--pr-d-row-pad-y) var(--pr-d-row-pad-x);
+  min-inline-size: 0;
+}
+.metricName {
+  margin: 0;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-title);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-ink);
+  overflow-wrap: anywhere;
+}
+.hint {
+  margin: 0;
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-text-2);
+  overflow-wrap: anywhere;
+}
+
+.expand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  justify-self: start;
+  padding: var(--pr-sp-2) 0;
+  min-height: var(--pr-touch-min);
+  background: none;
+  border: none;
+  font: inherit;
+  font-size: var(--pr-d-fs-2);
+  font-weight: var(--pr-fw-semibold);
+  color: var(--pr-teal-deep);
+  text-align: start;
+  cursor: pointer;
+}
+.chevron,
+.chevronOpen {
+  flex: none;
+  transform: scaleX(-1);
+}
+.chevronOpen {
+  transform: scaleX(-1) rotate(90deg);
+}
+
+.items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--pr-sp-2);
+  min-inline-size: 0;
+}
+.item {
+  display: grid;
+  gap: 2px;
+  min-inline-size: 0;
+}
+.itemTitle {
+  font-size: var(--pr-d-fs-2);
+  color: var(--pr-ink);
+  overflow-wrap: anywhere;
+}
+.itemMeta {
+  font-size: var(--pr-d-fs-2);
+  color: var(--pr-text-2);
+  overflow-wrap: anywhere;
+}
+
+.hiddenText {
+  margin: 0 0 var(--pr-sp-2);
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-text-2);
+  overflow-wrap: anywhere;
+}

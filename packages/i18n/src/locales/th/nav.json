@@ -1,0 +1,16 @@
+{
+  "home": "หน้าหลัก",
+  "feed": "ข่าวสาร",
+  "notifications": "การแจ้งเตือน",
+  "search": "ค้นหา",
+  "deals": "ข้อตกลง",
+  "stages": "ขั้นตอน",
+  "payments": "การชำระเงิน",
+  "disputes": "ข้อพิพาท",
+  "reputation": "ความน่าเชื่อถือ",
+  "profile": "โปรไฟล์",
+  "groups": "กลุ่ม",
+  "chat": "แชท",
+  "organizations": "องค์กร",
+  "notificationsShort": "แจ้งเตือน"
+}

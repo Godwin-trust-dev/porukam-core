@@ -1,0 +1,64 @@
+.form {
+  display: grid;
+  gap: var(--pr-sp-4);
+}
+.row {
+  display: grid;
+  gap: var(--pr-sp-3);
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+}
+@media (max-width: 600px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
+.sphere {
+  display: grid;
+  gap: var(--pr-sp-2);
+}
+.sphereLabel {
+  /* Строка подписи как у Field.labelRow — «?» рядом, раскрытый текст на всю ширину. */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-1);
+  font-size: var(--pr-fs-sm);
+  font-weight: var(--pr-fw-medium);
+  color: var(--pr-ink);
+}
+.sphereChosen {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  flex-wrap: wrap;
+}
+.sphereName {
+  font-weight: var(--pr-fw-semibold);
+  color: var(--pr-ink);
+}
+.links {
+  display: grid;
+  gap: var(--pr-sp-2);
+}
+.linkRow {
+  display: grid;
+  gap: var(--pr-sp-2);
+  grid-template-columns: 2fr 1fr auto;
+  align-items: end;
+}
+@media (max-width: 600px) {
+  .linkRow {
+    grid-template-columns: 1fr;
+  }
+}
+.error {
+  color: var(--pr-danger, #b3261e);
+  font-size: var(--pr-fs-sm);
+  margin: 0;
+}
+.hint {
+  color: var(--pr-text-mute);
+  font-size: var(--pr-fs-sm);
+  margin: 0;
+}

@@ -1,0 +1,178 @@
+/* Экран допсоглашения — та же сетка, что у экрана подписания договора
+   (SigningPage.module.css): контейнер формы по центру, липкая панель действий. */
+.wrap {
+  display: grid;
+  gap: var(--pr-sp-5);
+  max-inline-size: var(--pr-form-max);
+  margin-inline: auto;
+}
+.head {
+  display: grid;
+  gap: var(--pr-sp-2);
+  justify-items: start;
+}
+.title {
+  font-size: var(--pr-d-fs-screen);
+  color: var(--pr-ink);
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.sub {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+  overflow-wrap: anywhere;
+}
+.meta {
+  display: flex;
+  gap: var(--pr-sp-2);
+  flex-wrap: wrap;
+  align-items: center;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.card {
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  padding: var(--pr-sp-5);
+  display: grid;
+  gap: var(--pr-sp-2);
+}
+.sectionTitle {
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-ink);
+  margin: 0 0 var(--pr-sp-1);
+}
+.bodyText {
+  margin: 0;
+  color: var(--pr-ink);
+  font-size: var(--pr-fs-sm);
+  line-height: var(--pr-lh-normal);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.muted {
+  margin: 0;
+  color: var(--pr-text-mute);
+  font-size: var(--pr-fs-sm);
+}
+
+/* Одно изменение допника: тип · цель, затем строки «было → станет». */
+.change {
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-md);
+  padding: var(--pr-sp-3);
+  display: grid;
+  gap: var(--pr-sp-2);
+}
+.changeHead {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-1) var(--pr-sp-2);
+  align-items: baseline;
+}
+.changeType {
+  font-weight: 600;
+  color: var(--pr-ink);
+}
+.changeTarget {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+  overflow-wrap: anywhere;
+}
+.diff {
+  margin: 0;
+  display: grid;
+  gap: var(--pr-sp-1);
+}
+.diffRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--pr-sp-1);
+}
+.diffLabel {
+  color: var(--pr-text-mute);
+  font-size: var(--pr-fs-xs);
+}
+.diffValue,
+.totalLine {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-1) var(--pr-sp-2);
+  align-items: baseline;
+  font-size: var(--pr-fs-sm);
+}
+.was {
+  color: var(--pr-text-2);
+  text-decoration: line-through;
+  overflow-wrap: anywhere;
+}
+.arrow {
+  color: var(--pr-text-mute);
+}
+.becomes {
+  color: var(--pr-ink);
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.deltaLine {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+
+/* DEV-20 §3: CTA идёт СРАЗУ под контентом. Раньше блок был липким
+   (`position: sticky; bottom`) и страница резервировала под него запас снизу —
+   на коротком экране между текстом и кнопкой зияла пустота. Липкий низ
+   оставлен только там, где контент реально уходит за фолд (подписание —
+   якорь §7) и где низ занят вводом (композер чата). */
+.actionsBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--pr-sp-2) var(--pr-sp-3);
+}
+
+/* Хроника — как на карточке договора: на телефоне время над событием. */
+.timeline {
+  display: grid;
+  gap: 0;
+}
+.tlItem {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: var(--pr-sp-3);
+  padding: var(--pr-sp-2) 0;
+  border-top: 1px solid var(--pr-line);
+  overflow-wrap: anywhere;
+  font-size: var(--pr-fs-sm);
+}
+@media (max-width: 560px) {
+  .tlItem {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--pr-sp-1);
+  }
+}
+.tlItem:first-child {
+  border-top: none;
+}
+.tlTime {
+  color: var(--pr-text-mute);
+}
+/* ADR-134: подпись с бэка + пояснение; код — только как фолбэк, мелко. */
+.tlBody {
+  display: grid;
+  gap: var(--pr-sp-1);
+  min-width: 0;
+}
+.tlCode {
+  font-family: ui-monospace, monospace;
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-mute);
+}
+.tlDetail {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}

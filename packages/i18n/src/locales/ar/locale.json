@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "لغة الواجهة",
+  "globeTriggerAria": "لغة الواجهة",
+  "rowLabel": "لغة الواجهة",
+  "listTitle": "لغة الواجهة",
+  "searchPlaceholder": "ابحث عن لغة…",
+  "searchAriaLabel": "ابحث عن لغة",
+  "searchClear": "مسح البحث",
+  "currentSectionTitle": "الحالية",
+  "allSectionTitle": "كل اللغات",
+  "noResults": "لم يُعثر على لغة",
+  "betaBadge": "ترجمة آلية",
+  "betaTooltip": "ترجمة آلية — قد تكون غير دقيقة",
+  "currentAria": "اللغة الحالية",
+  "disabledToast": "{{lang}} غير متاحة مؤقتًا · نعرض الإنجليزية",
+  "closeLabel": "إغلاق",
+  "onboardingHint": "تم التعرّف عليها تلقائيًا — يمكنك تغييرها في أي وقت",
+  "settingsRowLabel": "اللغة والمنطقة",
+  "settingsLanguageExplain": "هذه لغة التطبيق. أما اللغة الرسمية للاتفاق فتُختار على حدة — يرى الطرف الآخر ترجمة، لكن ما يُوقَّع هو النص الرسمي.",
+  "loadErrorRetry": "إعادة المحاولة",
+  "loadError": "تعذّر تحميل قائمة اللغات"
+}

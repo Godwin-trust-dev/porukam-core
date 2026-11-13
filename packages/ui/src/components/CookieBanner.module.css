@@ -1,0 +1,47 @@
+.banner {
+  position: fixed;
+  inset-inline-start: var(--pr-sp-4);
+  inset-inline-end: var(--pr-sp-4);
+  bottom: var(--pr-sp-4);
+  z-index: 40;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--pr-sp-4);
+  padding: var(--pr-sp-4) var(--pr-sp-5);
+  background: var(--pr-ink);
+  color: var(--pr-on-ink);
+  border-radius: var(--pr-r-lg);
+  box-shadow: var(--pr-shadow-card);
+}
+
+.text {
+  flex: 1 1 260px;
+  margin: 0;
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-on-ink-2);
+}
+
+.actions {
+  display: flex;
+  gap: var(--pr-sp-2);
+  flex: none;
+}
+
+@media (max-width: 480px) {
+  .banner {
+    inset-inline-start: var(--pr-sp-2);
+    inset-inline-end: var(--pr-sp-2);
+    bottom: var(--pr-sp-2);
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .text {
+    /* В колонке flex-basis работает по высоте: 260px раздували баннер на
+       полэкрана (отсмотр DEV-17, мобильный /welcome). */
+    flex: 0 0 auto;
+  }
+  .actions {
+    justify-content: flex-end;
+  }
+}

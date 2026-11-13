@@ -1,0 +1,133 @@
+/* Витрина работ объединения (ADR-128) — та же сетка кликабельных работ, что на
+   карточке репутации человека (ReputationCardPage.module.css .worksGrid), плюс
+   галерея миниатюр и действия для leader/admin. */
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+  flex-wrap: wrap;
+  margin-bottom: var(--pr-sp-2);
+}
+.sectionTitle {
+  font-family: var(--pr-font-head);
+  font-size: var(--pr-fs-h3);
+  margin: 0;
+  color: var(--pr-ink);
+}
+.empty {
+  margin: 0;
+  color: var(--pr-ink-2, #5c5c5c);
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--pr-sp-3);
+}
+.item {
+  display: grid;
+  gap: var(--pr-sp-2);
+  align-content: start;
+  min-width: 0;
+}
+.cover {
+  display: grid;
+  gap: var(--pr-sp-2);
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  text-align: start;
+  color: inherit;
+  font: inherit;
+  min-width: 0;
+}
+.cover:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: 2px;
+  border-radius: var(--pr-r-sm);
+}
+.photo,
+.photoPlaceholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--pr-r-sm);
+  background: var(--pr-sand);
+  display: block;
+}
+.itemTitle {
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-1, 4px);
+  align-items: center;
+  font-size: var(--pr-fs-sm, 13px);
+  color: var(--pr-text-2);
+  overflow-wrap: anywhere;
+}
+/* Точка-разделитель — В КОНЦЕ предыдущего пункта, а не в начале следующего:
+   иначе при переносе строка начиналась с «· Алматы» (отсмотр 2026-08-25). */
+.meta > *:not(:last-child)::after {
+  content: '·';
+  margin-inline-start: var(--pr-sp-1);
+  color: var(--pr-text-mute);
+}
+.thumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-2);
+}
+.thumb {
+  position: relative;
+  width: 72px;
+  display: grid;
+  gap: 2px;
+}
+.thumb img {
+  width: 72px;
+  height: 54px;
+  object-fit: cover;
+  border-radius: var(--pr-r-sm);
+  display: block;
+  background: var(--pr-sand);
+}
+.thumbBadge {
+  justify-self: start;
+}
+.thumbAction {
+  border: 0;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--pr-teal);
+  font-size: var(--pr-fs-xs, 12px);
+  text-align: start;
+}
+.thumbRemove {
+  position: absolute;
+  top: 2px;
+  inset-inline-end: 2px;
+  border: 0;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  color: var(--pr-ink);
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-2);
+  align-items: center;
+}
+.fileInput {
+  display: none;
+}

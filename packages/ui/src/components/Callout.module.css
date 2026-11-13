@@ -1,0 +1,95 @@
+.callout {
+  display: flex;
+  gap: var(--pr-sp-3);
+  align-items: flex-start;
+  border-radius: var(--pr-r-md);
+  padding: var(--pr-sp-3) var(--pr-sp-4);
+  font-size: var(--pr-fs-sm);
+  line-height: var(--pr-lh-normal);
+  border-inline-start: 4px solid transparent;
+}
+.icon {
+  flex: none;
+  margin-top: 1px;
+}
+/* Финал доска A (настройки): информация — голубовато-серая плашка без
+   цветной полосы слева, текст чернильный. */
+.info {
+  background: var(--pr-info-bg);
+  color: var(--pr-text);
+  border-inline-start-color: transparent;
+}
+.operator {
+  background: rgba(30, 138, 128, 0.1);
+  color: var(--pr-teal-deep);
+  border-inline-start-color: var(--pr-teal);
+}
+.warn {
+  background: rgba(255, 158, 44, 0.14);
+  color: var(--pr-amber-deep);
+  border-inline-start-color: var(--pr-amber);
+}
+.neutral {
+  background: var(--pr-cream);
+  color: var(--pr-text-2);
+  border-inline-start-color: var(--pr-line);
+}
+.title {
+  font-weight: var(--pr-fw-semibold);
+  color: inherit;
+  margin: 0 0 2px;
+}
+
+.grow {
+  flex: 1;
+  min-inline-size: 0;
+}
+/* Свёрнутая плашка (DEV-20_2 §4): заголовок — сама кнопка раскрытия, поэтому
+   тап-таргет держит она, а не обёртка. */
+.collapseTrigger {
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  inline-size: 100%;
+  min-block-size: var(--pr-touch-min);
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  color: inherit;
+  font: inherit;
+  text-align: start;
+}
+.collapseTrigger:focus-visible {
+  outline: 2px solid var(--pr-amber);
+  outline-offset: 2px;
+}
+.collapseTrigger .title {
+  flex: 1;
+  min-inline-size: 0;
+  margin: 0;
+}
+.chevron {
+  flex: none;
+  inline-size: 7px;
+  block-size: 7px;
+  border-inline-end: 2px solid currentColor;
+  border-block-end: 2px solid currentColor;
+  transform: rotate(45deg);
+  margin-block-end: 3px;
+  opacity: 0.8;
+  transition: transform var(--pr-dur-fast) var(--pr-ease);
+}
+.chevron[data-open] {
+  transform: rotate(-135deg);
+  margin-block: 3px 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .chevron {
+    transition: none;
+  }
+}
+.collapsePanel {
+  padding-block-start: var(--pr-sp-2);
+}

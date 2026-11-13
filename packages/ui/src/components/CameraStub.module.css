@@ -1,0 +1,11 @@
+.stub {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  margin: 0;
+  color: var(--pr-text-mute);
+  font-size: var(--pr-fs-xs);
+}
+.icon {
+  flex: none;
+}

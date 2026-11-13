@@ -1,0 +1,138 @@
+/* Хаб владельца (финал доска A): паддинг и фон даёт оболочка, здесь — только
+   ритм блоков и строки меню. */
+.page {
+  min-height: 100%;
+}
+
+.loading {
+  max-width: 640px;
+  margin: 0 auto;
+  display: grid;
+  gap: var(--pr-sp-4);
+  padding: var(--pr-sp-8) 0;
+}
+
+.layout {
+  max-width: 720px;
+  margin: 0 auto;
+  display: grid;
+  /* ADR-146: трек — `minmax(0, 1fr)`, а не неявный `auto`. Неявный трек
+     растёт до min-content самого широкого ребёнка, и ряд плиток вытаскивал
+     всю колонку профиля за экран на 360px (полоса контента её обрезала —
+     «Портфолио» и «Поделиться» становились недоступны). */
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--pr-d-gap);
+}
+
+/* Ряд действий под паспортом: «Редактировать» берёт ширину, остальные — по
+   содержимому; на 390px помещается одной строкой. */
+.actions {
+  display: flex;
+  align-items: stretch;
+  gap: var(--pr-sp-2);
+  min-width: 0;
+}
+.editBtn.editBtn {
+  flex: 1 1 auto;
+  min-height: var(--pr-touch-min);
+}
+@media (min-width: 1024px) {
+  .editBtn.editBtn {
+    flex: 0 0 auto;
+    min-inline-size: 200px;
+  }
+}
+.actions > * {
+  min-height: var(--pr-touch-min);
+}
+.shareBtn.shareBtn {
+  flex: 0 0 auto;
+  padding-inline: var(--pr-sp-3);
+}
+
+.tiles {
+  display: grid;
+  /* DEV-20_2 §6: 3×1fr БЕЗ горизонтального overflow. Треки —
+     `minmax(0, 1fr)`, а не `1fr` (ADR-146): у грид-элемента `min-width: auto`,
+     и длинная подпись плитки раздувала бы колонку шире доли, утаскивая всю
+     сетку за экран. */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--pr-sp-2);
+}
+
+/* Строка меню — тот же ритм, что у ListRow (DEV-20 §2): 8×13, 54 высотой,
+   разделитель даёт `Surface`; слева значок, справа шеврон. */
+.linkRow {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  width: 100%;
+  min-height: max(var(--pr-d-row-min-h), var(--pr-touch-min));
+  padding: var(--pr-d-row-pad-y) var(--pr-d-row-pad-x);
+  font-size: var(--pr-d-fs-body);
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+.linkRow:hover {
+  background: var(--pr-cream);
+}
+.linkRow:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: -2px;
+}
+.rowIcon {
+  flex: none;
+  color: var(--pr-text-2);
+}
+.rowText {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: var(--pr-d-fs-body);
+  color: var(--pr-ink);
+}
+.rowHint {
+  font-size: var(--pr-d-fs-2);
+  color: var(--pr-text-2);
+}
+.chevron {
+  flex: none;
+  color: var(--pr-text-mute);
+  transform: scaleX(-1);
+}
+
+.shareBody {
+  display: grid;
+  gap: var(--pr-sp-4);
+}
+.qrPlaceholder {
+  width: 160px;
+  height: 160px;
+  border-radius: var(--pr-r-md);
+  background: repeating-conic-gradient(var(--pr-ink) 0% 25%, var(--pr-white) 0% 50%) 0 0 / 20px 20px;
+  border: 1px solid var(--pr-line);
+  display: grid;
+  place-items: center;
+  color: var(--pr-white);
+  justify-self: center;
+}
+.shareField {
+  display: grid;
+  gap: var(--pr-sp-1);
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+}
+.shareField input {
+  font-family: ui-monospace, monospace;
+  padding: var(--pr-sp-2) var(--pr-sp-3);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-sm);
+  background: var(--pr-cream);
+  color: var(--pr-text);
+}

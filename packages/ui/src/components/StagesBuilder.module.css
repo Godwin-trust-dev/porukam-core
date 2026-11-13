@@ -1,0 +1,61 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-5);
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-3);
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+}
+.sectionStages {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+  padding-inline-start: var(--pr-sp-4);
+  border-inline-start: 2px solid var(--pr-line);
+  margin-inline-start: var(--pr-sp-2);
+}
+.addStageBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  align-self: flex-start;
+  background: none;
+  border: 1px dashed var(--pr-line);
+  border-radius: var(--pr-r-md);
+  padding: var(--pr-sp-2) var(--pr-sp-3);
+  color: var(--pr-teal-deep);
+  cursor: pointer;
+  min-height: var(--pr-touch-min);
+  font-size: var(--pr-fs-sm);
+}
+.addRow {
+  display: flex;
+  gap: var(--pr-sp-3);
+  flex-wrap: wrap;
+}
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+  background: var(--pr-cream);
+  border-radius: var(--pr-r-lg);
+  padding: var(--pr-sp-4);
+}
+.summaryRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-variant-numeric: tabular-nums;
+}
+.durationNote {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+  margin: 0;
+}

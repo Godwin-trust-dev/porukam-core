@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "इंटरफ़ेस की भाषा",
+  "globeTriggerAria": "इंटरफ़ेस की भाषा",
+  "rowLabel": "इंटरफ़ेस की भाषा",
+  "listTitle": "इंटरफ़ेस की भाषा",
+  "searchPlaceholder": "भाषा खोजें…",
+  "searchAriaLabel": "भाषा खोजें",
+  "searchClear": "खोज साफ़ करें",
+  "currentSectionTitle": "मौजूदा",
+  "allSectionTitle": "सभी भाषाएँ",
+  "noResults": "कोई भाषा नहीं मिली",
+  "betaBadge": "स्वचालित अनुवाद",
+  "betaTooltip": "स्वतः अनुवादित — त्रुटियाँ संभव हैं",
+  "currentAria": "मौजूदा भाषा",
+  "disabledToast": "{{lang}} अभी उपलब्ध नहीं है · हम अंग्रेज़ी दिखा रहे हैं",
+  "closeLabel": "बंद करें",
+  "onboardingHint": "स्वतः पहचानी गई — कभी भी बदल सकते हैं",
+  "settingsRowLabel": "भाषा और क्षेत्र",
+  "settingsLanguageExplain": "यह ऐप की भाषा है। अनुबंध की आधिकारिक भाषा अलग से चुनी जाती है — दूसरा पक्ष अनुवाद देखता है, पर हस्ताक्षर आधिकारिक पाठ पर होते हैं।",
+  "loadErrorRetry": "फिर कोशिश करें",
+  "loadError": "भाषाओं की सूची लोड नहीं हो सकी"
+}

@@ -1,0 +1,36 @@
+/* Экран-страховка `/a/<token>` (ADR-139 §7): человек попал сюда только из-за
+   устаревшего service worker'а, поэтому оформление минимальное — сообщение и
+   ссылка на скачивание. Оболочки/навигации нет: страница публичная. */
+.page {
+  max-width: 34rem;
+  margin: 0 auto;
+  padding: var(--pr-sp-6) var(--pr-sp-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-3);
+  align-items: flex-start;
+}
+.text {
+  margin: 0;
+  font-size: var(--pr-fs-body);
+  color: var(--pr-text);
+}
+/* Та же идиома, что `.dl` на экране архива: обычная ссылка, оформленная кнопкой. */
+.action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--pr-touch-min);
+  padding: 0 var(--pr-sp-4);
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-body);
+  color: var(--pr-cream);
+  background: var(--pr-teal-deep);
+  border-radius: var(--pr-r-pill);
+  text-decoration: none;
+}
+.action:focus-visible {
+  outline: 2px solid var(--pr-amber);
+  outline-offset: 2px;
+}

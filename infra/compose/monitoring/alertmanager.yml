@@ -1,0 +1,33 @@
+# Alertmanager (docs/tasks/fundament-2.md ЭФ.6 п.3: "канал алёртов — вебхук
+# (заглушка) + email-фейк; реальный канал подключим позже").
+#
+# email-фейк — реальная SMTP-отправка на Mailhog (уже в этом compose,
+# dev-setup.md §2), письма смотрятся на http://localhost:8025 — тот же
+# приём, что уведомления apps.notifications.
+#
+# webhook — намеренно недостижимый плейсхолдер (по аналогии с Fake*Provider
+# в коде, tech-spec.md §9.1: "внешние провайдеры — только интерфейсы +
+# фейки"; для алёртов "фейка" не бывает, поэтому здесь просто адрес,
+# который завести раньше реального канала (Slack/Telegram) не имеет
+# смысла) — Alertmanager будет ретраить и логировать неудачу, это ожидаемо
+# для дев и не мешает email-каналу.
+global:
+  smtp_from: "alertmanager@porukam.local"
+  smtp_smarthost: "mailhog:1025"
+  smtp_require_tls: false
+
+route:
+  receiver: default
+  group_by: ["alertname"]
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 4h
+
+receivers:
+  - name: default
+    webhook_configs:
+      - url: "http://webhook-stub.invalid/alerts"
+        send_resolved: true
+    email_configs:
+      - to: "alerts@porukam.local"
+        send_resolved: true

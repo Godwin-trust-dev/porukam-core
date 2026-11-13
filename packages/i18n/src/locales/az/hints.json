@@ -1,0 +1,113 @@
+{
+  "helpButton": "Sahə üzrə ipucu",
+  "onboarding": {
+    "handle": "Porukam-dakı ictimai ünvanınız — messencerdəki @ad kimi. Qarşı tərəflər sizi bununla tapır və reputasiya kartınız bununla açılır. Latın hərfləri, rəqəmlər, nöqtə və alt xətt.",
+    "name": "Qarşı tərəfin müqavilədə və kartınızda görəcəyi ad. Yalnız ad və ya ad-soyad — işdə özünüzü necə təqdim edirsinizsə."
+  },
+  "contractNew": {
+    "title": "Siyahı üçün müqavilənin qısa adı — məsələn «Mətbəx təmiri» və ya «Kafe üçün loqo». Boş qalsa, təsvir istifadə olunur.",
+    "workDescription": "Dəqiq nə edilməlidir: həcm, nəticə, nə tamamlanmış sayılır. Nə qədər konkret olsa, qəbul bir o qədər asan, mübahisə bir o qədər az olar.",
+    "locationType": "İş harada görülür: sifarişçidə, icraçıda, məsafədən və ya ünvanda. Giriş və təhvil şərtləri bundan asılıdır.",
+    "locationAddress": "İşin görüldüyü ünvan — küçə, bina, lazım olsa mərtəbə və mənzil. Yalnız müqavilə tərəflərinə görünür.",
+    "termType": "Müddət necə hesablanır: başlama və bitmə tarixlərinə görə, yoxsa imzadan sonrakı gün sayına görə.",
+    "start": "İcraçının işə başladığı tarix.",
+    "end": "İşin tam təhvil verilməli olduğu tarix.",
+    "durationDays": "Müqavilənin imzalandığı gündən iş üçün neçə təqvim günü ayrılır.",
+    "priceType": "Bütün həcm üçün sabit qiymət və ya mərhələ/vahid üzrə ödəniş. Mürəkkəb işlər üçün mərhələlər daha rahatdır.",
+    "currency": "Müqavilədəki bütün məbləğlərin valyutası. Bütün müqavilə üçün bir — imzadan sonra dəyişmək olmaz.",
+    "warrantyDays": "Qəbuldan sonra icraçı nəticənin qüsurlarına görə neçə gün cavabdehdir. 0 — zəmanətsiz.",
+    "acceptanceHours": "Sifarişçinin təhvil verilmiş mərhələni yoxlamaq üçün neçə saatı var. Vaxtında cavab verməsə, mərhələ avtomatik qəbul edilmiş sayılır.",
+    "paymentMethod": "Tərəflər necə hesablaşır: rekvizitlərlə köçürmə, nağd, başqa üsul. Platforma pulu saxlamır və keçirmir — yalnız razılaşmanı və faktları qeyd edir.",
+    "paymentOrder": "Hər mərhələ nə vaxt ödənilir: başlamazdan əvvəl (əvvəlcədən ödəniş) və ya sifarişçi qəbul etdikdən sonra (sonradan ödəniş). Müqavilənin bütün mərhələlərinə aiddir.",
+    "subcontract": "İcraçı işin bir hissəsi üçün köməkçilər və ya başqa icraçılar cəlb edə bilərmi.",
+    "premisesAccess": "İcraçıya sifarişçinin məkanına giriş lazımdırmı və hansı şərtlərlə (vaxt, açarlar, iştirak).",
+    "portfolioConsent": "Sifarişçi qəbuldan sonra nəticənin icraçının portfoliosunda göstərilməsinə icazə verirmi.",
+    "stages": "İşi mərhələlərə bölün: hər mərhələ ayrıca təhvil verilir və qəbul edilir, mərhələlərin cəmi müqavilə məbləğinə bərabərdir. Kiçik iş üçün bir mərhələ kifayətdir.",
+    "stageTitle": "Bu mərhələdə nə təhvil verilir — məsələn «Qaralama maket» və ya «Quraşdırma».",
+    "stageAmount": "Məhz bu mərhələnin dəyəri. Bütün mərhələlərin cəmi müqavilə qiyməti ilə üst-üstə düşməlidir.",
+    "stageDeadline": "Mərhələ sifarişçiyə yoxlama üçün hansı tarixədək təhvil verilməlidir.",
+    "counterparty": "İkinci tərəf kimdir: @istifadəçi adı ilə axtarın və ya saxlanılmış kontaktlardan seçin. Dəvəti məhz bu şəxs alacaq.",
+    "sale": {
+      "what": "Nə satılır — əşyanın adı, alıcıya təsvir edəcəyiniz kimi: «iPhone 13 128 GB», «Trek FX 2 velosipedi».",
+      "description": "Vəziyyət, komplektasiya, xüsusiyyətlər — alıcının sazişdən əvvəl bilməsi vacib olan hər şey.",
+      "condition": "Yeni, yeni kimi, istifadə olunmuş və köhnəlmiş — vəziyyətin dürüst təsviri mübahisədə hər iki tərəfi qoruyur.",
+      "defects": "Məlum qüsurlar və çatışmazlıqlar. Heç nə göstərilməyibsə, alıcı onların olmadığını gözləməyə haqlıdır.",
+      "completeness": "Komplektə nə daxildir: qutu, adapter, sənədlər, aksesuarlar.",
+      "identifiers": "Seriya nömrəsi, IMEI, VIN və s. — məhz bu əşyanın təhvil verildiyini təsdiqləməyə imkan verir.",
+      "householdPlot": "Öz həyətyanı təsərrüfatınızın məhsulunu satırsınızsa qeyd edin — bu vergi rejiminə təsir edir.",
+      "price": "Əşyanın tam qiyməti. Çatdırılma ödənişlidirsə, aşağıda ayrıca göstərilir.",
+      "deliveryType": "Əşya necə təhvil verilir: özü götürmə, kuryer, poçt və ya nəqliyyat şirkəti.",
+      "address": "Təhvil və ya çatdırılma ünvanı. Yalnız tərəflərə görünür.",
+      "deliveryPayer": "Çatdırılmanı kim ödəyir — satıcı, yoxsa alıcı.",
+      "tracking": "Göndərişin izləmə nömrəsi lazımdırmı. Onunla göndərmə və alma faktını təsdiqləmək daha asandır.",
+      "deliveryTerm": "Təhvil müddəti: konkret tarix və ya ödənişdən sonrakı gün sayı.",
+      "deliveryDate": "Əşyanın alıcıya təhvil verilməli olduğu tarix.",
+      "deliveryDays": "Ödəniş günündən təhvil üçün neçə gün.",
+      "inspectionHours": "Saziş bağlanmış sayılanadək alıcının əşyanı aldıqdan sonra yoxlamaq üçün neçə saatı var."
+    }
+  },
+  "settings": {
+    "displayName": "Qarşı tərəflərin istifadəçi adınızın yanında gördüyü ad. Müştərilərinizin sizi tanıdığı kimi yazın.",
+    "city": "Kataloqumuzda hələ olmayan qəsəbələr üçün sərbəst yazılan alt yazı — kartınızda göstərilir, lakin axtarışa təsir etmir. Axtarış üçün iş regionunuzu aşağıda göstərin.",
+    "handle": "Sizin ictimai ünvanınız — sizi onunla tapır və reputasiya kartınızı açırlar. 3-dən 20 işarəyə qədər: latın hərfləri, rəqəmlər, alt xətt.",
+    "avatar": "Profil fotosunu qarşı tərəflər müqavilələrdə, söhbətlərdə və kartınızda görür. Canlı sifət sazişə şəkildən daha çox meyil yaradır.",
+    "country": "Müqavilələrinizə hansı ölkənin hüququ tətbiq olunur (yurisdiksiya). Ünvanınızla və ya iş axtardığınız yerlə heç bir əlaqəsi yoxdur, valyuta və vergilər ondan asılı deyil.",
+    "phone": "Nömrə onu artıq bilənlərin sizi telefonla tapması üçün lazımdır. Profildə dərc olunmur.",
+    "notif": {
+      "deals": "Müqaviləyə dəvətlər, təklif olunan dəyişikliklər, imzalama, mərhələlərin qəbulu — sazişlərin gedişi ilə bağlı hər şey.",
+      "chats": "Müqavilələr üzrə söhbətlərdə və müraciətlərdə yeni mesajlar.",
+      "payments": "Mərhələ ödənişləri və hesablaşma təsdiqləri.",
+      "deadlines": "Müddətlər barədə xatırlatmalar: qəbul pəncərəsi bitir, mərhələnin təhvil tarixi yaxınlaşır.",
+      "disputes": "Mübahisənin açılması, tərəflərin cavabları və mübahisə üzrə qərarlar."
+    }
+  },
+  "stage": {
+    "totalCost": "İşlərin ümumi dəyəri. Onu göstərsəniz, məbləğ mərhələlərə bərabər bölünür — sonra hər mərhələni əl ilə düzəltmək olar.",
+    "title": "Bu mərhələdə nə təhvil verilir — «Qaralama maket», «Quraşdırma», «Birinci partiya». Adı hər iki tərəf görür və o, müqaviləyə düşür.",
+    "amount": "Məhz bu mərhələnin dəyəri. Bütün mərhələlərin cəmi müqavilə qiyməti ilə üst-üstə düşməlidir — əks halda müqaviləni dondurmaq olmaz.",
+    "duration": "Mərhələyə neçə gün ayrılır. Hesablama müqavilənin imzalanmasından deyil, mərhələnin başlanğıcından gedir.",
+    "checklist": "Qəbul meyarları: sifarişçi mərhələni hansı bəndlər üzrə yoxlayır. Ölçüləbilən şəkildə yazın — «maketə iki düzəliş», «divarlarda axıntı izi yoxdur»: belə bənd barədə mübahisə etməyə demək olar ki, yer qalmır.",
+    "evidence": "«Sübut lazımdır» qeydi olan bənd əlavə edilmiş foto və ya fayl gözləyir: onsuz mərhələ təhvil verilərkən xəbərdarlıq görünür, lakin təhvil bloklanmır. Sübutlar müqavilə işində qalır və mübahisədə lazım olur.",
+    "materials": {
+      "name": "Kataloqdan material — beləliklə ad və ölçü vahidləri hər iki tərəfdə üst-üstə düşür. Lazım olanı yoxdursa, «digər» seçib öz adınızı yazın.",
+      "customName": "Kataloqda yoxdursa, materialın öz sözlərinizlə adı.",
+      "quantity": "Nə qədər lazımdır — seçilmiş ölçü vahidində, rəqəmlə.",
+      "unit": "Miqdarın ölçü vahidi: ədəd, metr, kiloqram, litr.",
+      "delivery": "Materialın gətirilməsi neçə gün çəkir. Mərhələ müddətinin real olub-olmadığını anlamağa kömək edir.",
+      "deliveryBase": "Çatdırılma müddətinin hansı hadisədən sayıldığı: müqavilənin imzalanması, ilkin ödəniş və ya mərhələnin başlanması. Beləliklə müddət təqvim tarixindən asılı olmur.",
+      "suppliedBy": "Materialı kim alır və gətirir — sifarişçi, yoxsa icraçı. Bu bənd üzrə fikir ayrılığı boş dayanmanın tez-tez rast gəlinən səbəbidir.",
+      "price": "Materialın bir vahidinin müqavilə valyutasındakı qiyməti. İcraçının verdiyi material üçün qiymət mütləqdir və sıfırdan böyükdür; sifarişçinin materialı sıfır qiymətli ola bilər."
+    }
+  },
+  "group": {
+    "handle": "Birliyin ictimai ünvanı — messencerdəki @ad kimi. Onunla birliyin səhifəsi açılır və ona istinad verilir.",
+    "name": "Birliyin insanlar üçün adı. Səhifəsini açan hər kəs görür.",
+    "sphere": "Birliyin əsas fəaliyyət sahəsi. Onunla birliyi axtarışdan tapır və iştirakçılar seçilir.",
+    "geo": "Birliyin əhatəsi: bütün dünya, ölkə və ya bir şəhər. Axtarışda kimin görəcəyi bundan asılıdır.",
+    "country": "Əhatə ölkəsi. «Ölkə» və ya «şəhər» əhatəsi seçilibsə, mütləqdir.",
+    "city": "Əsas əhatə şəhəri. «Şəhər» əhatəsində mütləqdir.",
+    "description": "Birlik nə haqdadır və kimi gözləyirsiniz: nə ilə məşğulsunuz, qaydalar hansılardır, iştirakçılara nə ilə kömək edirsiniz.",
+    "visibility": "Açıq birliyi hamı görür və axtarışdan tapır; qapalını — yalnız iştirakçılar və birbaşa keçidi olanlar.",
+    "joinPolicy": "İçəri necə düşürlər: düymə ilə sərbəst və ya sahibin təsdiqlədiyi müraciətlə.",
+    "links": "Birliyin digər xidmətlərdəki keçidləri — sayt, kanal, söhbət. 10-a qədər, birliyin səhifəsində görünür.",
+    "logo": "Birliyin loqo şəkli: axtarışda, kartda və adın yanında görünür. Kvadrat şəkil daha yaxşı görünür."
+  },
+  "portfolio": {
+    "title": "Bu işi necə adlandırmalı — «Panel evdə mətbəx», «Kafe üçün vizit-sayt».",
+    "sphere": "İşin aid olduğu sahə. Onunla oxşar iş axtaranlar sizin işinizi tapır.",
+    "startedAt": "İşə nə vaxt başladınız. Doldurmaq mütləq deyil, amma bitmə tarixi ilə birlikdə işin nə qədər çəkdiyi görünür.",
+    "completedAt": "İş nə vaxt bitdi. Mütləq sahə: işlər portfolioda bu tarixə görə düzülür.",
+    "city": "İşin görüldüyü şəhər. Yaxınlıqdakı sifarişçilərə yaxın icraçı seçməyə kömək edir.",
+    "description": "Nə edildi, hansı çətinliklərin öhdəsindən gəldiniz, sonda nə alındı. Uzunluq məhdud deyil.",
+    "photos": "İşin 5-ə qədər fotosu. Birincisi siyahıda üz qabığıdır; onu istənilən vaxt dəyişmək olar."
+  },
+  "revision": {
+    "item": "Müqavilənin hansı şərtini dəyişməyi təklif edirsiniz. Siyahıda bu müqavilənin sahələri var; «digər» — sərbəst mətn.",
+    "before": "Müqavilədəki cari dəyər. Özü qoyulur və redaktə olunmur — beləcə hər iki tərəf eyni şeyi görür.",
+    "after": "Şərtin yeni dəyəri. Qarşı tərəf onu qəbul edəcək və ya rədd edəcək; razılığa qədər müqavilə əvvəlki kimi qalır.",
+    "comment": "Dəyişiklik nəyə görə lazımdır. Şərhi qarşı tərəf görür — qısa izah razılığı sürətləndirir."
+  },
+  "signing": {
+    "declineComment": "Dəqiq nə uyğun gəlmədi və nəyi düzəltmək lazımdır. Mətni qarşı tərəf görür, o, müqavilə tarixçəsində qalır."
+  }
+}

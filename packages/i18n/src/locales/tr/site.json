@@ -1,0 +1,14 @@
+{
+  "hook": "Porukam sözlü anlaşmayı hukuken geçerli bir sözleşmeye dönüştürür ve işlemi son hesaplaşmaya kadar adım adım yürütür.",
+  "problem": "Sözle anlaşmak kolaydır. Zor olan, sonradan neyin kararlaştırıldığını, edimin ne zaman teslim edildiğini ve neyin ödeneceğini kanıtlamaktır. Porukam bu kaydı her iki taraf için tutar.",
+  "contractTitle": "Dakikalar içinde sözleşme",
+  "contractText": "İşlem türünü seçin: hizmet, satış, kiralama veya borç. Sade dildeki sorulara yanıt verin, hazır belgeyi alın. Hukuki ifadeler yazmanız gerekmez.",
+  "stagesTitle": "Aşamalar ve kontrol listesiyle kabul",
+  "stagesText": "İşlemi aşamalara bölün; her aşamada yapılması gerekenlerin listesi olur. Yüklenici yaptıklarını işaretler ve fotoğraf ekler, iş sahibi aşamayı kabul eder veya notlarıyla geri gönderir. İki taraf da işlemin nerede kaldığını ve sıranın kimde olduğunu her an görür.",
+  "paymentTitle": "Sonuca bağlı ödeme",
+  "paymentText": "Ödeme aşamaları izler: kabul edildiyse ödenir. Paranızı tutmuyoruz ve sözleşmenin kurulması için komisyon almıyoruz. Hesaplaşma taraflar arasında kalır; platform neyin ne zaman kabul edildiğini ve ödendiğini kaydeder.",
+  "evidenceTitle": "Kalıcı kanıtlar",
+  "evidenceText": "Fotoğraflar, dosyalar ve yazışmalar aşamaya bağlanır ve güvenilir zaman damgasıyla mühürlenir. İmzalanmış sözleşme değişmez — yalnızca iki tarafın gördüğü ve onayladığı bir ek sözleşmeyle. İş anlaşmazlığa varırsa, onu kapatacak dayanağınız olur.",
+  "reputationTitle": "Gerçeklere dayanan itibar",
+  "reputationText": "İtibar kartı tamamlanmış işlemlerden oluşur; herkesin herkes hakkında yazabileceği yorumlardan değil."
+}

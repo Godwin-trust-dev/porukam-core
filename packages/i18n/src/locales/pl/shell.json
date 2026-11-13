@@ -1,0 +1,12 @@
+{
+  "actorSwitcher": {
+    "triggerLabel": "Zmień profil",
+    "personalLabel": "Osobiste",
+    "legalFormIp": "JDG",
+    "legalFormOoo": "Sp. z o.o.",
+    "addOrg": "Dodaj organizację",
+    "groups": "Moje grupy"
+  },
+  "sectionMenu": "Sekcje",
+  "logout": "Wyloguj się"
+}

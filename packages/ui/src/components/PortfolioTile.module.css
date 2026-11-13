@@ -1,0 +1,34 @@
+.tile {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--pr-r-lg);
+  overflow: hidden;
+  border: 1px solid var(--pr-line);
+  padding: 0;
+  background: none;
+}
+.interactive {
+  cursor: pointer;
+}
+.interactive:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: 2px;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.placeholder {
+  width: 100%;
+  height: 100%;
+  background: var(--pr-grad-tile);
+}
+.badge {
+  position: absolute;
+  inset-inline-start: var(--pr-sp-2);
+  bottom: var(--pr-sp-2);
+}

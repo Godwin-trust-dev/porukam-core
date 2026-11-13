@@ -1,0 +1,60 @@
+.promo {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  padding: var(--pr-sp-4);
+  border-radius: var(--pr-r-lg);
+  background: var(--pr-spark);
+  border: 1px solid var(--pr-line);
+}
+.icon {
+  flex: none;
+  color: var(--pr-amber-deep);
+}
+.text {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  color: var(--pr-ink);
+  font-size: var(--pr-fs-sm);
+}
+.dismiss {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--pr-touch-min);
+  height: var(--pr-touch-min);
+  border: none;
+  background: none;
+  color: var(--pr-text-mute);
+  cursor: pointer;
+}
+.dismiss:hover {
+  color: var(--pr-ink);
+}
+.dismiss:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: 2px;
+}
+
+/* Узкий экран (отсмотр 2026-08-25 «предложение установки выглядит плохо»):
+   текст — одной строкой на всю ширину, кнопка — под ним, крестик справа. */
+@media (max-width: 480px) {
+  .promo {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    row-gap: var(--pr-sp-2);
+  }
+  .cta {
+    grid-column: 2 / -1;
+    grid-row: 2;
+    justify-self: start;
+  }
+  /* Крестик — явно в первую строку справа: авто-раскладка после `.cta`
+     (2 / -1) уводила его на третью строку к левому краю. */
+  .dismiss {
+    grid-column: 3;
+    grid-row: 1;
+  }
+}

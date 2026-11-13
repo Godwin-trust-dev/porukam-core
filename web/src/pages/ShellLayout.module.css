@@ -1,0 +1,254 @@
+.shell {
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: var(--pr-sidebar-w) 1fr;
+}
+
+/* ── Desktop сайдбар (dark UI на чернильном, §7.2) ── */
+.sidebar {
+  background: var(--pr-grad-ink);
+  color: var(--pr-on-ink);
+  padding: var(--pr-sp-5) var(--pr-sp-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-1);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+/* Справка «Что такое Porukam» прижата к низу панели (отсмотр 12.09). */
+.navItemBottom {
+  margin-top: auto;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  padding: var(--pr-sp-2) var(--pr-sp-3) var(--pr-sp-5);
+  /* Бренд — ссылка на главную (№7): без подчёркивания, тач-таргет ≥ 44px;
+     видимый фокус даёт глобальный :focus-visible (global.css).
+     Вид локапа (знак + одноцветный словознак) — компонент Logo (DEV-17 §3). */
+  text-decoration: none;
+  min-height: var(--pr-touch-min);
+  border-radius: var(--pr-r-md);
+}
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  padding: var(--pr-sp-3) var(--pr-sp-3);
+  border-radius: var(--pr-r-md);
+  color: var(--pr-on-ink);
+  text-decoration: none;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-fs-sm);
+  min-height: var(--pr-touch-min);
+  transition: background var(--pr-dur) var(--pr-ease), color var(--pr-dur) var(--pr-ease);
+}
+.navItem:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--pr-white);
+}
+.navItemActive {
+  background: rgba(242, 162, 52, 0.16);
+  color: var(--pr-amber-hi);
+}
+
+/* Бейдж непрочитанных уведомлений (DEV-14 §1) — сайдбар и bottom-nav. */
+/* Финал доска A: янтарный бейдж с ТЁМНОЙ цифрой (белая на янтаре не читалась). */
+.navBadge {
+  margin-inline-start: auto;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: var(--pr-r-pill);
+  background: var(--pr-amber);
+  color: var(--pr-ink);
+  font-size: 11px;
+  font-weight: var(--pr-fw-bold);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-variant-numeric: tabular-nums;
+}
+.tabIconWrap {
+  position: relative;
+  display: inline-flex;
+}
+.tabIconWrap .navBadge {
+  position: absolute;
+  top: -6px;
+  inset-inline-end: -10px;
+  margin-inline-start: 0;
+}
+
+/* ── Контентная область ── */
+.main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  min-height: var(--pr-header-h);
+  display: flex;
+  align-items: center;
+  padding: var(--pr-sp-2) var(--pr-sp-6);
+  background: rgba(251, 246, 238, 0.86);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--pr-line);
+}
+/* Содержимое шапки выровнено по рабочей области — заголовок и переключатель
+   актёра стоят на тех же вертикалях, что контент (DEV-19 §1). */
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-4);
+  flex: 1;
+  min-width: 0;
+}
+/* Слоты экрана в шапке (финал доска A) — только узкий экран: на десктопе у
+   экрана своя шапка (`ScreenHeader`), а здесь остаются заголовок и актёр. */
+.headerSlotTitle,
+.headerSlotActions {
+  display: none;
+}
+.pageTitle {
+  /* DEV-20 §4: заголовок экрана — 16–18, один язык шапки с мобильным. */
+  font-size: var(--pr-d-fs-screen);
+  color: var(--pr-ink);
+  /* Узкий экран: заголовок в одну строку с многоточием, не в два этажа
+     («По / рукам» на мобильном дашборде — отсмотр DEV-17). */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+/* На узких экранах заголовок заменяет кнопка-меню разделов (SectionMenu). */
+@media (max-width: 1023.98px) {
+  .pageTitle {
+    display: none;
+  }
+}
+.pageSub {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+  margin-top: 2px;
+}
+.content {
+  /* Ширину держит WorkArea (--pr-work-max) внутри, не сама полоса контента:
+     иначе на большом мониторе рабочая область снова превращается в
+     мобильный столбец у левого края (DEV-19 §0). */
+  padding: var(--pr-sp-5);
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+}
+
+/* ── Mobile bottom-nav (§7.1) ── */
+.bottomNav {
+  display: none;
+}
+.mobileBrand {
+  display: none;
+}
+
+@media (max-width: 1023.98px) {
+  .shell {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    display: none;
+  }
+  .mobileBrand {
+    display: flex;
+    align-items: center;
+    gap: var(--pr-sp-2);
+    font-family: var(--pr-font-head);
+    font-weight: var(--pr-fw-black);
+    font-size: var(--pr-fs-h3);
+    color: var(--pr-ink);
+  }
+  .header {
+    padding-inline: var(--pr-d-pad-card);
+    /* Финал доска A: шапка на креме, отделена hairline, не линией. */
+    border-bottom-color: var(--pr-hairline);
+  }
+  .headerSlotTitle {
+    display: flex;
+    align-items: center;
+    gap: var(--pr-sp-2);
+    flex: 1;
+    min-width: 0;
+    font-family: var(--pr-font-head);
+    font-weight: var(--pr-fw-semibold);
+    font-size: var(--pr-d-fs-screen);
+    color: var(--pr-ink);
+  }
+  .headerSlotTitle[hidden],
+  .headerSlotActions[hidden] {
+    display: none;
+  }
+  .headerSlotActions {
+    display: flex;
+    align-items: center;
+    gap: var(--pr-sp-1);
+    flex: none;
+    margin-inline-start: auto;
+  }
+  .content {
+    padding: var(--pr-d-pad-card);
+    /* Место под фиксированную нижнюю навигацию (высота — токен, её же
+       использует FAB, DEV-20_2 §5) + safe-area на iOS. */
+    /* …и под FAB «Создать» (замечание 03.09: FAB налезал на последнюю
+       строку списка): высота панели + отступ FAB + сам FAB + зазор. */
+    padding-bottom: calc(
+      var(--pr-bottom-nav-h) + var(--pr-sp-4) + var(--pr-fab-size) + var(--pr-sp-4) + env(safe-area-inset-bottom, 0px)
+    );
+    /* Отсмотр 2026-08-24: /me «прижат вправо» на телефоне — один широкий
+       элемент (длинное имя/хендл без переносов) растягивал полосу контента,
+       и центрированная раскладка уезжала. Ширину держим за экраном. */
+    overflow-x: clip;
+  }
+  /* Финал доска A: панель на креме (не белая), сверху hairline, подписи 11,
+     активная вкладка — янтарь. */
+  .bottomNav {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    background: var(--pr-cream);
+    border-top: 1px solid var(--pr-line);
+    padding: var(--pr-sp-1) var(--pr-sp-1) calc(var(--pr-sp-1) + env(safe-area-inset-bottom, 0px));
+    z-index: 30;
+  }
+  .tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    color: var(--pr-text-2);
+    text-decoration: none;
+    font-size: 11px;
+    font-family: var(--pr-font-body);
+    font-weight: var(--pr-fw-medium);
+    min-width: var(--pr-touch-min);
+    min-height: var(--pr-touch-min);
+    justify-content: center;
+    padding-block: var(--pr-sp-1);
+  }
+  .tabLabel {
+    max-width: 64px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .tabActive {
+    color: var(--pr-amber-deep);
+  }
+}

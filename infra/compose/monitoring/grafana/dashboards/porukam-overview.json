@@ -1,0 +1,155 @@
+{
+  "title": "Porukam — Наблюдаемость (ЭФ.6)",
+  "uid": "porukam-observability",
+  "timezone": "utc",
+  "schemaVersion": 39,
+  "version": 1,
+  "refresh": "15s",
+  "time": { "from": "now-1h", "to": "now" },
+  "panels": [
+    {
+      "id": 1,
+      "title": "RED — rate по эндпоинтам (req/s)",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 0 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "targets": [
+        {
+          "expr": "sum(rate(django_http_requests_total_by_view_transport_method_total[5m])) by (view)",
+          "legendFormat": "{{view}}"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "RED — errors (5xx/s) по эндпоинтам",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 0 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "targets": [
+        {
+          "expr": "sum(rate(django_http_responses_total_by_status_view_method_total{status=~\"5..\"}[5m])) by (view)",
+          "legendFormat": "{{view}}"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "RED — p95 duration по эндпоинтам, с",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 8 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum(rate(django_http_requests_latency_seconds_by_view_method_bucket[5m])) by (le, view))",
+          "legendFormat": "{{view}}"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Лаг sweep дедлайнов — p95, с (SLO < 60с)",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 8 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": { "defaults": { "thresholds": { "steps": [
+        { "color": "green", "value": null },
+        { "color": "red", "value": 60 }
+      ] } }, "overrides": [] },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum(rate(porukam_deadlines_sweep_lag_seconds_bucket[15m])) by (le))",
+          "legendFormat": "p95 лага"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Возраст последнего прогона периодических задач (heartbeat), с",
+      "description": "\"Мертвецкий выключатель\" (common/heartbeat.py) — рост без потолка = задача (или весь Celery beat) не выполняется.",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 16 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "targets": [
+        {
+          "expr": "porukam_task_heartbeat_age_seconds",
+          "legendFormat": "{{task}}"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Outbox — неопубликованные события",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 16 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "targets": [
+        { "expr": "porukam_outbox_unpublished_total", "legendFormat": "неопубликовано" },
+        { "expr": "porukam_outbox_oldest_unpublished_age_seconds", "legendFormat": "возраст старейшего, с" }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Глубина очередей Celery (брокер, сообщений)",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 24 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "targets": [
+        { "expr": "porukam_celery_queue_length", "legendFormat": "{{queue}}" }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Задачи Celery по статусу (rate/s)",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 24 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "targets": [
+        {
+          "expr": "sum(rate(porukam_celery_task_total[5m])) by (task, state)",
+          "legendFormat": "{{task}} {{state}}"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Audit Vault — длина цепочки",
+      "type": "stat",
+      "gridPos": { "h": 6, "w": 6, "x": 0, "y": 32 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "targets": [{ "expr": "porukam_audit_vault_chain_length" }]
+    },
+    {
+      "id": 10,
+      "title": "Audit Vault — цепочка цела (1=да)",
+      "type": "stat",
+      "gridPos": { "h": 6, "w": 6, "x": 6, "y": 32 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": { "defaults": { "thresholds": { "steps": [
+        { "color": "red", "value": null },
+        { "color": "green", "value": 1 }
+      ] } }, "overrides": [] },
+      "targets": [{ "expr": "porukam_audit_vault_chain_ok" }]
+    },
+    {
+      "id": 11,
+      "title": "Audit Vault — возраст последнего checkpoint, с",
+      "type": "stat",
+      "gridPos": { "h": 6, "w": 6, "x": 12, "y": 32 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "targets": [{ "expr": "porukam_audit_vault_checkpoint_age_seconds" }]
+    },
+    {
+      "id": 12,
+      "title": "Юрзначимые уведомления, не размещённые в ЛК вовремя",
+      "type": "stat",
+      "gridPos": { "h": 6, "w": 6, "x": 18, "y": 32 },
+      "datasource": { "type": "prometheus", "uid": "prometheus" },
+      "fieldConfig": { "defaults": { "thresholds": { "steps": [
+        { "color": "green", "value": null },
+        { "color": "red", "value": 1 }
+      ] } }, "overrides": [] },
+      "targets": [{ "expr": "porukam_notifications_undelivered_legal_overdue" }]
+    }
+  ]
+}

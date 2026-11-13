@@ -1,0 +1,31 @@
+.head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+  margin-bottom: var(--pr-sp-2);
+}
+
+.itemLabel {
+  color: var(--pr-ink);
+  font-size: var(--pr-fs-body);
+}
+
+.comment {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+  margin: var(--pr-sp-2) 0;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  margin-top: var(--pr-sp-4);
+  flex-wrap: wrap;
+}
+
+.waiting {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}

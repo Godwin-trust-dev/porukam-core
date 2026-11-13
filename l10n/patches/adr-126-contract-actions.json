@@ -1,0 +1,2438 @@
+{
+  "ar": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "أُرسل إليك ملحق للعقد «{contract_title}».",
+        "subject": "ملحق للمراجعة"
+      },
+      "contract.amended": {
+        "body": "وقّع الطرفان الملحق الخاص بالعقد «{contract_title}» — ودخلت التعديلات حيّز التنفيذ.",
+        "subject": "دخل الملحق حيّز التنفيذ"
+      },
+      "contract.closed": {
+        "body": "انتهت فترة الضمان للعقد «{contract_title}». وأُغلق العقد.",
+        "subject": "تم إغلاق العقد"
+      },
+      "contract.terminated": {
+        "body": "أنهى الطرف الآخر العقد «{contract_title}».",
+        "subject": "تم إنهاء العقد"
+      },
+      "milestone.advance_confirmed": {
+        "body": "سُجّل تأكيدك للدفعة المقدمة عن مرحلة «{milestone_title}».",
+        "subject": "تم تأكيد الدفعة المقدمة"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "أكّد الطرف الآخر الدفعة المقدمة عن مرحلة «{milestone_title}».",
+        "subject": "أكّد الطرف الآخر الدفعة المقدمة"
+      },
+      "milestone.material_received": {
+        "body": "تم تأكيد استلام المواد الخاصة بمرحلة «{milestone_title}».",
+        "subject": "تم استلام مواد المرحلة"
+      },
+      "milestone.paid": {
+        "body": "تم دفع مرحلة «{milestone_title}» — وأكّد الطرفان الدفع.",
+        "subject": "تم دفع المرحلة"
+      },
+      "milestone.payment_confirmed": {
+        "body": "سُجّل تأكيدك لدفع مرحلة «{milestone_title}».",
+        "subject": "تم تأكيد الدفع"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "أكّد الطرف الآخر دفع مرحلة «{milestone_title}».",
+        "subject": "أكّد الطرف الآخر الدفع"
+      },
+      "milestone.resumed": {
+        "body": "استُؤنف العمل في مرحلة «{milestone_title}» — ورُفع التعليق.",
+        "subject": "استُؤنف العمل في المرحلة"
+      },
+      "negotiation.rejected": {
+        "body": "رفض الطرف الآخر العقد «{contract_title}».",
+        "subject": "تم رفض العقد"
+      },
+      "negotiation.reopened": {
+        "body": "أُعيد العقد «{contract_title}» للتعديل: رُفع التثبيت وأُلغيت توقيعات هذه الجولة.",
+        "subject": "أُعيد العقد للتعديل"
+      },
+      "negotiation.revised.accepted": {
+        "body": "تم قبول التعديل الذي اقترحته على العقد «{contract_title}».",
+        "subject": "تم قبول التعديل"
+      },
+      "negotiation.revised.proposed": {
+        "body": "تم اقتراح تعديل على العقد «{contract_title}». اطّلع عليه واتخذ القرار.",
+        "subject": "تم اقتراح تعديل"
+      },
+      "negotiation.revised.rejected": {
+        "body": "تم رفض التعديل الذي اقترحته على العقد «{contract_title}».",
+        "subject": "تم رفض التعديل"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "وصلك العقد «{contract_title}» للمراجعة.",
+        "subject": "وصلك عقد للمراجعة"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "انتهت مهلة توقيع العقد «{contract_title}». وأُغلق طلب التوقيع.",
+        "subject": "انتهت مهلة التوقيع"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "وقّع الطرف الآخر العقد «{contract_title}». في انتظار توقيعك.",
+        "subject": "وقّع الطرف الآخر العقد"
+      },
+      "negotiation.withdrawn": {
+        "body": "سحب الطرف الآخر العقد «{contract_title}» — وانتهت المراجعة.",
+        "subject": "تم سحب العقد"
+      }
+    }
+  },
+  "az": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "Sizə “{contract_title}” müqaviləsinə əlavə razılaşma göndərilib.",
+        "subject": "Əlavə razılaşma razılaşdırmaya göndərildi"
+      },
+      "contract.amended": {
+        "body": "“{contract_title}” müqaviləsinə əlavə razılaşma hər iki tərəf tərəfindən imzalandı — dəyişikliklər qüvvəyə mindi.",
+        "subject": "Əlavə razılaşma qüvvəyə mindi"
+      },
+      "contract.closed": {
+        "body": "“{contract_title}” müqaviləsi üzrə zəmanət müddəti bitdi. Müqavilə bağlandı.",
+        "subject": "Müqavilə bağlandı"
+      },
+      "contract.terminated": {
+        "body": "“{contract_title}” müqaviləsi qarşı tərəf tərəfindən ləğv edildi.",
+        "subject": "Müqavilə ləğv edildi"
+      },
+      "milestone.advance_confirmed": {
+        "body": "“{milestone_title}” mərhələsi üzrə ilkin ödənişi təsdiqləməyiniz qeydə alındı.",
+        "subject": "İlkin ödəniş təsdiqləndi"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "Qarşı tərəf “{milestone_title}” mərhələsi üzrə ilkin ödənişi təsdiqlədi.",
+        "subject": "Qarşı tərəf ilkin ödənişi təsdiqlədi"
+      },
+      "milestone.material_received": {
+        "body": "“{milestone_title}” mərhələsi üzrə materialların alınması təsdiqləndi.",
+        "subject": "Mərhələ üzrə materiallar alındı"
+      },
+      "milestone.paid": {
+        "body": "“{milestone_title}” mərhələsi ödənildi — ödənişi hər iki tərəf təsdiqlədi.",
+        "subject": "Mərhələ ödənildi"
+      },
+      "milestone.payment_confirmed": {
+        "body": "“{milestone_title}” mərhələsinin ödənişini təsdiqləməyiniz qeydə alındı.",
+        "subject": "Ödəniş təsdiqləndi"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "Qarşı tərəf “{milestone_title}” mərhələsinin ödənişini təsdiqlədi.",
+        "subject": "Qarşı tərəf ödənişi təsdiqlədi"
+      },
+      "milestone.resumed": {
+        "body": "“{milestone_title}” mərhələsi üzrə iş bərpa olundu — dayandırma götürüldü.",
+        "subject": "Mərhələ üzrə iş bərpa olundu"
+      },
+      "negotiation.rejected": {
+        "body": "Qarşı tərəf “{contract_title}” müqaviləsini rədd etdi.",
+        "subject": "Müqavilə rədd edildi"
+      },
+      "negotiation.reopened": {
+        "body": "“{contract_title}” müqaviləsi yenidən işlənməyə qaytarıldı: dondurma götürüldü, bu raundun imzaları ləğv edildi.",
+        "subject": "Müqavilə yenidən işlənməyə qaytarıldı"
+      },
+      "negotiation.revised.accepted": {
+        "body": "“{contract_title}” müqaviləsi üzrə təklif etdiyiniz dəyişiklik qəbul edildi.",
+        "subject": "Dəyişiklik qəbul edildi"
+      },
+      "negotiation.revised.proposed": {
+        "body": "“{contract_title}” müqaviləsi üzrə dəyişiklik təklif olundu. Onunla tanış olun və qərar verin.",
+        "subject": "Dəyişiklik təklif olundu"
+      },
+      "negotiation.revised.rejected": {
+        "body": "“{contract_title}” müqaviləsi üzrə təklif etdiyiniz dəyişiklik rədd edildi.",
+        "subject": "Dəyişiklik rədd edildi"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "“{contract_title}” müqaviləsi razılaşdırmaq üçün sizə göndərildi.",
+        "subject": "Müqavilə razılaşdırmaya daxil oldu"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "“{contract_title}” müqaviləsinin imzalanma müddəti bitdi. İmza sorğusu bağlandı.",
+        "subject": "İmzalama müddəti bitdi"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "Qarşı tərəf “{contract_title}” müqaviləsini imzaladı. Sizin imzanızı gözləyirik.",
+        "subject": "Qarşı tərəf müqaviləni imzaladı"
+      },
+      "negotiation.withdrawn": {
+        "body": "Qarşı tərəf “{contract_title}” müqaviləsini geri götürdü — razılaşdırma dayandırıldı.",
+        "subject": "Müqavilə geri götürüldü"
+      }
+    }
+  },
+  "bn": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "“{contract_title}” চুক্তির একটি সংশোধনী আপনাকে পাঠানো হয়েছে।",
+        "subject": "সংশোধনী পর্যালোচনার জন্য"
+      },
+      "contract.amended": {
+        "body": "“{contract_title}” চুক্তির সংশোধনীতে উভয় পক্ষ স্বাক্ষর করেছে — পরিবর্তনগুলি কার্যকর হয়েছে।",
+        "subject": "সংশোধনী কার্যকর হয়েছে"
+      },
+      "contract.closed": {
+        "body": "“{contract_title}” চুক্তির ওয়ারেন্টি মেয়াদ শেষ হয়েছে। চুক্তিটি বন্ধ করা হয়েছে।",
+        "subject": "চুক্তি বন্ধ হয়েছে"
+      },
+      "contract.terminated": {
+        "body": "অপর পক্ষ “{contract_title}” চুক্তিটি বাতিল করেছে।",
+        "subject": "চুক্তি বাতিল হয়েছে"
+      },
+      "milestone.advance_confirmed": {
+        "body": "“{milestone_title}” ধাপের অগ্রিম নিয়ে আপনার নিশ্চিতকরণ নথিভুক্ত হয়েছে।",
+        "subject": "অগ্রিম নিশ্চিত হয়েছে"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "অপর পক্ষ “{milestone_title}” ধাপের অগ্রিম নিশ্চিত করেছে।",
+        "subject": "অপর পক্ষ অগ্রিম নিশ্চিত করেছে"
+      },
+      "milestone.material_received": {
+        "body": "“{milestone_title}” ধাপের ম্যাটেরিয়াল পাওয়ার বিষয়টি নিশ্চিত করা হয়েছে।",
+        "subject": "ধাপের ম্যাটেরিয়াল বুঝে নেওয়া হয়েছে"
+      },
+      "milestone.paid": {
+        "body": "“{milestone_title}” ধাপের পেমেন্ট হয়েছে — উভয় পক্ষ পেমেন্ট নিশ্চিত করেছে।",
+        "subject": "ধাপের পেমেন্ট সম্পন্ন"
+      },
+      "milestone.payment_confirmed": {
+        "body": "“{milestone_title}” ধাপের পেমেন্ট নিয়ে আপনার নিশ্চিতকরণ নথিভুক্ত হয়েছে।",
+        "subject": "পেমেন্ট নিশ্চিত হয়েছে"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "অপর পক্ষ “{milestone_title}” ধাপের পেমেন্ট নিশ্চিত করেছে।",
+        "subject": "অপর পক্ষ পেমেন্ট নিশ্চিত করেছে"
+      },
+      "milestone.resumed": {
+        "body": "“{milestone_title}” ধাপের কাজ আবার শুরু হয়েছে — স্থগিতকরণ তুলে নেওয়া হয়েছে।",
+        "subject": "ধাপের কাজ আবার শুরু হয়েছে"
+      },
+      "negotiation.rejected": {
+        "body": "অপর পক্ষ “{contract_title}” চুক্তিটি প্রত্যাখ্যান করেছে।",
+        "subject": "চুক্তি প্রত্যাখ্যাত হয়েছে"
+      },
+      "negotiation.reopened": {
+        "body": "“{contract_title}” চুক্তিটি সংশোধনের জন্য ফেরত পাঠানো হয়েছে: চূড়ান্তকরণ তুলে নেওয়া হয়েছে এবং এই পর্বের স্বাক্ষরগুলি বাতিল হয়েছে।",
+        "subject": "চুক্তি সংশোধনের জন্য ফেরত"
+      },
+      "negotiation.revised.accepted": {
+        "body": "“{contract_title}” চুক্তিতে আপনার প্রস্তাবিত পরিবর্তন গৃহীত হয়েছে।",
+        "subject": "পরিবর্তন গৃহীত হয়েছে"
+      },
+      "negotiation.revised.proposed": {
+        "body": "“{contract_title}” চুক্তিতে একটি পরিবর্তনের প্রস্তাব দেওয়া হয়েছে। দেখে নিয়ে সিদ্ধান্ত নিন।",
+        "subject": "পরিবর্তনের প্রস্তাব এসেছে"
+      },
+      "negotiation.revised.rejected": {
+        "body": "“{contract_title}” চুক্তিতে আপনার প্রস্তাবিত পরিবর্তন প্রত্যাখ্যাত হয়েছে।",
+        "subject": "পরিবর্তন প্রত্যাখ্যাত হয়েছে"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "“{contract_title}” চুক্তিটি আপনার পর্যালোচনার জন্য পাঠানো হয়েছে।",
+        "subject": "চুক্তি পর্যালোচনার জন্য এসেছে"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "“{contract_title}” চুক্তিতে স্বাক্ষরের সময়সীমা শেষ হয়েছে। স্বাক্ষরের অনুরোধ বন্ধ করা হয়েছে।",
+        "subject": "স্বাক্ষরের সময়সীমা শেষ"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "অপর পক্ষ “{contract_title}” চুক্তিতে স্বাক্ষর করেছে। এখন আপনার স্বাক্ষরের অপেক্ষা।",
+        "subject": "অপর পক্ষ স্বাক্ষর করেছে"
+      },
+      "negotiation.withdrawn": {
+        "body": "অপর পক্ষ “{contract_title}” চুক্তিটি প্রত্যাহার করেছে — পর্যালোচনা শেষ হয়েছে।",
+        "subject": "চুক্তি প্রত্যাহার করা হয়েছে"
+      }
+    }
+  },
+  "de": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "Ihnen wurde eine Zusatzvereinbarung zum Vertrag „{contract_title}“ übermittelt.",
+        "subject": "Zusatzvereinbarung zur Abstimmung"
+      },
+      "contract.amended": {
+        "body": "Die Zusatzvereinbarung zum Vertrag „{contract_title}“ wurde von beiden Parteien unterschrieben — die Änderungen sind in Kraft.",
+        "subject": "Zusatzvereinbarung in Kraft"
+      },
+      "contract.closed": {
+        "body": "Die Gewährleistungsfrist für den Vertrag „{contract_title}“ ist abgelaufen. Der Vertrag ist geschlossen.",
+        "subject": "Vertrag geschlossen"
+      },
+      "contract.terminated": {
+        "body": "Der Vertrag „{contract_title}“ wurde von der Gegenseite gekündigt.",
+        "subject": "Vertrag gekündigt"
+      },
+      "milestone.advance_confirmed": {
+        "body": "Ihre Bestätigung der Anzahlung für die Etappe „{milestone_title}“ wurde erfasst.",
+        "subject": "Anzahlung bestätigt"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "Die Gegenseite hat die Anzahlung für die Etappe „{milestone_title}“ bestätigt.",
+        "subject": "Gegenseite hat die Anzahlung bestätigt"
+      },
+      "milestone.material_received": {
+        "body": "Der Erhalt der Materialien für die Etappe „{milestone_title}“ wurde bestätigt.",
+        "subject": "Materialien zur Etappe erhalten"
+      },
+      "milestone.paid": {
+        "body": "Die Etappe „{milestone_title}“ ist bezahlt — beide Parteien haben die Zahlung bestätigt.",
+        "subject": "Etappe bezahlt"
+      },
+      "milestone.payment_confirmed": {
+        "body": "Ihre Bestätigung der Zahlung für die Etappe „{milestone_title}“ wurde erfasst.",
+        "subject": "Zahlung bestätigt"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "Die Gegenseite hat die Zahlung für die Etappe „{milestone_title}“ bestätigt.",
+        "subject": "Gegenseite hat die Zahlung bestätigt"
+      },
+      "milestone.resumed": {
+        "body": "Die Arbeit an der Etappe „{milestone_title}“ wurde fortgesetzt — die Unterbrechung ist aufgehoben.",
+        "subject": "Arbeit an der Etappe fortgesetzt"
+      },
+      "negotiation.rejected": {
+        "body": "Die Gegenseite hat den Vertrag „{contract_title}“ abgelehnt.",
+        "subject": "Vertrag abgelehnt"
+      },
+      "negotiation.reopened": {
+        "body": "Der Vertrag „{contract_title}“ wurde zur Überarbeitung zurückgegeben: die Festschreibung ist aufgehoben, die Unterschriften dieser Runde sind ungültig.",
+        "subject": "Vertrag zur Überarbeitung zurückgegeben"
+      },
+      "negotiation.revised.accepted": {
+        "body": "Ihre Änderung zum Vertrag „{contract_title}“ wurde angenommen.",
+        "subject": "Änderung angenommen"
+      },
+      "negotiation.revised.proposed": {
+        "body": "Zum Vertrag „{contract_title}“ wurde eine Änderung vorgeschlagen. Prüfen Sie sie und entscheiden Sie.",
+        "subject": "Änderung vorgeschlagen"
+      },
+      "negotiation.revised.rejected": {
+        "body": "Ihre Änderung zum Vertrag „{contract_title}“ wurde abgelehnt.",
+        "subject": "Änderung abgelehnt"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "Der Vertrag „{contract_title}“ wurde Ihnen zur Abstimmung übermittelt.",
+        "subject": "Vertrag zur Abstimmung erhalten"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "Die Unterschriftsfrist für den Vertrag „{contract_title}“ ist abgelaufen. Die Unterschriftsanfrage ist geschlossen.",
+        "subject": "Unterschriftsfrist abgelaufen"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "Die Gegenseite hat den Vertrag „{contract_title}“ unterschrieben. Wir warten auf Ihre Unterschrift.",
+        "subject": "Gegenseite hat unterschrieben"
+      },
+      "negotiation.withdrawn": {
+        "body": "Die Gegenseite hat den Vertrag „{contract_title}“ zurückgezogen — die Abstimmung ist beendet.",
+        "subject": "Vertrag zurückgezogen"
+      }
+    }
+  },
+  "en": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "An amendment to contract “{contract_title}” has been sent to you for review.",
+        "subject": "Amendment sent for review"
+      },
+      "contract.amended": {
+        "body": "An amendment to contract “{contract_title}” has been signed by both parties and is now in force.",
+        "subject": "Amendment in force"
+      },
+      "contract.closed": {
+        "body": "The warranty period for contract “{contract_title}” has ended. The contract is closed.",
+        "subject": "Contract closed"
+      },
+      "contract.terminated": {
+        "body": "Contract “{contract_title}” has been terminated by the other party.",
+        "subject": "Contract terminated"
+      },
+      "milestone.advance_confirmed": {
+        "body": "Your confirmation of the advance for stage “{milestone_title}” has been recorded.",
+        "subject": "Advance confirmed"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "The other party confirmed the advance for stage “{milestone_title}”.",
+        "subject": "The other party confirmed the advance"
+      },
+      "milestone.material_received": {
+        "body": "Receipt of materials for stage “{milestone_title}” has been confirmed.",
+        "subject": "Materials received for a stage"
+      },
+      "milestone.paid": {
+        "body": "Stage “{milestone_title}” is paid: both parties confirmed the payment.",
+        "subject": "Stage paid"
+      },
+      "milestone.payment_confirmed": {
+        "body": "Your confirmation of payment for stage “{milestone_title}” has been recorded.",
+        "subject": "Payment confirmed"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "The other party confirmed payment for stage “{milestone_title}”.",
+        "subject": "The other party confirmed payment"
+      },
+      "milestone.resumed": {
+        "body": "Work on stage “{milestone_title}” has resumed: the hold has been lifted.",
+        "subject": "Stage resumed"
+      },
+      "negotiation.rejected": {
+        "body": "The other party declined contract “{contract_title}”.",
+        "subject": "Contract declined"
+      },
+      "negotiation.reopened": {
+        "body": "Contract “{contract_title}” has been returned for revision: the lock is lifted and this round’s signatures are void.",
+        "subject": "Contract returned for revision"
+      },
+      "negotiation.revised.accepted": {
+        "body": "Your change to contract “{contract_title}” has been accepted.",
+        "subject": "Change accepted"
+      },
+      "negotiation.revised.proposed": {
+        "body": "A change to contract “{contract_title}” has been proposed. Review it and decide.",
+        "subject": "Change proposed"
+      },
+      "negotiation.revised.rejected": {
+        "body": "Your change to contract “{contract_title}” has been declined.",
+        "subject": "Change declined"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "Contract “{contract_title}” has been sent to you for review.",
+        "subject": "Contract sent to you for review"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "The signing period for contract “{contract_title}” has expired. The signature request is closed.",
+        "subject": "Signing period expired"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "The other party signed contract “{contract_title}”. Your signature is next.",
+        "subject": "The other party signed"
+      },
+      "negotiation.withdrawn": {
+        "body": "The other party withdrew contract “{contract_title}”. The review is over.",
+        "subject": "Contract withdrawn"
+      }
+    }
+  },
+  "es": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "Se le ha enviado una adenda al contrato «{contract_title}».",
+        "subject": "Adenda enviada a revisión"
+      },
+      "contract.amended": {
+        "body": "La adenda al contrato «{contract_title}» ha sido firmada por ambas partes: los cambios están en vigor.",
+        "subject": "Adenda en vigor"
+      },
+      "contract.closed": {
+        "body": "El período de garantía del contrato «{contract_title}» ha terminado. El contrato queda cerrado.",
+        "subject": "Contrato cerrado"
+      },
+      "contract.terminated": {
+        "body": "La otra parte rescindió el contrato «{contract_title}».",
+        "subject": "Contrato rescindido"
+      },
+      "milestone.advance_confirmed": {
+        "body": "Su confirmación del anticipo de la etapa «{milestone_title}» ha quedado registrada.",
+        "subject": "Anticipo confirmado"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "La otra parte confirmó el anticipo de la etapa «{milestone_title}».",
+        "subject": "La otra parte confirmó el anticipo"
+      },
+      "milestone.material_received": {
+        "body": "Se ha confirmado la recepción de los materiales de la etapa «{milestone_title}».",
+        "subject": "Materiales de la etapa recibidos"
+      },
+      "milestone.paid": {
+        "body": "La etapa «{milestone_title}» está pagada: ambas partes confirmaron el pago.",
+        "subject": "Etapa pagada"
+      },
+      "milestone.payment_confirmed": {
+        "body": "Su confirmación del pago de la etapa «{milestone_title}» ha quedado registrada.",
+        "subject": "Pago confirmado"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "La otra parte confirmó el pago de la etapa «{milestone_title}».",
+        "subject": "La otra parte confirmó el pago"
+      },
+      "milestone.resumed": {
+        "body": "El trabajo en la etapa «{milestone_title}» se ha reanudado: la suspensión queda levantada.",
+        "subject": "Trabajo de la etapa reanudado"
+      },
+      "negotiation.rejected": {
+        "body": "La otra parte rechazó el contrato «{contract_title}».",
+        "subject": "Contrato rechazado"
+      },
+      "negotiation.reopened": {
+        "body": "El contrato «{contract_title}» se ha devuelto para correcciones: se ha levantado el bloqueo y las firmas de esta ronda quedan anuladas.",
+        "subject": "Contrato devuelto para correcciones"
+      },
+      "negotiation.revised.accepted": {
+        "body": "Su cambio en el contrato «{contract_title}» ha sido aceptado.",
+        "subject": "Cambio aceptado"
+      },
+      "negotiation.revised.proposed": {
+        "body": "Se ha propuesto un cambio en el contrato «{contract_title}». Revíselo y decida.",
+        "subject": "Cambio propuesto"
+      },
+      "negotiation.revised.rejected": {
+        "body": "Su cambio en el contrato «{contract_title}» ha sido rechazado.",
+        "subject": "Cambio rechazado"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "El contrato «{contract_title}» se le ha enviado para revisión.",
+        "subject": "Contrato recibido para revisión"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "El plazo para firmar el contrato «{contract_title}» ha vencido. La solicitud de firma queda cerrada.",
+        "subject": "Plazo de firma vencido"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "La otra parte firmó el contrato «{contract_title}». Esperamos su firma.",
+        "subject": "La otra parte ha firmado"
+      },
+      "negotiation.withdrawn": {
+        "body": "La otra parte retiró el contrato «{contract_title}»: la revisión ha terminado.",
+        "subject": "Contrato retirado"
+      }
+    }
+  },
+  "fa": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "الحاقیه‌ای برای قرارداد «{contract_title}» به شما ارسال شد.",
+        "subject": "الحاقیه برای بررسی"
+      },
+      "contract.amended": {
+        "body": "الحاقیهٔ قرارداد «{contract_title}» به امضای هر دو طرف رسید — تغییرها اجرایی شد.",
+        "subject": "الحاقیه اجرایی شد"
+      },
+      "contract.closed": {
+        "body": "دورهٔ ضمانت قرارداد «{contract_title}» به پایان رسید. قرارداد بسته شد.",
+        "subject": "قرارداد بسته شد"
+      },
+      "contract.terminated": {
+        "body": "قرارداد «{contract_title}» از سوی طرف دیگر فسخ شد.",
+        "subject": "قرارداد فسخ شد"
+      },
+      "milestone.advance_confirmed": {
+        "body": "تأیید شما برای پیش‌پرداخت مرحلهٔ «{milestone_title}» ثبت شد.",
+        "subject": "پیش‌پرداخت تأیید شد"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "طرف دیگر پیش‌پرداخت مرحلهٔ «{milestone_title}» را تأیید کرد.",
+        "subject": "طرف دیگر پیش‌پرداخت را تأیید کرد"
+      },
+      "milestone.material_received": {
+        "body": "دریافت مواد مرحلهٔ «{milestone_title}» تأیید شد.",
+        "subject": "مواد مرحله دریافت شد"
+      },
+      "milestone.paid": {
+        "body": "مرحلهٔ «{milestone_title}» پرداخت شد — هر دو طرف پرداخت را تأیید کردند.",
+        "subject": "مرحله پرداخت شد"
+      },
+      "milestone.payment_confirmed": {
+        "body": "تأیید شما برای پرداخت مرحلهٔ «{milestone_title}» ثبت شد.",
+        "subject": "پرداخت تأیید شد"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "طرف دیگر پرداخت مرحلهٔ «{milestone_title}» را تأیید کرد.",
+        "subject": "طرف دیگر پرداخت را تأیید کرد"
+      },
+      "milestone.resumed": {
+        "body": "کار مرحلهٔ «{milestone_title}» از سر گرفته شد — توقف برداشته شد.",
+        "subject": "کار مرحله از سر گرفته شد"
+      },
+      "negotiation.rejected": {
+        "body": "طرف دیگر قرارداد «{contract_title}» را رد کرد.",
+        "subject": "قرارداد رد شد"
+      },
+      "negotiation.reopened": {
+        "body": "قرارداد «{contract_title}» برای اصلاح بازگردانده شد: قفل برداشته شد و امضاهای این دور باطل شدند.",
+        "subject": "قرارداد برای اصلاح بازگردانده شد"
+      },
+      "negotiation.revised.accepted": {
+        "body": "تغییر پیشنهادی شما در قرارداد «{contract_title}» پذیرفته شد.",
+        "subject": "تغییر پذیرفته شد"
+      },
+      "negotiation.revised.proposed": {
+        "body": "برای قرارداد «{contract_title}» تغییری پیشنهاد شد. آن را بررسی کنید و تصمیم بگیرید.",
+        "subject": "تغییری پیشنهاد شد"
+      },
+      "negotiation.revised.rejected": {
+        "body": "تغییر پیشنهادی شما در قرارداد «{contract_title}» رد شد.",
+        "subject": "تغییر رد شد"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "قرارداد «{contract_title}» برای بررسی به شما ارسال شد.",
+        "subject": "قراردادی برای بررسی رسید"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "مهلت امضای قرارداد «{contract_title}» به پایان رسید. درخواست امضا بسته شد.",
+        "subject": "مهلت امضا به پایان رسید"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "طرف دیگر قرارداد «{contract_title}» را امضا کرد. در انتظار امضای شما هستیم.",
+        "subject": "طرف دیگر قرارداد را امضا کرد"
+      },
+      "negotiation.withdrawn": {
+        "body": "طرف دیگر قرارداد «{contract_title}» را پس گرفت — بررسی پایان یافت.",
+        "subject": "قرارداد پس گرفته شد"
+      }
+    }
+  },
+  "fr": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "Un avenant au contrat « {contract_title} » vous a été transmis.",
+        "subject": "Avenant envoyé pour validation"
+      },
+      "contract.amended": {
+        "body": "L'avenant au contrat « {contract_title} » a été signé par les deux parties : les modifications sont en vigueur.",
+        "subject": "Avenant en vigueur"
+      },
+      "contract.closed": {
+        "body": "La période de garantie du contrat « {contract_title} » a pris fin. Le contrat est clôturé.",
+        "subject": "Contrat clôturé"
+      },
+      "contract.terminated": {
+        "body": "Le contrat « {contract_title} » a été résilié par l'autre partie.",
+        "subject": "Contrat résilié"
+      },
+      "milestone.advance_confirmed": {
+        "body": "Votre confirmation de l'acompte pour l'étape « {milestone_title} » est enregistrée.",
+        "subject": "Acompte confirmé"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "L'autre partie a confirmé l'acompte pour l'étape « {milestone_title} ».",
+        "subject": "L'autre partie a confirmé l'acompte"
+      },
+      "milestone.material_received": {
+        "body": "La réception des matériaux pour l'étape « {milestone_title} » est confirmée.",
+        "subject": "Matériaux de l'étape reçus"
+      },
+      "milestone.paid": {
+        "body": "L'étape « {milestone_title} » est payée : les deux parties ont confirmé le paiement.",
+        "subject": "Étape payée"
+      },
+      "milestone.payment_confirmed": {
+        "body": "Votre confirmation du paiement de l'étape « {milestone_title} » est enregistrée.",
+        "subject": "Paiement confirmé"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "L'autre partie a confirmé le paiement de l'étape « {milestone_title} ».",
+        "subject": "L'autre partie a confirmé le paiement"
+      },
+      "milestone.resumed": {
+        "body": "Les travaux sur l'étape « {milestone_title} » ont repris : la suspension est levée.",
+        "subject": "Travaux de l'étape repris"
+      },
+      "negotiation.rejected": {
+        "body": "L'autre partie a refusé le contrat « {contract_title} ».",
+        "subject": "Contrat refusé"
+      },
+      "negotiation.reopened": {
+        "body": "Le contrat « {contract_title} » a été renvoyé pour révision : le verrouillage est levé et les signatures de ce tour sont annulées.",
+        "subject": "Contrat renvoyé pour révision"
+      },
+      "negotiation.revised.accepted": {
+        "body": "Votre modification du contrat « {contract_title} » a été acceptée.",
+        "subject": "Modification acceptée"
+      },
+      "negotiation.revised.proposed": {
+        "body": "Une modification du contrat « {contract_title} » a été proposée. Examinez-la et prononcez-vous.",
+        "subject": "Modification proposée"
+      },
+      "negotiation.revised.rejected": {
+        "body": "Votre modification du contrat « {contract_title} » a été refusée.",
+        "subject": "Modification refusée"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "Le contrat « {contract_title} » vous a été transmis pour validation.",
+        "subject": "Contrat reçu pour validation"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "Le délai de signature du contrat « {contract_title} » a expiré. La demande de signature est close.",
+        "subject": "Délai de signature expiré"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "L'autre partie a signé le contrat « {contract_title} ». Nous attendons votre signature.",
+        "subject": "L'autre partie a signé"
+      },
+      "negotiation.withdrawn": {
+        "body": "L'autre partie a retiré le contrat « {contract_title} » : la validation est terminée.",
+        "subject": "Contrat retiré"
+      }
+    }
+  },
+  "he": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "נשלחה אליך תוספת להסכם „{contract_title}”.",
+        "subject": "תוספת להסכם לאישור"
+      },
+      "contract.amended": {
+        "body": "התוספת להסכם „{contract_title}” נחתמה על ידי שני הצדדים — השינויים נכנסו לתוקף.",
+        "subject": "התוספת להסכם נכנסה לתוקף"
+      },
+      "contract.closed": {
+        "body": "תקופת האחריות בחוזה „{contract_title}” הסתיימה. החוזה נסגר.",
+        "subject": "החוזה נסגר"
+      },
+      "contract.terminated": {
+        "body": "החוזה „{contract_title}” בוטל על ידי הצד השני.",
+        "subject": "החוזה בוטל"
+      },
+      "milestone.advance_confirmed": {
+        "body": "אישורך לתשלום המקדמה בשלב „{milestone_title}” נרשם.",
+        "subject": "המקדמה אושרה"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "הצד השני אישר את תשלום המקדמה בשלב „{milestone_title}”.",
+        "subject": "הצד השני אישר את המקדמה"
+      },
+      "milestone.material_received": {
+        "body": "אושרה קבלת החומרים לשלב „{milestone_title}”.",
+        "subject": "החומרים לשלב התקבלו"
+      },
+      "milestone.paid": {
+        "body": "השלב „{milestone_title}” שולם — שני הצדדים אישרו את התשלום.",
+        "subject": "השלב שולם"
+      },
+      "milestone.payment_confirmed": {
+        "body": "אישורך לתשלום עבור השלב „{milestone_title}” נרשם.",
+        "subject": "התשלום אושר"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "הצד השני אישר את התשלום עבור השלב „{milestone_title}”.",
+        "subject": "הצד השני אישר את התשלום"
+      },
+      "milestone.resumed": {
+        "body": "העבודה בשלב „{milestone_title}” חודשה — ההשהיה בוטלה.",
+        "subject": "העבודה בשלב חודשה"
+      },
+      "negotiation.rejected": {
+        "body": "הצד השני דחה את החוזה „{contract_title}”.",
+        "subject": "החוזה נדחה"
+      },
+      "negotiation.reopened": {
+        "body": "החוזה „{contract_title}” הוחזר לתיקון: ההקפאה בוטלה והחתימות מסבב זה בטלות.",
+        "subject": "החוזה הוחזר לתיקון"
+      },
+      "negotiation.revised.accepted": {
+        "body": "השינוי שהצעת בחוזה „{contract_title}” התקבל.",
+        "subject": "השינוי התקבל"
+      },
+      "negotiation.revised.proposed": {
+        "body": "הוצע שינוי בחוזה „{contract_title}”. יש לעיין בו ולהחליט.",
+        "subject": "הוצע שינוי"
+      },
+      "negotiation.revised.rejected": {
+        "body": "השינוי שהצעת בחוזה „{contract_title}” נדחה.",
+        "subject": "השינוי נדחה"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "החוזה „{contract_title}” הועבר אליך לאישור.",
+        "subject": "התקבל אצלך חוזה לאישור"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "תקופת החתימה על החוזה „{contract_title}” הסתיימה. בקשת החתימה נסגרה.",
+        "subject": "תקופת החתימה הסתיימה"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "הצד השני חתם על החוזה „{contract_title}”. ממתינים לחתימתך.",
+        "subject": "הצד השני חתם על החוזה"
+      },
+      "negotiation.withdrawn": {
+        "body": "הצד השני משך את החוזה „{contract_title}” — הליך האישור הופסק.",
+        "subject": "החוזה בוטל"
+      }
+    }
+  },
+  "hi": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "अनुबंध “{contract_title}” का अनुपूरक करार आपको भेजा गया है।",
+        "subject": "अनुपूरक करार समीक्षा के लिए"
+      },
+      "contract.amended": {
+        "body": "अनुबंध “{contract_title}” के अनुपूरक करार पर दोनों पक्षों ने हस्ताक्षर कर दिए हैं — परिवर्तन प्रभावी हो गए हैं।",
+        "subject": "अनुपूरक करार प्रभावी हुआ"
+      },
+      "contract.closed": {
+        "body": "अनुबंध “{contract_title}” की वारंटी अवधि समाप्त हो गई है। अनुबंध बंद कर दिया गया है।",
+        "subject": "अनुबंध बंद हुआ"
+      },
+      "contract.terminated": {
+        "body": "अनुबंध “{contract_title}” दूसरे पक्ष द्वारा समाप्त कर दिया गया है।",
+        "subject": "अनुबंध समाप्त किया गया"
+      },
+      "milestone.advance_confirmed": {
+        "body": "“{milestone_title}” चरण के अग्रिम भुगतान की आपकी पुष्टि दर्ज कर ली गई है।",
+        "subject": "अग्रिम भुगतान की पुष्टि हुई"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "दूसरे पक्ष ने “{milestone_title}” चरण के अग्रिम भुगतान की पुष्टि कर दी है।",
+        "subject": "दूसरे पक्ष ने अग्रिम भुगतान की पुष्टि की"
+      },
+      "milestone.material_received": {
+        "body": "“{milestone_title}” चरण के लिए सामग्री की प्राप्ति की पुष्टि हो गई है।",
+        "subject": "चरण की सामग्री प्राप्त हुई"
+      },
+      "milestone.paid": {
+        "body": "“{milestone_title}” चरण का भुगतान हो गया है — दोनों पक्षों ने भुगतान की पुष्टि कर दी।",
+        "subject": "चरण का भुगतान हो गया"
+      },
+      "milestone.payment_confirmed": {
+        "body": "“{milestone_title}” चरण के भुगतान की आपकी पुष्टि दर्ज कर ली गई है।",
+        "subject": "भुगतान की पुष्टि हुई"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "दूसरे पक्ष ने “{milestone_title}” चरण के भुगतान की पुष्टि कर दी है।",
+        "subject": "दूसरे पक्ष ने भुगतान की पुष्टि की"
+      },
+      "milestone.resumed": {
+        "body": "“{milestone_title}” चरण का काम फिर शुरू हो गया है — रोक हटा दी गई है।",
+        "subject": "चरण का काम फिर शुरू हुआ"
+      },
+      "negotiation.rejected": {
+        "body": "दूसरे पक्ष ने अनुबंध “{contract_title}” को अस्वीकार कर दिया है।",
+        "subject": "अनुबंध अस्वीकार हुआ"
+      },
+      "negotiation.reopened": {
+        "body": "अनुबंध “{contract_title}” संशोधन के लिए लौटा दिया गया है: रोक हटा दी गई है और इस दौर के हस्ताक्षर निरस्त हो गए हैं।",
+        "subject": "अनुबंध संशोधन के लिए लौटाया गया"
+      },
+      "negotiation.revised.accepted": {
+        "body": "अनुबंध “{contract_title}” में आपका प्रस्तावित परिवर्तन स्वीकार कर लिया गया है।",
+        "subject": "परिवर्तन स्वीकृत"
+      },
+      "negotiation.revised.proposed": {
+        "body": "अनुबंध “{contract_title}” में एक परिवर्तन प्रस्तावित किया गया है। इसे देखें और निर्णय लें।",
+        "subject": "परिवर्तन प्रस्तावित"
+      },
+      "negotiation.revised.rejected": {
+        "body": "अनुबंध “{contract_title}” में आपका प्रस्तावित परिवर्तन अस्वीकार कर दिया गया है।",
+        "subject": "परिवर्तन अस्वीकृत"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "अनुबंध “{contract_title}” आपके पास समीक्षा के लिए भेजा गया है।",
+        "subject": "आपको एक अनुबंध समीक्षा के लिए भेजा गया है"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "अनुबंध “{contract_title}” पर हस्ताक्षर की अवधि समाप्त हो गई है। हस्ताक्षर अनुरोध बंद कर दिया गया है।",
+        "subject": "हस्ताक्षर की अवधि समाप्त"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "दूसरे पक्ष ने अनुबंध “{contract_title}” पर हस्ताक्षर कर दिए हैं। अब आपके हस्ताक्षर की प्रतीक्षा है।",
+        "subject": "दूसरे पक्ष ने अनुबंध पर हस्ताक्षर किए"
+      },
+      "negotiation.withdrawn": {
+        "body": "दूसरे पक्ष ने अनुबंध “{contract_title}” वापस ले लिया — समीक्षा समाप्त कर दी गई है।",
+        "subject": "अनुबंध वापस लिया गया"
+      }
+    }
+  },
+  "hy": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "Ձեզ ուղարկվել է «{contract_title}» պայմանագրի լրացուցիչ համաձայնագիրը։",
+        "subject": "Լրացուցիչ համաձայնագիր՝ համաձայնեցման"
+      },
+      "contract.amended": {
+        "body": "«{contract_title}» պայմանագրի լրացուցիչ համաձայնագիրը ստորագրվել է երկու կողմերի կողմից՝ փոփոխություններն ուժի մեջ են։",
+        "subject": "Լրացուցիչ համաձայնագիրն ուժի մեջ է մտել"
+      },
+      "contract.closed": {
+        "body": "«{contract_title}» պայմանագրի երաշխիքային ժամկետը լրացել է։ Պայմանագիրը փակված է։",
+        "subject": "Պայմանագիրը փակված է"
+      },
+      "contract.terminated": {
+        "body": "«{contract_title}» պայմանագիրը լուծվել է մյուս կողմի կողմից։",
+        "subject": "Պայմանագիրը լուծվել է"
+      },
+      "milestone.advance_confirmed": {
+        "body": "«{milestone_title}» փուլի կանխավճարի Ձեր հաստատումը գրանցված է։",
+        "subject": "Կանխավճարը հաստատված է"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "Մյուս կողմը հաստատել է «{milestone_title}» փուլի կանխավճարը։",
+        "subject": "Մյուս կողմը հաստատել է կանխավճարը"
+      },
+      "milestone.material_received": {
+        "body": "«{milestone_title}» փուլի նյութերի ստացումը հաստատված է։",
+        "subject": "Փուլի նյութերը ստացվել են"
+      },
+      "milestone.paid": {
+        "body": "«{milestone_title}» փուլը վճարված է՝ վճարումը հաստատել են երկու կողմերը։",
+        "subject": "Փուլը վճարված է"
+      },
+      "milestone.payment_confirmed": {
+        "body": "«{milestone_title}» փուլի վճարման Ձեր հաստատումը գրանցված է։",
+        "subject": "Վճարումը հաստատված է"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "Մյուս կողմը հաստատել է «{milestone_title}» փուլի վճարումը։",
+        "subject": "Մյուս կողմը հաստատել է վճարումը"
+      },
+      "milestone.resumed": {
+        "body": "«{milestone_title}» փուլի աշխատանքները վերսկսվել են՝ կասեցումը հանված է։",
+        "subject": "Փուլի աշխատանքները վերսկսվել են"
+      },
+      "negotiation.rejected": {
+        "body": "Մյուս կողմը մերժել է «{contract_title}» պայմանագիրը։",
+        "subject": "Պայմանագիրը մերժվել է"
+      },
+      "negotiation.reopened": {
+        "body": "«{contract_title}» պայմանագիրը վերադարձվել է լրամշակման․ սառեցումը հանված է, այս փուլի ստորագրություններն անվավեր են։",
+        "subject": "Պայմանագիրը վերադարձվել է լրամշակման"
+      },
+      "negotiation.revised.accepted": {
+        "body": "«{contract_title}» պայմանագրում Ձեր առաջարկած փոփոխությունն ընդունվել է։",
+        "subject": "Փոփոխությունն ընդունվել է"
+      },
+      "negotiation.revised.proposed": {
+        "body": "«{contract_title}» պայմանագրում առաջարկվել է փոփոխություն։ Ծանոթացեք և կայացրեք որոշում։",
+        "subject": "Առաջարկվել է փոփոխություն"
+      },
+      "negotiation.revised.rejected": {
+        "body": "«{contract_title}» պայմանագրում Ձեր առաջարկած փոփոխությունը մերժվել է։",
+        "subject": "Փոփոխությունը մերժվել է"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "«{contract_title}» պայմանագիրն ուղարկվել է Ձեզ՝ համաձայնեցման։",
+        "subject": "Ձեզ ուղարկվել է պայմանագիր՝ համաձայնեցման"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "«{contract_title}» պայմանագրի ստորագրման ժամկետը լրացել է։ Ստորագրության հայտը փակված է։",
+        "subject": "Ստորագրման ժամկետը լրացել է"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "Մյուս կողմը ստորագրել է «{contract_title}» պայմանագիրը։ Սպասում ենք Ձեր ստորագրությանը։",
+        "subject": "Մյուս կողմը ստորագրել է պայմանագիրը"
+      },
+      "negotiation.withdrawn": {
+        "body": "Մյուս կողմը հետ է կանչել «{contract_title}» պայմանագիրը՝ համաձայնեցումը դադարեցվել է։",
+        "subject": "Պայմանագիրը հետ է կանչվել"
+      }
+    }
+  },
+  "id": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "Adendum untuk kontrak “{contract_title}” telah dikirim kepada Anda.",
+        "subject": "Adendum untuk ditinjau"
+      },
+      "contract.amended": {
+        "body": "Adendum untuk kontrak “{contract_title}” telah ditandatangani oleh kedua belah pihak — perubahan mulai berlaku.",
+        "subject": "Adendum berlaku"
+      },
+      "contract.closed": {
+        "body": "Masa garansi pada kontrak “{contract_title}” telah berakhir. Kontrak ditutup.",
+        "subject": "Kontrak ditutup"
+      },
+      "contract.terminated": {
+        "body": "Kontrak “{contract_title}” diakhiri oleh pihak lain.",
+        "subject": "Kontrak diakhiri"
+      },
+      "milestone.advance_confirmed": {
+        "body": "Konfirmasi Anda atas uang muka untuk tahap “{milestone_title}” telah dicatat.",
+        "subject": "Uang muka dikonfirmasi"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "Pihak lain mengonfirmasi uang muka untuk tahap “{milestone_title}”.",
+        "subject": "Pihak lain mengonfirmasi uang muka"
+      },
+      "milestone.material_received": {
+        "body": "Penerimaan material untuk tahap “{milestone_title}” telah dikonfirmasi.",
+        "subject": "Material tahap telah diterima"
+      },
+      "milestone.paid": {
+        "body": "Tahap “{milestone_title}” telah dibayar — kedua belah pihak mengonfirmasi pembayaran.",
+        "subject": "Tahap telah dibayar"
+      },
+      "milestone.payment_confirmed": {
+        "body": "Konfirmasi Anda atas pembayaran tahap “{milestone_title}” telah dicatat.",
+        "subject": "Pembayaran dikonfirmasi"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "Pihak lain mengonfirmasi pembayaran tahap “{milestone_title}”.",
+        "subject": "Pihak lain mengonfirmasi pembayaran"
+      },
+      "milestone.resumed": {
+        "body": "Pekerjaan pada tahap “{milestone_title}” dilanjutkan — penangguhan dicabut.",
+        "subject": "Pekerjaan tahap dilanjutkan"
+      },
+      "negotiation.rejected": {
+        "body": "Pihak lain menolak kontrak “{contract_title}”.",
+        "subject": "Kontrak ditolak"
+      },
+      "negotiation.reopened": {
+        "body": "Kontrak “{contract_title}” dikembalikan untuk diperbaiki: pembekuan dicabut dan tanda tangan pada putaran ini menjadi batal.",
+        "subject": "Kontrak dikembalikan untuk diperbaiki"
+      },
+      "negotiation.revised.accepted": {
+        "body": "Perubahan yang Anda usulkan pada kontrak “{contract_title}” telah diterima.",
+        "subject": "Perubahan diterima"
+      },
+      "negotiation.revised.proposed": {
+        "body": "Sebuah perubahan pada kontrak “{contract_title}” telah diusulkan. Silakan tinjau dan ambil keputusan.",
+        "subject": "Perubahan diusulkan"
+      },
+      "negotiation.revised.rejected": {
+        "body": "Perubahan yang Anda usulkan pada kontrak “{contract_title}” telah ditolak.",
+        "subject": "Perubahan ditolak"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "Kontrak “{contract_title}” telah dikirim kepada Anda untuk ditinjau.",
+        "subject": "Kontrak dikirim kepada Anda untuk ditinjau"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "Masa penandatanganan kontrak “{contract_title}” telah berakhir. Permintaan tanda tangan ditutup.",
+        "subject": "Masa penandatanganan berakhir"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "Pihak lain telah menandatangani kontrak “{contract_title}”. Menunggu tanda tangan Anda.",
+        "subject": "Pihak lain menandatangani kontrak"
+      },
+      "negotiation.withdrawn": {
+        "body": "Pihak lain menarik kontrak “{contract_title}” — peninjauan dihentikan.",
+        "subject": "Kontrak ditarik"
+      }
+    }
+  },
+  "it": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "Le è stato inviato un atto aggiuntivo al contratto «{contract_title}».",
+        "subject": "Atto aggiuntivo da approvare"
+      },
+      "contract.amended": {
+        "body": "L'atto aggiuntivo al contratto «{contract_title}» è stato firmato da entrambe le parti: le modifiche sono in vigore.",
+        "subject": "Atto aggiuntivo in vigore"
+      },
+      "contract.closed": {
+        "body": "Il periodo di garanzia del contratto «{contract_title}» è terminato. Il contratto è chiuso.",
+        "subject": "Contratto chiuso"
+      },
+      "contract.terminated": {
+        "body": "Il contratto «{contract_title}» è stato risolto dall'altra parte.",
+        "subject": "Contratto risolto"
+      },
+      "milestone.advance_confirmed": {
+        "body": "La sua conferma dell'anticipo per la fase «{milestone_title}» è stata registrata.",
+        "subject": "Anticipo confermato"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "L'altra parte ha confermato l'anticipo per la fase «{milestone_title}».",
+        "subject": "L'altra parte ha confermato l'anticipo"
+      },
+      "milestone.material_received": {
+        "body": "Per la fase «{milestone_title}» è stata confermata la ricezione dei materiali.",
+        "subject": "Materiali ricevuti per la fase"
+      },
+      "milestone.paid": {
+        "body": "La fase «{milestone_title}» è pagata: entrambe le parti hanno confermato il pagamento.",
+        "subject": "Fase pagata"
+      },
+      "milestone.payment_confirmed": {
+        "body": "La sua conferma del pagamento della fase «{milestone_title}» è stata registrata.",
+        "subject": "Pagamento confermato"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "L'altra parte ha confermato il pagamento della fase «{milestone_title}».",
+        "subject": "L'altra parte ha confermato il pagamento"
+      },
+      "milestone.resumed": {
+        "body": "I lavori sulla fase «{milestone_title}» sono ripresi: la sospensione è stata revocata.",
+        "subject": "Lavori sulla fase ripresi"
+      },
+      "negotiation.rejected": {
+        "body": "L'altra parte ha respinto il contratto «{contract_title}».",
+        "subject": "Contratto respinto"
+      },
+      "negotiation.reopened": {
+        "body": "Il contratto «{contract_title}» è stato restituito per la revisione: il congelamento è stato revocato e le firme di questo giro sono annullate.",
+        "subject": "Contratto restituito per la revisione"
+      },
+      "negotiation.revised.accepted": {
+        "body": "La sua modifica al contratto «{contract_title}» è stata accettata.",
+        "subject": "Modifica accettata"
+      },
+      "negotiation.revised.proposed": {
+        "body": "È stata proposta una modifica al contratto «{contract_title}». La esamini e prenda una decisione.",
+        "subject": "Modifica proposta"
+      },
+      "negotiation.revised.rejected": {
+        "body": "La sua modifica al contratto «{contract_title}» è stata respinta.",
+        "subject": "Modifica respinta"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "Il contratto «{contract_title}» Le è stato inviato per l'approvazione.",
+        "subject": "Contratto ricevuto per l'approvazione"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "Il termine per la firma del contratto «{contract_title}» è scaduto. La richiesta di firma è chiusa.",
+        "subject": "Termine per la firma scaduto"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "L'altra parte ha firmato il contratto «{contract_title}». Attendiamo la sua firma.",
+        "subject": "L'altra parte ha firmato il contratto"
+      },
+      "negotiation.withdrawn": {
+        "body": "L'altra parte ha ritirato il contratto «{contract_title}»: l'approvazione è terminata.",
+        "subject": "Contratto ritirato"
+      }
+    }
+  },
+  "ja": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "「{contract_title}」の変更契約書が確認のために届きました。",
+        "subject": "変更契約書の確認依頼"
+      },
+      "contract.amended": {
+        "body": "「{contract_title}」の変更契約書に両当事者が署名し、変更が発効しました。",
+        "subject": "変更契約書が発効しました"
+      },
+      "contract.closed": {
+        "body": "「{contract_title}」の保証期間が満了しました。契約は終了しました。",
+        "subject": "契約が終了しました"
+      },
+      "contract.terminated": {
+        "body": "「{contract_title}」は相手方により解除されました。",
+        "subject": "契約が解除されました"
+      },
+      "milestone.advance_confirmed": {
+        "body": "工程「{milestone_title}」の前払金に関するあなたの確認を記録しました。",
+        "subject": "前払金を確認しました"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "相手方が工程「{milestone_title}」の前払金を確認しました。",
+        "subject": "相手方が前払金を確認しました"
+      },
+      "milestone.material_received": {
+        "body": "工程「{milestone_title}」について資材の受領が確認されました。",
+        "subject": "工程の資材受領が確認されました"
+      },
+      "milestone.paid": {
+        "body": "工程「{milestone_title}」の支払いが完了しました。両当事者が支払いを確認しました。",
+        "subject": "工程の支払いが完了しました"
+      },
+      "milestone.payment_confirmed": {
+        "body": "工程「{milestone_title}」の支払いに関するあなたの確認を記録しました。",
+        "subject": "支払いを確認しました"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "相手方が工程「{milestone_title}」の支払いを確認しました。",
+        "subject": "相手方が支払いを確認しました"
+      },
+      "milestone.resumed": {
+        "body": "工程「{milestone_title}」の作業が再開されました。停止は解除されました。",
+        "subject": "工程の作業が再開されました"
+      },
+      "negotiation.rejected": {
+        "body": "相手方が「{contract_title}」を却下しました。",
+        "subject": "契約書が却下されました"
+      },
+      "negotiation.reopened": {
+        "body": "「{contract_title}」が修正のために差し戻されました。確定が解除され、今回の署名は無効になりました。",
+        "subject": "契約書が修正のために差し戻されました"
+      },
+      "negotiation.revised.accepted": {
+        "body": "「{contract_title}」へのあなたの変更が承認されました。",
+        "subject": "変更が承認されました"
+      },
+      "negotiation.revised.proposed": {
+        "body": "「{contract_title}」について変更が提案されました。内容をご確認のうえ、ご判断ください。",
+        "subject": "変更が提案されました"
+      },
+      "negotiation.revised.rejected": {
+        "body": "「{contract_title}」へのあなたの変更が却下されました。",
+        "subject": "変更が却下されました"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "「{contract_title}」が確認のために届きました。",
+        "subject": "契約書が確認のために届きました"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "「{contract_title}」の署名期限が過ぎました。署名依頼は終了しました。",
+        "subject": "署名期限が過ぎました"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "相手方が「{contract_title}」に署名しました。あなたの署名をお待ちしています。",
+        "subject": "相手方が契約書に署名しました"
+      },
+      "negotiation.withdrawn": {
+        "body": "相手方が「{contract_title}」を撤回しました。確認は終了しました。",
+        "subject": "契約書が撤回されました"
+      }
+    }
+  },
+  "ka": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "თქვენ გამოგეგზავნათ დამატებითი შეთანხმება ხელშეკრულებაზე „{contract_title}“.",
+        "subject": "დამატებითი შეთანხმება შესათანხმებლად"
+      },
+      "contract.amended": {
+        "body": "ხელშეკრულების „{contract_title}“ დამატებით შეთანხმებას ორივე მხარემ მოაწერა ხელი — ცვლილებები ძალაში შევიდა.",
+        "subject": "დამატებითი შეთანხმება ძალაში შევიდა"
+      },
+      "contract.closed": {
+        "body": "ხელშეკრულების „{contract_title}“ საგარანტიო ვადა ამოიწურა. ხელშეკრულება დახურულია.",
+        "subject": "ხელშეკრულება დახურულია"
+      },
+      "contract.terminated": {
+        "body": "ხელშეკრულება „{contract_title}“ შეწყვიტა მეორე მხარემ.",
+        "subject": "ხელშეკრულება შეწყვეტილია"
+      },
+      "milestone.advance_confirmed": {
+        "body": "ეტაპზე „{milestone_title}“ ავანსის თქვენი დადასტურება დაფიქსირდა.",
+        "subject": "ავანსი დადასტურებულია"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "მეორე მხარემ დაადასტურა ავანსი ეტაპზე „{milestone_title}“.",
+        "subject": "მეორე მხარემ დაადასტურა ავანსი"
+      },
+      "milestone.material_received": {
+        "body": "ეტაპზე „{milestone_title}“ დადასტურდა მასალების მიღება.",
+        "subject": "ეტაპის მასალები მიღებულია"
+      },
+      "milestone.paid": {
+        "body": "ეტაპი „{milestone_title}“ გადახდილია — გადახდა ორივე მხარემ დაადასტურა.",
+        "subject": "ეტაპი გადახდილია"
+      },
+      "milestone.payment_confirmed": {
+        "body": "ეტაპის „{milestone_title}“ გადახდის თქვენი დადასტურება დაფიქსირდა.",
+        "subject": "გადახდა დადასტურებულია"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "მეორე მხარემ დაადასტურა ეტაპის „{milestone_title}“ გადახდა.",
+        "subject": "მეორე მხარემ დაადასტურა გადახდა"
+      },
+      "milestone.resumed": {
+        "body": "სამუშაოები ეტაპზე „{milestone_title}“ განახლდა — შეჩერება მოხსნილია.",
+        "subject": "ეტაპზე სამუშაოები განახლდა"
+      },
+      "negotiation.rejected": {
+        "body": "მეორე მხარემ უარყო ხელშეკრულება „{contract_title}“.",
+        "subject": "ხელშეკრულება უარყოფილია"
+      },
+      "negotiation.reopened": {
+        "body": "ხელშეკრულება „{contract_title}“ დაბრუნდა დასახვეწად: ფიქსაცია მოხსნილია და ამ რაუნდის ხელმოწერები გაუქმებულია.",
+        "subject": "ხელშეკრულება დაბრუნდა დასახვეწად"
+      },
+      "negotiation.revised.accepted": {
+        "body": "თქვენი ცვლილება ხელშეკრულებაზე „{contract_title}“ მიღებულია.",
+        "subject": "ცვლილება მიღებულია"
+      },
+      "negotiation.revised.proposed": {
+        "body": "ხელშეკრულებაზე „{contract_title}“ შემოთავაზებულია ცვლილება. გაეცანით და მიიღეთ გადაწყვეტილება.",
+        "subject": "შემოთავაზებულია ცვლილება"
+      },
+      "negotiation.revised.rejected": {
+        "body": "თქვენი ცვლილება ხელშეკრულებაზე „{contract_title}“ უარყოფილია.",
+        "subject": "ცვლილება უარყოფილია"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "ხელშეკრულება „{contract_title}“ გამოგეგზავნათ შესათანხმებლად.",
+        "subject": "ხელშეკრულება შემოვიდა შესათანხმებლად"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "ხელშეკრულების „{contract_title}“ ხელმოწერის ვადა ამოიწურა. ხელმოწერის მოთხოვნა დახურულია.",
+        "subject": "ხელმოწერის ვადა ამოიწურა"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "მეორე მხარემ ხელი მოაწერა ხელშეკრულებას „{contract_title}“. ველოდებით თქვენს ხელმოწერას.",
+        "subject": "მეორე მხარემ ხელი მოაწერა ხელშეკრულებას"
+      },
+      "negotiation.withdrawn": {
+        "body": "მეორე მხარემ გამოითხოვა ხელშეკრულება „{contract_title}“ — შეთანხმება შეწყდა.",
+        "subject": "ხელშეკრულება გამოთხოვილია"
+      }
+    }
+  },
+  "kk": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "Сізге «{contract_title}» шартына қосымша келісім жіберілді.",
+        "subject": "Қосымша келісім келісуге жіберілді"
+      },
+      "contract.amended": {
+        "body": "«{contract_title}» шартына қосымша келісімге екі тарап та қол қойды — өзгерістер күшіне енді.",
+        "subject": "Қосымша келісім күшіне енді"
+      },
+      "contract.closed": {
+        "body": "«{contract_title}» шарты бойынша кепілдік мерзімі аяқталды. Шарт жабылды.",
+        "subject": "Шарт жабылды"
+      },
+      "contract.terminated": {
+        "body": "«{contract_title}» шартын екінші тарап бұзды.",
+        "subject": "Шарт бұзылды"
+      },
+      "milestone.advance_confirmed": {
+        "body": "«{milestone_title}» кезеңі бойынша авансты растауыңыз тіркелді.",
+        "subject": "Аванс расталды"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "Екінші тарап «{milestone_title}» кезеңі бойынша авансты растады.",
+        "subject": "Екінші тарап авансты растады"
+      },
+      "milestone.material_received": {
+        "body": "«{milestone_title}» кезеңі бойынша материалдардың алынғаны расталды.",
+        "subject": "Кезең бойынша материалдар алынды"
+      },
+      "milestone.paid": {
+        "body": "«{milestone_title}» кезеңі төленді — төлемді екі тарап та растады.",
+        "subject": "Кезең төленді"
+      },
+      "milestone.payment_confirmed": {
+        "body": "«{milestone_title}» кезеңінің төлемін растауыңыз тіркелді.",
+        "subject": "Төлем расталды"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "Екінші тарап «{milestone_title}» кезеңінің төлемін растады.",
+        "subject": "Екінші тарап төлемді растады"
+      },
+      "milestone.resumed": {
+        "body": "«{milestone_title}» кезеңі бойынша жұмыс қайта басталды — тоқтата тұру алынды.",
+        "subject": "Кезең бойынша жұмыс қайта басталды"
+      },
+      "negotiation.rejected": {
+        "body": "Екінші тарап «{contract_title}» шартын қабылдамады.",
+        "subject": "Шарт қабылданбады"
+      },
+      "negotiation.reopened": {
+        "body": "«{contract_title}» шарты пысықтауға қайтарылды: бекіту алынды, осы раундтағы қолдар жойылды.",
+        "subject": "Шарт пысықтауға қайтарылды"
+      },
+      "negotiation.revised.accepted": {
+        "body": "«{contract_title}» шарты бойынша түзетуіңіз қабылданды.",
+        "subject": "Түзету қабылданды"
+      },
+      "negotiation.revised.proposed": {
+        "body": "«{contract_title}» шарты бойынша түзету ұсынылды. Танысып, шешім қабылдаңыз.",
+        "subject": "Түзету ұсынылды"
+      },
+      "negotiation.revised.rejected": {
+        "body": "«{contract_title}» шарты бойынша түзетуіңіз қабылданбады.",
+        "subject": "Түзету қабылданбады"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "«{contract_title}» шарты сізге келісуге түсті.",
+        "subject": "Сізге шарт келісуге түсті"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "«{contract_title}» шартына қол қою мерзімі аяқталды. Қол қою сұрауы жабылды.",
+        "subject": "Қол қою мерзімі аяқталды"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "Екінші тарап «{contract_title}» шартына қол қойды. Сіздің қолыңызды күтудеміз.",
+        "subject": "Екінші тарап шартқа қол қойды"
+      },
+      "negotiation.withdrawn": {
+        "body": "Екінші тарап «{contract_title}» шартын кері қайтарып алды — келісу тоқтатылды.",
+        "subject": "Шарт кері қайтарып алынды"
+      }
+    }
+  },
+  "ko": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "'{contract_title}' 계약의 변경합의서가 회원님께 검토 요청으로 전달되었습니다.",
+        "subject": "변경합의서 검토 요청"
+      },
+      "contract.amended": {
+        "body": "'{contract_title}' 계약의 변경합의서에 양측이 서명하여 변경 사항이 발효되었습니다.",
+        "subject": "변경합의서가 발효되었습니다"
+      },
+      "contract.closed": {
+        "body": "'{contract_title}' 계약의 보증 기간이 종료되었습니다. 계약이 종결되었습니다.",
+        "subject": "계약이 종결되었습니다"
+      },
+      "contract.terminated": {
+        "body": "상대방이 '{contract_title}' 계약을 해지했습니다.",
+        "subject": "계약이 해지되었습니다"
+      },
+      "milestone.advance_confirmed": {
+        "body": "'{milestone_title}' 단계의 선급금에 대한 회원님의 확인이 기록되었습니다.",
+        "subject": "선급금이 확인되었습니다"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "상대방이 '{milestone_title}' 단계의 선급금을 확인했습니다.",
+        "subject": "상대방이 선급금을 확인했습니다"
+      },
+      "milestone.material_received": {
+        "body": "'{milestone_title}' 단계의 자재 수령이 확인되었습니다.",
+        "subject": "단계 자재 수령이 확인되었습니다"
+      },
+      "milestone.paid": {
+        "body": "'{milestone_title}' 단계의 대금이 지급되었습니다. 양측이 지급을 확인했습니다.",
+        "subject": "단계 대금이 지급되었습니다"
+      },
+      "milestone.payment_confirmed": {
+        "body": "'{milestone_title}' 단계의 대금 지급에 대한 회원님의 확인이 기록되었습니다.",
+        "subject": "대금 지급이 확인되었습니다"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "상대방이 '{milestone_title}' 단계의 대금 지급을 확인했습니다.",
+        "subject": "상대방이 대금 지급을 확인했습니다"
+      },
+      "milestone.resumed": {
+        "body": "'{milestone_title}' 단계의 작업이 재개되었습니다. 중지가 해제되었습니다.",
+        "subject": "단계 작업이 재개되었습니다"
+      },
+      "negotiation.rejected": {
+        "body": "상대방이 '{contract_title}' 계약서를 거절했습니다.",
+        "subject": "계약서가 거절되었습니다"
+      },
+      "negotiation.reopened": {
+        "body": "'{contract_title}' 계약서가 수정 단계로 돌아갔습니다. 확정이 해제되고 이번 회차의 서명은 무효 처리되었습니다.",
+        "subject": "계약서가 수정 단계로 돌아갔습니다"
+      },
+      "negotiation.revised.accepted": {
+        "body": "'{contract_title}' 계약서에 대한 회원님의 변경이 수락되었습니다.",
+        "subject": "변경이 수락되었습니다"
+      },
+      "negotiation.revised.proposed": {
+        "body": "'{contract_title}' 계약서에 변경이 제안되었습니다. 내용을 확인하고 결정하세요.",
+        "subject": "변경이 제안되었습니다"
+      },
+      "negotiation.revised.rejected": {
+        "body": "'{contract_title}' 계약서에 대한 회원님의 변경이 거절되었습니다.",
+        "subject": "변경이 거절되었습니다"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "'{contract_title}' 계약서가 회원님께 검토 요청으로 전달되었습니다.",
+        "subject": "검토 요청 계약서가 도착했습니다"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "'{contract_title}' 계약서의 서명 기한이 만료되었습니다. 서명 요청이 종료되었습니다.",
+        "subject": "서명 기한이 만료되었습니다"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "상대방이 '{contract_title}' 계약서에 서명했습니다. 회원님의 서명을 기다리고 있습니다.",
+        "subject": "상대방이 서명했습니다"
+      },
+      "negotiation.withdrawn": {
+        "body": "상대방이 '{contract_title}' 계약서를 회수하여 검토가 종료되었습니다.",
+        "subject": "계약서가 회수되었습니다"
+      }
+    }
+  },
+  "pl": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "Przesłano Ci aneks do umowy „{contract_title}”.",
+        "subject": "Aneks do uzgodnienia"
+      },
+      "contract.amended": {
+        "body": "Aneks do umowy „{contract_title}” został podpisany przez obie strony — zmiany weszły w życie.",
+        "subject": "Aneks wszedł w życie"
+      },
+      "contract.closed": {
+        "body": "Okres gwarancji dla umowy „{contract_title}” upłynął. Umowa została zamknięta.",
+        "subject": "Umowa zamknięta"
+      },
+      "contract.terminated": {
+        "body": "Umowa „{contract_title}” została rozwiązana przez drugą stronę.",
+        "subject": "Umowa rozwiązana"
+      },
+      "milestone.advance_confirmed": {
+        "body": "Twoje potwierdzenie zaliczki dla etapu „{milestone_title}” zostało zarejestrowane.",
+        "subject": "Zaliczka potwierdzona"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "Druga strona potwierdziła zaliczkę dla etapu „{milestone_title}”.",
+        "subject": "Druga strona potwierdziła zaliczkę"
+      },
+      "milestone.material_received": {
+        "body": "Potwierdzono odbiór materiałów do etapu „{milestone_title}”.",
+        "subject": "Materiały do etapu odebrane"
+      },
+      "milestone.paid": {
+        "body": "Etap „{milestone_title}” został opłacony — płatność potwierdziły obie strony.",
+        "subject": "Etap opłacony"
+      },
+      "milestone.payment_confirmed": {
+        "body": "Twoje potwierdzenie płatności za etap „{milestone_title}” zostało zarejestrowane.",
+        "subject": "Płatność potwierdzona"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "Druga strona potwierdziła płatność za etap „{milestone_title}”.",
+        "subject": "Druga strona potwierdziła płatność"
+      },
+      "milestone.resumed": {
+        "body": "Prace nad etapem „{milestone_title}” zostały wznowione — wstrzymanie zostało zniesione.",
+        "subject": "Prace nad etapem wznowione"
+      },
+      "negotiation.rejected": {
+        "body": "Druga strona odrzuciła umowę „{contract_title}”.",
+        "subject": "Umowa odrzucona"
+      },
+      "negotiation.reopened": {
+        "body": "Umowa „{contract_title}” została zwrócona do poprawek: zamrożenie zostało zniesione, a podpisy z tej rundy są nieważne.",
+        "subject": "Umowa zwrócona do poprawek"
+      },
+      "negotiation.revised.accepted": {
+        "body": "Twoja zmiana w umowie „{contract_title}” została przyjęta.",
+        "subject": "Zmiana przyjęta"
+      },
+      "negotiation.revised.proposed": {
+        "body": "W umowie „{contract_title}” zaproponowano zmianę. Zapoznaj się z nią i podejmij decyzję.",
+        "subject": "Zaproponowano zmianę"
+      },
+      "negotiation.revised.rejected": {
+        "body": "Twoja zmiana w umowie „{contract_title}” została odrzucona.",
+        "subject": "Zmiana odrzucona"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "Umowa „{contract_title}” wpłynęła do Ciebie do uzgodnienia.",
+        "subject": "Umowa wpłynęła do uzgodnienia"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "Termin podpisania umowy „{contract_title}” upłynął. Prośba o podpis została zamknięta.",
+        "subject": "Termin podpisania upłynął"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "Druga strona podpisała umowę „{contract_title}”. Czekamy na Twój podpis.",
+        "subject": "Druga strona podpisała umowę"
+      },
+      "negotiation.withdrawn": {
+        "body": "Druga strona wycofała umowę „{contract_title}” — uzgadnianie zostało zakończone.",
+        "subject": "Umowa wycofana"
+      }
+    }
+  },
+  "pt-BR": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "Foi enviado a você um aditivo ao contrato “{contract_title}”.",
+        "subject": "Aditivo enviado para aprovação"
+      },
+      "contract.amended": {
+        "body": "O aditivo ao contrato “{contract_title}” foi assinado pelas duas partes — as alterações entraram em vigor.",
+        "subject": "Aditivo em vigor"
+      },
+      "contract.closed": {
+        "body": "O prazo de garantia do contrato “{contract_title}” terminou. O contrato foi encerrado.",
+        "subject": "Contrato encerrado"
+      },
+      "contract.terminated": {
+        "body": "O contrato “{contract_title}” foi rescindido pela outra parte.",
+        "subject": "Contrato rescindido"
+      },
+      "milestone.advance_confirmed": {
+        "body": "A sua confirmação do adiantamento da etapa “{milestone_title}” foi registrada.",
+        "subject": "Adiantamento confirmado"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "A outra parte confirmou o adiantamento da etapa “{milestone_title}”.",
+        "subject": "A outra parte confirmou o adiantamento"
+      },
+      "milestone.material_received": {
+        "body": "O recebimento dos materiais da etapa “{milestone_title}” foi confirmado.",
+        "subject": "Materiais da etapa recebidos"
+      },
+      "milestone.paid": {
+        "body": "A etapa “{milestone_title}” foi paga — as duas partes confirmaram o pagamento.",
+        "subject": "Etapa paga"
+      },
+      "milestone.payment_confirmed": {
+        "body": "A sua confirmação do pagamento da etapa “{milestone_title}” foi registrada.",
+        "subject": "Pagamento confirmado"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "A outra parte confirmou o pagamento da etapa “{milestone_title}”.",
+        "subject": "A outra parte confirmou o pagamento"
+      },
+      "milestone.resumed": {
+        "body": "O trabalho na etapa “{milestone_title}” foi retomado — a suspensão foi encerrada.",
+        "subject": "Trabalho na etapa retomado"
+      },
+      "negotiation.rejected": {
+        "body": "A outra parte recusou o contrato “{contract_title}”.",
+        "subject": "Contrato recusado"
+      },
+      "negotiation.reopened": {
+        "body": "O contrato “{contract_title}” foi devolvido para revisão: o congelamento foi suspenso e as assinaturas desta rodada foram anuladas.",
+        "subject": "Contrato devolvido para revisão"
+      },
+      "negotiation.revised.accepted": {
+        "body": "A sua alteração no contrato “{contract_title}” foi aceita.",
+        "subject": "Alteração aceita"
+      },
+      "negotiation.revised.proposed": {
+        "body": "Foi proposta uma alteração no contrato “{contract_title}”. Analise e tome uma decisão.",
+        "subject": "Alteração proposta"
+      },
+      "negotiation.revised.rejected": {
+        "body": "A sua alteração no contrato “{contract_title}” foi recusada.",
+        "subject": "Alteração recusada"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "O contrato “{contract_title}” foi enviado a você para aprovação.",
+        "subject": "Contrato recebido para aprovação"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "O prazo para assinar o contrato “{contract_title}” expirou. A solicitação de assinatura foi encerrada.",
+        "subject": "Prazo de assinatura expirado"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "A outra parte assinou o contrato “{contract_title}”. Aguardamos a sua assinatura.",
+        "subject": "A outra parte assinou o contrato"
+      },
+      "negotiation.withdrawn": {
+        "body": "A outra parte retirou o contrato “{contract_title}” — a aprovação foi encerrada.",
+        "subject": "Contrato retirado"
+      }
+    }
+  },
+  "ro": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "V-a fost trimis un act adițional la contractul „{contract_title}”.",
+        "subject": "Act adițional spre avizare"
+      },
+      "contract.amended": {
+        "body": "Actul adițional la contractul „{contract_title}” a fost semnat de ambele părți — modificările au intrat în vigoare.",
+        "subject": "Actul adițional a intrat în vigoare"
+      },
+      "contract.closed": {
+        "body": "Perioada de garanție pentru contractul „{contract_title}” a expirat. Contractul este închis.",
+        "subject": "Contract închis"
+      },
+      "contract.terminated": {
+        "body": "Contractul „{contract_title}” a fost reziliat de cealaltă parte.",
+        "subject": "Contract reziliat"
+      },
+      "milestone.advance_confirmed": {
+        "body": "Confirmarea dumneavoastră privind avansul pentru etapa „{milestone_title}” a fost înregistrată.",
+        "subject": "Avans confirmat"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "Cealaltă parte a confirmat avansul pentru etapa „{milestone_title}”.",
+        "subject": "Cealaltă parte a confirmat avansul"
+      },
+      "milestone.material_received": {
+        "body": "Primirea materialelor pentru etapa „{milestone_title}” a fost confirmată.",
+        "subject": "Materialele pentru etapă au fost primite"
+      },
+      "milestone.paid": {
+        "body": "Etapa „{milestone_title}” este plătită — plata a fost confirmată de ambele părți.",
+        "subject": "Etapă plătită"
+      },
+      "milestone.payment_confirmed": {
+        "body": "Confirmarea dumneavoastră privind plata etapei „{milestone_title}” a fost înregistrată.",
+        "subject": "Plată confirmată"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "Cealaltă parte a confirmat plata etapei „{milestone_title}”.",
+        "subject": "Cealaltă parte a confirmat plata"
+      },
+      "milestone.resumed": {
+        "body": "Lucrările la etapa „{milestone_title}” au fost reluate — suspendarea a fost ridicată.",
+        "subject": "Lucrările la etapă au fost reluate"
+      },
+      "negotiation.rejected": {
+        "body": "Cealaltă parte a respins contractul „{contract_title}”.",
+        "subject": "Contract respins"
+      },
+      "negotiation.reopened": {
+        "body": "Contractul „{contract_title}” a fost returnat spre revizuire: înghețarea a fost ridicată, iar semnăturile din această rundă sunt anulate.",
+        "subject": "Contract returnat spre revizuire"
+      },
+      "negotiation.revised.accepted": {
+        "body": "Modificarea dumneavoastră la contractul „{contract_title}” a fost acceptată.",
+        "subject": "Modificare acceptată"
+      },
+      "negotiation.revised.proposed": {
+        "body": "A fost propusă o modificare la contractul „{contract_title}”. Examinați-o și luați o decizie.",
+        "subject": "Modificare propusă"
+      },
+      "negotiation.revised.rejected": {
+        "body": "Modificarea dumneavoastră la contractul „{contract_title}” a fost respinsă.",
+        "subject": "Modificare respinsă"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "Contractul „{contract_title}” v-a fost trimis spre avizare.",
+        "subject": "Ați primit un contract spre avizare"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "Termenul de semnare a contractului „{contract_title}” a expirat. Cererea de semnătură a fost închisă.",
+        "subject": "Termenul de semnare a expirat"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "Cealaltă parte a semnat contractul „{contract_title}”. Așteptăm semnătura dumneavoastră.",
+        "subject": "Cealaltă parte a semnat contractul"
+      },
+      "negotiation.withdrawn": {
+        "body": "Cealaltă parte a retras contractul „{contract_title}” — avizarea a încetat.",
+        "subject": "Contract retras"
+      }
+    }
+  },
+  "ru": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "Вам направлено допсоглашение к договору «{contract_title}».",
+        "subject": "Допсоглашение на согласование"
+      },
+      "contract.amended": {
+        "body": "Допсоглашение к договору «{contract_title}» подписано обеими сторонами — изменения вступили в силу.",
+        "subject": "Допсоглашение вступило в силу"
+      },
+      "contract.closed": {
+        "body": "Гарантийный срок по договору «{contract_title}» истёк. Договор закрыт.",
+        "subject": "Договор закрыт"
+      },
+      "contract.terminated": {
+        "body": "Договор «{contract_title}» расторгнут второй стороной.",
+        "subject": "Договор расторгнут"
+      },
+      "milestone.advance_confirmed": {
+        "body": "Ваше подтверждение аванса по этапу «{milestone_title}» зафиксировано.",
+        "subject": "Аванс подтверждён"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "Вторая сторона подтвердила аванс по этапу «{milestone_title}».",
+        "subject": "Вторая сторона подтвердила аванс"
+      },
+      "milestone.material_received": {
+        "body": "По этапу «{milestone_title}» подтверждено получение материалов.",
+        "subject": "Материалы по этапу получены"
+      },
+      "milestone.paid": {
+        "body": "Этап «{milestone_title}» оплачен — оплату подтвердили обе стороны.",
+        "subject": "Этап оплачен"
+      },
+      "milestone.payment_confirmed": {
+        "body": "Ваше подтверждение оплаты этапа «{milestone_title}» зафиксировано.",
+        "subject": "Оплата подтверждена"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "Вторая сторона подтвердила оплату этапа «{milestone_title}».",
+        "subject": "Вторая сторона подтвердила оплату"
+      },
+      "milestone.resumed": {
+        "body": "Работы по этапу «{milestone_title}» возобновлены — приостановка снята.",
+        "subject": "Работы по этапу возобновлены"
+      },
+      "negotiation.rejected": {
+        "body": "Вторая сторона отклонила договор «{contract_title}».",
+        "subject": "Договор отклонён"
+      },
+      "negotiation.reopened": {
+        "body": "Договор «{contract_title}» возвращён на доработку: заморозка снята, подписи этого раунда аннулированы.",
+        "subject": "Договор возвращён на доработку"
+      },
+      "negotiation.revised.accepted": {
+        "body": "Ваша правка по договору «{contract_title}» принята.",
+        "subject": "Правка принята"
+      },
+      "negotiation.revised.proposed": {
+        "body": "По договору «{contract_title}» предложена правка. Ознакомьтесь и примите решение.",
+        "subject": "Предложена правка"
+      },
+      "negotiation.revised.rejected": {
+        "body": "Ваша правка по договору «{contract_title}» отклонена.",
+        "subject": "Правка отклонена"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "Договор «{contract_title}» поступил вам на согласование.",
+        "subject": "Вам поступил договор на согласование"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "Срок подписания договора «{contract_title}» истёк. Запрос подписи закрыт.",
+        "subject": "Срок подписания истёк"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "Вторая сторона подписала договор «{contract_title}». Ждём вашу подпись.",
+        "subject": "Вторая сторона подписала договор"
+      },
+      "negotiation.withdrawn": {
+        "body": "Вторая сторона отозвала договор «{contract_title}» — согласование прекращено.",
+        "subject": "Договор отозван"
+      }
+    }
+  },
+  "sw": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "Umetumiwa nyongeza ya mkataba “{contract_title}”.",
+        "subject": "Nyongeza ya mkataba kwa mapitio"
+      },
+      "contract.amended": {
+        "body": "Nyongeza ya mkataba “{contract_title}” imetiwa saini na pande zote mbili — mabadiliko yameanza kutumika.",
+        "subject": "Nyongeza ya mkataba imeanza kutumika"
+      },
+      "contract.closed": {
+        "body": "Kipindi cha dhamana cha mkataba “{contract_title}” kimeisha. Mkataba umefungwa.",
+        "subject": "Mkataba umefungwa"
+      },
+      "contract.terminated": {
+        "body": "Mkataba “{contract_title}” umevunjwa na upande mwingine.",
+        "subject": "Mkataba umevunjwa"
+      },
+      "milestone.advance_confirmed": {
+        "body": "Uthibitisho wako wa malipo ya awali kwa hatua “{milestone_title}” umerekodiwa.",
+        "subject": "Malipo ya awali yamethibitishwa"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "Upande mwingine amethibitisha malipo ya awali kwa hatua “{milestone_title}”.",
+        "subject": "Upande mwingine amethibitisha malipo ya awali"
+      },
+      "milestone.material_received": {
+        "body": "Kupokelewa kwa vifaa vya hatua “{milestone_title}” kumethibitishwa.",
+        "subject": "Vifaa vya hatua vimepokelewa"
+      },
+      "milestone.paid": {
+        "body": "Hatua “{milestone_title}” imelipwa — malipo yamethibitishwa na pande zote mbili.",
+        "subject": "Hatua imelipwa"
+      },
+      "milestone.payment_confirmed": {
+        "body": "Uthibitisho wako wa malipo ya hatua “{milestone_title}” umerekodiwa.",
+        "subject": "Malipo yamethibitishwa"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "Upande mwingine amethibitisha malipo ya hatua “{milestone_title}”.",
+        "subject": "Upande mwingine amethibitisha malipo"
+      },
+      "milestone.resumed": {
+        "body": "Kazi ya hatua “{milestone_title}” imeendelezwa — kusitishwa kumeondolewa.",
+        "subject": "Kazi ya hatua imeendelezwa"
+      },
+      "negotiation.rejected": {
+        "body": "Upande mwingine amekataa mkataba “{contract_title}”.",
+        "subject": "Mkataba umekataliwa"
+      },
+      "negotiation.reopened": {
+        "body": "Mkataba “{contract_title}” umerudishwa kwa marekebisho: kugandishwa kumeondolewa na saini za raundi hii zimebatilishwa.",
+        "subject": "Mkataba umerudishwa kwa marekebisho"
+      },
+      "negotiation.revised.accepted": {
+        "body": "Marekebisho yako katika mkataba “{contract_title}” yamekubaliwa.",
+        "subject": "Marekebisho yamekubaliwa"
+      },
+      "negotiation.revised.proposed": {
+        "body": "Marekebisho katika mkataba “{contract_title}” yamependekezwa. Yapitie na uamue.",
+        "subject": "Marekebisho yamependekezwa"
+      },
+      "negotiation.revised.rejected": {
+        "body": "Marekebisho yako katika mkataba “{contract_title}” yamekataliwa.",
+        "subject": "Marekebisho yamekataliwa"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "Mkataba “{contract_title}” umetumwa kwako kwa mapitio.",
+        "subject": "Umepokea mkataba kwa mapitio"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "Muda wa kutia saini mkataba “{contract_title}” umeisha. Ombi la saini limefungwa.",
+        "subject": "Muda wa kutia saini umeisha"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "Upande mwingine ametia saini mkataba “{contract_title}”. Tunasubiri saini yako.",
+        "subject": "Upande mwingine ametia saini mkataba"
+      },
+      "negotiation.withdrawn": {
+        "body": "Upande mwingine ameondoa mkataba “{contract_title}” — mapitio yamekoma.",
+        "subject": "Mkataba umeondolewa"
+      }
+    }
+  },
+  "th": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "มีการส่งบันทึกข้อตกลงเพิ่มเติมของสัญญา “{contract_title}” ให้คุณ",
+        "subject": "บันทึกข้อตกลงเพิ่มเติมให้พิจารณา"
+      },
+      "contract.amended": {
+        "body": "บันทึกข้อตกลงเพิ่มเติมของสัญญา “{contract_title}” ได้รับการลงนามจากทั้งสองฝ่ายแล้ว การเปลี่ยนแปลงมีผลบังคับใช้",
+        "subject": "บันทึกข้อตกลงเพิ่มเติมมีผลบังคับใช้"
+      },
+      "contract.closed": {
+        "body": "ระยะเวลารับประกันของสัญญา “{contract_title}” สิ้นสุดแล้ว สัญญาถูกปิด",
+        "subject": "ปิดสัญญาแล้ว"
+      },
+      "contract.terminated": {
+        "body": "สัญญา “{contract_title}” ถูกบอกเลิกโดยอีกฝ่าย",
+        "subject": "สัญญาถูกบอกเลิก"
+      },
+      "milestone.advance_confirmed": {
+        "body": "การยืนยันเงินล่วงหน้าสำหรับขั้นตอน “{milestone_title}” ของคุณถูกบันทึกแล้ว",
+        "subject": "ยืนยันเงินล่วงหน้าแล้ว"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "อีกฝ่ายยืนยันเงินล่วงหน้าสำหรับขั้นตอน “{milestone_title}” แล้ว",
+        "subject": "อีกฝ่ายยืนยันเงินล่วงหน้าแล้ว"
+      },
+      "milestone.material_received": {
+        "body": "การรับวัสดุสำหรับขั้นตอน “{milestone_title}” ได้รับการยืนยันแล้ว",
+        "subject": "ได้รับวัสดุของขั้นตอนแล้ว"
+      },
+      "milestone.paid": {
+        "body": "ขั้นตอน “{milestone_title}” ได้รับการชำระเงินแล้ว ทั้งสองฝ่ายยืนยันการชำระเงิน",
+        "subject": "ชำระเงินขั้นตอนแล้ว"
+      },
+      "milestone.payment_confirmed": {
+        "body": "การยืนยันการชำระเงินของขั้นตอน “{milestone_title}” ของคุณถูกบันทึกแล้ว",
+        "subject": "ยืนยันการชำระเงินแล้ว"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "อีกฝ่ายยืนยันการชำระเงินของขั้นตอน “{milestone_title}” แล้ว",
+        "subject": "อีกฝ่ายยืนยันการชำระเงินแล้ว"
+      },
+      "milestone.resumed": {
+        "body": "งานในขั้นตอน “{milestone_title}” กลับมาดำเนินการต่อแล้ว การระงับถูกยกเลิก",
+        "subject": "งานในขั้นตอนกลับมาดำเนินการต่อ"
+      },
+      "negotiation.rejected": {
+        "body": "อีกฝ่ายปฏิเสธสัญญา “{contract_title}”",
+        "subject": "สัญญาถูกปฏิเสธ"
+      },
+      "negotiation.reopened": {
+        "body": "สัญญา “{contract_title}” ถูกส่งคืนเพื่อแก้ไข การตรึงถูกยกเลิก และลายเซ็นในรอบนี้เป็นโมฆะ",
+        "subject": "สัญญาถูกส่งคืนเพื่อแก้ไข"
+      },
+      "negotiation.revised.accepted": {
+        "body": "การแก้ไขของคุณในสัญญา “{contract_title}” ได้รับการยอมรับแล้ว",
+        "subject": "การแก้ไขได้รับการยอมรับ"
+      },
+      "negotiation.revised.proposed": {
+        "body": "มีการเสนอการแก้ไขในสัญญา “{contract_title}” โปรดตรวจสอบและตัดสินใจ",
+        "subject": "มีการเสนอการแก้ไข"
+      },
+      "negotiation.revised.rejected": {
+        "body": "การแก้ไขของคุณในสัญญา “{contract_title}” ถูกปฏิเสธ",
+        "subject": "การแก้ไขถูกปฏิเสธ"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "สัญญา “{contract_title}” ถูกส่งให้คุณพิจารณาแล้ว",
+        "subject": "คุณได้รับสัญญาให้พิจารณา"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "ระยะเวลาลงนามสัญญา “{contract_title}” สิ้นสุดแล้ว คำขอลายเซ็นถูกปิด",
+        "subject": "ระยะเวลาลงนามสิ้นสุดแล้ว"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "อีกฝ่ายลงนามในสัญญา “{contract_title}” แล้ว กำลังรอลายเซ็นของคุณ",
+        "subject": "อีกฝ่ายลงนามในสัญญาแล้ว"
+      },
+      "negotiation.withdrawn": {
+        "body": "อีกฝ่ายถอนสัญญา “{contract_title}” คืน การพิจารณาจึงยุติลง",
+        "subject": "สัญญาถูกถอนคืน"
+      }
+    }
+  },
+  "tr": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "Size “{contract_title}” sözleşmesine ilişkin bir ek sözleşme gönderildi.",
+        "subject": "Ek sözleşme onaya sunuldu"
+      },
+      "contract.amended": {
+        "body": "“{contract_title}” sözleşmesine ilişkin ek sözleşme her iki tarafça imzalandı — değişiklikler yürürlüğe girdi.",
+        "subject": "Ek sözleşme yürürlükte"
+      },
+      "contract.closed": {
+        "body": "“{contract_title}” için garanti süresi sona erdi. Sözleşme kapatıldı.",
+        "subject": "Sözleşme kapatıldı"
+      },
+      "contract.terminated": {
+        "body": "“{contract_title}” karşı tarafça feshedildi.",
+        "subject": "Sözleşme feshedildi"
+      },
+      "milestone.advance_confirmed": {
+        "body": "“{milestone_title}” aşaması için avans onayınız kaydedildi.",
+        "subject": "Avans onaylandı"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "Karşı taraf “{milestone_title}” aşaması için avansı onayladı.",
+        "subject": "Karşı taraf avansı onayladı"
+      },
+      "milestone.material_received": {
+        "body": "“{milestone_title}” aşaması için malzemelerin teslim alındığı onaylandı.",
+        "subject": "Aşama malzemeleri teslim alındı"
+      },
+      "milestone.paid": {
+        "body": "“{milestone_title}” ödendi — ödemeyi her iki taraf da onayladı.",
+        "subject": "Aşama ödendi"
+      },
+      "milestone.payment_confirmed": {
+        "body": "“{milestone_title}” aşamasının ödemesine ilişkin onayınız kaydedildi.",
+        "subject": "Ödeme onaylandı"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "Karşı taraf “{milestone_title}” aşamasının ödemesini onayladı.",
+        "subject": "Karşı taraf ödemeyi onayladı"
+      },
+      "milestone.resumed": {
+        "body": "“{milestone_title}” aşamasındaki çalışma yeniden başladı — beklemeye alma kaldırıldı.",
+        "subject": "Aşamada çalışma yeniden başladı"
+      },
+      "negotiation.rejected": {
+        "body": "Karşı taraf “{contract_title}” sözleşmesini reddetti.",
+        "subject": "Sözleşme reddedildi"
+      },
+      "negotiation.reopened": {
+        "body": "“{contract_title}” revizyona döndürüldü: dondurma kaldırıldı, bu turdaki imzalar geçersiz sayıldı.",
+        "subject": "Sözleşme revizyona döndürüldü"
+      },
+      "negotiation.revised.accepted": {
+        "body": "“{contract_title}” için önerdiğiniz değişiklik kabul edildi.",
+        "subject": "Değişiklik kabul edildi"
+      },
+      "negotiation.revised.proposed": {
+        "body": "“{contract_title}” için bir değişiklik önerildi. İnceleyip kararınızı verin.",
+        "subject": "Değişiklik önerildi"
+      },
+      "negotiation.revised.rejected": {
+        "body": "“{contract_title}” için önerdiğiniz değişiklik reddedildi.",
+        "subject": "Değişiklik reddedildi"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "“{contract_title}” onayınıza sunuldu.",
+        "subject": "Size sözleşme onaya geldi"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "“{contract_title}” için imza süresi doldu. İmza talebi kapatıldı.",
+        "subject": "İmza süresi doldu"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "Karşı taraf “{contract_title}” sözleşmesini imzaladı. Sizin imzanız bekleniyor.",
+        "subject": "Karşı taraf sözleşmeyi imzaladı"
+      },
+      "negotiation.withdrawn": {
+        "body": "Karşı taraf “{contract_title}” sözleşmesini geri çekti — onay süreci sona erdi.",
+        "subject": "Sözleşme geri çekildi"
+      }
+    }
+  },
+  "uk": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "Вам надіслано додаткову угоду до договору «{contract_title}».",
+        "subject": "Додаткова угода на погодження"
+      },
+      "contract.amended": {
+        "body": "Додаткову угоду до договору «{contract_title}» підписали обидві сторони — зміни набрали чинності.",
+        "subject": "Додаткова угода набрала чинності"
+      },
+      "contract.closed": {
+        "body": "Гарантійний строк за договором «{contract_title}» минув. Договір закрито.",
+        "subject": "Договір закрито"
+      },
+      "contract.terminated": {
+        "body": "Договір «{contract_title}» розірвано другою стороною.",
+        "subject": "Договір розірвано"
+      },
+      "milestone.advance_confirmed": {
+        "body": "Ваше підтвердження авансу за етапом «{milestone_title}» зафіксовано.",
+        "subject": "Аванс підтверджено"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "Друга сторона підтвердила аванс за етапом «{milestone_title}».",
+        "subject": "Друга сторона підтвердила аванс"
+      },
+      "milestone.material_received": {
+        "body": "За етапом «{milestone_title}» підтверджено отримання матеріалів.",
+        "subject": "Матеріали за етапом отримано"
+      },
+      "milestone.paid": {
+        "body": "Етап «{milestone_title}» оплачено — оплату підтвердили обидві сторони.",
+        "subject": "Етап оплачено"
+      },
+      "milestone.payment_confirmed": {
+        "body": "Ваше підтвердження оплати етапу «{milestone_title}» зафіксовано.",
+        "subject": "Оплату підтверджено"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "Друга сторона підтвердила оплату етапу «{milestone_title}».",
+        "subject": "Друга сторона підтвердила оплату"
+      },
+      "milestone.resumed": {
+        "body": "Роботи за етапом «{milestone_title}» відновлено — призупинення знято.",
+        "subject": "Роботи за етапом відновлено"
+      },
+      "negotiation.rejected": {
+        "body": "Друга сторона відхилила договір «{contract_title}».",
+        "subject": "Договір відхилено"
+      },
+      "negotiation.reopened": {
+        "body": "Договір «{contract_title}» повернуто на доопрацювання: фіксацію знято, підписи цього раунду анульовано.",
+        "subject": "Договір повернуто на доопрацювання"
+      },
+      "negotiation.revised.accepted": {
+        "body": "Вашу зміну за договором «{contract_title}» прийнято.",
+        "subject": "Зміну прийнято"
+      },
+      "negotiation.revised.proposed": {
+        "body": "За договором «{contract_title}» запропоновано зміну. Ознайомтеся та ухваліть рішення.",
+        "subject": "Запропоновано зміну"
+      },
+      "negotiation.revised.rejected": {
+        "body": "Вашу зміну за договором «{contract_title}» відхилено.",
+        "subject": "Зміну відхилено"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "Договір «{contract_title}» надійшов вам на погодження.",
+        "subject": "Вам надійшов договір на погодження"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "Строк підписання договору «{contract_title}» минув. Запит підпису закрито.",
+        "subject": "Строк підписання минув"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "Друга сторона підписала договір «{contract_title}». Чекаємо на ваш підпис.",
+        "subject": "Друга сторона підписала договір"
+      },
+      "negotiation.withdrawn": {
+        "body": "Друга сторона відкликала договір «{contract_title}» — погодження припинено.",
+        "subject": "Договір відкликано"
+      }
+    }
+  },
+  "ur": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "آپ کو “{contract_title}” کا ضمنی معاہدہ بھیجا گیا ہے۔",
+        "subject": "ضمنی معاہدہ جائزے کے لیے"
+      },
+      "contract.amended": {
+        "body": "“{contract_title}” کے ضمنی معاہدے پر دونوں فریقوں نے دستخط کر دیے ہیں — تبدیلیاں نافذ ہو گئی ہیں۔",
+        "subject": "ضمنی معاہدہ نافذ ہو گیا"
+      },
+      "contract.closed": {
+        "body": "“{contract_title}” کی ضمانتی مدت ختم ہو گئی ہے۔ معاہدہ بند کر دیا گیا۔",
+        "subject": "معاہدہ بند کر دیا گیا"
+      },
+      "contract.terminated": {
+        "body": "“{contract_title}” دوسرے فریق نے ختم کر دیا ہے۔",
+        "subject": "معاہدہ ختم کر دیا گیا"
+      },
+      "milestone.advance_confirmed": {
+        "body": "“{milestone_title}” مرحلے کی پیشگی ادائیگی کی آپ کی تصدیق درج ہو گئی ہے۔",
+        "subject": "پیشگی ادائیگی کی تصدیق"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "دوسرے فریق نے “{milestone_title}” مرحلے کی پیشگی ادائیگی کی تصدیق کر دی ہے۔",
+        "subject": "دوسرے فریق نے پیشگی ادائیگی کی تصدیق کی"
+      },
+      "milestone.material_received": {
+        "body": "“{milestone_title}” مرحلے کے لیے سامان کی وصولی کی تصدیق ہو گئی ہے۔",
+        "subject": "مرحلے کا سامان موصول ہو گیا"
+      },
+      "milestone.paid": {
+        "body": "“{milestone_title}” کی ادائیگی ہو گئی — دونوں فریقوں نے ادائیگی کی تصدیق کر دی۔",
+        "subject": "مرحلے کی ادائیگی ہو گئی"
+      },
+      "milestone.payment_confirmed": {
+        "body": "“{milestone_title}” مرحلے کی ادائیگی کی آپ کی تصدیق درج ہو گئی ہے۔",
+        "subject": "ادائیگی کی تصدیق"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "دوسرے فریق نے “{milestone_title}” مرحلے کی ادائیگی کی تصدیق کر دی ہے۔",
+        "subject": "دوسرے فریق نے ادائیگی کی تصدیق کی"
+      },
+      "milestone.resumed": {
+        "body": "“{milestone_title}” مرحلے کا کام دوبارہ شروع ہو گیا ہے — روک ہٹا دی گئی۔",
+        "subject": "مرحلے کا کام دوبارہ شروع"
+      },
+      "negotiation.rejected": {
+        "body": "دوسرے فریق نے “{contract_title}” مسترد کر دیا ہے۔",
+        "subject": "معاہدہ مسترد کر دیا گیا"
+      },
+      "negotiation.reopened": {
+        "body": "“{contract_title}” نظرثانی کے لیے واپس کر دیا گیا ہے: تالا ہٹا دیا گیا اور اس دور کے دستخط کالعدم ہو گئے۔",
+        "subject": "معاہدہ نظرثانی کے لیے واپس"
+      },
+      "negotiation.revised.accepted": {
+        "body": "“{contract_title}” میں آپ کی تجویز کردہ تبدیلی قبول کر لی گئی ہے۔",
+        "subject": "تبدیلی قبول کر لی گئی"
+      },
+      "negotiation.revised.proposed": {
+        "body": "“{contract_title}” میں ایک تبدیلی تجویز کی گئی ہے۔ جائزہ لے کر فیصلہ کریں۔",
+        "subject": "تبدیلی تجویز کی گئی"
+      },
+      "negotiation.revised.rejected": {
+        "body": "“{contract_title}” میں آپ کی تجویز کردہ تبدیلی مسترد کر دی گئی ہے۔",
+        "subject": "تبدیلی مسترد کر دی گئی"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "“{contract_title}” آپ کے جائزے کے لیے بھیجا گیا ہے۔",
+        "subject": "معاہدہ آپ کے جائزے کے لیے آیا"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "“{contract_title}” پر دستخط کی مدت ختم ہو گئی ہے۔ دستخط کی درخواست بند کر دی گئی۔",
+        "subject": "دستخط کی مدت ختم ہو گئی"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "دوسرے فریق نے “{contract_title}” پر دستخط کر دیے ہیں۔ اب آپ کے دستخط کا انتظار ہے۔",
+        "subject": "دوسرے فریق نے دستخط کر دیے"
+      },
+      "negotiation.withdrawn": {
+        "body": "دوسرے فریق نے “{contract_title}” واپس لے لیا ہے — جائزے کا عمل ختم ہو گیا۔",
+        "subject": "معاہدہ واپس لے لیا گیا"
+      }
+    }
+  },
+  "uz": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "Sizga “{contract_title}” shartnomasiga qo'shimcha kelishuv yuborildi.",
+        "subject": "Qo'shimcha kelishuv kelishuvga yuborildi"
+      },
+      "contract.amended": {
+        "body": "“{contract_title}” shartnomasiga qo'shimcha kelishuvni ikkala tomon imzoladi — o'zgarishlar kuchga kirdi.",
+        "subject": "Qo'shimcha kelishuv kuchga kirdi"
+      },
+      "contract.closed": {
+        "body": "“{contract_title}” bo'yicha kafolat muddati tugadi. Shartnoma yopildi.",
+        "subject": "Shartnoma yopildi"
+      },
+      "contract.terminated": {
+        "body": "“{contract_title}” ikkinchi tomon tomonidan bekor qilindi.",
+        "subject": "Shartnoma bekor qilindi"
+      },
+      "milestone.advance_confirmed": {
+        "body": "“{milestone_title}” bosqichi bo'yicha avansni tasdiqlaganingiz qayd etildi.",
+        "subject": "Avans tasdiqlandi"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "Ikkinchi tomon “{milestone_title}” bosqichi bo'yicha avansni tasdiqladi.",
+        "subject": "Ikkinchi tomon avansni tasdiqladi"
+      },
+      "milestone.material_received": {
+        "body": "“{milestone_title}” bosqichi bo'yicha materiallar qabul qilingani tasdiqlandi.",
+        "subject": "Bosqich bo'yicha materiallar qabul qilindi"
+      },
+      "milestone.paid": {
+        "body": "“{milestone_title}” to'landi — to'lovni ikkala tomon tasdiqladi.",
+        "subject": "Bosqich to'landi"
+      },
+      "milestone.payment_confirmed": {
+        "body": "“{milestone_title}” bosqichi to'lovini tasdiqlaganingiz qayd etildi.",
+        "subject": "To'lov tasdiqlandi"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "Ikkinchi tomon “{milestone_title}” bosqichi to'lovini tasdiqladi.",
+        "subject": "Ikkinchi tomon to'lovni tasdiqladi"
+      },
+      "milestone.resumed": {
+        "body": "“{milestone_title}” bosqichi bo'yicha ish qayta boshlandi — to'xtatib turish bekor qilindi.",
+        "subject": "Bosqich bo'yicha ish qayta boshlandi"
+      },
+      "negotiation.rejected": {
+        "body": "Ikkinchi tomon “{contract_title}” shartnomasini rad etdi.",
+        "subject": "Shartnoma rad etildi"
+      },
+      "negotiation.reopened": {
+        "body": "“{contract_title}” qayta ishlashga qaytarildi: muzlatish bekor qilindi, joriy turdagi imzolar kuchini yo'qotdi.",
+        "subject": "Shartnoma qayta ishlashga qaytarildi"
+      },
+      "negotiation.revised.accepted": {
+        "body": "“{contract_title}” bo'yicha taklif qilgan o'zgartirishingiz qabul qilindi.",
+        "subject": "O'zgartirish qabul qilindi"
+      },
+      "negotiation.revised.proposed": {
+        "body": "“{contract_title}” bo'yicha o'zgartirish taklif qilindi. Tanishib chiqing va qaror qabul qiling.",
+        "subject": "O'zgartirish taklif qilindi"
+      },
+      "negotiation.revised.rejected": {
+        "body": "“{contract_title}” bo'yicha taklif qilgan o'zgartirishingiz rad etildi.",
+        "subject": "O'zgartirish rad etildi"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "“{contract_title}” sizga kelishuv uchun yuborildi.",
+        "subject": "Sizga shartnoma kelishuvga keldi"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "“{contract_title}” shartnomasini imzolash muddati tugadi. Imzo so'rovi yopildi.",
+        "subject": "Imzolash muddati tugadi"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "Ikkinchi tomon “{contract_title}” shartnomasini imzoladi. Sizning imzoyingiz kutilmoqda.",
+        "subject": "Ikkinchi tomon shartnomani imzoladi"
+      },
+      "negotiation.withdrawn": {
+        "body": "Ikkinchi tomon “{contract_title}” shartnomasini qaytarib oldi — kelishuv to'xtatildi.",
+        "subject": "Shartnoma qaytarib olindi"
+      }
+    }
+  },
+  "vi": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "Bạn nhận được một phụ lục của “{contract_title}”.",
+        "subject": "Phụ lục gửi để thống nhất"
+      },
+      "contract.amended": {
+        "body": "Phụ lục của “{contract_title}” đã được cả hai bên ký — các thay đổi có hiệu lực.",
+        "subject": "Phụ lục đã có hiệu lực"
+      },
+      "contract.closed": {
+        "body": "Thời hạn bảo hành của “{contract_title}” đã hết. Hợp đồng đã đóng.",
+        "subject": "Hợp đồng đã đóng"
+      },
+      "contract.terminated": {
+        "body": "“{contract_title}” đã bị bên kia chấm dứt.",
+        "subject": "Hợp đồng đã chấm dứt"
+      },
+      "milestone.advance_confirmed": {
+        "body": "Xác nhận tạm ứng của bạn cho giai đoạn “{milestone_title}” đã được ghi nhận.",
+        "subject": "Đã xác nhận tạm ứng"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "Bên kia đã xác nhận tạm ứng cho giai đoạn “{milestone_title}”.",
+        "subject": "Bên kia đã xác nhận tạm ứng"
+      },
+      "milestone.material_received": {
+        "body": "Việc nhận vật tư cho giai đoạn “{milestone_title}” đã được xác nhận.",
+        "subject": "Đã nhận vật tư cho giai đoạn"
+      },
+      "milestone.paid": {
+        "body": "“{milestone_title}” đã được thanh toán — cả hai bên đã xác nhận thanh toán.",
+        "subject": "Giai đoạn đã thanh toán"
+      },
+      "milestone.payment_confirmed": {
+        "body": "Xác nhận thanh toán của bạn cho giai đoạn “{milestone_title}” đã được ghi nhận.",
+        "subject": "Đã xác nhận thanh toán"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "Bên kia đã xác nhận thanh toán cho giai đoạn “{milestone_title}”.",
+        "subject": "Bên kia đã xác nhận thanh toán"
+      },
+      "milestone.resumed": {
+        "body": "Công việc ở giai đoạn “{milestone_title}” đã tiếp tục — việc tạm dừng được gỡ bỏ.",
+        "subject": "Giai đoạn đã tiếp tục"
+      },
+      "negotiation.rejected": {
+        "body": "Bên kia đã từ chối “{contract_title}”.",
+        "subject": "Hợp đồng bị từ chối"
+      },
+      "negotiation.reopened": {
+        "body": "“{contract_title}” được trả lại để chỉnh sửa: trạng thái chốt đã được gỡ, các chữ ký của vòng này không còn hiệu lực.",
+        "subject": "Hợp đồng được trả lại để chỉnh sửa"
+      },
+      "negotiation.revised.accepted": {
+        "body": "Thay đổi bạn đề xuất cho “{contract_title}” đã được chấp nhận.",
+        "subject": "Thay đổi được chấp nhận"
+      },
+      "negotiation.revised.proposed": {
+        "body": "Có một thay đổi được đề xuất cho “{contract_title}”. Vui lòng xem xét và quyết định.",
+        "subject": "Có đề xuất thay đổi"
+      },
+      "negotiation.revised.rejected": {
+        "body": "Thay đổi bạn đề xuất cho “{contract_title}” đã bị từ chối.",
+        "subject": "Thay đổi bị từ chối"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "“{contract_title}” đã được gửi đến bạn để xem xét.",
+        "subject": "Hợp đồng gửi đến bạn để xem xét"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "Thời hạn ký “{contract_title}” đã hết. Yêu cầu chữ ký đã đóng.",
+        "subject": "Thời hạn ký đã hết"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "Bên kia đã ký “{contract_title}”. Đang chờ chữ ký của bạn.",
+        "subject": "Bên kia đã ký hợp đồng"
+      },
+      "negotiation.withdrawn": {
+        "body": "Bên kia đã thu hồi “{contract_title}” — quá trình thống nhất kết thúc.",
+        "subject": "Hợp đồng đã bị thu hồi"
+      }
+    }
+  },
+  "zh-Hans": {
+    "notifications": {
+      "amendment.sent": {
+        "body": "您收到“{contract_title}”的一份补充协议。",
+        "subject": "补充协议待审阅"
+      },
+      "contract.amended": {
+        "body": "“{contract_title}”的补充协议已由双方签署，变更已生效。",
+        "subject": "补充协议已生效"
+      },
+      "contract.closed": {
+        "body": "“{contract_title}”的保证期已届满。合同已关闭。",
+        "subject": "合同已关闭"
+      },
+      "contract.terminated": {
+        "body": "“{contract_title}”已由对方解除。",
+        "subject": "合同已解除"
+      },
+      "milestone.advance_confirmed": {
+        "body": "您对“{milestone_title}”阶段预付款的确认已记录。",
+        "subject": "预付款已确认"
+      },
+      "milestone.advance_confirmed.counterparty": {
+        "body": "对方已确认“{milestone_title}”阶段的预付款。",
+        "subject": "对方已确认预付款"
+      },
+      "milestone.material_received": {
+        "body": "“{milestone_title}”阶段的材料接收已确认。",
+        "subject": "阶段材料已接收"
+      },
+      "milestone.paid": {
+        "body": "“{milestone_title}”已付款，双方均已确认付款。",
+        "subject": "阶段已付款"
+      },
+      "milestone.payment_confirmed": {
+        "body": "您对“{milestone_title}”阶段付款的确认已记录。",
+        "subject": "付款已确认"
+      },
+      "milestone.payment_confirmed.counterparty": {
+        "body": "对方已确认“{milestone_title}”阶段的付款。",
+        "subject": "对方已确认付款"
+      },
+      "milestone.resumed": {
+        "body": "“{milestone_title}”阶段的工作已恢复，暂停已解除。",
+        "subject": "阶段工作已恢复"
+      },
+      "negotiation.rejected": {
+        "body": "对方拒绝了“{contract_title}”。",
+        "subject": "合同已被拒绝"
+      },
+      "negotiation.reopened": {
+        "body": "“{contract_title}”已退回修改：定稿状态已解除，本轮签署作废。",
+        "subject": "合同已退回修改"
+      },
+      "negotiation.revised.accepted": {
+        "body": "您对“{contract_title}”提出的变更已被接受。",
+        "subject": "变更已被接受"
+      },
+      "negotiation.revised.proposed": {
+        "body": "对“{contract_title}”提出了一项变更。请查看并作出决定。",
+        "subject": "已提出变更"
+      },
+      "negotiation.revised.rejected": {
+        "body": "您对“{contract_title}”提出的变更已被拒绝。",
+        "subject": "变更已被拒绝"
+      },
+      "negotiation.sent.counterparty": {
+        "body": "“{contract_title}”已发送给您审阅。",
+        "subject": "合同已发送给您审阅"
+      },
+      "negotiation.signature_request_expired": {
+        "body": "“{contract_title}”的签署期限已过。签署请求已关闭。",
+        "subject": "签署期限已过"
+      },
+      "negotiation.signed.counterparty": {
+        "body": "对方已签署“{contract_title}”。正在等待您的签署。",
+        "subject": "对方已签署合同"
+      },
+      "negotiation.withdrawn": {
+        "body": "对方已撤回“{contract_title}”，审阅流程终止。",
+        "subject": "合同已撤回"
+      }
+    }
+  }
+}

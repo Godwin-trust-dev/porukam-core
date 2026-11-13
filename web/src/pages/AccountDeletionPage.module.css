@@ -1,0 +1,42 @@
+/* Публичная страница «Удаление аккаунта»: рамка страницы и заголовок берутся
+   из LegalDocumentPage.module.css — здесь только то, чего у сплошного
+   markdown-документа нет: список шагов и подразделы. */
+.lead {
+  margin: 0;
+  font-size: var(--pr-fs-body);
+  color: var(--pr-text-2);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+}
+
+.sectionTitle {
+  margin: 0;
+  font-family: var(--pr-font-head);
+  font-size: var(--pr-fs-h3);
+  line-height: 1.3;
+  color: var(--pr-ink);
+}
+
+.text {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.steps {
+  /* `padding-inline-start`, а не `padding-left`: в RTL-локалях (ar, he, fa, ur)
+     нумерация уезжает на правую сторону вместе с текстом. */
+  margin: 0;
+  padding-inline-start: var(--pr-sp-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+  line-height: 1.6;
+}
+
+.mail {
+  color: var(--pr-teal);
+}

@@ -1,0 +1,43 @@
+/* Мультиколонка с правым рейлом (DEV-19 §3): главный столбец + рейл ~320px.
+   На узком рейл уходит ВНИЗ (не прячется — данные те же). */
+.wrap {
+  display: grid;
+  gap: var(--pr-sp-5);
+  min-width: 0;
+  /* Одноколоночная (мобильная) раскладка: трек ОБЯЗАН быть `minmax(0, 1fr)`,
+     а не `auto`. У грид-элемента `min-width: auto`, поэтому `auto`-трек
+     растягивается до min-content содержимого — строка списка с её
+     `min-width: 200px` раздувала колонку до 408px в окне 360px и давала
+     горизонтальный скролл всей страницы (приёмка §8). */
+  grid-template-columns: minmax(0, 1fr);
+}
+/* Та же ловушка, что у `.wrap` выше, и внутри колонок: неявный трек грида —
+   `auto`, то есть по min-content. Один широкий ребёнок (шапка раздела с двумя
+   кнопками) раздувал колонку шире экрана, и соседние блоки уезжали за правый
+   край (телефон 390px, DEV-20). Треки — только `minmax(0, 1fr)`. */
+.main {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--pr-d-gap-section);
+  align-content: start;
+}
+.rail {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--pr-d-gap);
+  align-content: start;
+}
+
+@media (min-width: 1024px) {
+  .wrap {
+    grid-template-columns: minmax(0, 1fr) var(--pr-rail-side);
+    gap: var(--pr-sp-6);
+    align-items: start;
+  }
+  .rail {
+    position: sticky;
+    top: var(--pr-rail-sticky-top);
+  }
+}

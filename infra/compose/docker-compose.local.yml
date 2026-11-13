@@ -1,0 +1,150 @@
+# Локальная инфраструктура для разработки (dev-setup.md §2).
+# core/celery_worker/celery_beat/evidence_ingest/audit_vault запускаются
+# отдельно (PyCharm Run-конфигурации или `make run`) — здесь зависимости
+# (две БД, два Redis, MinIO, Mailhog) и стек мониторинга (Prometheus +
+# Grafana + Alertmanager, docs/tasks/fundament-2.md ЭФ.6) — Grafana:
+# http://localhost:3000 (анонимный доступ, dev), Prometheus:
+# http://localhost:9090, Alertmanager: http://localhost:9093.
+
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: porukam
+      POSTGRES_PASSWORD: porukam
+      POSTGRES_DB: porukam
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U porukam -d porukam"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # Отдельная БД Audit Vault (ADR-038) — append-only, свой коннект.
+  postgres_audit:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: audit_vault
+      POSTGRES_PASSWORD: audit_vault
+      POSTGRES_DB: audit_vault
+    ports:
+      - "127.0.0.1:5433:5432"
+    volumes:
+      - postgres_audit_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U audit_vault -d audit_vault"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # Кеш, rate-limit, блокировки.
+  redis_cache:
+    image: redis:7
+    ports:
+      - "127.0.0.1:6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # Брокер Celery — разделён с кешем (dev-setup.md §3.1).
+  redis_broker:
+    image: redis:7
+    ports:
+      - "127.0.0.1:6380:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # Замена Yandex/VK Object Storage в dev.
+  minio:
+    image: minio/minio
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    ports:
+      - "127.0.0.1:9000:9000"
+      - "127.0.0.1:9001:9001"
+    volumes:
+      - minio_data:/data
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # Перехват SMTP — опциональный email-дубль уведомлений.
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - "127.0.0.1:1025:1025"
+      - "127.0.0.1:8025:8025"
+
+  # --- Наблюдаемость (docs/tasks/fundament-2.md ЭФ.6) ---
+  # core/celery_worker/celery_beat остаются процессами ХОСТА (dev-setup.md
+  # §2, `make run`/PyCharm-конфигурации) — Prometheus скрейпит их через
+  # host.docker.internal (infra/compose/monitoring/prometheus.yml).
+  # extra_hosts нужен на "чистом" Linux Docker Engine (не Docker Desktop),
+  # где host.docker.internal не резолвится автоматически.
+  prometheus:
+    image: prom/prometheus
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./monitoring/alert_rules.yml:/etc/prometheus/alert_rules.yml:ro
+      - ./monitoring/alert_rules_resources.yml:/etc/prometheus/alert_rules_resources.yml:ro
+      - prometheus_data:/prometheus
+    ports:
+      - "127.0.0.1:9090:9090"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:9090/-/healthy"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  alertmanager:
+    image: prom/alertmanager
+    volumes:
+      - ./monitoring/alertmanager.yml:/etc/alertmanager/alertmanager.yml:ro
+    ports:
+      - "127.0.0.1:9093:9093"
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:9093/-/healthy"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  grafana:
+    image: grafana/grafana
+    environment:
+      GF_AUTH_ANONYMOUS_ENABLED: "true"
+      GF_AUTH_ANONYMOUS_ORG_ROLE: Viewer
+      GF_SECURITY_ADMIN_PASSWORD: admin
+    volumes:
+      - ./monitoring/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./monitoring/grafana/dashboards:/etc/grafana/dashboards:ro
+      - grafana_data:/var/lib/grafana
+    ports:
+      - "127.0.0.1:3000:3000"
+    depends_on:
+      - prometheus
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:3000/api/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  postgres_data:
+  postgres_audit_data:
+  minio_data:
+  prometheus_data:
+  grafana_data:

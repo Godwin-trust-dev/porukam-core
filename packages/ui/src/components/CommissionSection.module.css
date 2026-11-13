@@ -1,0 +1,65 @@
+.card {
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  padding: var(--pr-sp-5);
+  box-shadow: var(--pr-shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+}
+.title {
+  margin: 0;
+  color: var(--pr-ink);
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h3);
+}
+.amountRow {
+  display: flex;
+  align-items: baseline;
+  gap: var(--pr-sp-2);
+}
+.amount {
+  color: var(--pr-ink);
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h2);
+  font-variant-numeric: tabular-nums;
+}
+.percent {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.row {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+  font-size: var(--pr-fs-sm);
+}
+.label {
+  color: var(--pr-text-2);
+}
+.value {
+  color: var(--pr-ink);
+  font-weight: var(--pr-fw-medium);
+  text-align: end;
+}
+.note {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.warn {
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--pr-sp-2);
+  color: var(--pr-amber-deep);
+  font-size: var(--pr-fs-xs);
+}
+.warnIcon {
+  flex-shrink: 0;
+  margin-top: 1px;
+}

@@ -1,0 +1,166 @@
+.wrap {
+  position: relative;
+}
+.trigger {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-pill);
+  padding: var(--pr-sp-2) var(--pr-sp-3);
+  cursor: pointer;
+  font: inherit;
+  min-height: var(--pr-touch-min);
+  transition: box-shadow var(--pr-dur) var(--pr-ease);
+}
+.trigger:hover {
+  box-shadow: var(--pr-shadow-sm);
+}
+.trigger:focus-visible,
+.menu:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: 2px;
+}
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--pr-text-inv);
+  flex: none;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-sm);
+  overflow: hidden;
+}
+.avatarImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* Узкий экран (тот же порог, что у оболочки — сайдбар спрятан, шапка тесная):
+   в триггере только фото и шеврон, имя — в меню. */
+@media (max-width: 1023.98px) {
+  .triggerName {
+    display: none;
+  }
+  /* Финал доска A: в шапке телефона — один кружок актёра, без рамки-пилюли
+     и шеврона; меню открывается по нему же. */
+  .trigger {
+    gap: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    min-height: var(--pr-touch-min);
+    min-width: var(--pr-touch-min);
+    justify-content: center;
+  }
+  .trigger:hover {
+    box-shadow: none;
+  }
+  .triggerChevron {
+    display: none;
+  }
+  .avatar {
+    width: 36px;
+    height: 36px;
+  }
+}
+.person {
+  background: var(--pr-grad-teal);
+}
+.org {
+  background: var(--pr-grad-amber);
+  color: var(--pr-ink);
+}
+.who {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.2;
+  overflow: hidden;
+}
+.whoName {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-ink);
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.whoSubtitle {
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-mute);
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  inset-inline-end: 0;
+  min-width: 280px;
+  max-width: calc(100vw - 2 * var(--pr-sp-4));
+  max-height: 70vh;
+  overflow-y: auto;
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  box-shadow: var(--pr-shadow-card);
+  padding: var(--pr-sp-2);
+  z-index: 40;
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  width: 100%;
+  min-height: var(--pr-touch-min);
+  background: none;
+  border: none;
+  border-radius: var(--pr-r-md);
+  padding: var(--pr-sp-3);
+  cursor: pointer;
+  font: inherit;
+  text-align: start;
+}
+.itemFocused {
+  background: var(--pr-cream);
+}
+.itemActive {
+  background: rgba(255, 158, 44, 0.12);
+}
+.itemAdd {
+  margin-top: var(--pr-sp-2);
+  border-top: 1px solid var(--pr-line);
+  border-radius: 0;
+  padding-top: calc(var(--pr-sp-3) + var(--pr-sp-2));
+  color: var(--pr-teal-deep);
+}
+/* Выход — за той же чертой, что «Добавить организацию», но нейтральным
+   цветом текста: это конец сессии, а не опасное действие (аккаунт цел). */
+.itemLogout {
+  margin-top: var(--pr-sp-2);
+  border-top: 1px solid var(--pr-line);
+  border-radius: 0;
+  padding-top: calc(var(--pr-sp-3) + var(--pr-sp-2));
+  color: var(--pr-text-2);
+}
+.addIcon {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+}
+.check {
+  margin-inline-start: auto;
+  color: var(--pr-green);
+  flex: none;
+}

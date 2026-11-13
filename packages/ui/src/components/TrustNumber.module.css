@@ -1,0 +1,38 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-1);
+}
+.count {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-black);
+  font-size: var(--pr-fs-display);
+  line-height: var(--pr-lh-tight);
+  letter-spacing: var(--pr-ls-head);
+  color: var(--pr-ink);
+  font-variant-numeric: tabular-nums;
+}
+.completedLabel {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.meta {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  margin-top: var(--pr-sp-2);
+  flex-wrap: wrap;
+  font-size: var(--pr-fs-sm);
+}
+.volume {
+  font-weight: var(--pr-fw-semibold);
+  color: var(--pr-ink);
+  font-variant-numeric: tabular-nums;
+}
+.volumeLabel {
+  font-weight: var(--pr-fw-regular);
+  color: var(--pr-text-2);
+}
+.since {
+  color: var(--pr-text-mute);
+}

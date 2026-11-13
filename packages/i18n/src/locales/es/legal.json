@@ -1,0 +1,25 @@
+{
+  "machineNoteLabel": "traducción automática",
+  "machineNoteTooltip": "Traducción automática, ofrecida por comodidad",
+  "fallbackNotice": "Este documento aún no está traducido a tu idioma: mostramos el original en inglés.",
+  "loadError": "No se ha podido cargar el documento.",
+  "openAria": "Abrir el documento",
+  "accountDeletion": {
+    "title": "Eliminar tu cuenta de Porukam",
+    "lead": "Aquí se explica cómo eliminar tu cuenta en Porukam, qué se elimina, qué se conserva y durante cuánto tiempo.",
+    "stepsTitle": "Cómo eliminar la cuenta",
+    "step1": "Entra en la aplicación Porukam o abre porukam.app.",
+    "step2": "Abre Perfil → Ajustes → Cuenta.",
+    "step3": "Pulsa «Eliminar cuenta» y confirma la eliminación.",
+    "step4": "La cuenta se elimina de inmediato y se cierran todas las sesiones en todos los dispositivos.",
+    "deletedTitle": "Qué se elimina de inmediato y para siempre",
+    "deletedText": "Tu nombre, la dirección de correo electrónico, el teléfono, la foto de perfil y los trabajos del portafolio, la agenda de contactos, los ajustes y los dispositivos registrados para las notificaciones push. Las claves de cifrado que protegen tus datos personales se destruyen: ni nosotros ni nadie más podrá recuperar esos datos.",
+    "keptTitle": "Qué se conserva y durante cuánto tiempo",
+    "keptText": "Los materiales de los contratos ya celebrados: el texto del contrato, las firmas, las pruebas, el historial de etapas y pagos y la correspondencia sobre el contrato. Pertenecen a las dos partes del trato y protegen los derechos de cada una, por eso una sola parte no puede retirarlos. Estos materiales se guardan un año después de finalizar el contrato y luego se eliminan.",
+    "keptAnon": "En esos materiales quedas bajo un identificador anonimizado. Las huellas de las firmas y la cadena de pruebas no contienen datos personales y no se eliminan.",
+    "blockedTitle": "Cuándo no se puede eliminar la cuenta",
+    "blockedText": "Mientras tengas contratos sin finalizar o disputas abiertas, la eliminación queda retenida: termínalos primero. La aplicación te muestra cuántos son y cuáles.",
+    "noAccessTitle": "Si no puedes iniciar sesión",
+    "noAccessText": "Escribe a {{email}} desde la dirección de correo electrónico vinculada a tu cuenta y eliminaremos la cuenta a petición tuya. Esa misma dirección figura en la Política de privacidad."
+  }
+}

@@ -1,0 +1,28 @@
+/* Пункт ленты рисует ListRow (DEV-20 §2); здесь — лид-иконка системного
+   события, окраска severity и чип действия. */
+
+.iconWrap {
+  inline-size: var(--pr-d-avatar);
+  block-size: var(--pr-d-avatar);
+  border-radius: 50%;
+  background: var(--pr-cream);
+  border: 1px solid var(--pr-hairline);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+.iconNormal {
+  color: var(--pr-text-2);
+}
+.iconDue {
+  color: var(--pr-amber-deep);
+}
+.iconGood {
+  color: var(--pr-green);
+}
+
+.titleDue {
+  font-weight: var(--pr-fw-bold);
+}
+

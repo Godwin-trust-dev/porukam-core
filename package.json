@@ -1,0 +1,45 @@
+{
+  "name": "porukam-frontend",
+  "version": "0.1.0-f1",
+  "private": true,
+  "description": "«По рукам» / Trust Platform — фронтенд-монорепо (этап Ф1: каркас + дизайн-система)",
+  "workspaces": [
+    "web",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w web",
+    "build": "npm run build -w web",
+    "preview": "npm run preview -w web",
+    "storybook": "npm run storybook -w @porukam/ui",
+    "build-storybook": "npm run build-storybook -w @porukam/ui",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "npm run test:e2e -w web",
+    "lint:terms": "node scripts/lint-terms.mjs",
+    "lint:i18n": "node scripts/lint-hardcoded-strings.mjs && node scripts/lint-i18n-jargon.mjs",
+    "lint:i18n-jargon": "node scripts/lint-i18n-jargon.mjs",
+    "lint:bidi": "node scripts/lint-bidi.mjs",
+    "i18n:dead-keys": "node scripts/i18n-dead-keys.mjs",
+    "typecheck": "npm run typecheck -w @porukam/core && npm run typecheck -w @porukam/i18n && npm run typecheck -w @porukam/ui && npm run typecheck -w web"
+  },
+  "devDependencies": {
+    "typescript": "5.6.3",
+    "vitest": "2.1.8",
+    "jsdom": "25.0.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "@testing-library/react": "16.1.0",
+    "@testing-library/jest-dom": "6.6.3",
+    "@testing-library/user-event": "14.5.2"
+  },
+  "overrides": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

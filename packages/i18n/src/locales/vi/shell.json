@@ -1,0 +1,12 @@
+{
+  "actorSwitcher": {
+    "triggerLabel": "Đổi trang cá nhân",
+    "personalLabel": "Cá nhân",
+    "legalFormIp": "Hộ kinh doanh",
+    "legalFormOoo": "Công ty TNHH",
+    "addOrg": "Thêm tổ chức",
+    "groups": "Nhóm của tôi"
+  },
+  "sectionMenu": "Mục",
+  "logout": "Đăng xuất"
+}

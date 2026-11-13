@@ -1,0 +1,14 @@
+{
+  "hook": "Porukam şifahi razılaşmanı hüquqi əhəmiyyətli müqaviləyə çevirir və sazişi son hesablaşmaya qədər addım-addım aparır.",
+  "problem": "Sözlə razılaşmaq asandır. Sonradan nə barədə razılaşdığınızı, işin nə vaxt təhvil verildiyini və nəyin əvəzini ödədiyinizi sübut etmək çətindir. Porukam bu qeydi hər iki tərəf üçün aparır.",
+  "contractTitle": "Bir neçə dəqiqəyə müqavilə",
+  "contractText": "Sazişin növünü seçin: xidmət, satış, icarə və ya borc. Sadə dildə suallara cavab verin və hazır sənədi alın. Heç bir hüquqi ifadə yazmağa ehtiyac yoxdur.",
+  "stagesTitle": "Mərhələlər və yoxlama siyahısı üzrə qəbul",
+  "stagesText": "Sazişi mərhələlərə bölün, hər birində nə edilməli olduğunun siyahısı olsun. İcraçı görülənləri qeyd edir və şəkillər əlavə edir, sifarişçi mərhələni qəbul edir və ya qeydlərlə geri qaytarır. Hər iki tərəf sazişin hansı mərhələdə olduğunu və növbənin kimdə olduğunu həmişə görür.",
+  "paymentTitle": "Nəticəyə bağlı ödəniş",
+  "paymentText": "Ödəniş mərhələlər üzrə gedir: qəbul edildi — ödənildi. Biz pulunuzu saxlamırıq və müqavilənin bağlanmasına görə komissiya götürmürük. Hesablaşmalar tərəflər arasında qalır, platforma isə nəyin və nə vaxt qəbul edildiyini və ödənildiyini qeyd edir.",
+  "evidenceTitle": "Qalıcı sübutlar",
+  "evidenceText": "Şəkillər, fayllar və yazışmalar mərhələyə bağlanır və etibarlı vaxt möhürü ilə möhürlənir. İmzalanmış müqavilə dəyişmir — yalnız hər iki tərəfin gördüyü və təsdiqlədiyi əlavə saziş vasitəsilə. İş mübahisəyə qədər gedərsə, onu bağlamaq üçün əlinizdə dəlil olur.",
+  "reputationTitle": "Faktlara söykənən reputasiya",
+  "reputationText": "Reputasiya kartı başa çatmış sazişlərdən yığılır, hər kəsin hər kəs haqqında yaza biləcəyi rəylərdən deyil."
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Sección «{{name}}»",
+  "text": "El espacio de trabajo de esta sección estará disponible pronto.",
+  "feed": "Aquí vivirá un feed de eventos de tus contratos y contactos.",
+  "search": "Aquí vivirá la búsqueda de contratistas y pedidos en el catálogo.",
+  "stages": "Aquí se reunirán las etapas de todos tus contratos: qué se entrega, qué está en aceptación y qué plazos corren.",
+  "payments": "Aquí vivirá el historial de pagos por etapas y contratos, con estados y confirmaciones.",
+  "disputes": "Aquí vivirán tus disputas: estados, plazos y pruebas de cada una.",
+  "reputation": "Aquí vivirá tu reputación: contratos confirmados y reseñas basadas en hechos.",
+  "chat": "Aquí vivirá la mensajería de los contratos, vinculada al contrato y sus etapas.",
+  "groups": "Aquí vivirán los grupos: una dirección común, miembros y contratos bajo un mismo nombre."
+}

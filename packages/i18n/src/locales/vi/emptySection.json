@@ -1,0 +1,12 @@
+{
+  "title": "Mục “{{name}}”",
+  "text": "Khu làm việc của mục này sẽ có sớm.",
+  "feed": "Tại đây sẽ có bảng tin sự kiện về các giao dịch và liên hệ của bạn.",
+  "search": "Tại đây sẽ có tìm kiếm bên thực hiện và đơn hàng trong danh mục.",
+  "stages": "Tại đây sẽ tập hợp các giai đoạn của mọi giao dịch: cái gì đang bàn giao, cái gì đang nghiệm thu, thời hạn nào đang chạy.",
+  "payments": "Tại đây sẽ có lịch sử thanh toán theo giai đoạn và hợp đồng — kèm trạng thái và xác nhận.",
+  "disputes": "Tại đây sẽ có các tranh chấp của bạn: trạng thái, thời hạn và chứng cứ cho từng vụ.",
+  "reputation": "Tại đây sẽ có uy tín của bạn: giao dịch đã xác nhận và đánh giá dựa trên sự thật.",
+  "chat": "Tại đây sẽ có trao đổi về giao dịch — gắn với hợp đồng và các giai đoạn.",
+  "groups": "Tại đây sẽ có các nhóm: địa chỉ chung, thành viên và giao dịch dưới một tên."
+}

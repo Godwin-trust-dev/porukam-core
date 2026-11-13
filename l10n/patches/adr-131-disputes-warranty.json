@@ -1,0 +1,1278 @@
+{
+  "ar": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "لم يُسوَّ الخلاف على العقد «{contract_title}» خلال 30 يومًا وأُغلق بانتهاء المدة القصوى.",
+        "subject": "بلغ الخلاف المدة القصوى"
+      },
+      "dispute.discount_declined": {
+        "body": "رُفض اقتراح الخصم على العقد «{contract_title}» — يبقى الخلاف مفتوحًا.",
+        "subject": "رُفض الخصم"
+      },
+      "dispute.discount_proposed": {
+        "body": "اقتُرح خصم ضمن الخلاف: مبلغ المرحلة «{milestone_title}» يصبح {new_amount} {currency}. يلزم ملحق موقّع من الطرفين.",
+        "subject": "اقتُرح خصم"
+      },
+      "dispute.fix_requested": {
+        "body": "طُلبت جولة التصحيح {round} من 2 للمرحلة «{milestone_title}» ضمن الخلاف.",
+        "subject": "طُلب التصحيح"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "تم تسليم تصحيح المرحلة «{milestone_title}» — المرحلة عادت إلى القبول.",
+        "subject": "تم تسليم التصحيح"
+      },
+      "dispute.responded": {
+        "body": "ورد رد بشأن الخلاف على العقد «{contract_title}».",
+        "subject": "رد بشأن الخلاف"
+      },
+      "dispute.window_contested": {
+        "body": "قُدّم اعتراض في الموعد على العقد «{contract_title}» — تنتقل المسألة إلى الحوار.",
+        "subject": "تم تقديم اعتراض"
+      },
+      "dispute.window_expired": {
+        "body": "انتهت مهلة الرد على العقد «{contract_title}» دون اعتراض — وسُجّلت الواقعة.",
+        "subject": "انتهت مهلة الرد"
+      },
+      "warranty.claim_resolved": {
+        "body": "أُغلقت مطالبة الضمان على العقد «{contract_title}».",
+        "subject": "أُغلقت مطالبة الضمان"
+      },
+      "warranty.claim_submitted": {
+        "body": "قُدّمت مطالبة ضمان على العقد «{contract_title}».",
+        "subject": "مطالبة ضمان"
+      }
+    }
+  },
+  "az": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "«{contract_title}» müqaviləsi üzrə fikir ayrılığı 30 gün ərzində həll olunmadı və son müddətə görə bağlandı.",
+        "subject": "Fikir ayrılığının son müddəti çatdı"
+      },
+      "dispute.discount_declined": {
+        "body": "«{contract_title}» müqaviləsi üzrə endirim təklifi rədd edildi — fikir ayrılığı açıq qalır.",
+        "subject": "Endirim rədd edildi"
+      },
+      "dispute.discount_proposed": {
+        "body": "Fikir ayrılığı üzrə endirim təklif olunur: «{milestone_title}» mərhələsinin məbləği — {new_amount} {currency}. Əlavə razılaşmanı hər iki tərəf imzalamalıdır.",
+        "subject": "Endirim təklif olundu"
+      },
+      "dispute.fix_requested": {
+        "body": "«{milestone_title}» mərhələsi üzrə fikir ayrılığında 2-dən {round}-cü düzəliş raundu tələb olundu.",
+        "subject": "Düzəliş tələb olundu"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "«{milestone_title}» mərhələsi üzrə düzəliş təhvil verildi — mərhələ yenidən qəbuldadır.",
+        "subject": "Düzəliş təhvil verildi"
+      },
+      "dispute.responded": {
+        "body": "«{contract_title}» müqaviləsi üzrə fikir ayrılığına cavab daxil oldu.",
+        "subject": "Fikir ayrılığı üzrə cavab"
+      },
+      "dispute.window_contested": {
+        "body": "«{contract_title}» müqaviləsi üzrə vaxtında etiraz verildi — məsələ dialoqa keçir.",
+        "subject": "Etiraz verildi"
+      },
+      "dispute.window_expired": {
+        "body": "«{contract_title}» müqaviləsi üzrə cavab müddəti etirazsız bitdi — fakt qeydə alındı.",
+        "subject": "Cavab müddəti bitdi"
+      },
+      "warranty.claim_resolved": {
+        "body": "«{contract_title}» müqaviləsi üzrə zəmanət iddiası bağlandı.",
+        "subject": "Zəmanət iddiası bağlandı"
+      },
+      "warranty.claim_submitted": {
+        "body": "«{contract_title}» müqaviləsi üzrə zəmanət iddiası verildi.",
+        "subject": "Zəmanət iddiası"
+      }
+    }
+  },
+  "bn": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "«{contract_title}» চুক্তির অসম্মতি ৩০ দিনে মীমাংসা হয়নি এবং সর্বোচ্চ মেয়াদে বন্ধ করা হয়েছে।",
+        "subject": "অসম্মতির সর্বোচ্চ মেয়াদ শেষ"
+      },
+      "dispute.discount_declined": {
+        "body": "«{contract_title}» চুক্তিতে ছাড়ের প্রস্তাব প্রত্যাখ্যান করা হয়েছে — অসম্মতি খোলা থাকছে।",
+        "subject": "ছাড় প্রত্যাখ্যাত"
+      },
+      "dispute.discount_proposed": {
+        "body": "অসম্মতিতে ছাড় প্রস্তাব করা হয়েছে: «{milestone_title}» ধাপের পরিমাণ হবে {new_amount} {currency}। উভয় পক্ষের স্বাক্ষরিত সম্পূরক চুক্তি প্রয়োজন।",
+        "subject": "ছাড়ের প্রস্তাব"
+      },
+      "dispute.fix_requested": {
+        "body": "অসম্মতির অংশ হিসেবে «{milestone_title}» ধাপের জন্য ২টির মধ্যে {round} নম্বর সংশোধন রাউন্ড চাওয়া হয়েছে।",
+        "subject": "সংশোধনের অনুরোধ"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "«{milestone_title}» ধাপের সংশোধন জমা হয়েছে — ধাপটি আবার গ্রহণের পর্যায়ে।",
+        "subject": "সংশোধন জমা হয়েছে"
+      },
+      "dispute.responded": {
+        "body": "«{contract_title}» চুক্তির অসম্মতির জবাব এসেছে।",
+        "subject": "অসম্মতির জবাব"
+      },
+      "dispute.window_contested": {
+        "body": "«{contract_title}» চুক্তিতে সময়মতো আপত্তি দাখিল হয়েছে — বিষয়টি আলোচনায় যাচ্ছে।",
+        "subject": "আপত্তি দাখিল"
+      },
+      "dispute.window_expired": {
+        "body": "«{contract_title}» চুক্তিতে জবাবের সময় আপত্তি ছাড়াই শেষ হয়েছে — বিষয়টি নথিভুক্ত হয়েছে।",
+        "subject": "জবাবের সময় শেষ"
+      },
+      "warranty.claim_resolved": {
+        "body": "«{contract_title}» চুক্তির ওয়ারেন্টি দাবি বন্ধ করা হয়েছে।",
+        "subject": "ওয়ারেন্টি দাবি বন্ধ"
+      },
+      "warranty.claim_submitted": {
+        "body": "«{contract_title}» চুক্তিতে ওয়ারেন্টি দাবি জমা হয়েছে।",
+        "subject": "ওয়ারেন্টি দাবি"
+      }
+    }
+  },
+  "de": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "Die Unstimmigkeit zum Vertrag „{contract_title}“ wurde nicht innerhalb von 30 Tagen beigelegt und ist wegen Fristablaufs geschlossen.",
+        "subject": "Höchstdauer der Unstimmigkeit erreicht"
+      },
+      "dispute.discount_declined": {
+        "body": "Der Nachlassvorschlag zum Vertrag „{contract_title}“ wurde abgelehnt — die Unstimmigkeit bleibt offen.",
+        "subject": "Nachlass abgelehnt"
+      },
+      "dispute.discount_proposed": {
+        "body": "Zur Unstimmigkeit wird ein Nachlass vorgeschlagen: Der Betrag der Etappe „{milestone_title}“ beträgt {new_amount} {currency}. Erforderlich ist ein von beiden Seiten unterzeichneter Nachtrag.",
+        "subject": "Nachlass vorgeschlagen"
+      },
+      "dispute.fix_requested": {
+        "body": "Für die Etappe „{milestone_title}“ wurde Nachbesserungsrunde {round} von 2 angefordert.",
+        "subject": "Nachbesserung angefordert"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "Die Nachbesserung zur Etappe „{milestone_title}“ wurde eingereicht — die Etappe ist wieder in der Abnahme.",
+        "subject": "Nachbesserung eingereicht"
+      },
+      "dispute.responded": {
+        "body": "Zur Unstimmigkeit beim Vertrag „{contract_title}“ ist eine Antwort eingegangen.",
+        "subject": "Antwort zur Unstimmigkeit"
+      },
+      "dispute.window_contested": {
+        "body": "Zum Vertrag „{contract_title}“ wurde fristgerecht Widerspruch eingelegt — die Sache geht in den Dialog.",
+        "subject": "Widerspruch eingelegt"
+      },
+      "dispute.window_expired": {
+        "body": "Die Antwortfrist zum Vertrag „{contract_title}“ ist ohne Widerspruch abgelaufen — der Sachverhalt ist festgehalten.",
+        "subject": "Antwortfrist abgelaufen"
+      },
+      "warranty.claim_resolved": {
+        "body": "Der Gewährleistungsanspruch zum Vertrag „{contract_title}“ wurde geschlossen.",
+        "subject": "Gewährleistungsanspruch geschlossen"
+      },
+      "warranty.claim_submitted": {
+        "body": "Zum Vertrag „{contract_title}“ wurde ein Gewährleistungsanspruch geltend gemacht.",
+        "subject": "Gewährleistungsanspruch"
+      }
+    }
+  },
+  "en": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "The disagreement on contract “{contract_title}” was not settled within 30 days and is closed by the time cap.",
+        "subject": "Disagreement time cap reached"
+      },
+      "dispute.discount_declined": {
+        "body": "The discount proposal for contract “{contract_title}” was declined — the disagreement stays open.",
+        "subject": "Discount declined"
+      },
+      "dispute.discount_proposed": {
+        "body": "A discount is proposed on the disagreement: the amount of stage “{milestone_title}” becomes {new_amount} {currency}. It requires an amendment signed by both parties.",
+        "subject": "Discount proposed"
+      },
+      "dispute.fix_requested": {
+        "body": "A fix round {round} of 2 has been requested for stage “{milestone_title}”.",
+        "subject": "Fix requested"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "The fix for stage “{milestone_title}” has been submitted — the stage is under acceptance again.",
+        "subject": "Fix submitted"
+      },
+      "dispute.responded": {
+        "body": "A reply has been received on the disagreement for contract “{contract_title}”.",
+        "subject": "Reply on the disagreement"
+      },
+      "dispute.window_contested": {
+        "body": "An objection was filed in time for contract “{contract_title}” — the matter goes to dialogue.",
+        "subject": "Objection filed"
+      },
+      "dispute.window_expired": {
+        "body": "The reply window for contract “{contract_title}” expired with no objection — the fact is recorded.",
+        "subject": "Reply window expired"
+      },
+      "warranty.claim_resolved": {
+        "body": "The warranty claim on contract “{contract_title}” has been closed.",
+        "subject": "Warranty claim closed"
+      },
+      "warranty.claim_submitted": {
+        "body": "A warranty claim has been filed on contract “{contract_title}”.",
+        "subject": "Warranty claim"
+      }
+    }
+  },
+  "es": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "La discrepancia del contrato «{contract_title}» no se resolvió en 30 días y se cierra por plazo máximo.",
+        "subject": "Plazo máximo de la discrepancia alcanzado"
+      },
+      "dispute.discount_declined": {
+        "body": "La propuesta de descuento del contrato «{contract_title}» ha sido rechazada: la discrepancia sigue abierta.",
+        "subject": "Descuento rechazado"
+      },
+      "dispute.discount_proposed": {
+        "body": "Se propone un descuento en la discrepancia: el importe de la etapa «{milestone_title}» pasa a {new_amount} {currency}. Requiere un anexo firmado por ambas partes.",
+        "subject": "Descuento propuesto"
+      },
+      "dispute.fix_requested": {
+        "body": "Se ha solicitado la ronda de corrección {round} de 2 para la etapa «{milestone_title}».",
+        "subject": "Corrección solicitada"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "La corrección de la etapa «{milestone_title}» se ha entregado: la etapa vuelve a estar en aceptación.",
+        "subject": "Corrección entregada"
+      },
+      "dispute.responded": {
+        "body": "Se ha recibido una respuesta sobre la discrepancia del contrato «{contract_title}».",
+        "subject": "Respuesta sobre la discrepancia"
+      },
+      "dispute.window_contested": {
+        "body": "Se ha presentado una objeción a tiempo en el contrato «{contract_title}»: el asunto pasa al diálogo.",
+        "subject": "Objeción presentada"
+      },
+      "dispute.window_expired": {
+        "body": "El plazo de respuesta del contrato «{contract_title}» ha vencido sin objeciones: el hecho queda registrado.",
+        "subject": "Plazo de respuesta vencido"
+      },
+      "warranty.claim_resolved": {
+        "body": "La reclamación de garantía del contrato «{contract_title}» se ha cerrado.",
+        "subject": "Reclamación de garantía cerrada"
+      },
+      "warranty.claim_submitted": {
+        "body": "Se ha presentado una reclamación de garantía en el contrato «{contract_title}».",
+        "subject": "Reclamación de garantía"
+      }
+    }
+  },
+  "fa": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "اختلاف قرارداد «{contract_title}» ظرف ۳۰ روز حل نشد و با سقف زمانی بسته شد.",
+        "subject": "سقف زمانی اختلاف فرا رسید"
+      },
+      "dispute.discount_declined": {
+        "body": "پیشنهاد تخفیف در قرارداد «{contract_title}» رد شد — اختلاف باز می‌ماند.",
+        "subject": "تخفیف رد شد"
+      },
+      "dispute.discount_proposed": {
+        "body": "در اختلاف تخفیف پیشنهاد شد: مبلغ مرحلهٔ «{milestone_title}» برابر {new_amount} {currency} می‌شود. الحاقیهٔ امضاشده توسط هر دو طرف لازم است.",
+        "subject": "تخفیف پیشنهاد شد"
+      },
+      "dispute.fix_requested": {
+        "body": "برای مرحلهٔ «{milestone_title}» در اختلاف، دور اصلاح {round} از ۲ درخواست شد.",
+        "subject": "درخواست اصلاح"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "اصلاح مرحلهٔ «{milestone_title}» تحویل شد — مرحله دوباره در پذیرش است.",
+        "subject": "اصلاح تحویل شد"
+      },
+      "dispute.responded": {
+        "body": "دربارهٔ اختلاف قرارداد «{contract_title}» پاسخ دریافت شد.",
+        "subject": "پاسخ دربارهٔ اختلاف"
+      },
+      "dispute.window_contested": {
+        "body": "در قرارداد «{contract_title}» اعتراض در مهلت ثبت شد — موضوع به گفت‌وگو می‌رود.",
+        "subject": "اعتراض ثبت شد"
+      },
+      "dispute.window_expired": {
+        "body": "مهلت پاسخ در قرارداد «{contract_title}» بدون اعتراض به پایان رسید — واقعه ثبت شد.",
+        "subject": "مهلت پاسخ به پایان رسید"
+      },
+      "warranty.claim_resolved": {
+        "body": "ادعای گارانتی قرارداد «{contract_title}» بسته شد.",
+        "subject": "ادعای گارانتی بسته شد"
+      },
+      "warranty.claim_submitted": {
+        "body": "در قرارداد «{contract_title}» ادعای گارانتی ثبت شد.",
+        "subject": "ادعای گارانتی"
+      }
+    }
+  },
+  "fr": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "Le désaccord relatif au contrat « {contract_title} » n’a pas été réglé en 30 jours et est clos pour dépassement du délai.",
+        "subject": "Durée maximale du désaccord atteinte"
+      },
+      "dispute.discount_declined": {
+        "body": "La proposition de remise pour le contrat « {contract_title} » a été refusée — le désaccord reste ouvert.",
+        "subject": "Remise refusée"
+      },
+      "dispute.discount_proposed": {
+        "body": "Une remise est proposée sur le désaccord : le montant de l’étape « {milestone_title} » devient {new_amount} {currency}. Un avenant signé par les deux parties est requis.",
+        "subject": "Remise proposée"
+      },
+      "dispute.fix_requested": {
+        "body": "Une série de correction {round} sur 2 a été demandée pour l’étape « {milestone_title} ».",
+        "subject": "Correction demandée"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "La correction de l’étape « {milestone_title} » a été soumise — l’étape est de nouveau en réception.",
+        "subject": "Correction soumise"
+      },
+      "dispute.responded": {
+        "body": "Une réponse a été reçue sur le désaccord relatif au contrat « {contract_title} ».",
+        "subject": "Réponse sur le désaccord"
+      },
+      "dispute.window_contested": {
+        "body": "Une objection a été déposée dans les délais pour le contrat « {contract_title} » — l’affaire passe au dialogue.",
+        "subject": "Objection déposée"
+      },
+      "dispute.window_expired": {
+        "body": "Le délai de réponse pour le contrat « {contract_title} » a expiré sans objection — le fait est enregistré.",
+        "subject": "Délai de réponse expiré"
+      },
+      "warranty.claim_resolved": {
+        "body": "La réclamation de garantie pour le contrat « {contract_title} » a été clôturée.",
+        "subject": "Réclamation de garantie clôturée"
+      },
+      "warranty.claim_submitted": {
+        "body": "Une réclamation de garantie a été déposée pour le contrat « {contract_title} ».",
+        "subject": "Réclamation de garantie"
+      }
+    }
+  },
+  "he": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "המחלוקת בחוזה «{contract_title}» לא יושבה בתוך 30 ימים ונסגרה עקב חלוף המועד.",
+        "subject": "הושג משך המחלוקת המרבי"
+      },
+      "dispute.discount_declined": {
+        "body": "הצעת ההנחה בחוזה «{contract_title}» נדחתה — המחלוקת נותרת פתוחה.",
+        "subject": "ההנחה נדחתה"
+      },
+      "dispute.discount_proposed": {
+        "body": "במסגרת המחלוקת הוצעה הנחה: סכום השלב «{milestone_title}» יהיה {new_amount} {currency}. נדרש נספח חתום בידי שני הצדדים.",
+        "subject": "הוצעה הנחה"
+      },
+      "dispute.fix_requested": {
+        "body": "התבקש סבב תיקון {round} מתוך 2 לשלב «{milestone_title}» במסגרת המחלוקת.",
+        "subject": "התבקש תיקון"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "התיקון לשלב «{milestone_title}» נמסר — השלב שוב בקבלה.",
+        "subject": "התיקון נמסר"
+      },
+      "dispute.responded": {
+        "body": "התקבלה תשובה בעניין המחלוקת בחוזה «{contract_title}».",
+        "subject": "תשובה בעניין המחלוקת"
+      },
+      "dispute.window_contested": {
+        "body": "בחוזה «{contract_title}» הוגשה התנגדות במועד — הנושא עובר לדיאלוג.",
+        "subject": "הוגשה התנגדות"
+      },
+      "dispute.window_expired": {
+        "body": "מועד התשובה בחוזה «{contract_title}» חלף ללא התנגדות — העובדה נרשמה.",
+        "subject": "מועד התשובה חלף"
+      },
+      "warranty.claim_resolved": {
+        "body": "תביעת האחריות בחוזה «{contract_title}» נסגרה.",
+        "subject": "תביעת האחריות נסגרה"
+      },
+      "warranty.claim_submitted": {
+        "body": "בחוזה «{contract_title}» הוגשה תביעת אחריות.",
+        "subject": "תביעת אחריות"
+      }
+    }
+  },
+  "hi": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "अनुबंध «{contract_title}» की असहमति 30 दिनों में नहीं सुलझी और अधिकतम अवधि पर बंद कर दी गई।",
+        "subject": "असहमति की अधिकतम अवधि पूरी"
+      },
+      "dispute.discount_declined": {
+        "body": "अनुबंध «{contract_title}» में छूट का प्रस्ताव अस्वीकार कर दिया गया — असहमति खुली रहती है।",
+        "subject": "छूट अस्वीकृत"
+      },
+      "dispute.discount_proposed": {
+        "body": "असहमति में छूट प्रस्तावित है: चरण «{milestone_title}» की राशि {new_amount} {currency} होगी। दोनों पक्षों द्वारा हस्ताक्षरित अनुपूरक अनुबंध आवश्यक है।",
+        "subject": "छूट प्रस्तावित"
+      },
+      "dispute.fix_requested": {
+        "body": "असहमति में चरण «{milestone_title}» के लिए 2 में से {round} सुधार दौर का अनुरोध किया गया।",
+        "subject": "सुधार का अनुरोध"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "चरण «{milestone_title}» का सुधार सौंप दिया गया — चरण फिर से स्वीकृति में है।",
+        "subject": "सुधार सौंपा गया"
+      },
+      "dispute.responded": {
+        "body": "अनुबंध «{contract_title}» की असहमति पर उत्तर प्राप्त हुआ।",
+        "subject": "असहमति पर उत्तर"
+      },
+      "dispute.window_contested": {
+        "body": "अनुबंध «{contract_title}» में समय पर आपत्ति दर्ज की गई — मामला संवाद में जाता है।",
+        "subject": "आपत्ति दर्ज"
+      },
+      "dispute.window_expired": {
+        "body": "अनुबंध «{contract_title}» में उत्तर की अवधि बिना आपत्ति के समाप्त हुई — तथ्य दर्ज कर लिया गया।",
+        "subject": "उत्तर की अवधि समाप्त"
+      },
+      "warranty.claim_resolved": {
+        "body": "अनुबंध «{contract_title}» का वारंटी दावा बंद कर दिया गया।",
+        "subject": "वारंटी दावा बंद"
+      },
+      "warranty.claim_submitted": {
+        "body": "अनुबंध «{contract_title}» पर वारंटी दावा दर्ज किया गया।",
+        "subject": "वारंटी दावा"
+      }
+    }
+  },
+  "hy": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "«{contract_title}» պայմանագրի տարաձայնությունը 30 օրում չի կարգավորվել և փակվել է ժամկետի սահմանով։",
+        "subject": "Հասել է տարաձայնության առավելագույն ժամկետը"
+      },
+      "dispute.discount_declined": {
+        "body": "«{contract_title}» պայմանագրով զեղչի առաջարկը մերժվել է — տարաձայնությունը մնում է բաց։",
+        "subject": "Զեղչը մերժվել է"
+      },
+      "dispute.discount_proposed": {
+        "body": "Տարաձայնության շրջանակում առաջարկվել է զեղչ՝ «{milestone_title}» փուլի գումարը՝ {new_amount} {currency}։ Անհրաժեշտ է լրացուցիչ համաձայնագիր՝ երկու կողմերի ստորագրությամբ։",
+        "subject": "Առաջարկվել է զեղչ"
+      },
+      "dispute.fix_requested": {
+        "body": "«{milestone_title}» փուլի տարաձայնության շրջանակում պահանջվել է ուղղման {round}-րդ փուլը 2-ից։",
+        "subject": "Պահանջվել է ուղղում"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "«{milestone_title}» փուլի ուղղումը հանձնվել է — փուլը կրկին ընդունման փուլում է։",
+        "subject": "Ուղղումը հանձնվել է"
+      },
+      "dispute.responded": {
+        "body": "«{contract_title}» պայմանագրի տարաձայնության վերաբերյալ ստացվել է պատասխան։",
+        "subject": "Պատասխան տարաձայնության վերաբերյալ"
+      },
+      "dispute.window_contested": {
+        "body": "«{contract_title}» պայմանագրով ժամկետում ներկայացվել է առարկություն — հարցը անցնում է երկխոսության։",
+        "subject": "Ներկայացվել է առարկություն"
+      },
+      "dispute.window_expired": {
+        "body": "«{contract_title}» պայմանագրով պատասխանի ժամկետը լրացել է առանց առարկության — փաստը գրանցվել է։",
+        "subject": "Պատասխանի ժամկետը լրացել է"
+      },
+      "warranty.claim_resolved": {
+        "body": "«{contract_title}» պայմանագրի երաշխիքային պահանջը փակվել է։",
+        "subject": "Երաշխիքային պահանջը փակվել է"
+      },
+      "warranty.claim_submitted": {
+        "body": "«{contract_title}» պայմանագրով ներկայացվել է երաշխիքային պահանջ։",
+        "subject": "Երաշխիքային պահանջ"
+      }
+    }
+  },
+  "id": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "Ketidaksepakatan pada kontrak “{contract_title}” tidak diselesaikan dalam 30 hari dan ditutup karena batas waktu.",
+        "subject": "Batas maksimum ketidaksepakatan tercapai"
+      },
+      "dispute.discount_declined": {
+        "body": "Usulan diskon pada kontrak “{contract_title}” ditolak — ketidaksepakatan tetap terbuka.",
+        "subject": "Diskon ditolak"
+      },
+      "dispute.discount_proposed": {
+        "body": "Diskon diusulkan dalam ketidaksepakatan: jumlah tahap “{milestone_title}” menjadi {new_amount} {currency}. Diperlukan adendum yang ditandatangani kedua pihak.",
+        "subject": "Diskon diusulkan"
+      },
+      "dispute.fix_requested": {
+        "body": "Putaran perbaikan {round} dari 2 diminta untuk tahap “{milestone_title}” dalam ketidaksepakatan.",
+        "subject": "Perbaikan diminta"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "Perbaikan tahap “{milestone_title}” telah diserahkan — tahap kembali dalam penerimaan.",
+        "subject": "Perbaikan diserahkan"
+      },
+      "dispute.responded": {
+        "body": "Tanggapan atas ketidaksepakatan pada kontrak “{contract_title}” telah diterima.",
+        "subject": "Tanggapan atas ketidaksepakatan"
+      },
+      "dispute.window_contested": {
+        "body": "Keberatan diajukan tepat waktu pada kontrak “{contract_title}” — perkara beralih ke dialog.",
+        "subject": "Keberatan diajukan"
+      },
+      "dispute.window_expired": {
+        "body": "Batas waktu tanggapan pada kontrak “{contract_title}” berakhir tanpa keberatan — faktanya dicatat.",
+        "subject": "Batas waktu tanggapan berakhir"
+      },
+      "warranty.claim_resolved": {
+        "body": "Klaim garansi pada kontrak “{contract_title}” telah ditutup.",
+        "subject": "Klaim garansi ditutup"
+      },
+      "warranty.claim_submitted": {
+        "body": "Klaim garansi diajukan pada kontrak “{contract_title}”.",
+        "subject": "Klaim garansi"
+      }
+    }
+  },
+  "it": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "La contestazione sul contratto «{contract_title}» non è stata risolta in 30 giorni ed è chiusa per scadenza del termine.",
+        "subject": "Raggiunto il termine massimo della contestazione"
+      },
+      "dispute.discount_declined": {
+        "body": "La proposta di sconto sul contratto «{contract_title}» è stata rifiutata: la contestazione resta aperta.",
+        "subject": "Sconto rifiutato"
+      },
+      "dispute.discount_proposed": {
+        "body": "Sulla contestazione è proposto uno sconto: l’importo della fase «{milestone_title}» diventa {new_amount} {currency}. Serve un’appendice firmata da entrambe le parti.",
+        "subject": "Sconto proposto"
+      },
+      "dispute.fix_requested": {
+        "body": "È stato richiesto il ciclo di correzione {round} di 2 per la fase «{milestone_title}».",
+        "subject": "Correzione richiesta"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "La correzione della fase «{milestone_title}» è stata consegnata: la fase è di nuovo in accettazione.",
+        "subject": "Correzione consegnata"
+      },
+      "dispute.responded": {
+        "body": "È arrivata una risposta sulla contestazione del contratto «{contract_title}».",
+        "subject": "Risposta sulla contestazione"
+      },
+      "dispute.window_contested": {
+        "body": "È stata presentata un’obiezione nei termini sul contratto «{contract_title}»: la questione passa al dialogo.",
+        "subject": "Obiezione presentata"
+      },
+      "dispute.window_expired": {
+        "body": "Il termine di risposta sul contratto «{contract_title}» è scaduto senza obiezioni: il fatto è registrato.",
+        "subject": "Termine di risposta scaduto"
+      },
+      "warranty.claim_resolved": {
+        "body": "Il reclamo in garanzia sul contratto «{contract_title}» è stato chiuso.",
+        "subject": "Reclamo in garanzia chiuso"
+      },
+      "warranty.claim_submitted": {
+        "body": "È stato presentato un reclamo in garanzia sul contratto «{contract_title}».",
+        "subject": "Reclamo in garanzia"
+      }
+    }
+  },
+  "ja": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "契約「{contract_title}」の不一致は30日以内に解決されず、上限期間により終了しました。",
+        "subject": "不一致の上限期間に達しました"
+      },
+      "dispute.discount_declined": {
+        "body": "契約「{contract_title}」の値引き提案は拒否されました。不一致は未解決のままです。",
+        "subject": "値引きが拒否されました"
+      },
+      "dispute.discount_proposed": {
+        "body": "不一致について値引きが提案されました。ステージ「{milestone_title}」の金額は {new_amount} {currency} になります。両当事者が署名する追加合意が必要です。",
+        "subject": "値引きが提案されました"
+      },
+      "dispute.fix_requested": {
+        "body": "不一致に基づき、ステージ「{milestone_title}」について2回中{round}回目の修正が要求されました。",
+        "subject": "修正が要求されました"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "ステージ「{milestone_title}」の修正が提出されました。ステージは再び検収中です。",
+        "subject": "修正が提出されました"
+      },
+      "dispute.responded": {
+        "body": "契約「{contract_title}」の不一致について回答がありました。",
+        "subject": "不一致への回答"
+      },
+      "dispute.window_contested": {
+        "body": "契約「{contract_title}」について期限内に異議が提出されました。案件は協議に移ります。",
+        "subject": "異議が提出されました"
+      },
+      "dispute.window_expired": {
+        "body": "契約「{contract_title}」の回答期限が異議なく経過しました。事実が記録されました。",
+        "subject": "回答期限が経過しました"
+      },
+      "warranty.claim_resolved": {
+        "body": "契約「{contract_title}」の保証請求は終了しました。",
+        "subject": "保証請求が終了しました"
+      },
+      "warranty.claim_submitted": {
+        "body": "契約「{contract_title}」について保証請求が行われました。",
+        "subject": "保証請求"
+      }
+    }
+  },
+  "ka": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "ხელშეკრულებაზე „{contract_title}“ უთანხმოება 30 დღეში არ დარეგულირდა და დაიხურა ზღვრული ვადით.",
+        "subject": "მიღწეულია უთანხმოების ზღვრული ვადა"
+      },
+      "dispute.discount_declined": {
+        "body": "ხელშეკრულებაზე „{contract_title}“ ფასდაკლების შემოთავაზება უარყოფილია — უთანხმოება ღია რჩება.",
+        "subject": "ფასდაკლება უარყოფილია"
+      },
+      "dispute.discount_proposed": {
+        "body": "უთანხმოებაზე შემოთავაზებულია ფასდაკლება: ეტაპის „{milestone_title}“ თანხა — {new_amount} {currency}. საჭიროა ორივე მხარის მიერ ხელმოწერილი დამატებითი შეთანხმება.",
+        "subject": "შემოთავაზებულია ფასდაკლება"
+      },
+      "dispute.fix_requested": {
+        "body": "ეტაპზე „{milestone_title}“ უთანხმოების ფარგლებში მოთხოვნილია გამოსწორების {round}-ე რაუნდი 2-დან.",
+        "subject": "მოთხოვნილია გამოსწორება"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "ეტაპის „{milestone_title}“ გამოსწორება ჩაბარდა — ეტაპი კვლავ მიღებაზეა.",
+        "subject": "გამოსწორება ჩაბარდა"
+      },
+      "dispute.responded": {
+        "body": "ხელშეკრულებაზე „{contract_title}“ უთანხმოებაზე მიღებულია პასუხი.",
+        "subject": "პასუხი უთანხმოებაზე"
+      },
+      "dispute.window_contested": {
+        "body": "ხელშეკრულებაზე „{contract_title}“ ვადაში წარდგენილია შედავება — საკითხი გადადის დიალოგში.",
+        "subject": "წარდგენილია შედავება"
+      },
+      "dispute.window_expired": {
+        "body": "ხელშეკრულებაზე „{contract_title}“ პასუხის ვადა შედავების გარეშე ამოიწურა — ფაქტი დაფიქსირდა.",
+        "subject": "პასუხის ვადა ამოიწურა"
+      },
+      "warranty.claim_resolved": {
+        "body": "ხელშეკრულების „{contract_title}“ საგარანტიო პრეტენზია დაიხურა.",
+        "subject": "საგარანტიო პრეტენზია დაიხურა"
+      },
+      "warranty.claim_submitted": {
+        "body": "ხელშეკრულებაზე „{contract_title}“ წარდგენილია საგარანტიო პრეტენზია.",
+        "subject": "საგარანტიო პრეტენზია"
+      }
+    }
+  },
+  "kk": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "«{contract_title}» шарты бойынша келіспеушілік 30 күнде реттелмеді және шекті мерзім бойынша жабылды.",
+        "subject": "Келіспеушіліктің шекті мерзімі бітті"
+      },
+      "dispute.discount_declined": {
+        "body": "«{contract_title}» шарты бойынша жеңілдік ұсынысы қабылданбады — келіспеушілік ашық қалады.",
+        "subject": "Жеңілдік қабылданбады"
+      },
+      "dispute.discount_proposed": {
+        "body": "Келіспеушілік бойынша жеңілдік ұсынылды: «{milestone_title}» кезеңінің сомасы — {new_amount} {currency}. Қосымша келісімге екі тараптың қолы қажет.",
+        "subject": "Жеңілдік ұсынылды"
+      },
+      "dispute.fix_requested": {
+        "body": "«{milestone_title}» кезеңі бойынша келіспеушілікте 2-ден {round}-түзету раунды сұралды.",
+        "subject": "Түзету сұралды"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "«{milestone_title}» кезеңі бойынша түзету тапсырылды — кезең қайтадан қабылдауда.",
+        "subject": "Түзету тапсырылды"
+      },
+      "dispute.responded": {
+        "body": "«{contract_title}» шарты бойынша келіспеушілікке жауап келіп түсті.",
+        "subject": "Келіспеушілік бойынша жауап"
+      },
+      "dispute.window_contested": {
+        "body": "«{contract_title}» шарты бойынша мерзімінде қарсылық білдірілді — мәселе диалогқа өтеді.",
+        "subject": "Қарсылық білдірілді"
+      },
+      "dispute.window_expired": {
+        "body": "«{contract_title}» шарты бойынша жауап мерзімі қарсылықсыз өтті — дерек тіркелді.",
+        "subject": "Жауап мерзімі өтті"
+      },
+      "warranty.claim_resolved": {
+        "body": "«{contract_title}» шарты бойынша кепілдік талабы жабылды.",
+        "subject": "Кепілдік талабы жабылды"
+      },
+      "warranty.claim_submitted": {
+        "body": "«{contract_title}» шарты бойынша кепілдік талабы берілді.",
+        "subject": "Кепілдік талабы"
+      }
+    }
+  },
+  "ko": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "«{contract_title}» 계약의 이견이 30일 내에 해결되지 않아 최대 기한으로 종료되었습니다.",
+        "subject": "이견 최대 기한 도달"
+      },
+      "dispute.discount_declined": {
+        "body": "«{contract_title}» 계약의 할인 제안이 거절되었습니다. 이견은 계속 열려 있습니다.",
+        "subject": "할인 거절됨"
+      },
+      "dispute.discount_proposed": {
+        "body": "이견에 대해 할인이 제안되었습니다. «{milestone_title}» 단계 금액은 {new_amount} {currency}가 됩니다. 양측이 서명한 부속합의가 필요합니다.",
+        "subject": "할인 제안됨"
+      },
+      "dispute.fix_requested": {
+        "body": "이견에 따라 «{milestone_title}» 단계에 대해 2회 중 {round}회차 수정이 요청되었습니다.",
+        "subject": "수정 요청됨"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "«{milestone_title}» 단계의 수정이 제출되었습니다. 단계가 다시 검수 중입니다.",
+        "subject": "수정 제출됨"
+      },
+      "dispute.responded": {
+        "body": "«{contract_title}» 계약의 이견에 대한 답변이 접수되었습니다.",
+        "subject": "이견에 대한 답변"
+      },
+      "dispute.window_contested": {
+        "body": "«{contract_title}» 계약에 기한 내 이의가 제기되었습니다. 사안은 대화로 넘어갑니다.",
+        "subject": "이의 제기됨"
+      },
+      "dispute.window_expired": {
+        "body": "«{contract_title}» 계약의 답변 기한이 이의 없이 만료되었습니다. 사실이 기록되었습니다.",
+        "subject": "답변 기한 만료"
+      },
+      "warranty.claim_resolved": {
+        "body": "«{contract_title}» 계약의 보증 청구가 종료되었습니다.",
+        "subject": "보증 청구 종료"
+      },
+      "warranty.claim_submitted": {
+        "body": "«{contract_title}» 계약에 보증 청구가 접수되었습니다.",
+        "subject": "보증 청구"
+      }
+    }
+  },
+  "pl": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "Rozbieżność w umowie „{contract_title}” nie została rozstrzygnięta w ciągu 30 dni i została zamknięta po upływie terminu.",
+        "subject": "Osiągnięto maksymalny czas rozbieżności"
+      },
+      "dispute.discount_declined": {
+        "body": "Propozycja rabatu do umowy „{contract_title}” została odrzucona — rozbieżność pozostaje otwarta.",
+        "subject": "Rabat odrzucony"
+      },
+      "dispute.discount_proposed": {
+        "body": "W sprawie rozbieżności zaproponowano rabat: kwota etapu „{milestone_title}” wynosi {new_amount} {currency}. Wymagany jest aneks podpisany przez obie strony.",
+        "subject": "Zaproponowano rabat"
+      },
+      "dispute.fix_requested": {
+        "body": "Zażądano rundy poprawek {round} z 2 dla etapu „{milestone_title}”.",
+        "subject": "Zażądano poprawki"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "Poprawka do etapu „{milestone_title}” została przekazana — etap ponownie jest w odbiorze.",
+        "subject": "Poprawka przekazana"
+      },
+      "dispute.responded": {
+        "body": "Wpłynęła odpowiedź w sprawie rozbieżności dotyczącej umowy „{contract_title}”.",
+        "subject": "Odpowiedź w sprawie rozbieżności"
+      },
+      "dispute.window_contested": {
+        "body": "W umowie „{contract_title}” zgłoszono sprzeciw w terminie — sprawa przechodzi do dialogu.",
+        "subject": "Zgłoszono sprzeciw"
+      },
+      "dispute.window_expired": {
+        "body": "Termin odpowiedzi w umowie „{contract_title}” upłynął bez sprzeciwu — fakt został odnotowany.",
+        "subject": "Termin odpowiedzi upłynął"
+      },
+      "warranty.claim_resolved": {
+        "body": "Reklamacja gwarancyjna w umowie „{contract_title}” została zamknięta.",
+        "subject": "Reklamacja gwarancyjna zamknięta"
+      },
+      "warranty.claim_submitted": {
+        "body": "W umowie „{contract_title}” złożono reklamację gwarancyjną.",
+        "subject": "Reklamacja gwarancyjna"
+      }
+    }
+  },
+  "pt-BR": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "A divergência do contrato “{contract_title}” não foi resolvida em 30 dias e foi encerrada pelo prazo máximo.",
+        "subject": "Prazo máximo da divergência atingido"
+      },
+      "dispute.discount_declined": {
+        "body": "A proposta de desconto do contrato “{contract_title}” foi recusada — a divergência continua aberta.",
+        "subject": "Desconto recusado"
+      },
+      "dispute.discount_proposed": {
+        "body": "Foi proposto um desconto na divergência: o valor da etapa “{milestone_title}” passa a {new_amount} {currency}. É necessário um aditivo assinado pelas duas partes.",
+        "subject": "Desconto proposto"
+      },
+      "dispute.fix_requested": {
+        "body": "Foi solicitada a rodada de correção {round} de 2 para a etapa “{milestone_title}”.",
+        "subject": "Correção solicitada"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "A correção da etapa “{milestone_title}” foi entregue — a etapa voltou para aceitação.",
+        "subject": "Correção entregue"
+      },
+      "dispute.responded": {
+        "body": "Foi recebida uma resposta sobre a divergência do contrato “{contract_title}”.",
+        "subject": "Resposta sobre a divergência"
+      },
+      "dispute.window_contested": {
+        "body": "Foi apresentada uma objeção no prazo no contrato “{contract_title}” — o assunto segue para diálogo.",
+        "subject": "Objeção apresentada"
+      },
+      "dispute.window_expired": {
+        "body": "O prazo de resposta do contrato “{contract_title}” terminou sem objeção — o fato foi registrado.",
+        "subject": "Prazo de resposta encerrado"
+      },
+      "warranty.claim_resolved": {
+        "body": "A reclamação de garantia do contrato “{contract_title}” foi encerrada.",
+        "subject": "Reclamação de garantia encerrada"
+      },
+      "warranty.claim_submitted": {
+        "body": "Foi aberta uma reclamação de garantia no contrato “{contract_title}”.",
+        "subject": "Reclamação de garantia"
+      }
+    }
+  },
+  "ro": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "Neînțelegerea privind contractul „{contract_title}” nu a fost soluționată în 30 de zile și a fost închisă la termenul maxim.",
+        "subject": "Termenul maxim al neînțelegerii a fost atins"
+      },
+      "dispute.discount_declined": {
+        "body": "Propunerea de reducere la contractul „{contract_title}” a fost respinsă — neînțelegerea rămâne deschisă.",
+        "subject": "Reducere respinsă"
+      },
+      "dispute.discount_proposed": {
+        "body": "Pentru neînțelegere se propune o reducere: suma etapei „{milestone_title}” devine {new_amount} {currency}. Este necesar un act adițional semnat de ambele părți.",
+        "subject": "Reducere propusă"
+      },
+      "dispute.fix_requested": {
+        "body": "S-a solicitat runda de remediere {round} din 2 pentru etapa „{milestone_title}”.",
+        "subject": "Remediere solicitată"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "Remedierea etapei „{milestone_title}” a fost predată — etapa este din nou în recepție.",
+        "subject": "Remediere predată"
+      },
+      "dispute.responded": {
+        "body": "S-a primit un răspuns la neînțelegerea privind contractul „{contract_title}”.",
+        "subject": "Răspuns la neînțelegere"
+      },
+      "dispute.window_contested": {
+        "body": "S-a depus o obiecție în termen la contractul „{contract_title}” — chestiunea trece în dialog.",
+        "subject": "Obiecție depusă"
+      },
+      "dispute.window_expired": {
+        "body": "Termenul de răspuns la contractul „{contract_title}” a expirat fără obiecții — faptul a fost consemnat.",
+        "subject": "Termenul de răspuns a expirat"
+      },
+      "warranty.claim_resolved": {
+        "body": "Reclamația de garanție la contractul „{contract_title}” a fost închisă.",
+        "subject": "Reclamație de garanție închisă"
+      },
+      "warranty.claim_submitted": {
+        "body": "La contractul „{contract_title}” a fost depusă o reclamație de garanție.",
+        "subject": "Reclamație de garanție"
+      }
+    }
+  },
+  "ru": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "Разногласие по договору «{contract_title}» не урегулировано за 30 дней и закрыто по предельному сроку.",
+        "subject": "Истёк предельный срок разногласия"
+      },
+      "dispute.discount_declined": {
+        "body": "Предложение скидки по договору «{contract_title}» отклонено — разногласие остаётся открытым.",
+        "subject": "Скидка отклонена"
+      },
+      "dispute.discount_proposed": {
+        "body": "По разногласию предложена скидка: сумма этапа «{milestone_title}» — {new_amount} {currency}. Нужна подпись допсоглашения обеими сторонами.",
+        "subject": "Предложена скидка"
+      },
+      "dispute.fix_requested": {
+        "body": "По разногласию к этапу «{milestone_title}» запрошен раунд исправления {round} из 2.",
+        "subject": "Запрошено исправление"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "Исправление по этапу «{milestone_title}» сдано — этап снова на приёмке.",
+        "subject": "Исправление сдано"
+      },
+      "dispute.responded": {
+        "body": "По разногласию к договору «{contract_title}» получен ответ.",
+        "subject": "Ответ по разногласию"
+      },
+      "dispute.window_contested": {
+        "body": "По договору «{contract_title}» подано возражение в срок — вопрос уходит в диалог.",
+        "subject": "Возражение подано"
+      },
+      "dispute.window_expired": {
+        "body": "Срок ответа по договору «{contract_title}» истёк без возражений — факт зафиксирован.",
+        "subject": "Срок ответа истёк"
+      },
+      "warranty.claim_resolved": {
+        "body": "Гарантийная претензия по договору «{contract_title}» закрыта.",
+        "subject": "Гарантийная претензия закрыта"
+      },
+      "warranty.claim_submitted": {
+        "body": "По договору «{contract_title}» подана гарантийная претензия.",
+        "subject": "Гарантийная претензия"
+      }
+    }
+  },
+  "sw": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "Mzozo wa mkataba «{contract_title}» haukutatuliwa ndani ya siku 30 na umefungwa kwa kikomo cha muda.",
+        "subject": "Kikomo cha muda wa mzozo kimefikiwa"
+      },
+      "dispute.discount_declined": {
+        "body": "Pendekezo la punguzo katika mkataba «{contract_title}» limekataliwa — mzozo unabaki wazi.",
+        "subject": "Punguzo limekataliwa"
+      },
+      "dispute.discount_proposed": {
+        "body": "Punguzo limependekezwa katika mzozo: kiasi cha hatua «{milestone_title}» kinakuwa {new_amount} {currency}. Inahitajika nyongeza ya mkataba iliyotiwa saini na pande zote mbili.",
+        "subject": "Punguzo limependekezwa"
+      },
+      "dispute.fix_requested": {
+        "body": "Raundi ya marekebisho {round} kati ya 2 imeombwa kwa hatua «{milestone_title}» katika mzozo.",
+        "subject": "Marekebisho yameombwa"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "Marekebisho ya hatua «{milestone_title}» yamewasilishwa — hatua imerudi kwenye upokeaji.",
+        "subject": "Marekebisho yamewasilishwa"
+      },
+      "dispute.responded": {
+        "body": "Jibu kuhusu mzozo wa mkataba «{contract_title}» limepokelewa.",
+        "subject": "Jibu kuhusu mzozo"
+      },
+      "dispute.window_contested": {
+        "body": "Pingamizi limewasilishwa kwa wakati katika mkataba «{contract_title}» — suala linahamia kwenye majadiliano.",
+        "subject": "Pingamizi limewasilishwa"
+      },
+      "dispute.window_expired": {
+        "body": "Muda wa kujibu katika mkataba «{contract_title}» umeisha bila pingamizi — jambo limerekodiwa.",
+        "subject": "Muda wa kujibu umeisha"
+      },
+      "warranty.claim_resolved": {
+        "body": "Dai la udhamini katika mkataba «{contract_title}» limefungwa.",
+        "subject": "Dai la udhamini limefungwa"
+      },
+      "warranty.claim_submitted": {
+        "body": "Dai la udhamini limewasilishwa katika mkataba «{contract_title}».",
+        "subject": "Dai la udhamini"
+      }
+    }
+  },
+  "th": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "ข้อโต้แย้งในสัญญา “{contract_title}” ไม่ได้ข้อยุติภายใน 30 วัน และถูกปิดตามกำหนดสูงสุด",
+        "subject": "ครบกำหนดสูงสุดของข้อโต้แย้ง"
+      },
+      "dispute.discount_declined": {
+        "body": "ข้อเสนอส่วนลดในสัญญา “{contract_title}” ถูกปฏิเสธ — ข้อโต้แย้งยังคงเปิดอยู่",
+        "subject": "ปฏิเสธส่วนลด"
+      },
+      "dispute.discount_proposed": {
+        "body": "มีการเสนอส่วนลดในข้อโต้แย้ง: จำนวนเงินของขั้นตอน “{milestone_title}” เป็น {new_amount} {currency} ต้องมีข้อตกลงเพิ่มเติมที่ลงนามโดยทั้งสองฝ่าย",
+        "subject": "เสนอส่วนลด"
+      },
+      "dispute.fix_requested": {
+        "body": "มีการขอรอบแก้ไขที่ {round} จาก 2 สำหรับขั้นตอน “{milestone_title}” ในข้อโต้แย้ง",
+        "subject": "ขอให้แก้ไข"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "ส่งงานแก้ไขของขั้นตอน “{milestone_title}” แล้ว — ขั้นตอนกลับเข้าสู่การตรวจรับอีกครั้ง",
+        "subject": "ส่งงานแก้ไขแล้ว"
+      },
+      "dispute.responded": {
+        "body": "ได้รับคำตอบต่อข้อโต้แย้งของสัญญา “{contract_title}”",
+        "subject": "คำตอบต่อข้อโต้แย้ง"
+      },
+      "dispute.window_contested": {
+        "body": "มีการยื่นคัดค้านภายในกำหนดในสัญญา “{contract_title}” — เรื่องเข้าสู่การเจรจา",
+        "subject": "ยื่นคัดค้านแล้ว"
+      },
+      "dispute.window_expired": {
+        "body": "กำหนดตอบกลับในสัญญา “{contract_title}” สิ้นสุดลงโดยไม่มีการคัดค้าน — บันทึกข้อเท็จจริงแล้ว",
+        "subject": "หมดกำหนดตอบกลับ"
+      },
+      "warranty.claim_resolved": {
+        "body": "การเคลมประกันในสัญญา “{contract_title}” ถูกปิดแล้ว",
+        "subject": "ปิดการเคลมประกันแล้ว"
+      },
+      "warranty.claim_submitted": {
+        "body": "มีการยื่นเคลมประกันในสัญญา “{contract_title}”",
+        "subject": "การเคลมประกัน"
+      }
+    }
+  },
+  "tr": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "“{contract_title}” sözleşmesindeki anlaşmazlık 30 günde çözülmedi ve üst süre nedeniyle kapatıldı.",
+        "subject": "Anlaşmazlık üst süresine ulaşıldı"
+      },
+      "dispute.discount_declined": {
+        "body": "“{contract_title}” sözleşmesindeki indirim önerisi reddedildi — anlaşmazlık açık kalıyor.",
+        "subject": "İndirim reddedildi"
+      },
+      "dispute.discount_proposed": {
+        "body": "Anlaşmazlıkta indirim öneriliyor: “{milestone_title}” aşamasının tutarı {new_amount} {currency} olur. Her iki tarafça imzalanan ek sözleşme gerekir.",
+        "subject": "İndirim önerildi"
+      },
+      "dispute.fix_requested": {
+        "body": "“{milestone_title}” aşaması için anlaşmazlıkta 2 turdan {round}. düzeltme turu talep edildi.",
+        "subject": "Düzeltme talep edildi"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "“{milestone_title}” aşamasının düzeltmesi teslim edildi — aşama yeniden kabulde.",
+        "subject": "Düzeltme teslim edildi"
+      },
+      "dispute.responded": {
+        "body": "“{contract_title}” sözleşmesindeki anlaşmazlığa yanıt geldi.",
+        "subject": "Anlaşmazlığa yanıt"
+      },
+      "dispute.window_contested": {
+        "body": "“{contract_title}” sözleşmesinde süresi içinde itiraz sunuldu — konu diyaloga geçiyor.",
+        "subject": "İtiraz sunuldu"
+      },
+      "dispute.window_expired": {
+        "body": "“{contract_title}” sözleşmesinde yanıt süresi itirazsız doldu — durum kayda geçti.",
+        "subject": "Yanıt süresi doldu"
+      },
+      "warranty.claim_resolved": {
+        "body": "“{contract_title}” sözleşmesindeki garanti talebi kapatıldı.",
+        "subject": "Garanti talebi kapatıldı"
+      },
+      "warranty.claim_submitted": {
+        "body": "“{contract_title}” sözleşmesinde garanti talebi açıldı.",
+        "subject": "Garanti talebi"
+      }
+    }
+  },
+  "uk": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "Розбіжність за договором «{contract_title}» не врегульовано за 30 днів і закрито за граничним строком.",
+        "subject": "Досягнуто граничний строк розбіжності"
+      },
+      "dispute.discount_declined": {
+        "body": "Пропозицію знижки за договором «{contract_title}» відхилено — розбіжність залишається відкритою.",
+        "subject": "Знижку відхилено"
+      },
+      "dispute.discount_proposed": {
+        "body": "За розбіжністю запропоновано знижку: сума етапу «{milestone_title}» — {new_amount} {currency}. Потрібен підпис додаткової угоди обома сторонами.",
+        "subject": "Запропоновано знижку"
+      },
+      "dispute.fix_requested": {
+        "body": "За розбіжністю до етапу «{milestone_title}» запитано раунд виправлення {round} з 2.",
+        "subject": "Запитано виправлення"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "Виправлення за етапом «{milestone_title}» здано — етап знову на прийманні.",
+        "subject": "Виправлення здано"
+      },
+      "dispute.responded": {
+        "body": "Щодо розбіжності за договором «{contract_title}» отримано відповідь.",
+        "subject": "Відповідь щодо розбіжності"
+      },
+      "dispute.window_contested": {
+        "body": "За договором «{contract_title}» подано заперечення вчасно — питання переходить у діалог.",
+        "subject": "Подано заперечення"
+      },
+      "dispute.window_expired": {
+        "body": "Строк відповіді за договором «{contract_title}» минув без заперечень — факт зафіксовано.",
+        "subject": "Строк відповіді минув"
+      },
+      "warranty.claim_resolved": {
+        "body": "Гарантійну претензію за договором «{contract_title}» закрито.",
+        "subject": "Гарантійну претензію закрито"
+      },
+      "warranty.claim_submitted": {
+        "body": "За договором «{contract_title}» подано гарантійну претензію.",
+        "subject": "Гарантійна претензія"
+      }
+    }
+  },
+  "ur": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "معاہدہ «{contract_title}» کا اختلاف 30 دن میں طے نہ ہوا اور زیادہ سے زیادہ مدت پر بند کر دیا گیا۔",
+        "subject": "اختلاف کی زیادہ سے زیادہ مدت پوری"
+      },
+      "dispute.discount_declined": {
+        "body": "معاہدہ «{contract_title}» میں رعایت کی تجویز مسترد کر دی گئی — اختلاف کھلا رہتا ہے۔",
+        "subject": "رعایت مسترد"
+      },
+      "dispute.discount_proposed": {
+        "body": "اختلاف میں رعایت تجویز کی گئی: مرحلہ «{milestone_title}» کی رقم {new_amount} {currency} ہوگی۔ فریقین کے دستخط شدہ ضمنی معاہدے کی ضرورت ہے۔",
+        "subject": "رعایت کی تجویز"
+      },
+      "dispute.fix_requested": {
+        "body": "اختلاف کے تحت مرحلہ «{milestone_title}» کے لیے 2 میں سے {round} اصلاحی مرحلہ طلب کیا گیا۔",
+        "subject": "اصلاح کی درخواست"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "مرحلہ «{milestone_title}» کی اصلاح جمع کرا دی گئی — مرحلہ دوبارہ قبولیت میں ہے۔",
+        "subject": "اصلاح جمع کرا دی گئی"
+      },
+      "dispute.responded": {
+        "body": "معاہدہ «{contract_title}» کے اختلاف پر جواب موصول ہوا۔",
+        "subject": "اختلاف پر جواب"
+      },
+      "dispute.window_contested": {
+        "body": "معاہدہ «{contract_title}» میں مقررہ مدت میں اعتراض داخل کیا گیا — معاملہ گفتگو میں جاتا ہے۔",
+        "subject": "اعتراض داخل"
+      },
+      "dispute.window_expired": {
+        "body": "معاہدہ «{contract_title}» میں جواب کی مدت بغیر اعتراض ختم ہوئی — حقیقت درج کر لی گئی۔",
+        "subject": "جواب کی مدت ختم"
+      },
+      "warranty.claim_resolved": {
+        "body": "معاہدہ «{contract_title}» کا وارنٹی دعویٰ بند کر دیا گیا۔",
+        "subject": "وارنٹی دعویٰ بند"
+      },
+      "warranty.claim_submitted": {
+        "body": "معاہدہ «{contract_title}» پر وارنٹی دعویٰ داخل کیا گیا۔",
+        "subject": "وارنٹی دعویٰ"
+      }
+    }
+  },
+  "uz": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "«{contract_title}» shartnomasi bo‘yicha kelishmovchilik 30 kun ichida hal etilmadi va eng uzoq muddat bo‘yicha yopildi.",
+        "subject": "Kelishmovchilikning eng uzoq muddati tugadi"
+      },
+      "dispute.discount_declined": {
+        "body": "«{contract_title}» shartnomasi bo‘yicha chegirma taklifi rad etildi — kelishmovchilik ochiq qoladi.",
+        "subject": "Chegirma rad etildi"
+      },
+      "dispute.discount_proposed": {
+        "body": "Kelishmovchilik bo‘yicha chegirma taklif qilindi: «{milestone_title}» bosqichi summasi — {new_amount} {currency}. Qo‘shimcha kelishuvni ikkala tomon imzolashi kerak.",
+        "subject": "Chegirma taklif qilindi"
+      },
+      "dispute.fix_requested": {
+        "body": "«{milestone_title}» bosqichi bo‘yicha kelishmovchilikda 2 dan {round}-tuzatish bosqichi so‘raldi.",
+        "subject": "Tuzatish so‘raldi"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "«{milestone_title}» bosqichi bo‘yicha tuzatish topshirildi — bosqich yana qabul qilishda.",
+        "subject": "Tuzatish topshirildi"
+      },
+      "dispute.responded": {
+        "body": "«{contract_title}» shartnomasi bo‘yicha kelishmovchilikka javob olindi.",
+        "subject": "Kelishmovchilik bo‘yicha javob"
+      },
+      "dispute.window_contested": {
+        "body": "«{contract_title}» shartnomasi bo‘yicha muddatida e’tiroz bildirildi — masala muloqotga o‘tadi.",
+        "subject": "E’tiroz bildirildi"
+      },
+      "dispute.window_expired": {
+        "body": "«{contract_title}» shartnomasi bo‘yicha javob muddati e’tirozsiz tugadi — dalil qayd etildi.",
+        "subject": "Javob muddati tugadi"
+      },
+      "warranty.claim_resolved": {
+        "body": "«{contract_title}» shartnomasi bo‘yicha kafolat da’vosi yopildi.",
+        "subject": "Kafolat da’vosi yopildi"
+      },
+      "warranty.claim_submitted": {
+        "body": "«{contract_title}» shartnomasi bo‘yicha kafolat da’vosi berildi.",
+        "subject": "Kafolat da’vosi"
+      }
+    }
+  },
+  "vi": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "Bất đồng về hợp đồng “{contract_title}” không được giải quyết trong 30 ngày và bị đóng theo thời hạn tối đa.",
+        "subject": "Đã đạt thời hạn tối đa của bất đồng"
+      },
+      "dispute.discount_declined": {
+        "body": "Đề xuất giảm giá cho hợp đồng “{contract_title}” đã bị từ chối — bất đồng vẫn để mở.",
+        "subject": "Giảm giá bị từ chối"
+      },
+      "dispute.discount_proposed": {
+        "body": "Trong bất đồng có đề xuất giảm giá: số tiền giai đoạn “{milestone_title}” còn {new_amount} {currency}. Cần phụ lục hợp đồng có chữ ký của cả hai bên.",
+        "subject": "Đề xuất giảm giá"
+      },
+      "dispute.fix_requested": {
+        "body": "Đã yêu cầu vòng sửa chữa {round} trên 2 cho giai đoạn “{milestone_title}” trong bất đồng.",
+        "subject": "Đã yêu cầu sửa chữa"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "Bản sửa cho giai đoạn “{milestone_title}” đã được nộp — giai đoạn trở lại nghiệm thu.",
+        "subject": "Đã nộp bản sửa"
+      },
+      "dispute.responded": {
+        "body": "Đã nhận được phản hồi về bất đồng của hợp đồng “{contract_title}”.",
+        "subject": "Phản hồi về bất đồng"
+      },
+      "dispute.window_contested": {
+        "body": "Phản đối đã được nộp đúng hạn cho hợp đồng “{contract_title}” — vấn đề chuyển sang đối thoại.",
+        "subject": "Đã nộp phản đối"
+      },
+      "dispute.window_expired": {
+        "body": "Hạn phản hồi cho hợp đồng “{contract_title}” đã hết mà không có phản đối — sự việc được ghi nhận.",
+        "subject": "Hết hạn phản hồi"
+      },
+      "warranty.claim_resolved": {
+        "body": "Yêu cầu bảo hành cho hợp đồng “{contract_title}” đã được đóng.",
+        "subject": "Yêu cầu bảo hành đã đóng"
+      },
+      "warranty.claim_submitted": {
+        "body": "Đã gửi yêu cầu bảo hành cho hợp đồng “{contract_title}”.",
+        "subject": "Yêu cầu bảo hành"
+      }
+    }
+  },
+  "zh-Hans": {
+    "notifications": {
+      "dispute.cap_reached": {
+        "body": "合同「{contract_title}」的分歧未在 30 天内解决，已按最长期限关闭。",
+        "subject": "已达到分歧的最长期限"
+      },
+      "dispute.discount_declined": {
+        "body": "合同「{contract_title}」的折扣提议被拒绝，分歧仍然未决。",
+        "subject": "折扣被拒绝"
+      },
+      "dispute.discount_proposed": {
+        "body": "就分歧提出折扣：阶段「{milestone_title}」的金额变为 {new_amount} {currency}。需要双方签署补充协议。",
+        "subject": "已提出折扣"
+      },
+      "dispute.fix_requested": {
+        "body": "就分歧对阶段「{milestone_title}」提出了第 {round} 轮整改（共 2 轮）。",
+        "subject": "已要求整改"
+      },
+      "dispute.fix_resubmitted": {
+        "body": "阶段「{milestone_title}」的整改已提交，该阶段重新进入验收。",
+        "subject": "整改已提交"
+      },
+      "dispute.responded": {
+        "body": "已收到关于合同「{contract_title}」分歧的回复。",
+        "subject": "分歧的回复"
+      },
+      "dispute.window_contested": {
+        "body": "已在期限内对合同「{contract_title}」提出异议，事项转入协商。",
+        "subject": "已提出异议"
+      },
+      "dispute.window_expired": {
+        "body": "合同「{contract_title}」的答复期限届满且无异议，该事实已记录。",
+        "subject": "答复期限已届满"
+      },
+      "warranty.claim_resolved": {
+        "body": "合同「{contract_title}」的质保索赔已关闭。",
+        "subject": "质保索赔已关闭"
+      },
+      "warranty.claim_submitted": {
+        "body": "已就合同「{contract_title}」提出质保索赔。",
+        "subject": "质保索赔"
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-3);
+}
+.title {
+  margin: 0;
+  color: var(--pr-ink);
+  font-size: var(--pr-fs-h3);
+  font-weight: var(--pr-fw-semibold);
+}
+.sub {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-1);
+}
+.itemFoot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-2);
+}
+.counter {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+  font-variant-numeric: tabular-nums;
+}
+/* Счётчик краснеет на пределе — пункт длиннее бэк отвергнет (ADR-167). */
+.counterOver {
+  color: var(--pr-red);
+}
+.note {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+}

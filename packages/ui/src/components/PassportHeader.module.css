@@ -1,0 +1,209 @@
+/* DEV-20 §5: шапка профиля — компактная (аватар 54, паддинг 12–20),
+   а не «плакат» на пол-экрана. Цифры — из density-слоя. */
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--pr-d-gap);
+  padding: var(--pr-d-pad-card);
+  border-radius: var(--pr-d-r-surface);
+}
+.light {
+  background: var(--pr-white);
+  color: var(--pr-text);
+  border: 1px solid var(--pr-line);
+}
+.onInk {
+  background: var(--pr-grad-ink);
+  color: var(--pr-on-ink);
+}
+
+.identity {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  min-width: 0;
+}
+
+.avatarBtn {
+  position: relative;
+  width: 54px;
+  height: 54px;
+  min-width: var(--pr-touch-min);
+  min-height: var(--pr-touch-min);
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  flex: none;
+  background: none;
+}
+.avatarImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+.avatarFallback {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  /* Финал доска A: инициалы на серо-бирюзовом кружке, как у аватара-лида. */
+  background: var(--pr-avatar-5);
+  color: var(--pr-avatar-text);
+  display: grid;
+  place-items: center;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-black);
+  font-size: var(--pr-fs-h3);
+  flex: none;
+}
+.expandBadge {
+  position: absolute;
+  inset-inline-end: -2px;
+  bottom: -2px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--pr-amber);
+  color: var(--pr-ink);
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--pr-white);
+}
+.onInk .expandBadge {
+  border-color: var(--pr-ink-2);
+}
+
+.meta {
+  min-width: 0;
+}
+.name {
+  overflow-wrap: anywhere;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-black);
+  font-size: var(--pr-d-fs-screen);
+  line-height: var(--pr-lh-tight);
+  letter-spacing: var(--pr-ls-head);
+  color: inherit;
+}
+.handleRow {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  margin-top: 2px;
+  flex-wrap: wrap;
+  font-size: var(--pr-d-fs-2);
+}
+.handle {
+  overflow-wrap: anywhere;
+  font-family: ui-monospace, monospace;
+  color: inherit;
+  opacity: 0.8;
+}
+/* Хендл-кнопка «скопировать» (отсмотр 2026-08-21): выглядит как текст,
+   но с иконкой и фокус-кольцом; min-height — тач-цель. */
+.handleBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 6px;
+  margin-inline-start: -6px;
+  min-height: 28px;
+  border: 0;
+  border-radius: var(--pr-r-sm);
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-family: ui-monospace, monospace;
+}
+.handleBtn:hover {
+  opacity: 1;
+  background: color-mix(in srgb, currentColor 10%, transparent);
+}
+.handleBtn:focus-visible {
+  outline: 2px solid var(--pr-focus, currentColor);
+  outline-offset: 2px;
+}
+.badges {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  margin-top: var(--pr-sp-3);
+  flex-wrap: wrap;
+}
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--pr-font-body);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-fs-xs);
+  padding: 6px 10px;
+  border-radius: var(--pr-r-pill);
+  white-space: nowrap;
+  background: var(--pr-sand);
+  color: var(--pr-text-2);
+}
+/* Локация на чернильном — «светлое стекло» (§3), AA-контраст. */
+.glass {
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(6px);
+  color: var(--pr-on-ink);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  flex-wrap: wrap;
+}
+/* Кнопки паспорта — с длинными подписями («или зарегистрироваться на сайте»):
+   базовый Button неразрывен и с min-width, поэтому в узкой колонке вылезал за
+   карточку. Здесь подписи переносятся (отсмотр 2026-08-25). */
+.actions > * {
+  white-space: normal;
+  min-inline-size: 0;
+}
+/* Чернильный рейл карточки репутации — узкая колонка (360px): кнопки и так
+   встают друг под друга, но разной ширины «лесенкой» (отсмотр 2026-08-25).
+   Явный столбец во всю ширину — как на телефоне. Светлый паспорт (/me на
+   десктопе) остаётся строкой. */
+.onInk .actions {
+  flex-direction: column;
+  align-items: stretch;
+  inline-size: 100%;
+  gap: var(--pr-sp-2);
+}
+
+@media (max-width: 900px) {
+  .wrap {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* Телефон, DEV-20 §5: шапка профиля — компактная СТРОКА (аватар 54 слева,
+   имя и хендл справа), действия — одной лентой под ней. Прежняя раскладка
+   (аватар по центру + три кнопки столбцом во всю ширину) съедала пол-экрана;
+   «ступеньки кнопок» отсмотра 25.08 лечим не столбцом, а равными долями —
+   `flex: 1 1 0` даёт кнопкам одинаковую ширину в одной строке. */
+@media (max-width: 480px) {
+  .identity {
+    align-items: center;
+    text-align: start;
+  }
+  .meta {
+    min-width: 0;
+  }
+  .actions {
+    inline-size: 100%;
+    gap: var(--pr-sp-2);
+    flex-wrap: nowrap;
+  }
+  .actions > * {
+    flex: 1 1 0;
+  }
+}

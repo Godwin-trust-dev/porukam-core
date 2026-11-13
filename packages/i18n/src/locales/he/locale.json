@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "שפת הממשק",
+  "globeTriggerAria": "שפת הממשק",
+  "rowLabel": "שפת הממשק",
+  "listTitle": "שפת הממשק",
+  "searchPlaceholder": "חיפוש שפה…",
+  "searchAriaLabel": "חיפוש שפה",
+  "searchClear": "לנקות את החיפוש",
+  "currentSectionTitle": "נוכחית",
+  "allSectionTitle": "כל השפות",
+  "noResults": "לא נמצאה שפה",
+  "betaBadge": "תרגום אוטומטי",
+  "betaTooltip": "תורגם אוטומטית — ייתכנו אי‑דיוקים",
+  "currentAria": "השפה הנוכחית",
+  "disabledToast": "{{lang}} אינה זמינה כרגע · מציגים אנגלית",
+  "closeLabel": "סגירה",
+  "onboardingHint": "זוהתה אוטומטית — אפשר לשנות בכל עת",
+  "settingsRowLabel": "שפה ואזור",
+  "settingsLanguageExplain": "זו שפת האפליקציה. השפה הרשמית של החוזה נבחרת בנפרד — הצד השני רואה תרגום, אבל מה שנחתם הוא הנוסח הרשמי.",
+  "loadErrorRetry": "לנסות שוב",
+  "loadError": "לא הצלחנו לטעון את רשימת השפות"
+}

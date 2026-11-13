@@ -1,0 +1,58 @@
+/* Состав пакета — чек-лист строками (финал доска B): hairline между строками,
+   teal-галочка слева, значение справа; без иконок разделов и стрелок. */
+.list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  min-block-size: var(--pr-touch-min);
+  padding-block: var(--pr-sp-2);
+  border-block-start: 1px solid var(--pr-hairline);
+}
+.row:first-child {
+  border-block-start: none;
+}
+.check {
+  flex: none;
+  inline-size: 24px;
+  block-size: 24px;
+  border-radius: var(--pr-r-sm);
+  border: 1.5px solid var(--pr-line);
+  background: var(--pr-white);
+  color: var(--pr-white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkOn {
+  background: var(--pr-teal-deep);
+  border-color: var(--pr-teal-deep);
+}
+.main {
+  flex: 1;
+  min-width: 0;
+}
+.label {
+  margin: 0;
+  color: var(--pr-ink);
+  font-family: var(--pr-font-head);
+  font-size: var(--pr-d-fs-title);
+  font-weight: var(--pr-fw-semibold);
+}
+.sub {
+  margin: 2px 0 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-d-fs-2);
+}
+.count {
+  flex: none;
+  color: var(--pr-text-2);
+  font-size: var(--pr-d-fs-2);
+  font-variant-numeric: tabular-nums;
+}

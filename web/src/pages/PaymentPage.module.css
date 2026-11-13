@@ -1,0 +1,199 @@
+.wrap {
+  display: grid;
+  gap: var(--pr-sp-5);
+  /* DEV-19 §5: форма/экран-действие — контейнер по центру рабочей области,
+     поля не разъезжаются на всю ширину монитора. */
+  max-inline-size: var(--pr-form-max);
+  margin-inline: auto;
+}
+.head {
+  display: grid;
+  gap: var(--pr-sp-2);
+}
+.title {
+  font-size: var(--pr-d-fs-screen);
+  color: var(--pr-ink);
+  margin: 0;
+}
+.meta {
+  display: flex;
+  gap: var(--pr-sp-2);
+  flex-wrap: wrap;
+  align-items: center;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+/* DEV-20 §3: CTA идёт СРАЗУ под контентом. Раньше блок был липким
+   (`position: sticky; bottom`) и страница резервировала под него запас снизу —
+   на коротком экране между текстом и кнопкой зияла пустота. Липкий низ
+   оставлен только там, где контент реально уходит за фолд (подписание —
+   якорь §7) и где низ занят вводом (композер чата). */
+.actionsBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--pr-sp-2) var(--pr-sp-3);
+}
+.hint {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.contractLink {
+  /* Тач-цель ≥ 40px (мобильный проход): ссылка в одну строку иначе ~20px. */
+  display: inline-flex;
+  align-items: center;
+  min-block-size: var(--pr-touch-min);
+  color: var(--pr-teal);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.amount {
+  color: var(--pr-ink);
+  font-weight: var(--pr-fw-semibold);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Доска B «Платёж под защитой»: блок суммы (teal — под защитой, иначе
+   нейтральный), kv-строки на одной поверхности, пояснение, CTA под. */
+.hero {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: var(--pr-sp-1);
+  padding: var(--pr-sp-5) var(--pr-sp-4);
+  border-radius: var(--pr-r-lg);
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  color: var(--pr-ink);
+}
+.heroProtected {
+  background: var(--pr-grad-teal);
+  border-color: transparent;
+  color: var(--pr-white);
+  box-shadow: var(--pr-shadow-teal);
+}
+.heroEyebrow {
+  font-size: var(--pr-fs-xs);
+  font-weight: var(--pr-fw-bold);
+  letter-spacing: var(--pr-ls-eyebrow);
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+.heroSum {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-black);
+  font-size: var(--pr-fs-h1);
+  line-height: var(--pr-lh-tight);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+.heroSub {
+  font-size: var(--pr-d-fs-2);
+  opacity: 0.9;
+}
+.kv {
+  margin: 0;
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-d-r-surface);
+  padding: var(--pr-sp-2) var(--pr-d-row-pad-x);
+  display: grid;
+}
+.kvRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  min-block-size: 40px;
+  border-block-start: 1px dashed var(--pr-hairline);
+}
+.kvRow:first-child {
+  border-block-start: none;
+}
+.kvLabel {
+  color: var(--pr-text-2);
+  font-size: var(--pr-d-fs-body);
+}
+.kvValue {
+  margin: 0;
+  color: var(--pr-ink);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-body);
+  text-align: end;
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+}
+.kvWho {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+}
+
+/* Наличные: строки сторон со статусом словом-цветом (доска B / ADR-149 §1). */
+.cash {
+  display: grid;
+  gap: var(--pr-sp-3);
+}
+.cashRows {
+  list-style: none;
+  margin: 0;
+  padding: 0 var(--pr-d-row-pad-x);
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-d-r-surface);
+}
+.cashRow {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  min-block-size: var(--pr-d-row-min-h);
+  padding-block: var(--pr-sp-2);
+  border-block-start: 1px solid var(--pr-hairline);
+}
+.cashRow:first-child {
+  border-block-start: none;
+}
+.cashBody {
+  flex: 1;
+  min-inline-size: 0;
+  display: grid;
+  gap: 2px;
+}
+.cashName {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-title);
+  color: var(--pr-ink);
+  overflow-wrap: anywhere;
+}
+.cashAt {
+  font-size: var(--pr-d-fs-2);
+  color: var(--pr-text-2);
+  font-variant-numeric: tabular-nums;
+}
+.cashStatus {
+  flex: none;
+  font-size: var(--pr-d-fs-2);
+  font-weight: var(--pr-fw-semibold);
+  text-align: end;
+}
+.cashOk {
+  color: var(--pr-green-ink);
+}
+.cashWait {
+  color: var(--pr-text-2);
+}
+.disputeLink {
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  justify-self: center;
+  min-block-size: var(--pr-touch-min);
+  padding: 0 var(--pr-sp-3);
+  font: inherit;
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

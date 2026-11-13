@@ -1,0 +1,134 @@
+{
+  "aboutTitle": "Porukam nedir",
+  "faqTitle": "Sorular ve yanıtlar",
+  "aboutLead": "Porukam, sözlü bir anlaşmayı aşamaları, kanıtları ve itibarı olan anlaşılır bir sözleşmeye dönüştürür. Avukatsız, komisyonsuz ve para platformdan geçmeden.",
+  "aboutSections": [
+    {
+      "title": "Kimler için",
+      "text": "Sipariş üzerine iş yapanlar ya da iş yaptıranlar için: tadilat, tasarım, yazılım, ders, fotoğraf, nakliye, eşya satışı, kiralama, kişiler arası borç. İki kişi için, bir kişi ile şahıs şirketi için, serbest çalışanlar için."
+    },
+    {
+      "title": "Nasıl çalışır",
+      "text": "Hazır bir formdan sözleşme oluşturur, işi aşamalara böler, karşı tarafı @kullanıcıadı ile davet edersiniz. İki taraf da imzalar. Sonra her aşama kontrol listesine göre teslim edilir ve kabul edilir; imza, teslim, kabul, anlaşmazlık gibi her olgu kaydedilir ve her iki tarafın itibarına yansır."
+    },
+    {
+      "title": "Platformun yapmadıkları",
+      "text": "Para tutmaz ve aktarmaz — seçtiğiniz yolla doğrudan ödeşirsiniz. Dosyalarınızın asıllarını saklamaz — yalnızca özetlerini (hash). Verilerinizi satmaz ve reklam göstermez."
+    },
+    {
+      "title": "Birlikler",
+      "text": "Birlik, bir ekip veya topluluk için ortak adrestir: lonca (birbirinin kalitesine kefil olan kalıcı meslek topluluğu), klan (3–20 kişilik proje ekibi), topluluk (açık ilgi grubu) veya şirket vitrini. Birliğin kendi @kullanıcıadı, logosu, alanı ve coğrafyası, üyeleriyle birlikte herkese açık kartı vardır; her üyenin profilinde nerede olduğu görünür. Sözleşmeleri yine insanlar yapar — birlik, birbirinizi bulmanıza ve ekibi göstermenize yardım eder."
+    }
+  ],
+  "howTitle": "Nasıl yapılır",
+  "howItems": [
+    {
+      "title": "Sözleşme oluşturmak",
+      "text": "İşlemler → “Oluştur”. Sözleşme türünü seçin (hizmet, satış, kiralama, borç), formu doldurun — her alanda ipucu veren bir “?” var. Karşı tarafı @kullanıcıadı ile belirtin, aşamalara bölün, ödeme yöntemini seçin ve imzaya gönderin."
+    },
+    {
+      "title": "Karşı tarafı davet etmek",
+      "text": "“Taraflar” adımında @kullanıcıadı girin. Kişinin henüz hesabı yoksa sözleşme bağlantısını gönderin: Google ile giriş yaptıktan sonra sözleşmeyi kendi kişisel alanında görür."
+    },
+    {
+      "title": "İmzalamak",
+      "text": "Sözleşmeyi açın → “İmza ekranına git”. Dondurulmuş sürümü kontrol edip imzalayın. Sözleşme iki taraf da imzaladığında yürürlüğe girer."
+    },
+    {
+      "title": "İmzadan önce değişiklik önermek",
+      "text": "İnceleme ekranında bir madde seçip değişiklik önerin. Karşı taraf kabul eder ya da reddeder; inceleme sonrasında sürüm yeniden dondurulur."
+    },
+    {
+      "title": "Aşama teslim etmek",
+      "text": "Yüklenici aşamayı açar → “Teslim et”, kanıt ekler (fotoğraf, dosya, bağlantı) ve kabule gönderir."
+    },
+    {
+      "title": "Aşamayı kabul etmek ya da geri göndermek",
+      "text": "İş sahibi aşamayı açar → kontrol listesinden geçer → notlarla “Kabul et” ya da “Geri gönder”. İş sahibi inceleme süresinden uzun süre sessiz kalırsa aşama otomatik kabul edilir."
+    },
+    {
+      "title": "Aşama ödemesi yapmak",
+      "text": "Kabulden sonra iş sahibi parayı seçilen yolla doğrudan yükleniciye gönderir ve aşamada ödemeyi işaretler. Yüklenici aldığını onaylar."
+    },
+    {
+      "title": "Anlaşmazlık açmak",
+      "text": "Uzlaşamadıysanız aşamada “Anlaşmazlık”a basın. İki taraf kanıt ekler; daha önce kaydedilen her şey zaten dosyadadır."
+    },
+    {
+      "title": "Karşı taraf bulmak ve kişi kaydetmek",
+      "text": "Kişinin kartını @kullanıcıadı bağlantısından ya da sözleşmeden açın → “Kişiyi kaydet”. Sözleşmelerinizdeki karşı taraflar kişilere kendiliğinden eklenir."
+    },
+    {
+      "title": "Kartınızı paylaşmak",
+      "text": "Profil → “Paylaş”: porukam.app/@kullanıcıadınız biçiminde bağlantı ve QR kodu. Kartta yalnızca olgular: kaç işlem, nasıl kabul edildi, anlaşmazlık oldu mu."
+    },
+    {
+      "title": "Birlik oluşturmak",
+      "text": "Birlikler → “Birlik oluştur”. Bir @kullanıcıadı seçin (tek ve oluştururken belirlenir), tür, alan ve coğrafyayı seçin; açıklama, bağlantılar ve logo ekleyin. Lider başvuruları onaylar, @kullanıcıadı ile davet eder ve ayarları değiştirir."
+    },
+    {
+      "title": "Birliğe katılmak",
+      "text": "Birliği Arama’da (ad, @kullanıcıadı veya alan) bulun ya da /@kullanıcıadı bağlantısını açın. Açık birlik — hemen “Katıl”; kapalı — “Katıl” lidere başvuru gönderir. İstediğiniz zaman ayrılabilirsiniz; lider birliği devretmeden ayrılamaz."
+    }
+  ],
+  "faqItems": [
+    {
+      "q": "Ücretsiz mi?",
+      "a": "Evet. Sözleşme yapmak, aşamalar, kanıtlar, itibar — ücretsiz ve ödemelerden komisyon yok. Ücretli özellikler gelirse ayrı ve isteğe bağlı olacak."
+    },
+    {
+      "q": "Böyle bir sözleşmenin hukuki geçerliliği var mı?",
+      "a": "Sözleşme yazılı biçimde basit elektronik imzayla kurulur: iki taraf metnin dondurulmuş sürümünü onaylar, hizmet kimin neyi ne zaman imzaladığını kaydeder. Bu biçim çoğu ülkede kişiler ve işletmeler arası işlemler için tanınır. Yasanın noter ya da devlet tescili istediği işlemlerde (örneğin gayrimenkul) hizmet bu prosedürlerin yerini almaz."
+    },
+    {
+      "q": "Para platformdan geçiyor mu?",
+      "a": "Hayır. Taraflar doğrudan ödeşir — havale, nakit, nasıl anlaştılarsa. Platform yükümlülüğü, ödeme olgusunu ve alındı onayını kaydeder."
+    },
+    {
+      "q": "Karşı taraf yanıt vermezse?",
+      "a": "Her adımın süresi var. İş sahibi teslim edilen aşamayı süresinde incelemezse aşama otomatik kabul edilir. Karşı taraf sözleşmeyi imzalamazsa sözleşme taslak kalır, yükümlülük doğmaz."
+    },
+    {
+      "q": "İmzadan sonra sözleşme değiştirilebilir mi?",
+      "a": "İmzalanan metin değişmez. Değişiklikler iki tarafın imzaladığı ek sözleşmeyle yapılır; sürüm geçmişi saklanır."
+    },
+    {
+      "q": "İtibar nedir ve kim görür?",
+      "a": "İşlemlerinizden olgular: kaç tane yapıldı, kaçı zamanında kabul edildi, anlaşmazlık oldu mu ve nasıl bitti. Puan ya da yıldız yok. Kartın ve alanların görünürlüğünü siz ayarlarsınız."
+    },
+    {
+      "q": "Kanıt dosyalarım nerede saklanıyor?",
+      "a": "Asılları sizde ve karşı tarafta. Platform dosyanın özetini (hash), küçük resmini ve ekleme zamanını saklar — dosyanın değişmediğini kanıtlamaya yeter."
+    },
+    {
+      "q": "Karşı taraf benim hakkımda ne görür?",
+      "a": "Hesabınızla doğrulanan adı, @kullanıcıadınızı ve izin verdiğiniz ölçüde itibar kartınızı. Telefon, e-posta ve banka bilgileri asla gösterilmez — siz sözleşme metnine yazmadıkça."
+    },
+    {
+      "q": "Başka cihazdan nasıl giriş yaparım?",
+      "a": "Aynı Google hesabıyla. Hizmeti kullandığınız sürece oturum 30 gün yeniden giriş gerektirmez."
+    },
+    {
+      "q": "Hesabımı nasıl silerim?",
+      "a": "Profil → Ayarlar → Hesap → Sil. Kişisel veriler geri döndürülemez biçimde yok edilir; karşı taraflarda ortak sözleşmelerin kendi nüshaları kalır."
+    },
+    {
+      "q": "Telefonda çalışıyor mu?",
+      "a": "Evet, bu bir web uygulaması: tarayıcıda porukam.app’i açıp ana ekrana ekleyin — bildirimlerle birlikte normal bir uygulama gibi çalışır."
+    },
+    {
+      "q": "Size nasıl ulaşırım?",
+      "a": "hello@trust-dev.com adresine yazın — hizmet, veriler ve sözleşmelerle ilgili soruları yanıtlıyoruz."
+    },
+    {
+      "q": "Birlikler nedir ve ne işe yarar?",
+      "a": "Bir ekibi veya topluluğu tek ad altında göstermenin yolu: lonca, klan, topluluk veya şirket vitrini. İş sahibi birliği alana ve şehre göre bulur, üyeleri ve itibar kartlarını görür, sözleşmeyi ise belirli bir kişiyle yapar. Yükleniciler içinse birlik, iş sahiplerinin yönlendirildiği ve her üyenin itibarının göründüğü ortak bir adrestir."
+    },
+    {
+      "q": "Birlik sözleşmeden sorumlu mu?",
+      "a": "Hayır. Sözleşmenin tarafı her zaman belirli bir kişi ya da onun şahıs şirketi/tüzel kişisidir; kişisel olarak imzalar ve sorumludur. Birlik para tutmaz ve üyeleri için garanti vermez — o bir vitrin ve adrestir; itibar ise her üyenin kendi işlemlerinden oluşur."
+    }
+  ],
+  "socialTitle": "Sosyal medyada biz",
+  "backToProfile": "Profil"
+}

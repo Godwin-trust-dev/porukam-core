@@ -1,0 +1,25 @@
+{
+  "machineNoteLabel": "traduction automatique",
+  "machineNoteTooltip": "Traduction automatique, fournie pour votre commodité",
+  "fallbackNotice": "Ce document n’est pas encore traduit dans votre langue — nous affichons l’original anglais.",
+  "loadError": "Impossible de charger le document.",
+  "openAria": "Ouvrir le document",
+  "accountDeletion": {
+    "title": "Supprimer votre compte Porukam",
+    "lead": "Cette page explique comment supprimer votre compte sur Porukam, ce qui est supprimé, ce qui est conservé et pour combien de temps.",
+    "stepsTitle": "Comment supprimer votre compte",
+    "step1": "Connectez-vous à l’application Porukam ou ouvrez porukam.app.",
+    "step2": "Ouvrez Profil → Paramètres → Compte.",
+    "step3": "Appuyez sur « Supprimer le compte » et confirmez la suppression.",
+    "step4": "Le compte est supprimé aussitôt et toutes les sessions sur tous les appareils sont fermées.",
+    "deletedTitle": "Ce qui est supprimé aussitôt et définitivement",
+    "deletedText": "Votre nom, votre adresse e-mail, votre téléphone, votre photo de profil et vos réalisations, votre carnet de contacts, vos paramètres et les appareils enregistrés pour les notifications push. Les clés de chiffrement qui protègent vos données personnelles sont détruites — ni nous ni personne d’autre ne pourra récupérer ces données.",
+    "keptTitle": "Ce qui est conservé et pour combien de temps",
+    "keptText": "Les pièces des contrats déjà conclus : le texte du contrat, les signatures, les preuves, l’historique des étapes et des paiements, ainsi que les messages relatifs au contrat. Elles appartiennent aux deux parties de l’affaire et protègent les droits de chacune, c’est pourquoi une partie seule ne peut pas les retirer. Ces pièces sont conservées un an après la fin du contrat, puis supprimées.",
+    "keptAnon": "Dans ces pièces, vous restez sous un identifiant anonymisé. Les empreintes des signatures et la chaîne de preuves ne contiennent aucune donnée personnelle et ne sont pas supprimées.",
+    "blockedTitle": "Quand le compte ne peut pas être supprimé",
+    "blockedText": "Tant que vous avez des contrats non terminés ou des litiges ouverts, la suppression est retenue — terminez-les d’abord. L’application indique combien il y en a et lesquels.",
+    "noAccessTitle": "Si vous ne pouvez pas vous connecter",
+    "noAccessText": "Écrivez à {{email}} depuis l’adresse e-mail liée à votre compte : nous supprimerons le compte sur demande. Cette même adresse figure dans la Politique de confidentialité."
+  }
+}

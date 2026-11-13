@@ -1,0 +1,466 @@
+{
+  "ar": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "سيتم إغلاق العقد تلقائيًا قريبًا",
+        "body": "لم يُسجَّل أي نشاط على العقد «{contract_title}» منذ فترة طويلة. إذا لم يحدث نشاط خلال {days_left} يومًا القادمة، فسيُغلق العقد تلقائيًا وتُنقل مواده إلى الأرشيف."
+      },
+      "contract.idle_blocked": {
+        "subject": "تم تأجيل الإغلاق التلقائي للعقد",
+        "body": "لا يوجد نشاط على العقد «{contract_title}» منذ {idle_days} يومًا، لكن هناك إجراءات غير مكتملة: مرحلة قيد القبول أو مقبولة لكنها لم تُدفع بعد. أكملوها، وإلا سيتكرر الفحص بعد {retry_days} يومًا وسيُغلق العقد تلقائيًا."
+      },
+      "contract.auto_closed": {
+        "subject": "تم إغلاق العقد تلقائيًا",
+        "body": "لم يكن هناك نشاط على العقد «{contract_title}» لمدة {idle_days} يومًا. تم إغلاق العقد تلقائيًا، وتُحفظ مواده وفق قواعد المنصة."
+      }
+    }
+  },
+  "az": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "Müqavilə tezliklə avtomatik bağlanacaq",
+        "body": "«{contract_title}» müqaviləsi üzrə uzun müddətdir fəaliyyət yoxdur. Növbəti {days_left} gün ərzində fəaliyyət olmasa, müqavilə avtomatik bağlanacaq və materialları arxivə keçəcək."
+      },
+      "contract.idle_blocked": {
+        "subject": "Müqavilənin avtomatik bağlanması təxirə salındı",
+        "body": "«{contract_title}» müqaviləsi üzrə {idle_days} gündür fəaliyyət yoxdur, lakin tamamlanmamış əməliyyatlar var: qəbulda olan mərhələ və ya qəbul edilmiş, lakin ödənilməmiş mərhələ. Onları tamamlayın — əks halda {retry_days} gündən sonra yoxlama təkrarlanacaq və müqavilə avtomatik bağlanacaq."
+      },
+      "contract.auto_closed": {
+        "subject": "Müqavilə avtomatik bağlandı",
+        "body": "«{contract_title}» müqaviləsi üzrə {idle_days} gün fəaliyyət olmayıb. Müqavilə avtomatik bağlandı; materialları platformanın qaydalarına uyğun saxlanılır."
+      }
+    }
+  },
+  "bn": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "চুক্তিটি শীঘ্রই স্বয়ংক্রিয়ভাবে বন্ধ হবে",
+        "body": "চুক্তি «{contract_title}»-এ দীর্ঘদিন কোনো কার্যকলাপ নেই। আগামী {days_left} দিনের মধ্যে কার্যকলাপ না হলে চুক্তিটি স্বয়ংক্রিয়ভাবে বন্ধ হবে এবং এর উপকরণ সংরক্ষণাগারে চলে যাবে।"
+      },
+      "contract.idle_blocked": {
+        "subject": "চুক্তির স্বয়ংক্রিয় বন্ধ স্থগিত",
+        "body": "চুক্তি «{contract_title}»-এ {idle_days} দিন ধরে কোনো কার্যকলাপ নেই, তবে অসমাপ্ত কাজ রয়েছে: গ্রহণের অপেক্ষায় থাকা ধাপ বা গৃহীত কিন্তু এখনও অপরিশোধিত ধাপ। সেগুলো সম্পন্ন করুন — নইলে {retry_days} দিন পর যাচাই পুনরায় হবে এবং চুক্তিটি স্বয়ংক্রিয়ভাবে বন্ধ হবে।"
+      },
+      "contract.auto_closed": {
+        "subject": "চুক্তি স্বয়ংক্রিয়ভাবে বন্ধ হয়েছে",
+        "body": "চুক্তি «{contract_title}»-এ {idle_days} দিন কোনো কার্যকলাপ ছিল না। চুক্তিটি স্বয়ংক্রিয়ভাবে বন্ধ করা হয়েছে; এর উপকরণ প্ল্যাটফর্মের নিয়ম অনুযায়ী সংরক্ষিত থাকে।"
+      }
+    }
+  },
+  "de": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "Vertrag wird bald automatisch geschlossen",
+        "body": "Zum Vertrag „{contract_title}“ gab es lange keine Aktivität. Bleibt sie in den nächsten {days_left} Tagen aus, wird der Vertrag automatisch geschlossen und seine Unterlagen werden archiviert."
+      },
+      "contract.idle_blocked": {
+        "subject": "Automatische Schließung des Vertrags verschoben",
+        "body": "Zum Vertrag „{contract_title}“ gab es seit {idle_days} Tagen keine Aktivität, es gibt jedoch noch offene Schritte: eine Etappe in der Abnahme oder eine abgenommene, aber noch nicht bezahlte Etappe. Schließen Sie sie ab — andernfalls wird die Prüfung in {retry_days} Tagen wiederholt und der Vertrag automatisch geschlossen."
+      },
+      "contract.auto_closed": {
+        "subject": "Vertrag automatisch geschlossen",
+        "body": "Zum Vertrag „{contract_title}“ gab es {idle_days} Tage lang keine Aktivität. Der Vertrag wurde automatisch geschlossen; seine Unterlagen werden gemäß den Regeln der Plattform aufbewahrt."
+      }
+    }
+  },
+  "en": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "Contract will be closed automatically soon",
+        "body": "There has been no activity under the contract “{contract_title}” for a long time. If nothing happens within the next {days_left} days, the contract will be closed automatically and its materials will be archived."
+      },
+      "contract.idle_blocked": {
+        "subject": "Automatic closure of the contract postponed",
+        "body": "There has been no activity under the contract “{contract_title}” for {idle_days} days, but some actions are still pending: a stage awaiting acceptance, or accepted but not yet paid. Complete them — otherwise the check will repeat in {retry_days} days and the contract will be closed automatically."
+      },
+      "contract.auto_closed": {
+        "subject": "Contract closed automatically",
+        "body": "There has been no activity under the contract “{contract_title}” for {idle_days} days. The contract has been closed automatically; its materials are kept under the platform's retention rules."
+      }
+    }
+  },
+  "es": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "El contrato se cerrará automáticamente pronto",
+        "body": "Hace tiempo que no hay actividad en el contrato «{contract_title}». Si no la hay en los próximos {days_left} días, el contrato se cerrará automáticamente y sus materiales pasarán al archivo."
+      },
+      "contract.idle_blocked": {
+        "subject": "Cierre automático del contrato aplazado",
+        "body": "No hay actividad en el contrato «{contract_title}» desde hace {idle_days} días, pero quedan acciones pendientes: una etapa en aceptación o aceptada pero aún no pagada. Complételas; de lo contrario, la comprobación se repetirá en {retry_days} días y el contrato se cerrará automáticamente."
+      },
+      "contract.auto_closed": {
+        "subject": "Contrato cerrado automáticamente",
+        "body": "No hubo actividad en el contrato «{contract_title}» durante {idle_days} días. El contrato se ha cerrado automáticamente; sus materiales se conservan según las reglas de la plataforma."
+      }
+    }
+  },
+  "fa": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "قرارداد به‌زودی به‌طور خودکار بسته می‌شود",
+        "body": "مدت زیادی است که در قرارداد «{contract_title}» فعالیتی ثبت نشده است. اگر طی {days_left} روز آینده فعالیتی انجام نشود، قرارداد به‌طور خودکار بسته می‌شود و مدارک آن بایگانی خواهد شد."
+      },
+      "contract.idle_blocked": {
+        "subject": "بستن خودکار قرارداد به تعویق افتاد",
+        "body": "{idle_days} روز است که در قرارداد «{contract_title}» فعالیتی نیست، اما اقدامات ناتمامی وجود دارد: مرحله‌ای در حال پذیرش یا پذیرفته‌شده ولی هنوز پرداخت‌نشده. آن‌ها را تکمیل کنید؛ در غیر این صورت بررسی پس از {retry_days} روز تکرار می‌شود و قرارداد به‌طور خودکار بسته خواهد شد."
+      },
+      "contract.auto_closed": {
+        "subject": "قرارداد به‌طور خودکار بسته شد",
+        "body": "به مدت {idle_days} روز در قرارداد «{contract_title}» فعالیتی نبود. قرارداد به‌طور خودکار بسته شد؛ مدارک آن طبق قوانین پلتفرم نگهداری می‌شود."
+      }
+    }
+  },
+  "fr": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "Le contrat sera bientôt clôturé automatiquement",
+        "body": "Aucune activité n'a été enregistrée depuis longtemps sur le contrat « {contract_title} ». En l'absence d'activité dans les {days_left} prochains jours, le contrat sera clôturé automatiquement et ses documents seront archivés."
+      },
+      "contract.idle_blocked": {
+        "subject": "Clôture automatique du contrat reportée",
+        "body": "Aucune activité depuis {idle_days} jours sur le contrat « {contract_title} », mais des actions restent en attente : une étape en cours de réception ou acceptée mais non encore payée. Terminez-les, sinon la vérification sera répétée dans {retry_days} jours et le contrat sera clôturé automatiquement."
+      },
+      "contract.auto_closed": {
+        "subject": "Contrat clôturé automatiquement",
+        "body": "Aucune activité pendant {idle_days} jours sur le contrat « {contract_title} ». Le contrat a été clôturé automatiquement ; ses documents sont conservés selon les règles de la plateforme."
+      }
+    }
+  },
+  "he": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "החוזה ייסגר אוטומטית בקרוב",
+        "body": "זמן רב לא נרשמה פעילות בחוזה «{contract_title}». אם לא תהיה פעילות ב־{days_left} הימים הקרובים, החוזה ייסגר אוטומטית והחומרים שלו יועברו לארכיון."
+      },
+      "contract.idle_blocked": {
+        "subject": "הסגירה האוטומטית של החוזה נדחתה",
+        "body": "כבר {idle_days} ימים אין פעילות בחוזה «{contract_title}», אך יש פעולות שלא הושלמו: שלב בקבלה או שלב שהתקבל אך טרם שולם. השלימו אותן — אחרת הבדיקה תחזור בעוד {retry_days} ימים והחוזה ייסגר אוטומטית."
+      },
+      "contract.auto_closed": {
+        "subject": "החוזה נסגר אוטומטית",
+        "body": "במשך {idle_days} ימים לא הייתה פעילות בחוזה «{contract_title}». החוזה נסגר אוטומטית; החומרים שלו נשמרים לפי כללי הפלטפורמה."
+      }
+    }
+  },
+  "hi": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "अनुबंध जल्द ही स्वचालित रूप से बंद हो जाएगा",
+        "body": "अनुबंध «{contract_title}» पर लंबे समय से कोई गतिविधि नहीं है। यदि अगले {days_left} दिनों में गतिविधि नहीं हुई, तो अनुबंध स्वचालित रूप से बंद हो जाएगा और उसकी सामग्री संग्रह में चली जाएगी।"
+      },
+      "contract.idle_blocked": {
+        "subject": "अनुबंध का स्वचालित समापन स्थगित",
+        "body": "अनुबंध «{contract_title}» पर {idle_days} दिनों से कोई गतिविधि नहीं है, लेकिन अधूरी कार्रवाइयाँ बाकी हैं: स्वीकृति में लंबित चरण या स्वीकृत लेकिन अभी भुगतान न किया गया चरण। उन्हें पूरा करें — अन्यथा {retry_days} दिनों बाद जाँच दोहराई जाएगी और अनुबंध स्वचालित रूप से बंद हो जाएगा।"
+      },
+      "contract.auto_closed": {
+        "subject": "अनुबंध स्वचालित रूप से बंद कर दिया गया",
+        "body": "अनुबंध «{contract_title}» पर {idle_days} दिनों तक कोई गतिविधि नहीं हुई। अनुबंध स्वचालित रूप से बंद कर दिया गया; उसकी सामग्री प्लेटफ़ॉर्म के नियमों के अनुसार संग्रहीत है।"
+      }
+    }
+  },
+  "hy": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "Պայմանագիրը շուտով ինքնաբերաբար կփակվի",
+        "body": "«{contract_title}» պայմանագրով վաղուց ակտիվություն չկա։ Եթե ևս {days_left} օր ակտիվություն չլինի, պայմանագիրը ինքնաբերաբար կփակվի, իսկ նյութերը կտեղափոխվեն արխիվ։"
+      },
+      "contract.idle_blocked": {
+        "subject": "Պայմանագրի ինքնաբերաբար փակումը հետաձգվել է",
+        "body": "«{contract_title}» պայմանագրով արդեն {idle_days} օր ակտիվություն չկա, սակայն կան անավարտ գործողություններ՝ ընդունման փուլում գտնվող կամ ընդունված, բայց չվճարված փուլ։ Ավարտեք դրանք, այլապես {retry_days} օր անց ստուգումը կկրկնվի, և պայմանագիրը ինքնաբերաբար կփակվի։"
+      },
+      "contract.auto_closed": {
+        "subject": "Պայմանագիրը փակվել է ինքնաբերաբար",
+        "body": "«{contract_title}» պայմանագրով {idle_days} օր ակտիվություն չի եղել։ Պայմանագիրը փակվել է ինքնաբերաբար, նյութերը պահվում են հարթակի կանոններով։"
+      }
+    }
+  },
+  "id": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "Kontrak akan segera ditutup secara otomatis",
+        "body": "Sudah lama tidak ada aktivitas pada kontrak «{contract_title}». Jika tidak ada aktivitas dalam {days_left} hari ke depan, kontrak akan ditutup secara otomatis dan materinya akan diarsipkan."
+      },
+      "contract.idle_blocked": {
+        "subject": "Penutupan otomatis kontrak ditunda",
+        "body": "Tidak ada aktivitas pada kontrak «{contract_title}» selama {idle_days} hari, tetapi masih ada tindakan yang belum selesai: tahap yang menunggu penerimaan atau sudah diterima namun belum dibayar. Selesaikan tindakan tersebut — jika tidak, pemeriksaan akan diulang dalam {retry_days} hari dan kontrak akan ditutup secara otomatis."
+      },
+      "contract.auto_closed": {
+        "subject": "Kontrak ditutup secara otomatis",
+        "body": "Tidak ada aktivitas pada kontrak «{contract_title}» selama {idle_days} hari. Kontrak telah ditutup secara otomatis; materinya disimpan sesuai aturan platform."
+      }
+    }
+  },
+  "it": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "Il contratto sarà presto chiuso automaticamente",
+        "body": "Da tempo non c'è attività sul contratto «{contract_title}». Se non ce ne sarà nei prossimi {days_left} giorni, il contratto verrà chiuso automaticamente e i suoi materiali saranno archiviati."
+      },
+      "contract.idle_blocked": {
+        "subject": "Chiusura automatica del contratto rinviata",
+        "body": "Sul contratto «{contract_title}» non c'è attività da {idle_days} giorni, ma restano azioni in sospeso: una fase in accettazione oppure accettata ma non ancora pagata. Completatele, altrimenti tra {retry_days} giorni il controllo verrà ripetuto e il contratto sarà chiuso automaticamente."
+      },
+      "contract.auto_closed": {
+        "subject": "Contratto chiuso automaticamente",
+        "body": "Sul contratto «{contract_title}» non c'è stata attività per {idle_days} giorni. Il contratto è stato chiuso automaticamente; i suoi materiali sono conservati secondo le regole della piattaforma."
+      }
+    }
+  },
+  "ja": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "契約はまもなく自動的に終了します",
+        "body": "契約「{contract_title}」には長期間アクティビティがありません。今後 {days_left} 日間アクティビティがない場合、契約は自動的に終了し、資料はアーカイブに移されます。"
+      },
+      "contract.idle_blocked": {
+        "subject": "契約の自動終了が延期されました",
+        "body": "契約「{contract_title}」には {idle_days} 日間アクティビティがありませんが、未完了の手続きが残っています（検収待ちの段階、または検収済みで未払いの段階）。これらを完了してください。完了しない場合、{retry_days} 日後に再確認が行われ、契約は自動的に終了します。"
+      },
+      "contract.auto_closed": {
+        "subject": "契約は自動的に終了しました",
+        "body": "契約「{contract_title}」には {idle_days} 日間アクティビティがありませんでした。契約は自動的に終了し、資料はプラットフォームの規則に従って保管されます。"
+      }
+    }
+  },
+  "ka": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "ხელშეკრულება მალე ავტომატურად დაიხურება",
+        "body": "ხელშეკრულებაზე «{contract_title}» დიდი ხანია აქტივობა არ არის. თუ კიდევ {days_left} დღის განმავლობაში აქტივობა არ იქნება, ხელშეკრულება ავტომატურად დაიხურება და მისი მასალები არქივში გადავა."
+      },
+      "contract.idle_blocked": {
+        "subject": "ხელშეკრულების ავტომატური დახურვა გადაიდო",
+        "body": "ხელშეკრულებაზე «{contract_title}» უკვე {idle_days} დღეა აქტივობა არ არის, მაგრამ არის დაუსრულებელი მოქმედებები: ეტაპი მიღებაზე ან მიღებული, მაგრამ გადაუხდელი ეტაპი. დაასრულეთ ისინი — წინააღმდეგ შემთხვევაში {retry_days} დღეში შემოწმება განმეორდება და ხელშეკრულება ავტომატურად დაიხურება."
+      },
+      "contract.auto_closed": {
+        "subject": "ხელშეკრულება ავტომატურად დაიხურა",
+        "body": "ხელშეკრულებაზე «{contract_title}» {idle_days} დღის განმავლობაში აქტივობა არ ყოფილა. ხელშეკრულება ავტომატურად დაიხურა; მისი მასალები ინახება პლატფორმის წესების მიხედვით."
+      }
+    }
+  },
+  "kk": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "Шарт жақында автоматты түрде жабылады",
+        "body": "«{contract_title}» шарты бойынша ұзақ уақыт белсенділік жоқ. Егер тағы {days_left} күн ішінде белсенділік болмаса, шарт автоматты түрде жабылып, оның материалдары мұрағатқа өтеді."
+      },
+      "contract.idle_blocked": {
+        "subject": "Шартты автоматты жабу кейінге қалдырылды",
+        "body": "«{contract_title}» шарты бойынша {idle_days} күн белсенділік жоқ, бірақ аяқталмаған әрекеттер бар: қабылдаудағы кезең немесе қабылданған, бірақ төленбеген кезең. Оларды аяқтаңыз — әйтпесе {retry_days} күннен кейін тексеру қайталанып, шарт автоматты түрде жабылады."
+      },
+      "contract.auto_closed": {
+        "subject": "Шарт автоматты түрде жабылды",
+        "body": "«{contract_title}» шарты бойынша {idle_days} күн белсенділік болмады. Шарт автоматты түрде жабылды; оның материалдары платформа ережелеріне сәйкес сақталады."
+      }
+    }
+  },
+  "ko": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "계약이 곧 자동으로 종료됩니다",
+        "body": "계약 «{contract_title}»에 오랫동안 활동이 없습니다. 앞으로 {days_left}일 동안 활동이 없으면 계약은 자동으로 종료되고 자료는 보관소로 이동됩니다."
+      },
+      "contract.idle_blocked": {
+        "subject": "계약 자동 종료가 연기되었습니다",
+        "body": "계약 «{contract_title}»에 {idle_days}일 동안 활동이 없지만 미완료 작업이 남아 있습니다: 검수 대기 중인 단계 또는 검수되었으나 아직 결제되지 않은 단계. 이를 완료하십시오. 그렇지 않으면 {retry_days}일 후 확인이 반복되고 계약은 자동으로 종료됩니다."
+      },
+      "contract.auto_closed": {
+        "subject": "계약이 자동으로 종료되었습니다",
+        "body": "계약 «{contract_title}»에 {idle_days}일 동안 활동이 없었습니다. 계약은 자동으로 종료되었으며 자료는 플랫폼 규정에 따라 보관됩니다."
+      }
+    }
+  },
+  "pl": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "Umowa wkrótce zostanie zamknięta automatycznie",
+        "body": "Od dawna nie ma aktywności w umowie „{contract_title}”. Jeśli nie pojawi się w ciągu kolejnych {days_left} dni, umowa zostanie zamknięta automatycznie, a jej materiały trafią do archiwum."
+      },
+      "contract.idle_blocked": {
+        "subject": "Automatyczne zamknięcie umowy odroczone",
+        "body": "W umowie „{contract_title}” od {idle_days} dni nie ma aktywności, ale pozostały niezakończone działania: etap w odbiorze albo odebrany, lecz jeszcze nieopłacony. Zakończ je — w przeciwnym razie za {retry_days} dni sprawdzenie zostanie powtórzone i umowa zostanie zamknięta automatycznie."
+      },
+      "contract.auto_closed": {
+        "subject": "Umowa zamknięta automatycznie",
+        "body": "W umowie „{contract_title}” przez {idle_days} dni nie było aktywności. Umowa została zamknięta automatycznie; jej materiały są przechowywane zgodnie z zasadami platformy."
+      }
+    }
+  },
+  "pt-BR": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "O contrato será encerrado automaticamente em breve",
+        "body": "Não há atividade no contrato “{contract_title}” há muito tempo. Se nada acontecer nos próximos {days_left} dias, o contrato será encerrado automaticamente e seus materiais serão arquivados."
+      },
+      "contract.idle_blocked": {
+        "subject": "Encerramento automático do contrato adiado",
+        "body": "Não há atividade no contrato “{contract_title}” há {idle_days} dias, mas ainda existem ações pendentes: uma etapa em aceitação ou aceita, mas ainda não paga. Conclua-as; caso contrário, a verificação será repetida em {retry_days} dias e o contrato será encerrado automaticamente."
+      },
+      "contract.auto_closed": {
+        "subject": "Contrato encerrado automaticamente",
+        "body": "Não houve atividade no contrato “{contract_title}” por {idle_days} dias. O contrato foi encerrado automaticamente; seus materiais são mantidos conforme as regras da plataforma."
+      }
+    }
+  },
+  "ro": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "Contractul va fi închis automat în curând",
+        "body": "Nu a existat activitate la contractul „{contract_title}” de mult timp. Dacă nu va exista activitate în următoarele {days_left} zile, contractul va fi închis automat, iar materialele sale vor fi arhivate."
+      },
+      "contract.idle_blocked": {
+        "subject": "Închiderea automată a contractului a fost amânată",
+        "body": "Nu există activitate la contractul „{contract_title}” de {idle_days} zile, dar au rămas acțiuni neterminate: o etapă în recepție sau acceptată, dar încă neplătită. Finalizați-le — altfel verificarea se va repeta peste {retry_days} zile și contractul va fi închis automat."
+      },
+      "contract.auto_closed": {
+        "subject": "Contract închis automat",
+        "body": "Nu a existat activitate la contractul „{contract_title}” timp de {idle_days} zile. Contractul a fost închis automat; materialele sale sunt păstrate conform regulilor platformei."
+      }
+    }
+  },
+  "ru": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "Договор скоро будет закрыт автоматически",
+        "body": "По договору «{contract_title}» давно нет активности. Если её не будет ещё {days_left} дн., договор будет закрыт автоматически, а его материалы перейдут в архив."
+      },
+      "contract.idle_blocked": {
+        "subject": "Автозакрытие договора отложено",
+        "body": "По договору «{contract_title}» нет активности уже {idle_days} дн., но есть незавершённые действия: этап на приёмке либо принятый, но не оплаченный. Завершите их — иначе через {retry_days} дн. проверка повторится, и договор будет закрыт автоматически."
+      },
+      "contract.auto_closed": {
+        "subject": "Договор закрыт автоматически",
+        "body": "По договору «{contract_title}» не было активности {idle_days} дн. Договор закрыт автоматически; его материалы хранятся по правилам платформы."
+      }
+    }
+  },
+  "sw": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "Mkataba utafungwa kiotomatiki hivi karibuni",
+        "body": "Hakuna shughuli yoyote kwenye mkataba «{contract_title}» kwa muda mrefu. Ikiwa hakutakuwa na shughuli ndani ya siku {days_left} zijazo, mkataba utafungwa kiotomatiki na nyaraka zake zitahifadhiwa kwenye kumbukumbu."
+      },
+      "contract.idle_blocked": {
+        "subject": "Kufungwa kiotomatiki kwa mkataba kumeahirishwa",
+        "body": "Hakuna shughuli kwenye mkataba «{contract_title}» kwa siku {idle_days}, lakini kuna hatua ambazo hazijakamilika: hatua inayosubiri kukubaliwa, au iliyokubaliwa lakini bado haijalipwa. Zikamilishe — vinginevyo ukaguzi utarudiwa baada ya siku {retry_days} na mkataba utafungwa kiotomatiki."
+      },
+      "contract.auto_closed": {
+        "subject": "Mkataba umefungwa kiotomatiki",
+        "body": "Hakukuwa na shughuli kwenye mkataba «{contract_title}» kwa siku {idle_days}. Mkataba umefungwa kiotomatiki; nyaraka zake zinahifadhiwa kwa mujibu wa sheria za jukwaa."
+      }
+    }
+  },
+  "th": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "สัญญาจะถูกปิดโดยอัตโนมัติในเร็ว ๆ นี้",
+        "body": "สัญญา «{contract_title}» ไม่มีความเคลื่อนไหวมาเป็นเวลานาน หากไม่มีความเคลื่อนไหวภายใน {days_left} วันข้างหน้า สัญญาจะถูกปิดโดยอัตโนมัติและเอกสารจะถูกเก็บเข้าคลัง"
+      },
+      "contract.idle_blocked": {
+        "subject": "การปิดสัญญาอัตโนมัติถูกเลื่อนออกไป",
+        "body": "สัญญา «{contract_title}» ไม่มีความเคลื่อนไหวมาแล้ว {idle_days} วัน แต่ยังมีรายการที่ยังไม่เสร็จสิ้น: ขั้นตอนที่รอการตรวจรับ หรือตรวจรับแล้วแต่ยังไม่ได้ชำระเงิน โปรดดำเนินการให้เสร็จ มิฉะนั้นระบบจะตรวจสอบซ้ำในอีก {retry_days} วัน และสัญญาจะถูกปิดโดยอัตโนมัติ"
+      },
+      "contract.auto_closed": {
+        "subject": "สัญญาถูกปิดโดยอัตโนมัติ",
+        "body": "สัญญา «{contract_title}» ไม่มีความเคลื่อนไหวเป็นเวลา {idle_days} วัน สัญญาจึงถูกปิดโดยอัตโนมัติ เอกสารของสัญญาจะถูกเก็บรักษาตามกฎของแพลตฟอร์ม"
+      }
+    }
+  },
+  "tr": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "Sözleşme yakında otomatik olarak kapatılacak",
+        "body": "«{contract_title}» sözleşmesinde uzun süredir etkinlik yok. Önümüzdeki {days_left} gün içinde etkinlik olmazsa sözleşme otomatik olarak kapatılacak ve materyalleri arşive alınacak."
+      },
+      "contract.idle_blocked": {
+        "subject": "Sözleşmenin otomatik kapatılması ertelendi",
+        "body": "«{contract_title}» sözleşmesinde {idle_days} gündür etkinlik yok, ancak tamamlanmamış işlemler var: kabul aşamasındaki ya da kabul edilmiş fakat henüz ödenmemiş bir aşama. Bunları tamamlayın; aksi halde {retry_days} gün sonra kontrol yinelenecek ve sözleşme otomatik olarak kapatılacak."
+      },
+      "contract.auto_closed": {
+        "subject": "Sözleşme otomatik olarak kapatıldı",
+        "body": "«{contract_title}» sözleşmesinde {idle_days} gün boyunca etkinlik olmadı. Sözleşme otomatik olarak kapatıldı; materyalleri platform kurallarına göre saklanmaktadır."
+      }
+    }
+  },
+  "uk": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "Договір незабаром буде закрито автоматично",
+        "body": "За договором «{contract_title}» давно немає активності. Якщо її не буде ще {days_left} дн., договір буде закрито автоматично, а його матеріали перейдуть до архіву."
+      },
+      "contract.idle_blocked": {
+        "subject": "Автозакриття договору відкладено",
+        "body": "За договором «{contract_title}» немає активності вже {idle_days} дн., але є незавершені дії: етап на прийманні або прийнятий, але не оплачений. Завершіть їх — інакше через {retry_days} дн. перевірка повториться, і договір буде закрито автоматично."
+      },
+      "contract.auto_closed": {
+        "subject": "Договір закрито автоматично",
+        "body": "За договором «{contract_title}» не було активності {idle_days} дн. Договір закрито автоматично; його матеріали зберігаються за правилами платформи."
+      }
+    }
+  },
+  "ur": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "معاہدہ جلد خودکار طور پر بند ہو جائے گا",
+        "body": "معاہدہ «{contract_title}» پر کافی عرصے سے کوئی سرگرمی نہیں ہے۔ اگر اگلے {days_left} دنوں میں سرگرمی نہ ہوئی تو معاہدہ خودکار طور پر بند ہو جائے گا اور اس کا مواد آرکائیو میں چلا جائے گا۔"
+      },
+      "contract.idle_blocked": {
+        "subject": "معاہدے کی خودکار بندش مؤخر کر دی گئی",
+        "body": "معاہدہ «{contract_title}» پر {idle_days} دنوں سے کوئی سرگرمی نہیں، لیکن نامکمل کارروائیاں باقی ہیں: قبولیت کے مرحلے میں یا قبول شدہ مگر ابھی ادا نہ کیا گیا مرحلہ۔ انہیں مکمل کریں، ورنہ {retry_days} دن بعد جانچ دہرائی جائے گی اور معاہدہ خودکار طور پر بند ہو جائے گا۔"
+      },
+      "contract.auto_closed": {
+        "subject": "معاہدہ خودکار طور پر بند کر دیا گیا",
+        "body": "معاہدہ «{contract_title}» پر {idle_days} دن کوئی سرگرمی نہیں ہوئی۔ معاہدہ خودکار طور پر بند کر دیا گیا؛ اس کا مواد پلیٹ فارم کے قواعد کے مطابق محفوظ رکھا جاتا ہے۔"
+      }
+    }
+  },
+  "uz": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "Shartnoma tez orada avtomatik yopiladi",
+        "body": "«{contract_title}» shartnomasi bo'yicha uzoq vaqtdan beri faollik yo'q. Agar yana {days_left} kun ichida faollik bo'lmasa, shartnoma avtomatik yopiladi va uning materiallari arxivga o'tadi."
+      },
+      "contract.idle_blocked": {
+        "subject": "Shartnomani avtomatik yopish kechiktirildi",
+        "body": "«{contract_title}» shartnomasi bo'yicha {idle_days} kundan beri faollik yo'q, ammo tugallanmagan harakatlar bor: qabul qilinayotgan bosqich yoki qabul qilingan, lekin to'lanmagan bosqich. Ularni yakunlang — aks holda {retry_days} kundan keyin tekshiruv takrorlanadi va shartnoma avtomatik yopiladi."
+      },
+      "contract.auto_closed": {
+        "subject": "Shartnoma avtomatik yopildi",
+        "body": "«{contract_title}» shartnomasi bo'yicha {idle_days} kun faollik bo'lmadi. Shartnoma avtomatik yopildi; uning materiallari platforma qoidalariga muvofiq saqlanadi."
+      }
+    }
+  },
+  "vi": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "Hợp đồng sắp được đóng tự động",
+        "body": "Hợp đồng «{contract_title}» đã lâu không có hoạt động. Nếu trong {days_left} ngày tới vẫn không có hoạt động, hợp đồng sẽ được đóng tự động và tài liệu của hợp đồng sẽ được lưu trữ."
+      },
+      "contract.idle_blocked": {
+        "subject": "Việc đóng tự động hợp đồng đã được hoãn",
+        "body": "Hợp đồng «{contract_title}» đã {idle_days} ngày không có hoạt động, nhưng vẫn còn các việc chưa hoàn tất: giai đoạn đang chờ nghiệm thu hoặc đã nghiệm thu nhưng chưa thanh toán. Hãy hoàn tất chúng — nếu không, sau {retry_days} ngày việc kiểm tra sẽ lặp lại và hợp đồng sẽ được đóng tự động."
+      },
+      "contract.auto_closed": {
+        "subject": "Hợp đồng đã được đóng tự động",
+        "body": "Hợp đồng «{contract_title}» không có hoạt động trong {idle_days} ngày. Hợp đồng đã được đóng tự động; tài liệu của hợp đồng được lưu giữ theo quy định của nền tảng."
+      }
+    }
+  },
+  "zh-Hans": {
+    "notifications": {
+      "contract.idle_warning": {
+        "subject": "合同即将自动关闭",
+        "body": "合同“{contract_title}”已长时间没有任何活动。如果在接下来的 {days_left} 天内仍无活动，合同将被自动关闭，其资料将转入归档。"
+      },
+      "contract.idle_blocked": {
+        "subject": "合同自动关闭已推迟",
+        "body": "合同“{contract_title}”已有 {idle_days} 天没有活动，但仍有未完成的事项：处于验收中的阶段，或已验收但尚未付款的阶段。请完成这些事项，否则 {retry_days} 天后将再次检查，合同将被自动关闭。"
+      },
+      "contract.auto_closed": {
+        "subject": "合同已自动关闭",
+        "body": "合同“{contract_title}”在 {idle_days} 天内没有任何活动。合同已被自动关闭；其资料按平台规则保存。"
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "helpButton": "Field hint",
+  "onboarding": {
+    "handle": "Your public address in Porukam — like an @name in a messenger. Counterparties find you by it and it opens your reputation card. Latin letters, digits, dot and underscore.",
+    "name": "The name the other party sees in the contract and on your card. First name only or first and last — the way you introduce yourself at work."
+  },
+  "contractNew": {
+    "title": "A short contract name for the list — e.g. “Kitchen renovation” or “Logo for a café”. Leave empty and the description is used.",
+    "workDescription": "What exactly must be done: scope, result, what counts as finished. The more specific, the easier acceptance is and the fewer disputes.",
+    "locationType": "Where the work happens: at the customer’s, the contractor’s, remotely or at an address. Access and handover terms depend on it.",
+    "locationAddress": "Work site address — street, building, floor and unit if needed. Visible only to the parties.",
+    "termType": "How the term is counted: by start and end dates, or by a number of days from signing.",
+    "start": "The date the contractor starts the work.",
+    "end": "The date by which the work must be fully delivered.",
+    "durationDays": "How many calendar days the work takes, counted from the signing date.",
+    "priceType": "A fixed price for the whole scope, or payment per stage/unit. Stages are handier for complex work.",
+    "currency": "The currency of every amount in the contract. One per contract — cannot be changed after signing.",
+    "warrantyDays": "How many days after acceptance the contractor is responsible for defects. 0 — no warranty.",
+    "acceptanceHours": "How many hours the customer has to check a delivered stage. No answer in time — the stage is accepted automatically.",
+    "paymentMethod": "How the parties settle: bank transfer, cash, other. The platform never holds or moves money — it only records the agreement and the facts.",
+    "paymentOrder": "When each stage is paid: before it starts (prepayment) or after the customer accepts it (postpayment). Applies to every stage of the contract.",
+    "subcontract": "Whether the contractor may bring in helpers or other contractors for part of the work.",
+    "premisesAccess": "Whether the contractor needs access to the customer’s premises and on what terms (hours, keys, presence).",
+    "portfolioConsent": "Whether the customer allows showing the result in the contractor’s portfolio after acceptance.",
+    "stages": "Split the work into stages: each is delivered and accepted separately, and the stage amounts add up to the contract price. One stage is enough for a small job.",
+    "stageTitle": "What is delivered at this stage — e.g. “Draft layout” or “Installation”.",
+    "stageAmount": "The price of this stage only. All stages together must equal the contract price.",
+    "stageDeadline": "The date by which the stage must be delivered to the customer for review.",
+    "counterparty": "Who the other party is: search by @handle or pick from saved contacts. This exact person receives the invitation.",
+    "sale": {
+      "what": "What is being sold — the item name as you would describe it to a buyer: “iPhone 13 128 GB”, “Trek FX 2 bicycle”.",
+      "description": "Condition, what’s included, specifics — everything the buyer should know before the deal.",
+      "condition": "New, like new, used with wear — an honest condition description protects both sides in a dispute.",
+      "defects": "Known defects and flaws. If nothing is listed, the buyer may expect there are none.",
+      "completeness": "What comes with it: box, charger, documents, accessories.",
+      "identifiers": "Serial number, IMEI, VIN etc. — they confirm that exactly this item was handed over.",
+      "householdPlot": "Tick if you sell produce from your own household plot — it affects the tax regime.",
+      "price": "The full price of the item. Paid delivery, if any, is set separately below.",
+      "deliveryType": "How the item is handed over: pickup, courier, post or a carrier.",
+      "address": "Handover or delivery address. Visible only to the parties.",
+      "deliveryPayer": "Who pays for delivery — the seller or the buyer.",
+      "tracking": "Whether a tracking number is required. It makes proving dispatch and receipt easier.",
+      "deliveryTerm": "Handover term: a specific date or a number of days after payment.",
+      "deliveryDate": "The date by which the item must be handed to the buyer.",
+      "deliveryDays": "How many days for handover, counted from the payment date.",
+      "inspectionHours": "How many hours the buyer has to inspect the item after receipt before the deal counts as closed."
+    }
+  },
+  "settings": {
+    "displayName": "The name counterparties see next to your handle. Write it the way your clients know you.",
+    "city": "A free-text caption for towns not yet in our directory — shown on your card, but it does not affect search. Set your searchable work area below.",
+    "handle": "Your public address — people find you by it and open your reputation card. From 3 to 20 characters: Latin letters, digits, underscore.",
+    "avatar": "Counterparties see your profile photo in contracts, chats and on your card. A real face invites a deal more than a picture does.",
+    "country": "The country whose law governs your contracts (jurisdiction). It has nothing to do with your address or where you look for work, and currencies and taxes don't depend on it.",
+    "phone": "The number lets people who already have it find you by phone. It is not published in your profile.",
+    "notif": {
+      "deals": "Contract invitations, proposed revisions, signing, stage acceptance — everything about how deals progress.",
+      "chats": "New messages in contract chats and in enquiries.",
+      "payments": "Stage payments and settlement confirmations.",
+      "deadlines": "Deadline reminders: the acceptance window is running out, a stage delivery date is coming up.",
+      "disputes": "A dispute opened, replies from the parties and decisions on the dispute."
+    }
+  },
+  "stage": {
+    "totalCost": "Total cost of the work. Enter it and the amount is split evenly across stages — you can then adjust each stage by hand.",
+    "title": "What is delivered at this stage — “Draft layout”, “Installation”, “First batch”. Both sides see the name and it goes into the contract.",
+    "amount": "What this particular stage costs. The stage amounts must add up to the contract price, otherwise the contract cannot be frozen.",
+    "duration": "How many days the stage takes. Counted from the start of the stage, not from the signing of the contract.",
+    "checklist": "Acceptance criteria: the points the customer checks the stage against. Keep them measurable — “two layout revisions”, “walls with no streaks”: there is little left to argue about.",
+    "evidence": "A point marked “evidence required” expects an attached photo or file: without one a warning appears when the stage is submitted, but submission is not blocked. Evidence stays in the contract file and helps in a dispute.",
+    "materials": {
+      "name": "A material from the catalogue — that way the name and units match on both sides. Not listed? Pick “other” and type your own.",
+      "customName": "The name of the material in your own words, if the catalogue has no match.",
+      "quantity": "How much is needed — a number, in the units you selected.",
+      "unit": "The unit the quantity is measured in: pieces, metres, kilograms, litres.",
+      "delivery": "How many days the material takes to arrive. Helps to see whether the stage deadline is realistic.",
+      "deliveryBase": "The event the delivery time is counted from: contract signing, prepayment or stage start. That keeps the deadline independent of a calendar date.",
+      "suppliedBy": "Who buys and brings the material — the customer or the contractor. Disagreement here is a common cause of downtime.",
+      "price": "The price of one unit in the contract currency. For a contractor-supplied material it is required and above zero; a customer-supplied material may be free."
+    }
+  },
+  "group": {
+    "handle": "The public address of the group — like @name in a messenger. It opens the group page and is what people link to.",
+    "name": "What the group is called for people. Visible to anyone who opens its page.",
+    "sphere": "The group’s main field of activity. People find it by that field in search, and it helps match members.",
+    "geo": "The group’s reach: the whole world, one country or a single city. It decides who sees the group in search.",
+    "country": "The country of reach. Required if the reach is “country” or “city”.",
+    "city": "The main city of reach. Required when the reach is “city”.",
+    "description": "What the group is about and who you are waiting for: what you do, what the rules are, how you help members.",
+    "visibility": "An open group is visible to everyone and shows up in search; a closed one — only to members and by a direct link.",
+    "joinPolicy": "How people get in: freely with a button, or by request approved by the owner.",
+    "links": "Links to the group elsewhere — a site, a channel, a chat. Up to 10, shown on the group page.",
+    "logo": "The group’s logo image: shown in search, on the card and next to the name. A square image looks best."
+  },
+  "portfolio": {
+    "title": "What to call this work — “Kitchen in a panel house”, “One-page site for a coffee shop”.",
+    "sphere": "The field this work belongs to. People looking for something similar find your work by it.",
+    "startedAt": "When you took the work on. Optional, but together with the completion date it shows how long it took.",
+    "completedAt": "When the work was finished. Required: portfolio entries are ordered by this date.",
+    "city": "The city where the work was done. Helps customers nearby pick a contractor close to them.",
+    "description": "What was done, what difficulties you handled, how it turned out. No length limit.",
+    "photos": "Up to 5 photos of the work. The first one is the cover in the list; you can change the cover at any time."
+  },
+  "revision": {
+    "item": "Which contract term you propose to change. The list holds the fields of this contract; “other” is free text.",
+    "before": "The current value from the contract. It is filled in automatically and cannot be edited — so both sides see the same thing.",
+    "after": "The new value of the term. The other side will accept or reject it; until they agree, the contract stays as it is.",
+    "comment": "Why the revision is needed. The other side sees the comment — a short explanation speeds up agreement."
+  },
+  "signing": {
+    "declineComment": "What exactly did not suit you and what to fix. The other side sees this text and it stays in the contract history."
+  }
+}

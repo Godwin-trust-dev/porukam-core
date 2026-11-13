@@ -1,0 +1,114 @@
+.wrap {
+  /* Доска B, «Создание договора — центр ~760px»: мастер уже прочих форм
+     (`--pr-form-max` 820px) — на десктопе четыре плитки в ряд и ряд шагов
+     читаются в одной колонке, а не расползаются по ширине рабочей области. */
+  max-inline-size: var(--pr-wizard-max);
+  margin-inline: auto;
+  padding: var(--pr-sp-6) var(--pr-sp-4) var(--pr-sp-10);
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-4);
+}
+.head {
+  flex: none;
+}
+/* «×» в песочном квадрате справа от названия (доска B). */
+.close {
+  display: inline-grid;
+  place-items: center;
+  inline-size: var(--pr-touch-min);
+  block-size: var(--pr-touch-min);
+  border: none;
+  border-radius: var(--pr-r-md);
+  background: var(--pr-sand);
+  color: var(--pr-text-2);
+  cursor: pointer;
+}
+.close:hover {
+  color: var(--pr-ink);
+}
+.close:focus-visible {
+  outline: 3px solid var(--pr-amber-bright);
+  outline-offset: 2px;
+}
+/* Шаги + индикатор автосохранения — ОДНА строка (доска B). */
+.stepRow {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-3);
+  min-inline-size: 0;
+}
+.autosave {
+  flex: none;
+  margin-inline-start: auto;
+  color: var(--pr-text-2);
+  font-size: var(--pr-d-fs-2);
+}
+.body {
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  padding: var(--pr-d-pad-card);
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-4);
+  min-inline-size: 0;
+}
+.stepTitle {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-ink);
+  margin: 0;
+}
+.stepSub {
+  color: var(--pr-text-2);
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+  margin: calc(-1 * var(--pr-sp-3)) 0 0;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+}
+.back {
+  flex: none;
+}
+.next {
+  flex: none;
+}
+/* Телефон (доска B): шаг лежит прямо на креме — белой карточки нет, поля
+   идут во всю ширину экрана (горизонтальные отступы даёт оболочка), а
+   «Далее» — CTA во всю ширину под контентом. */
+@media (max-width: 1023.98px) {
+  .wrap {
+    padding: var(--pr-sp-3) 0 var(--pr-sp-8);
+    gap: var(--pr-d-gap);
+  }
+  .body {
+    background: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+  }
+  .next {
+    flex: 1 1 auto;
+  }
+}
+
+.stepError {
+  margin: 12px 0 0;
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-red);
+}
+
+.notice {
+  margin: 16px 0;
+  padding: 14px 16px;
+  border-radius: var(--pr-r-md);
+  background: var(--pr-sand);
+  font-size: var(--pr-fs-sm);
+  line-height: 1.4;
+}

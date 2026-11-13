@@ -1,0 +1,5 @@
+.hint {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+  margin: 0 0 var(--pr-sp-3);
+}

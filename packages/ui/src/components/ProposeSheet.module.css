@@ -1,0 +1,57 @@
+.itemLabel {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+  margin: 0 0 var(--pr-sp-2);
+}
+
+.variants {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-3);
+}
+
+.variantRow {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--pr-sp-2);
+  padding: var(--pr-sp-3);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-md);
+}
+
+.variantFields {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+  flex: 1;
+  min-width: 0;
+}
+
+.removeBtn {
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--pr-text-2);
+  min-width: var(--pr-touch-min);
+  min-height: var(--pr-touch-min);
+  display: grid;
+  place-items: center;
+  border-radius: var(--pr-r-md);
+  flex: none;
+}
+.removeBtn:hover {
+  background: var(--pr-cream);
+}
+
+.hint {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+  margin: 0;
+}
+
+.error {
+  color: var(--pr-red);
+  font-size: var(--pr-fs-sm);
+  margin: 0;
+}

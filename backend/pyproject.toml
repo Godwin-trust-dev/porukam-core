@@ -1,0 +1,206 @@
+[project]
+name = "porukam-backend"
+version = "0.1.0"
+description = "Trust Platform («По рукам») — backend (Django 5.2 modular monolith)"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "django>=5.2,<5.3",
+  "djangorestframework>=3.16,<3.17",
+  "django-environ>=0.11",
+  "psycopg[binary]>=3.2",
+  "celery>=5.4",
+  "redis>=5.0",
+  "drf-spectacular>=0.28",
+  "djangorestframework-simplejwt>=5.3",
+  "cryptography>=43",
+  "boto3>=1.35",
+  "structlog>=26.1.0",
+  # Google Drive BYO-бэкап (apps.evidence/apps.accounts, ADR-084) — первый
+  # реальный внешний HTTP-клиент в кодовой базе (весь остальной внешний ввод/
+  # вывод раньше был только Protocol+Fake); sync-клиент достаточен — вызовы
+  # синхронные внутри Django-view/services, отдельного event loop нет.
+  "httpx>=0.27",
+  "django-prometheus>=2.5.0",
+  "prometheus-client>=0.26.0",
+  # Прод-сервер core (docs/tasks/fundament-2.md ЭФ.7 п.1: "core
+  # (gunicorn/uvicorn)") — прод-конфиг.
+  "gunicorn>=23.0",
+  # Фото профиля (ADR-103): проверка/нормализация изображения, сброс EXIF,
+  # ресайз в WebP — apps/profiles/images.py.
+  "pillow>=10.4",
+  "pywebpush>=2.0",
+  "channels>=4.3.2",
+  "channels-redis>=4.3.0",
+  "uvicorn[standard]>=0.52.4",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8.3",
+  "pytest-django>=4.9",
+  "pytest-xdist>=3.6",
+  "hypothesis>=6.112",
+  "factory-boy>=3.3",
+  "ruff>=0.7",
+  "mypy>=1.13",
+  "django-stubs[compatible-mypy]>=5.1",
+  "djangorestframework-stubs>=3.15",
+  "import-linter>=2.1",
+  "pytest-asyncio>=1.4.0",
+  "daphne>=4.2.3",
+]
+
+[tool.uv]
+package = false
+
+# ---------------------------------------------------------------------------
+# ruff
+# ---------------------------------------------------------------------------
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["**/migrations/*.py"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "C4", "DJ", "SIM"]
+ignore = ["DJ001"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["config", "common", "apps", "services"]
+
+# ---------------------------------------------------------------------------
+# mypy — strict на services.py/models.py (§2.4 tech-spec), остальное мягче
+# ---------------------------------------------------------------------------
+[tool.mypy]
+python_version = "3.12"
+plugins = ["mypy_django_plugin.main"]
+mypy_path = "."
+exclude = "(migrations|tests)/"
+check_untyped_defs = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+
+[[tool.mypy.overrides]]
+module = [
+  "apps.*.services",
+  "apps.*.models",
+  "common.money",
+  "common.fsm",
+  "common.uuid7",
+  "common.crypto",
+  "common.outbox",
+  "common.relay",
+  "common.db_routers",
+  "services.audit_vault.api",
+  "services.audit_vault.canonical",
+  "apps.audit.client",
+]
+strict = true
+
+[[tool.mypy.overrides]]
+module = ["*.migrations.*"]
+ignore_errors = true
+
+[[tool.mypy.overrides]]
+module = ["celery.*", "environ.*", "boto3.*", "botocore.*", "PIL.*", "pywebpush", "channels.*", "channels_redis.*"]
+ignore_missing_imports = true
+
+[tool.django-stubs]
+django_settings_module = "config.settings.test"
+
+# ---------------------------------------------------------------------------
+# pytest / pytest-django
+# ---------------------------------------------------------------------------
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "config.settings.test"
+python_files = ["test_*.py", "*_test.py"]
+testpaths = ["apps", "common", "services", "tests"]
+addopts = "-n auto --reuse-db"
+markers = [
+  "e2e: сквозные сценарии поверх полного стека (не входят в быструю петлю)",
+]
+
+# ---------------------------------------------------------------------------
+# import-linter — контракт границ модулей (tech-spec.md §2.3, CLAUDE.md)
+# ---------------------------------------------------------------------------
+[tool.importlinter]
+root_package = "apps"
+include_external_packages = true
+
+[[tool.importlinter.contracts]]
+name = "catalog, jurisdictions, l10n и geo — нижний слой, ни от кого не зависят"
+type = "forbidden"
+source_modules = ["apps.catalog", "apps.jurisdictions", "apps.l10n", "apps.geo"]
+forbidden_modules = [
+  "apps.accounts", "apps.identity", "apps.social", "apps.entities",
+  "apps.authority", "apps.profiles", "apps.contracts", "apps.milestones",
+  "apps.payments", "apps.billing", "apps.disputes", "apps.warranty",
+  "apps.evidence", "apps.documents", "apps.reputation", "apps.links",
+  "apps.dashboards", "apps.marketplace", "apps.notifications",
+  "apps.deadlines", "apps.compliance", "apps.audit", "apps.backoffice",
+  "apps.messaging", "apps.analytics",
+]
+
+[[tool.importlinter.contracts]]
+name = "social зависит только от accounts"
+type = "forbidden"
+source_modules = ["apps.social"]
+forbidden_modules = [
+  "apps.identity", "apps.entities", "apps.authority", "apps.profiles",
+  "apps.contracts", "apps.milestones", "apps.payments", "apps.billing",
+  "apps.disputes", "apps.warranty", "apps.evidence", "apps.documents",
+  "apps.reputation", "apps.links", "apps.dashboards", "apps.marketplace",
+  "apps.notifications", "apps.deadlines", "apps.compliance", "apps.audit",
+  "apps.backoffice", "apps.messaging", "apps.analytics",
+]
+
+[[tool.importlinter.contracts]]
+name = "contracts не импортирует payments/disputes/messaging (подписаны на его события)"
+type = "forbidden"
+source_modules = ["apps.contracts"]
+forbidden_modules = ["apps.payments", "apps.disputes", "apps.messaging"]
+
+# ADR-130 (Э5). Контракт выше формально ловил бы и этот случай транзитивно
+# (apps.contracts.services статически импортирует apps.milestones.services),
+# но сообщение линтера указывало бы на contracts — на приложение, в котором
+# ничего не меняли. Отдельный контракт называет виновника прямо и
+# документирует ЕДИНСТВЕННОЕ разрешённое направление платёжного контура:
+# payments -> milestones, никогда наоборот. Обратная связь идёт через
+# зеркальные отметки на Milestone, которые пишет сам apps.payments
+# (apps/payments/services.py::_mirror_into_milestone), и через outbox.
+# ADR-145 (docs/tasks/marketing-metrics.md §9.1). Аналитика — читатель, а не
+# участник: она НЕ импортирует из apps.* вообще ничего, включая selectors и
+# services. Витрины считаются SQL-запросами по outbox и доменным таблицам —
+# тому же единственному источнику истины, из которого строятся хроника,
+# уведомления и журнал аудита (§1 п.4). Импорт чужого фасада завёл бы
+# аналитику в граф зависимостей продукта и сделал бы её причиной падений в
+# приложениях, которые о ней не знают.
+[[tool.importlinter.contracts]]
+name = "analytics ничего не импортирует из apps.* (читатель, а не участник — ADR-145)"
+type = "forbidden"
+source_modules = ["apps.analytics"]
+forbidden_modules = [
+  "apps.catalog", "apps.jurisdictions", "apps.l10n", "apps.geo", "apps.accounts",
+  "apps.identity", "apps.social", "apps.entities", "apps.authority",
+  "apps.profiles", "apps.contracts", "apps.milestones", "apps.payments",
+  "apps.billing", "apps.disputes", "apps.warranty", "apps.evidence",
+  "apps.documents", "apps.reputation", "apps.links", "apps.dashboards",
+  "apps.marketplace", "apps.notifications", "apps.deadlines",
+  "apps.compliance", "apps.audit", "apps.backoffice", "apps.messaging",
+  "apps.archive",
+]
+
+[[tool.importlinter.contracts]]
+name = "milestones не импортирует payments (обратная связь — зеркало + outbox, ADR-130)"
+type = "forbidden"
+source_modules = ["apps.milestones"]
+forbidden_modules = ["apps.payments"]
+
+# Примечание (этап 8, docs/plan.md, ADR-090): формальный import-linter-контракт
+# «dashboards — только selectors поверх остальных» рассмотрен и НЕ заведён —
+# ForbiddenContract проверяет импорты транзитивно (allow_indirect_imports=False
+# по умолчанию), а apps.dashboards.selectors легитимно доходит до чужих .models
+# ЧЕРЕЗ разрешённые .selectors (напр. apps.milestones.selectors сам импортирует
+# apps.contracts.models) — контракт не отличил бы это от прямого импорта и был
+# бы либо всегда красным, либо обвешан ignore_imports на каждую внутреннюю
+# зависимость. Дисциплина держится конвенцией кода (ADR-090 §4), не линтером.

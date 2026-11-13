@@ -1,0 +1,100 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(16, 31, 48, 0.55);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 100;
+  animation: pr-fade var(--pr-dur) var(--pr-ease);
+}
+/* Mobile-first (§9): выезжает снизу, во весь экран по ширине. */
+.sheet {
+  background: var(--pr-white);
+  border-radius: var(--pr-r-xl) var(--pr-r-xl) 0 0;
+  box-shadow: var(--pr-shadow-card);
+  width: 100%;
+  max-height: 88vh;
+  overflow: auto;
+  padding: var(--pr-sp-3) var(--pr-sp-5) var(--pr-sp-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-4);
+}
+.grabber {
+  width: 40px;
+  height: 4px;
+  border-radius: var(--pr-r-pill);
+  background: var(--pr-line);
+  align-self: center;
+  margin-bottom: var(--pr-sp-1);
+}
+.head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+}
+.title {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-ink);
+  margin: 0;
+}
+.closeBtn {
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--pr-text-2);
+  min-width: var(--pr-touch-min);
+  min-height: var(--pr-touch-min);
+  display: grid;
+  place-items: center;
+  border-radius: var(--pr-r-md);
+}
+.closeBtn:hover {
+  background: var(--pr-cream);
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-4);
+}
+.actions {
+  display: flex;
+  gap: var(--pr-sp-3);
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--pr-line);
+  padding-top: var(--pr-sp-3);
+}
+
+/* Desktop (§9): центрированная модалка, а не шторка. */
+@media (min-width: 640px) {
+  .overlay {
+    align-items: center;
+    padding: var(--pr-sp-4);
+  }
+  .sheet {
+    border-radius: var(--pr-r-xl);
+    max-width: 480px;
+    max-height: 90vh;
+    padding: var(--pr-sp-6);
+  }
+  .grabber {
+    display: none;
+  }
+}
+
+@keyframes pr-fade {
+  from {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .overlay {
+    animation: none;
+  }
+}

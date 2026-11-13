@@ -1,0 +1,113 @@
+{
+  "helpButton": "Gợi ý cho trường",
+  "onboarding": {
+    "handle": "Địa chỉ công khai của bạn trên Porukam — giống @tên trong ứng dụng nhắn tin. Đối tác tìm bạn qua nó và nó mở thẻ uy tín của bạn. Chữ Latin, chữ số, dấu chấm và gạch dưới.",
+    "name": "Tên mà bên kia thấy trong hợp đồng và trên thẻ của bạn. Chỉ tên hoặc họ và tên — như cách bạn giới thiệu trong công việc."
+  },
+  "contractNew": {
+    "title": "Tên ngắn của hợp đồng cho danh sách — ví dụ “Sửa bếp” hoặc “Logo cho quán cà phê”. Để trống thì dùng mô tả.",
+    "workDescription": "Chính xác cần làm gì: phạm vi, kết quả, thế nào là hoàn thành. Càng cụ thể, nghiệm thu càng dễ và càng ít tranh chấp.",
+    "locationType": "Công việc thực hiện ở đâu: tại bên đặt việc, tại bên thực hiện, từ xa hoặc tại một địa chỉ. Điều kiện ra vào và bàn giao phụ thuộc vào đó.",
+    "locationAddress": "Địa chỉ nơi làm việc — đường, tòa nhà, tầng và căn hộ nếu cần. Chỉ các bên hợp đồng thấy.",
+    "termType": "Cách tính thời hạn: theo ngày bắt đầu và kết thúc, hoặc theo số ngày kể từ khi ký.",
+    "start": "Ngày bên thực hiện bắt đầu công việc.",
+    "end": "Ngày công việc phải được bàn giao đầy đủ.",
+    "durationDays": "Công việc kéo dài bao nhiêu ngày dương lịch, tính từ ngày ký hợp đồng.",
+    "priceType": "Giá cố định cho toàn bộ hay thanh toán theo giai đoạn/đơn vị. Việc phức tạp nên chia giai đoạn.",
+    "currency": "Đơn vị tiền của mọi khoản trong hợp đồng. Một loại cho cả hợp đồng — không đổi được sau khi ký.",
+    "warrantyDays": "Sau nghiệm thu, bên thực hiện chịu trách nhiệm về lỗi của kết quả trong bao nhiêu ngày. 0 — không bảo hành.",
+    "acceptanceHours": "Bên đặt việc có bao nhiêu giờ để kiểm tra giai đoạn đã bàn giao. Không phản hồi đúng hạn — giai đoạn được tự động coi là nghiệm thu.",
+    "paymentMethod": "Các bên thanh toán thế nào: chuyển khoản, tiền mặt, cách khác. Nền tảng không giữ và không chuyển tiền — chỉ ghi nhận điều đã thỏa thuận và các sự kiện.",
+    "paymentOrder": "Mỗi giai đoạn được thanh toán khi nào: trước khi bắt đầu (trả trước) hay sau khi bên đặt việc nghiệm thu (trả sau). Áp dụng cho mọi giai đoạn của hợp đồng.",
+    "subcontract": "Bên thực hiện có được dùng người phụ hoặc bên thực hiện khác cho một phần công việc không.",
+    "premisesAccess": "Bên thực hiện có cần vào cơ sở của bên đặt việc không và với điều kiện gì (giờ, chìa khóa, có mặt).",
+    "portfolioConsent": "Bên đặt việc có cho phép đưa kết quả vào hồ sơ năng lực của bên thực hiện sau nghiệm thu không.",
+    "stages": "Chia công việc thành giai đoạn: mỗi giai đoạn bàn giao và nghiệm thu riêng, tổng các giai đoạn bằng giá trị hợp đồng. Việc nhỏ thì một giai đoạn là đủ.",
+    "stageTitle": "Giai đoạn này bàn giao gì — ví dụ “Bản nháp” hoặc “Lắp đặt”.",
+    "stageAmount": "Giá của riêng giai đoạn này. Tổng mọi giai đoạn phải khớp với giá hợp đồng.",
+    "stageDeadline": "Giai đoạn phải được bàn giao cho bên đặt việc kiểm tra trước ngày nào.",
+    "counterparty": "Bên kia là ai: tìm theo @tên hoặc chọn từ danh bạ đã lưu. Lời mời sẽ gửi đúng người này.",
+    "sale": {
+      "what": "Bán gì — tên món đồ như bạn mô tả với người mua: “iPhone 13 128 GB”, “Xe đạp Trek FX 2”.",
+      "description": "Tình trạng, phụ kiện kèm theo, đặc điểm — mọi thứ người mua cần biết trước khi giao dịch.",
+      "condition": "Mới, như mới, đã dùng có hao mòn — mô tả trung thực bảo vệ cả hai bên khi tranh chấp.",
+      "defects": "Lỗi và khiếm khuyết đã biết. Nếu không ghi gì, người mua có quyền kỳ vọng là không có.",
+      "completeness": "Bộ gồm những gì: hộp, sạc, giấy tờ, phụ kiện.",
+      "identifiers": "Số serial, IMEI, VIN, v.v. — để xác nhận đã giao đúng món đồ này.",
+      "householdPlot": "Đánh dấu nếu bán sản phẩm từ vườn nhà — ảnh hưởng đến chế độ thuế.",
+      "price": "Giá đầy đủ của món đồ. Phí giao hàng nếu có ghi riêng bên dưới.",
+      "deliveryType": "Cách giao: tự đến lấy, shipper, bưu điện hoặc công ty vận chuyển.",
+      "address": "Địa chỉ giao hoặc nhận. Chỉ các bên thấy.",
+      "deliveryPayer": "Ai trả phí giao hàng — người bán hay người mua.",
+      "tracking": "Có cần mã vận đơn không. Có mã thì dễ chứng minh đã gửi và đã nhận.",
+      "deliveryTerm": "Thời hạn giao: ngày cụ thể hoặc số ngày sau khi thanh toán.",
+      "deliveryDate": "Ngày phải giao món đồ cho người mua.",
+      "deliveryDays": "Bao nhiêu ngày để giao, tính từ ngày thanh toán.",
+      "inspectionHours": "Người mua có bao nhiêu giờ kiểm tra món đồ sau khi nhận trước khi giao dịch được coi là hoàn tất."
+    }
+  },
+  "settings": {
+    "displayName": "Tên mà bên đối tác thấy cạnh tên người dùng của bạn. Hãy viết như cách bên đặt việc biết đến bạn.",
+    "city": "Chú thích dạng văn bản tự do cho các thị trấn chưa có trong danh mục của chúng tôi — hiển thị trên thẻ của bạn, nhưng không ảnh hưởng đến tìm kiếm. Đặt khu vực làm việc có thể tìm kiếm của bạn bên dưới.",
+    "handle": "Địa chỉ công khai của bạn — người ta tìm bạn và mở thẻ uy tín của bạn qua nó. Từ 3 đến 20 ký tự: chữ Latin, chữ số, gạch dưới.",
+    "avatar": "Đối tác thấy ảnh trang cá nhân của bạn trong hợp đồng, phòng chat và trên thẻ của bạn. Gương mặt thật mời gọi giao dịch hơn một hình vẽ.",
+    "country": "Quốc gia có pháp luật điều chỉnh hợp đồng của bạn (thẩm quyền pháp lý). Không liên quan đến địa chỉ của bạn hay nơi bạn tìm việc, và tiền tệ cũng như thuế không phụ thuộc vào đó.",
+    "phone": "Số điện thoại giúp những người đã có nó tìm ra bạn. Số không hiển thị công khai trong trang cá nhân.",
+    "notif": {
+      "deals": "Lời mời vào hợp đồng, đề xuất thay đổi, ký kết, nghiệm thu giai đoạn — mọi thứ về tiến trình giao dịch.",
+      "chats": "Tin nhắn mới trong phòng chat của hợp đồng và trong các yêu cầu.",
+      "payments": "Thanh toán giai đoạn và xác nhận đối soát.",
+      "deadlines": "Nhắc thời hạn: thời hạn nghiệm thu sắp hết, ngày bàn giao giai đoạn đang đến gần.",
+      "disputes": "Tranh chấp được mở, phản hồi của các bên và quyết định về tranh chấp."
+    }
+  },
+  "stage": {
+    "totalCost": "Tổng chi phí công việc. Nếu bạn nhập, số tiền sẽ chia đều cho các giai đoạn — sau đó có thể sửa từng giai đoạn bằng tay.",
+    "title": "Giai đoạn này bàn giao gì — “Bản nháp bố cục”, “Lắp đặt”, “Lô đầu tiên”. Cả hai bên đều thấy tên và tên này vào hợp đồng.",
+    "amount": "Riêng giai đoạn này giá bao nhiêu. Tổng các giai đoạn phải khớp với giá hợp đồng — nếu không, hợp đồng không thể đóng băng.",
+    "duration": "Giai đoạn được cấp bao nhiêu ngày. Tính từ lúc giai đoạn bắt đầu, không phải từ khi ký hợp đồng.",
+    "checklist": "Tiêu chí nghiệm thu: bên đặt việc kiểm tra giai đoạn theo những mục nào. Hãy viết sao cho đo được — “hai lần sửa bố cục”, “tường không có vệt chảy”: mục như vậy gần như không còn gì để tranh cãi.",
+    "evidence": "Mục có đánh dấu “cần chứng cứ” chờ ảnh hoặc tệp đính kèm: thiếu nó sẽ có cảnh báo khi giao giai đoạn, nhưng việc giao không bị chặn. Chứng cứ nằm lại trong hồ sơ vụ việc của hợp đồng và có ích khi tranh chấp.",
+    "materials": {
+      "name": "Vật liệu lấy từ danh mục — như vậy tên và đơn vị đo trùng nhau ở cả hai bên. Không có thứ cần? Chọn “khác” và tự ghi.",
+      "customName": "Tên vật liệu theo lời của bạn, nếu danh mục không có.",
+      "quantity": "Cần bao nhiêu — bằng số, theo đơn vị đo đã chọn.",
+      "unit": "Đơn vị đo của số lượng: cái, mét, kilôgam, lít.",
+      "delivery": "Vật liệu về mất bao nhiêu ngày. Giúp thấy thời hạn giai đoạn có khả thi không.",
+      "deliveryBase": "Sự kiện dùng để tính thời hạn cung cấp: ký hợp đồng, tạm ứng hoặc bắt đầu giai đoạn. Nhờ vậy thời hạn không phụ thuộc vào ngày trên lịch.",
+      "suppliedBy": "Ai mua và mang vật liệu đến — bên đặt việc hay bên thực hiện. Bất đồng ở mục này là nguyên nhân ngưng trệ thường gặp.",
+      "price": "Giá một đơn vị vật liệu theo tiền tệ của hợp đồng. Với vật liệu do bên thực hiện cung cấp thì bắt buộc và lớn hơn không; vật liệu của bên đặt việc có thể bằng không."
+    }
+  },
+  "group": {
+    "handle": "Địa chỉ công khai của nhóm — giống @tên trong ứng dụng nhắn tin. Nó mở trang của nhóm và người ta dẫn liên kết tới nhóm bằng nó.",
+    "name": "Nhóm được gọi là gì với mọi người. Ai mở trang nhóm cũng thấy.",
+    "sphere": "Lĩnh vực hoạt động chính của nhóm. Người ta tìm nhóm theo lĩnh vực này và chọn thành viên theo đó.",
+    "geo": "Phạm vi của nhóm: toàn thế giới, một quốc gia hay một thành phố. Điều này quyết định ai thấy nhóm trong tìm kiếm.",
+    "country": "Quốc gia thuộc phạm vi. Bắt buộc nếu chọn phạm vi “quốc gia” hoặc “thành phố”.",
+    "city": "Thành phố chính của phạm vi. Bắt buộc khi phạm vi là “thành phố”.",
+    "description": "Nhóm nói về điều gì và bạn chờ ai: các bạn làm gì, có quy định nào, giúp thành viên ra sao.",
+    "visibility": "Nhóm mở thì ai cũng thấy và tìm được qua tìm kiếm; nhóm kín — chỉ thành viên và người có liên kết trực tiếp.",
+    "joinPolicy": "Cách vào nhóm: tự do bằng một nút bấm, hoặc gửi đơn và chủ nhóm duyệt.",
+    "links": "Liên kết tới nhóm ở nơi khác — trang, kênh, phòng chat. Tối đa 10, hiển thị trên trang nhóm.",
+    "logo": "Ảnh logo của nhóm: hiện trong tìm kiếm, trên thẻ và cạnh tên. Ảnh vuông trông đẹp nhất."
+  },
+  "portfolio": {
+    "title": "Đặt tên cho công việc này — “Bếp trong chung cư lắp ghép”, “Trang giới thiệu cho quán cà phê”.",
+    "sphere": "Lĩnh vực của công việc này. Người cần việc tương tự sẽ tìm thấy bạn theo đó.",
+    "startedAt": "Khi nào bạn bắt tay vào việc. Không bắt buộc, nhưng cùng với ngày hoàn thành sẽ thấy việc mất bao lâu.",
+    "completedAt": "Khi nào công việc hoàn thành. Bắt buộc: hồ sơ năng lực sắp xếp các công việc theo ngày này.",
+    "city": "Thành phố nơi thực hiện công việc. Giúp bên đặt việc ở gần chọn được bên thực hiện ở gần.",
+    "description": "Đã làm gì, xử lý những khó khăn nào, kết quả ra sao. Không giới hạn độ dài.",
+    "photos": "Tối đa 5 ảnh của công việc. Ảnh đầu là ảnh bìa trong danh sách; có thể đổi ảnh bìa bất cứ lúc nào."
+  },
+  "revision": {
+    "item": "Bạn đề xuất đổi điều khoản nào của hợp đồng. Danh sách gồm các trường của hợp đồng này; “khác” là văn bản tự do.",
+    "before": "Giá trị hiện tại lấy từ hợp đồng. Tự điền và không sửa được — để cả hai bên nhìn thấy cùng một thứ.",
+    "after": "Giá trị mới của điều khoản. Bên kia sẽ chấp nhận hoặc từ chối; chừng nào chưa đồng ý, hợp đồng vẫn giữ nguyên.",
+    "comment": "Vì sao cần thay đổi. Bên kia sẽ thấy bình luận — giải thích ngắn gọn giúp đồng ý nhanh hơn."
+  },
+  "signing": {
+    "declineComment": "Cụ thể điều gì chưa ổn và cần sửa gì. Bên kia sẽ thấy văn bản này và nó lưu lại trong lịch sử hợp đồng."
+  }
+}

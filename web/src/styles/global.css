@@ -1,0 +1,68 @@
+/* tokens.css подключается ПЕРВЫМ (ТЗ §5, README фирстиля), затем шрифты, затем база. */
+@import '@porukam/ui/styles/tokens.css';
+@import '@porukam/ui/styles/fonts.css';
+
+* {
+  box-sizing: border-box;
+}
+html {
+  /* Продукт светлый по замыслу, но «only light» Samsung Internet проигнорировал (прод 10.09): он красит
+     принудительно любой сайт без своей тёмной темы. Объявляем «light dark» — движок считает, что тёмная
+     тема есть, и не трогает страницу; дублирует <meta name="color-scheme"> в index.html. */
+  color-scheme: light dark;
+}
+input,
+textarea,
+select,
+button {
+  /* Нативные контролы при системной тёмной теме иначе взяли бы тёмные UA-стили — палитра одна, светлая. */
+  color-scheme: light;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: var(--pr-cream);
+  color: var(--pr-text);
+  font-family: var(--pr-font-body);
+  font-size: var(--pr-fs-body);
+  line-height: var(--pr-lh-normal);
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--pr-font-head);
+  letter-spacing: var(--pr-ls-head);
+  margin: 0;
+}
+a {
+  color: inherit;
+}
+:focus-visible {
+  outline: 3px solid var(--pr-amber-bright);
+  outline-offset: 2px;
+}
+.pr-eyebrow {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-fs-xs);
+  letter-spacing: var(--pr-ls-eyebrow);
+  text-transform: uppercase;
+  color: var(--pr-amber-deep);
+}
+.pr-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

@@ -1,0 +1,99 @@
+.wrap {
+  position: relative;
+  display: block;
+}
+.shell {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.input {
+  padding-inline-end: var(--pr-sp-8);
+}
+.chevron {
+  position: absolute;
+  inset-inline-end: var(--pr-sp-4);
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--pr-text-2);
+  display: grid;
+  place-items: center;
+  transition: transform var(--pr-dur) var(--pr-ease);
+}
+.chevronOpen {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* Список — inline под полем и В ПОТОКЕ (ни портала, ни absolute): внутри
+   прокручиваемых окон (Modal/Sheet) абсолютный слой обрезался бы их
+   overflow, а на мобиле с экранной клавиатурой выпрыгивал бы за экран. */
+.popup {
+  margin-top: var(--pr-sp-2);
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-md);
+  box-shadow: var(--pr-shadow-card);
+  max-height: 300px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  padding: var(--pr-sp-1);
+}
+.section {
+  display: flex;
+  flex-direction: column;
+}
+.section + .section {
+  border-top: 1px solid var(--pr-hairline);
+  margin-top: var(--pr-sp-1);
+  padding-top: var(--pr-sp-1);
+}
+.sectionTitle {
+  margin: 0;
+  padding: var(--pr-sp-2) var(--pr-d-row-pad-x) var(--pr-sp-1);
+  color: var(--pr-text-2);
+  font-size: var(--pr-d-fs-section);
+  font-weight: var(--pr-fw-semibold);
+  text-transform: none;
+}
+/* Компактная строка доски A: 15px основная + 13px серая вторая, тап-таргет
+   всё равно не ниже 44px (правило доступности §8). */
+.option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  padding: var(--pr-d-row-pad-y) var(--pr-d-row-pad-x);
+  min-height: var(--pr-touch-min);
+  border-radius: var(--pr-r-md);
+  cursor: pointer;
+  text-align: start;
+}
+.option:hover,
+.optionActive {
+  background: var(--pr-cream);
+}
+.optionSelected .optionMain {
+  font-weight: var(--pr-fw-semibold);
+}
+.optionMain {
+  color: var(--pr-ink);
+  font-size: var(--pr-d-fs-body);
+  line-height: var(--pr-d-lh);
+}
+.optionHint {
+  color: var(--pr-text-2);
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+}
+.noMatch {
+  margin: 0;
+  padding: var(--pr-d-row-pad-y) var(--pr-d-row-pad-x);
+  color: var(--pr-text-2);
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+}

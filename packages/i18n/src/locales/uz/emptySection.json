@@ -1,0 +1,12 @@
+{
+  "title": "«{{name}}» boʻlimi",
+  "text": "Bu boʻlimning ish maydoni tez orada paydo boʻladi.",
+  "feed": "Bu yerda bitimlaringiz va kontaktlaringiz boʻyicha voqealar lentasi boʻladi.",
+  "search": "Bu yerda katalogdan ijrochilar va buyurtmalarni qidirish boʻladi.",
+  "stages": "Bu yerda barcha bitimlaringiz bosqichlari yigʻiladi: nima topshirilmoqda, nima qabulda, qanday muddatlar ketmoqda.",
+  "payments": "Bu yerda bosqichlar va shartnomalar boʻyicha toʻlovlar tarixi — statuslar va tasdiqlar bilan — boʻladi.",
+  "disputes": "Bu yerda nizolaringiz boʻladi: har biri boʻyicha statuslar, muddatlar va dalillar.",
+  "reputation": "Bu yerda obroʻyingiz boʻladi: tasdiqlangan bitimlar va faktlarga asoslangan sharhlar.",
+  "chat": "Bu yerda bitimlar boʻyicha yozishmalar — shartnoma va bosqichlarga bogʻlangan — boʻladi.",
+  "groups": "Bu yerda birlashmalar boʻladi: umumiy manzil, aʼzolar va bitta nom ostidagi bitimlar."
+}

@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "표시 언어",
+  "globeTriggerAria": "표시 언어",
+  "rowLabel": "표시 언어",
+  "listTitle": "표시 언어",
+  "searchPlaceholder": "언어 검색…",
+  "searchAriaLabel": "언어 검색",
+  "searchClear": "검색 지우기",
+  "currentSectionTitle": "현재",
+  "allSectionTitle": "모든 언어",
+  "noResults": "언어를 찾을 수 없습니다",
+  "betaBadge": "자동 번역",
+  "betaTooltip": "자동 번역이라 정확하지 않을 수 있습니다",
+  "currentAria": "현재 언어",
+  "disabledToast": "{{lang}}은(는) 잠시 사용할 수 없습니다 · 영어로 표시합니다",
+  "closeLabel": "닫기",
+  "onboardingHint": "자동으로 인식했습니다 — 언제든 바꿀 수 있습니다",
+  "settingsRowLabel": "언어와 지역",
+  "settingsLanguageExplain": "앱의 표시 언어입니다. 계약의 공식 언어는 따로 선택합니다. 상대방에게는 번역이 보이지만, 서명되는 것은 공식 문안입니다.",
+  "loadErrorRetry": "다시 시도",
+  "loadError": "언어 목록을 불러올 수 없습니다"
+}

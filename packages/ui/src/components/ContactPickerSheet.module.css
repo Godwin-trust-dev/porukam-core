@@ -1,0 +1,38 @@
+/* «Искать … на платформе» — строка-действие того же роста, что строки списка
+   (тач-цель ≥ 44), но без плоскости: она продолжает список, а не спорит с ним. */
+.platformCta {
+  appearance: none;
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  inline-size: 100%;
+  min-block-size: var(--pr-touch-min);
+  padding: var(--pr-sp-2) var(--pr-sp-3);
+  background: var(--pr-cream);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-md);
+  color: var(--pr-teal-deep);
+  font: inherit;
+  font-weight: var(--pr-fw-medium);
+  text-align: start;
+  cursor: pointer;
+}
+.platformCta:hover {
+  background: var(--pr-white);
+}
+/* Длинный хендл не должен раздвигать шит на 360px — переносим по буквам. */
+.platformCtaText {
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+}
+.platform {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+  min-inline-size: 0;
+}
+.platformNote {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}

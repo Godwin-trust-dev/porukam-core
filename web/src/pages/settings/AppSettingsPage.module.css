@@ -1,0 +1,18 @@
+.wrap {
+  display: grid;
+  gap: var(--pr-sp-2);
+}
+
+.version {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+}
+.versionNumber {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.versionOk {
+  color: var(--pr-text-mute);
+  font-size: var(--pr-fs-xs);
+}

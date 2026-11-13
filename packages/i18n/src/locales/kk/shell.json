@@ -1,0 +1,12 @@
+{
+  "actorSwitcher": {
+    "triggerLabel": "Профильді ауыстыру",
+    "personalLabel": "Жеке",
+    "legalFormIp": "ЖК",
+    "legalFormOoo": "ЖШС",
+    "addOrg": "Ұйым қосу",
+    "groups": "Менің бірлестіктерім"
+  },
+  "sectionMenu": "Бөлімдер",
+  "logout": "Шығу"
+}

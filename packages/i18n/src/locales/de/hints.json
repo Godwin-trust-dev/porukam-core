@@ -1,0 +1,113 @@
+{
+  "helpButton": "Hinweis zum Feld",
+  "onboarding": {
+    "handle": "Ihre öffentliche Adresse bei Porukam – wie ein @Name im Messenger. Gegenparteien finden Sie darüber, und er öffnet Ihre Reputationskarte. Lateinische Buchstaben, Ziffern, Punkt und Unterstrich.",
+    "name": "Der Name, den die andere Seite im Vertrag und auf Ihrer Karte sieht. Nur Vorname oder Vor- und Nachname – so, wie Sie sich beruflich vorstellen."
+  },
+  "contractNew": {
+    "title": "Kurzer Vertragsname für die Liste – z. B. „Küchenrenovierung“ oder „Logo für ein Café“. Leer lassen – dann wird die Beschreibung verwendet.",
+    "workDescription": "Was genau zu tun ist: Umfang, Ergebnis, was als erledigt gilt. Je konkreter, desto leichter die Abnahme und desto weniger Streit.",
+    "locationType": "Wo die Arbeit stattfindet: beim Auftraggeber, beim Auftragnehmer, remote oder an einer Adresse. Davon hängen Zugangs- und Übergabebedingungen ab.",
+    "locationAddress": "Adresse des Arbeitsorts – Straße, Haus, ggf. Etage und Wohnung. Nur für die Vertragsparteien sichtbar.",
+    "termType": "Wie die Frist gezählt wird: nach Start- und Enddatum oder nach Tagen ab der Signatur.",
+    "start": "Das Datum, an dem der Auftragnehmer mit der Arbeit beginnt.",
+    "end": "Das Datum, bis zu dem die Arbeit vollständig geliefert sein muss.",
+    "durationDays": "Wie viele Kalendertage die Arbeit dauert, gezählt ab dem Tag der Signatur.",
+    "priceType": "Festpreis für den gesamten Umfang oder Zahlung pro Etappe/Einheit. Bei komplexen Arbeiten sind Etappen praktischer.",
+    "currency": "Die Währung aller Beträge im Vertrag. Eine pro Vertrag – nach der Signatur nicht änderbar.",
+    "warrantyDays": "Wie viele Tage nach der Abnahme der Auftragnehmer für Mängel haftet. 0 – keine Garantie.",
+    "acceptanceHours": "Wie viele Stunden der Auftraggeber zur Prüfung einer gelieferten Etappe hat. Keine Antwort in der Frist – die Etappe gilt automatisch als abgenommen.",
+    "paymentMethod": "Wie die Parteien abrechnen: Überweisung, bar, anders. Die Plattform hält und bewegt kein Geld – sie hält nur die Vereinbarung und die Fakten fest.",
+    "paymentOrder": "Wann jede Etappe bezahlt wird: vor Beginn (Vorauszahlung) oder nach der Abnahme durch den Auftraggeber (Zahlung nach Abnahme). Gilt für alle Etappen des Vertrags.",
+    "subcontract": "Ob der Auftragnehmer Helfer oder andere Auftragnehmer für Teile der Arbeit hinzuziehen darf.",
+    "premisesAccess": "Ob der Auftragnehmer Zugang zu den Räumen des Auftraggebers braucht und zu welchen Bedingungen (Zeiten, Schlüssel, Anwesenheit).",
+    "portfolioConsent": "Ob der Auftraggeber erlaubt, das Ergebnis nach der Abnahme im Portfolio des Auftragnehmers zu zeigen.",
+    "stages": "Teilen Sie die Arbeit in Etappen: jede wird einzeln geliefert und abgenommen, die Summe der Etappen entspricht dem Vertragspreis. Für kleine Aufträge reicht eine Etappe.",
+    "stageTitle": "Was in dieser Etappe geliefert wird – z. B. „Entwurf“ oder „Montage“.",
+    "stageAmount": "Der Preis nur dieser Etappe. Alle Etappen zusammen müssen dem Vertragspreis entsprechen.",
+    "stageDeadline": "Bis wann die Etappe dem Auftraggeber zur Prüfung geliefert sein muss.",
+    "counterparty": "Wer die andere Partei ist: Suche per @Handle oder aus gespeicherten Kontakten. Genau diese Person erhält die Einladung.",
+    "sale": {
+      "what": "Was verkauft wird – der Name des Gegenstands, wie Sie ihn einem Käufer beschreiben würden: „iPhone 13 128 GB“, „Fahrrad Trek FX 2“.",
+      "description": "Zustand, Lieferumfang, Besonderheiten – alles, was der Käufer vor dem Geschäft wissen sollte.",
+      "condition": "Neu, wie neu, gebraucht mit Spuren – eine ehrliche Zustandsbeschreibung schützt beide Seiten im Streitfall.",
+      "defects": "Bekannte Mängel und Defekte. Wird nichts angegeben, darf der Käufer erwarten, dass es keine gibt.",
+      "completeness": "Was dazugehört: Verpackung, Ladegerät, Dokumente, Zubehör.",
+      "identifiers": "Seriennummer, IMEI, FIN usw. – damit lässt sich belegen, dass genau dieser Gegenstand übergeben wurde.",
+      "householdPlot": "Ankreuzen, wenn Sie Erzeugnisse aus eigenem Hausgarten verkaufen – das wirkt sich auf die Besteuerung aus.",
+      "price": "Der volle Preis des Gegenstands. Kostenpflichtige Lieferung wird unten separat angegeben.",
+      "deliveryType": "Wie der Gegenstand übergeben wird: Abholung, Kurier, Post oder Spedition.",
+      "address": "Übergabe- oder Lieferadresse. Nur für die Parteien sichtbar.",
+      "deliveryPayer": "Wer die Lieferung bezahlt – Verkäufer oder Käufer.",
+      "tracking": "Ob eine Sendungsnummer nötig ist. Damit lassen sich Versand und Empfang leichter nachweisen.",
+      "deliveryTerm": "Übergabefrist: ein konkretes Datum oder Tage nach der Zahlung.",
+      "deliveryDate": "Das Datum, bis zu dem der Gegenstand dem Käufer übergeben sein muss.",
+      "deliveryDays": "Wie viele Tage für die Übergabe, gezählt ab dem Zahlungstag.",
+      "inspectionHours": "Wie viele Stunden der Käufer nach Erhalt zur Prüfung hat, bevor das Geschäft als abgeschlossen gilt."
+    }
+  },
+  "settings": {
+    "displayName": "Der Name, den Gegenparteien neben Ihrem @Handle sehen. Schreiben Sie ihn so, wie Ihre Kunden Sie kennen.",
+    "city": "Eine frei wählbare Bildunterschrift für Orte, die noch nicht in unserem Verzeichnis sind – wird auf Ihrer Karte angezeigt, beeinflusst die Suche aber nicht. Legen Sie unten Ihre durchsuchbare Arbeitsregion fest.",
+    "handle": "Ihre öffentliche Adresse – darüber findet man Sie und öffnet Ihre Reputationskarte. 3 bis 20 Zeichen: lateinische Buchstaben, Ziffern, Unterstrich.",
+    "avatar": "Das Profilfoto sehen Gegenparteien in Verträgen, Chats und auf Ihrer Karte. Ein echtes Gesicht lädt eher zum Geschäft ein als ein Bild.",
+    "country": "Das Land, nach dessen Recht Ihre Verträge geschlossen werden (Rechtsordnung). Hat nichts mit Ihrer Adresse oder dem Ort zu tun, an dem Sie nach Arbeit suchen, und Währungen und Steuern hängen nicht davon ab.",
+    "phone": "Die Nummer sorgt dafür, dass Sie per Telefon von denen gefunden werden, die sie bereits haben. Im Profil wird sie nicht veröffentlicht.",
+    "notif": {
+      "deals": "Einladungen in einen Vertrag, vorgeschlagene Änderungswünsche, Signatur, Abnahme von Etappen – alles zum Verlauf der Geschäfte.",
+      "chats": "Neue Nachrichten in Vertrags-Chats und in Anfragen.",
+      "payments": "Zahlungen für Etappen und Bestätigungen der Abrechnung.",
+      "deadlines": "Erinnerungen an Fristen: das Abnahmefenster läuft ab, der Liefertermin einer Etappe rückt näher.",
+      "disputes": "Eröffnung eines Streitfalls, Antworten der Parteien und Entscheidungen zum Streitfall."
+    }
+  },
+  "stage": {
+    "totalCost": "Gesamtkosten der Arbeiten. Wenn Sie sie angeben, wird der Betrag gleichmäßig auf die Etappen verteilt – jede Etappe können Sie danach von Hand anpassen.",
+    "title": "Was in dieser Etappe geliefert wird – „Rohentwurf“, „Montage“, „Erste Charge“. Den Namen sehen beide Seiten, und er steht im Vertrag.",
+    "amount": "Was genau diese Etappe kostet. Die Summe aller Etappen muss dem Vertragspreis entsprechen – sonst lässt sich der Vertrag nicht einfrieren.",
+    "duration": "Wie viele Tage für die Etappe vorgesehen sind. Gezählt wird ab Beginn der Etappe, nicht ab der Signatur des Vertrags.",
+    "checklist": "Abnahmekriterien: nach welchen Punkten der Auftraggeber die Etappe prüft. Formulieren Sie messbar – „zwei Korrekturrunden am Entwurf“, „Wände ohne Farbnasen“: darüber lässt sich kaum streiten.",
+    "evidence": "Ein Punkt mit der Markierung „Nachweis erforderlich“ erwartet ein angehängtes Foto oder eine Datei: fehlt beides, erscheint bei der Abgabe der Etappe eine Warnung, die Abgabe wird aber nicht blockiert. Nachweise bleiben in der Vertragsakte und helfen im Streitfall.",
+    "materials": {
+      "name": "Ein Material aus dem Katalog – so stimmen Bezeichnung und Maßeinheit auf beiden Seiten überein. Nicht dabei? Wählen Sie „anderes“ und tragen Sie es selbst ein.",
+      "customName": "Die Bezeichnung des Materials in eigenen Worten, wenn der Katalog nichts Passendes hat.",
+      "quantity": "Wie viel benötigt wird – als Zahl, in der gewählten Maßeinheit.",
+      "unit": "Die Maßeinheit der Menge: Stück, Meter, Kilogramm, Liter.",
+      "delivery": "Wie viele Tage die Lieferung des Materials dauert. Hilft einzuschätzen, ob die Frist der Etappe realistisch ist.",
+      "deliveryBase": "Das Ereignis, ab dem die Lieferfrist zählt: Vertragsunterzeichnung, Anzahlung oder Etappenbeginn. So hängt die Frist nicht von einem Kalenderdatum ab.",
+      "suppliedBy": "Wer das Material einkauft und bringt – der Auftraggeber oder der Auftragnehmer. Uneinigkeit an dieser Stelle ist eine häufige Ursache für Stillstand.",
+      "price": "Der Preis einer Einheit in der Vertragswährung. Bei einem vom Auftragnehmer gestellten Material ist er Pflicht und größer als null; ein Material des Auftraggebers darf null kosten."
+    }
+  },
+  "group": {
+    "handle": "Die öffentliche Adresse der Gruppe – wie ein @Name im Messenger. Darüber öffnet sich ihre Seite, und darüber wird auf sie verwiesen.",
+    "name": "Wie die Gruppe für Menschen heißt. Sichtbar für alle, die ihre Seite öffnen.",
+    "sphere": "Der Haupttätigkeitsbereich der Gruppe. Darüber wird sie in der Suche gefunden, und danach werden Mitglieder vorgeschlagen.",
+    "geo": "Die Reichweite der Gruppe: die ganze Welt, ein Land oder eine einzelne Stadt. Davon hängt ab, wem sie in der Suche angezeigt wird.",
+    "country": "Das Land der Reichweite. Pflichtfeld, wenn die Reichweite „Land“ oder „Stadt“ ist.",
+    "city": "Die wichtigste Stadt der Reichweite. Pflichtfeld bei der Reichweite „Stadt“.",
+    "description": "Worum es in der Gruppe geht und wen Sie erwarten: was Sie tun, welche Regeln gelten, wie Sie den Mitgliedern helfen.",
+    "visibility": "Eine offene Gruppe ist für alle sichtbar und über die Suche zu finden; eine geschlossene – nur für Mitglieder und über einen direkten Link.",
+    "joinPolicy": "Wie man hineinkommt: frei per Schaltfläche oder auf Antrag mit Zustimmung des Eigentümers.",
+    "links": "Links zur Gruppe in anderen Diensten – eine Seite, ein Kanal, ein Chat. Bis zu 10 Stück, sichtbar auf der Gruppenseite.",
+    "logo": "Das Logobild der Gruppe: sichtbar in der Suche, auf der Karte und neben dem Namen. Ein quadratisches Bild wirkt am besten."
+  },
+  "portfolio": {
+    "title": "Wie diese Arbeit heißen soll – „Küche im Plattenbau“, „Visitenkarten-Seite für ein Café“.",
+    "sphere": "Der Bereich, zu dem die Arbeit gehört. Darüber finden Ihre Arbeit diejenigen, die etwas Ähnliches brauchen.",
+    "startedAt": "Wann Sie die Arbeit übernommen haben. Nicht zwingend, aber zusammen mit dem Abschlussdatum zeigt es, wie lange die Sache gedauert hat.",
+    "completedAt": "Wann die Arbeit fertig war. Pflichtfeld: danach werden die Arbeiten im Portfolio sortiert.",
+    "city": "Die Stadt, in der die Arbeit ausgeführt wurde. Hilft Auftraggebern in der Nähe, jemanden aus der Umgebung zu wählen.",
+    "description": "Was gemacht wurde, welche Schwierigkeiten Sie gemeistert haben, was am Ende herauskam. Die Länge ist nicht begrenzt.",
+    "photos": "Bis zu 5 Fotos der Arbeit. Das erste ist das Titelbild in der Liste; das Titelbild lässt sich jederzeit wechseln."
+  },
+  "revision": {
+    "item": "Welche Vertragsbedingung Sie ändern möchten. In der Liste stehen die Felder dieses Vertrags; „anderes“ ist freier Text.",
+    "before": "Der aktuelle Wert aus dem Vertrag. Er wird automatisch eingesetzt und ist nicht änderbar – so sehen beide Seiten dasselbe.",
+    "after": "Der neue Wert der Bedingung. Die andere Seite nimmt ihn an oder lehnt ihn ab; bis zur Zustimmung bleibt der Vertrag unverändert.",
+    "comment": "Wozu die Änderung nötig ist. Den Kommentar sieht die andere Seite – eine kurze Erklärung beschleunigt die Zustimmung."
+  },
+  "signing": {
+    "declineComment": "Was genau nicht gepasst hat und was zu korrigieren ist. Den Text sieht die andere Seite, und er bleibt in der Vertragshistorie."
+  }
+}

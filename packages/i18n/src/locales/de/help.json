@@ -1,0 +1,134 @@
+{
+  "aboutTitle": "Was ist Porukam",
+  "faqTitle": "Fragen und Antworten",
+  "aboutLead": "Porukam macht aus einer mündlichen Absprache einen klaren Vertrag mit Etappen, Nachweisen und Reputation. Ohne Anwälte, ohne Gebühren – und das Geld läuft nie über die Plattform.",
+  "aboutSections": [
+    {
+      "title": "Für wen",
+      "text": "Für alle, die Arbeit auf Bestellung erledigen oder bestellen: Renovierung, Design, Entwicklung, Unterricht, Foto, Transport, Verkauf von Dingen, Miete, private Darlehen. Für zwei Privatpersonen, für eine Person und einen Einzelunternehmer, für Selbstständige."
+    },
+    {
+      "title": "So funktioniert es",
+      "text": "Sie erstellen einen Vertrag aus einer fertigen Vorlage, teilen die Arbeit in Etappen und laden die andere Seite per @Handle ein. Beide signieren. Danach wird jede Etappe nach Checkliste geliefert und abgenommen, und jeder Fakt – Signatur, Lieferung, Abnahme, Streit – wird festgehalten und fließt in die Reputation beider ein."
+    },
+    {
+      "title": "Was die Plattform nicht tut",
+      "text": "Sie hält und überweist kein Geld – Sie rechnen direkt auf dem gewählten Weg ab. Sie speichert keine Originaldateien – nur deren Fingerabdrücke. Sie verkauft Ihre Daten nicht und zeigt keine Werbung."
+    },
+    {
+      "title": "Gruppen",
+      "text": "Eine Gruppe ist eine gemeinsame Adresse für ein Team oder eine Community: Gilde (dauerhafte Berufsgemeinschaft, die füreinander bürgt), Clan (Projektteam aus 3–20 Personen), Community (offene Interessengruppe) oder Firmenschaufenster. Eine Gruppe hat ein eigenes @Handle, Logo, Bereich und Geografie, eine öffentliche Karte mit Mitgliedern; im Profil jedes Mitglieds ist die Zugehörigkeit sichtbar. Verträge schließen weiterhin Menschen – die Gruppe hilft, einander zu finden und das Team zu zeigen."
+    }
+  ],
+  "howTitle": "So geht’s",
+  "howItems": [
+    {
+      "title": "Vertrag erstellen",
+      "text": "Geschäfte → „Anlegen“. Wählen Sie die Vertragsart (Dienstleistung, Verkauf, Miete, Darlehen), füllen Sie das Formular aus – jedes Feld hat einen „?“-Hinweis. Geben Sie die Gegenpartei per @Handle an, teilen Sie in Etappen, wählen Sie die Zahlungsweise und senden Sie zur Signatur."
+    },
+    {
+      "title": "Gegenpartei einladen",
+      "text": "Im Schritt „Parteien“ das @Handle eingeben. Hat die Person noch kein Konto, schicken Sie ihr den Link zum Vertrag: Nach der Google-Anmeldung sieht sie ihn bei sich."
+    },
+    {
+      "title": "Signieren",
+      "text": "Vertrag öffnen → „Zum Signatur-Bildschirm“. Eingefrorene Version prüfen und signieren. Der Vertrag gilt, sobald beide Seiten signiert haben."
+    },
+    {
+      "title": "Änderung vor der Signatur vorschlagen",
+      "text": "Auf dem Prüfungsbildschirm einen Punkt wählen und eine Änderung vorschlagen. Die andere Seite nimmt an oder lehnt ab; nach der Einigung wird die Version neu eingefroren."
+    },
+    {
+      "title": "Etappe liefern",
+      "text": "Der Auftragnehmer öffnet die Etappe → „Liefern“, fügt Nachweise bei (Fotos, Dateien, Links) und sendet zur Abnahme."
+    },
+    {
+      "title": "Etappe abnehmen oder zurückgeben",
+      "text": "Der Auftraggeber öffnet die Etappe → Checkliste durchgehen → „Abnehmen“ oder „Zurückgeben“ mit Anmerkungen. Schweigt der Auftraggeber länger als die Prüffrist, gilt die Etappe automatisch als abgenommen."
+    },
+    {
+      "title": "Etappe bezahlen",
+      "text": "Nach der Abnahme überweist der Auftraggeber das Geld auf dem gewählten Weg direkt an den Auftragnehmer und markiert die Zahlung in der Etappe. Der Auftragnehmer bestätigt den Erhalt."
+    },
+    {
+      "title": "Streit eröffnen",
+      "text": "Wenn keine Einigung möglich ist – in der Etappe „Streit“ drücken. Beide Seiten fügen Nachweise bei; alles zuvor Festgehaltene liegt bereits vor."
+    },
+    {
+      "title": "Gegenpartei finden und Kontakt speichern",
+      "text": "Karte der Person über den @Handle-Link oder aus dem Vertrag öffnen → „Kontakt speichern“. Gegenparteien Ihrer Verträge landen automatisch in den Kontakten."
+    },
+    {
+      "title": "Eigene Karte teilen",
+      "text": "Profil → „Teilen“: Link der Form porukam.app/@ihrhandle und QR-Code. Auf der Karte nur Fakten: wie viele Geschäfte, wie abgenommen, ob es Streit gab."
+    },
+    {
+      "title": "Gruppe erstellen",
+      "text": "Gruppen → „Gruppe erstellen“. Wählen Sie ein @Handle (eines pro Gruppe, wird beim Erstellen festgelegt), Typ, Bereich und Geografie, fügen Sie Beschreibung, Links und Logo hinzu. Der Leiter bestätigt Anfragen, lädt per @Handle ein und ändert Einstellungen."
+    },
+    {
+      "title": "Einer Gruppe beitreten",
+      "text": "Finden Sie die Gruppe in der Suche (Name, @Handle oder Bereich) oder über den Link /@Handle. Offene Gruppe – „Beitreten“ sofort; geschlossene – „Beitreten“ sendet eine Anfrage an den Leiter. Austreten ist jederzeit möglich; der Leiter kann nicht austreten, bis er die Gruppe übergibt."
+    }
+  ],
+  "faqItems": [
+    {
+      "q": "Ist das kostenlos?",
+      "a": "Ja. Vertragsabschluss, Etappen, Nachweise, Reputation – ohne Gebühr und ohne Provision auf Zahlungen. Kostenpflichtige Funktionen, falls sie kommen, sind separat und optional."
+    },
+    {
+      "q": "Ist ein solcher Vertrag rechtsverbindlich?",
+      "a": "Der Vertrag wird in Schriftform mit einfacher elektronischer Signatur geschlossen: Beide Seiten bestätigen die eingefrorene Textversion, und der Dienst hält fest, wer wann was signiert hat. Diese Form ist in den meisten Ländern für Geschäfte zwischen Personen und Unternehmen anerkannt. Wo das Gesetz Notar oder staatliche Registrierung verlangt (z. B. Immobilien), ersetzt der Dienst diese Verfahren nicht."
+    },
+    {
+      "q": "Läuft Geld über die Plattform?",
+      "a": "Nein. Die Parteien rechnen direkt ab – per Überweisung, bar, wie vereinbart. Die Plattform hält die Verpflichtung, die Zahlung und die Empfangsbestätigung fest."
+    },
+    {
+      "q": "Was, wenn die andere Seite nicht antwortet?",
+      "a": "Jeder Schritt hat eine Frist. Prüft der Auftraggeber eine gelieferte Etappe nicht rechtzeitig, gilt sie automatisch als abgenommen. Signiert die Gegenpartei den Vertrag nie, bleibt er ein Entwurf – ohne Verpflichtungen."
+    },
+    {
+      "q": "Kann der Vertrag nach der Signatur geändert werden?",
+      "a": "Der signierte Text ist unveränderlich. Änderungen erfolgen durch einen Nachtrag, den beide Seiten signieren; die Versionshistorie bleibt erhalten."
+    },
+    {
+      "q": "Was ist Reputation und wer sieht sie?",
+      "a": "Fakten aus Ihren Geschäften: wie viele abgeschlossen, wie viele fristgerecht abgenommen, ob es Streit gab und wie er endete. Keine Bewertungen, keine Sterne. Die Sichtbarkeit der Karte und einzelner Felder bestimmen Sie selbst."
+    },
+    {
+      "q": "Wo werden meine Nachweisdateien gespeichert?",
+      "a": "Die Originale bleiben bei Ihnen und Ihrer Gegenpartei. Die Plattform speichert einen digitalen Fingerabdruck (Hash), ein Vorschaubild und den Zeitpunkt des Anhängens – genug, um zu beweisen, dass die Datei nicht verändert wurde."
+    },
+    {
+      "q": "Was sieht die Gegenpartei über mich?",
+      "a": "Den durch Ihr Konto bestätigten Namen, Ihren @Handle und Ihre Reputationskarte im von Ihnen erlaubten Umfang. Telefon, E-Mail und Bankdaten werden nie angezeigt – außer Sie tragen sie selbst in den Vertragstext ein."
+    },
+    {
+      "q": "Wie melde ich mich auf einem anderen Gerät an?",
+      "a": "Mit demselben Google-Konto. Die Sitzung hält 30 Tage ohne erneute Anmeldung, solange Sie den Dienst nutzen."
+    },
+    {
+      "q": "Wie lösche ich mein Konto?",
+      "a": "Profil → Einstellungen → Konto → Löschen. Personenbezogene Daten werden unwiderruflich vernichtet; Gegenparteien behalten ihre Exemplare gemeinsamer Verträge."
+    },
+    {
+      "q": "Funktioniert es auf dem Handy?",
+      "a": "Ja, es ist eine Web-App: porukam.app im Browser öffnen und zum Home-Bildschirm hinzufügen – dann verhält sie sich wie eine normale App, mit Benachrichtigungen."
+    },
+    {
+      "q": "Wie erreiche ich Sie?",
+      "a": "Schreiben Sie an hello@trust-dev.com – wir beantworten Fragen zum Dienst, zu Daten und Verträgen."
+    },
+    {
+      "q": "Was sind Gruppen und wozu?",
+      "a": "Eine Möglichkeit, ein Team oder eine Community unter einem Namen zu zeigen: Gilde, Clan, Community oder Firmenschaufenster. Ein Auftraggeber findet die Gruppe nach Bereich und Stadt, sieht die Mitglieder und ihre Reputationskarten und schließt den Vertrag mit einer konkreten Person. Für Auftragnehmer ist sie eine gemeinsame Adresse, an die Auftraggeber herangeführt werden und an der die Reputation jedes Einzelnen sichtbar ist."
+    },
+    {
+      "q": "Haftet eine Gruppe aus einem Vertrag?",
+      "a": "Nein. Vertragspartei ist immer eine konkrete Person bzw. ihr Einzelunternehmen/ihre Firma; sie signiert und haftet persönlich. Die Gruppe verwahrt kein Geld und gibt keine Garantien für Mitglieder – sie ist Schaufenster und Adresse, und die Reputation entsteht aus den Geschäften jedes Einzelnen."
+    }
+  ],
+  "socialTitle": "Wir in sozialen Netzwerken",
+  "backToProfile": "Profil"
+}

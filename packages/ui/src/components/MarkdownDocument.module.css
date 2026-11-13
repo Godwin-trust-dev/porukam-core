@@ -1,0 +1,99 @@
+.doc {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-3);
+  color: var(--pr-ink);
+  font-size: var(--pr-fs-sm);
+  line-height: var(--pr-lh-normal);
+  /* Длинные ссылки/адреса в юр-тексте не должны растягивать модалку. */
+  overflow-wrap: anywhere;
+}
+
+.h1 {
+  margin: 0;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h2);
+  line-height: var(--pr-lh-tight);
+}
+.h2 {
+  margin: var(--pr-sp-3) 0 0;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h3);
+  line-height: var(--pr-lh-tight);
+}
+.h3,
+.h4 {
+  margin: var(--pr-sp-2) 0 0;
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-body);
+}
+
+.paragraph {
+  margin: 0;
+}
+
+.rule {
+  width: 100%;
+  height: 1px;
+  margin: var(--pr-sp-2) 0;
+  border: none;
+  background: var(--pr-line);
+}
+
+.quote {
+  margin: 0;
+  padding-inline-start: var(--pr-sp-3);
+  border-inline-start: 3px solid var(--pr-line);
+  color: var(--pr-text-2);
+}
+
+.list {
+  margin: 0;
+  padding-inline-start: var(--pr-sp-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-1);
+}
+
+.tableWrap {
+  /* Таблица шире модалки на телефоне — скроллит она, не страница. */
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.table {
+  border-collapse: collapse;
+  font-size: var(--pr-fs-xs);
+  min-width: 100%;
+}
+.table th,
+.table td {
+  border: 1px solid var(--pr-line);
+  padding: var(--pr-sp-2);
+  text-align: start;
+  vertical-align: top;
+}
+.table th {
+  background: var(--pr-cream);
+  font-weight: var(--pr-fw-bold);
+}
+
+.link {
+  color: var(--pr-ink);
+  text-decoration: underline;
+}
+.link:hover,
+.link:focus-visible {
+  color: var(--pr-amber-deep);
+}
+
+.code {
+  /* Как в States/PassportHeader — токена моношрифта в tokens.css нет, системный. */
+  font-family: ui-monospace, monospace;
+  font-size: var(--pr-fs-xs);
+  background: var(--pr-cream);
+  border-radius: var(--pr-r-sm);
+  padding: 0 var(--pr-sp-1);
+}

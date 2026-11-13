@@ -1,0 +1,74 @@
+.wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+}
+
+.hit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--pr-touch-min);
+  height: var(--pr-touch-min);
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  flex: none;
+}
+.hit:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.hit:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: 2px;
+  border-radius: var(--pr-r-pill);
+}
+
+.track {
+  width: 44px;
+  height: 26px;
+  border-radius: var(--pr-r-pill);
+  background: var(--pr-line);
+  position: relative;
+  transition: background var(--pr-dur-fast) var(--pr-ease);
+}
+.on {
+  background: var(--pr-teal);
+}
+
+.thumb {
+  position: absolute;
+  top: 3px;
+  inset-inline-start: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--pr-white);
+  box-shadow: var(--pr-shadow-sm);
+  transition: transform var(--pr-dur-fast) var(--pr-ease);
+  display: block;
+}
+.on .thumb {
+  transform: translateX(18px);
+}
+
+/* «Вкл/Выкл» — только для скринридера (финал доска A: строка настройки —
+   подпись + тумблер, без слова у тумблера; состояние и так видно и озвучено
+   через aria-checked). */
+.stateText {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track,
+  .thumb {
+    transition: none;
+  }
+}

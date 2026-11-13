@@ -1,0 +1,14 @@
+{
+  "hook": "Porukam biến thỏa thuận miệng thành hợp đồng có hiệu lực pháp lý và dẫn giao dịch đi từng bước cho tới khi tất toán.",
+  "problem": "Thỏa thuận bằng lời thì dễ. Khó là về sau chứng minh đã thỏa thuận những gì, kết quả bàn giao khi nào và trả tiền cho điều gì. Porukam giữ bản ghi đó cho cả hai bên.",
+  "contractTitle": "Hợp đồng trong vài phút",
+  "contractText": "Chọn loại giao dịch: dịch vụ, bán, cho thuê hoặc cho vay. Trả lời các câu hỏi bằng ngôn ngữ thường ngày và nhận văn bản đã sẵn sàng. Bạn không phải tự viết câu chữ pháp lý.",
+  "stagesTitle": "Giai đoạn và nghiệm thu theo danh mục kiểm tra",
+  "stagesText": "Chia giao dịch thành các giai đoạn, mỗi giai đoạn kèm danh sách những việc phải làm. Bên thực hiện đánh dấu phần đã xong và đính kèm ảnh, bên đặt việc nghiệm thu giai đoạn hoặc trả lại kèm ý kiến. Cả hai bên luôn thấy giao dịch đang ở đâu và đến lượt ai.",
+  "paymentTitle": "Thanh toán gắn với kết quả",
+  "paymentText": "Thanh toán đi theo giai đoạn: đã nghiệm thu là đã trả. Chúng tôi không giữ tiền của bạn và không thu phí khi ký hợp đồng. Việc thanh toán vẫn nằm giữa hai bên, còn nền tảng ghi lại điều gì đã được nghiệm thu và thanh toán, vào lúc nào.",
+  "evidenceTitle": "Chứng cứ còn lại lâu dài",
+  "evidenceText": "Ảnh, tệp và tin nhắn được gắn với giai đoạn và niêm phong bằng dấu thời gian tin cậy. Hợp đồng đã ký thì không đổi, chỉ thay đổi qua phụ lục mà cả hai bên đều thấy và xác nhận. Nếu xảy ra tranh chấp, bạn có căn cứ để khép lại.",
+  "reputationTitle": "Uy tín dựng trên sự thật",
+  "reputationText": "Thẻ uy tín được lập từ những giao dịch đã hoàn tất, không phải từ những đánh giá mà ai cũng có thể viết về bất kỳ ai."
+}

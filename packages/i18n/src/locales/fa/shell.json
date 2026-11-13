@@ -1,0 +1,12 @@
+{
+  "actorSwitcher": {
+    "triggerLabel": "تغییر نمایه",
+    "personalLabel": "شخصی",
+    "legalFormIp": "کسب‌وکار انفرادی",
+    "legalFormOoo": "شرکت با مسئولیت محدود",
+    "addOrg": "افزودن سازمان",
+    "groups": "گروه‌های من"
+  },
+  "sectionMenu": "بخش‌ها",
+  "logout": "خروج"
+}

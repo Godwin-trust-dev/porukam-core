@@ -1,0 +1,466 @@
+{
+  "ar": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "نؤكد صحة مستنداتك إلى أجل غير مسمى. أما الملفات نفسها فنحتفظ بها لمدة عام — وبعد ذلك تصبح ملكك. تنتهي فترة الاحتفاظ بالنسخ الأصلية للعقد «{contract_title}» في {expires_at}: نزّل نسخك.",
+        "subject": "نزّل نسخ الأدلة: فترة الاحتفاظ على وشك الانتهاء"
+      },
+      "evidence.archived": {
+        "body": "نُقلت النسخ الأصلية لأدلة العقد «{contract_title}» إلى الأرشيف: انتهت فترة التخزين النشط. تُحفظ قيم التجزئة والصور المصغّرة إلى أجل غير مسمى، وتبقى النسخ الأصلية متاحة حتى {archive_until}.",
+        "subject": "نُقلت الأدلة إلى الأرشيف"
+      },
+      "evidence.shredded": {
+        "body": "انتهت فترة الاحتفاظ بالنسخ الأصلية للعقد «{contract_title}» — وحُذفت الملفات. تُحفظ قيم التجزئة والأختام الزمنية والصور المصغّرة إلى أجل غير مسمى: ما زلنا نؤكد صحة النسخ التي نزّلتها سابقًا.",
+        "subject": "حُذفت النسخ الأصلية للأدلة بانتهاء فترة الاحتفاظ"
+      }
+    }
+  },
+  "az": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "Sənədlərinizin həqiqiliyini müddətsiz təsdiq edirik. Faylların özünü bir il saxlayırıq — sonra onlar sizindir. «{contract_title}» müqaviləsi üzrə əsl nüsxələrin saxlama müddəti {expires_at} bitir: surətlərini yükləyin.",
+        "subject": "Sübutların surətlərini yükləyin: saxlama müddəti bitir"
+      },
+      "evidence.archived": {
+        "body": "«{contract_title}» müqaviləsi üzrə sübutların əsl nüsxələri arxivə köçürüldü: aktiv saxlama müddəti bitdi. Heşlər və miniatürlər müddətsiz saxlanılır, əsl nüsxələr {archive_until} tarixinədək əlçatandır.",
+        "subject": "Sübutlar arxivə köçürüldü"
+      },
+      "evidence.shredded": {
+        "body": "«{contract_title}» müqaviləsi üzrə əsl nüsxələrin saxlama müddəti bitdi — fayllar silindi. Heşlər, vaxt möhürləri və miniatürlər müddətsiz saxlanılır: əvvəl yüklənmiş surətlərin həqiqiliyini yenə də təsdiq edirik.",
+        "subject": "Saxlama müddəti bitdiyinə görə sübutların əsl nüsxələri silindi"
+      }
+    }
+  },
+  "bn": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "আপনার নথির সত্যতা আমরা অনির্দিষ্টকাল নিশ্চিত করি। ফাইলগুলো নিজে আমরা এক বছর রাখি — এরপর সেগুলো আপনার। চুক্তি «{contract_title}»-এর মূল ফাইলের সংরক্ষণ মেয়াদ {expires_at} শেষ হচ্ছে: আপনার কপি ডাউনলোড করুন।",
+        "subject": "প্রমাণের কপি ডাউনলোড করুন: সংরক্ষণের মেয়াদ শেষ হচ্ছে"
+      },
+      "evidence.archived": {
+        "body": "চুক্তি «{contract_title}»-এর প্রমাণের মূল ফাইলগুলো আর্কাইভে স্থানান্তরিত হয়েছে: সক্রিয় সংরক্ষণের মেয়াদ শেষ। হ্যাশ ও থাম্বনেইল অনির্দিষ্টকাল রাখা হয়; মূল ফাইল {archive_until} পর্যন্ত পাওয়া যাবে।",
+        "subject": "প্রমাণ আর্কাইভে স্থানান্তরিত"
+      },
+      "evidence.shredded": {
+        "body": "চুক্তি «{contract_title}»-এর মূল ফাইলের সংরক্ষণ মেয়াদ শেষ — ফাইলগুলো মুছে ফেলা হয়েছে। হ্যাশ, টাইমস্ট্যাম্প ও থাম্বনেইল অনির্দিষ্টকাল সংরক্ষিত: আগে ডাউনলোড করা কপির সত্যতা আমরা এখনও নিশ্চিত করি।",
+        "subject": "সংরক্ষণ মেয়াদ শেষে প্রমাণের মূল ফাইল মুছে ফেলা হয়েছে"
+      }
+    }
+  },
+  "de": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "Die Echtheit Ihrer Dokumente bestätigen wir unbefristet. Die Dateien selbst bewahren wir ein Jahr auf — danach gehören sie Ihnen. Die Aufbewahrungsfrist der Originale zum Vertrag „{contract_title}“ endet am {expires_at}: laden Sie sich Kopien herunter.",
+        "subject": "Laden Sie Kopien Ihrer Nachweise herunter: Aufbewahrungsfrist läuft ab"
+      },
+      "evidence.archived": {
+        "body": "Die Originale der Nachweise zum Vertrag „{contract_title}“ wurden ins Archiv verschoben: die Frist der aktiven Speicherung ist abgelaufen. Hashes und Vorschaubilder werden unbefristet aufbewahrt, die Originale sind bis {archive_until} verfügbar.",
+        "subject": "Nachweise ins Archiv verschoben"
+      },
+      "evidence.shredded": {
+        "body": "Die Aufbewahrungsfrist der Originale zum Vertrag „{contract_title}“ ist abgelaufen — die Dateien wurden gelöscht. Hashes, Zeitstempel und Vorschaubilder bleiben unbefristet erhalten: die Echtheit zuvor heruntergeladener Kopien bestätigen wir weiterhin.",
+        "subject": "Originale der Nachweise nach Fristablauf gelöscht"
+      }
+    }
+  },
+  "en": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "We confirm the authenticity of your documents indefinitely. The files themselves we keep for a year — after that they are yours. The retention period for the originals under the contract “{contract_title}” ends on {expires_at}: download your copies.",
+        "subject": "Download your evidence copies: retention period is ending"
+      },
+      "evidence.archived": {
+        "body": "The original evidence files under the contract “{contract_title}” have been moved to the archive: the hot-storage period has ended. Hashes and thumbnails are kept indefinitely; the originals remain available until {archive_until}.",
+        "subject": "Evidence moved to archive"
+      },
+      "evidence.shredded": {
+        "body": "The retention period for the originals under the contract “{contract_title}” has ended — the files have been deleted. Hashes, timestamps and thumbnails are kept indefinitely: we still confirm the authenticity of any copies you downloaded earlier.",
+        "subject": "Original evidence files deleted at end of retention"
+      }
+    }
+  },
+  "es": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "La autenticidad de sus documentos la confirmamos indefinidamente. Los archivos en sí los guardamos un año; después son suyos. El plazo de conservación de los originales del contrato «{contract_title}» termina el {expires_at}: descargue sus copias.",
+        "subject": "Descargue copias de sus pruebas: el plazo de conservación termina"
+      },
+      "evidence.archived": {
+        "body": "Los originales de las pruebas del contrato «{contract_title}» se han trasladado al archivo: el plazo de almacenamiento activo ha terminado. Los hashes y miniaturas se conservan indefinidamente; los originales están disponibles hasta {archive_until}.",
+        "subject": "Pruebas trasladadas al archivo"
+      },
+      "evidence.shredded": {
+        "body": "El plazo de conservación de los originales del contrato «{contract_title}» ha terminado: los archivos se han eliminado. Los hashes, marcas de tiempo y miniaturas se conservan indefinidamente: seguimos confirmando la autenticidad de las copias descargadas anteriormente.",
+        "subject": "Originales de las pruebas eliminados al vencer el plazo"
+      }
+    }
+  },
+  "fa": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "اصالت اسناد شما را بدون محدودیت زمانی تأیید می‌کنیم. خود فایل‌ها را یک سال نگه می‌داریم — پس از آن متعلق به شماست. مهلت نگهداری نسخه‌های اصلی قرارداد «{contract_title}» در {expires_at} به پایان می‌رسد: نسخه‌های خود را دانلود کنید.",
+        "subject": "نسخه‌های مدارک خود را دانلود کنید: مهلت نگهداری رو به پایان است"
+      },
+      "evidence.archived": {
+        "body": "نسخه‌های اصلی مدارک قرارداد «{contract_title}» به بایگانی منتقل شد: دوره نگهداری فعال به پایان رسید. هش‌ها و تصاویر بندانگشتی بدون محدودیت زمانی نگهداری می‌شوند؛ نسخه‌های اصلی تا {archive_until} در دسترس هستند.",
+        "subject": "مدارک به بایگانی منتقل شد"
+      },
+      "evidence.shredded": {
+        "body": "مهلت نگهداری نسخه‌های اصلی قرارداد «{contract_title}» به پایان رسید — فایل‌ها حذف شدند. هش‌ها، مهرهای زمانی و تصاویر بندانگشتی بدون محدودیت زمانی حفظ می‌شوند: اصالت نسخه‌هایی را که پیش‌تر دانلود کرده‌اید همچنان تأیید می‌کنیم.",
+        "subject": "نسخه‌های اصلی مدارک با پایان مهلت نگهداری حذف شد"
+      }
+    }
+  },
+  "fr": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "Nous attestons l'authenticité de vos documents sans limite de durée. Les fichiers eux-mêmes sont conservés un an — ensuite ils vous appartiennent. La durée de conservation des originaux du contrat « {contract_title} » prend fin le {expires_at} : téléchargez vos copies.",
+        "subject": "Téléchargez vos copies de preuves : la durée de conservation prend fin"
+      },
+      "evidence.archived": {
+        "body": "Les originaux des preuves du contrat « {contract_title} » ont été transférés aux archives : la période de stockage actif est terminée. Les empreintes et miniatures sont conservées sans limite ; les originaux restent disponibles jusqu'au {archive_until}.",
+        "subject": "Preuves transférées aux archives"
+      },
+      "evidence.shredded": {
+        "body": "La durée de conservation des originaux du contrat « {contract_title} » est écoulée — les fichiers ont été supprimés. Empreintes, horodatages et miniatures sont conservés sans limite : nous attestons toujours l'authenticité des copies téléchargées auparavant.",
+        "subject": "Originaux des preuves supprimés à l'échéance"
+      }
+    }
+  },
+  "he": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "את אמיתות המסמכים שלכם אנו מאשרים ללא הגבלת זמן. את הקבצים עצמם אנו שומרים שנה — לאחר מכן הם שלכם. תקופת השמירה של המקורים בחוזה «{contract_title}» מסתיימת ב-{expires_at}: הורידו לעצמכם עותקים.",
+        "subject": "הורידו עותקים של הראיות: תקופת השמירה מסתיימת"
+      },
+      "evidence.archived": {
+        "body": "המקורים של הראיות בחוזה «{contract_title}» הועברו לארכיון: תקופת האחסון הפעיל הסתיימה. גיבובים ותמונות ממוזערות נשמרים ללא הגבלת זמן; המקורים זמינים עד {archive_until}.",
+        "subject": "הראיות הועברו לארכיון"
+      },
+      "evidence.shredded": {
+        "body": "תקופת השמירה של המקורים בחוזה «{contract_title}» הסתיימה — הקבצים נמחקו. גיבובים, חותמות זמן ותמונות ממוזערות נשמרים ללא הגבלת זמן: אנו ממשיכים לאשר את אמיתות העותקים שהורדתם קודם.",
+        "subject": "מקורי הראיות נמחקו בתום תקופת השמירה"
+      }
+    }
+  },
+  "hi": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "आपके दस्तावेज़ों की प्रामाणिकता की पुष्टि हम असीमित समय तक करते हैं। फ़ाइलें स्वयं हम एक वर्ष रखते हैं — उसके बाद वे आपकी हैं। अनुबंध «{contract_title}» के मूल दस्तावेज़ों की संरक्षण अवधि {expires_at} को समाप्त हो रही है: अपनी प्रतियाँ डाउनलोड करें।",
+        "subject": "साक्ष्य की प्रतियाँ डाउनलोड करें: संरक्षण अवधि समाप्त हो रही है"
+      },
+      "evidence.archived": {
+        "body": "अनुबंध «{contract_title}» के साक्ष्यों के मूल दस्तावेज़ संग्रह में स्थानांतरित कर दिए गए: सक्रिय भंडारण अवधि समाप्त हुई। हैश और थंबनेल असीमित समय तक रखे जाते हैं; मूल दस्तावेज़ {archive_until} तक उपलब्ध हैं।",
+        "subject": "साक्ष्य संग्रह में स्थानांतरित"
+      },
+      "evidence.shredded": {
+        "body": "अनुबंध «{contract_title}» के मूल दस्तावेज़ों की संरक्षण अवधि समाप्त हो गई — फ़ाइलें हटा दी गईं। हैश, टाइमस्टैम्प और थंबनेल असीमित समय तक सुरक्षित हैं: पहले डाउनलोड की गई प्रतियों की प्रामाणिकता की पुष्टि हम अब भी करते हैं।",
+        "subject": "संरक्षण अवधि समाप्त होने पर साक्ष्यों के मूल दस्तावेज़ हटा दिए गए"
+      }
+    }
+  },
+  "hy": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "Ձեր փաստաթղթերի իսկությունը հաստատում ենք անժամկետ։ Ֆայլերն իրենք պահում ենք մեկ տարի, այնուհետև դրանք ձերն են։ «{contract_title}» պայմանագրի բնօրինակների պահպանման ժամկետն ավարտվում է {expires_at}. ներբեռնեք ձեր պատճենները։",
+        "subject": "Ներբեռնեք ապացույցների պատճենները. պահպանման ժամկետն ավարտվում է"
+      },
+      "evidence.archived": {
+        "body": "«{contract_title}» պայմանագրի ապացույցների բնօրինակները տեղափոխվել են արխիվ. ակտիվ պահպանման ժամկետն ավարտվել է։ Հեշերն ու մանրապատկերները պահվում են անժամկետ, բնօրինակները հասանելի են մինչև {archive_until}։",
+        "subject": "Ապացույցները տեղափոխվել են արխիվ"
+      },
+      "evidence.shredded": {
+        "body": "«{contract_title}» պայմանագրի բնօրինակների պահպանման ժամկետն ավարտվել է. ֆայլերը ջնջվել են։ Հեշերը, ժամանակի դրոշմները և մանրապատկերները պահպանվում են անժամկետ. նախկինում ներբեռնված պատճենների իսկությունը շարունակում ենք հաստատել։",
+        "subject": "Ապացույցների բնօրինակները ջնջվել են պահպանման ժամկետի ավարտով"
+      }
+    }
+  },
+  "id": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "Keaslian dokumen Anda kami konfirmasi tanpa batas waktu. Berkasnya sendiri kami simpan satu tahun — setelah itu milik Anda. Masa penyimpanan berkas asli untuk kontrak «{contract_title}» berakhir pada {expires_at}: unduh salinan Anda.",
+        "subject": "Unduh salinan bukti Anda: masa penyimpanan akan berakhir"
+      },
+      "evidence.archived": {
+        "body": "Berkas asli bukti untuk kontrak «{contract_title}» telah dipindahkan ke arsip: masa penyimpanan aktif berakhir. Hash dan thumbnail disimpan tanpa batas waktu; berkas asli tersedia hingga {archive_until}.",
+        "subject": "Bukti dipindahkan ke arsip"
+      },
+      "evidence.shredded": {
+        "body": "Masa penyimpanan berkas asli untuk kontrak «{contract_title}» telah berakhir — berkas dihapus. Hash, stempel waktu, dan thumbnail disimpan tanpa batas waktu: kami tetap mengonfirmasi keaslian salinan yang Anda unduh sebelumnya.",
+        "subject": "Berkas asli bukti dihapus setelah masa penyimpanan berakhir"
+      }
+    }
+  },
+  "it": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "L'autenticità dei tuoi documenti la confermiamo a tempo indeterminato. I file in sé li conserviamo per un anno — poi sono tuoi. Il periodo di conservazione degli originali del contratto «{contract_title}» scade il {expires_at}: scarica le tue copie.",
+        "subject": "Scarica le copie delle prove: il periodo di conservazione sta per scadere"
+      },
+      "evidence.archived": {
+        "body": "Gli originali delle prove del contratto «{contract_title}» sono stati trasferiti in archivio: il periodo di conservazione attiva è terminato. Hash e miniature sono conservati a tempo indeterminato; gli originali restano disponibili fino al {archive_until}.",
+        "subject": "Prove trasferite in archivio"
+      },
+      "evidence.shredded": {
+        "body": "Il periodo di conservazione degli originali del contratto «{contract_title}» è scaduto: i file sono stati eliminati. Hash, marche temporali e miniature sono conservati a tempo indeterminato: continuiamo a confermare l'autenticità delle copie scaricate in precedenza.",
+        "subject": "Originali delle prove eliminati alla scadenza"
+      }
+    }
+  },
+  "ja": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "お客様の書類の真正性は無期限に証明します。ファイル自体の保管は1年間で、その後はお客様のものです。契約「{contract_title}」の原本の保管期間は{expires_at}に終了します。控えをダウンロードしてください。",
+        "subject": "証拠の控えをダウンロードしてください：保管期間が終了します"
+      },
+      "evidence.archived": {
+        "body": "契約「{contract_title}」の証拠の原本をアーカイブに移動しました。アクティブ保管期間が終了したためです。ハッシュとサムネイルは無期限に保持され、原本は{archive_until}まで利用できます。",
+        "subject": "証拠をアーカイブに移動しました"
+      },
+      "evidence.shredded": {
+        "body": "契約「{contract_title}」の原本の保管期間が終了したため、ファイルを削除しました。ハッシュ、タイムスタンプ、サムネイルは無期限に保持され、以前にダウンロードした控えの真正性は引き続き証明します。",
+        "subject": "保管期間終了により証拠の原本を削除しました"
+      }
+    }
+  },
+  "ka": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "თქვენი დოკუმენტების ნამდვილობას უვადოდ ვადასტურებთ. თავად ფაილებს ერთი წელი ვინახავთ — შემდეგ ისინი თქვენია. «{contract_title}» ხელშეკრულების ორიგინალების შენახვის ვადა იწურება {expires_at}: ჩამოტვირთეთ თქვენი ასლები.",
+        "subject": "ჩამოტვირთეთ მტკიცებულებების ასლები: შენახვის ვადა იწურება"
+      },
+      "evidence.archived": {
+        "body": "«{contract_title}» ხელშეკრულების მტკიცებულებების ორიგინალები არქივში გადატანილია: აქტიური შენახვის ვადა ამოიწურა. ჰეშები და მინიატურები უვადოდ ინახება, ორიგინალები ხელმისაწვდომია {archive_until}-მდე.",
+        "subject": "მტკიცებულებები არქივში გადატანილია"
+      },
+      "evidence.shredded": {
+        "body": "«{contract_title}» ხელშეკრულების ორიგინალების შენახვის ვადა ამოიწურა — ფაილები წაშლილია. ჰეშები, დროის ნიშნულები და მინიატურები უვადოდ შენახულია: ადრე ჩამოტვირთული ასლების ნამდვილობას კვლავ ვადასტურებთ.",
+        "subject": "მტკიცებულებების ორიგინალები წაშლილია შენახვის ვადის ამოწურვის გამო"
+      }
+    }
+  },
+  "kk": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "Құжаттарыңыздың түпнұсқалығын мерзімсіз растаймыз. Файлдардың өзін бір жыл сақтаймыз — одан кейін олар сіздікі. «{contract_title}» шарты бойынша түпнұсқаларды сақтау мерзімі {expires_at} аяқталады: көшірмелерін жүктеп алыңыз.",
+        "subject": "Дәлелдемелердің көшірмелерін жүктеп алыңыз: сақтау мерзімі аяқталады"
+      },
+      "evidence.archived": {
+        "body": "«{contract_title}» шарты бойынша дәлелдемелердің түпнұсқалары мұрағатқа көшірілді: белсенді сақтау мерзімі аяқталды. Хештер мен нобайлар мерзімсіз сақталады, түпнұсқалар {archive_until} дейін қолжетімді.",
+        "subject": "Дәлелдемелер мұрағатқа көшірілді"
+      },
+      "evidence.shredded": {
+        "body": "«{contract_title}» шарты бойынша түпнұсқаларды сақтау мерзімі аяқталды — файлдар жойылды. Хештер, уақыт белгілері мен нобайлар мерзімсіз сақталды: бұрын жүктелген көшірмелердің түпнұсқалығын әлі де растаймыз.",
+        "subject": "Сақтау мерзімі аяқталғандықтан дәлелдемелердің түпнұсқалары жойылды"
+      }
+    }
+  },
+  "ko": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "귀하의 문서의 진위는 기한 없이 확인해 드립니다. 파일 자체는 1년간 보관하며, 그 이후에는 귀하의 것입니다. 계약 «{contract_title}»의 원본 보관 기간이 {expires_at}에 종료됩니다. 사본을 내려받으세요.",
+        "subject": "증거 사본을 내려받으세요: 보관 기간이 곧 종료됩니다"
+      },
+      "evidence.archived": {
+        "body": "계약 «{contract_title}»의 증거 원본이 보관소로 이동되었습니다. 활성 보관 기간이 종료되었습니다. 해시와 미리보기는 기한 없이 보관되며, 원본은 {archive_until}까지 이용할 수 있습니다.",
+        "subject": "증거가 보관소로 이동되었습니다"
+      },
+      "evidence.shredded": {
+        "body": "계약 «{contract_title}»의 원본 보관 기간이 종료되어 파일이 삭제되었습니다. 해시, 타임스탬프, 미리보기는 기한 없이 보존됩니다. 이전에 내려받은 사본의 진위는 계속 확인해 드립니다.",
+        "subject": "보관 기간 종료로 증거 원본이 삭제되었습니다"
+      }
+    }
+  },
+  "pl": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "Autentyczność Twoich dokumentów potwierdzamy bezterminowo. Same pliki przechowujemy rok — potem są Twoje. Okres przechowywania oryginałów do umowy „{contract_title}” kończy się {expires_at}: pobierz swoje kopie.",
+        "subject": "Pobierz kopie dowodów: okres przechowywania dobiega końca"
+      },
+      "evidence.archived": {
+        "body": "Oryginały dowodów do umowy „{contract_title}” zostały przeniesione do archiwum: okres przechowywania aktywnego minął. Skróty i miniatury przechowujemy bezterminowo; oryginały są dostępne do {archive_until}.",
+        "subject": "Dowody przeniesione do archiwum"
+      },
+      "evidence.shredded": {
+        "body": "Okres przechowywania oryginałów do umowy „{contract_title}” minął — pliki zostały usunięte. Skróty, znaczniki czasu i miniatury zachowujemy bezterminowo: nadal potwierdzamy autentyczność wcześniej pobranych kopii.",
+        "subject": "Oryginały dowodów usunięte po upływie okresu przechowywania"
+      }
+    }
+  },
+  "pt-BR": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "A autenticidade dos seus documentos confirmamos por tempo indeterminado. Os arquivos em si guardamos por um ano — depois são seus. O prazo de retenção dos originais do contrato “{contract_title}” termina em {expires_at}: baixe suas cópias.",
+        "subject": "Baixe cópias das suas provas: o prazo de retenção está terminando"
+      },
+      "evidence.archived": {
+        "body": "Os originais das provas do contrato “{contract_title}” foram movidos para o arquivo: o período de armazenamento ativo terminou. Hashes e miniaturas são mantidos por tempo indeterminado; os originais ficam disponíveis até {archive_until}.",
+        "subject": "Provas movidas para o arquivo"
+      },
+      "evidence.shredded": {
+        "body": "O prazo de retenção dos originais do contrato “{contract_title}” terminou — os arquivos foram excluídos. Hashes, carimbos de tempo e miniaturas são mantidos por tempo indeterminado: continuamos confirmando a autenticidade das cópias baixadas anteriormente.",
+        "subject": "Originais das provas excluídos ao fim do prazo"
+      }
+    }
+  },
+  "ro": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "Autenticitatea documentelor dumneavoastră o confirmăm pe termen nelimitat. Fișierele în sine le păstrăm un an — apoi sunt ale dumneavoastră. Perioada de păstrare a originalelor pentru contractul „{contract_title}” se încheie la {expires_at}: descărcați-vă copiile.",
+        "subject": "Descărcați copiile dovezilor: perioada de păstrare se încheie"
+      },
+      "evidence.archived": {
+        "body": "Originalele dovezilor pentru contractul „{contract_title}” au fost mutate în arhivă: perioada de stocare activă s-a încheiat. Hash-urile și miniaturile se păstrează nelimitat; originalele rămân disponibile până la {archive_until}.",
+        "subject": "Dovezile au fost mutate în arhivă"
+      },
+      "evidence.shredded": {
+        "body": "Perioada de păstrare a originalelor pentru contractul „{contract_title}” a expirat — fișierele au fost șterse. Hash-urile, mărcile temporale și miniaturile se păstrează nelimitat: confirmăm în continuare autenticitatea copiilor descărcate anterior.",
+        "subject": "Originalele dovezilor au fost șterse la expirarea termenului"
+      }
+    }
+  },
+  "ru": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "Подлинность ваших документов мы подтверждаем бессрочно. Сами файлы храним год — дальше они ваши. Срок хранения оригиналов по договору «{contract_title}» истекает {expires_at}: скачайте себе копии.",
+        "subject": "Скачайте копии доказательств: срок хранения истекает"
+      },
+      "evidence.archived": {
+        "body": "Оригиналы доказательств по договору «{contract_title}» переведены в архив: срок горячего хранения истёк. Хеши и миниатюры хранятся бессрочно, оригиналы доступны до {archive_until}.",
+        "subject": "Доказательства переведены в архив"
+      },
+      "evidence.shredded": {
+        "body": "Срок хранения оригиналов по договору «{contract_title}» истёк — файлы удалены. Хеши, метки времени и миниатюры сохранены бессрочно: подлинность скачанных ранее копий мы по-прежнему подтверждаем.",
+        "subject": "Оригиналы доказательств удалены по сроку хранения"
+      }
+    }
+  },
+  "sw": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "Uhalisi wa nyaraka zako tunauthibitisha bila kikomo cha muda. Faili zenyewe tunazihifadhi kwa mwaka mmoja — baada ya hapo ni zako. Muda wa kuhifadhi nakala asili chini ya mkataba «{contract_title}» unaisha {expires_at}: pakua nakala zako.",
+        "subject": "Pakua nakala za ushahidi wako: muda wa kuhifadhi unakaribia kuisha"
+      },
+      "evidence.archived": {
+        "body": "Nakala asili za ushahidi chini ya mkataba «{contract_title}» zimehamishiwa kwenye kumbukumbu: muda wa uhifadhi hai umeisha. Hashi na vijipicha huhifadhiwa bila kikomo; nakala asili zinapatikana hadi {archive_until}.",
+        "subject": "Ushahidi umehamishiwa kwenye kumbukumbu"
+      },
+      "evidence.shredded": {
+        "body": "Muda wa kuhifadhi nakala asili chini ya mkataba «{contract_title}» umeisha — faili zimefutwa. Hashi, mihuri ya muda na vijipicha huhifadhiwa bila kikomo: bado tunathibitisha uhalisi wa nakala ulizopakua awali.",
+        "subject": "Nakala asili za ushahidi zimefutwa baada ya muda wa kuhifadhi kuisha"
+      }
+    }
+  },
+  "th": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "เรายืนยันความถูกต้องแท้จริงของเอกสารของคุณโดยไม่มีกำหนด ส่วนตัวไฟล์เราเก็บไว้หนึ่งปี หลังจากนั้นเป็นของคุณ ระยะเวลาเก็บรักษาต้นฉบับตามสัญญา «{contract_title}» จะสิ้นสุดในวันที่ {expires_at}: โปรดดาวน์โหลดสำเนาของคุณ",
+        "subject": "ดาวน์โหลดสำเนาหลักฐานของคุณ: ระยะเวลาเก็บรักษากำลังจะสิ้นสุด"
+      },
+      "evidence.archived": {
+        "body": "ต้นฉบับหลักฐานตามสัญญา «{contract_title}» ถูกย้ายไปยังคลังเก็บแล้ว: ระยะเวลาจัดเก็บแบบใช้งานสิ้นสุดลง แฮชและภาพย่อจะถูกเก็บไว้โดยไม่มีกำหนด ต้นฉบับยังเข้าถึงได้จนถึง {archive_until}",
+        "subject": "หลักฐานถูกย้ายไปยังคลังเก็บ"
+      },
+      "evidence.shredded": {
+        "body": "ระยะเวลาเก็บรักษาต้นฉบับตามสัญญา «{contract_title}» สิ้นสุดลงแล้ว — ไฟล์ถูกลบ แฮช การประทับเวลา และภาพย่อยังคงเก็บไว้โดยไม่มีกำหนด: เรายังคงยืนยันความถูกต้องแท้จริงของสำเนาที่คุณดาวน์โหลดไว้ก่อนหน้านี้",
+        "subject": "ต้นฉบับหลักฐานถูกลบเมื่อสิ้นสุดระยะเวลาเก็บรักษา"
+      }
+    }
+  },
+  "tr": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "Belgelerinizin gerçekliğini süresiz olarak onaylıyoruz. Dosyaların kendisini bir yıl saklıyoruz — sonrası size ait. «{contract_title}» sözleşmesine ait orijinallerin saklama süresi {expires_at} tarihinde sona eriyor: kopyalarınızı indirin.",
+        "subject": "Kanıt kopyalarınızı indirin: saklama süresi sona eriyor"
+      },
+      "evidence.archived": {
+        "body": "«{contract_title}» sözleşmesine ait kanıt orijinalleri arşive taşındı: aktif saklama süresi sona erdi. Özetler (hash) ve küçük resimler süresiz saklanır; orijinaller {archive_until} tarihine kadar erişilebilir.",
+        "subject": "Kanıtlar arşive taşındı"
+      },
+      "evidence.shredded": {
+        "body": "«{contract_title}» sözleşmesine ait orijinallerin saklama süresi doldu — dosyalar silindi. Özetler, zaman damgaları ve küçük resimler süresiz saklanır: daha önce indirdiğiniz kopyaların gerçekliğini onaylamaya devam ediyoruz.",
+        "subject": "Saklama süresi dolduğu için kanıt orijinalleri silindi"
+      }
+    }
+  },
+  "uk": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "Справжність ваших документів ми підтверджуємо безстроково. Самі файли зберігаємо рік — далі вони ваші. Строк зберігання оригіналів за договором «{contract_title}» спливає {expires_at}: завантажте собі копії.",
+        "subject": "Завантажте копії доказів: строк зберігання спливає"
+      },
+      "evidence.archived": {
+        "body": "Оригінали доказів за договором «{contract_title}» переведено в архів: строк гарячого зберігання минув. Хеші та мініатюри зберігаються безстроково, оригінали доступні до {archive_until}.",
+        "subject": "Докази переведено в архів"
+      },
+      "evidence.shredded": {
+        "body": "Строк зберігання оригіналів за договором «{contract_title}» минув — файли видалено. Хеші, мітки часу та мініатюри збережено безстроково: справжність завантажених раніше копій ми й надалі підтверджуємо.",
+        "subject": "Оригінали доказів видалено після закінчення строку зберігання"
+      }
+    }
+  },
+  "ur": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "آپ کی دستاویزات کی اصلیت کی تصدیق ہم غیر معینہ مدت تک کرتے ہیں۔ خود فائلیں ہم ایک سال رکھتے ہیں — اس کے بعد وہ آپ کی ہیں۔ معاہدہ «{contract_title}» کی اصل فائلوں کی مدت {expires_at} کو ختم ہو رہی ہے: اپنی نقول ڈاؤن لوڈ کریں۔",
+        "subject": "شواہد کی نقول ڈاؤن لوڈ کریں: ذخیرہ کرنے کی مدت ختم ہو رہی ہے"
+      },
+      "evidence.archived": {
+        "body": "معاہدہ «{contract_title}» کے شواہد کی اصل فائلیں آرکائیو میں منتقل کر دی گئیں: فعال ذخیرے کی مدت ختم ہو گئی۔ ہیش اور تھمب نیل غیر معینہ مدت تک محفوظ رہتے ہیں؛ اصل فائلیں {archive_until} تک دستیاب ہیں۔",
+        "subject": "شواہد آرکائیو میں منتقل"
+      },
+      "evidence.shredded": {
+        "body": "معاہدہ «{contract_title}» کی اصل فائلوں کی مدت ختم ہو گئی — فائلیں حذف کر دی گئیں۔ ہیش، ٹائم اسٹیمپ اور تھمب نیل غیر معینہ مدت تک محفوظ ہیں: پہلے ڈاؤن لوڈ کی گئی نقول کی اصلیت کی تصدیق ہم اب بھی کرتے ہیں۔",
+        "subject": "ذخیرہ مدت ختم ہونے پر شواہد کی اصل فائلیں حذف"
+      }
+    }
+  },
+  "uz": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "Hujjatlaringiz haqiqiyligini muddatsiz tasdiqlaymiz. Fayllarning o'zini bir yil saqlaymiz — keyin ular sizniki. «{contract_title}» shartnomasi bo'yicha asl nusxalarni saqlash muddati {expires_at} tugaydi: nusxalarini yuklab oling.",
+        "subject": "Dalillar nusxalarini yuklab oling: saqlash muddati tugamoqda"
+      },
+      "evidence.archived": {
+        "body": "«{contract_title}» shartnomasi bo'yicha dalillarning asl nusxalari arxivga o'tkazildi: faol saqlash muddati tugadi. Xeshlar va miniatyuralar muddatsiz saqlanadi, asl nusxalar {archive_until} gacha mavjud.",
+        "subject": "Dalillar arxivga o'tkazildi"
+      },
+      "evidence.shredded": {
+        "body": "«{contract_title}» shartnomasi bo'yicha asl nusxalarni saqlash muddati tugadi — fayllar o'chirildi. Xeshlar, vaqt belgilari va miniatyuralar muddatsiz saqlanadi: avval yuklab olingan nusxalar haqiqiyligini hamon tasdiqlaymiz.",
+        "subject": "Saqlash muddati tugagani sababli dalillarning asl nusxalari o'chirildi"
+      }
+    }
+  },
+  "vi": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "Chúng tôi xác nhận tính xác thực của tài liệu của bạn vô thời hạn. Bản thân các tệp chúng tôi lưu một năm — sau đó chúng thuộc về bạn. Thời hạn lưu trữ bản gốc theo hợp đồng «{contract_title}» kết thúc vào {expires_at}: hãy tải bản sao của bạn.",
+        "subject": "Tải bản sao chứng cứ: thời hạn lưu trữ sắp kết thúc"
+      },
+      "evidence.archived": {
+        "body": "Bản gốc chứng cứ theo hợp đồng «{contract_title}» đã được chuyển vào kho lưu trữ: thời hạn lưu trữ hoạt động đã hết. Mã băm và ảnh thu nhỏ được lưu vô thời hạn; bản gốc còn khả dụng đến {archive_until}.",
+        "subject": "Chứng cứ đã được chuyển vào kho lưu trữ"
+      },
+      "evidence.shredded": {
+        "body": "Thời hạn lưu trữ bản gốc theo hợp đồng «{contract_title}» đã hết — các tệp đã bị xóa. Mã băm, dấu thời gian và ảnh thu nhỏ được lưu vô thời hạn: chúng tôi vẫn xác nhận tính xác thực của các bản sao bạn đã tải trước đó.",
+        "subject": "Bản gốc chứng cứ đã bị xóa khi hết thời hạn lưu trữ"
+      }
+    }
+  },
+  "zh-Hans": {
+    "notifications": {
+      "evidence.retention_expiring": {
+        "body": "我们无限期确认您文件的真实性。文件本身我们保存一年，之后归您所有。合同“{contract_title}”原件的保存期将于{expires_at}结束：请下载您的副本。",
+        "subject": "请下载证据副本：保存期即将结束"
+      },
+      "evidence.archived": {
+        "body": "合同“{contract_title}”的证据原件已转入归档：活跃保存期已结束。哈希值和缩略图无限期保留，原件在{archive_until}之前仍可获取。",
+        "subject": "证据已转入归档"
+      },
+      "evidence.shredded": {
+        "body": "合同“{contract_title}”原件的保存期已届满，文件已删除。哈希值、时间戳和缩略图无限期保留：我们仍然确认您此前下载的副本的真实性。",
+        "subject": "保存期届满，证据原件已删除"
+      }
+    }
+  }
+}

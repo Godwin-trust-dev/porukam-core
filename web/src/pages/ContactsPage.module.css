@@ -1,0 +1,45 @@
+/* Экран «Контакты» — доска A (ADR-152): собственного паддинга у страницы нет
+   (его даёт полоса контента оболочки, `--pr-d-pad-card`), иначе `Surface bleed`
+   не дошёл бы до краёв телефона и список снова стоял бы «в рамке». */
+.page {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--pr-d-gap-section);
+}
+
+/* «‹» слева от заголовка: ширина по значку, тач-таргет — по токену. */
+.back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 0;
+  padding: 0;
+  min-width: var(--pr-touch-min);
+  min-height: var(--pr-touch-min);
+  margin-inline-start: calc(-1 * var(--pr-sp-3));
+  color: var(--pr-text-2);
+  cursor: pointer;
+  font: inherit;
+}
+.back:focus-visible {
+  outline: 2px solid var(--pr-amber);
+  outline-offset: -2px;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+}
+
+.handle {
+  font-family: var(--pr-font-mono, monospace);
+}
+
+/* Действия строки — «скопировать» и «удалить»; каждая кнопка сама держит 44×44. */
+.actions {
+  display: flex;
+  gap: var(--pr-sp-1);
+  flex-shrink: 0;
+}

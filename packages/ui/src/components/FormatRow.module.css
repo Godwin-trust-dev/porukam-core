@@ -1,0 +1,48 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--pr-sp-3);
+}
+.tile {
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  background: var(--pr-white);
+  padding: var(--pr-sp-4);
+  display: grid;
+  gap: 2px;
+}
+.icon {
+  color: var(--pr-text-2);
+  margin-bottom: var(--pr-sp-1);
+}
+.label {
+  margin: 0;
+  color: var(--pr-ink);
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+}
+.hint {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+}
+.size {
+  margin: var(--pr-sp-1) 0 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+  font-variant-numeric: tabular-nums;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-2);
+}
+/* PDF «скоро»: приглушено, но читаемо — формат объявлен, не спрятан. */
+.soon {
+  background: var(--pr-cream);
+  border-style: dashed;
+}
+.soon .label {
+  color: var(--pr-text-2);
+}

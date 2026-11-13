@@ -1,0 +1,32 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-3);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--pr-font-head);
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-ink);
+}
+
+.body {
+  margin: 0;
+  font-size: var(--pr-fs-sm);
+  line-height: var(--pr-lh-normal);
+  color: var(--pr-text-2);
+}
+
+.readMore {
+  /* Растягивать кнопку по ширине карточки не нужно — но и обрезать паддинг
+     ТОЛЬКО с одной стороны (было `padding-inline-start: 0`) нельзя: базовый
+     `.btn` (Button.module.css) центрирует текст `justify-content: center`
+     между СИММЕТРИЧНЫМИ паддингами — при разных left/right текст остаётся
+     по центру СВОЕГО бокса, но сам бокс становится шире с одной стороны,
+     из-за чего текст визуально прижимается к левому краю (docs/tasks/
+     Задача_fix_web-consents-crash.md, «Дополнительно»). Паддинг оставлен
+     тем же, что и у остальных `size="sm"`-кнопок (`Button.module.css .sm`).
+  */
+  align-self: flex-start;
+}

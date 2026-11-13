@@ -1,0 +1,25 @@
+.title {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-ink);
+  margin: 0 0 var(--pr-sp-3);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-4);
+}
+
+.item {
+  padding: var(--pr-sp-3);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-md);
+}
+
+.itemLabel {
+  font-weight: var(--pr-fw-medium);
+  color: var(--pr-ink);
+  margin: 0 0 var(--pr-sp-2);
+}

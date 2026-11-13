@@ -1,0 +1,12 @@
+{
+  "actorSwitcher": {
+    "triggerLabel": "切换身份",
+    "personalLabel": "个人",
+    "legalFormIp": "个体工商户",
+    "legalFormOoo": "有限责任公司",
+    "addOrg": "添加组织",
+    "groups": "我的群组"
+  },
+  "sectionMenu": "版块",
+  "logout": "退出登录"
+}

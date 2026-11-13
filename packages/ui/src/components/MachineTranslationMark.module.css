@@ -1,0 +1,9 @@
+/* Приглушённо и мелко, без плашки: --pr-text-2 (не --pr-text-mute) — на креме
+   он держит контраст ≥ 4.5:1 для 12.5px текста (§8 доступность). */
+.mark {
+  flex: none;
+  font-size: var(--pr-fs-xs);
+  line-height: var(--pr-lh-normal);
+  color: var(--pr-text-2);
+  white-space: nowrap;
+}

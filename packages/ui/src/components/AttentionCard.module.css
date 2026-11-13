@@ -1,0 +1,190 @@
+/* DEV-20 §5: «требует внимания» — плотная СТРОКА (метка стороны, срочность,
+   что случилось, действие справа), а не карточка-коробка на каждый пункт.
+   Узкий экран разбирает её переносом: заголовок уходит на свою строку,
+   кнопка — под него. */
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--pr-sp-2) var(--pr-sp-3);
+  padding: var(--pr-d-row-pad-y) var(--pr-d-row-pad-x);
+  background: var(--pr-white);
+  min-inline-size: 0;
+}
+/* Развёрнутый режим (информация «ждём другую сторону», список фактов) —
+   прежняя вертикальная карточка: строкой это не читается. */
+.stacked {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  flex: none;
+}
+
+.urgency {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: var(--pr-sp-1);
+  color: var(--pr-amber-deep);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-fs-sm);
+  font-variant-numeric: tabular-nums;
+}
+
+.title {
+  margin: 0;
+  flex: 1 1 min(100%, 220px);
+  min-inline-size: 0;
+  color: var(--pr-ink);
+  font-weight: var(--pr-fw-medium);
+  font-size: var(--pr-d-fs-body);
+  line-height: var(--pr-d-lh);
+}
+/* Одна строка (замечание 03.09): чип · заголовок с многоточием · маленькая
+   кнопка справа; высота строки — как у ListRow (≤ 64). Переносов нет ни на
+   какой ширине; развёрнутый режим (`stacked`) остаётся вертикальным. */
+.card:not(.stacked) {
+  flex-wrap: nowrap;
+  min-block-size: var(--pr-d-row-min-h);
+}
+.card:not(.stacked) .title {
+  flex: 1 1 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.action {
+  flex: none;
+}
+/* История замечаний по «Требует внимания» на телефоне:
+   03.09 — одной строкой чип, счётчик и кнопка съедали ширину, от названия
+   оставалось «Стены —…»; дали заголовку две строки с многоточием.
+   06.09 — не помогло: «Открыть приёмку» рядом с «2 д. 1 ч» не оставляли
+   тексту места вовсе, и заголовок на телефоне СПРЯТАЛИ (`hideTitleOnMobile`).
+   09.09 (скриншот витрины Google Play) — стало хуже: строки полупустые, чип
+   слева, кнопка справа, между ними пустота, и какой договор ждёт действия —
+   не видно. Итог: не прятать и не тесниться в одну линию, а разложить пункт
+   на ДВЕ линии сеткой —
+       [чип рода + таймер]        [кнопка]
+       [название, одна строка]    (кнопка по центру обеих)
+   Название на телефоне — короткое (`shortTitle`: одно имя без пояснения,
+   род события уже сказан чипом), одна строка с многоточием. Высота пункта
+   ≈ 58px: список остаётся списком, карточками не становится.
+   Развёрнутый режим (`stacked`) не трогаем. */
+@media (max-width: 599.98px) {
+  .card:not(.stacked) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      'head action'
+      'title action';
+    align-items: center;
+    column-gap: var(--pr-sp-3);
+    row-gap: 2px;
+  }
+  .card:not(.stacked) .head {
+    grid-area: head;
+    min-inline-size: 0;
+  }
+  /* Без короткого названия (карточка договора: чипа рода нет, весь смысл —
+     в тексте) заголовок берёт ДВЕ строки, как и до 09.09. */
+  .card:not(.stacked) .title {
+    grid-area: title;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+  }
+  /* Строка дашборда: короткое название — ровно одна строка с многоточием,
+     высота пункта остаётся списочной (≈60px). */
+  .card:not(.stacked).shortTitled .title {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .card:not(.stacked) .action {
+    grid-area: action;
+    align-self: center;
+  }
+  /* Метка стороны («Заказчик») на 360px не помещается и повторяет то, что
+     видно из самого действия. */
+  .card:not(.stacked) .side {
+    display: none;
+  }
+  .titleFull,
+  .labelFull {
+    display: none;
+  }
+}
+/* Короткая подпись кнопки и короткое название — только на телефоне;
+   на десктопе полные. */
+.labelShort,
+.titleShort {
+  display: none;
+}
+@media (max-width: 599.98px) {
+  .labelShort,
+  .titleShort {
+    display: inline;
+  }
+}
+
+/* Сторона — подписью после заголовка, когда чип занят родом события.
+   Разделитель — псевдоэлементом, чтобы он прятался вместе с меткой и не
+   попадал в текст узла (тесты ищут ровно «Заказчик»). */
+.side {
+  color: var(--pr-text-mute);
+  font-size: var(--pr-d-fs-2);
+  white-space: nowrap;
+}
+.side::before {
+  content: ' · ';
+}
+
+/* Развёрнутый режим тоже НЕ растёт без предела (замечание 03.09 «Требует
+   внимания»): длинное название договора и длинный текст ожидания усекаются
+   двумя строками с многоточием, а не выталкивают соседние пункты с экрана.
+   `-webkit-line-clamp` — тот же приём, что у названия карточки сделки. */
+.stacked .title,
+.infoText,
+.infoNote,
+.more li {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow-wrap: anywhere;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-1);
+  align-items: flex-start;
+  min-inline-size: 0;
+}
+.infoText {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.infoNote {
+  margin: 0;
+  color: var(--pr-text-mute);
+  font-size: var(--pr-fs-xs);
+}
+
+.more {
+  margin: 0;
+  padding-inline-start: var(--pr-sp-4);
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+  min-inline-size: 0;
+}

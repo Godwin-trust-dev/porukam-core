@@ -1,0 +1,27 @@
+.git
+node_modules
+mobile
+docs
+infra
+screenshots
+test-results
+*.md
+
+backend/.venv
+backend/**/__pycache__
+backend/**/*.pyc
+backend/.mypy_cache
+backend/.ruff_cache
+backend/.pytest_cache
+backend/.coverage
+backend/htmlcov
+backend/db.sqlite3
+
+.env
+.env.*
+
+# The app image needs the checklist content and l10n packs (see infra/docker/app/Dockerfile).
+!docs
+!docs/content
+!docs/content/checklists
+!docs/content/checklists/*.md

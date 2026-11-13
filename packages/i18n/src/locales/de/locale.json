@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "Sprache der Oberfläche",
+  "globeTriggerAria": "Sprache der Oberfläche",
+  "rowLabel": "Sprache der Oberfläche",
+  "listTitle": "Sprache der Oberfläche",
+  "searchPlaceholder": "Sprache suchen…",
+  "searchAriaLabel": "Sprache suchen",
+  "searchClear": "Suche löschen",
+  "currentSectionTitle": "Aktuell",
+  "allSectionTitle": "Alle Sprachen",
+  "noResults": "Keine Sprache gefunden",
+  "betaBadge": "automatisch übersetzt",
+  "betaTooltip": "Maschinell übersetzt – kann ungenau sein",
+  "currentAria": "Aktuelle Sprache",
+  "disabledToast": "{{lang}} ist vorübergehend nicht verfügbar · wir zeigen Englisch",
+  "closeLabel": "Schließen",
+  "onboardingHint": "Automatisch erkannt – jederzeit änderbar",
+  "settingsRowLabel": "Sprache und Region",
+  "settingsLanguageExplain": "Das ist die Sprache der Anwendung. Die offizielle Sprache des Vertrags wird separat gewählt – Ihre Gegenpartei sieht eine Übersetzung, signiert wird aber der offizielle Text.",
+  "loadErrorRetry": "Erneut versuchen",
+  "loadError": "Die Sprachliste konnte nicht geladen werden"
+}

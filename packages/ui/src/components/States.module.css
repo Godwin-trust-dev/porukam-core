@@ -1,0 +1,85 @@
+/* Skeleton */
+.skeleton {
+  background: linear-gradient(90deg, var(--pr-sand) 25%, var(--pr-line) 37%, var(--pr-sand) 63%);
+  background-size: 400% 100%;
+  border-radius: var(--pr-r-md);
+  animation: pr-shimmer 1.3s ease infinite;
+}
+@keyframes pr-shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .skeleton {
+    animation: none;
+  }
+}
+.skelCard {
+  padding: var(--pr-sp-5);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  background: var(--pr-white);
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-3);
+}
+
+/* Empty / Error — общий контейнер состояния.
+   DEV-17 §3: плотный вертикальный ритм — sp-6 вместо sp-10, элементы единым
+   компактным блоком (иконка-плитка + заголовок + текст + CTA-ряд). */
+.state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--pr-sp-3);
+  padding: var(--pr-sp-6) var(--pr-sp-5);
+  color: var(--pr-text-2);
+  /* DEV-19 §3: на десктопе состояние стоит ПО ЦЕНТРУ рабочей области
+     плотным блоком, а не растянутой на весь монитор полосой. */
+  max-inline-size: var(--pr-state-max);
+  margin-inline: auto;
+}
+.stateGlyph {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--pr-grad-tile);
+  border: 1px solid var(--pr-sand);
+}
+.stateIcon {
+  color: var(--pr-amber-deep);
+}
+.stateActions {
+  display: flex;
+  gap: var(--pr-sp-3);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: var(--pr-sp-1);
+}
+.stateIconError {
+  color: var(--pr-red);
+}
+.stateTitle {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-ink);
+  margin: 0;
+}
+.stateText {
+  max-width: 380px;
+  margin: 0;
+}
+.stateCode {
+  font-family: ui-monospace, monospace;
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-mute);
+}

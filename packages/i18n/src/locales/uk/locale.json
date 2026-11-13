@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "Мова інтерфейсу",
+  "globeTriggerAria": "Мова інтерфейсу",
+  "rowLabel": "Мова інтерфейсу",
+  "listTitle": "Мова інтерфейсу",
+  "searchPlaceholder": "Пошук мови…",
+  "searchAriaLabel": "Пошук мови",
+  "searchClear": "Очистити пошук",
+  "currentSectionTitle": "Поточна",
+  "allSectionTitle": "Усі мови",
+  "noResults": "Мов не знайдено",
+  "betaBadge": "автопереклад",
+  "betaTooltip": "Перекладено автоматично — може бути неточно",
+  "currentAria": "Поточна мова",
+  "disabledToast": "{{lang}} тимчасово недоступна · показуємо англійську",
+  "closeLabel": "Закрити",
+  "onboardingHint": "Визначено автоматично — можна змінити будь-коли",
+  "settingsRowLabel": "Мова та регіон",
+  "settingsLanguageExplain": "Це мова застосунку. Офіційна мова договору вибирається окремо — контрагент бачить переклад, але підписується офіційний текст.",
+  "loadErrorRetry": "Повторити",
+  "loadError": "Не вдалося завантажити список мов"
+}

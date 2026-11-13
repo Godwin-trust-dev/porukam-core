@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "Язык интерфейса",
+  "globeTriggerAria": "Язык интерфейса",
+  "rowLabel": "Язык интерфейса",
+  "listTitle": "Язык интерфейса",
+  "searchPlaceholder": "Поиск языка…",
+  "searchAriaLabel": "Поиск языка",
+  "searchClear": "Очистить поиск",
+  "currentSectionTitle": "Текущий",
+  "allSectionTitle": "Все языки",
+  "noResults": "Языки не найдены",
+  "betaBadge": "авто-перевод",
+  "betaTooltip": "Переведено автоматически — может быть неточно",
+  "currentAria": "Текущий язык",
+  "disabledToast": "{{lang}} временно недоступен · показываем английский",
+  "closeLabel": "Закрыть",
+  "onboardingHint": "Язык угадан автоматически — можно сменить в любой момент",
+  "settingsRowLabel": "Язык и регион",
+  "settingsLanguageExplain": "Это язык приложения. Официальный язык договора выбирается отдельно — контрагенту показывается перевод, но подписывается официальный текст.",
+  "loadErrorRetry": "Повторить",
+  "loadError": "Не удалось загрузить список языков"
+}

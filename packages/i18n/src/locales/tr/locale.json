@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "Arayüz dili",
+  "globeTriggerAria": "Arayüz dili",
+  "rowLabel": "Arayüz dili",
+  "listTitle": "Arayüz dili",
+  "searchPlaceholder": "Dil ara…",
+  "searchAriaLabel": "Dil ara",
+  "searchClear": "Aramayı temizle",
+  "currentSectionTitle": "Geçerli",
+  "allSectionTitle": "Tüm diller",
+  "noResults": "Dil bulunamadı",
+  "betaBadge": "otomatik çeviri",
+  "betaTooltip": "Otomatik çevrildi — hatalar olabilir",
+  "currentAria": "Geçerli dil",
+  "disabledToast": "{{lang}} şimdilik kullanılamıyor · İngilizce gösteriyoruz",
+  "closeLabel": "Kapat",
+  "onboardingHint": "Otomatik algılandı — dilediğiniz zaman değiştirebilirsiniz",
+  "settingsRowLabel": "Dil ve bölge",
+  "settingsLanguageExplain": "Bu, uygulamanın dilidir. Sözleşmenin resmi dili ayrıca seçilir — karşı taraf bir çeviri görür, ama imzalanan resmi metindir.",
+  "loadErrorRetry": "Yeniden dene",
+  "loadError": "Dil listesi yüklenemedi"
+}

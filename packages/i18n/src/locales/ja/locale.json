@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "表示言語",
+  "globeTriggerAria": "表示言語",
+  "rowLabel": "表示言語",
+  "listTitle": "表示言語",
+  "searchPlaceholder": "言語を検索…",
+  "searchAriaLabel": "言語を検索",
+  "searchClear": "検索をクリア",
+  "currentSectionTitle": "現在",
+  "allSectionTitle": "すべての言語",
+  "noResults": "言語が見つかりません",
+  "betaBadge": "自動翻訳",
+  "betaTooltip": "自動翻訳です。正確でない場合があります",
+  "currentAria": "現在の言語",
+  "disabledToast": "{{lang}} は一時的に利用できません · 英語を表示します",
+  "closeLabel": "閉じる",
+  "onboardingHint": "自動で判定しました。いつでも変更できます",
+  "settingsRowLabel": "言語と地域",
+  "settingsLanguageExplain": "これはアプリの表示言語です。契約の正式な言語は別に選びます。相手方には翻訳が見えますが、署名されるのは正式な文面です。",
+  "loadErrorRetry": "再試行",
+  "loadError": "言語の一覧を読み込めませんでした"
+}

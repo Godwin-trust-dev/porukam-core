@@ -1,0 +1,56 @@
+.box {
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  background: var(--pr-cream);
+  padding: var(--pr-sp-4) var(--pr-sp-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-3);
+}
+.headline {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--pr-sp-4);
+}
+.payingLabel {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-body);
+}
+.amount {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h2);
+  color: var(--pr-ink);
+  font-variant-numeric: tabular-nums;
+}
+.transferRow {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  padding-top: var(--pr-sp-3);
+  border-top: 1px solid var(--pr-line);
+}
+.transferIcon {
+  color: var(--pr-text-2);
+  flex-shrink: 0;
+}
+.transferRow[data-tone='positive'] .transferIcon {
+  color: var(--pr-green);
+}
+.transferTitle {
+  margin: 0;
+  color: var(--pr-ink);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-fs-sm);
+}
+.transferNote {
+  margin: 2px 0 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+}
+.caveat {
+  margin: 0;
+  color: var(--pr-text-mute);
+  font-size: var(--pr-fs-xs);
+}

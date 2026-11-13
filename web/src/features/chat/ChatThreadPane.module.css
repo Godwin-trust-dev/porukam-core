@@ -1,0 +1,54 @@
+.thread {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-3);
+  min-height: 60vh;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-2);
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  color: var(--pr-ink);
+  min-width: var(--pr-touch-min);
+  min-height: var(--pr-touch-min);
+  justify-content: center;
+}
+
+.contractLink {
+  font-weight: var(--pr-fw-semibold);
+  color: var(--pr-ink);
+  text-decoration: none;
+}
+
+.contractLink:hover {
+  text-decoration: underline;
+}
+
+.noMessages {
+  color: var(--pr-text-mute);
+  text-align: center;
+  margin: var(--pr-sp-8) 0;
+}
+
+/* Телефон (отсмотр 2026-08-25): при 60vh поле ввода зависало посреди экрана,
+   под ним оставалась пустая треть. Тред растягиваем на всю видимую высоту за
+   вычетом шапки оболочки и отступов контента под нижнюю навигацию. */
+@media (max-width: 1023px) {
+  .thread {
+    min-height: calc(100dvh - 190px);
+  }
+}
+
+/* «Оформить договор» у черновика — справа в шапке треда, не растягивается. */
+.draftCta {
+  flex: none;
+  margin-inline-start: auto;
+  white-space: nowrap;
+}

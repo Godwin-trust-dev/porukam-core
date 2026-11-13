@@ -1,0 +1,134 @@
+{
+  "aboutTitle": "Qué es Porukam",
+  "faqTitle": "Preguntas y respuestas",
+  "aboutLead": "Porukam convierte un acuerdo de palabra en un contrato claro con etapas, pruebas y reputación. Sin abogados, sin comisiones y sin que el dinero pase por la plataforma.",
+  "aboutSections": [
+    {
+      "title": "Para quién",
+      "text": "Para quien hace trabajos por encargo o los encarga: reformas, diseño, desarrollo, clases, fotografía, transporte, venta de objetos, alquiler, préstamos entre personas. Para dos personas, para una persona y un autónomo, para trabajadores independientes."
+    },
+    {
+      "title": "Cómo funciona",
+      "text": "Creas un contrato a partir de un formulario listo, divides el trabajo en etapas e invitas a la otra parte por su @usuario. Ambas partes firman. Luego cada etapa se entrega y se acepta por lista de comprobación, y cada hecho —firma, entrega, aceptación, disputa— queda registrado y pasa a la reputación de ambos."
+    },
+    {
+      "title": "Lo que la plataforma no hace",
+      "text": "No guarda ni transfiere dinero: liquidáis directamente por el medio elegido. No almacena los originales de tus archivos, solo sus huellas. No vende tus datos ni muestra publicidad."
+    },
+    {
+      "title": "Grupos",
+      "text": "Un grupo es una dirección común para un equipo o una comunidad: gremio (comunidad profesional permanente que responde por la calidad mutua), clan (equipo de proyecto de 3–20 personas), comunidad (grupo abierto por intereses) o escaparate de empresa. El grupo tiene su @usuario, logotipo, ámbito y geografía, una ficha pública con sus miembros, y en el perfil de cada miembro se ve a qué pertenece. Los contratos los siguen firmando personas: el grupo ayuda a encontrarse y a mostrar el equipo."
+    }
+  ],
+  "howTitle": "Cómo hacer",
+  "howItems": [
+    {
+      "title": "Crear un contrato",
+      "text": "Tratos → «Crear». Elige el tipo de contrato (servicio, venta, alquiler, préstamo), rellena el formulario —cada campo tiene un «?» con ayuda—. Indica la contraparte por @usuario, divide en etapas, elige la forma de pago y envía a firmar."
+    },
+    {
+      "title": "Invitar a la contraparte",
+      "text": "En el paso «Partes» escribe el @usuario. Si la persona aún no tiene cuenta, envíale el enlace al contrato: tras entrar con Google lo verá en su panel."
+    },
+    {
+      "title": "Firmar",
+      "text": "Abre el contrato → «Ir a la firma». Revisa la versión congelada y firma. El contrato entra en vigor cuando firman ambas partes."
+    },
+    {
+      "title": "Proponer un cambio antes de firmar",
+      "text": "En la pantalla de revisión elige un punto y propón un cambio. La otra parte acepta o rechaza; tras acordar, la versión se congela de nuevo."
+    },
+    {
+      "title": "Entregar una etapa",
+      "text": "El contratista abre la etapa → «Entregar», adjunta pruebas (fotos, archivos, enlaces) y la envía a aceptación."
+    },
+    {
+      "title": "Aceptar una etapa o devolverla",
+      "text": "El cliente abre la etapa → repasa la lista de comprobación → «Aceptar» o «Devolver» con observaciones. Si el cliente calla más allá del plazo de revisión, la etapa se acepta automáticamente."
+    },
+    {
+      "title": "Pagar una etapa",
+      "text": "Tras la aceptación, el cliente paga al contratista directamente por el medio elegido y marca el pago en la etapa. El contratista confirma la recepción."
+    },
+    {
+      "title": "Abrir una disputa",
+      "text": "Si no hay acuerdo, pulsa «Disputa» en la etapa. Ambas partes adjuntan pruebas; todo lo registrado antes ya está en el expediente."
+    },
+    {
+      "title": "Encontrar una contraparte y guardar el contacto",
+      "text": "Abre la ficha de la persona por el enlace con su @usuario o desde el contrato → «Guardar contacto». Las contrapartes de tus contratos se añaden a contactos solas."
+    },
+    {
+      "title": "Compartir tu ficha",
+      "text": "Perfil → «Compartir»: enlace tipo porukam.app/@tuusuario y código QR. En la ficha solo hechos: cuántos tratos, cómo se aceptaron, si hubo disputas."
+    },
+    {
+      "title": "Crear un grupo",
+      "text": "Grupos → «Crear grupo». Elige un @usuario (uno por grupo, se fija al crearlo), el tipo, el ámbito y la geografía; añade descripción, enlaces y logotipo. El líder aprueba solicitudes, invita por @usuario y cambia los ajustes."
+    },
+    {
+      "title": "Unirse a un grupo",
+      "text": "Busca el grupo en Buscar (por nombre, @usuario o ámbito) o abre el enlace /@usuario. Abierto: «Unirse» de inmediato; cerrado: «Unirse» envía una solicitud al líder. Puedes salir en cualquier momento; el líder no puede salir hasta ceder el grupo."
+    }
+  ],
+  "faqItems": [
+    {
+      "q": "¿Es gratis?",
+      "a": "Sí. Contratos, etapas, pruebas, reputación: sin cargo y sin comisión sobre los pagos. Las funciones de pago, si aparecen, serán aparte y opcionales."
+    },
+    {
+      "q": "¿Tiene validez legal un contrato así?",
+      "a": "El contrato se celebra por escrito con firma electrónica simple: ambas partes confirman la versión congelada del texto y el servicio registra quién, cuándo y qué firmó. Esta forma se reconoce en la mayoría de los países para acuerdos entre personas y empresas. Donde la ley exige notario o registro estatal (p. ej. inmuebles), el servicio no sustituye esos trámites."
+    },
+    {
+      "q": "¿El dinero pasa por la plataforma?",
+      "a": "No. Las partes liquidan directamente: transferencia, efectivo, como acuerden. La plataforma registra la obligación, el pago y la confirmación de recepción."
+    },
+    {
+      "q": "¿Y si la otra parte no responde?",
+      "a": "Cada paso tiene un plazo. Si el cliente no revisa una etapa entregada a tiempo, se acepta automáticamente. Si la contraparte no firma el contrato, queda en borrador: no hay obligaciones."
+    },
+    {
+      "q": "¿Se puede cambiar el contrato tras la firma?",
+      "a": "El texto firmado es inmutable. Los cambios se hacen con una adenda que firman ambas partes; se conserva el historial de versiones."
+    },
+    {
+      "q": "¿Qué es la reputación y quién la ve?",
+      "a": "Hechos de tus tratos: cuántos cerrados, cuántos aceptados a tiempo, si hubo disputas y cómo terminaron. Sin valoraciones ni estrellas. Tú decides la visibilidad de la ficha y de cada campo."
+    },
+    {
+      "q": "¿Dónde se guardan mis archivos de prueba?",
+      "a": "Los originales quedan contigo y con tu contraparte. La plataforma guarda una huella (hash), una miniatura y la hora de adjuntar: suficiente para demostrar que el archivo no cambió."
+    },
+    {
+      "q": "¿Qué ve la contraparte sobre mí?",
+      "a": "El nombre confirmado por tu cuenta, tu @usuario y tu ficha de reputación en los límites que permitas. Teléfono, correo y datos bancarios no se muestran nunca, salvo que tú mismo los escribas en el texto del contrato."
+    },
+    {
+      "q": "¿Cómo entro desde otro dispositivo?",
+      "a": "Con la misma cuenta de Google. La sesión dura 30 días sin volver a entrar mientras uses el servicio."
+    },
+    {
+      "q": "¿Cómo elimino mi cuenta?",
+      "a": "Perfil → Ajustes → Cuenta → Eliminar. Los datos personales se destruyen de forma irreversible; las contrapartes conservan sus ejemplares de los contratos compartidos."
+    },
+    {
+      "q": "¿Funciona en el móvil?",
+      "a": "Sí, es una aplicación web: abre porukam.app en el navegador y añádela a la pantalla de inicio; se comporta como una app normal, con notificaciones."
+    },
+    {
+      "q": "¿Cómo contactar con vosotros?",
+      "a": "Escribe a hello@trust-dev.com: respondemos preguntas sobre el servicio, los datos y los contratos."
+    },
+    {
+      "q": "¿Qué son los grupos y para qué sirven?",
+      "a": "Una forma de mostrar un equipo o comunidad bajo un mismo nombre: gremio, clan, comunidad o escaparate de empresa. El cliente encuentra el grupo por ámbito y ciudad, ve a los miembros y sus fichas de reputación, y firma el contrato con una persona concreta. Para los contratistas es una dirección común adonde traer a los clientes y donde se ve la reputación de cada uno."
+    },
+    {
+      "q": "¿Responde el grupo por el contrato?",
+      "a": "No. La parte del contrato es siempre una persona concreta, que actúa como particular, autónomo o empresa; firma y responde personalmente. El grupo no guarda dinero ni garantiza a sus miembros: es un escaparate y una dirección, y la reputación se construye con los tratos de cada uno."
+    }
+  ],
+  "socialTitle": "Síguenos",
+  "backToProfile": "Perfil"
+}

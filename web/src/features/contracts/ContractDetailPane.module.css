@@ -1,0 +1,95 @@
+/* Облегчённая карточка договора в колонке деталей master-detail
+   (DEV-19 §2, эталон №4 блок 2). Обзор + этапы + ключевые действия;
+   всё остальное — по ссылке «Полная карточка». */
+.pane {
+  display: grid;
+  gap: var(--pr-sp-4);
+  align-content: start;
+}
+.head {
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  box-shadow: var(--pr-shadow-sm);
+  padding: var(--pr-sp-5);
+  display: grid;
+  gap: var(--pr-sp-2);
+}
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+  flex-wrap: wrap;
+}
+.no {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+  font-variant-numeric: tabular-nums;
+}
+.title {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h2);
+  line-height: var(--pr-lh-tight);
+  color: var(--pr-ink);
+  margin: 0;
+}
+.meta {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.sumRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+  flex-wrap: wrap;
+  padding-block-start: var(--pr-sp-3);
+  border-block-start: 1px solid var(--pr-line);
+}
+.sum {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-ink);
+  font-variant-numeric: tabular-nums;
+}
+.actions {
+  display: flex;
+  gap: var(--pr-sp-2);
+  flex-wrap: wrap;
+  align-items: center;
+}
+/* «Полная карточка» — уводит на §4, поэтому визуально это ссылка в конце
+   блока действий, а не вторая primary-кнопка (одна главная на экран). */
+.fullCardLink {
+  margin-inline-start: auto;
+}
+
+/* Имя контрагента — ссылка в карточку репутации (отсмотр 2026-08-21). */
+
+/* «Полная карточка →» — текстовая ссылка справа (compact-десктоп блок 2). */
+.fullCardLink {
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0 var(--pr-sp-2);
+  min-block-size: var(--pr-touch-min);
+  font: inherit;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  color: var(--pr-amber-ink);
+}
+.fullCardLink:hover {
+  text-decoration: underline;
+}
+.fullCardLink:focus-visible {
+  outline: 2px solid var(--pr-amber);
+  outline-offset: 2px;
+  border-radius: var(--pr-r-sm);
+}

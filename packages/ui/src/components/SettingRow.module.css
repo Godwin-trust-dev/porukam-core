@@ -1,0 +1,138 @@
+/* DEV-20 §5: ритм строки настроек — тот же, что у ListRow (8×13, ≥54),
+   разделитель между строками даёт `Surface`, своей рамки у строки нет. */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-4);
+  width: 100%;
+  min-height: max(var(--pr-d-row-min-h), var(--pr-touch-min));
+  padding: var(--pr-d-row-pad-y) var(--pr-d-row-pad-x);
+  border: none;
+  background: none;
+  border-inline-start: none;
+  border-inline-end: none;
+  text-align: start;
+  font: inherit;
+  color: inherit;
+}
+button.row {
+  cursor: pointer;
+}
+button.row:hover {
+  background: var(--pr-cream);
+}
+button.row:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: 2px;
+}
+button.row:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+}
+/* Значок строки (финал доска A): у тумблеров — бирюзовый в кремовом квадрате,
+   у ссылок — серый без подложки. */
+.icon {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--pr-text-2);
+  margin-inline-end: calc(var(--pr-sp-4) * -1 + var(--pr-sp-3));
+}
+.iconBoxed {
+  inline-size: 40px;
+  block-size: 40px;
+  border-radius: var(--pr-r-md);
+  background: var(--pr-cream);
+  color: var(--pr-teal-deep);
+}
+.label {
+  /* Строка подписи как у Field.labelRow — «?» рядом, раскрытый текст на всю ширину. */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-1);
+  font-weight: var(--pr-fw-medium);
+  font-size: var(--pr-d-fs-body);
+  color: var(--pr-ink);
+}
+.danger {
+  color: var(--pr-red);
+}
+.hint {
+  font-size: var(--pr-d-fs-2);
+  color: var(--pr-text-2);
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  flex: none;
+}
+
+.selectShell {
+  position: relative;
+  display: inline-flex;
+}
+.select {
+  min-height: 40px;
+  padding: 0 var(--pr-sp-3);
+  border-radius: var(--pr-r-md);
+  border: 1px solid var(--pr-line);
+  background: var(--pr-white);
+  font: inherit;
+  color: var(--pr-ink);
+  appearance: none;
+  padding-inline-end: calc(var(--pr-sp-3) + 20px);
+}
+.selectChevron {
+  position: absolute;
+  inset-inline-end: var(--pr-sp-2);
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  display: inline-flex;
+  color: var(--pr-text-2);
+}
+.select:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: 2px;
+}
+
+.linkValue {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.chevron {
+  color: var(--pr-text-mute);
+  transform: scaleX(-1);
+}
+
+/* Телефон (отсмотр 2026-08-25): select `flex: none` не сжимался и уезжал за
+   правый край — на узком экране кладём его ПОД подпись, вся ширина обоим.
+   Тумблеры и строки-ссылки не переносим (DEV-20 §5: перенос удваивал высоту
+   каждой строки настроек). */
+@media (max-width: 560px) {
+  .stack {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--pr-sp-2);
+  }
+  .stack .control {
+    justify-content: space-between;
+  }
+  .stack .selectShell,
+  .stack .select {
+    inline-size: 100%;
+  }
+}

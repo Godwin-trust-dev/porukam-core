@@ -1,0 +1,12 @@
+{
+  "actorSwitcher": {
+    "triggerLabel": "پروفائل بدلیں",
+    "personalLabel": "ذاتی",
+    "legalFormIp": "واحد ملکیت",
+    "legalFormOoo": "پرائیویٹ لمیٹڈ",
+    "addOrg": "ادارہ شامل کریں",
+    "groups": "میرے گروپس"
+  },
+  "sectionMenu": "سیکشنز",
+  "logout": "باہر نکلیں"
+}

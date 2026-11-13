@@ -1,0 +1,28 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
+  gap: var(--pr-sp-2);
+}
+.tile {
+  appearance: none;
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-md);
+  background: var(--pr-cream);
+  min-width: var(--pr-touch-min);
+  min-height: var(--pr-touch-min);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  color: var(--pr-text-2);
+}
+.tile:focus-visible {
+  outline: 2px solid var(--pr-amber);
+  outline-offset: 2px;
+}
+.thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,12 @@
+{
+  "title": "“{{name}}” bölümü",
+  "text": "Bu bölümün çalışma alanı yakında geliyor.",
+  "feed": "Burada işlemleriniz ve kişilerinizle ilgili olay akışı yer alacak.",
+  "search": "Burada katalogda yükleniciler ve siparişler için arama yer alacak.",
+  "stages": "Burada tüm işlemlerinizin aşamaları toplanacak: ne teslim ediliyor, ne kabulde, hangi süreler işliyor.",
+  "payments": "Burada aşamalara ve sözleşmelere göre ödeme geçmişi — durumlar ve onaylarla — yer alacak.",
+  "disputes": "Burada anlaşmazlıklarınız yer alacak: her biri için durumlar, süreler ve kanıtlar.",
+  "reputation": "Burada itibarınız yer alacak: onaylanmış işlemler ve gerçeklere dayanan değerlendirmeler.",
+  "chat": "Burada işlemlere ilişkin yazışmalar — sözleşmeye ve aşamalarına bağlı — yer alacak.",
+  "groups": "Burada birlikler yer alacak: ortak adres, üyeler ve tek ad altında işlemler."
+}

@@ -1,0 +1,58 @@
+.group {
+  display: grid;
+  gap: var(--pr-sp-2);
+}
+.option {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--pr-sp-3);
+  width: 100%;
+  padding: var(--pr-sp-3);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-lg);
+  background: var(--pr-white);
+  cursor: pointer;
+  text-align: start;
+  min-height: var(--pr-touch-min);
+  font: inherit;
+  color: inherit;
+}
+.option[aria-checked='true'] {
+  border-color: var(--pr-teal-deep);
+  background: var(--pr-cream);
+}
+.option:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+.option:focus-visible {
+  outline: 2px solid var(--pr-amber);
+  outline-offset: 2px;
+}
+.radioDot {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  border-radius: var(--pr-r-pill);
+  border: 1.5px solid var(--pr-line);
+  display: grid;
+  place-items: center;
+  color: var(--pr-teal-deep);
+  margin-top: 1px;
+}
+.option[aria-checked='true'] .radioDot {
+  border-color: var(--pr-teal-deep);
+}
+.optionBody {
+  display: grid;
+  gap: 2px;
+}
+.optionLabel {
+  color: var(--pr-ink);
+  font-weight: var(--pr-fw-medium);
+  font-size: var(--pr-fs-sm);
+}
+.optionHint {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+}

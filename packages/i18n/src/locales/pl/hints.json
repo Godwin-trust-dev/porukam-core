@@ -1,0 +1,113 @@
+{
+  "helpButton": "Podpowiedź do pola",
+  "onboarding": {
+    "handle": "Twój publiczny adres w Porukam — jak @nazwa w komunikatorze. Po nim znajdą Cię kontrahenci i po nim otwiera się Twoja karta reputacji. Litery łacińskie, cyfry, kropka i podkreślenie.",
+    "name": "Imię, które druga strona zobaczy w umowie i na Twojej karcie. Samo imię albo imię i nazwisko — tak, jak przedstawiasz się w pracy."
+  },
+  "contractNew": {
+    "title": "Krótka nazwa umowy do listy — np. „Remont kuchni” lub „Logo dla kawiarni”. Jeśli pozostawisz puste, użyty zostanie opis.",
+    "workDescription": "Co dokładnie trzeba zrobić: zakres, rezultat, co uznaje się za wykonane. Im konkretniej, tym łatwiejszy odbiór i mniej sporów.",
+    "locationType": "Gdzie wykonywana jest praca: u zamawiającego, u wykonawcy, zdalnie lub pod adresem. Od tego zależą warunki dostępu i przekazania.",
+    "locationAddress": "Adres wykonania prac — ulica, numer, w razie potrzeby piętro i lokal. Widoczny tylko dla stron umowy.",
+    "termType": "Jak liczyć termin: według dat rozpoczęcia i zakończenia czy według liczby dni od podpisania.",
+    "start": "Data, od której wykonawca przystępuje do pracy.",
+    "end": "Data, do której praca ma być w całości przekazana.",
+    "durationDays": "Ile dni kalendarzowych przewidziano na pracę, licząc od dnia podpisania umowy.",
+    "priceType": "Stała cena za cały zakres albo płatność za etapy/jednostki. Przy złożonych pracach wygodniejsze są etapy.",
+    "currency": "Waluta wszystkich kwot w umowie. Jedna na całą umowę — po podpisaniu nie można jej zmienić.",
+    "warrantyDays": "Ile dni po odbiorze wykonawca odpowiada za wady rezultatu. 0 — bez gwarancji.",
+    "acceptanceHours": "Ile godzin ma zamawiający na sprawdzenie przekazanego etapu. Jeśli nie odpowie w terminie, etap uznaje się za przyjęty automatycznie.",
+    "paymentMethod": "Jak strony się rozliczają: przelew, gotówka, inny sposób. Platforma nie przechowuje ani nie przekazuje pieniędzy — tylko rejestruje ustalenia i fakty.",
+    "paymentOrder": "Kiedy płatny jest każdy etap: przed jego rozpoczęciem (przedpłata) czy po odbiorze przez zamawiającego (płatność z dołu). Dotyczy wszystkich etapów umowy.",
+    "subcontract": "Czy wykonawca może angażować pomocników lub innych wykonawców do części prac.",
+    "premisesAccess": "Czy wykonawca potrzebuje dostępu do lokalu zamawiającego i na jakich warunkach (godziny, klucze, obecność).",
+    "portfolioConsent": "Czy zamawiający pozwala pokazywać rezultat w portfolio wykonawcy po odbiorze.",
+    "stages": "Podziel pracę na etapy: każdy jest przekazywany i odbierany osobno, a suma etapów równa się cenie umowy. Do małej pracy wystarczy jeden etap.",
+    "stageTitle": "Co jest przekazywane na tym etapie — np. „Szkic” lub „Montaż”.",
+    "stageAmount": "Cena tylko tego etapu. Wszystkie etapy razem muszą się równać cenie umowy.",
+    "stageDeadline": "Do jakiej daty etap ma być przekazany zamawiającemu do sprawdzenia.",
+    "counterparty": "Kim jest druga strona: znajdź po @nazwie albo wybierz z zapisanych kontaktów. Zaproszenie otrzyma właśnie ta osoba.",
+    "sale": {
+      "what": "Co jest sprzedawane — nazwa przedmiotu tak, jak opisujesz go kupującemu: „iPhone 13 128 GB”, „Rower Trek FX 2”.",
+      "description": "Stan, zawartość zestawu, cechy szczególne — wszystko, co kupujący powinien wiedzieć przed transakcją.",
+      "condition": "Nowy, jak nowy, używany ze śladami — uczciwy opis stanu chroni obie strony w sporze.",
+      "defects": "Znane wady i usterki. Jeśli nic nie podano, kupujący ma prawo oczekiwać, że ich nie ma.",
+      "completeness": "Co wchodzi w skład: pudełko, ładowarka, dokumenty, akcesoria.",
+      "identifiers": "Numer seryjny, IMEI, VIN itp. — pozwalają potwierdzić, że przekazano dokładnie ten przedmiot.",
+      "householdPlot": "Zaznacz, jeśli sprzedajesz produkty z własnego gospodarstwa przydomowego — wpływa to na opodatkowanie.",
+      "price": "Pełna cena przedmiotu. Dostawa, jeśli płatna, jest podawana osobno poniżej.",
+      "deliveryType": "Jak przedmiot jest przekazywany: odbiór osobisty, kurier, poczta lub firma transportowa.",
+      "address": "Adres przekazania lub dostawy. Widoczny tylko dla stron.",
+      "deliveryPayer": "Kto płaci za dostawę — sprzedający czy kupujący.",
+      "tracking": "Czy potrzebny jest numer przesyłki. Z nim łatwiej potwierdzić wysyłkę i odbiór.",
+      "deliveryTerm": "Termin przekazania: konkretna data lub liczba dni po zapłacie.",
+      "deliveryDate": "Data, do której przedmiot ma być przekazany kupującemu.",
+      "deliveryDays": "Ile dni na przekazanie, licząc od dnia zapłaty.",
+      "inspectionHours": "Ile godzin ma kupujący na sprawdzenie przedmiotu po otrzymaniu, zanim transakcja zostanie uznana za zamkniętą."
+    }
+  },
+  "settings": {
+    "displayName": "Nazwa, którą kontrahenci widzą obok Twojej @nazwy. Wpisz tak, jak znają Cię klienci.",
+    "city": "Dowolny podpis dla miejscowości, których jeszcze nie ma w naszej bazie — widoczny na Twojej karcie, ale nie wpływa na wyszukiwanie. Swój obszar działania widoczny w wyszukiwaniu ustaw poniżej.",
+    "handle": "Twój publiczny adres — po nim ludzie Cię znajdują i otwierają Twoją kartę reputacji. Od 3 do 20 znaków: litery łacińskie, cyfry, podkreślenie.",
+    "avatar": "Zdjęcie profilowe widzą kontrahenci w umowach, czatach i na Twojej karcie. Prawdziwa twarz zachęca do transakcji bardziej niż obrazek.",
+    "country": "Kraj, którego prawo reguluje Twoje umowy (jurysdykcja). Nie ma nic wspólnego z Twoim adresem ani miejscem, w którym szukasz pracy, a waluty i podatki od niego nie zależą.",
+    "phone": "Numer pozwala znaleźć Cię po telefonie tym, którzy już go mają. W profilu nie jest publikowany.",
+    "notif": {
+      "deals": "Zaproszenia do umowy, proponowane zmiany, podpisanie, odbiór etapów — wszystko o przebiegu transakcji.",
+      "chats": "Nowe wiadomości w czatach przy umowach i w zgłoszeniach.",
+      "payments": "Płatności za etapy i potwierdzenia rozliczeń.",
+      "deadlines": "Przypomnienia o terminach: kończy się okno odbioru, zbliża się data przekazania etapu.",
+      "disputes": "Otwarcie sporu, odpowiedzi stron i decyzje w sporze."
+    }
+  },
+  "stage": {
+    "totalCost": "Łączny koszt prac. Jeśli go podasz, kwota rozłoży się po równo na etapy — potem każdy etap można poprawić ręcznie.",
+    "title": "Co jest przekazywane na tym etapie — „Szkic makiety”, „Montaż”, „Pierwsza partia”. Nazwę widzą obie strony i trafia ona do umowy.",
+    "amount": "Ile kosztuje właśnie ten etap. Suma wszystkich etapów musi się zgadzać z ceną umowy — inaczej umowy nie da się zamrozić.",
+    "duration": "Ile dni przewidziano na etap. Liczy się od początku etapu, a nie od podpisania umowy.",
+    "checklist": "Kryteria odbioru: według jakich punktów zamawiający sprawdza etap. Formułuj je mierzalnie — „dwie poprawki makiety”, „ściany bez zacieków”: o taki punkt nie ma się już o co spierać.",
+    "evidence": "Punkt z oznaczeniem „dowód wymagany” oczekuje załączonego zdjęcia lub pliku: bez niego przy przekazaniu etapu pojawi się ostrzeżenie, ale przekazanie nie jest blokowane. Dowody zostają w aktach umowy i przydadzą się w sporze.",
+    "materials": {
+      "name": "Materiał z katalogu — wtedy nazwa i jednostki miary zgadzają się po obu stronach. Nie ma potrzebnego? Wybierz „inne” i wpisz własny.",
+      "customName": "Nazwa materiału własnymi słowami, jeśli nie ma go w katalogu.",
+      "quantity": "Ile potrzeba — liczbą, w wybranych jednostkach miary.",
+      "unit": "Jednostka miary ilości: sztuki, metry, kilogramy, litry.",
+      "delivery": "Ile dni trwa dostawa materiału. Pomaga ocenić, czy termin etapu jest realny.",
+      "deliveryBase": "Od jakiego zdarzenia liczy się termin dostawy: podpisanie umowy, zaliczka albo rozpoczęcie etapu. Dzięki temu termin nie zależy od daty kalendarzowej.",
+      "suppliedBy": "Kto kupuje i przywozi materiał — zamawiający czy wykonawca. Spór o ten punkt to częsta przyczyna przestoju.",
+      "price": "Cena jednej jednostki materiału w walucie umowy. Przy materiale wykonawcy jest obowiązkowa i większa od zera; materiał zamawiającego może mieć cenę zerową."
+    }
+  },
+  "group": {
+    "handle": "Publiczny adres grupy — jak @nazwa w komunikatorze. Otwiera stronę grupy i to do niej prowadzą linki.",
+    "name": "Jak grupa nazywa się dla ludzi. Widoczne dla każdego, kto otworzy jej stronę.",
+    "sphere": "Główna dziedzina działalności grupy. Po niej ludzie znajdują ją w wyszukiwaniu i po niej dobierani są członkowie.",
+    "geo": "Zasięg grupy: cały świat, kraj albo jedno miasto. Od tego zależy, komu pokaże się w wyszukiwaniu.",
+    "country": "Kraj zasięgu. Wymagany, jeśli wybrano zasięg „kraj” lub „miasto”.",
+    "city": "Główne miasto zasięgu. Wymagane przy zasięgu „miasto”.",
+    "description": "O czym jest grupa i na kogo czekasz: czym się zajmujecie, jakie są zasady, w czym pomagacie członkom.",
+    "visibility": "Otwartą grupę widzą wszyscy i znajdują ją w wyszukiwaniu; zamkniętą — tylko członkowie i osoby z bezpośrednim linkiem.",
+    "joinPolicy": "Jak się do niej trafia: swobodnie przyciskiem albo na wniosek zatwierdzany przez właściciela.",
+    "links": "Linki do grupy w innych serwisach — strona, kanał, czat. Do 10, widoczne na stronie grupy.",
+    "logo": "Obrazek-logo grupy: widoczny w wyszukiwaniu, na karcie i obok nazwy. Kwadratowy obraz wygląda najlepiej."
+  },
+  "portfolio": {
+    "title": "Jak nazwać tę pracę — „Kuchnia w bloku”, „Strona-wizytówka dla kawiarni”.",
+    "sphere": "Dziedzina, do której należy ta praca. Po niej znajdą ją ci, którzy szukają czegoś podobnego.",
+    "startedAt": "Kiedy zaczęła się ta praca. Nieobowiązkowe, ale razem z datą zakończenia widać, ile zajęła.",
+    "completedAt": "Kiedy praca została ukończona. Pole obowiązkowe: według tej daty prace układają się w portfolio.",
+    "city": "Miasto, w którym praca została wykonana. Pomaga zamawiającym w pobliżu wybrać wykonawcę blisko siebie.",
+    "description": "Co zostało zrobione, z jakimi trudnościami udało się poradzić, co wyszło na końcu. Bez limitu długości.",
+    "photos": "Do 5 zdjęć pracy. Pierwsze jest okładką na liście; okładkę można zmienić w każdej chwili."
+  },
+  "revision": {
+    "item": "Który warunek umowy proponujesz zmienić. Na liście są pola tej umowy; „inne” to dowolny tekst.",
+    "before": "Obecna wartość z umowy. Podstawia się sama i nie da się jej edytować — dzięki temu obie strony widzą to samo.",
+    "after": "Nowa wartość warunku. Druga strona ją przyjmie albo odrzuci; do czasu zgody umowa pozostaje bez zmian.",
+    "comment": "Po co ta zmiana. Komentarz zobaczy druga strona — krótkie wyjaśnienie przyspiesza zgodę."
+  },
+  "signing": {
+    "declineComment": "Co dokładnie nie odpowiada i co poprawić. Tekst zobaczy druga strona i zostanie on w historii umowy."
+  }
+}

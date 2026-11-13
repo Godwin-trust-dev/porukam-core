@@ -1,0 +1,67 @@
+.addBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  background: none;
+  border: 1px dashed var(--pr-line);
+  border-radius: var(--pr-r-md);
+  padding: var(--pr-sp-3) var(--pr-sp-4);
+  color: var(--pr-teal-deep);
+  font-weight: var(--pr-fw-medium);
+  cursor: pointer;
+  min-height: var(--pr-touch-min);
+}
+.addBtn:hover {
+  border-color: var(--pr-teal);
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-3);
+  background: var(--pr-cream);
+  border-radius: var(--pr-r-lg);
+  padding: var(--pr-sp-4);
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title {
+  font-weight: var(--pr-fw-semibold);
+  color: var(--pr-ink);
+  margin: 0;
+}
+.collapseBtn {
+  background: none;
+  border: none;
+  color: var(--pr-text-2);
+  cursor: pointer;
+  font-size: var(--pr-fs-sm);
+  min-height: var(--pr-touch-min);
+}
+.hint {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+  margin: 0;
+}
+.segmented {
+  display: inline-flex;
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-pill);
+  overflow: hidden;
+  align-self: flex-start;
+}
+.segBtn {
+  background: var(--pr-white);
+  border: none;
+  padding: var(--pr-sp-2) var(--pr-sp-4);
+  cursor: pointer;
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+  min-height: var(--pr-touch-min);
+}
+.segBtnActive {
+  background: var(--pr-ink);
+  color: var(--pr-text-inv);
+}

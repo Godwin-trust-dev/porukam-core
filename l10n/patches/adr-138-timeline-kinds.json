@@ -1,0 +1,176 @@
+{
+  "ar": {
+    "ui": {
+      "timeline.contract.idle_blocked": "تم تأجيل الإغلاق التلقائي للعقد",
+      "timeline.contract.auto_closed": "تم إغلاق العقد تلقائيًا"
+    }
+  },
+  "az": {
+    "ui": {
+      "timeline.contract.idle_blocked": "Müqavilənin avtomatik bağlanması təxirə salındı",
+      "timeline.contract.auto_closed": "Müqavilə avtomatik bağlandı"
+    }
+  },
+  "bn": {
+    "ui": {
+      "timeline.contract.idle_blocked": "চুক্তির স্বয়ংক্রিয় বন্ধ স্থগিত",
+      "timeline.contract.auto_closed": "চুক্তি স্বয়ংক্রিয়ভাবে বন্ধ হয়েছে"
+    }
+  },
+  "de": {
+    "ui": {
+      "timeline.contract.idle_blocked": "Automatische Schließung des Vertrags verschoben",
+      "timeline.contract.auto_closed": "Vertrag automatisch geschlossen"
+    }
+  },
+  "en": {
+    "ui": {
+      "timeline.contract.idle_blocked": "Automatic closure of the contract postponed",
+      "timeline.contract.auto_closed": "Contract closed automatically"
+    }
+  },
+  "es": {
+    "ui": {
+      "timeline.contract.idle_blocked": "Cierre automático del contrato aplazado",
+      "timeline.contract.auto_closed": "Contrato cerrado automáticamente"
+    }
+  },
+  "fa": {
+    "ui": {
+      "timeline.contract.idle_blocked": "بستن خودکار قرارداد به تعویق افتاد",
+      "timeline.contract.auto_closed": "قرارداد به‌طور خودکار بسته شد"
+    }
+  },
+  "fr": {
+    "ui": {
+      "timeline.contract.idle_blocked": "Clôture automatique du contrat reportée",
+      "timeline.contract.auto_closed": "Contrat clôturé automatiquement"
+    }
+  },
+  "he": {
+    "ui": {
+      "timeline.contract.idle_blocked": "הסגירה האוטומטית של החוזה נדחתה",
+      "timeline.contract.auto_closed": "החוזה נסגר אוטומטית"
+    }
+  },
+  "hi": {
+    "ui": {
+      "timeline.contract.idle_blocked": "अनुबंध का स्वचालित समापन स्थगित",
+      "timeline.contract.auto_closed": "अनुबंध स्वचालित रूप से बंद कर दिया गया"
+    }
+  },
+  "hy": {
+    "ui": {
+      "timeline.contract.idle_blocked": "Պայմանագրի ինքնաբերաբար փակումը հետաձգվել է",
+      "timeline.contract.auto_closed": "Պայմանագիրը փակվել է ինքնաբերաբար"
+    }
+  },
+  "id": {
+    "ui": {
+      "timeline.contract.idle_blocked": "Penutupan otomatis kontrak ditunda",
+      "timeline.contract.auto_closed": "Kontrak ditutup secara otomatis"
+    }
+  },
+  "it": {
+    "ui": {
+      "timeline.contract.idle_blocked": "Chiusura automatica del contratto rinviata",
+      "timeline.contract.auto_closed": "Contratto chiuso automaticamente"
+    }
+  },
+  "ja": {
+    "ui": {
+      "timeline.contract.idle_blocked": "契約の自動終了が延期されました",
+      "timeline.contract.auto_closed": "契約は自動的に終了しました"
+    }
+  },
+  "ka": {
+    "ui": {
+      "timeline.contract.idle_blocked": "ხელშეკრულების ავტომატური დახურვა გადაიდო",
+      "timeline.contract.auto_closed": "ხელშეკრულება ავტომატურად დაიხურა"
+    }
+  },
+  "kk": {
+    "ui": {
+      "timeline.contract.idle_blocked": "Шартты автоматты жабу кейінге қалдырылды",
+      "timeline.contract.auto_closed": "Шарт автоматты түрде жабылды"
+    }
+  },
+  "ko": {
+    "ui": {
+      "timeline.contract.idle_blocked": "계약 자동 종료가 연기되었습니다",
+      "timeline.contract.auto_closed": "계약이 자동으로 종료되었습니다"
+    }
+  },
+  "pl": {
+    "ui": {
+      "timeline.contract.idle_blocked": "Automatyczne zamknięcie umowy odroczone",
+      "timeline.contract.auto_closed": "Umowa zamknięta automatycznie"
+    }
+  },
+  "pt-BR": {
+    "ui": {
+      "timeline.contract.idle_blocked": "Encerramento automático do contrato adiado",
+      "timeline.contract.auto_closed": "Contrato encerrado automaticamente"
+    }
+  },
+  "ro": {
+    "ui": {
+      "timeline.contract.idle_blocked": "Închiderea automată a contractului a fost amânată",
+      "timeline.contract.auto_closed": "Contract închis automat"
+    }
+  },
+  "ru": {
+    "ui": {
+      "timeline.contract.idle_blocked": "Автозакрытие договора отложено",
+      "timeline.contract.auto_closed": "Договор закрыт автоматически"
+    }
+  },
+  "sw": {
+    "ui": {
+      "timeline.contract.idle_blocked": "Kufungwa kiotomatiki kwa mkataba kumeahirishwa",
+      "timeline.contract.auto_closed": "Mkataba umefungwa kiotomatiki"
+    }
+  },
+  "th": {
+    "ui": {
+      "timeline.contract.idle_blocked": "การปิดสัญญาอัตโนมัติถูกเลื่อนออกไป",
+      "timeline.contract.auto_closed": "สัญญาถูกปิดโดยอัตโนมัติ"
+    }
+  },
+  "tr": {
+    "ui": {
+      "timeline.contract.idle_blocked": "Sözleşmenin otomatik kapatılması ertelendi",
+      "timeline.contract.auto_closed": "Sözleşme otomatik olarak kapatıldı"
+    }
+  },
+  "uk": {
+    "ui": {
+      "timeline.contract.idle_blocked": "Автозакриття договору відкладено",
+      "timeline.contract.auto_closed": "Договір закрито автоматично"
+    }
+  },
+  "ur": {
+    "ui": {
+      "timeline.contract.idle_blocked": "معاہدے کی خودکار بندش مؤخر کر دی گئی",
+      "timeline.contract.auto_closed": "معاہدہ خودکار طور پر بند کر دیا گیا"
+    }
+  },
+  "uz": {
+    "ui": {
+      "timeline.contract.idle_blocked": "Shartnomani avtomatik yopish kechiktirildi",
+      "timeline.contract.auto_closed": "Shartnoma avtomatik yopildi"
+    }
+  },
+  "vi": {
+    "ui": {
+      "timeline.contract.idle_blocked": "Việc đóng tự động hợp đồng đã được hoãn",
+      "timeline.contract.auto_closed": "Hợp đồng đã được đóng tự động"
+    }
+  },
+  "zh-Hans": {
+    "ui": {
+      "timeline.contract.idle_blocked": "合同自动关闭已推迟",
+      "timeline.contract.auto_closed": "合同已自动关闭"
+    }
+  }
+}

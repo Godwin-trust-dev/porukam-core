@@ -1,0 +1,28 @@
+.banner {
+  display: flex;
+  gap: var(--pr-sp-3);
+  padding: var(--pr-sp-5);
+  border-radius: var(--pr-r-lg);
+  border: 1px solid var(--pr-line);
+  background: var(--pr-cream);
+}
+.icon {
+  flex: none;
+  color: var(--pr-amber-deep);
+}
+.title {
+  margin: 0 0 var(--pr-sp-1);
+  color: var(--pr-ink);
+  font-size: var(--pr-fs-h3);
+}
+.text {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.shifted {
+  margin: var(--pr-sp-2) 0 0;
+  color: var(--pr-amber-deep);
+  font-weight: var(--pr-fw-medium);
+  font-size: var(--pr-fs-sm);
+}

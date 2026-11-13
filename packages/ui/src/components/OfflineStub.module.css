@@ -1,0 +1,24 @@
+.state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--pr-sp-2);
+  padding: var(--pr-sp-8) var(--pr-sp-4);
+}
+.icon {
+  color: var(--pr-text-mute);
+  margin-bottom: var(--pr-sp-2);
+}
+.title {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-ink);
+  margin: 0;
+}
+.text {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}

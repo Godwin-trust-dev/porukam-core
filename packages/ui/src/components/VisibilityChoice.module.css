@@ -1,0 +1,18 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-3);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--pr-font-head);
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-ink);
+}
+
+.hint {
+  margin: 0;
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-mute);
+}

@@ -1,0 +1,35 @@
+/* Правый рейл дашборда (DEV-19 §3): деньги по активным сделкам + мини-профиль. */
+.desktopOnly {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .desktopOnly {
+    display: block;
+  }
+}
+.profileName {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h3);
+  color: var(--pr-ink);
+  margin: 0;
+}
+.handle {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.profileRows {
+  display: grid;
+  gap: var(--pr-sp-2);
+  margin: 0;
+}
+.hint {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.profileFoot {
+  display: flex;
+  gap: var(--pr-sp-2);
+  flex-wrap: wrap;
+}

@@ -1,0 +1,111 @@
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-4);
+}
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--pr-sp-3);
+}
+@media (max-width: 480px) {
+  .row2 {
+    grid-template-columns: 1fr;
+  }
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+}
+.fieldLabel {
+  font-weight: var(--pr-fw-medium);
+  color: var(--pr-ink);
+  font-size: var(--pr-fs-sm);
+}
+.segmented {
+  display: inline-flex;
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-pill);
+  overflow: hidden;
+  align-self: flex-start;
+}
+.segBtn {
+  background: var(--pr-white);
+  border: none;
+  padding: var(--pr-sp-2) var(--pr-sp-4);
+  cursor: pointer;
+  color: var(--pr-text-2);
+  min-height: var(--pr-touch-min);
+}
+.segBtnActive {
+  background: var(--pr-ink);
+  color: var(--pr-text-inv);
+}
+.autoNote {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+  margin: calc(-1 * var(--pr-sp-2)) 0 0;
+  display: flex;
+  gap: var(--pr-sp-2);
+}
+.linkBtn {
+  background: none;
+  border: none;
+  color: var(--pr-teal-deep);
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+  text-decoration: underline;
+}
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-2);
+}
+.photo {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  border-radius: var(--pr-r-md);
+  overflow: hidden;
+  border: 1px solid var(--pr-line);
+}
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.photoRemove {
+  position: absolute;
+  top: 2px;
+  inset-inline-end: 2px;
+  background: rgba(22, 40, 60, 0.7);
+  color: var(--pr-text-inv);
+  border: none;
+  border-radius: var(--pr-r-pill);
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.photoAdd {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--pr-r-md);
+  border: 1px dashed var(--pr-line);
+  background: var(--pr-cream);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+  cursor: pointer;
+}
+.photoAdd:hover {
+  border-color: var(--pr-amber);
+}

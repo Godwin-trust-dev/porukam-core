@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "Lingua dell’interfaccia",
+  "globeTriggerAria": "Lingua dell’interfaccia",
+  "rowLabel": "Lingua dell’interfaccia",
+  "listTitle": "Lingua dell’interfaccia",
+  "searchPlaceholder": "Cerca una lingua…",
+  "searchAriaLabel": "Cerca una lingua",
+  "searchClear": "Cancella la ricerca",
+  "currentSectionTitle": "Attuale",
+  "allSectionTitle": "Tutte le lingue",
+  "noResults": "Nessuna lingua trovata",
+  "betaBadge": "traduzione automatica",
+  "betaTooltip": "Tradotto automaticamente: può contenere imprecisioni",
+  "currentAria": "Lingua attuale",
+  "disabledToast": "{{lang}} non è disponibile al momento · mostriamo l’inglese",
+  "closeLabel": "Chiudi",
+  "onboardingHint": "Rilevata automaticamente: puoi cambiarla quando vuoi",
+  "settingsRowLabel": "Lingua e area",
+  "settingsLanguageExplain": "Questa è la lingua dell’applicazione. La lingua ufficiale del contratto si sceglie a parte: la controparte vede una traduzione, ma si firma il testo ufficiale.",
+  "loadErrorRetry": "Riprova",
+  "loadError": "Non è stato possibile caricare l’elenco delle lingue"
+}

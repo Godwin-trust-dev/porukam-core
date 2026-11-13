@@ -1,0 +1,12 @@
+{
+  "actorSwitcher": {
+    "triggerLabel": "สลับโปรไฟล์",
+    "personalLabel": "ส่วนตัว",
+    "legalFormIp": "บุคคลธรรมดา",
+    "legalFormOoo": "บริษัทจำกัด",
+    "addOrg": "เพิ่มองค์กร",
+    "groups": "กลุ่มของฉัน"
+  },
+  "sectionMenu": "หมวด",
+  "logout": "ออกจากระบบ"
+}

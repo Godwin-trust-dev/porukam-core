@@ -1,0 +1,27 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-4);
+}
+.fixedRow,
+.autoRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--pr-cream);
+  border-radius: var(--pr-r-md);
+  padding: var(--pr-sp-3) var(--pr-sp-4);
+  font-variant-numeric: tabular-nums;
+}
+.autoRow {
+  color: var(--pr-text-2);
+}
+.autoRow strong {
+  color: var(--pr-ink);
+  font-variant-numeric: tabular-nums;
+}
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--pr-sp-3);
+}

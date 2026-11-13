@@ -1,0 +1,176 @@
+{
+  "ar": {
+    "errors": {
+      "revision_item_unknown": "لا يوجد مثل هذا الحقل في نموذج هذا النوع من الصفقات.",
+      "revision_value_invalid": "القيمة المقترحة لا تجتاز التحقّق."
+    }
+  },
+  "az": {
+    "errors": {
+      "revision_item_unknown": "Bu müqavilə növünün formasında belə bir sahə yoxdur.",
+      "revision_value_invalid": "Təklif olunan dəyər yoxlamadan keçmir."
+    }
+  },
+  "bn": {
+    "errors": {
+      "revision_item_unknown": "এই ধরনের চুক্তির ফর্মে এমন কোনো ক্ষেত্র নেই।",
+      "revision_value_invalid": "প্রস্তাবিত মানটি যাচাইয়ে উত্তীর্ণ হয়নি।"
+    }
+  },
+  "de": {
+    "errors": {
+      "revision_item_unknown": "In dem Formular für diese Vertragsart gibt es kein solches Feld.",
+      "revision_value_invalid": "Der vorgeschlagene Wert besteht die Prüfung nicht."
+    }
+  },
+  "en": {
+    "errors": {
+      "revision_item_unknown": "There is no such field in the form for this type of deal.",
+      "revision_value_invalid": "The proposed value doesn't pass validation."
+    }
+  },
+  "es": {
+    "errors": {
+      "revision_item_unknown": "No existe ese campo en el formulario de este tipo de acuerdo.",
+      "revision_value_invalid": "El valor propuesto no supera la validación."
+    }
+  },
+  "fa": {
+    "errors": {
+      "revision_item_unknown": "چنین فیلدی در فرم این نوع قرارداد وجود ندارد.",
+      "revision_value_invalid": "مقدار پیشنهادی از اعتبارسنجی عبور نمی‌کند."
+    }
+  },
+  "fr": {
+    "errors": {
+      "revision_item_unknown": "Ce champ n'existe pas dans le formulaire de ce type d'accord.",
+      "revision_value_invalid": "La valeur proposée ne passe pas la validation."
+    }
+  },
+  "he": {
+    "errors": {
+      "revision_item_unknown": "אין שדה כזה בטופס של סוג העסקה הזה.",
+      "revision_value_invalid": "הערך המוצע אינו עובר את הבדיקה."
+    }
+  },
+  "hi": {
+    "errors": {
+      "revision_item_unknown": "इस प्रकार के अनुबंध के फ़ॉर्म में ऐसा कोई फ़ील्ड नहीं है।",
+      "revision_value_invalid": "प्रस्तावित मान जाँच में उत्तीर्ण नहीं होता।"
+    }
+  },
+  "hy": {
+    "errors": {
+      "revision_item_unknown": "Այս տեսակի պայմանագրի ձևում այդպիսի դաշտ չկա.",
+      "revision_value_invalid": "Առաջարկվող արժեքը չի անցնում ստուգումը."
+    }
+  },
+  "id": {
+    "errors": {
+      "revision_item_unknown": "Tidak ada bidang seperti itu pada formulir jenis perjanjian ini.",
+      "revision_value_invalid": "Nilai yang diusulkan tidak lolos validasi."
+    }
+  },
+  "it": {
+    "errors": {
+      "revision_item_unknown": "Questo campo non esiste nel modulo di questo tipo di accordo.",
+      "revision_value_invalid": "Il valore proposto non supera la convalida."
+    }
+  },
+  "ja": {
+    "errors": {
+      "revision_item_unknown": "この契約種別のフォームにその項目はありません。",
+      "revision_value_invalid": "提案された値は検証を通過しません。"
+    }
+  },
+  "ka": {
+    "errors": {
+      "revision_item_unknown": "ამ ტიპის ხელშეკრულების ფორმაში ასეთი ველი არ არის.",
+      "revision_value_invalid": "შემოთავაზებული მნიშვნელობა ვერ გადის შემოწმებას."
+    }
+  },
+  "kk": {
+    "errors": {
+      "revision_item_unknown": "Шарттың бұл түрінің нысанында мұндай өріс жоқ.",
+      "revision_value_invalid": "Ұсынылған мән тексеруден өтпейді."
+    }
+  },
+  "ko": {
+    "errors": {
+      "revision_item_unknown": "이 계약 유형의 양식에는 해당 항목이 없습니다.",
+      "revision_value_invalid": "제안된 값이 검증을 통과하지 못합니다."
+    }
+  },
+  "pl": {
+    "errors": {
+      "revision_item_unknown": "W formularzu tego rodzaju umowy nie ma takiego pola.",
+      "revision_value_invalid": "Proponowana wartość nie przechodzi weryfikacji."
+    }
+  },
+  "pt-BR": {
+    "errors": {
+      "revision_item_unknown": "Não existe esse campo no formulário deste tipo de acordo.",
+      "revision_value_invalid": "O valor proposto não passa na validação."
+    }
+  },
+  "ro": {
+    "errors": {
+      "revision_item_unknown": "Nu există un astfel de câmp în formularul acestui tip de acord.",
+      "revision_value_invalid": "Valoarea propusă nu trece validarea."
+    }
+  },
+  "ru": {
+    "errors": {
+      "revision_item_unknown": "Такого поля нет в форме этого типа договора.",
+      "revision_value_invalid": "Значение правки не проходит проверку."
+    }
+  },
+  "sw": {
+    "errors": {
+      "revision_item_unknown": "Hakuna sehemu kama hiyo katika fomu ya aina hii ya makubaliano.",
+      "revision_value_invalid": "Thamani iliyopendekezwa haipiti uthibitishaji."
+    }
+  },
+  "th": {
+    "errors": {
+      "revision_item_unknown": "ไม่มีช่องข้อมูลดังกล่าวในแบบฟอร์มของสัญญาประเภทนี้.",
+      "revision_value_invalid": "ค่าที่เสนอไม่ผ่านการตรวจสอบ."
+    }
+  },
+  "tr": {
+    "errors": {
+      "revision_item_unknown": "Bu sözleşme türünün formunda böyle bir alan yok.",
+      "revision_value_invalid": "Önerilen değer doğrulamadan geçmiyor."
+    }
+  },
+  "uk": {
+    "errors": {
+      "revision_item_unknown": "У формі цього типу договору немає такого поля.",
+      "revision_value_invalid": "Запропоноване значення не проходить перевірку."
+    }
+  },
+  "ur": {
+    "errors": {
+      "revision_item_unknown": "اس قسم کے معاہدے کے فارم میں ایسا کوئی خانہ نہیں ہے۔",
+      "revision_value_invalid": "تجویز کردہ قدر جانچ میں پوری نہیں اترتی۔"
+    }
+  },
+  "uz": {
+    "errors": {
+      "revision_item_unknown": "Shartnomaning bu turidagi shaklda bunday maydon yo'q.",
+      "revision_value_invalid": "Taklif qilingan qiymat tekshiruvdan o'tmaydi."
+    }
+  },
+  "vi": {
+    "errors": {
+      "revision_item_unknown": "Biểu mẫu của loại thỏa thuận này không có trường đó.",
+      "revision_value_invalid": "Giá trị được đề xuất không vượt qua kiểm tra."
+    }
+  },
+  "zh-Hans": {
+    "errors": {
+      "revision_item_unknown": "此合同类型的表单中没有该字段。",
+      "revision_value_invalid": "建议的值未通过校验。"
+    }
+  }
+}

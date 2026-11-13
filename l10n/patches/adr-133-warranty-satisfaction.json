@@ -1,0 +1,582 @@
+{
+  "ar": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "أبلغ المنفّذ عن إصلاح العيب",
+        "body": "أبلغ المنفّذ عن إصلاح العيب موضوع مطالبة الضمان على العقد «{contract_title}». أكّد أو اعترض خلال المهلة المحددة — وإلا ستُغلق المطالبة تلقائيًا."
+      },
+      "warranty.claim_satisfied": {
+        "subject": "تمت تلبية مطالبة الضمان",
+        "body": "أكّد العميل إصلاح العيب موضوع مطالبة الضمان على العقد «{contract_title}» — أُغلقت المطالبة."
+      },
+      "warranty.claim_contested": {
+        "subject": "العميل: لم يُصلَح العيب",
+        "body": "لم يؤكد العميل الإصلاح موضوع مطالبة الضمان على العقد «{contract_title}» — أُعيدت المطالبة إلى المنفّذ."
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "أُغلقت المطالبة تلقائيًا",
+        "body": "أُغلقت مطالبة الضمان على العقد «{contract_title}» تلقائيًا: انتهت مهلة التأكيد دون اعتراض من العميل."
+      }
+    }
+  },
+  "az": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "İcraçı qüsurun aradan qaldırıldığını bildirdi",
+        "body": "İcraçı «{contract_title}» müqaviləsi üzrə zəmanət iddiasındakı qüsurun aradan qaldırıldığını bildirdi. Ayrılmış müddətdə təsdiq edin və ya etiraz edin — əks halda iddia avtomatik bağlanacaq."
+      },
+      "warranty.claim_satisfied": {
+        "subject": "Zəmanət iddiası təmin edildi",
+        "body": "Sifarişçi «{contract_title}» müqaviləsi üzrə zəmanət iddiasındakı qüsurun aradan qaldırıldığını təsdiq etdi — iddia bağlandı."
+      },
+      "warranty.claim_contested": {
+        "subject": "Sifarişçi: qüsur aradan qaldırılmayıb",
+        "body": "Sifarişçi «{contract_title}» müqaviləsi üzrə zəmanət iddiasında aradan qaldırmanı təsdiq etmədi — iddia icraçıya qaytarıldı."
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "İddia avtomatik bağlandı",
+        "body": "«{contract_title}» müqaviləsi üzrə zəmanət iddiası avtomatik bağlandı: təsdiq müddəti bitdi, sifarişçidən etiraz olmadı."
+      }
+    }
+  },
+  "bn": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "ঠিকাদার ত্রুটি সমাধানের কথা জানিয়েছেন",
+        "body": "ঠিকাদার চুক্তি «{contract_title}»-এর ওয়ারেন্টি দাবির ত্রুটি সমাধানের কথা জানিয়েছেন। নির্ধারিত সময়ের মধ্যে নিশ্চিত করুন বা আপত্তি জানান — অন্যথায় দাবিটি স্বয়ংক্রিয়ভাবে বন্ধ হবে।"
+      },
+      "warranty.claim_satisfied": {
+        "subject": "ওয়ারেন্টি দাবি পূরণ হয়েছে",
+        "body": "গ্রাহক চুক্তি «{contract_title}»-এর ওয়ারেন্টি দাবির ত্রুটি সমাধান নিশ্চিত করেছেন — দাবি বন্ধ।"
+      },
+      "warranty.claim_contested": {
+        "subject": "গ্রাহক: ত্রুটি সমাধান হয়নি",
+        "body": "গ্রাহক চুক্তি «{contract_title}»-এর ওয়ারেন্টি দাবির সমাধান নিশ্চিত করেননি — দাবি ঠিকাদারের কাছে ফেরত।"
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "দাবি স্বয়ংক্রিয়ভাবে বন্ধ",
+        "body": "চুক্তি «{contract_title}»-এর ওয়ারেন্টি দাবি স্বয়ংক্রিয়ভাবে বন্ধ হয়েছে: নিশ্চিতকরণের সময় শেষ, গ্রাহকের কোনো আপত্তি ছিল না।"
+      }
+    }
+  },
+  "de": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "Auftragnehmer meldet Mangel behoben",
+        "body": "Der Auftragnehmer meldet den Mangel aus dem Gewährleistungsanspruch zum Vertrag „{contract_title}“ als behoben. Bestätigen Sie oder widersprechen Sie innerhalb der Frist — sonst wird der Anspruch automatisch geschlossen."
+      },
+      "warranty.claim_satisfied": {
+        "subject": "Gewährleistungsanspruch erfüllt",
+        "body": "Der Auftraggeber hat die Mängelbehebung zum Gewährleistungsanspruch aus dem Vertrag „{contract_title}“ bestätigt — der Anspruch ist geschlossen."
+      },
+      "warranty.claim_contested": {
+        "subject": "Auftraggeber: Mangel nicht behoben",
+        "body": "Der Auftraggeber hat die Mängelbehebung zum Gewährleistungsanspruch aus dem Vertrag „{contract_title}“ nicht bestätigt — der Anspruch liegt wieder beim Auftragnehmer."
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "Anspruch automatisch geschlossen",
+        "body": "Der Gewährleistungsanspruch zum Vertrag „{contract_title}“ wurde automatisch geschlossen: die Bestätigungsfrist ist ohne Widerspruch des Auftraggebers abgelaufen."
+      }
+    }
+  },
+  "en": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "Contractor reports the defect fixed",
+        "body": "The contractor reports the defect under the warranty claim on the contract “{contract_title}” as fixed. Confirm or object within the allotted time — otherwise the claim closes automatically."
+      },
+      "warranty.claim_satisfied": {
+        "subject": "Warranty claim satisfied",
+        "body": "The customer has confirmed the fix under the warranty claim on the contract “{contract_title}” — the claim is closed."
+      },
+      "warranty.claim_contested": {
+        "subject": "Customer: defect not fixed",
+        "body": "The customer did not confirm the fix under the warranty claim on the contract “{contract_title}” — the claim is back with the contractor."
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "Claim closed automatically",
+        "body": "The warranty claim on the contract “{contract_title}” was closed automatically: the confirmation window expired with no objection from the customer."
+      }
+    }
+  },
+  "es": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "El contratista informa del defecto subsanado",
+        "body": "El contratista informa de que el defecto de la reclamación de garantía del contrato «{contract_title}» ha sido subsanado. Confirme u objete en el plazo previsto; de lo contrario, la reclamación se cerrará automáticamente."
+      },
+      "warranty.claim_satisfied": {
+        "subject": "Reclamación de garantía satisfecha",
+        "body": "El cliente ha confirmado la subsanación del defecto de la reclamación de garantía del contrato «{contract_title}» — la reclamación queda cerrada."
+      },
+      "warranty.claim_contested": {
+        "subject": "Cliente: defecto no subsanado",
+        "body": "El cliente no ha confirmado la subsanación de la reclamación de garantía del contrato «{contract_title}» — la reclamación vuelve al contratista."
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "Reclamación cerrada automáticamente",
+        "body": "La reclamación de garantía del contrato «{contract_title}» se ha cerrado automáticamente: el plazo de confirmación venció sin objeciones del cliente."
+      }
+    }
+  },
+  "fa": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "مجری رفع نقص را اعلام کرد",
+        "body": "مجری رفع نقص مربوط به ادعای گارانتی قرارداد «{contract_title}» را اعلام کرد. در مهلت مقرر تأیید یا اعتراض کنید — در غیر این صورت ادعا به‌طور خودکار بسته می‌شود."
+      },
+      "warranty.claim_satisfied": {
+        "subject": "ادعای گارانتی برآورده شد",
+        "body": "کارفرما رفع نقص مربوط به ادعای گارانتی قرارداد «{contract_title}» را تأیید کرد — ادعا بسته شد."
+      },
+      "warranty.claim_contested": {
+        "subject": "کارفرما: نقص رفع نشده است",
+        "body": "کارفرما رفع نقص مربوط به ادعای گارانتی قرارداد «{contract_title}» را تأیید نکرد — ادعا به مجری بازگردانده شد."
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "ادعا به‌طور خودکار بسته شد",
+        "body": "ادعای گارانتی قرارداد «{contract_title}» به‌طور خودکار بسته شد: مهلت تأیید بدون اعتراض کارفرما به پایان رسید."
+      }
+    }
+  },
+  "fr": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "Le prestataire signale le défaut corrigé",
+        "body": "Le prestataire signale la correction du défaut visé par la réclamation de garantie sur le contrat « {contract_title} ». Confirmez ou contestez dans le délai imparti — sinon la réclamation sera close automatiquement."
+      },
+      "warranty.claim_satisfied": {
+        "subject": "Réclamation de garantie satisfaite",
+        "body": "Le client a confirmé la correction du défaut visé par la réclamation de garantie sur le contrat « {contract_title} » — la réclamation est close."
+      },
+      "warranty.claim_contested": {
+        "subject": "Client : défaut non corrigé",
+        "body": "Le client n’a pas confirmé la correction visée par la réclamation de garantie sur le contrat « {contract_title} » — la réclamation revient au prestataire."
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "Réclamation close automatiquement",
+        "body": "La réclamation de garantie sur le contrat « {contract_title} » a été close automatiquement : le délai de confirmation a expiré sans objection du client."
+      }
+    }
+  },
+  "he": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "הקבלן דיווח על תיקון הליקוי",
+        "body": "הקבלן דיווח על תיקון הליקוי בתביעת האחריות לחוזה «{contract_title}». אשרו או התנגדו בתוך המועד שנקבע — אחרת התביעה תיסגר אוטומטית."
+      },
+      "warranty.claim_satisfied": {
+        "subject": "תביעת האחריות מולאה",
+        "body": "המזמין אישר את תיקון הליקוי בתביעת האחריות לחוזה «{contract_title}» — התביעה נסגרה."
+      },
+      "warranty.claim_contested": {
+        "subject": "המזמין: הליקוי לא תוקן",
+        "body": "המזמין לא אישר את התיקון בתביעת האחריות לחוזה «{contract_title}» — התביעה הוחזרה לקבלן."
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "התביעה נסגרה אוטומטית",
+        "body": "תביעת האחריות לחוזה «{contract_title}» נסגרה אוטומטית: מועד האישור חלף ללא התנגדות מצד המזמין."
+      }
+    }
+  },
+  "hi": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "ठेकेदार ने दोष दूर होने की सूचना दी",
+        "body": "ठेकेदार ने अनुबंध «{contract_title}» के वारंटी दावे में दोष दूर होने की सूचना दी। निर्धारित अवधि में पुष्टि करें या आपत्ति दर्ज करें — अन्यथा दावा स्वतः बंद हो जाएगा।"
+      },
+      "warranty.claim_satisfied": {
+        "subject": "वारंटी दावा संतुष्ट",
+        "body": "ग्राहक ने अनुबंध «{contract_title}» के वारंटी दावे में दोष के निवारण की पुष्टि की — दावा बंद।"
+      },
+      "warranty.claim_contested": {
+        "subject": "ग्राहक: दोष दूर नहीं हुआ",
+        "body": "ग्राहक ने अनुबंध «{contract_title}» के वारंटी दावे में निवारण की पुष्टि नहीं की — दावा ठेकेदार को वापस।"
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "दावा स्वतः बंद",
+        "body": "अनुबंध «{contract_title}» का वारंटी दावा स्वतः बंद हो गया: पुष्टि की अवधि समाप्त हुई, ग्राहक की ओर से कोई आपत्ति नहीं।"
+      }
+    }
+  },
+  "hy": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "Կատարողը հայտնել է թերության վերացման մասին",
+        "body": "Կատարողը հայտնել է «{contract_title}» պայմանագրի երաշխիքային պահանջով թերության վերացման մասին։ Հաստատեք կամ առարկեք սահմանված ժամկետում, հակառակ դեպքում պահանջն ինքնաբերաբար կփակվի։"
+      },
+      "warranty.claim_satisfied": {
+        "subject": "Երաշխիքային պահանջը բավարարվել է",
+        "body": "Պատվիրատուն հաստատել է «{contract_title}» պայմանագրի երաշխիքային պահանջով թերության վերացումը — պահանջը փակված է։"
+      },
+      "warranty.claim_contested": {
+        "subject": "Պատվիրատու․ թերությունը վերացված չէ",
+        "body": "Պատվիրատուն չի հաստատել «{contract_title}» պայմանագրի երաշխիքային պահանջով վերացումը — պահանջը վերադարձվել է կատարողին։"
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "Պահանջն ինքնաբերաբար փակվել է",
+        "body": "«{contract_title}» պայմանագրի երաշխիքային պահանջն ինքնաբերաբար փակվել է․ հաստատման ժամկետը լրացել է, պատվիրատուից առարկություն չի եղել։"
+      }
+    }
+  },
+  "id": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "Kontraktor melaporkan cacat telah diperbaiki",
+        "body": "Kontraktor melaporkan cacat pada klaim garansi kontrak «{contract_title}» telah diperbaiki. Konfirmasi atau ajukan keberatan dalam waktu yang ditentukan — jika tidak, klaim akan ditutup otomatis."
+      },
+      "warranty.claim_satisfied": {
+        "subject": "Klaim garansi dipenuhi",
+        "body": "Pelanggan mengonfirmasi perbaikan cacat pada klaim garansi kontrak «{contract_title}» — klaim ditutup."
+      },
+      "warranty.claim_contested": {
+        "subject": "Pelanggan: cacat belum diperbaiki",
+        "body": "Pelanggan tidak mengonfirmasi perbaikan pada klaim garansi kontrak «{contract_title}» — klaim dikembalikan ke kontraktor."
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "Klaim ditutup otomatis",
+        "body": "Klaim garansi kontrak «{contract_title}» ditutup otomatis: batas waktu konfirmasi berakhir tanpa keberatan dari pelanggan."
+      }
+    }
+  },
+  "it": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "L’esecutore segnala il difetto risolto",
+        "body": "L’esecutore segnala come risolto il difetto del reclamo in garanzia sul contratto «{contract_title}». Conferma o contesta entro il termine previsto, altrimenti il reclamo si chiuderà automaticamente."
+      },
+      "warranty.claim_satisfied": {
+        "subject": "Reclamo in garanzia soddisfatto",
+        "body": "Il committente ha confermato la risoluzione del difetto del reclamo in garanzia sul contratto «{contract_title}» — il reclamo è chiuso."
+      },
+      "warranty.claim_contested": {
+        "subject": "Committente: difetto non risolto",
+        "body": "Il committente non ha confermato la risoluzione del reclamo in garanzia sul contratto «{contract_title}» — il reclamo torna all’esecutore."
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "Reclamo chiuso automaticamente",
+        "body": "Il reclamo in garanzia sul contratto «{contract_title}» è stato chiuso automaticamente: il termine di conferma è scaduto senza obiezioni del committente."
+      }
+    }
+  },
+  "ja": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "受注者が不具合の是正を報告しました",
+        "body": "受注者が契約「{contract_title}」の保証請求に係る不具合の是正を報告しました。所定の期限内に確認または異議を申し立ててください。期限を過ぎると請求は自動的に終了します。"
+      },
+      "warranty.claim_satisfied": {
+        "subject": "保証請求が満たされました",
+        "body": "発注者が契約「{contract_title}」の保証請求に係る不具合の是正を確認しました — 請求は終了しました。"
+      },
+      "warranty.claim_contested": {
+        "subject": "発注者：不具合は是正されていません",
+        "body": "発注者が契約「{contract_title}」の保証請求に係る是正を確認しませんでした — 請求は受注者に差し戻されました。"
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "請求は自動的に終了しました",
+        "body": "契約「{contract_title}」の保証請求は自動的に終了しました：確認期限が経過し、発注者からの異議はありませんでした。"
+      }
+    }
+  },
+  "ka": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "შემსრულებელმა ხარვეზის აღმოფხვრა შეატყობინა",
+        "body": "შემსრულებელმა შეატყობინა «{contract_title}» ხელშეკრულების საგარანტიო პრეტენზიით ხარვეზის აღმოფხვრის შესახებ. დაადასტურეთ ან გააპროტესტეთ დათქმულ ვადაში — წინააღმდეგ შემთხვევაში პრეტენზია ავტომატურად დაიხურება."
+      },
+      "warranty.claim_satisfied": {
+        "subject": "საგარანტიო პრეტენზია დაკმაყოფილებულია",
+        "body": "დამკვეთმა დაადასტურა «{contract_title}» ხელშეკრულების საგარანტიო პრეტენზიით ხარვეზის აღმოფხვრა — პრეტენზია დახურულია."
+      },
+      "warranty.claim_contested": {
+        "subject": "დამკვეთი: ხარვეზი არ არის აღმოფხვრილი",
+        "body": "დამკვეთმა არ დაადასტურა «{contract_title}» ხელშეკრულების საგარანტიო პრეტენზიით აღმოფხვრა — პრეტენზია დაუბრუნდა შემსრულებელს."
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "პრეტენზია ავტომატურად დაიხურა",
+        "body": "«{contract_title}» ხელშეკრულების საგარანტიო პრეტენზია ავტომატურად დაიხურა: დადასტურების ვადა ამოიწურა, დამკვეთისგან პროტესტი არ ყოფილა."
+      }
+    }
+  },
+  "kk": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "Орындаушы кемшілік жойылғанын хабарлады",
+        "body": "Орындаушы «{contract_title}» шарты бойынша кепілдік шағымындағы кемшілік жойылғанын хабарлады. Белгіленген мерзімде растаңыз немесе қарсылық білдіріңіз — әйтпесе шағым автоматты түрде жабылады."
+      },
+      "warranty.claim_satisfied": {
+        "subject": "Кепілдік шағымы қанағаттандырылды",
+        "body": "Тапсырыс беруші «{contract_title}» шарты бойынша кепілдік шағымындағы кемшіліктің жойылғанын растады — шағым жабылды."
+      },
+      "warranty.claim_contested": {
+        "subject": "Тапсырыс беруші: кемшілік жойылмаған",
+        "body": "Тапсырыс беруші «{contract_title}» шарты бойынша кепілдік шағымындағы жоюды растамады — шағым орындаушыға қайтарылды."
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "Шағым автоматты түрде жабылды",
+        "body": "«{contract_title}» шарты бойынша кепілдік шағымы автоматты түрде жабылды: растау мерзімі өтті, тапсырыс берушіден қарсылық болмады."
+      }
+    }
+  },
+  "ko": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "수급자가 하자 보수를 보고했습니다",
+        "body": "수급자가 계약 «{contract_title}»의 보증 청구에 대한 하자 보수를 보고했습니다. 정해진 기한 내에 확인하거나 이의를 제기하세요 — 그렇지 않으면 청구가 자동으로 종료됩니다."
+      },
+      "warranty.claim_satisfied": {
+        "subject": "보증 청구가 이행되었습니다",
+        "body": "발주자가 계약 «{contract_title}»의 보증 청구에 대한 하자 보수를 확인했습니다 — 청구가 종료되었습니다."
+      },
+      "warranty.claim_contested": {
+        "subject": "발주자: 하자가 보수되지 않음",
+        "body": "발주자가 계약 «{contract_title}»의 보증 청구에 대한 보수를 확인하지 않았습니다 — 청구가 수급자에게 반환되었습니다."
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "청구가 자동으로 종료되었습니다",
+        "body": "계약 «{contract_title}»의 보증 청구가 자동으로 종료되었습니다: 확인 기한이 만료되었고 발주자의 이의가 없었습니다."
+      }
+    }
+  },
+  "pl": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "Wykonawca zgłosił usunięcie wady",
+        "body": "Wykonawca zgłosił usunięcie wady z reklamacji gwarancyjnej do umowy „{contract_title}”. Potwierdź lub zgłoś sprzeciw w wyznaczonym terminie — inaczej reklamacja zostanie zamknięta automatycznie."
+      },
+      "warranty.claim_satisfied": {
+        "subject": "Reklamacja gwarancyjna uznana",
+        "body": "Zamawiający potwierdził usunięcie wady z reklamacji gwarancyjnej do umowy „{contract_title}” — reklamacja zamknięta."
+      },
+      "warranty.claim_contested": {
+        "subject": "Zamawiający: wada nie została usunięta",
+        "body": "Zamawiający nie potwierdził usunięcia wady z reklamacji gwarancyjnej do umowy „{contract_title}” — reklamacja wróciła do wykonawcy."
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "Reklamacja zamknięta automatycznie",
+        "body": "Reklamacja gwarancyjna do umowy „{contract_title}” została zamknięta automatycznie: termin potwierdzenia minął bez sprzeciwu zamawiającego."
+      }
+    }
+  },
+  "pt-BR": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "Contratado informa defeito corrigido",
+        "body": "O contratado informa que o defeito da reclamação de garantia do contrato “{contract_title}” foi corrigido. Confirme ou conteste no prazo estabelecido — caso contrário, a reclamação será encerrada automaticamente."
+      },
+      "warranty.claim_satisfied": {
+        "subject": "Reclamação de garantia atendida",
+        "body": "O contratante confirmou a correção do defeito da reclamação de garantia do contrato “{contract_title}” — a reclamação está encerrada."
+      },
+      "warranty.claim_contested": {
+        "subject": "Contratante: defeito não corrigido",
+        "body": "O contratante não confirmou a correção da reclamação de garantia do contrato “{contract_title}” — a reclamação voltou ao contratado."
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "Reclamação encerrada automaticamente",
+        "body": "A reclamação de garantia do contrato “{contract_title}” foi encerrada automaticamente: o prazo de confirmação expirou sem objeção do contratante."
+      }
+    }
+  },
+  "ro": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "Executantul a raportat remedierea",
+        "body": "Executantul a raportat remedierea defectului din reclamația de garanție la contractul „{contract_title}”. Confirmați sau obiectați în termenul alocat — altfel reclamația se închide automat."
+      },
+      "warranty.claim_satisfied": {
+        "subject": "Reclamație de garanție satisfăcută",
+        "body": "Clientul a confirmat remedierea defectului din reclamația de garanție la contractul „{contract_title}” — reclamația este închisă."
+      },
+      "warranty.claim_contested": {
+        "subject": "Client: defectul nu a fost remediat",
+        "body": "Clientul nu a confirmat remedierea din reclamația de garanție la contractul „{contract_title}” — reclamația a revenit la executant."
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "Reclamație închisă automat",
+        "body": "Reclamația de garanție la contractul „{contract_title}” a fost închisă automat: termenul de confirmare a expirat fără obiecții din partea clientului."
+      }
+    }
+  },
+  "ru": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "Исполнитель сообщил об устранении",
+        "body": "Исполнитель сообщил об устранении недостатка по гарантийной претензии к договору «{contract_title}». Подтвердите или возразите в отведённый срок — иначе претензия закроется автоматически."
+      },
+      "warranty.claim_satisfied": {
+        "subject": "Гарантийная претензия удовлетворена",
+        "body": "Заказчик подтвердил устранение недостатка по гарантийной претензии к договору «{contract_title}» — претензия закрыта."
+      },
+      "warranty.claim_contested": {
+        "subject": "Заказчик: недостаток не устранён",
+        "body": "Заказчик не подтвердил устранение по гарантийной претензии к договору «{contract_title}» — претензия возвращена исполнителю."
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "Претензия закрыта автоматически",
+        "body": "Гарантийная претензия по договору «{contract_title}» закрыта автоматически: срок подтверждения истёк, возражений от заказчика не было."
+      }
+    }
+  },
+  "sw": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "Mkandarasi ameripoti kasoro imerekebishwa",
+        "body": "Mkandarasi ameripoti kuwa kasoro ya dai la udhamini kwenye mkataba «{contract_title}» imerekebishwa. Thibitisha au pinga ndani ya muda uliowekwa — vinginevyo dai litafungwa kiotomatiki."
+      },
+      "warranty.claim_satisfied": {
+        "subject": "Dai la udhamini limetimizwa",
+        "body": "Mteja amethibitisha urekebishaji wa kasoro ya dai la udhamini kwenye mkataba «{contract_title}» — dai limefungwa."
+      },
+      "warranty.claim_contested": {
+        "subject": "Mteja: kasoro haijarekebishwa",
+        "body": "Mteja hajathibitisha urekebishaji wa dai la udhamini kwenye mkataba «{contract_title}» — dai limerudishwa kwa mkandarasi."
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "Dai limefungwa kiotomatiki",
+        "body": "Dai la udhamini kwenye mkataba «{contract_title}» limefungwa kiotomatiki: muda wa uthibitisho umeisha bila pingamizi kutoka kwa mteja."
+      }
+    }
+  },
+  "th": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "ผู้รับจ้างแจ้งว่าแก้ไขข้อบกพร่องแล้ว",
+        "body": "ผู้รับจ้างแจ้งว่าได้แก้ไขข้อบกพร่องตามคำร้องรับประกันของสัญญา «{contract_title}» แล้ว โปรดยืนยันหรือคัดค้านภายในเวลาที่กำหนด มิฉะนั้นคำร้องจะปิดโดยอัตโนมัติ"
+      },
+      "warranty.claim_satisfied": {
+        "subject": "คำร้องรับประกันได้รับการตอบสนอง",
+        "body": "ผู้ว่าจ้างยืนยันการแก้ไขข้อบกพร่องตามคำร้องรับประกันของสัญญา «{contract_title}» — คำร้องปิดแล้ว"
+      },
+      "warranty.claim_contested": {
+        "subject": "ผู้ว่าจ้าง: ยังไม่ได้แก้ไขข้อบกพร่อง",
+        "body": "ผู้ว่าจ้างไม่ยืนยันการแก้ไขตามคำร้องรับประกันของสัญญา «{contract_title}» — คำร้องถูกส่งกลับให้ผู้รับจ้าง"
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "คำร้องปิดโดยอัตโนมัติ",
+        "body": "คำร้องรับประกันของสัญญา «{contract_title}» ปิดโดยอัตโนมัติ: หมดเวลายืนยันโดยไม่มีการคัดค้านจากผู้ว่าจ้าง"
+      }
+    }
+  },
+  "tr": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "Yüklenici kusurun giderildiğini bildirdi",
+        "body": "Yüklenici, «{contract_title}» sözleşmesine ilişkin garanti talebindeki kusurun giderildiğini bildirdi. Belirlenen sürede onaylayın veya itiraz edin — aksi hâlde talep otomatik olarak kapanır."
+      },
+      "warranty.claim_satisfied": {
+        "subject": "Garanti talebi karşılandı",
+        "body": "İşveren, «{contract_title}» sözleşmesine ilişkin garanti talebindeki kusurun giderildiğini onayladı — talep kapatıldı."
+      },
+      "warranty.claim_contested": {
+        "subject": "İşveren: kusur giderilmedi",
+        "body": "İşveren, «{contract_title}» sözleşmesine ilişkin garanti talebindeki giderimi onaylamadı — talep yükleniciye geri döndü."
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "Talep otomatik olarak kapatıldı",
+        "body": "«{contract_title}» sözleşmesine ilişkin garanti talebi otomatik olarak kapatıldı: onay süresi doldu, işverenden itiraz gelmedi."
+      }
+    }
+  },
+  "uk": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "Виконавець повідомив про усунення",
+        "body": "Виконавець повідомив про усунення недоліку за гарантійною претензією до договору «{contract_title}». Підтвердьте або заперечте у відведений строк — інакше претензію буде закрито автоматично."
+      },
+      "warranty.claim_satisfied": {
+        "subject": "Гарантійну претензію задоволено",
+        "body": "Замовник підтвердив усунення недоліку за гарантійною претензією до договору «{contract_title}» — претензію закрито."
+      },
+      "warranty.claim_contested": {
+        "subject": "Замовник: недолік не усунено",
+        "body": "Замовник не підтвердив усунення за гарантійною претензією до договору «{contract_title}» — претензію повернуто виконавцю."
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "Претензію закрито автоматично",
+        "body": "Гарантійну претензію за договором «{contract_title}» закрито автоматично: строк підтвердження минув, заперечень від замовника не було."
+      }
+    }
+  },
+  "ur": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "ٹھیکیدار نے خرابی دور ہونے کی اطلاع دی",
+        "body": "ٹھیکیدار نے معاہدہ «{contract_title}» کے وارنٹی دعوے میں خرابی دور ہونے کی اطلاع دی۔ مقررہ مدت میں تصدیق یا اعتراض کریں — ورنہ دعویٰ خود بخود بند ہو جائے گا۔"
+      },
+      "warranty.claim_satisfied": {
+        "subject": "وارنٹی دعویٰ پورا ہوا",
+        "body": "گاہک نے معاہدہ «{contract_title}» کے وارنٹی دعوے میں خرابی دور ہونے کی تصدیق کی — دعویٰ بند۔"
+      },
+      "warranty.claim_contested": {
+        "subject": "گاہک: خرابی دور نہیں ہوئی",
+        "body": "گاہک نے معاہدہ «{contract_title}» کے وارنٹی دعوے میں اصلاح کی تصدیق نہیں کی — دعویٰ ٹھیکیدار کو واپس۔"
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "دعویٰ خود بخود بند",
+        "body": "معاہدہ «{contract_title}» کا وارنٹی دعویٰ خود بخود بند ہو گیا: تصدیق کی مدت ختم، گاہک کی طرف سے کوئی اعتراض نہیں۔"
+      }
+    }
+  },
+  "uz": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "Ijrochi kamchilik bartaraf etilganini xabar qildi",
+        "body": "Ijrochi «{contract_title}» shartnomasi boʻyicha kafolat daʼvosidagi kamchilik bartaraf etilganini xabar qildi. Belgilangan muddatda tasdiqlang yoki eʼtiroz bildiring — aks holda daʼvo avtomatik yopiladi."
+      },
+      "warranty.claim_satisfied": {
+        "subject": "Kafolat daʼvosi qondirildi",
+        "body": "Buyurtmachi «{contract_title}» shartnomasi boʻyicha kafolat daʼvosidagi kamchilik bartaraf etilganini tasdiqladi — daʼvo yopildi."
+      },
+      "warranty.claim_contested": {
+        "subject": "Buyurtmachi: kamchilik bartaraf etilmagan",
+        "body": "Buyurtmachi «{contract_title}» shartnomasi boʻyicha kafolat daʼvosidagi bartaraf etishni tasdiqlamadi — daʼvo ijrochiga qaytarildi."
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "Daʼvo avtomatik yopildi",
+        "body": "«{contract_title}» shartnomasi boʻyicha kafolat daʼvosi avtomatik yopildi: tasdiqlash muddati oʻtdi, buyurtmachidan eʼtiroz boʻlmadi."
+      }
+    }
+  },
+  "vi": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "Nhà thầu báo đã khắc phục lỗi",
+        "body": "Nhà thầu báo đã khắc phục lỗi theo yêu cầu bảo hành của hợp đồng «{contract_title}». Hãy xác nhận hoặc phản đối trong thời hạn quy định — nếu không, yêu cầu sẽ tự động đóng."
+      },
+      "warranty.claim_satisfied": {
+        "subject": "Yêu cầu bảo hành đã được đáp ứng",
+        "body": "Khách hàng đã xác nhận việc khắc phục lỗi theo yêu cầu bảo hành của hợp đồng «{contract_title}» — yêu cầu đã đóng."
+      },
+      "warranty.claim_contested": {
+        "subject": "Khách hàng: lỗi chưa được khắc phục",
+        "body": "Khách hàng không xác nhận việc khắc phục theo yêu cầu bảo hành của hợp đồng «{contract_title}» — yêu cầu được trả lại cho nhà thầu."
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "Yêu cầu đã tự động đóng",
+        "body": "Yêu cầu bảo hành của hợp đồng «{contract_title}» đã tự động đóng: hết thời hạn xác nhận mà khách hàng không phản đối."
+      }
+    }
+  },
+  "zh-Hans": {
+    "notifications": {
+      "warranty.fix_submitted": {
+        "subject": "承包方报告缺陷已修复",
+        "body": "承包方报告合同《{contract_title}》保修索赔中的缺陷已修复。请在规定期限内确认或提出异议，否则索赔将自动关闭。"
+      },
+      "warranty.claim_satisfied": {
+        "subject": "保修索赔已得到满足",
+        "body": "客户已确认合同《{contract_title}》保修索赔中的缺陷已修复 — 索赔已关闭。"
+      },
+      "warranty.claim_contested": {
+        "subject": "客户：缺陷未修复",
+        "body": "客户未确认合同《{contract_title}》保修索赔中的修复 — 索赔已退回承包方。"
+      },
+      "warranty.claim_auto_satisfied": {
+        "subject": "索赔已自动关闭",
+        "body": "合同《{contract_title}》的保修索赔已自动关闭：确认期限已过，客户未提出异议。"
+      }
+    }
+  }
+}

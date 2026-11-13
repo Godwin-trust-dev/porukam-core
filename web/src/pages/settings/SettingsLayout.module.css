@@ -1,0 +1,83 @@
+.wrap {
+  min-height: 100%;
+  background: var(--pr-cream);
+}
+
+.mobileHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  padding: var(--pr-sp-2) var(--pr-d-pad-card);
+  border-bottom: 1px solid var(--pr-line);
+}
+/* «Назад» — кружок на песке (финал доска A). */
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: var(--pr-sand);
+  color: var(--pr-ink);
+  cursor: pointer;
+  flex: none;
+}
+.backBtn:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: 2px;
+}
+.mobileTitle {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-screen);
+  color: var(--pr-ink);
+  margin: 0;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rail {
+  display: none;
+}
+.railTitle {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-screen);
+  color: var(--pr-ink);
+  margin-bottom: var(--pr-sp-3);
+}
+
+/* Паддинг контенту даёт оболочка (12px, DEV-20); свой здесь удваивал поля
+   и сужал поверхности хаба (финал доска A: строки во всю ширину). */
+.content {
+  max-inline-size: var(--pr-form-max);
+  margin-inline: auto;
+}
+
+@media (min-width: 1024px) {
+  /* Шапка «назад + название раздела» — только узкий экран: на десктопе
+     разделы видны рейлом слева, возвращаться из них некуда. */
+  .mobileHeader {
+    display: none;
+  }
+  .body {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: var(--pr-density-roomy);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--pr-density-cozy);
+  }
+  .rail {
+    display: block;
+  }
+  .content {
+    padding: 0;
+    max-width: none;
+    margin: 0;
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "machineNoteLabel": "traducere automată",
+  "machineNoteTooltip": "Traducere automată, oferită pentru comoditate",
+  "fallbackNotice": "Acest document nu este încă tradus în limba ta — afișăm originalul în engleză.",
+  "loadError": "Nu am reușit să încărcăm documentul.",
+  "openAria": "Deschide documentul",
+  "accountDeletion": {
+    "title": "Ștergerea contului tău Porukam",
+    "lead": "Aici este explicat cum îți ștergi contul în Porukam, ce se șterge, ce se păstrează și pentru cât timp.",
+    "stepsTitle": "Cum ștergi contul",
+    "step1": "Intră în aplicația Porukam sau deschide porukam.app.",
+    "step2": "Deschide Profil → Setări → Cont.",
+    "step3": "Apasă „Șterge contul” și confirmă ștergerea.",
+    "step4": "Contul se șterge imediat, iar toate sesiunile de pe toate dispozitivele se închid.",
+    "deletedTitle": "Ce se șterge imediat și definitiv",
+    "deletedText": "Numele tău, adresa de e-mail, telefonul, fotografia de profil și lucrările din portofoliu, agenda de contacte, setările și dispozitivele înregistrate pentru notificări push. Cheile de criptare care îți protejează datele personale sunt distruse — datele acestea nu le mai putem recupera nici noi, nici altcineva.",
+    "keptTitle": "Ce se păstrează și pentru cât timp",
+    "keptText": "Materialele contractelor deja încheiate: textul contractului, semnăturile, probele, istoricul etapelor și al plăților și mesajele legate de contract. Ele aparțin ambelor părți ale tranzacției și apără drepturile fiecăreia, de aceea o singură parte nu le poate elimina. Astfel de materiale se păstrează un an după finalizarea contractului, apoi se șterg.",
+    "keptAnon": "În aceste materiale rămâi sub un identificator anonimizat. Hash-urile semnăturilor și lanțul probelor nu conțin date personale și nu se șterg.",
+    "blockedTitle": "Când contul nu poate fi șters",
+    "blockedText": "Cât timp ai contracte nefinalizate sau dezacorduri deschise, ștergerea este reținută — încheie-le mai întâi. Aplicația îți arată câte sunt și care anume.",
+    "noAccessTitle": "Dacă nu poți intra în cont",
+    "noAccessText": "Scrie la {{email}} de pe adresa de e-mail legată de contul tău și vom șterge contul la cerere. Aceeași adresă este indicată în Politica de confidențialitate."
+  }
+}

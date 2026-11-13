@@ -1,0 +1,139 @@
+# Ресурсные алерты (docs/performance-capacity.md §3/§10.1) — в отличие от
+# alert_rules.yml (доменная корректность: свипы, цепочка, чекпойнты) здесь
+# «упрёмся ли в железо»: диск, память, CPU steal/троттлинг, OOM, соединения
+# PostgreSQL, WAL-архивация, вытеснения брокера, SLO API из tech-spec.md §11.
+# Данные — экспортеры compose-профиля "exporters" (node_exporter, cAdvisor,
+# postgres_exporter, redis_exporter) + django-prometheus у core. Пока профиль
+# не поднят, выражения пустые — правила молчат, а не врут.
+groups:
+  - name: porukam-resources
+    rules:
+      - alert: PorukamHostDiskFillingUp
+        expr: predict_linear(node_filesystem_avail_bytes{mountpoint="/"}[6h], 4*24*3600) < 0
+        for: 30m
+        labels: {severity: critical}
+        annotations: {summary: "Диск ВМ закончится в ближайшие 4 суток при текущем тренде"}
+      - alert: PorukamHostDiskLow
+        expr: node_filesystem_avail_bytes{mountpoint="/"} / node_filesystem_size_bytes{mountpoint="/"} < 0.20
+        for: 15m
+        labels: {severity: warning}
+        annotations: {summary: "Свободно менее 20% диска ВМ"}
+      - alert: PorukamHostMemoryLow
+        expr: node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes < 0.15
+        for: 10m
+        labels: {severity: warning}
+        annotations: {summary: "Доступно менее 15% памяти ВМ — приближается OOM"}
+      - alert: PorukamHostSwapping
+        expr: rate(node_vmstat_pswpout[5m]) > 0
+        for: 15m
+        labels: {severity: warning}
+        annotations: {summary: "ВМ свопит — латентность вырастет по всему стеку"}
+      - alert: PorukamHostCPUSteal
+        expr: avg(rate(node_cpu_seconds_total{mode="steal"}[5m])) * 100 > 8
+        for: 15m
+        labels: {severity: warning}
+        annotations: {summary: "CPU steal > 8% — такты отбирает гипервизор, не наш код"}
+      - alert: PorukamContainerOOMKilled
+        expr: increase(container_oom_events_total[10m]) > 0
+        labels: {severity: critical}
+        annotations: {summary: "Контейнер {{ $labels.name }} убит по mem_limit"}
+      - alert: PorukamContainerMemoryNearLimit
+        expr: >-
+          container_memory_working_set_bytes{name!=""}
+          / container_spec_memory_limit_bytes{name!=""} > 0.85
+        for: 15m
+        labels: {severity: warning}
+        annotations: {summary: "{{ $labels.name }} использует > 85% своего mem_limit"}
+      - alert: PorukamCoreCPUThrottled
+        expr: >-
+          rate(container_cpu_cfs_throttled_periods_total{name=~".*core.*"}[5m])
+          / rate(container_cpu_cfs_periods_total{name=~".*core.*"}[5m]) > 0.15
+        for: 15m
+        labels: {severity: warning}
+        annotations: {summary: "core троттлится по cpus-лимиту > 15% периодов — кандидат на ступень 1/2"}
+      # health и скрейп /metrics исключены (09.09): /v1/health ходит в S3 при
+      # каждом опросе (p95 ≈ 470 мс) и составляет ~70% GET — алёрт горел
+      # неделю подряд при p95 пользовательских GET ≈ 140–210 мс. Здоровье
+      # самого health смотрит внешний монитор (ADR-144 (внутренний ADR, не публикуется)), не этот SLO.
+      # Окно 30m и порог по трафику (09.09): при ~100 GET/ч p95 за 5 минут —
+      # это 1–2 самых медленных запроса (аватар 0.66 с, список договоров
+      # 0.45 с), алёрт горел при недельном p95 ≈ 140 мс. SLO измерим только
+      # при выборке: ≥ 0.05 rps (≈ 90 GET за 30 минут), иначе правило молчит.
+      - alert: PorukamApiLatencySLOBreachRead
+        expr: >-
+          histogram_quantile(0.95, sum(rate(
+            django_http_requests_latency_seconds_by_view_method_bucket{method="GET",view!~"health|prometheus-django-metrics"}[30m])) by (le)) > 0.3
+          and on()
+          sum(rate(django_http_requests_latency_seconds_by_view_method_count{method="GET",view!~"health|prometheus-django-metrics"}[30m])) > 0.05
+        for: 30m
+        labels: {severity: warning}
+        annotations: {summary: "p95 чтения > 300 мс за 30 мин при ≥ 0.05 rps (SLO tech-spec.md §11)"}
+      - alert: PorukamApiErrorRate
+        expr: >-
+          sum(rate(django_http_responses_total_by_status_view_method{status=~"5.."}[5m]))
+          / sum(rate(django_http_responses_total_by_status_view_method[5m])) > 0.02
+        for: 5m
+        labels: {severity: critical}
+        annotations: {summary: "Доля 5xx выше 2%"}
+      - alert: PorukamPostgresConnectionsHigh
+        expr: sum by (job) (pg_stat_activity_count) / on (job) pg_settings_max_connections > 0.85
+        for: 5m
+        labels: {severity: critical}
+        annotations: {summary: "Соединений к PostgreSQL ({{ $labels.job }}) > 85% от max_connections"}
+      - alert: PorukamPostgresCacheHitLow
+        expr: >-
+          sum by (job) (rate(pg_stat_database_blks_hit[15m]))
+          / (sum by (job) (rate(pg_stat_database_blks_hit[15m]))
+             + sum by (job) (rate(pg_stat_database_blks_read[15m]))) < 0.95
+        for: 30m
+        labels: {severity: warning}
+        annotations: {summary: "Cache hit ratio PostgreSQL ({{ $labels.job }}) < 95% — shared_buffers или ступень 2"}
+      - alert: PorukamWalArchiveFailing
+        expr: increase(pg_stat_archiver_failed_count[15m]) > 0
+        for: 15m
+        labels: {severity: critical}
+        annotations: {summary: "WAL не уезжает в R2 ({{ $labels.job }}) — RPO нарушен, pg_wal растёт до заполнения диска"}
+      - alert: PorukamRedisBrokerEvicting
+        expr: rate(redis_evicted_keys_total{job="redis_broker"}[5m]) > 0
+        labels: {severity: critical}
+        annotations: {summary: "Брокер Celery вытесняет ключи — теряются задачи"}
+      - alert: PorukamRedisMemoryNearMax
+        expr: redis_memory_used_bytes / redis_memory_max_bytes > 0.9
+        for: 10m
+        labels: {severity: warning}
+        annotations: {summary: "Redis {{ $labels.job }} использует > 90% maxmemory"}
+      - alert: PorukamCeleryQueueGrowing
+        expr: porukam_celery_queue_length > 100
+        for: 15m
+        labels: {severity: warning}
+        annotations: {summary: "Очередь Celery > 100 задач дольше 15 минут"}
+
+  # Проба TSA (ADR-135) через textfile-коллектор node_exporter, метрики
+  # кладёт прод-конфиг/tsa_textfile.sh из часового cron.
+  # Отличие от PorukamAuditVaultCheckpointUnattested: тот срабатывает,
+  # когда суточный checkpoint УЖЕ не заверен (метку задним числом не
+  # поставить), а эти — заранее, пока запас по кворуму ещё есть.
+  - name: porukam-tsa
+    rules:
+      - alert: PorukamTsaQuorumNoMargin
+        expr: porukam_tsa_probe_ok <= porukam_tsa_probe_quorum
+        for: 2h
+        labels: {severity: warning}
+        annotations:
+          summary: "Кворум TSA держится без запаса: отвечает ровно столько endpoint'ов, сколько нужно"
+          description: >-
+            Отпадёт ещё один — суточный checkpoint останется незаверенным,
+            а метку задним числом не поставить (ADR-135). Добавить endpoint
+            в TSA_ENDPOINTS или разобраться с упавшим.
+      - alert: PorukamTsaQuorumLost
+        expr: porukam_tsa_probe_quorum_reached == 0
+        for: 30m
+        labels: {severity: critical}
+        annotations:
+          summary: "Кворум TSA не набирается — следующий суточный checkpoint будет незаверенным"
+      - alert: PorukamTsaProbeStale
+        expr: time() - porukam_tsa_probe_last_run_timestamp_seconds > 10800
+        for: 15m
+        labels: {severity: warning}
+        annotations:
+          summary: "Проба TSA не отрабатывала > 3 часов (cron хоста, README «Обслуживание»)"

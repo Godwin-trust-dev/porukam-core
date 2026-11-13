@@ -1,0 +1,12 @@
+{
+  "title": "«{{name}}» bölməsi",
+  "text": "Bu bölmənin iş sahəsi tezliklə hazır olacaq.",
+  "feed": "Burada sazişləriniz və kontaktlarınız üzrə hadisə lenti olacaq.",
+  "search": "Burada kataloqda icraçı və sifariş axtarışı olacaq.",
+  "stages": "Burada bütün sazişlərinizin mərhələləri toplanacaq: nə təhvil verilir, nə qəbuldadır, hansı müddətlər gedir.",
+  "payments": "Burada mərhələlər və müqavilələr üzrə ödəniş tarixçəsi — status və təsdiqlərlə — olacaq.",
+  "disputes": "Burada mübahisələriniz olacaq: hər biri üzrə statuslar, müddətlər və sübutlar.",
+  "reputation": "Burada reputasiyanız olacaq: təsdiqlənmiş sazişlər və faktlara əsaslanan rəylər.",
+  "chat": "Burada sazişlər üzrə yazışma — müqaviləyə və mərhələlərə bağlı — olacaq.",
+  "groups": "Burada birliklər olacaq: ümumi ünvan, üzvlər və bir ad altında sazişlər."
+}

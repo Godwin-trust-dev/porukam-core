@@ -1,0 +1,200 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: var(--pr-grad-ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--pr-sp-6);
+  text-align: center;
+  animation: pr-fade var(--pr-dur) var(--pr-ease);
+  overflow-y: auto;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--pr-sp-4);
+  inline-size: 100%;
+}
+/* Знак церемонии: сияние за знаком — статичное (вспышка уже в знаке),
+   появление — короткий scale-in в ритме искры (--pr-spark-flash). */
+.markWrap {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  padding: var(--pr-sp-4);
+}
+.markHalo {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--pr-spark) 0%, transparent 62%);
+  opacity: 0.55;
+  pointer-events: none;
+}
+.mark {
+  position: relative;
+  animation: pr-ceremony-mark var(--pr-spark-flash) var(--pr-ease) both;
+}
+@keyframes pr-ceremony-mark {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.title {
+  margin: 0;
+  color: var(--pr-text-inv);
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-h1);
+}
+.subtitle {
+  margin: 0;
+  color: var(--pr-on-ink);
+  font-size: var(--pr-fs-body);
+  max-width: 40ch;
+}
+.chip {
+  color: var(--pr-on-ink-2);
+  font-size: var(--pr-fs-sm);
+  font-variant-numeric: tabular-nums;
+}
+/* Капс-надпись над знаком — янтарём, разрежённо (финал доска B). */
+.eyebrow {
+  color: var(--pr-amber-hi);
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-bold);
+  font-size: var(--pr-fs-xs);
+  letter-spacing: var(--pr-ls-eyebrow);
+  text-transform: uppercase;
+}
+/* Факты церемонии: на телефоне — одна плашка kv-строками, на десктопе —
+   плитки в ряд (compact-десктоп блок 4). Полупрозрачная поверхность на ink —
+   тот же приём, что пилюля сторон. */
+.facts {
+  margin: 0;
+  inline-size: 100%;
+  max-inline-size: 420px;
+  display: grid;
+  gap: var(--pr-sp-2);
+  padding: var(--pr-sp-4) var(--pr-sp-5);
+  border-radius: var(--pr-r-lg);
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  text-align: start;
+}
+.fact {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--pr-sp-3);
+  min-inline-size: 0;
+}
+.factLabel {
+  color: var(--pr-on-ink-2);
+  font-size: var(--pr-fs-sm);
+}
+.factValue {
+  margin: 0;
+  color: var(--pr-white);
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-fs-sm);
+  font-variant-numeric: tabular-nums;
+  text-align: end;
+  overflow-wrap: anywhere;
+}
+.factAccent {
+  color: var(--pr-amber-hi);
+}
+@media (min-width: 1024px) {
+  .facts {
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(0, 1fr);
+    background: none;
+    border: none;
+    padding: 0;
+    max-inline-size: none;
+  }
+  .fact {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--pr-sp-1);
+    padding: var(--pr-sp-3) var(--pr-sp-4);
+    border-radius: var(--pr-r-lg);
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    text-align: center;
+  }
+  .factValue {
+    text-align: center;
+    font-size: var(--pr-fs-body);
+  }
+}
+
+/* Строка сторон «Вы ↔ контрагент» — пилюля на тёмном (эталон, десктоп). */
+.parties {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  padding: var(--pr-sp-2) var(--pr-sp-4);
+  border-radius: var(--pr-r-pill);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--pr-on-ink-2);
+  font-size: var(--pr-fs-sm);
+  max-inline-size: 100%;
+}
+.actions {
+  margin-top: var(--pr-sp-4);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--pr-sp-3);
+}
+
+/* ── Десктоп (DEV-20_2 §9) ──
+   Церемония занимает рабочую область, а сайдбар оболочки остаётся на месте,
+   приглушённый: пользователь видит, что он в приложении, а не выпал в
+   отдельный полноэкранный режим. Ширина карточки 460px — из эталона. */
+@media (min-width: 1024px) {
+  .overlay {
+    inset-inline-start: var(--pr-sidebar-w);
+  }
+  /* Вуаль поверх сайдбара: он тёмно-чернильный сам по себе, поэтому гасим
+     его полупрозрачным ink'ом, а не серым — цвет остаётся фирменным. */
+  .overlay::before {
+    content: '';
+    position: fixed;
+    inset-block: 0;
+    inset-inline-start: 0;
+    inline-size: var(--pr-sidebar-w);
+    background: rgba(16, 31, 48, 0.72);
+    pointer-events: none;
+  }
+  .card {
+    max-inline-size: 460px;
+  }
+}
+@keyframes pr-fade {
+  from {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .overlay,
+  .mark {
+    animation: none;
+  }
+}

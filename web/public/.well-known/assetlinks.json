@@ -1,0 +1,16 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "porukam.app",
+      "sha256_cert_fingerprints": [
+        "A7:EE:E1:68:CC:C2:FD:B5:84:A8:46:EF:BB:FE:9B:93:01:B1:1B:77:B9:96:51:31:10:3A:52:84:17:59:0D:A6",
+        "A3:54:B6:DE:73:91:E7:00:65:25:10:A1:CB:E6:C7:62:7B:61:0C:57:E5:0D:EA:A4:33:E6:F9:9A:0A:51:09:7F",
+        "27:6E:63:22:37:7F:59:D7:D5:B8:AF:B3:AC:11:3D:DF:D0:E9:1F:75:10:1C:14:2A:0B:38:9F:CA:C3:12:C0:59"
+      ]
+    }
+  }
+]

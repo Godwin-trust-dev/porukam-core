@@ -1,0 +1,123 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-5);
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+}
+.fieldLabel {
+  font-weight: var(--pr-fw-medium);
+  color: var(--pr-ink);
+  font-size: var(--pr-fs-sm);
+}
+/* Подпись поля + «Из контактов» одной строкой: книга контактов открывается
+   прямо от «Второй стороны». Кнопка не сжимается и не переносится — подпись
+   короткая, на 360px обе помещаются; текст кнопки в одну строку. */
+.fieldLabelRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-2);
+  min-inline-size: 0;
+}
+.contactsBtn {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  flex: none;
+  min-block-size: var(--pr-touch-min);
+  padding-inline: var(--pr-sp-2);
+  background: none;
+  border: none;
+  border-radius: var(--pr-r-md);
+  color: var(--pr-teal-deep);
+  font: inherit;
+  font-size: var(--pr-fs-sm);
+  font-weight: var(--pr-fw-medium);
+  cursor: pointer;
+}
+.contactsBtn:hover {
+  background: var(--pr-cream);
+}
+.contactsBtnText {
+  white-space: nowrap;
+}
+/* «Сохранить в контакты» — необязательный довесок под выбранным контрагентом,
+   поэтому ссылка, а не кнопка: главная кнопка шага — «Далее». */
+.saveContactBtn {
+  appearance: none;
+  align-self: flex-start;
+  min-block-size: var(--pr-touch-min);
+  padding: 0;
+  background: none;
+  border: none;
+  color: var(--pr-teal-deep);
+  font: inherit;
+  font-size: var(--pr-fs-sm);
+  text-align: start;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.saveContactBtn:disabled {
+  color: var(--pr-text-2);
+  cursor: default;
+}
+.savedNote {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+/* Роли рисует общий `Segmented tone="dark"`; здесь — только раскладка:
+   капсула по содержимому (иначе на 1280px растянулась бы во всю колонку),
+   но не шире экрана — на 360px сегменты ужимаются внутри неё, тач-цель
+   (--pr-touch-min) держит сам `Segmented`. */
+.roleSegmented {
+  align-self: flex-start;
+  max-inline-size: 100%;
+}
+/* Подсказку поиска рисует `Surface` + `SearchResultRow` (ADR-152). */
+.handle {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+.invite {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+  background: var(--pr-cream);
+  border-radius: var(--pr-r-md);
+  padding: var(--pr-sp-3);
+}
+.inviteHint {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+  margin: 0;
+}
+.inviteBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  align-self: flex-start;
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-md);
+  padding: var(--pr-sp-2) var(--pr-sp-4);
+  cursor: pointer;
+  color: var(--pr-teal-deep);
+  font-weight: var(--pr-fw-medium);
+  min-height: var(--pr-touch-min);
+}
+.selected {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  flex-wrap: wrap;
+}
+.policyNote {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+  margin: 0;
+}

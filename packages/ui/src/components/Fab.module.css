@@ -1,0 +1,38 @@
+.fab {
+  position: fixed;
+  inset-block-end: calc(var(--pr-bottom-nav-h) + var(--pr-sp-4) + env(safe-area-inset-bottom, 0px));
+  inset-inline-end: var(--pr-sp-4);
+  z-index: 25;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  inline-size: var(--pr-fab-size);
+  block-size: var(--pr-fab-size);
+  border-radius: var(--pr-r-pill);
+  background: var(--pr-grad-amber);
+  color: var(--pr-ink);
+  box-shadow: var(--pr-shadow-amber);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--pr-dur-fast) var(--pr-ease);
+}
+.fab:active {
+  transform: scale(0.94);
+}
+.fab:focus-visible {
+  outline: 2px solid var(--pr-ink);
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .fab {
+    transition: none;
+  }
+}
+/* Десктоп (DEV-19): действие живёт в шапке экрана, нижней навигации нет —
+   FAB'у не над чем висеть, и второй вход в то же действие только мешает. */
+@media (min-width: 1024px) {
+  .fab {
+    display: none;
+  }
+}

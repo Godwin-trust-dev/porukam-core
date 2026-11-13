@@ -1,0 +1,135 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-4);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+}
+
+.title {
+  font-family: var(--pr-font-head);
+  font-size: var(--pr-d-fs-screen);
+  margin: 0;
+  color: var(--pr-ink);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--pr-sp-4);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-2);
+}
+
+.photo {
+  width: 100%;
+  border-radius: var(--pr-r-md);
+  display: block;
+}
+
+.photoPlaceholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--pr-r-md);
+  background: var(--pr-sand);
+}
+
+.itemBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-1);
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--pr-sp-1);
+  color: var(--pr-text-mute);
+  font-size: var(--pr-fs-sm);
+}
+
+.description {
+  margin: 0;
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-sm);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-2);
+}
+
+.fileInput {
+  display: none;
+}
+
+/* ADR-120: обложка кликабельна (просмотр работы), галерея миниатюр, даты в форме. */
+.cover {
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: start;
+}
+.gallery {
+  display: grid;
+  gap: var(--pr-sp-1);
+}
+.thumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-2);
+}
+.thumb {
+  position: relative;
+  width: 96px;
+  display: grid;
+  gap: 2px;
+}
+.thumb img {
+  width: 96px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: var(--pr-r-sm);
+  display: block;
+  background: var(--pr-sand);
+}
+.thumbBadge {
+  justify-self: start;
+}
+.thumbAction {
+  border: 0;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--pr-teal);
+  font-size: var(--pr-fs-xs, 12px);
+  text-align: start;
+}
+.thumbRemove {
+  position: absolute;
+  top: 2px;
+  inset-inline-end: 2px;
+  border: 0;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  color: var(--pr-ink);
+}

@@ -1,0 +1,22 @@
+{
+  "chipTriggerAria": "Интерфейс тілі",
+  "globeTriggerAria": "Интерфейс тілі",
+  "rowLabel": "Интерфейс тілі",
+  "listTitle": "Интерфейс тілі",
+  "searchPlaceholder": "Тілді іздеу…",
+  "searchAriaLabel": "Тілді іздеу",
+  "searchClear": "Іздеуді тазалау",
+  "currentSectionTitle": "Ағымдағы",
+  "allSectionTitle": "Барлық тілдер",
+  "noResults": "Тіл табылмады",
+  "betaBadge": "машиналық аударма",
+  "betaTooltip": "Машиналық аударма — дәлсіздіктер болуы мүмкін",
+  "currentAria": "Ағымдағы тіл",
+  "disabledToast": "{{lang}} уақытша қолжетімді емес · ағылшынша көрсетеміз",
+  "closeLabel": "Жабу",
+  "onboardingHint": "Тіл автоматты анықталды — кез келген уақытта өзгертуге болады",
+  "settingsRowLabel": "Тіл және өңір",
+  "settingsLanguageExplain": "Бұл — қолданбаның тілі. Шарттың ресми тілі жеке таңдалады — контрагент аударманы көреді, бірақ қол қойылатыны ресми мәтін.",
+  "loadErrorRetry": "Қайталау",
+  "loadError": "Тілдер тізімін жүктеу мүмкін болмады"
+}

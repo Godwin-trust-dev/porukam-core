@@ -1,0 +1,120 @@
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+  padding: var(--pr-sp-2) var(--pr-sp-3);
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-md);
+}
+.icon {
+  color: var(--pr-teal);
+  flex-shrink: 0;
+}
+.body {
+  flex: 1;
+  /* flex-элемент по умолчанию не ужимается меньше самого длинного слова —
+     в узком ряду это выталкивало действия за рамку (отсмотр 2026-09-02). */
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: start;
+  padding: var(--pr-sp-1) 0;
+  min-height: var(--pr-touch-min);
+  justify-content: center;
+}
+.title {
+  color: var(--pr-ink);
+  font-weight: var(--pr-fw-medium);
+  overflow-wrap: anywhere;
+}
+.meta {
+  color: var(--pr-text-2);
+  font-size: var(--pr-fs-xs);
+}
+.money {
+  /* На десктопе группа прозрачна для flex-ряда — раскладка прежняя. */
+  display: contents;
+}
+.amount {
+  font-variant-numeric: tabular-nums;
+  color: var(--pr-ink);
+  white-space: nowrap;
+}
+.remove {
+  background: none;
+  border: none;
+  color: var(--pr-text-2);
+  cursor: pointer;
+  min-width: var(--pr-touch-min);
+  min-height: var(--pr-touch-min);
+  display: grid;
+  place-items: center;
+  border-radius: var(--pr-r-md);
+  flex-shrink: 0;
+}
+.remove:hover {
+  color: var(--pr-red);
+  background: var(--pr-cream);
+}
+.action {
+  background: none;
+  border: none;
+  color: var(--pr-text-2);
+  cursor: pointer;
+  min-width: var(--pr-touch-min);
+  min-height: var(--pr-touch-min);
+  display: grid;
+  place-items: center;
+  border-radius: var(--pr-r-md);
+  flex-shrink: 0;
+}
+.action:hover {
+  color: var(--pr-teal-deep);
+  background: var(--pr-cream);
+}
+
+/* Мобильный ряд (отсмотр 2026-09-02: «крестик удаления этапа стоит вне
+   внутренней рамки»). Название + сумма + бейдж + две кнопки по 44px не
+   помещаются в 300px ряда, а flex не переносил — кнопки уезжали за рамку.
+   Две строки: 1) флажок · название · копировать · удалить; 2) сумма · «поровну».
+   Ширина первой строки не зависит от текста, поэтому вложенность
+   (.sectionStages сдвигает ряд на каждом уровне) крестик не выталкивает. */
+@media (max-width: 640px) {
+  .row {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto auto;
+    column-gap: var(--pr-sp-2);
+    row-gap: 0;
+    align-items: center;
+  }
+  .icon {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .body {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  .action {
+    grid-row: 1;
+    grid-column: 3;
+  }
+  .remove {
+    grid-row: 1;
+    grid-column: 4;
+  }
+  .money {
+    display: flex;
+    align-items: center;
+    gap: var(--pr-sp-2);
+    flex-wrap: wrap;
+    grid-row: 2;
+    grid-column: 2 / -1;
+  }
+}

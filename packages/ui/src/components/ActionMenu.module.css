@@ -1,0 +1,52 @@
+.wrap {
+  position: relative;
+  display: inline-block;
+}
+.trigger {
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: var(--pr-touch-min);
+  height: var(--pr-touch-min);
+  border-radius: var(--pr-r-pill);
+  display: grid;
+  place-items: center;
+  color: var(--pr-text-2);
+}
+.trigger:hover,
+.trigger:focus-visible {
+  background: var(--pr-cream);
+}
+.menu {
+  position: absolute;
+  inset-inline-end: 0;
+  top: calc(100% + 4px);
+  z-index: 10;
+  min-width: 200px;
+  background: var(--pr-white);
+  border: 1px solid var(--pr-line);
+  border-radius: var(--pr-r-md);
+  box-shadow: var(--pr-shadow-card);
+  padding: var(--pr-sp-1);
+  display: grid;
+}
+.item {
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: start;
+  padding: var(--pr-sp-2) var(--pr-sp-3);
+  border-radius: var(--pr-r-sm);
+  font: inherit;
+  color: var(--pr-ink);
+  min-height: 40px;
+}
+.item:hover,
+.item:focus-visible {
+  background: var(--pr-cream);
+}
+.destructive {
+  color: var(--pr-red);
+}

@@ -1,0 +1,67 @@
+.wrap {
+  display: grid;
+  gap: var(--pr-sp-4);
+}
+.sectionTitle {
+  font-family: var(--pr-font-head);
+  font-size: var(--pr-fs-h3);
+  margin: 0 0 var(--pr-sp-3);
+  color: var(--pr-ink);
+}
+.list {
+  margin: 0;
+  display: grid;
+  gap: var(--pr-sp-3);
+}
+.row {
+  display: grid;
+  gap: 2px;
+  border-top: 1px solid var(--pr-line);
+  padding-top: var(--pr-sp-2);
+}
+.row:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+.label {
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text-2);
+}
+.value {
+  margin: 0;
+  color: var(--pr-ink);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.empty {
+  margin: 0;
+  color: var(--pr-text-mute);
+}
+@container (min-width: 560px) {
+  .row {
+    grid-template-columns: minmax(160px, 1fr) 2fr;
+    align-items: baseline;
+  }
+}
+
+/* Дополнительные условия (ADR-123) — нумерованный список пунктов договора. */
+.additional {
+  margin: 0;
+  padding-inline-start: var(--pr-sp-5);
+  display: grid;
+  gap: var(--pr-sp-2);
+  color: var(--pr-ink);
+}
+.additional li {
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+/* Список замечаний внутри раскрытого `Disclosure` (DEV-20_2 §4) — на всю
+   ширину блока. */
+.warningsList {
+  margin: 0;
+  padding-inline-start: var(--pr-sp-4);
+  display: grid;
+  gap: var(--pr-sp-2);
+}

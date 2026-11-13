@@ -1,0 +1,12 @@
+{
+  "title": "Sekcja „{{name}}”",
+  "text": "Obszar roboczy tej sekcji będzie dostępny wkrótce.",
+  "feed": "Tu pojawią się aktualności z Twoich transakcji i kontaktów.",
+  "search": "Tu pojawi się wyszukiwanie wykonawców i zleceń w katalogu.",
+  "stages": "Tu zbiorą się etapy wszystkich Twoich umów: co jest przekazywane, co w odbiorze, jakie terminy biegną.",
+  "payments": "Tu pojawi się historia płatności za etapy i umowy — ze statusami i potwierdzeniami.",
+  "disputes": "Tu znajdą się Twoje spory: statusy, terminy i dowody każdego z nich.",
+  "reputation": "Tu pojawi się Twoja reputacja: potwierdzone umowy i oceny oparte na faktach.",
+  "chat": "Tu pojawi się korespondencja dotycząca umów — powiązana z umową i etapami.",
+  "groups": "Tu pojawią się grupy: wspólny adres, członkowie i transakcje pod jedną nazwą."
+}

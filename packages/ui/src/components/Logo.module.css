@@ -1,0 +1,32 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--pr-sp-2);
+}
+.mark {
+  display: block;
+  width: auto;
+  flex-shrink: 0;
+}
+/* Словознак — одним цветом (DEV-17 §3): двухцветного «По»+«рукам» нет нигде. */
+.word {
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-black);
+  line-height: 1;
+  white-space: nowrap;
+}
+.wordOnDark {
+  color: var(--pr-cream);
+}
+.wordOnLight {
+  color: var(--pr-ink);
+}
+/* app-icon плитка: знак на тёмной ink-плитке (как PWA-иконка). */
+.tile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--pr-grad-dark);
+  border-radius: 22%;
+  flex-shrink: 0;
+}

@@ -1,0 +1,58 @@
+/* Строка сферы (ADR-163): своей рамки нет — hairline между строками даёт
+   `Surface`, поэтому на узком экране раздел читается одной поверхностью во
+   всю ширину, а не стопкой карточек с рамками. */
+.row {
+  display: grid;
+  gap: var(--pr-sp-2);
+  width: 100%;
+  min-inline-size: 0;
+  text-align: start;
+  padding: var(--pr-d-row-pad-y) var(--pr-d-row-pad-x);
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+}
+.interactive {
+  cursor: pointer;
+}
+.interactive:hover {
+  background: var(--pr-cream);
+}
+.interactive:focus-visible {
+  outline: 2px solid var(--pr-teal);
+  outline-offset: -2px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-2);
+  min-inline-size: 0;
+}
+.name {
+  margin: 0;
+  min-inline-size: 0;
+  font-family: var(--pr-font-head);
+  font-weight: var(--pr-fw-semibold);
+  font-size: var(--pr-d-fs-title);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-ink);
+  /* На 360 длинное имя сферы переносится, а не уезжает за край. */
+  overflow-wrap: anywhere;
+}
+.chevron {
+  color: var(--pr-text-mute);
+  flex: none;
+  transform: scaleX(-1);
+}
+
+.stat {
+  margin: 0;
+  font-size: var(--pr-d-fs-2);
+  line-height: var(--pr-d-lh);
+  color: var(--pr-text-2);
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}

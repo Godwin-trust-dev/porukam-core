@@ -1,0 +1,14 @@
+{
+  "hook": "Porukam zamienia ustną umowę w dokument o znaczeniu prawnym i prowadzi transakcję krok po kroku, aż do rozliczenia.",
+  "problem": "Dogadać się na słowo jest łatwo. Trudno później udowodnić, co ustalono, kiedy dzieło zostało przekazane i za co płacisz. Porukam prowadzi ten zapis dla obu stron.",
+  "contractTitle": "Umowa w kilka minut",
+  "contractText": "Wybierz rodzaj transakcji: usługa, sprzedaż, wynajem albo pożyczka. Odpowiedz na pytania zwykłym językiem i otrzymaj gotowy dokument. Nie musisz pisać prawniczych formuł.",
+  "stagesTitle": "Etapy i odbiór według listy kontrolnej",
+  "stagesText": "Podziel transakcję na etapy, każdy z listą tego, co ma być zrobione. Wykonawca odhacza wykonane punkty i dołącza zdjęcia, zamawiający odbiera etap albo zwraca go z uwagami. Obie strony zawsze widzą, na czym stanęło i czyj jest ruch.",
+  "paymentTitle": "Płatność powiązana z wynikiem",
+  "paymentText": "Płatność idzie za etapami: odebrane znaczy zapłacone. Nie przechowujemy Twoich pieniędzy i nie pobieramy prowizji za zawarcie umowy. Rozliczenia zostają między stronami, a platforma zapisuje, co i kiedy zostało odebrane i opłacone.",
+  "evidenceTitle": "Dowody, które zostaną",
+  "evidenceText": "Zdjęcia, pliki i wiadomości są przypięte do etapu i opieczętowane zaufanym znacznikiem czasu. Podpisana umowa już się nie zmienia, a jedynie przez aneks, który obie strony widzą i potwierdzają. Jeśli dojdzie do sporu, masz czym go zamknąć.",
+  "reputationTitle": "Reputacja oparta na faktach",
+  "reputationText": "Karta reputacji powstaje z zakończonych transakcji, a nie z opinii, które każdy może napisać o każdym."
+}

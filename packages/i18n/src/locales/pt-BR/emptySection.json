@@ -1,0 +1,12 @@
+{
+  "title": "Seção “{{name}}”",
+  "text": "A área de trabalho desta seção chega em breve.",
+  "feed": "Um feed de eventos dos seus contratos e contatos viverá aqui.",
+  "search": "A busca por prestadores e pedidos no catálogo viverá aqui.",
+  "stages": "As etapas de todos os seus contratos se reunirão aqui: o que está sendo entregue, o que está em aceite, quais prazos correm.",
+  "payments": "O histórico de pagamentos por etapas e contratos — com status e confirmações — viverá aqui.",
+  "disputes": "Suas disputas viverão aqui: status, prazos e provas de cada uma.",
+  "reputation": "Sua reputação viverá aqui: contratos confirmados e avaliações baseadas em fatos.",
+  "chat": "As mensagens dos contratos — vinculadas ao contrato e às etapas — viverão aqui.",
+  "groups": "Os grupos viverão aqui: um endereço comum, membros e contratos sob um mesmo nome."
+}

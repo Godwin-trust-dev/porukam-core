@@ -1,0 +1,134 @@
+{
+  "aboutTitle": "Porukam nədir",
+  "faqTitle": "Sual və cavablar",
+  "aboutLead": "Porukam şifahi razılaşmanı mərhələləri, sübutları və reputasiyası olan aydın müqaviləyə çevirir. Hüquqşünassız, komissiyasız və pul platformadan keçmədən.",
+  "aboutSections": [
+    {
+      "title": "Kimlər üçün",
+      "text": "Sifarişlə iş görənlər və ya iş sifariş edənlər üçün: təmir, dizayn, proqramlaşdırma, dərslər, foto, daşıma, əşya satışı, icarə, insanlar arasında borc. İki nəfər üçün, bir şəxs və fərdi sahibkar üçün, özünüməşğullar üçün."
+    },
+    {
+      "title": "Bu necə işləyir",
+      "text": "Hazır formadan müqavilə yaradırsınız, işi mərhələlərə bölürsünüz, qarşı tərəfi @istifadəçi adı ilə dəvət edirsiniz. Hər iki tərəf imzalayır. Sonra hər mərhələ yoxlama siyahısı ilə təhvil verilir və qəbul edilir, bütün faktlar — imza, təhvil, qəbul, mübahisə — qeyd olunur və hər ikisinin reputasiyasına düşür."
+    },
+    {
+      "title": "Platforma nə etmir",
+      "text": "Pul saxlamır və köçürmür — seçilmiş üsulla birbaşa hesablaşırsınız. Fayllarınızın orijinallarını saxlamır — yalnız heşlərini. Məlumatlarınızı satmır və reklam göstərmir."
+    },
+    {
+      "title": "Birliklər",
+      "text": "Birlik komanda və ya icma üçün ümumi ünvandır: gildiya (bir-birinin keyfiyyətinə zamin duran daimi peşəkar icma), klan (3–20 nəfərlik layihə komandası), icma (maraqlara görə açıq qrup) və ya şirkət vitrini. Birliyin öz @istifadəçi adı, loqosu, sahəsi və coğrafiyası, iştirakçıların siyahısı ilə ictimai kartı var; hər iştirakçının profilində harada olduğu görünür. Müqavilələri yenə də insanlar bağlayır — birlik bir-birinizi tapmağa və komandanı göstərməyə kömək edir."
+    }
+  ],
+  "howTitle": "Necə etməli",
+  "howItems": [
+    {
+      "title": "Müqavilə yaratmaq",
+      "text": "Sazişlər → «Yaradın». Müqavilənin növünü seçin (xidmət, satış, icarə, borc), formanı doldurun — hər sahədə ipucu verən «?» var. Qarşı tərəfi @istifadəçi adı ilə göstərin, mərhələlərə bölün, ödəniş üsulunu seçin və imzaya göndərin."
+    },
+    {
+      "title": "Qarşı tərəfi dəvət etmək",
+      "text": "«Tərəflər» addımında @istifadəçi adını daxil edin. Şəxsin hələ hesabı yoxdursa, ona müqavilənin keçidini göndərin: Google ilə daxil olduqdan sonra onu özündə görəcək."
+    },
+    {
+      "title": "İmzalamaq",
+      "text": "Müqaviləni açın → «İmza ekranına keçin». Dondurulmuş versiyanı yoxlayın və imzalayın. Hər iki tərəf imzaladıqda müqavilə qüvvəyə minir."
+    },
+    {
+      "title": "İmzadan əvvəl dəyişiklik təklif etmək",
+      "text": "Razılaşdırma ekranında bəndi seçib dəyişiklik təklif edin. Qarşı tərəf qəbul edir və ya rədd edir; razılaşdıqdan sonra versiya yenidən dondurulur."
+    },
+    {
+      "title": "Mərhələni təhvil vermək",
+      "text": "İcraçı mərhələni açır → «Mərhələni təhvil verin», sübutlar (foto, fayllar, keçidlər) əlavə edir və qəbula göndərir."
+    },
+    {
+      "title": "Mərhələni qəbul etmək və ya geri qaytarmaq",
+      "text": "Sifarişçi mərhələni açır → yoxlama siyahısından keçir → «Qəbul edin» və ya qeydlərlə «Geri qaytarın». Sifarişçi yoxlama müddətindən uzun susarsa, mərhələ avtomatik qəbul edilir."
+    },
+    {
+      "title": "Mərhələni ödəmək",
+      "text": "Qəbuldan sonra sifarişçi pulu seçilmiş üsulla birbaşa icraçıya köçürür və mərhələdə ödənişi qeyd edir. İcraçı aldığını təsdiqləyir."
+    },
+    {
+      "title": "Mübahisə açmaq",
+      "text": "Razılaşa bilməsəniz — mərhələdə «Mübahisə» düyməsini basın. Hər iki tərəf sübut əlavə edir; əvvəl qeyd olunanların hamısı artıq işdədir."
+    },
+    {
+      "title": "Qarşı tərəfi tapmaq və kontaktı saxlamaq",
+      "text": "Şəxsin kartını @istifadəçi adı keçidi ilə və ya müqavilədən açın → «Kontaktı saxlayın». Müqavilələrinizin qarşı tərəfləri kontaktlara özləri düşür."
+    },
+    {
+      "title": "Öz kartınızı paylaşmaq",
+      "text": "Profil → «Paylaşın»: porukam.app/@istifadəçi_adınız şəklində keçid və QR kod. Kartda yalnız faktlar: neçə saziş, necə qəbul edilib, mübahisə olubmu."
+    },
+    {
+      "title": "Birlik yaratmaq",
+      "text": "Birliklər → «Birlik yaradın». @istifadəçi adı seçin (o birdir və yaradılarkən təyin olunur), növü, sahəni və coğrafiyanı seçin, təsvir, keçidlər və loqo əlavə edin. Lider müraciətləri qəbul edir, @istifadəçi adı ilə dəvət edir və parametrləri dəyişir."
+    },
+    {
+      "title": "Birliyə qoşulmaq",
+      "text": "Birliyi Axtarışda (ad, @istifadəçi adı və ya sahə üzrə) tapın və ya /@istifadəçi_adı keçidi ilə açın. Açıq — dərhal «Qoşulun»; qapalı — «Qoşulun» liderə müraciət göndərir. İstənilən vaxt çıxmaq olar; lider birliyi təhvil verməyincə çıxa bilməz."
+    }
+  ],
+  "faqItems": [
+    {
+      "q": "Bu pulsuzdur?",
+      "a": "Bəli. Müqavilə bağlamaq, mərhələlər, sübutlar, reputasiya — ödənişsiz və ödənişlərdən komissiyasız. Ödənişli imkanlar yaranarsa, ayrı və məcburi olmayacaq."
+    },
+    {
+      "q": "Belə müqavilənin hüquqi qüvvəsi varmı?",
+      "a": "Müqavilə yazılı formada sadə elektron imza ilə bağlanır: hər iki tərəf mətnin dondurulmuş versiyasını təsdiqləyir, xidmət isə kimin, nə vaxt və nəyi imzaladığını qeyd edir. Bu forma əksər ölkələrin qanunvericiliyində insanlar və biznes arasındakı sazişlər üçün tanınır. Qanunun notarius və ya dövlət qeydiyyatı tələb etdiyi sazişlərdə (məsələn, daşınmaz əmlak) xidmət bu prosedurları əvəz etmir."
+    },
+    {
+      "q": "Pul platformadan keçirmi?",
+      "a": "Xeyr. Tərəflər birbaşa hesablaşır — köçürmə, nağd, necə razılaşıblarsa. Platforma öhdəliyi, ödəniş faktını və alınma təsdiqini qeyd edir."
+    },
+    {
+      "q": "Qarşı tərəf cavab verməsə nə olur?",
+      "a": "Hər addımın müddəti var. Sifarişçi təhvil verilmiş mərhələni vaxtında yoxlamasa — avtomatik qəbul edilir. Qarşı tərəf müqaviləni imzalamasa — o, qaralama olaraq qalır, öhdəlik yoxdur."
+    },
+    {
+      "q": "İmzadan sonra müqaviləni dəyişmək olarmı?",
+      "a": "İmzalanmış mətn dəyişməzdir. Dəyişikliklər hər iki tərəfin imzaladığı əlavə sazişlə rəsmiləşdirilir; versiyaların tarixçəsi saxlanılır."
+    },
+    {
+      "q": "Reputasiya nədir və onu kim görür?",
+      "a": "Bu, sazişlərinizdən gələn faktlardır: neçəsi bağlanıb, neçəsi vaxtında qəbul edilib, mübahisə olubmu və necə bitib. Heç bir qiymət və ulduz yoxdur. Kartın və ayrı-ayrı sahələrin görünməsini özünüz tənzimləyirsiniz."
+    },
+    {
+      "q": "Sübut fayllarım harada saxlanılır?",
+      "a": "Orijinallar — sizdə və qarşı tərəfdə. Platforma izi (heş), kiçik şəkli və əlavə olunma vaxtını saxlayır — faylın dəyişmədiyini sübut etməyə kifayətdir."
+    },
+    {
+      "q": "Qarşı tərəf mənim haqqımda nə görür?",
+      "a": "Hesabla təsdiqlənmiş adı, @istifadəçi adını və icazə verdiyiniz həddə reputasiya kartını. Telefon, e-poçt və rekvizitlər göstərilmir — yalnız özünüz müqavilə mətninə yazsanız."
+    },
+    {
+      "q": "Başqa cihazdan necə daxil olmaq olar?",
+      "a": "Eyni Google hesabı ilə. Xidmətdən istifadə etdiyiniz müddətdə sessiya 30 gün təkrar girişsiz yaşayır."
+    },
+    {
+      "q": "Hesabı necə silmək olar?",
+      "a": "Profil → Tənzimləmələr → Hesab → «Hesabı silin». Şəxsi məlumatlar geri qaytarılmadan məhv edilir; qarşı tərəflərdə ortaq müqavilələrin öz nüsxələri qalır."
+    },
+    {
+      "q": "Telefonda işləyirmi?",
+      "a": "Bəli, bu veb-tətbiqdir: brauzerdə porukam.app açın və «Əsas ekran»a əlavə edin — bildirişlərlə adi tətbiq kimi olacaq."
+    },
+    {
+      "q": "Sizinlə necə əlaqə saxlamaq olar?",
+      "a": "hello@trust-dev.com ünvanına yazın — xidmət, məlumatlar və müqavilələr haqqında suallara cavab veririk."
+    },
+    {
+      "q": "Birliklər nədir və nə üçündür?",
+      "a": "Komandanı və ya icmanı bir ad altında göstərmək üsulu: gildiya, klan, icma və ya şirkət vitrini. Sifarişçi birliyi sahə və şəhərə görə tapır, iştirakçıları və onların reputasiya kartlarını görür, müqaviləni isə konkret şəxslə bağlayır. İcraçılar üçün bu, müştərilərin gətirildiyi və hər kəsin reputasiyasının göründüyü ümumi ünvandır."
+    },
+    {
+      "q": "Birlik müqaviləyə görə cavabdehdirmi?",
+      "a": "Xeyr. Müqavilənin tərəfi həmişə konkret şəxs və ya onun fərdi sahibkarlığı/hüquqi şəxsidir; o şəxsən imzalayır və cavabdehdir. Birlik pul saxlamır və iştirakçılara görə zəmanət vermir — bu, vitrin və ünvandır, reputasiya isə hər kəsin öz sazişlərindən formalaşır."
+    }
+  ],
+  "socialTitle": "Biz sosial şəbəkələrdə",
+  "backToProfile": "Profil"
+}

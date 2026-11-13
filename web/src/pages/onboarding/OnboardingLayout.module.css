@@ -1,0 +1,61 @@
+.screen {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  background: var(--pr-cream);
+  padding: var(--pr-sp-6) var(--pr-sp-4);
+}
+.wrap {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--pr-sp-5);
+  padding: var(--pr-sp-4) 0 var(--pr-sp-10);
+}
+.title {
+  margin: 0;
+  font-size: var(--pr-fs-h1);
+  color: var(--pr-ink);
+}
+.error {
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-red);
+}
+.toggleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pr-sp-3);
+}
+.toggleLabel {
+  font-size: var(--pr-fs-sm);
+  color: var(--pr-text);
+}
+.toggleHint {
+  margin: calc(-1 * var(--pr-sp-3)) 0 0;
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-text-mute);
+}
+
+/* Ссылки на юр-документы на шаге согласий (feat/l10n-launch-surfaces §B) — те же
+   кнопки-ссылки, что на /welcome (AuthScreen.module.css::tosLink): человек,
+   соглашающийся с обработкой данных, должен иметь возможность прочесть сами
+   документы, не уходя с шага. Прижаты к предыдущему блоку отрицательным
+   отступом — это его продолжение, а не отдельная секция. */
+.legalLinks {
+  margin: calc(-1 * var(--pr-sp-3)) 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pr-sp-3);
+}
+.legalLink {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-size: var(--pr-fs-xs);
+  color: var(--pr-teal-deep);
+  cursor: pointer;
+  text-decoration: underline;
+}
